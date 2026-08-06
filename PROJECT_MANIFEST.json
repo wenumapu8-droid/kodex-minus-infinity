@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "0.1.0",
+  "project": {
+    "name": "KODEX−∞",
+    "technicalName": "kodex-minus-infinity",
+    "category": "Living Information Design",
+    "creator": "Nicolás Ortega / Ocín",
+    "professionalPosition": "Creative Technologist + Generative Art Director",
+    "status": "CANONICAL_BOOTSTRAP",
+    "snapshotDate": "2026-08-05"
+  },
+  "repositories": {
+    "canonical": {
+      "fullName": "wenumapu8-droid/kodex-minus-infinity",
+      "workingBranch": "chore/canonical-bootstrap",
+      "pullRequest": 2
+    },
+    "implementation": {
+      "fullName": "wenumapu8-droid/wenu-frontend",
+      "verifiedBranch": "feature/kodex-depth-engine"
+    }
+  },
+  "requiredReading": [
+    "START_HERE.md",
+    "SKILL.md",
+    "AGENTS.md",
+    "context/MASTER_CONTEXT.md",
+    "context/PROTOTYPE_AND_CODE_INVENTORY.md",
+    "context/CONVERSATION_DECISIONS.md",
+    "context/REJECTED_DIRECTIONS.md",
+    "canon/KODEX_CANON.md",
+    "canon/KODEX_EPISTEMIC_STANDARD.md",
+    "architecture/KODEX_ALGORITHM.md",
+    "architecture/RUNTIME_ARCHITECTURE.md",
+    "architecture/SESSION_MEMORY_AND_PATHS.md",
+    "product/CURRENT_STATE.md",
+    "product/EXPERIENCE_ARCHITECTURE.md"
+  ],
+  "canonicalNodes": [
+    "minus-infinity",
+    "threshold",
+    "prologue",
+    "descent",
+    "archive",
+    "machine",
+    "heart",
+    "cosmology",
+    "return-plus-infinity"
+  ],
+  "firstVerticalSlice": [
+    "minus-infinity",
+    "threshold",
+    "observe-or-remember",
+    "archive",
+    "heart",
+    "return-plus-infinity"
+  ],
+  "claimClasses": [
+    "OBSERVED",
+    "DERIVED",
+    "ESTIMATED",
+    "PROXY",
+    "INTERPRETATION",
+    "TESTIMONY",
+    "SPECULATION",
+    "MYTHOPOETIC",
+    "SYNTHETIC",
+    "UNKNOWN"
+  ],
+  "renderResponsibilities": {
+    "DOM": "meaning, text, controls and accessibility",
+    "SVG": "symbols, diagrams, annotation and vector artifacts",
+    "CANVAS": "lightweight procedural graphics and transparent exports",
+    "WEBGL": "organisms, depth, impossible space and multipass feedback"
+  },
+  "invariants": [
+    "Every essential visual element has a semantic passport or declared atmospheric role.",
+    "Every factual claim has provenance.",
+    "Every user decision creates a later consequence.",
+    "Every path preserves session memory.",
+    "Every path provides source and uncertainty access.",
+    "Every path can pause, reverse or exit.",
+    "Every path converges through memory, provenance, relation, reflection, contribution and re-entry.",
+    "No deployment occurs without APROBAR DEPLOY."
+  ],
+  "deployment": {
+    "status": "BLOCKED",
+    "approvalPhrase": "APROBAR DEPLOY"
+  },
+  "privacy": {
+    "publicRepository": true,
+    "rawConversationExportsAllowed": false,
+    "privateReflectionAllowed": false,
+    "restrictedCulturalKnowledgeAllowed": false,
+    "secretsAllowed": false
+  }
+}
