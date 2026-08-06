@@ -1,49 +1,103 @@
-# ADR-0009 — MULTIVERSE TOPOLOGY AND OPTIONAL HEART
+# ADR-0009 — MULTIVERSE TOPOLOGY, EMERGENT PATHS AND OPTIONAL HEART
 
 Status: `ACCEPTED BY CREATOR / IMPLEMENTATION PENDING`  
 Date: 2026-08-06
 
 ## Context
 
-The previous diagrams and vertical-slice shorthand could be read as a single sequential journey in which `HEART` sits between exploration and `RETURN / +∞`. That interpretation contradicts the intended free-will structure.
+KODEX−∞ must not be interpreted as a linear sequence, a small set of authored routes or a website with two alternative corridors.
 
-KODEX−∞ begins from one common origin, then branches according to meaningful user decisions. The different routes are not merely pages in one corridor: they are parallel experiential worlds that share a common grammar, memory system and final convergence.
+The visitor shares one origin with every other visitor, but the journey is progressively composed through interaction. Clicks, pauses, selections, discoveries, ignored signals, revisits and traced relations alter what becomes available later.
 
-The creator's founding sketch defines:
+A path is therefore not chosen once from a menu. It **emerges continuously** from the participant's actions inside a field of possible relations.
+
+The creator's founding topology is:
 
 ```text
 COMMON ORIGIN / −∞
 → THRESHOLD
-→ EXPANDING PARALLEL PATHS
-→ OPTIONAL DEPTH PORTAL / HEART / 0
-→ SPECTRAL INTEGRATION
+→ EXPANDING INTERACTION FIELD
+→ MANY POSSIBLE TRAJECTORIES
+→ OPTIONAL DEPTH PORTALS / HEART / 0
+→ ROUTE-SPECIFIC CONVERGENCE
 → RETURN / +∞
 ```
 
-`HEART / 0` is present beneath the entire field but is not a mandatory checkpoint.
+`HEART / 0` exists beneath the full field but is not a mandatory checkpoint.
 
 ## Decision
 
-KODEX adopts a **multiverse topology** implemented as a directed, memory-preserving state graph.
+KODEX adopts a **directed, memory-preserving multiverse graph with emergent trajectories**.
 
-### 1. Common origin
+## 1. Common origin
 
-Every journey begins at `−∞` and crosses `THRESHOLD` with explicit accessibility, motion, sound and consent controls.
+Every journey begins at `−∞` and crosses one shared `THRESHOLD` with explicit accessibility, motion, sound and consent controls.
 
-### 2. Parallel worlds
+The shared entrance does not prescribe the route. It establishes the initial conditions from which interaction begins.
 
-After Threshold, committed decisions may open different worlds, including but not limited to:
+## 2. Interaction field rather than fixed routes
+
+After Threshold, the visitor enters a graph of nodes, relations, signals and portals.
+
+The system must not present only:
+
+```text
+PATH A
+or
+PATH B
+```
+
+Instead, it provides multiple meaningful possibilities at successive moments. Each committed interaction may alter:
+
+- visible and latent nodes;
+- relation strength;
+- world affinity;
+- spectral state;
+- available exits;
+- memory echoes;
+- Heart resonance;
+- Return composition.
+
+The path is the ordered trace produced by these interactions.
+
+```text
+PATH = ACTIONS + ENCOUNTERS + RELATIONS + CONSEQUENCES + CHANCE WITHIN RULES
+```
+
+KODEX uses **bounded serendipity**. Unexpected encounters may appear, but they must be selected from real semantic relations and must never be arbitrary engagement bait.
+
+## 3. Parallel semantic worlds
+
+The initial world grammar includes:
 
 - `MEMORY WORLD`: Prologue, Descent, Archive, versions and traces;
 - `MACHINE WORLD`: generative rules, transformations, code and simulations;
 - `COSMOLOGY WORLD`: relations across time, territory, ecology, culture, technology and possible futures;
 - `ARTIFACT WORLD`: works, books, visual lineages and Artifact Altars.
 
-Worlds are semantic regions, not rigid folders. Nodes may belong to more than one world and portals may connect worlds when a meaningful relation exists.
+Worlds are semantic regions, not rigid folders or exclusive routes. A node may belong to several worlds. A visitor may move repeatedly between worlds, remain within one for a long period or reach Return after a shorter trajectory.
 
-### 3. Heart as an orthogonal depth layer
+Cross-world movement requires a declared relation, not a generic navigation link.
 
-`HEART / 0` is an optional sanctuary and orientation layer reachable from multiple worlds.
+## 4. Consequence law
+
+Every important interaction must answer:
+
+```text
+WHAT DID THE USER COMMIT?
+WHAT STATE CHANGED NOW?
+WHAT POSSIBILITY CHANGED LATER?
+WHAT MEMORY WAS WRITTEN?
+HOW CAN THIS AFFECT RETURN?
+```
+
+Passive cursor movement may produce atmospheric response, but it must not silently define identity or write consequential personal memory.
+
+Consequential state is written only after an explicit, accessible interaction.
+
+## 5. Heart as an orthogonal depth layer
+
+`HEART / 0` is an optional sanctuary and orientation layer reachable from multiple trajectories.
 
 It is not:
 
@@ -51,16 +105,16 @@ It is not:
 - a score or spiritual rank;
 - a reward for passive time-on-page;
 - a biometric detector;
-- an accidental trap.
+- an accidental trap;
+- the midpoint of every route.
 
-A Heart portal becomes available through explicit, inspectable route conditions such as:
+A Heart portal may become available through explicit and inspectable route conditions such as:
 
-- committing meaningful decisions in at least two semantic families;
-- tracing a relation across two worlds;
+- committing meaningful decisions across semantic families;
+- tracing a relation between worlds;
 - discovering and activating a repeated pulse glyph;
-- completing a declared contemplative interaction.
-
-The exact unlock rule may vary by corpus, but must be accessible, explainable and never infer psychology, diagnosis or spiritual level.
+- completing a declared contemplative interaction;
+- returning to a previously encountered node with new context.
 
 Portal visibility has three states:
 
@@ -68,17 +122,11 @@ Portal visibility has three states:
 LATENT → RESONANT → AVAILABLE
 ```
 
-- `LATENT`: a subtle visual motif exists without demanding attention;
-- `RESONANT`: consistent pulse, color or sound cues reveal a relationship;
-- `AVAILABLE`: an explicit keyboard-, touch- and screen-reader-accessible action appears.
-
 Entering Heart is always voluntary. Exiting Heart restores the exact previous world, node, focus and local route anchor.
 
-### 4. Chromatic and frequency grammar
+## 6. Chromatic and frequency grammar
 
 The journey begins in `OBSIDIAN`, travels through functional spectral bands and may integrate into `OPEN WHITE` at Return.
-
-The spectrum is a design and narrative grammar, not a scientific scale of human worth or emotion.
 
 ```text
 OBSIDIAN
@@ -92,7 +140,9 @@ OBSIDIAN
 → OPEN WHITE
 ```
 
-A route does not need to visit every band in strict order. Each world may activate a different subset. The complete session spectrum is synthesized from committed decisions and relations at Return.
+This is not a mandatory ladder. Different interactions activate different bands, combinations and transitions. A visitor may revisit a color, skip a band or encounter several simultaneously.
+
+The session spectrum is synthesized from the actual trajectory.
 
 The word `frequency` may describe only:
 
@@ -104,86 +154,107 @@ The word `frequency` may describe only:
 
 KODEX must not present numerical emotion frequencies, consciousness scores or fabricated scientific telemetry as fact.
 
-### 5. Common convergence
+## 7. Common convergence without identical journeys
 
-A completed journey converges semantically at `RETURN / +∞` whether or not Heart was visited.
+A completed trajectory may converge semantically at `RETURN / +∞` whether or not Heart was visited.
 
 Return must reveal:
 
-- the route taken;
+- the trace actually produced;
 - worlds and spectral bands encountered;
+- actions whose consequences became visible;
 - sources and unresolved relations;
-- whether Heart was entered, without ranking the user;
-- a path-dependent artifact;
+- Heart visit status without ranking;
+- a trajectory-dependent artifact;
 - connected possibilities for re-entry.
+
+Return is common in function, not identical in content.
 
 Immediate exit remains available from every node and is not treated as failure.
 
 ## Topological model
 
 ```text
-                             ┌── MEMORY WORLD ───────────┐
-                             │                           │
-−∞ → THRESHOLD ──────────────┼── MACHINE WORLD ──────────┼── RETURN / +∞
-                             │                           │
-                             ├── COSMOLOGY WORLD ────────┤
-                             │                           │
-                             └── ARTIFACT WORLD ─────────┘
-                                  ╲    │    ╱
-                                   ╲   │   ╱ optional portals
-                                    HEART / 0
-                                       │
-                               return to prior anchor
+                                ┌──────── MEMORY ────────┐
+                         ╭──────┤   ╲   │   ╱            ├──────╮
+                         │      └────╲──┼──╱──────────────┘      │
+                         │            ╲ │ ╱                      │
+−∞ → THRESHOLD → INTERACTION FIELD ─── NODES ────→ RETURN / +∞
+                         │            ╱ │ ╲                      │
+                         │      ┌────╱──┼──╲──────────────┐      │
+                         ╰──────┤ MACHINE / COSMOLOGY /   ├──────╯
+                                │ ARTIFACT RELATIONS      │
+                                └─────────┬───────────────┘
+                                          ╲
+                                           ╲ optional depth portals
+                                            HEART / 0
+                                                │
+                                    restore exact prior anchor
 ```
 
-This is not a conventional sitemap. It is the governing experience topology from which routes, scenes, URLs and state transitions are derived.
+This is not a conventional sitemap. It is the governing possibility space from which URLs, scenes, states and individual trajectories are derived.
 
 ## Runtime consequences
 
-The scene router must support:
+The runtime must support:
 
-- a graph rather than a fixed scene array;
-- path-dependent exits;
-- world membership and cross-world portals;
-- an orthogonal Heart overlay or depth route;
+- graph navigation rather than a fixed scene array;
+- multiple valid exits at successive nodes;
+- state-dependent node and portal availability;
+- world membership and cross-world relations;
+- bounded-serendipity candidate selection;
+- path-dependent consequences;
+- an orthogonal Heart depth route;
 - exact return anchors;
 - URL and browser-history integrity;
 - local, privacy-minimized session memory;
 - full, reduced and motion-off representations;
-- deterministic Return synthesis.
+- deterministic Return synthesis from the event trace.
 
-Minimum new state:
+Minimum state:
 
 ```ts
 interface KodexJourneyState {
   currentNodeId: string;
-  currentWorldId: string | null;
+  currentWorldIds: string[];
+  availableNodeIds: string[];
+  latentNodeIds: string[];
   returnAnchor: RouteAnchor | null;
   visitedNodeIds: string[];
-  visitedWorldIds: string[];
   committedDecisionIds: string[];
+  interactionEvents: SemanticInteractionEvent[];
   tracedRelationIds: string[];
   spectralBands: string[];
+  memoryEchoIds: string[];
   heartPortalState: 'LATENT' | 'RESONANT' | 'AVAILABLE';
   heartVisited: boolean;
+  trajectorySignature: string;
 }
 ```
 
-## Content consequences
+## V0 proof boundary
 
-Each node must declare:
+The first release remains finite, but it must prove a **multi-path system**, not two hard-coded stories.
 
-- semantic world membership;
-- spectral band and its declared meaning;
-- portal conditions;
-- cross-world relations;
-- memory writes;
-- Return contribution;
-- accessibility equivalent.
+V0 must contain at minimum:
+
+- one common origin;
+- at least six consequential nodes;
+- at least three moments with multiple meaningful exits;
+- at least two semantic worlds connected by real relations;
+- at least eight reproducible trajectory signatures through recombination;
+- one optional Heart portal accessible through more than one trajectory;
+- Return variants generated from the event trace.
+
+The number eight is a verification floor, not a public promise or a limit on the architecture.
 
 ## Rejected alternatives
 
-### Mandatory Heart in the central sequence
+### Two fixed paths
+
+Rejected as the final architecture because it reduces free interaction to a binary branch. Two representative test journeys may be used in QA, but the runtime must generate a larger trajectory space.
+
+### Mandatory Heart
 
 Rejected because it removes free will and turns the sanctuary into a checkpoint.
 
@@ -193,7 +264,7 @@ Rejected because it produces novelty without consequence, memory or coherent con
 
 ### Fixed rainbow ladder
 
-Rejected because it makes every route cosmetically identical and risks presenting symbolic color as a universal scientific hierarchy.
+Rejected because it makes every route cosmetically identical and presents symbolic color as a universal hierarchy.
 
 ### Invisible accidental-only Heart
 
@@ -201,13 +272,14 @@ Rejected because a core experience must remain discoverable and accessible witho
 
 ## Implementation order
 
-1. Update the machine-readable experience graph.
-2. Update the vertical-slice route so Heart is optional.
-3. Extend session memory with world, spectrum and return-anchor state.
-4. Implement graph routing and exact return from Heart.
-5. Prototype one path in two worlds plus one optional Heart portal.
-6. Validate keyboard, touch, screen reader, reduced motion and browser history.
-7. Generate Return from the actual route.
+1. Encode nodes, exits, conditions and relations in the machine-readable graph.
+2. Extend session memory with semantic interaction events and trajectory signature.
+3. Implement state-dependent route resolution rather than a fixed branch switch.
+4. Implement bounded-serendipity selection from declared relations.
+5. Build at least six nodes and three consequential branching moments.
+6. Implement optional Heart access from multiple trajectories and exact restoration.
+7. Generate Return from the complete event trace.
+8. Validate at least eight reproducible trajectories across keyboard, touch, reduced motion and browser history.
 
 ## Deployment
 
