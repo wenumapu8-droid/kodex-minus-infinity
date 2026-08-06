@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.example/schemas/claim.schema.json",
+  "title": "KODEX Claim Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "class", "statement", "sourceIds", "publicationStatus"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^CLM-[A-Z0-9_-]+$"},
+    "class": {
+      "enum": [
+        "OBSERVED",
+        "DERIVED",
+        "ESTIMATED",
+        "PROXY",
+        "INTERPRETATION",
+        "TESTIMONY",
+        "SPECULATION",
+        "MYTHOPOETIC",
+        "SYNTHETIC",
+        "UNKNOWN"
+      ]
+    },
+    "statement": {"type": "string", "minLength": 1},
+    "sourceIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "variables": {"type": "array", "items": {"type": "string"}},
+    "unit": {"type": ["string", "null"]},
+    "denominator": {"type": ["string", "null"]},
+    "timeScope": {"type": ["string", "null"]},
+    "geographyScope": {"type": ["string", "null"]},
+    "populationScope": {"type": ["string", "null"]},
+    "method": {"type": ["string", "null"]},
+    "formula": {"type": ["string", "null"]},
+    "uncertainty": {"type": ["string", "null"]},
+    "contradictions": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "publicationStatus": {"enum": ["ADMITTED", "REVIEW", "BLOCKED"]},
+    "attribution": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "class": {"enum": ["OBSERVED", "DERIVED", "ESTIMATED", "PROXY", "INTERPRETATION", "TESTIMONY", "SPECULATION", "MYTHOPOETIC"]}
+        }
+      },
+      "then": {"properties": {"sourceIds": {"minItems": 1}}}
+    }
+  ]
+}
