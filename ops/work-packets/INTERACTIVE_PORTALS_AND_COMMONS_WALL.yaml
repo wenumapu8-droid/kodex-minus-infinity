@@ -1,0 +1,217 @@
+version: 1
+system: KODEX−∞
+
+work_packet:
+  id: WP-INTERACTION-COMMONS-001
+  title: Interactive portals, cursor response and Commons Wall
+  owner_role: Creative Technologist / Frontend Engineer
+  status: READY_FOR_IMPLEMENTATION_PLANNING
+  problem: >-
+    KODEX has canonical voice, narrative and visual direction but still needs a shared
+    interaction runtime and an optional moderated public text/drawing wall after Return.
+  user_value: >-
+    Visitors can understand and manipulate living scenes intuitively, follow meaningful
+    portals and leave a deliberate public trace without losing control of privacy.
+  product_consequence: >-
+    Converts static scene concepts into a coherent interactive journey and establishes
+    the first community-owned surface in the KODEX universe.
+
+  repositories:
+    canonical: wenumapu8-droid/kodex-minus-infinity
+    implementation: wenumapu8-droid/wenu-frontend
+    working_branch: feature/kodex-interaction-commons
+
+  required_reading:
+    - START_HERE.md
+    - architecture/RUNTIME_ARCHITECTURE.md
+    - architecture/KODEX_INTERACTION_ENGINE.md
+    - architecture/SESSION_MEMORY_AND_PATHS.md
+    - design-system/KODEX_MOTION_LANGUAGE.md
+    - design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md
+    - product/EXPERIENCE_ARCHITECTURE.md
+    - modules/contribution/README.md
+    - modules/public-wall/README.md
+    - schemas/interaction-passport.schema.json
+    - schemas/public-wall-entry.schema.json
+    - ops/OBSIDIAN_VAULT_BRIDGE.md
+
+  affected_nodes:
+    - threshold
+    - archive
+    - machine
+    - heart
+    - return-plus-infinity
+    - commons-wall
+
+  affected_modules:
+    - interaction
+    - contribution
+    - public-wall
+    - memory
+    - return
+
+  in_scope:
+    - shared normalized pointer/touch/keyboard input service
+    - ProximityField primitive
+    - SemanticHotspot primitive
+    - ColorStateTransition primitive
+    - interaction passports and event mapping
+    - one Threshold integration
+    - one Archive integration
+    - one portfolio Artifact Altar integration
+    - Commons text composer
+    - Commons vector drawing composer
+    - private preview and explicit consent
+    - moderation-ready API contract
+    - public spatial field and accessible list/archive
+    - scroll exception limited to Commons
+    - mobile, reduced-motion and fallback behavior
+
+  out_of_scope:
+    - deployment
+    - public profiles
+    - likes, followers, rankings or streaks
+    - image uploads to Commons
+    - real-time collaborative drawing
+    - biometric response
+    - automatic publication
+    - automatic Google Drive or Obsidian publication
+
+  dependencies:
+    - approved design tokens
+    - session store
+    - stable scene lifecycle
+    - moderation and database provider decision
+    - rights and privacy policy text
+    - verified portfolio assets for the Artifact Altar
+
+  expected_outputs:
+    - packages/interaction-runtime/
+    - modules/public-wall/runtime/
+    - API schema and migration
+    - three scene integrations
+    - moderation queue prototype
+    - mobile and desktop screenshots
+    - accessibility report
+    - performance report
+
+  source_requirements:
+    primary_sources:
+      - data/interaction-registry.json
+      - data/experience-graph.json
+      - data/voice-scene-registry.json
+    claim_ledger_required: false
+    rights_review_required: true
+    cultural_review_required: false
+    privacy_review_required: true
+
+  semantic_requirements:
+    question: How does each interaction reveal a real relation or allow accountable contribution?
+    semantic_passports_required: true
+    transformations_required: true
+    provenance_access_required: true
+    uncertainty_behavior_required: true
+
+  interaction_requirements:
+    meaningful_decisions:
+      - OBSERVE or REMEMBER at Threshold
+      - reveal source or follow relation in Archive
+      - alter a declared rule in Machine or Artifact Altar
+      - write, draw or only observe in Commons
+      - anonymous or named attribution
+      - submit or keep private/export locally
+    writes_to_memory:
+      - committed interaction IDs
+      - opened relation IDs
+      - Commons opened
+      - wall entry ID after submission
+    later_consequences:
+      - route selection
+      - Return artifact
+      - re-entry recommendation
+      - public wall trace after approval
+    return_contribution: Optional entry into THE COMMONS after personal Return is complete.
+
+  accessibility_requirements:
+    keyboard: true
+    touch: true
+    reduced_motion: true
+    motion_off: true
+    text_alternative: true
+    immediate_exit: true
+
+  technical_requirements:
+    framework: Astro-compatible TypeScript with DOM/SVG/Canvas and optional WebGL adapters
+    dependencies_allowed: false
+    webgl_cleanup_required: true
+    fallback_required: true
+    target_viewports:
+      - 390x844
+      - 412x915
+      - desktop
+
+  acceptance_criteria:
+    - core scenes remain exactly one active 100svh scene without document scroll
+    - Commons is the only document-scroll exception
+    - every pointer interaction has touch and keyboard parity
+    - color changes derive from approved tokens and declared states
+    - passive pointer movement is not persisted
+    - text and drawing entries show exact private preview before consent
+    - no entry becomes public without moderation approval
+    - report, withdrawal and outage behavior exist
+    - Commons remains usable as an accessible list without spatial effects
+    - no fake metrics, biometrics or frequency claims
+
+  tests_required:
+    - unit tests for input normalization and interaction events
+    - schema tests for interaction passports and wall entries
+    - integration tests for scene lifecycle and cleanup
+    - moderation state transition tests
+    - keyboard and screen-reader navigation tests
+    - reduced-motion and motion-off tests
+    - mobile drawing performance tests
+    - rate-limit and abuse-path tests
+
+  risks:
+    - public user-generated content abuse
+    - drawing payload growth
+    - mobile GPU and pointer performance
+    - visual interactions obscuring information
+    - accidental private-session disclosure
+    - provider lock-in
+
+  stop_conditions:
+    - essential behavior lacks a non-WebGL fallback
+    - moderation or withdrawal path is absent
+    - private session data is attached by default
+    - implementation requires destructive migration
+    - deployment is requested without exact approval phrase
+
+  deployment:
+    requested: false
+    status: BLOCKED
+    approval_phrase: APROBAR DEPLOY
+
+handoff:
+  status: SPECIFIED_NOT_IMPLEMENTED
+  files_created:
+    - architecture/KODEX_INTERACTION_ENGINE.md
+    - modules/public-wall/README.md
+    - schemas/interaction-passport.schema.json
+    - schemas/public-wall-entry.schema.json
+    - data/interaction-registry.json
+    - ops/OBSIDIAN_VAULT_BRIDGE.md
+    - ops/work-packets/INTERACTIVE_PORTALS_AND_COMMONS_WALL.yaml
+  tests_run: []
+  tests_not_run:
+    - implementation does not yet exist
+  known_limitations:
+    - Google Drive and Obsidian asset inventory has not been ingested
+    - database and moderation provider are not selected
+    - public policy text requires human/legal review before launch
+  next_actions:
+    - update canonical graph and registries
+    - inventory portfolio assets
+    - build the three interaction primitives
+    - prototype Commons locally with mocked approved entries
+  next_owner: Implementation agent after human review
