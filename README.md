@@ -203,6 +203,10 @@ These are source materials and candidate engines. Their existence does not mean 
 - Maintain touch, keyboard, reduced-motion, fallback and immediate-exit behavior.
 - Work through branches, reviewable changes and explicit status labels.
 
+## Repository bootstrap
+
+The initial canonical bootstrap is maintained through PR #2. Once merged, `main` is the visible source of truth. The merge does not deploy the public experience.
+
 ## Deployment
 
 Repository commits, merges, previews and prototypes do not authorize production deployment.
