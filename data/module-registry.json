@@ -1,7 +1,16 @@
 {
   "system": "KODEX−∞ Module Registry",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "modules": [
+    {
+      "id": "interaction-runtime",
+      "status": "CANONICAL_SPECIFICATION",
+      "path": "architecture/KODEX_INTERACTION_ENGINE.md",
+      "purpose": "Normalize pointer, touch and keyboard input and coordinate semantic scene interactions.",
+      "renderers": ["DOM", "SVG", "CANVAS", "WEBGL"],
+      "performanceCost": "MEDIUM",
+      "firstVerticalSlice": true
+    },
     {
       "id": "evidence",
       "status": "CANONICAL_SPECIFICATION",
@@ -57,6 +66,16 @@
       "firstVerticalSlice": true
     },
     {
+      "id": "public-wall",
+      "status": "CANONICAL_SPECIFICATION",
+      "path": "modules/public-wall/README.md",
+      "purpose": "Provide an optional moderated public text and vector-drawing surface after Return.",
+      "renderers": ["DOM", "SVG", "CANVAS"],
+      "performanceCost": "MEDIUM",
+      "firstVerticalSlice": false,
+      "scrollException": true
+    },
+    {
       "id": "open-source",
       "status": "CANONICAL_SPECIFICATION",
       "path": "modules/open-source/README.md",
@@ -82,6 +101,8 @@
     "Every module follows modules/MODULE_CONTRACT.md.",
     "Specification status does not imply implementation.",
     "One real integrated example is required before APPROVED status.",
+    "Core experience nodes remain no-scroll; public-wall is the only planned canonical scroll exception.",
+    "Public user-generated content requires moderation, reporting, withdrawal and explicit publication consent.",
     "No deployment occurs without APROBAR DEPLOY."
   ]
 }
