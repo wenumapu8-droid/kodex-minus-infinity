@@ -1,0 +1,256 @@
+{
+  "system": "KODEX−∞",
+  "version": "0.1.0-alphabet-topology",
+  "status": "CANONICAL_STRUCTURE_PARTIAL_CONCEPT_ASSIGNMENT",
+  "coordinateSystem": "KODEX_A_TO_Y",
+  "letters": [
+    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"
+  ],
+  "invariants": {
+    "entry": "A",
+    "optionalHeart": "M",
+    "completedJourneyTerminal": "Y",
+    "alphabeticalTraversalRequired": false,
+    "allLettersRequiredPerJourney": false,
+    "loopsAllowed": true,
+    "revisitsMutateNodeState": true,
+    "mPotentiallyReachableFromEveryNonterminalLetter": true,
+    "mMandatory": false,
+    "yRequiredForCanonicalCompletion": true,
+    "immediateSafeExitAvailable": true
+  },
+  "formalModel": {
+    "graphType": "DIRECTED_WEIGHTED_STATEFUL_MEMORY_PRESERVING",
+    "routeForm": "A -> v1 -> ... -> vn -> Y",
+    "intermediateDomain": "B..X",
+    "mCardinalityPerJourney": "ZERO_OR_MORE",
+    "edgeResolution": "STATE_DEPENDENT",
+    "boundedSerendipity": true
+  },
+  "nodeDefaults": {
+    "status": "LATENT",
+    "conceptIds": [],
+    "worldIds": [],
+    "sourceIds": [],
+    "activatorIds": [],
+    "semanticEdges": [],
+    "portalRules": [],
+    "memoryWrites": [],
+    "spectralBehavior": [],
+    "yContribution": [],
+    "rightsStatus": "NEEDS_CONFIRMATION",
+    "culturalStatus": "NEEDS_CONFIRMATION"
+  },
+  "nodes": [
+    {
+      "id": "A",
+      "status": "CANONICAL",
+      "structuralRole": "COMMON_ORIGIN",
+      "canonicalIdentity": "−∞ / THRESHOLD",
+      "functions": [
+        "ORIENTATION",
+        "CONSENT",
+        "ACCESSIBILITY_CONFIGURATION",
+        "FIRST_MEANINGFUL_ACTION",
+        "INITIAL_MEMORY_WRITE"
+      ],
+      "spectralBehavior": ["OBSIDIAN", "FIRST_SIGNAL"],
+      "entryRule": "ALL_CANONICAL_JOURNEYS_BEGIN_HERE",
+      "exitRule": "MULTIPLE_STATE_DEPENDENT_EDGES"
+    },
+    {
+      "id": "B",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "C",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "D",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "E",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "F",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "G",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "H",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "I",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "J",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "K",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "L",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "M",
+      "status": "CANONICAL",
+      "structuralRole": "OPTIONAL_DISTRIBUTED_HEART_INVARIANT",
+      "canonicalIdentity": "HEART / 0",
+      "mandatory": false,
+      "potentiallyReachableFrom": [
+        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
+        "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X"
+      ],
+      "portalStates": ["LATENT", "RESONANT", "AVAILABLE"],
+      "contextualManifestations": [
+        "M@MEMORY",
+        "M@MACHINE",
+        "M@COSMOLOGY",
+        "M@ARTIFACT"
+      ],
+      "exitBehavior": "RESTORE_EXACT_PRIOR_ROUTE_ANCHOR",
+      "ranking": "FORBIDDEN"
+    },
+    {
+      "id": "N",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "O",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "P",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "Q",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "R",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "S",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "T",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "U",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "V",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "W",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "X",
+      "status": "NEEDS_CONFIRMATION",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE"
+    },
+    {
+      "id": "Y",
+      "status": "CANONICAL",
+      "structuralRole": "ROUTE_DERIVED_CONVERGENCE",
+      "canonicalIdentity": "RETURN / +∞",
+      "entryRule": "COMPLETION_ELIGIBLE_ROUTE",
+      "requiredOutputs": [
+        "VISITED_LETTERS",
+        "REVISIT_MUTATIONS",
+        "COMMITTED_ACTIONS",
+        "IGNORED_SIGNALS_WITH_LATER_CONSEQUENCE",
+        "TRACED_RELATIONS",
+        "SPECTRAL_TRACE",
+        "M_VISIT_STATUS_WITHOUT_RANKING",
+        "SOURCE_ACCESS",
+        "UNRESOLVED_QUESTIONS",
+        "ROUTE_SPECIFIC_ARTIFACT",
+        "REENTRY_POSSIBILITIES"
+      ],
+      "spectralBehavior": ["ROUTE_DERIVED_SPECTRUM", "OPEN_WHITE"],
+      "terminalRule": "ONE_FUNCTION_MANY_MANIFESTATIONS"
+    }
+  ],
+  "edgeResolverInputs": [
+    "CURRENT_LETTER",
+    "COMMITTED_ACTIONS",
+    "VISITED_LETTERS",
+    "VISIT_COUNTS",
+    "TRACED_RELATIONS",
+    "IGNORED_SIGNALS",
+    "SPECTRAL_STATE",
+    "BOUNDED_SERENDIPITY_SEED",
+    "ACCESSIBILITY_MODE"
+  ],
+  "conceptAssignmentRequirements": [
+    "CREATOR_APPROVAL",
+    "KODEX_THESIS_RELATION",
+    "SOURCE_OR_AUTHORED_MATERIAL",
+    "INTERACTION_CONSEQUENCE",
+    "MEMORY_WRITE",
+    "Y_CONTRIBUTION",
+    "EPISTEMIC_STATUS",
+    "RIGHTS_STATUS",
+    "CULTURAL_STATUS"
+  ],
+  "v0Rules": [
+    "ALL_25_COORDINATES_EXIST_IN_REGISTRY",
+    "UNIMPLEMENTED_LETTERS_REMAIN_EXPLICITLY_LATENT",
+    "V0_MAY_IMPLEMENT_A_CONNECTED_SUBGRAPH",
+    "A_M_Y_INVARIANTS_MUST_BE_PRESERVED",
+    "MULTIPLE_NONALPHABETICAL_TRAJECTORIES_REQUIRED",
+    "LOOPS_AND_MUTATED_REVISITS_REQUIRED",
+    "M_APPROACHABLE_FROM_MORE_THAN_ONE_REGION",
+    "Y_GENERATED_FROM_ACTUAL_EVENT_TRACE"
+  ],
+  "forbiddenInterpretations": [
+    "MANDATORY_ALPHABETICAL_SEQUENCE",
+    "TWO_PATH_ARCHITECTURE",
+    "M_AS_MANDATORY_MIDPOINT",
+    "ALL_LETTERS_REQUIRED_BEFORE_Y",
+    "RANDOM_ENGAGEMENT_RECOMMENDATION_ENGINE",
+    "UNASSIGNED_CONCEPTS_PRESENTED_AS_CANON"
+  ],
+  "deploymentLock": "APROBAR DEPLOY"
+}
