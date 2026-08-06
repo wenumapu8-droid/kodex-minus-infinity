@@ -1,39 +1,26 @@
 # KODEX−∞ CURRENT STATE
 
 Last updated: `2026-08-06`  
-Status: `CREATOR-APPROVED CANON AND MULTIVERSE ROUTE / IMPLEMENTATION PENDING`
+Status: `CREATOR-APPROVED CANON / GENESIS CORPUS SELECTED / M0 CURATION ACTIVE`
 
 ## Repository state
 
 - Canonical repository: `wenumapu8-droid/kodex-minus-infinity`
-- Visibility: `PUBLIC`
 - Default branch: `main`
-- Active bootstrap branch: `chore/canonical-bootstrap`
+- Active canonical branch: `chore/canonical-bootstrap`
 - Active draft pull request: `#2`
-- Current branch head after creator clarification: `e334e29e79d590767a74af910e49d8c63d3d93cd`
 - Existing implementation repository: `wenumapu8-droid/wenu-frontend`
 - Verified advanced implementation branch: `feature/kodex-depth-engine`
+- Active implementation branch: `feature/kodex-vertical-slice-v0`
 - Active implementation draft PR: `wenu-frontend#3`
 - Deployment permission: **NOT GRANTED**
 - Required deployment phrase: `APROBAR DEPLOY`
-
-## Repository roles
-
-### `kodex-minus-infinity`
-
-Canonical context, identity, algorithms, evidence rules, design system, experience architecture, machine-readable registries, reusable module specifications, business architecture and agent operating contracts.
-
-### `wenu-frontend`
-
-Current Astro implementation containing KODEX routes, components, shaders, assets, experiments and the interaction-runtime laboratory. It remains the implementation source until provenance-preserving migration decisions are approved.
 
 ## Creator-approved product direction
 
 KODEX−∞ is a living visual language and computational metaphor of being alive.
 
-Ocín's earlier visual codes, geometries, symbols, patterns and computational artifacts are treated as an authored creative lineage whose complete meaning was not predetermined. KODEX preserves those works, records their context and connects them through one evolving system without forcing a single interpretation.
-
-Confirmed premise:
+Ocín's earlier visual codes, geometries, symbols, patterns and computational artifacts are preserved as an authored creative lineage whose complete meaning was not predetermined. KODEX records context, identifies recurring grammar and connects those works through memory, relation and consequence without imposing one final interpretation.
 
 ```text
 WE ENTER WITHOUT KNOWING THE COMPLETE SYSTEM.
@@ -45,8 +32,6 @@ RETURN MAKES RELATIONS VISIBLE WITHOUT ENDING THE MYSTERY.
 ```
 
 ## Canonical topology
-
-KODEX now uses a directed, memory-preserving multiverse graph:
 
 ```text
 −∞
@@ -64,7 +49,7 @@ Initial worlds:
 - `COSMOLOGY WORLD`;
 - `ARTIFACT WORLD`.
 
-`HEART / 0` is optional. It is not a mandatory checkpoint, score, spiritual rank or biometric detector. Portal state is:
+`HEART / 0` is optional. Portal state:
 
 ```text
 LATENT → RESONANT → AVAILABLE
@@ -86,119 +71,114 @@ OBSIDIAN
 → OPEN WHITE
 ```
 
-This is a functional and mythopoetic design grammar, not a scientific hierarchy of emotions or consciousness. Routes may traverse different subsets. Return synthesizes the spectrum from the actual path.
+This is a functional and mythopoetic grammar, not a scientific hierarchy of emotions or consciousness.
 
-## Canonical invariants
+## First corpus decision
 
-- every scene begins from a question;
-- every factual claim has provenance and truth class;
-- every essential visual variable has a semantic passport or declared atmospheric role;
-- every important decision creates a later consequence;
-- session memory constructs Return and the path artifact;
-- evidence, interpretation, speculation, myth and atmosphere remain distinct;
-- Heart orients without scoring and remains optional;
-- Return is possible with or without Heart;
-- cultural materials require provenance, status and review;
-- mobile, keyboard, reduced motion, fallback and safe exit are first-class requirements;
-- no fabricated metrics, biometrics, frequencies, tests or production status;
-- no generic AI imagery replaces Ocín's real visual lineage;
-- no deployment occurs without explicit approval.
+`ADR-0005` selects **KODEX Genesis Archive** as the first vertical-slice corpus.
 
-## Completed on the active canonical branch
+Governing question:
 
-### Governance and model context
+> How did Ocín's unresolved visual codes become KODEX: a living information system with memory, relation and consequence?
 
-- `START_HERE.md` and authority order;
-- agent contract and model-specific entry files for ChatGPT, Claude, Codex, Gemini and Hermes;
-- public/private boundaries and Obsidian bridge;
-- handoff, work-packet, ingestion and migration protocols;
-- deployment lock.
+Canonical records:
 
-### Canon and architecture
-
-- expanded creator-approved `canon/KODEX_CANON.md`;
-- ADR-0009 multiverse topology and optional Heart;
-- machine-readable `data/experience-graph.json` v0.3;
-- experience, runtime, interaction and session-memory architecture;
-- semantic and epistemic standards;
-- visual, motion, information, symbol, typography and voice systems.
-
-### Finite execution route
-
-- canonical 90-day window: `2026-08-06 → 2026-11-02`;
-- milestones M0–M5 with target dates and hard exit gates;
-- anti-infinity idea triage: `NOW / NEXT / ARCHIVE / REJECT`;
-- current rule: one primary work packet at a time.
-
-### Reference algorithm and tooling
-
-- dependency-free core reference package;
-- source/claim admission and graph construction;
-- privacy-minimized memory;
-- deterministic artifact manifests;
-- context validator and Python tests;
-- GitHub Actions workflow definitions;
-- package-ingestion and repository-inventory tools.
-
-## Verified implementation evidence
-
-The implementation lineage includes:
-
-- fullscreen Astro KODEX entry and Threshold;
-- entity, scene, state and atmospheric registries;
-- JSON/TypeScript visual grammar;
-- multipass portal specifications;
-- OBSERVE and OBSERVE V2;
-- spatial, ripple, split-corridor, perspective, impossible-form and helix systems;
-- original SVG, design-system, visual-grammar and typography packages;
-- reduced-motion and fallback behavior;
-- visual QA telemetry and debug modes.
-
-`wenu-frontend#3` currently provides an isolated noindex semantic-interaction laboratory with normalized pointer/touch/keyboard input, committed states, accessible hotspots and motion modes. It does not yet implement the complete multiverse journey.
-
-## Drive and private-vault state
-
-Verified source roots exist for:
-
-- KODEX packages and prototypes;
-- Ocín visual lineage;
-- mixed Book material requiring individual privacy review;
-- specialized portfolio material.
-
-The current constraint is not lack of material. It is curation, provenance, rights classification and semantic integration.
-
-The private Obsidian vault remains the working warehouse. GitHub receives only reviewed, public-safe canon, metadata and code. No automatic sync may bypass human review.
-
-## Current first-product target
-
-```text
-COMMON −∞ ORIGIN
-→ THRESHOLD
-→ MEMORY WORLD or MACHINE / ARTIFACT WORLD
-→ ONE CROSS-WORLD RELATION
-→ OPTIONAL HEART / 0
-→ RETURN / +∞
-→ ROUTE ARTIFACT + SOURCES + RE-ENTRY
-```
-
-The first slice does not attempt to build every world or every historical visual family.
+- `docs/decisions/ADR-0005-KODEX-GENESIS-ARCHIVE-CORPUS.md`;
+- `research/FIRST_CORPUS_SELECTION.md`;
+- `research/CORPUS_LOCK_V0_DRAFT.md`.
 
 ## Active milestone
 
-`M0 — Canon + Inventory`
-
+`M0 — Canon + Inventory`  
 Target: `2026-08-17`
 
-Required before implementation expansion:
+Current progress:
 
-- lock the first verified corpus;
-- select 15 KODEX assets, 10 Ocín works and 6 approved Book fragments/images;
-- select one Artifact Altar candidate;
-- verify repository/branch/path/SHA for implementation candidates;
-- classify rights, privacy and cultural status;
-- approve or reject the corpus decision.
+```text
+KODEX visual/code assets: 15 / 15 selected
+OCÍN works: 10 / 10 candidate slots selected
+BOOK items: 0 / 6 admitted
+Artifact Altar: 1 candidate packet defined
+```
 
-## Next critical path
+The KODEX subset is source-verified at repository/archive level. The ten Ocín files require creator visual, authorship, rights and cultural review before public admission.
+
+The Book subset remains blocked. The Drive root named `book` contains mixed and private material and cannot be bulk-ingested. A separate `Libro` folder currently contains only one generic Firefly-generated tribal reference, which is excluded from v0.
+
+## Artifact Altar candidate
+
+Working title:
+
+```text
+GENESIS ALTAR / FROM MIRROR TO LIVING SYSTEM
+```
+
+Primary visual candidate:
+
+```text
+image3A32302_mirror7.jpg
+Drive ID: 1L5_l8C3MoP1RquWoaaubSjhC5tIkcS0A
+Status: CREATOR REVIEW REQUIRED
+```
+
+Related systems:
+
+- OBSERVE Prototype;
+- Mirror Identity;
+- Helix Transparent;
+- SVG Vector Pack;
+- Visual Grammar System.
+
+Narrative question:
+
+> What remains constant when an image stops being a fixed surface and begins to remember how it is observed?
+
+## Canonical invariants
+
+- every factual claim has provenance and truth class;
+- every meaningful decision creates a later consequence;
+- session memory constructs Return and the path artifact;
+- Heart remains optional and non-scoring;
+- Return works with or without Heart;
+- evidence, interpretation, speculation, myth and atmosphere remain distinguishable;
+- no fabricated metrics, biometrics, frequencies or production claims;
+- no generic AI imagery replaces Ocín's actual lineage;
+- mobile, keyboard, reduced motion, fallback and immediate exit are first-class requirements;
+- no deployment occurs without explicit approval.
+
+## Verified implementation evidence
+
+The existing implementation lineage includes:
+
+- fullscreen Astro KODEX entry and Threshold;
+- scene, entity and state registries;
+- JSON/TypeScript visual grammar;
+- threshold portal and multipass feedback;
+- OBSERVE and OBSERVE V2;
+- Spatial Engine v1/v2;
+- Split Corridor;
+- Ripple Floor;
+- Perspective Flip;
+- Wrinkled Reality;
+- Impossible Structure;
+- Mirror Identity;
+- Helix Transparent;
+- SVG, design-system, visual-grammar and typography packages;
+- reduced-motion, fallback, telemetry and visual QA modes.
+
+`wenu-frontend#3` currently contains a noindex semantic-interaction laboratory with normalized pointer/touch/keyboard input, committed states, accessible hotspots and motion modes. It is not yet the complete multiverse journey.
+
+## Next critical actions
+
+1. Visually review the ten selected Ocín candidates.
+2. Confirm authorship, imported references, allowed transformations and public titles.
+3. Locate six actual creator-authored Book fragments or images outside private mixed folders.
+4. Complete the Genesis Altar node contract and interaction passport.
+5. Materialize checksums for approved raster originals.
+6. Close M0 only when rights, privacy, cultural status and source paths are recorded.
+7. Begin M1 graph runtime after the corpus gate passes.
+
+## Critical path
 
 ```text
 M0 CORPUS LOCK
@@ -209,47 +189,16 @@ M0 CORPUS LOCK
 → M5 QA / COMPREHENSION / RELEASE DECISION
 ```
 
-Immediate engineering sequence after M0:
-
-1. update runtime types for world, spectrum and exact route anchor;
-2. implement graph router rather than fixed scene array;
-3. demonstrate one decision with a later consequence;
-4. implement two world paths;
-5. add one optional Heart portal;
-6. generate distinct Return artifacts;
-7. validate mobile, keyboard, reduced motion and non-WebGL behavior.
-
-## Unresolved decisions
-
-- final approval of the first public corpus;
-- exact asset-level rights and cultural status;
-- final public/open-source license matrix;
-- first production font families and rights;
-- rights-cleared voice and sound identity;
-- community contribution moderation and storage provider;
-- public release timing;
-- long-term repository split after the vertical slice.
-
 ## Current risks
 
-- continuing conceptual expansion instead of locking the corpus;
-- treating canonical documents as completed implementation;
-- publishing mixed or private Drive/Obsidian material;
-- migrating packages without byte and checksum verification;
-- letting historical pseudo-telemetry remain unclassified;
-- turning symbolic color or quantum metaphors into scientific claims;
-- replacing authored work with generic generated imagery;
-- building too many worlds before two complete paths work;
-- using animation as proof of life without memory or causal response.
+- treating candidate selection as publication approval;
+- continuing concept expansion before Book and Ocín review;
+- publishing private Drive/Obsidian material;
+- importing reference imagery as authored work;
+- leaving cultural symbolism unreviewed;
+- using animation as proof of life without memory or causal response;
+- treating canonical documentation as completed implementation.
 
 ## Immediate definition of success
 
-The current phase succeeds when every model can:
-
-1. explain the living visual-language premise;
-2. distinguish the multiverse topology from a linear sitemap;
-3. state that Heart is optional;
-4. identify the active M0 corpus-lock gate;
-5. inspect the actual implementation before editing;
-6. execute one bounded work packet;
-7. advance the same vertical slice without creating parallel canon.
+M0 succeeds when the first corpus is finite, source-linked, rights-classified and sufficient to build one complete journey without generating replacement material.
