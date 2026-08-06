@@ -1,47 +1,46 @@
 {
-  "schemaVersion": "0.3.0",
+  "schemaVersion": "0.4.0",
   "project": {
     "name": "KODEX−∞",
     "technicalName": "kodex-minus-infinity",
     "category": "Living Information Design",
     "creator": "Nicolás Ortega / Ocín",
     "professionalPosition": "Creative Technologist + Generative Art Director",
-    "status": "CANONICAL_CONTEXT_INTERACTION_AND_CONTRIBUTION_BOOTSTRAP",
+    "status": "CANONICAL_ALPHABET_TOPOLOGY_M0_CURATION_ACTIVE",
     "snapshotDate": "2026-08-06"
   },
   "repositories": {
     "canonical": {
       "fullName": "wenumapu8-droid/kodex-minus-infinity",
-      "workingBranch": "chore/canonical-bootstrap",
-      "pullRequest": 2
+      "canonicalBranch": "main",
+      "bootstrapBranch": "chore/canonical-bootstrap",
+      "bootstrapPullRequest": 2
     },
     "implementation": {
       "fullName": "wenumapu8-droid/wenu-frontend",
-      "verifiedBranch": "feature/kodex-depth-engine"
+      "verifiedBranch": "feature/kodex-depth-engine",
+      "activePrototypeBranch": "feature/kodex-vertical-slice-v0",
+      "activePrototypePullRequest": 3
     }
   },
   "requiredReading": [
     "START_HERE.md",
-    "SKILL.md",
-    "AGENTS.md",
-    "context/ERRATA.md",
-    "context/MASTER_CONTEXT.md",
-    "context/PROTOTYPE_AND_CODE_INVENTORY.md",
-    "context/CONVERSATION_DECISIONS.md",
-    "context/REJECTED_DIRECTIONS.md",
+    "PROJECT_MANIFEST.json",
     "canon/KODEX_CANON.md",
     "canon/KODEX_EPISTEMIC_STANDARD.md",
+    "docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md",
+    "data/alphabet-topology.json",
     "architecture/KODEX_ALGORITHM.md",
     "architecture/RUNTIME_ARCHITECTURE.md",
     "architecture/SESSION_MEMORY_AND_PATHS.md",
     "architecture/KODEX_INTERACTION_ENGINE.md",
-    "design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md",
-    "modules/public-wall/README.md",
-    "ops/OBSIDIAN_VAULT_BRIDGE.md",
     "product/CURRENT_STATE.md",
-    "product/EXPERIENCE_ARCHITECTURE.md"
+    "product/EXPERIENCE_ARCHITECTURE.md",
+    "experiences/vertical-slice-v0/README.md",
+    "experiences/vertical-slice-v0/spec.yaml"
   ],
   "authoritativeRegistries": [
+    "data/alphabet-topology.json",
     "data/experience-graph.json",
     "data/state-registry.json",
     "data/module-registry.json",
@@ -49,8 +48,43 @@
     "data/interaction-registry.json",
     "data/registries/repositories.yaml",
     "data/registries/prototypes.yaml",
-    "data/registries/package-checksums.yaml"
+    "data/registries/package-checksums.yaml",
+    "data/registries/drive-asset-inventory-v0.yaml"
   ],
+  "topology": {
+    "coordinateSystem": "A_THROUGH_Y",
+    "entry": "A",
+    "optionalDistributedHeart": "M",
+    "completedJourneyTerminal": "Y",
+    "alphabeticalTraversalRequired": false,
+    "allLettersRequiredPerJourney": false,
+    "loopsAllowed": true,
+    "mutatedRevisitsRequired": true,
+    "heartMandatory": false,
+    "returnDerivedFromEventTrace": true,
+    "sourceOfTruth": "data/alphabet-topology.json"
+  },
+  "canonicalCoordinates": [
+    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"
+  ],
+  "firstExecutableSlice": {
+    "status": "TARGET_NOT_COMPLETE",
+    "requiredCapabilities": [
+      "COMMON_ENTRY_AT_A",
+      "CONNECTED_INTERMEDIATE_SUBSET",
+      "MULTIPLE_NONALPHABETICAL_TRAJECTORIES",
+      "AT_LEAST_THREE_MULTI_EXIT_DECISION_MOMENTS",
+      "LOOPS_AND_MUTATED_REVISITS",
+      "M_REACHABLE_FROM_MORE_THAN_ONE_REGION",
+      "Y_DERIVED_FROM_COMPLETE_EVENT_TRACE",
+      "PATH_DEPENDENT_ARTIFACT",
+      "PROVENANCE_AND_UNCERTAINTY_ACCESS",
+      "KEYBOARD_TOUCH_REDUCED_MOTION_AND_NON_WEBGL_EQUIVALENCE"
+    ],
+    "minimumValidationTrajectorySignatures": 8,
+    "representativeTrajectoriesAreArchitecture": false
+  },
   "schemas": [
     "schemas/source.schema.json",
     "schemas/claim.schema.json",
@@ -64,7 +98,7 @@
     {
       "path": "packages/core-reference/",
       "status": "REFERENCE_IMPLEMENTATION",
-      "tests": "PASSING"
+      "tests": "PREVIOUSLY_REPORTED_PASSING_REVALIDATION_REQUIRED_AFTER_MERGE"
     },
     {
       "path": "packages/recovered/helix-transparent-v1/",
@@ -72,70 +106,32 @@
       "tests": "NOT_RUNTIME_VALIDATED_IN_REPOSITORY"
     }
   ],
-  "canonicalNodes": [
-    "minus-infinity",
-    "threshold",
-    "prologue",
-    "observe",
-    "descent",
-    "archive",
-    "machine",
-    "heart",
-    "cosmology",
-    "return-plus-infinity",
-    "commons-wall"
-  ],
-  "firstVerticalSlice": [
-    "minus-infinity",
-    "threshold",
-    "observe-or-remember",
-    "archive",
-    "heart",
-    "return-plus-infinity"
-  ],
-  "optionalPostscript": [
-    "commons-wall"
-  ],
-  "claimClasses": [
-    "OBSERVED",
-    "DERIVED",
-    "ESTIMATED",
-    "PROXY",
-    "INTERPRETATION",
-    "TESTIMONY",
-    "SPECULATION",
-    "MYTHOPOETIC",
-    "SYNTHETIC",
-    "UNKNOWN"
-  ],
   "renderResponsibilities": {
     "DOM": "meaning, text, controls, forms and accessibility",
     "SVG": "symbols, diagrams, annotation, path artifacts and vector traces",
     "CANVAS": "lightweight procedural graphics, drawing input and transparent exports",
     "WEBGL": "organisms, depth, impossible space and multipass feedback"
   },
-  "sourceAuthorityOrder": [
-    "DIRECT_BYTE_INSPECTION_AND_CHECKSUM",
-    "REPOSITORY_FILE_AT_KNOWN_REF",
-    "CONVERSATION_OR_LIBRARY_FILE_CONTENT",
-    "APPROVED_CANON_OR_DECISION",
-    "PACKAGE_DESCRIPTION",
-    "RECOVERED_SUMMARY_OR_MEMORY"
+  "epistemicStatuses": [
+    "VERIFIED",
+    "CANONICAL",
+    "INFERRED",
+    "SPECULATIVE",
+    "NEEDS_CONFIRMATION",
+    "DEPRECATED"
   ],
   "invariants": [
-    "Every essential visual element has a semantic passport or declared atmospheric role.",
-    "Every factual claim has provenance.",
-    "Every user decision creates a later consequence.",
+    "Every completed canonical journey begins at A.",
+    "M is always potentially discoverable and never mandatory.",
+    "Every completed canonical journey converges at Y.",
+    "B through X form an interwoven stateful field rather than an ordered sequence.",
+    "Every meaningful user decision creates a later consequence.",
+    "Revisiting a coordinate may produce a mutated state derived from memory.",
     "Every path preserves privacy-minimized session memory.",
-    "Every path provides source and uncertainty access.",
-    "Every path can pause, reverse or exit.",
-    "Every path converges through memory, provenance, relation, reflection, contribution and re-entry.",
-    "Every spoken canonical line produces or coincides with a visible scene consequence.",
-    "Every nontrivial interaction has an interaction passport and a non-pointer alternative.",
-    "Core journey scenes use one active 100svh scene without document scroll.",
-    "The Commons Wall is an optional postscript and the only planned canonical document-scroll exception.",
-    "Public wall content requires exact preview, explicit consent, moderation, reporting and withdrawal behavior.",
-    "The KODEX Voice distinguishes evidence, interpretation and mythopoetic language.",
+    "Every factual claim has provenance and an epistemic status.",
+    "Every nontrivial interaction has a non-pointer equivalent.",
+    "Scientific, cultural, speculative and mythopoetic layers remain distinguishable.",
+    "Documentation does not count as implemented runtime.",
     "No deployment occurs without APROBAR DEPLOY."
   ],
   "deployment": {
