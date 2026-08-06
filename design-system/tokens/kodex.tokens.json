@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "KODEX−∞ Core Tokens",
+  "version": "0.1.0",
+  "status": "BOOTSTRAP",
+  "color": {
+    "field": {
+      "obsidian": "#050608",
+      "black": "#000000",
+      "bone": "#F0ECE3",
+      "openWhite": "#FAFAF7"
+    },
+    "signal": {
+      "livingRed": "#FF3833",
+      "violet": "#7855D5",
+      "acid": "#B9FF3B",
+      "cyan": "#00E8F0",
+      "orange": "#FF7A00",
+      "magenta": "#FF1EAA"
+    },
+    "text": {
+      "onDark": "#F0ECE3",
+      "mutedOnDark": "#9A9992",
+      "onLight": "#101113",
+      "mutedOnLight": "#5D5E61"
+    },
+    "state": {
+      "repliegue": "#4A1F2B",
+      "guardia": "#7A2738",
+      "busqueda": "#B13A38",
+      "movilizacion": "#DD5731",
+      "afirmacion": "#F08A24",
+      "coraje": "#F4B72A",
+      "equilibrio": "#B8C53C",
+      "disponibilidad": "#55A95E",
+      "integracion": "#2E9B83",
+      "discernimiento": "#278DA8",
+      "vinculo": "#3F71C7",
+      "vitalidad": "#7855D5",
+      "quietud": "#A851C8",
+      "radiancia": "#D46DB3"
+    }
+  },
+  "space": {
+    "1": "0.25rem",
+    "2": "0.5rem",
+    "3": "0.75rem",
+    "4": "1rem",
+    "6": "1.5rem",
+    "8": "2rem",
+    "12": "3rem",
+    "16": "4rem",
+    "24": "6rem"
+  },
+  "radius": {
+    "none": "0",
+    "micro": "2px",
+    "control": "6px",
+    "panel": "12px",
+    "round": "999px"
+  },
+  "line": {
+    "hairline": "1px",
+    "signal": "2px",
+    "emphasis": "3px"
+  },
+  "duration": {
+    "instant": "0ms",
+    "micro": "120ms",
+    "short": "240ms",
+    "medium": "600ms",
+    "long": "1600ms",
+    "ambient": "12000ms"
+  },
+  "easing": {
+    "standard": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "enter": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "exit": "cubic-bezier(0.7, 0, 0.84, 0)",
+    "linear": "linear"
+  },
+  "layout": {
+    "worldShare": 0.75,
+    "narrativeShare": 0.15,
+    "navigationShare": 0.07,
+    "metadataShare": 0.03,
+    "maxReadingWidth": "68ch",
+    "touchTargetMin": "44px"
+  },
+  "performance": {
+    "maxActiveHeavyCanvases": 1,
+    "mobileDprCap": 1.2,
+    "desktopDprCap": 1.65,
+    "highPriorityMotionMax": 2
+  },
+  "notes": [
+    "Token values are implementation defaults, not empirical claims.",
+    "The layout shares are composition heuristics, not mandatory measured coverage.",
+    "Color may not carry essential meaning alone.",
+    "Typography families are intentionally omitted until font rights are approved."
+  ]
+}
