@@ -1,12 +1,12 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "project": {
     "name": "KODEX−∞",
     "technicalName": "kodex-minus-infinity",
     "category": "Living Information Design",
     "creator": "Nicolás Ortega / Ocín",
     "professionalPosition": "Creative Technologist + Generative Art Director",
-    "status": "CANONICAL_BOOTSTRAP",
+    "status": "CANONICAL_CONTEXT_AND_ALGORITHM_BOOTSTRAP",
     "snapshotDate": "2026-08-05"
   },
   "repositories": {
@@ -24,6 +24,7 @@
     "START_HERE.md",
     "SKILL.md",
     "AGENTS.md",
+    "context/ERRATA.md",
     "context/MASTER_CONTEXT.md",
     "context/PROTOTYPE_AND_CODE_INVENTORY.md",
     "context/CONVERSATION_DECISIONS.md",
@@ -35,6 +36,26 @@
     "architecture/SESSION_MEMORY_AND_PATHS.md",
     "product/CURRENT_STATE.md",
     "product/EXPERIENCE_ARCHITECTURE.md"
+  ],
+  "authoritativeRegistries": [
+    "data/experience-graph.json",
+    "data/state-registry.json",
+    "data/module-registry.json",
+    "data/registries/repositories.yaml",
+    "data/registries/prototypes.yaml",
+    "data/registries/package-checksums.yaml"
+  ],
+  "executableReferences": [
+    {
+      "path": "packages/core-reference/",
+      "status": "REFERENCE_IMPLEMENTATION",
+      "tests": "PASSING"
+    },
+    {
+      "path": "packages/recovered/helix-transparent-v1/",
+      "status": "RECOVERED_SOURCE",
+      "tests": "NOT_RUNTIME_VALIDATED_IN_REPOSITORY"
+    }
   ],
   "canonicalNodes": [
     "minus-infinity",
@@ -73,6 +94,14 @@
     "CANVAS": "lightweight procedural graphics and transparent exports",
     "WEBGL": "organisms, depth, impossible space and multipass feedback"
   },
+  "sourceAuthorityOrder": [
+    "DIRECT_BYTE_INSPECTION_AND_CHECKSUM",
+    "REPOSITORY_FILE_AT_KNOWN_REF",
+    "CONVERSATION_OR_LIBRARY_FILE_CONTENT",
+    "APPROVED_CANON_OR_DECISION",
+    "PACKAGE_DESCRIPTION",
+    "RECOVERED_SUMMARY_OR_MEMORY"
+  ],
   "invariants": [
     "Every essential visual element has a semantic passport or declared atmospheric role.",
     "Every factual claim has provenance.",
@@ -92,6 +121,7 @@
     "rawConversationExportsAllowed": false,
     "privateReflectionAllowed": false,
     "restrictedCulturalKnowledgeAllowed": false,
-    "secretsAllowed": false
+    "secretsAllowed": false,
+    "commercialBinaryMigrationRequiresReview": true
   }
 }
