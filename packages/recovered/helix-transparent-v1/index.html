@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>KODEX — Hélice transparente</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+    }
+    .controls {
+      position: fixed;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      pointer-events: none;
+    }
+    button {
+      pointer-events: auto;
+      min-height: 42px;
+      padding: 0 15px;
+      border: 1px solid rgba(128,128,128,.45);
+      background: rgba(10,10,12,.78);
+      color: white;
+      font: 11px/1 ui-monospace, monospace;
+      letter-spacing: .08em;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div class="controls">
+    <button id="pause">PAUSE</button>
+    <button id="invert">BLACK / WHITE</button>
+    <button id="png">SAVE PNG</button>
+  </div>
+
+  <script src="./helix.js"></script>
+</body>
+</html>
