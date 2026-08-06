@@ -4,231 +4,197 @@ Status: `CANONICAL PRODUCT TARGET / NOT IMPLEMENTED`
 
 ## Product promise
 
-One complete KODEX journey must prove that the system can transform a real, traceable corpus into a path-dependent living information experience.
+V0 must prove that a finite body of verified Ocín/KODEX material can behave as an open interaction field with multiple emergent trajectories, memory, optional Heart access and trace-derived Return.
+
+It is not a two-path demo.
 
 ```text
-−∞
-→ THRESHOLD
-→ OBSERVE or REMEMBER
-→ ARCHIVE
-→ HEART
-→ RETURN / +∞
-→ ARTIFACT + SOURCES + CONTRIBUTION + RE-ENTRY
+A / −∞ / THRESHOLD
+→ CONNECTED INTERMEDIATE LETTER FIELD
+→ MULTIPLE NONALPHABETICAL TRAJECTORIES
+→ M / HEART / 0 OPTIONAL
+→ Y / RETURN / +∞
+→ ROUTE ARTIFACT + SOURCES + RE-ENTRY
 ```
 
-## Recommended first corpus
+## Corpus
 
-**KODEX Genesis Archive** — the public, rights-cleared evolution of KODEX itself through approved code, commits, scene specifications, design systems and public visual works.
+**KODEX Genesis Archive** — selected original Ocín works, verified KODEX systems, code lineage and approved Book fragments.
 
-Why it is strategically strong:
+Central question:
 
-- the material already exists in multiple forms;
-- provenance can be verified through Git history and approved artifacts;
-- the system becomes its own first living archive;
-- OBSERVE and REMEMBER naturally produce different paths;
-- the result doubles as a product demonstration and case study;
-- private conversations can remain outside the public corpus.
+> How did Ocín's unresolved visual codes become KODEX: a living information system with memory, relation and consequence?
 
-Status: `PROPOSED FOR HUMAN APPROVAL`. See `research/FIRST_CORPUS_SELECTION.md`.
+The corpus supplies material and relations. It does not prewrite the visitor's route.
 
-## Central question
+## Minimum coordinate set
+
+All A–Y coordinates remain canonical, but V0 builds only a connected subset sufficient to prove the system.
+
+Required structural roles:
 
 ```text
-HOW DID KODEX CHANGE FROM A VISUAL LANGUAGE INTO A LIVING INFORMATION SYSTEM?
+A    common origin and first meaningful action
+B/C  at least two distinct initial concept possibilities
+H/K  intermediate relational or artifact nodes
+M    optional distributed Heart
+Q/R  later consequence and mutated revisit capacity
+Y    route-derived convergence
 ```
 
-Supporting questions:
+These letter examples are implementation placeholders until the creator-approved alphabet matrix assigns exact concepts. Implementations must reference the current `data/alphabet-topology.json` registry rather than assume alphabetical sequence.
 
-- Which concepts persisted?
-- Which code systems implemented them?
-- Where did visual experiments become reusable engines?
-- Which claims were later constrained or rejected?
-- What remains unresolved?
+## Required journey behavior
 
-## User paths
+V0 must provide:
 
-### OBSERVE
+- one common entry at A;
+- at least six consequential coordinates in total;
+- at least three moments with multiple meaningful exits;
+- at least two connected semantic worlds;
+- at least one loop;
+- at least one mutated revisit such as `K → ... → K′`;
+- at least one delayed consequence from an earlier action;
+- M potentially reachable from more than one region;
+- a complete valid journey that reaches Y without M;
+- a complete valid journey that visits M and returns to the exact prior anchor;
+- at least eight reproducible trajectory signatures for QA;
+- a Y artifact generated from the full event trace.
 
-The user begins from current, verifiable structures:
+The eight signatures are test coverage, not the number of routes offered to visitors.
 
-- repositories and branches;
-- scene architecture;
-- code systems;
-- visual grammar;
-- active modules;
-- provenance and implementation state.
+## A — entry contract
 
-Primary interaction roles:
+A must include:
 
-```text
-COMPARE
-TRACE
-OPEN SOURCE
-VIEW METHOD
-```
-
-Suggested artifact: **Relation Constellation**.
-
-### REMEMBER
-
-The user begins from sequence and transformation:
-
-- early visual concepts;
-- recurring symbols and statements;
-- prototype generations;
-- decisions and rejected directions;
-- transitions from image to system;
-- memory carried into current canon.
-
-Primary interaction roles:
-
-```text
-RECONSTRUCT
-COMPARE VERSIONS
-PRESERVE TRACE
-OPEN TESTIMONY / DOCUMENT
-```
-
-Suggested artifact: **Memory Topography**.
-
-## Node contracts
-
-### `−∞`
-
-Question: what exists before the system is integrated?
-
-Visual behavior:
-
-- fragmented approved artifacts;
-- incomplete edges and relations;
-- no fabricated metadata;
-- one visible route to orientation.
-
-Memory write: session start only.
-
-### `THRESHOLD`
-
-Required controls:
-
-- language;
-- motion full/reduced/off;
+- obsidian visual state;
+- clear accessibility and consent controls;
 - sound off by default;
-- source/method access;
+- motion full/reduced/off;
 - safe exit;
-- OBSERVE or REMEMBER decision.
+- one first meaningful action;
+- multiple state-dependent exits;
+- initial session-memory write.
 
-Memory write: path choice and accessibility preferences.
+A may suggest intentions such as observe, remember, connect, transform or contribute, but these are action families—not fixed paths.
 
-### `ARCHIVE`
+## Intermediate coordinate contract
 
-Required views:
+Every implemented letter must contain:
 
-- artifact/record index;
-- source and commit provenance;
-- relation tracing;
-- version comparison;
-- unresolved and rights-blocked states.
+- one creator-approved concept set;
+- one or more verified visual activators;
+- source and rights metadata;
+- at least one meaningful interaction;
+- at least two valid semantic relations unless intentionally terminal-adjacent;
+- memory reads and writes;
+- spectral behavior;
+- a defined contribution to Y;
+- a contextual M portal state;
+- keyboard, touch, reduced-motion and non-WebGL representation.
 
-Memory write: records, sources, relations, versions and contradictions encountered.
+## M — Heart contract
 
-### `HEART`
+M remains optional and non-scoring.
 
-Default: natural breath.
+Portal states:
 
-Optional: guided synthetic pulse labeled `GUIDED / NOT MEASURED`.
+```text
+LATENT → RESONANT → AVAILABLE
+```
 
-Purpose:
+M may be approached from different regions and visually adapt to the accumulated trace while preserving one canonical identity.
 
-- lower motion density;
-- allow the user to pause and integrate;
-- make the carried path visible as a slow, non-scoring pulse;
-- prepare Return.
+Requirements:
 
-Memory write: selected mode only.
+- voluntary entry;
+- explicit accessible action when available;
+- no inferred emotional or spiritual state;
+- no biometric claim;
+- natural stillness as default;
+- optional synthetic or user-tapped pulse clearly labeled;
+- exact restoration of prior coordinate, focus and local state;
+- no requirement to visit M before Y.
 
-### `RETURN / +∞`
+## Y — Return contract
 
-Required outputs:
+Y must derive from the full trajectory and expose:
 
-- path summary;
-- sources and methods;
+- letter trace;
+- visit counts and mutated revisits;
+- committed actions;
+- delayed consequences;
+- traced relations;
+- spectral trace;
+- M visit status without judgment;
+- sources and uncertainty;
 - unresolved questions;
-- path-dependent artifact;
-- download/export when supported;
-- repository/code access;
-- contribution route;
-- connected re-entry.
+- route-specific artifact;
+- coherent re-entry possibilities.
 
-## Information classes
+Y uses open white as integration and legibility, not final truth.
 
-The first corpus should include:
+## Event trace
 
-- `OBSERVED`: files, commits, dates, code paths and public artifacts;
-- `DERIVED`: counts and relations computed from verified records;
-- `INTERPRETATION`: KODEX's reading of its own evolution;
-- `TESTIMONY`: attributed creator statements from approved public works;
-- `SYNTHETIC`: generative artifact geometry and atmospheric fields;
-- `UNKNOWN`: missing package bytes, unresolved integration and rights status.
+Minimum runtime record:
+
+```yaml
+journey:
+  current_letter: A
+  trace: []
+  visit_counts: {}
+  committed_actions: []
+  ignored_signals: []
+  relations_traced: []
+  spectral_trace: []
+  m_portal_states: {}
+  m_visits: []
+  return_anchor: null
+  source_ids_opened: []
+  artifact_seed: ""
+```
 
 ## Render plan
 
 ```text
 DOM
-  controls, questions, source and method views
+  meaning, controls, source access and accessibility
 
 SVG
-  archive graph, relation map, annotations and final artifact
+  glyphs, relation diagrams, traces and final artifact
 
 CANVAS
-  lightweight fragments, path sediment and transparent export
+  lightweight procedural fields and export
 
 WEBGL
-  optional Threshold organism or spatial transition only when performance permits
+  optional organisms, impossible space and depth effects
 ```
 
-The slice must remain complete without WebGL.
-
-## Minimum data model
-
-```yaml
-record:
-  id: ""
-  title: ""
-  artifact_type: ""
-  created_at: ""
-  repository: ""
-  branch: ""
-  path: ""
-  blob_sha: ""
-  status: ""
-  source_ids: []
-  related_records: []
-  claim_classes: []
-  rights_status: ""
-```
+The complete journey must remain understandable and operable without WebGL.
 
 ## Acceptance criteria
 
-- one real corpus, no placeholder telemetry;
-- OBSERVE and REMEMBER change sequence, emphasis and artifact;
-- every visual variable is documented;
-- every factual item opens provenance;
-- private conversation content is absent;
-- mobile 390×844 and 412×915 are complete;
-- keyboard, reduced motion and motion off are complete;
-- WebGL failure preserves the entire journey;
-- Heart is optional and non-clinical;
-- Return is semantic, not a redirect;
-- source/artifact manifest can be exported;
-- no production deployment without approval.
+- no Path A / Path B interface or fixed route selector;
+- one real, rights-reviewed corpus;
+- multiple emergent trajectories from successive interaction;
+- at least eight reproducible QA signatures;
+- revisiting a coordinate can alter its state;
+- every consequential action changes something later;
+- every factual item exposes provenance and epistemic status;
+- private source material remains excluded;
+- target viewports 390×844, 412×915 and desktop pass;
+- keyboard, touch, reduced motion and motion off are complete;
+- M is optional, discoverable and non-clinical;
+- Y is semantic and route-dependent;
+- no production deployment without `APROBAR DEPLOY`.
 
 ## Explicit non-goals for V0
 
-- complete seven-scene production universe;
+- producing all 25 coordinates as complete scenes;
+- revealing the entire graph as a sitemap;
 - real biometric integration;
-- community accounts or social network;
-- scientific holography simulator;
-- every generated visual pack;
-- marketplace or payment implementation;
-- automated publication of contributions;
-- proof of metaphysical claims.
+- consciousness scoring;
+- community accounts or social ranking;
+- automated publication of user contributions;
+- proof of metaphysical or quantum claims;
+- adding new visual families before the locked corpus proves insufficient.
