@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sys
 import tempfile
 import unittest
 import zipfile
@@ -9,9 +10,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "kodex_package_ingest.py"
-SPEC = importlib.util.spec_from_file_location("kodex_package_ingest", SCRIPT)
+MODULE_NAME = "kodex_package_ingest"
+SPEC = importlib.util.spec_from_file_location(MODULE_NAME, SCRIPT)
 assert SPEC and SPEC.loader
 MODULE = importlib.util.module_from_spec(SPEC)
+sys.modules[MODULE_NAME] = MODULE
 SPEC.loader.exec_module(MODULE)
 
 
