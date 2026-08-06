@@ -1,180 +1,174 @@
 # START HERE — KODEX−∞
 
-This is the mandatory entry point for every human contributor and every AI model.
+This is the mandatory entry point for every human contributor and every AI agent.
 
 ## 1. What KODEX is
 
-KODEX−∞ is a **Living Information Design system**: a generative archive, interactive information system, contemplative interface and creative operating system.
+KODEX−∞ is a living visual language, generative archive, interactive multiverse and creative operating system.
 
-It transforms:
+It connects Ocín's authored visual codes, works, symbols, code, memory, research and user decisions through state, relation and consequence.
+
+KODEX is not a generic cyberpunk website, a mystical dashboard, a random generative-art gallery, a personality test or a collection of unrelated loops.
+
+## 2. Canonical experience law
+
+The complete coordinate system is an operational alphabet:
 
 ```text
-EVIDENCE + MEMORY + CULTURAL CONTEXT + SYMBOLIC LANGUAGE + USER DECISIONS
-                                      ↓
-                    LIVING VISUAL / INTERACTIVE SYSTEM
-                                      ↓
-             COMPREHENSION + ASTONISHMENT + CONTINUATION
+A B C D E F G H I J K L M N O P Q R S T U V W X Y
 ```
 
-KODEX is not a generic cyberpunk website, a mystical dashboard, a random generative-art gallery or a collection of unrelated loops.
+```text
+A = −∞ / COMMON ORIGIN / THRESHOLD
+M = HEART / 0 / OPTIONAL DISTRIBUTED DEPTH
+Y = RETURN / +∞ / ROUTE-DERIVED CONVERGENCE
+B–X = INTERWOVEN CONCEPT-NODES
+```
 
-## 2. Repository roles
+The order is not alphabetical. Letters may be skipped, revisited and transformed by accumulated memory.
+
+```text
+A → C → H → F → Q → Y
+A → B → K → M → K′ → R → X → Y
+```
+
+M is always potentially discoverable but never compulsory. Y is generated from the actual event trace.
+
+Read first:
+
+- `docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md`
+- `data/alphabet-topology.json`
+
+## 3. Repository roles
 
 ```text
 wenumapu8-droid/kodex-minus-infinity
-  Canon, context, algorithms, registries, reusable engines, methods and future product architecture.
+  Canon, context, algorithms, graph contracts, registries,
+  research, methods and agent operating rules.
 
 wenumapu8-droid/wenu-frontend
-  Existing Astro implementation, KODEX routes, visual components, shaders, assets and experiments.
+  Existing Astro implementation, KODEX routes, components,
+  shaders, assets and interactive laboratories.
 ```
 
-Do not assume the default branch contains the most advanced implementation. The currently verified implementation work includes the branch:
+Documentation does not count as implemented runtime. Preserve original repository, branch, path and checksum during migration.
 
-```text
-feature/kodex-depth-engine
-```
-
-Every migration must preserve original repository, branch, path and checksum.
-
-## 3. Authority order
+## 4. Authority order
 
 When sources conflict, use this order:
 
 ```text
 DIRECT BYTE INSPECTION + CHECKSUM
 → REPOSITORY FILE AT A KNOWN REF
-→ CONVERSATION/LIBRARY FILE CONTENT
 → APPROVED DECISION OR CANON
+→ CURRENT STATE + IMPLEMENTATION EVIDENCE
+→ CONVERSATION OR LIBRARY FILE CONTENT
 → PACKAGE DESCRIPTION
 → RECOVERED SUMMARY OR MEMORY
 ```
 
-Read `context/ERRATA.md` before repeating any package path, checksum or correction.
+The most recent approved ADR supersedes older route descriptions. Do not silently reconcile contradictions.
 
-## 4. Required reading order
-
-Read these files before editing:
+## 5. Required reading order
 
 1. `START_HERE.md`
-2. `SKILL.md`
-3. `AGENTS.md`
-4. `context/ERRATA.md`
-5. `context/MASTER_CONTEXT.md`
-6. `context/PROTOTYPE_AND_CODE_INVENTORY.md`
-7. `context/CONVERSATION_DECISIONS.md`
-8. `context/REJECTED_DIRECTIONS.md`
-9. `canon/KODEX_CANON.md`
-10. `canon/KODEX_EPISTEMIC_STANDARD.md`
-11. `architecture/KODEX_ALGORITHM.md`
-12. `architecture/RUNTIME_ARCHITECTURE.md`
-13. `architecture/SESSION_MEMORY_AND_PATHS.md`
-14. `product/CURRENT_STATE.md`
-15. `product/EXPERIENCE_ARCHITECTURE.md`
-16. the relevant design-system, experience, module, schema and registry files.
+2. `PROJECT_MANIFEST.json`
+3. `canon/KODEX_CANON.md`
+4. `canon/KODEX_EPISTEMIC_STANDARD.md`
+5. `docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md`
+6. `data/alphabet-topology.json`
+7. `product/CURRENT_STATE.md`
+8. `product/EXPERIENCE_ARCHITECTURE.md`
+9. `experiences/vertical-slice-v0/README.md`
+10. `experiences/vertical-slice-v0/spec.yaml`
+11. the active Linear issue and affected implementation files.
 
-## 5. Non-negotiable invariants
+Read `context/ERRATA.md` before repeating package paths, checksums or corrected claims.
+
+## 6. Non-negotiable invariants
 
 ```text
-Every visible element has a semantic or declared atmospheric role.
-Every factual claim has provenance.
-Every user decision creates a later consequence.
-Every path preserves memory.
+Every completed canonical journey begins at A.
+M is always potentially discoverable and never mandatory.
+Every completed canonical journey converges at Y.
+B–X form an interwoven field, not an ordered sequence.
+Every meaningful action creates a later consequence.
+Revisits may produce mutated node states.
+Every path preserves privacy-minimized memory.
+Every factual claim has provenance and epistemic status.
 Every path can pause, reverse or exit.
-Every path converges semantically at RETURN / +∞.
 Every model works from the same canon.
 No deployment occurs without APROBAR DEPLOY.
 ```
 
-## 6. Truth classes
+## 7. Epistemic statuses
 
-All claims must be classified:
-
-```text
-OBSERVED
-DERIVED
-ESTIMATED
-PROXY
-INTERPRETATION
-TESTIMONY
-SPECULATION
-MYTHOPOETIC
-SYNTHETIC
-UNKNOWN
-```
-
-Never convert symbolic language into scientific fact. Never fill missing data for aesthetic symmetry.
-
-## 7. Canonical journey
+All material must be classified as:
 
 ```text
-−∞
-→ THRESHOLD
-→ PROLOGUE
-→ DESCENT
-→ ARCHIVE
-→ MACHINE
-→ HEART
-→ COSMOLOGY
-→ RETURN / +∞
+VERIFIED
+CANONICAL
+INFERRED
+SPECULATIVE
+NEEDS_CONFIRMATION
+DEPRECATED
 ```
 
-This is a functional graph, not a forced linear sequence. The first product slice is intentionally smaller:
+Never convert symbolic language into scientific fact. Never universalize cultural symbols. Never fill missing data or unassigned letters for aesthetic symmetry.
 
-```text
-−∞ → THRESHOLD → OBSERVE or REMEMBER → ARCHIVE → HEART → RETURN / +∞
-```
+## 8. Visual and technical lineage
 
-## 8. Verified visual and technical lineage
+Verified or source-linked KODEX work includes:
 
-Existing KODEX work includes:
-
-- Astro application architecture;
-- fullscreen, no-scroll scene composition;
+- Astro application and fullscreen no-scroll compositions;
 - DOM / SVG / Canvas / WebGL responsibility split;
 - responsive mobile poster layouts;
-- pointer, touch and optional audio input;
-- WebGL2 shader prototypes;
-- multipass SOURCE → MEMORY → TREATMENT pipelines;
-- DORMANT → AWARE → OPEN states;
-- scene grammar encoded in JSON and TypeScript;
-- original SVG symbol and interface packs;
-- transparent Canvas assets;
-- impossible-form procedural asset packs;
+- pointer, touch, keyboard and optional audio input;
+- shader and multipass feedback prototypes;
+- OBSERVE and OBSERVE V2;
+- Spatial Engine v1/v2;
+- Split Corridor, Ripple Floor and impossible-space systems;
+- Mirror Identity and Perspective Flip;
+- original SVG, design-system, visual-grammar and typography packs;
+- Helix Transparent;
 - reduced-motion and fallback behavior;
-- telemetry and debug modes for visual QA.
+- visual QA telemetry and debug modes.
 
-The full inventory and confidence status live in:
-
-- `context/PROTOTYPE_AND_CODE_INVENTORY.md`;
-- `data/registries/prototypes.yaml`;
-- `data/registries/repositories.yaml`;
-- `data/registries/package-checksums.yaml`.
-
-`ARCHIVE_VERIFIED` means archive bytes, checksum and file list were inspected. It does **not** mean runtime validation, rights clearance or production integration.
+These are source materials and candidate engines. They are not yet an assembled A–Y experience.
 
 ## 9. Current product objective
 
-Do not expand the universe indiscriminately. The current objective is:
+Build one finite executable organism that proves the larger topology without attempting to produce all 25 letters.
 
-1. consolidate context;
-2. inventory and preserve existing code;
-3. choose one real corpus;
-4. implement one coherent vertical slice;
-5. validate mobile, accessibility, provenance and performance;
-6. package the result as a public cultural product and credible commercial case study.
+V0 must demonstrate:
+
+- one common A;
+- a connected subset of intermediate letters;
+- multiple emergent nonalphabetical trajectories;
+- at least one loop and mutated revisit;
+- at least one delayed consequence;
+- M approachable from more than one region;
+- a valid journey with and without M;
+- Y generated from the complete trace;
+- a path-dependent artifact;
+- provenance, accessibility and fallback completeness.
+
+Representative trajectories may be used for QA, but must never become Path A / Path B architecture.
 
 ## 10. Required agent preflight
 
-Before making changes, return:
+Before changing files, return:
 
 ```yaml
 preflight:
   objective: ""
   repository: ""
   branch: ""
+  active_milestone: ""
   files_actually_read: []
   existing_code_inspected: []
   canonical_constraints: []
+  affected_letters: []
   evidence_or_sources_required: []
   proposed_changes: []
   tests_planned: []
@@ -182,7 +176,7 @@ preflight:
   deployment_requested: false
 ```
 
-Do not claim to have inspected a file that was not fetched.
+Do not claim to have inspected, implemented or validated something without evidence.
 
 ## 11. Public-repository boundary
 
@@ -190,19 +184,18 @@ Do not commit:
 
 - raw private conversations;
 - personal identifiers or reflections;
-- secrets;
+- secrets or credentials;
 - rights-unclear assets;
 - restricted cultural knowledge;
-- commercial binaries before product-delivery and license review.
+- commercial binaries before licensing and product-delivery review.
 
-Summaries, checksums, source manifests and reviewed public code may be committed when their status is clear.
+Reviewed summaries, checksums, source manifests, canonical decisions and public-safe code may be committed when their status is explicit.
 
 ## 12. Deployment boundary
 
-Preparation, commits, branches, pull requests and previews do not authorize production deployment.
-
-The only deployment authorization is the exact phrase:
+Commits, merges, previews and prototypes do not authorize production deployment.
 
 ```text
-APROBAR DEPLOY
+DEPLOYMENT STATUS: BLOCKED
+REQUIRED AUTHORIZATION: APROBAR DEPLOY
 ```
