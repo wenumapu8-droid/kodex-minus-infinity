@@ -1,0 +1,160 @@
+version: 1
+snapshot_date: 2026-08-05
+status_vocabulary:
+  - REPOSITORY_VERIFIED
+  - CONVERSATION_FILE_VERIFIED
+  - PACKAGE_REPORTED
+  - INTEGRATION_UNKNOWN
+  - MIGRATION_PENDING
+  - SUPERSEDED_CANDIDATE
+
+prototypes:
+  - id: PROTO-THRESHOLD-001
+    name: KDX_THRESHOLD_PORTAL_001
+    family: threshold_portal
+    status: REPOSITORY_VERIFIED
+    repository: wenumapu8-droid/wenu-frontend
+    branch: feature/kodex-depth-engine
+    known_path: src/kodex/threshold-portal/README.md
+    technology: [Astro, WebGL2, GLSL, multipass_feedback]
+    states: [DORMANT, AWARE, OPEN]
+    pipeline: [source_pass, feedback_pass, composite_pass]
+    migration: PENDING
+
+  - id: PROTO-OBSERVE-001
+    name: KODEX OBSERVE Shader Prototype
+    family: observation
+    status: CONVERSATION_FILE_VERIFIED
+    technology: [HTML, CSS, TypeScript, WebGL2, GLSL, Astro, KodeLife]
+    states: [DORMANT, AWARE, OPEN]
+    known_event: kodex:observe
+    known_paths:
+      - astro/KodexObserveScene.astro
+      - astro/kodex-observe-client.ts
+      - astro/kodex-observe.css
+      - shaders/fullscreen.vert.glsl
+      - shaders/observe.frag.glsl
+      - kodelife/KDX_OBSERVE_001.frag
+    migration: PENDING
+
+  - id: PROTO-OBSERVE-002
+    name: OBSERVE V2
+    family: observation
+    status: PACKAGE_REPORTED
+    technology: [Astro, TypeScript, WebGL2, multipass, SVG]
+    states: [idle, aware, locked, observing]
+    runtime_variables: [signalStrength, focus, anomaly, nodeCount, latency, checksum, pointer]
+    telemetry: [FPS, frameTime, droppedFrames, refreshEstimate, webglActive, fallbackActive, passCount]
+    debug_query: debug=1
+    semantic_review_required: true
+    migration: PENDING
+
+  - id: PROTO-SPATIAL-001
+    name: KODEX Spatial Engine v1
+    family: impossible_space
+    status: CONVERSATION_FILE_VERIFIED
+    technology: [WebGL2, GLSL, Astro]
+    modes: [DUAL_VANISH, RIPPLE_FLOOR, SPLIT_CORRIDOR, WRINKLED_REALITY]
+    known_event: kodex:spatial-activate
+    migration: PENDING
+
+  - id: PROTO-SPATIAL-002
+    name: KODEX Spatial Engine v2 Multipass Memory Lab
+    family: impossible_space
+    status: CONVERSATION_FILE_VERIFIED
+    technology: [WebGL2, GLSL, Astro, multipass_feedback]
+    passes: [SOURCE, MEMORY, TREATMENT]
+    modes: [DUAL_VANISH, RIPPLE_FLOOR, SPLIT_CORRIDOR, WRINKLED_REALITY]
+    treatments: [SIGNAL_CLEAN, CRT_SCAN, DITHER_MATRIX, BITMAP_THRESHOLD, THERMAL_MAP, CHROMATIC_SPLIT, GLITCH_FRACTURE, PIXEL_DATA_STREAK]
+    mobile_dpr_cap: 1.20
+    desktop_dpr_cap: 1.65
+    migration: PENDING
+
+  - id: PROTO-SPLIT-001
+    name: KDX_SPLIT_CORRIDOR Concept 05/08
+    family: branching_space
+    status: CONVERSATION_FILE_VERIFIED
+    technology: [WebGL2, raymarching, Astro, TypeScript]
+    states: [DORMANT, AWARE, OPEN]
+    known_event: kodex:split-open
+    uniforms: [u_branchBias, u_branchPulseAge, u_pointerVelocity]
+    migration: PENDING
+
+  - id: PROTO-IMPOSSIBLE-001
+    name: KDX Impossible Structure
+    family: impossible_architecture
+    status: PACKAGE_REPORTED
+    technology: [WebGL2, raymarching, Astro, KodeLife]
+    states: [DORMANT, AWARE, OPEN]
+    known_event: kodex:impossible-open
+    migration: PENDING
+
+  - id: PROTO-MIRROR-001
+    name: KDX Mirror Identity
+    family: reflective_organism
+    status: PACKAGE_REPORTED
+    technology: [WebGL2, GLSL, Astro, TypeScript, KodeLife]
+    migration: PENDING
+
+  - id: PACK-IMPOSSIBLE-001
+    name: KODEX Impossible Forms Vol. 1
+    family: commercial_procedural_asset_pack
+    status: CONVERSATION_FILE_VERIFIED
+    form_count: 12
+    forms: [transmutation-cube, mobius-weave, torus-knot-reactor, hypercube-threads, chrysalis-spiral, serpent-lattice, orbital-cocoon, fracture-crown, resonance-spine, impossible-flower, archive-vortex, mirror-organism]
+    archive_name: KODEX_Impossible_Forms_Vol1_SELLABLE.zip
+    verified_python_path: source/python/reference_renderer.py
+    invalid_claimed_path: source/python/kodex_forms.py
+    migration: PENDING
+
+  - id: PROTO-CANVAS-001
+    name: KODEX Helix Transparent
+    family: transparent_line_organism
+    status: PACKAGE_REPORTED
+    technology: [Canvas2D, JavaScript, HTML]
+    external_dependencies: none
+    archive_name: KODEX_Helix_Transparent.zip
+    known_files: [index.html, helix.js, README.md]
+    transparency_method: ctx.clearRect
+    migration: PENDING
+
+  - id: PACK-SVG-001
+    name: KODEX SVG Pack v1
+    family: vector_design_system
+    status: CONVERSATION_FILE_VERIFIED
+    technology: [SVG, CSS]
+    original_geometric_redraws: true
+    transparent_background: true
+    file_count: 12
+    migration: PENDING
+
+  - id: PACK-DESIGN-001
+    name: KODEX Design System Pack V1
+    family: tokens_and_scene_blueprints
+    status: CONVERSATION_FILE_VERIFIED
+    technology: [JSON, CSS, TypeScript, Astro]
+    blueprints: [Threshold_Portal, Observation_Eye, Descent_Tunnel, Archive_Dossier, Ritual_Machine, Cosmology_Core, Ghost_Hardware, Return_Signal]
+    migration: PENDING
+
+  - id: SPEC-CONTEMPLATIVE-001
+    name: The Inner Threshold
+    family: contemplative_experience
+    status: CONVERSATION_FILE_VERIFIED
+    duration_minutes: 7
+    default_breath: natural
+    physiological_measurements: []
+    migration: PENDING
+
+  - id: RESEARCH-KODEX-001
+    name: KODEX Tesis Holografia Cuerdas Computacion v1
+    family: scientific_computational_research
+    status: CONVERSATION_FILE_VERIFIED
+    formats: [PDF, DOCX]
+    product_priority: LATER_RESEARCH_BRANCH
+    migration: PENDING
+
+rules:
+  - Check this registry before creating a new engine or package.
+  - Do not upgrade PACKAGE_REPORTED to VERIFIED without inspecting files.
+  - Do not claim production integration without repository evidence.
+  - Every migrated artifact requires provenance, checksum, rights and destination.
