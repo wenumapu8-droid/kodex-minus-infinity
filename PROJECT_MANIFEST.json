@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.2.0",
+  "schemaVersion": "0.2.1",
   "project": {
     "name": "KODEX−∞",
     "technicalName": "kodex-minus-infinity",
@@ -7,7 +7,7 @@
     "creator": "Nicolás Ortega / Ocín",
     "professionalPosition": "Creative Technologist + Generative Art Director",
     "status": "CANONICAL_CONTEXT_AND_ALGORITHM_BOOTSTRAP",
-    "snapshotDate": "2026-08-05"
+    "snapshotDate": "2026-08-06"
   },
   "repositories": {
     "canonical": {
@@ -34,6 +34,7 @@
     "architecture/KODEX_ALGORITHM.md",
     "architecture/RUNTIME_ARCHITECTURE.md",
     "architecture/SESSION_MEMORY_AND_PATHS.md",
+    "design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md",
     "product/CURRENT_STATE.md",
     "product/EXPERIENCE_ARCHITECTURE.md"
   ],
@@ -41,6 +42,7 @@
     "data/experience-graph.json",
     "data/state-registry.json",
     "data/module-registry.json",
+    "data/voice-scene-registry.json",
     "data/registries/repositories.yaml",
     "data/registries/prototypes.yaml",
     "data/registries/package-checksums.yaml"
@@ -61,6 +63,7 @@
     "minus-infinity",
     "threshold",
     "prologue",
+    "observe",
     "descent",
     "archive",
     "machine",
@@ -110,6 +113,8 @@
     "Every path provides source and uncertainty access.",
     "Every path can pause, reverse or exit.",
     "Every path converges through memory, provenance, relation, reflection, contribution and re-entry.",
+    "Every spoken canonical line produces or coincides with a visible scene consequence.",
+    "The KODEX Voice distinguishes evidence, interpretation and mythopoetic language.",
     "No deployment occurs without APROBAR DEPLOY."
   ],
   "deployment": {
