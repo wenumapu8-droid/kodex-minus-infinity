@@ -1,0 +1,102 @@
+[
+  {
+    "id": "REL-KDX-001",
+    "from": "ENT-KODEX",
+    "to": "ENT-CANON-REPO",
+    "type": "DOCUMENTED_BY",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-001"],
+    "temporalScope": "2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-002",
+    "from": "ENT-KODEX",
+    "to": "ENT-WENU-IMPLEMENTATION",
+    "type": "IMPLEMENTED_BY",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-002"],
+    "temporalScope": "Verified repository state on 2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-003",
+    "from": "ENT-WENU-IMPLEMENTATION",
+    "to": "ENT-VISUAL-GRAMMAR",
+    "type": "CONTAINS",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-003"],
+    "temporalScope": "Verified repository state on 2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-004",
+    "from": "ENT-WENU-IMPLEMENTATION",
+    "to": "ENT-THRESHOLD-PORTAL",
+    "type": "DOCUMENTS",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-004"],
+    "temporalScope": "Verified repository state on 2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-005",
+    "from": "ENT-KODEX",
+    "to": "ENT-HELIX",
+    "type": "CREATED",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-005"],
+    "temporalScope": "Archive inspected on 2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-006",
+    "from": "ENT-KODEX",
+    "to": "ENT-IMPOSSIBLE-FORMS",
+    "type": "CREATED",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-006"],
+    "temporalScope": "Archive inspected on 2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-007",
+    "from": "ENT-CANON-REPO",
+    "to": "ENT-HEART",
+    "type": "SPECIFIES",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-001"],
+    "temporalScope": "Canonical bootstrap",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-008",
+    "from": "ENT-CANON-REPO",
+    "to": "ENT-RETURN",
+    "type": "SPECIFIES",
+    "certainty": "CONFIRMED",
+    "claimIds": ["CLM-KDX-001"],
+    "temporalScope": "Canonical bootstrap",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-009",
+    "from": "ENT-VISUAL-GRAMMAR",
+    "to": "ENT-CANON-REPO",
+    "type": "INFORMED",
+    "certainty": "INFERRED",
+    "claimIds": ["CLM-KDX-003", "CLM-KDX-007"],
+    "temporalScope": "Recovered development lineage through 2026-08-05",
+    "weightBasis": null
+  },
+  {
+    "id": "REL-KDX-010",
+    "from": "ENT-THRESHOLD-PORTAL",
+    "to": "ENT-RETURN",
+    "type": "PARTICIPATES_IN_PATH",
+    "certainty": "INFERRED",
+    "claimIds": ["CLM-KDX-004", "CLM-KDX-007"],
+    "temporalScope": "Proposed first vertical slice",
+    "weightBasis": null
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.example/schemas/public-wall-entry.schema.json",
+  "title": "KODEX Commons Wall Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "paletteToken",
+    "attribution",
+    "createdAt",
+    "moderationStatus",
+    "publicationStatus",
+    "consent"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "enum": ["TEXT", "DRAWING"] },
+    "text": { "type": ["string", "null"], "maxLength": 280 },
+    "strokes": {
+      "type": "array",
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["width", "points"],
+        "properties": {
+          "width": { "type": "number", "minimum": 0.001, "maximum": 0.05 },
+          "points": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                { "type": "number", "minimum": 0, "maximum": 1 },
+                { "type": "number", "minimum": 0, "maximum": 1 },
+                { "type": "number", "minimum": 0, "maximum": 1 }
+              ],
+              "minItems": 2,
+              "maxItems": 3
+            }
+          }
+        }
+      },
+      "default": []
+    },
+    "paletteToken": { "type": "string", "minLength": 1 },
+    "displayName": { "type": ["string", "null"], "maxLength": 48 },
+    "attribution": { "enum": ["ANONYMOUS", "NAMED"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "language": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"], "maxLength": 160 },
+    "moderationStatus": {
+      "enum": [
+        "DRAFT",
+        "PRIVATE_PREVIEW",
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "PUBLISHED",
+        "HIDDEN_BY_REPORTS",
+        "REMOVED",
+        "WITHDRAWN"
+      ]
+    },
+    "publicationStatus": {
+      "enum": ["PRIVATE_PREVIEW", "PENDING", "PUBLIC", "HIDDEN", "REMOVED"]
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["publicDisplay", "rightsConfirmation", "policyVersion"],
+      "properties": {
+        "publicDisplay": { "type": "boolean" },
+        "rightsConfirmation": { "type": "boolean" },
+        "policyVersion": { "type": "string", "minLength": 1 }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "originNode": { "type": "string", "default": "return-plus-infinity" },
+        "pathArtifactId": { "type": ["string", "null"] }
+      }
+    },
+    "reportsCount": { "type": "integer", "minimum": 0, "default": 0 },
+    "removedAt": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "TEXT" } } },
+      "then": { "required": ["text"] }
+    },
+    {
+      "if": { "properties": { "type": { "const": "DRAWING" } } },
+      "then": { "required": ["strokes"] }
+    }
+  ]
+}

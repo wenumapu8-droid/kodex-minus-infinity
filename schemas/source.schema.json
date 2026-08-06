@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.example/schemas/source.schema.json",
+  "title": "KODEX Source Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "sourceClass",
+    "location",
+    "rightsStatus",
+    "privacyStatus",
+    "culturalStatus"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SRC-[A-Z0-9_-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "creator": {"type": "string"},
+    "sourceClass": {
+      "enum": [
+        "PRIMARY_DATASET",
+        "DOCUMENT",
+        "TESTIMONY",
+        "CULTURAL_WORK",
+        "CODE",
+        "IMAGE",
+        "AUDIO",
+        "VIDEO",
+        "REPOSITORY_RECORD",
+        "CONVERSATION_EXPORT",
+        "OTHER"
+      ]
+    },
+    "location": {"type": "string", "minLength": 1},
+    "publishedAt": {"type": ["string", "null"]},
+    "accessedAt": {"type": ["string", "null"]},
+    "language": {"type": ["string", "null"]},
+    "checksum": {"type": ["string", "null"]},
+    "repository": {"type": ["string", "null"]},
+    "branch": {"type": ["string", "null"]},
+    "path": {"type": ["string", "null"]},
+    "blobSha": {"type": ["string", "null"]},
+    "rightsStatus": {"enum": ["CLEAR", "REFERENCE_ONLY", "UNKNOWN", "BLOCKED"]},
+    "privacyStatus": {"enum": ["PUBLIC", "PRIVATE", "RESTRICTED"]},
+    "culturalStatus": {"enum": ["STANDARD", "REVIEW_REQUIRED", "AUTHORIZATION_REQUIRED"]},
+    "attribution": {"type": ["string", "null"]},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

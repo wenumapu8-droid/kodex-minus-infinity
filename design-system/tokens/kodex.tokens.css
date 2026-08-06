@@ -1,0 +1,67 @@
+:root {
+  --kdx-field-obsidian: #050608;
+  --kdx-field-black: #000000;
+  --kdx-field-bone: #f0ece3;
+  --kdx-field-open-white: #fafaf7;
+
+  --kdx-signal-red: #ff3833;
+  --kdx-signal-violet: #7855d5;
+  --kdx-signal-acid: #b9ff3b;
+  --kdx-signal-cyan: #00e8f0;
+  --kdx-signal-orange: #ff7a00;
+  --kdx-signal-magenta: #ff1eaa;
+
+  --kdx-text-on-dark: #f0ece3;
+  --kdx-text-muted-on-dark: #9a9992;
+  --kdx-text-on-light: #101113;
+  --kdx-text-muted-on-light: #5d5e61;
+
+  --kdx-space-1: 0.25rem;
+  --kdx-space-2: 0.5rem;
+  --kdx-space-3: 0.75rem;
+  --kdx-space-4: 1rem;
+  --kdx-space-6: 1.5rem;
+  --kdx-space-8: 2rem;
+  --kdx-space-12: 3rem;
+  --kdx-space-16: 4rem;
+  --kdx-space-24: 6rem;
+
+  --kdx-radius-micro: 2px;
+  --kdx-radius-control: 6px;
+  --kdx-radius-panel: 12px;
+  --kdx-radius-round: 999px;
+
+  --kdx-line-hairline: 1px;
+  --kdx-line-signal: 2px;
+  --kdx-line-emphasis: 3px;
+
+  --kdx-duration-instant: 0ms;
+  --kdx-duration-micro: 120ms;
+  --kdx-duration-short: 240ms;
+  --kdx-duration-medium: 600ms;
+  --kdx-duration-long: 1600ms;
+  --kdx-duration-ambient: 12000ms;
+
+  --kdx-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --kdx-ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --kdx-ease-exit: cubic-bezier(0.7, 0, 0.84, 0);
+
+  --kdx-reading-width: 68ch;
+  --kdx-touch-target-min: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --kdx-duration-micro: 0ms;
+    --kdx-duration-short: 80ms;
+    --kdx-duration-medium: 120ms;
+    --kdx-duration-long: 160ms;
+    --kdx-duration-ambient: 0ms;
+  }
+}
+
+/*
+  Core bootstrap tokens only.
+  Font families are deliberately excluded until licensing is approved.
+  Color cannot carry essential meaning alone.
+*/

@@ -1,0 +1,184 @@
+version: 1
+snapshot_date: 2026-08-05
+source_environment: conversation_working_storage
+verification_method: direct_zip_byte_inspection_sha256_and_central_directory
+
+packages:
+  - id: PKG-HELIX-TRANSPARENT-V1
+    archive: KODEX_Helix_Transparent.zip
+    size_bytes: 3908
+    file_count: 3
+    uncompressed_bytes: 8339
+    sha256: 79e52eed4d867ea7fdca6e8a132897333eb901beca2c971a9907bf378cb4c98c
+    public_source_migrated: true
+    migrated_path: packages/recovered/helix-transparent-v1/
+
+  - id: PKG-IMPOSSIBLE-FORMS-V1
+    archive: KODEX_Impossible_Forms_Vol1_SELLABLE.zip
+    size_bytes: 4396112
+    file_count: 77
+    uncompressed_bytes: 4484737
+    sha256: 8deb2268bc1f6e49a98a4ca79f17b4c0499831f59bbfdbbbb72b7b27cdebfeb2
+    verified_python_path: KODEX_Impossible_Forms_Vol1/source/python/kodex_forms.py
+    source_file_sha256: acf5cecf39502e0d268e9e074b14fcf98e236406bdecd76d8bb668e685c285de
+    public_binary_migrated: false
+    reason: commercial_package_license_and_repository_size_review_required
+
+  - id: PKG-SVG-VECTOR-V1
+    archive: KODEX_SVG_VECTOR_PACK_v1.zip
+    size_bytes: 498788
+    file_count: 24
+    uncompressed_bytes: 623459
+    sha256: 1b27ce6b6acde7793534cb59452dbc8b49e899cd36f0f880e61a31274cf3f225
+    public_binary_migrated: false
+
+  - id: PKG-DESIGN-SYSTEM-V1
+    archive: kodex-design-system-pack-v1.zip
+    size_bytes: 40146
+    file_count: 26
+    uncompressed_bytes: 115842
+    sha256: b043234ceac6d2a62babb8bf88457a7336ea7cab5e39310c1b2875a604f415f9
+    public_binary_migrated: false
+
+  - id: PKG-IMPOSSIBLE-STRUCTURE-V1
+    archive: kodex-impossible-structure-v1.zip
+    size_bytes: 22154
+    file_count: 11
+    uncompressed_bytes: 59035
+    sha256: 07e9fa37a00ec50e12ba196fefd38da21a19f47f991fd229667b2b5ed0295e46
+    public_binary_migrated: false
+
+  - id: PKG-INFORMATION-OS-V1
+    archive: kodex-information-os-v1.zip
+    size_bytes: 186882
+    file_count: 93
+    uncompressed_bytes: 255198
+    sha256: 38167681a5699f41d0db0a91bf02ae64ad755357310a83b7fa10e34419b2345a
+    status: historical_context_package
+
+  - id: PKG-INFORMATION-OS-V1-1
+    archive: kodex-information-os-v1.1.zip
+    size_bytes: 203962
+    file_count: 106
+    uncompressed_bytes: 283239
+    sha256: f9320df20883e39bdabdad17cfb8e7d92df69c29f4fb6521e27cb858bbeffb95
+    status: historical_context_package
+
+  - id: PKG-INFORMATION-OS-V1-2
+    archive: kodex-information-os-v1.2.zip
+    size_bytes: 131474
+    file_count: 24
+    uncompressed_bytes: 165940
+    sha256: d2ea0a3796059cd1c2024d0392e14e9014176f0cf7a65e0dcb4c50e4bc4e9764
+    status: historical_context_package
+
+  - id: PKG-INFORMATION-OS-V1-3
+    archive: kodex-information-os-v1.3.zip
+    size_bytes: 314299
+    file_count: 49
+    uncompressed_bytes: 403453
+    sha256: 2cf59be38ad12b213252bbba92cd0ca10001d3f4c2ea9cfe4f15c06228d6e48d
+    status: historical_context_package
+
+  - id: PKG-LIVING-ELEMENTS-GALLERY
+    archive: kodex-living-elements-live-gallery.zip
+    size_bytes: 6302
+    file_count: 4
+    uncompressed_bytes: 13506
+    sha256: fca1ed06d85497d25961236444684cd2956a7b251c330af974fd82b87d2844d5
+    public_binary_migrated: false
+
+  - id: PKG-MIRROR-IDENTITY-V1
+    archive: kodex-mirror-identity-v1.zip
+    size_bytes: 20459
+    file_count: 11
+    uncompressed_bytes: 54546
+    sha256: 0d3c785f081a0d682781ae9f048390c8941dce5ec5f3315d30756c2fd14fc21a
+    public_binary_migrated: false
+
+  - id: PKG-OBSERVE-PROTOTYPE
+    archive: kodex-observe-prototype.zip
+    size_bytes: 24995
+    file_count: 11
+    uncompressed_bytes: 64862
+    sha256: abf9baa5403bc4cd0c162631559fcdabb63e726fc9efe03a7384125ef795039e
+    public_binary_migrated: false
+
+  - id: PKG-OPEN-VISUAL-LAB-V1
+    archive: kodex-open-visual-lab-v1.zip
+    size_bytes: 36826
+    file_count: 32
+    uncompressed_bytes: 82821
+    sha256: fc1e9b028b18278a7369cc248399f957962f63aa0f8072456b6233b7f7fa7ee4
+    public_binary_migrated: false
+
+  - id: PKG-PERSPECTIVE-FLIP-V1
+    archive: kodex-perspective-flip-v1.zip
+    size_bytes: 25741
+    file_count: 12
+    uncompressed_bytes: 92470
+    sha256: f526bc3f03002977954b623157977b5816e515a1c475b3c924ca4ec95e1cc5d3
+    public_binary_migrated: false
+
+  - id: PKG-RIPPLE-FLOOR-V1
+    archive: kodex-ripple-floor-v1.zip
+    size_bytes: 23241
+    file_count: 11
+    uncompressed_bytes: 61881
+    sha256: b95b0cb0392c60cfbd3061c36bcfe35cca617720e97b89dfc5af1acb196b9e18
+    public_binary_migrated: false
+
+  - id: PKG-SPATIAL-ENGINE-V1
+    archive: kodex-spatial-engine-v1.zip
+    size_bytes: 15136
+    file_count: 8
+    uncompressed_bytes: 32445
+    sha256: 8b4725a16894ce90b2ae52f252218de72918dd34b28216466156540ac675da88
+    public_binary_migrated: false
+
+  - id: PKG-SPATIAL-ENGINE-V2
+    archive: kodex-spatial-engine-v2.zip
+    size_bytes: 22862
+    file_count: 12
+    uncompressed_bytes: 56255
+    sha256: c48ddcc1bdbaeba3a7c5229b5c1b0f0d2e6246ad7c1b6e6601e617546ed0ffdf
+    public_binary_migrated: false
+
+  - id: PKG-SPLIT-CORRIDOR-V1
+    archive: kodex-split-corridor-v1.zip
+    size_bytes: 24221
+    file_count: 12
+    uncompressed_bytes: 74431
+    sha256: c22dbd7ca23869d7529da3408e9a195b8c1f4381dfd55129c30d5ad531f58acf
+    public_binary_migrated: false
+
+  - id: PKG-TYPOGRAPHY-V2
+    archive: kodex-typography-system-v2.zip
+    size_bytes: 18716
+    file_count: 16
+    uncompressed_bytes: 52565
+    sha256: 633dcb129dfac057595e4e4f924072f0d82df8d66f908e480b35f402b1be767d
+    public_binary_migrated: false
+
+  - id: PKG-VISUAL-GRAMMAR-V1
+    archive: kodex-visual-grammar-system-v1.zip
+    size_bytes: 353924
+    file_count: 16
+    uncompressed_bytes: 522701
+    sha256: 89b8ea354787b098d91036dc8d5f516c44e3c5b5f1fa4a5353fd38ebfd67a972
+    public_binary_migrated: false
+
+  - id: PKG-WRINKLED-REALITY-V1
+    archive: kodex-wrinkled-reality-v1.zip
+    size_bytes: 25935
+    file_count: 12
+    uncompressed_bytes: 89810
+    sha256: 7808723728e482a8b3892d2f8433f04fe4e488bb4910c08a171dff50ede2fa30
+    public_binary_migrated: false
+
+rules:
+  - Checksums describe the inspected archives available on the snapshot date.
+  - A checksum does not establish rights clearance or production quality.
+  - Public binary migration requires repository-size, licensing, privacy and cultural review.
+  - Direct byte inspection overrides remembered or summarized package descriptions.
+  - Preserve original archives before modifying or repackaging them.

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "SRC-KDX-CANON-REPO",
+    "title": "KODEX−∞ canonical repository",
+    "creator": "Nicolás Ortega / Ocín",
+    "sourceClass": "REPOSITORY_RECORD",
+    "location": "https://github.com/wenumapu8-droid/kodex-minus-infinity",
+    "publishedAt": "2026-08-05",
+    "accessedAt": "2026-08-05",
+    "language": "en/es",
+    "checksum": null,
+    "repository": "wenumapu8-droid/kodex-minus-infinity",
+    "branch": "chore/canonical-bootstrap",
+    "path": null,
+    "blobSha": null,
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "The canonical bootstrap is a draft pull request and has not been merged into main."
+    ],
+    "notes": [
+      "Primary source for current canon, algorithms, design rules and product architecture."
+    ]
+  },
+  {
+    "id": "SRC-WENU-KODEX-INDEX",
+    "title": "Existing Astro KODEX entry",
+    "creator": "Nicolás Ortega / Ocín with AI-assisted production",
+    "sourceClass": "CODE",
+    "location": "wenumapu8-droid/wenu-frontend@feature/kodex-depth-engine:src/pages/kodex/index.astro",
+    "publishedAt": null,
+    "accessedAt": "2026-08-05",
+    "language": "Astro/TypeScript",
+    "checksum": null,
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "branch": "feature/kodex-depth-engine",
+    "path": "src/pages/kodex/index.astro",
+    "blobSha": "528549b119e7a5bcfb0b97838d92b8576bdb1324",
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "The file is verified at the stated branch but has not been migrated into the canonical repository.",
+      "Runtime and device validation were not performed during corpus ingestion."
+    ],
+    "notes": [
+      "Primary implementation evidence for the fullscreen/deck entry and Threshold composition."
+    ]
+  },
+  {
+    "id": "SRC-WENU-UNIVERSE",
+    "title": "KODEX universe registry",
+    "creator": "Nicolás Ortega / Ocín with AI-assisted production",
+    "sourceClass": "CODE",
+    "location": "wenumapu8-droid/wenu-frontend@feature/kodex-depth-engine:src/lib/kodexUniverse.js",
+    "publishedAt": null,
+    "accessedAt": "2026-08-05",
+    "language": "JavaScript",
+    "checksum": null,
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "branch": "feature/kodex-depth-engine",
+    "path": "src/lib/kodexUniverse.js",
+    "blobSha": "ad96a48e32dd601b8db27727d9478a09c1f6b174",
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "Generated clearance, threat, frequency, timestamp and checksum-like fields require semantic review before canonical reuse."
+    ],
+    "notes": [
+      "Implementation source for entities, scenes, statuses and atmospheric system labels."
+    ]
+  },
+  {
+    "id": "SRC-WENU-GRAMMAR",
+    "title": "KODEX visual grammar implementation",
+    "creator": "Nicolás Ortega / Ocín with AI-assisted production",
+    "sourceClass": "CODE",
+    "location": "wenumapu8-droid/wenu-frontend@feature/kodex-depth-engine:src/lib/kodex/grammar.ts",
+    "publishedAt": null,
+    "accessedAt": "2026-08-05",
+    "language": "TypeScript",
+    "checksum": null,
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "branch": "feature/kodex-depth-engine",
+    "path": "src/lib/kodex/grammar.ts",
+    "blobSha": "841174bec9d96be28d603f2c5f21ecb7fcafb37a",
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "The visual grammar is verified in code but has not yet passed the newer semantic-passport and epistemic gates."
+    ],
+    "notes": [
+      "Implements data-driven recipe, grid, density, motion and field parameter selection."
+    ]
+  },
+  {
+    "id": "SRC-WENU-THRESHOLD-SPEC",
+    "title": "Threshold Portal multipass specification",
+    "creator": "Nicolás Ortega / Ocín with AI-assisted production",
+    "sourceClass": "DOCUMENT",
+    "location": "wenumapu8-droid/wenu-frontend@feature/kodex-depth-engine:src/kodex/threshold-portal/README.md",
+    "publishedAt": null,
+    "accessedAt": "2026-08-05",
+    "language": "English",
+    "checksum": null,
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "branch": "feature/kodex-depth-engine",
+    "path": "src/kodex/threshold-portal/README.md",
+    "blobSha": "2a783bc4d9a43cc90cd891daf40090d21ee015df",
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "Documentation may describe intended integration state that requires fresh repository verification."
+    ],
+    "notes": [
+      "Defines source, feedback and composite passes with DORMANT, AWARE and OPEN states."
+    ]
+  },
+  {
+    "id": "SRC-KDX-HELIX-ARCHIVE",
+    "title": "KODEX Helix Transparent source archive",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín with AI-assisted production",
+    "sourceClass": "CODE",
+    "location": "KODEX_Helix_Transparent.zip",
+    "publishedAt": null,
+    "accessedAt": "2026-08-05",
+    "language": "HTML/JavaScript/CSS",
+    "checksum": "79e52eed4d867ea7fdca6e8a132897333eb901beca2c971a9907bf378cb4c98c",
+    "repository": "wenumapu8-droid/kodex-minus-infinity",
+    "branch": "chore/canonical-bootstrap",
+    "path": "packages/recovered/helix-transparent-v1/",
+    "blobSha": null,
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "Source is recovered and committed, but browser/device runtime validation is not yet recorded in the canonical repository."
+    ],
+    "notes": [
+      "Directly inspected three-file archive and migrated source-only package."
+    ]
+  },
+  {
+    "id": "SRC-KDX-IMPOSSIBLE-FORMS-ARCHIVE",
+    "title": "KODEX Impossible Forms Vol. 1 sellable archive",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín with AI-assisted production",
+    "sourceClass": "CODE",
+    "location": "KODEX_Impossible_Forms_Vol1_SELLABLE.zip",
+    "publishedAt": null,
+    "accessedAt": "2026-08-05",
+    "language": "HTML/JavaScript/Python/media",
+    "checksum": "8deb2268bc1f6e49a98a4ca79f17b4c0499831f59bbfdbbbb72b7b27cdebfeb2",
+    "repository": null,
+    "branch": null,
+    "path": null,
+    "blobSha": null,
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PRIVATE",
+    "culturalStatus": "STANDARD",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "limitations": [
+      "The commercial archive is directly inspected but intentionally not committed to the public repository pending licensing and delivery review.",
+      "Runtime and product-quality validation remain incomplete."
+    ],
+    "notes": [
+      "Contains 77 files and the verified Python path KODEX_Impossible_Forms_Vol1/source/python/kodex_forms.py."
+    ]
+  }
+]

@@ -1,0 +1,153 @@
+version: 0.2.0
+experience:
+  id: KDX_ALPHABET_VERTICAL_SLICE_V0
+  title: KODEX Genesis Archive
+  status: CANONICAL_TARGET_NOT_IMPLEMENTED
+  central_question: How did Ocín's unresolved visual codes become KODEX, a living information system with memory, relation and consequence?
+  corpus_status: PARTIALLY_CURATED_CREATOR_AND_RIGHTS_REVIEW_REQUIRED
+
+topology:
+  coordinate_system: KODEX_A_TO_Y
+  entry: A
+  optional_distributed_heart: M
+  completed_journey_terminal: Y
+  alphabetical_traversal_required: false
+  all_letters_required_per_journey: false
+  loops_allowed: true
+  mutated_revisits_required: true
+  heart_mandatory: false
+  return_derived_from_event_trace: true
+  registry: data/alphabet-topology.json
+
+minimum_scope:
+  consequential_coordinates: 6
+  multi_exit_moments: 3
+  connected_semantic_worlds: 2
+  reproducible_qa_trajectory_signatures: 8
+  required_loops: 1
+  required_mutated_revisits: 1
+  required_delayed_consequences: 1
+  heart_approach_regions: 2
+  completed_route_without_heart: true
+  completed_route_with_heart: true
+
+coordinate_contracts:
+  A:
+    role: COMMON_ORIGIN
+    identity: minus_infinity_and_threshold
+    required_functions:
+      - orientation
+      - consent
+      - accessibility_configuration
+      - first_meaningful_action
+      - initial_memory_write
+      - multiple_state_dependent_exits
+    spectral_state: OBSIDIAN
+
+  INTERMEDIATE:
+    domain: B_THROUGH_X_EXCLUDING_M
+    required_fields:
+      - concept_ids
+      - world_ids
+      - source_ids
+      - visual_activator_ids
+      - meaningful_actions
+      - semantic_edges
+      - memory_reads
+      - memory_writes
+      - spectral_behavior
+      - y_contribution
+      - epistemic_status
+      - rights_status
+      - cultural_status
+      - accessibility_equivalent
+
+  M:
+    role: OPTIONAL_DISTRIBUTED_HEART
+    identity: heart_zero
+    portal_states:
+      - LATENT
+      - RESONANT
+      - AVAILABLE
+    potentially_reachable_from_every_nonterminal_region: true
+    entry: VOLUNTARY
+    exit_behavior: RESTORE_EXACT_PRIOR_ROUTE_ANCHOR
+    ranking: FORBIDDEN
+    biometric_claims: FORBIDDEN
+    required_route_without_m: true
+
+  Y:
+    role: ROUTE_DERIVED_CONVERGENCE
+    identity: return_plus_infinity
+    spectral_state: OPEN_WHITE
+    required_outputs:
+      - visited_letters
+      - visit_counts
+      - revisit_mutations
+      - committed_actions
+      - delayed_consequences
+      - ignored_signals_with_later_effect
+      - traced_relations
+      - spectral_trace
+      - m_visit_status_without_ranking
+      - source_access
+      - epistemic_status_and_uncertainty
+      - unresolved_questions
+      - route_specific_artifact
+      - reentry_possibilities
+
+edge_resolver_inputs:
+  - current_letter
+  - committed_actions
+  - visited_letters
+  - visit_counts
+  - traced_relations
+  - ignored_signals
+  - spectral_state
+  - bounded_serendipity_seed
+  - accessibility_mode
+
+session_memory:
+  current_letter: A
+  letter_trace: []
+  visit_counts: {}
+  committed_actions: []
+  ignored_signals: []
+  relations_traced: []
+  source_ids_opened: []
+  spectral_trace: []
+  m_portal_states: {}
+  m_visits: []
+  return_anchor: null
+  accessibility_preferences: {}
+  consent: {}
+  artifact_seed: null
+
+renderers:
+  DOM: meaning_controls_sources_and_accessibility
+  SVG: glyphs_relations_annotations_traces_and_artifact
+  CANVAS: lightweight_procedural_fields_and_export
+  WEBGL: optional_organisms_impossible_space_and_depth
+
+fallback_ladder:
+  - FULL_WEBGL
+  - REDUCED_WEBGL
+  - CANVAS_OR_SVG
+  - STATIC_SVG_OR_IMAGE
+  - STRUCTURED_TEXT
+
+acceptance_criteria:
+  - No Path A or Path B interface and no fixed complete-route selector.
+  - One common entry at A.
+  - Successive interactions produce multiple emergent nonalphabetical trajectories.
+  - At least eight reproducible QA trajectory signatures exist.
+  - At least one coordinate revisit produces a mutated state.
+  - At least one early action produces a delayed visible consequence.
+  - M is approachable from more than one region and remains optional.
+  - Y is generated from the complete event trace.
+  - Every factual item has provenance and epistemic status.
+  - Private source material is excluded.
+  - Keyboard, touch, reduced motion and motion off are complete.
+  - Target viewports 390x844, 412x915 and desktop pass.
+  - The complete journey remains available without WebGL.
+  - No deployment occurs without APROBAR DEPLOY.

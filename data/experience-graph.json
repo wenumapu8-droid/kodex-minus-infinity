@@ -1,0 +1,177 @@
+{
+  "system": "KODEX−∞",
+  "version": "0.4.0-alphabet-authority",
+  "status": "CANONICAL_TOPOLOGY_PARTIAL_IMPLEMENTATION",
+  "authoritativeCoordinateRegistry": "data/alphabet-topology.json",
+  "topology": {
+    "model": "DIRECTED_WEIGHTED_STATEFUL_MEMORY_PRESERVING_ALPHABET_GRAPH",
+    "coordinates": "A_THROUGH_Y",
+    "entry": "A",
+    "optionalDistributedHeart": "M",
+    "completedJourneyTerminal": "Y",
+    "alphabeticalTraversalRequired": false,
+    "allCoordinatesRequiredPerJourney": false,
+    "loopsAllowed": true,
+    "mutatedRevisitsAllowed": true,
+    "boundedSerendipity": true,
+    "heartMandatory": false,
+    "immediateSafeExitAvailable": true
+  },
+  "coordinateSemantics": {
+    "A": {
+      "canonicalIdentity": "−∞ / THRESHOLD",
+      "role": "COMMON_ORIGIN_AND_FIRST_MEMORY_WRITE"
+    },
+    "M": {
+      "canonicalIdentity": "HEART / 0",
+      "role": "OPTIONAL_DISTRIBUTED_DEPTH_AND_ORIENTATION",
+      "portalStates": [
+        "LATENT",
+        "RESONANT",
+        "AVAILABLE"
+      ],
+      "exitBehavior": "RESTORE_EXACT_PRIOR_ROUTE_ANCHOR"
+    },
+    "Y": {
+      "canonicalIdentity": "RETURN / +∞",
+      "role": "ROUTE_DERIVED_CONVERGENCE_AND_REENTRY"
+    }
+  },
+  "semanticWorlds": [
+    {
+      "id": "memory-world",
+      "title": "MEMORY WORLD",
+      "function": "Versions, testimony, archive, traces and reconstructed relations."
+    },
+    {
+      "id": "machine-world",
+      "title": "MACHINE WORLD",
+      "function": "Computational transformation, generative rules, simulation and inspectable code."
+    },
+    {
+      "id": "cosmology-world",
+      "title": "COSMOLOGY WORLD",
+      "function": "Relations across time, territory, ecology, culture, technology and possible futures."
+    },
+    {
+      "id": "artifact-world",
+      "title": "ARTIFACT WORLD",
+      "function": "Works, books, visual lineage, systems and Artifact Altars."
+    }
+  ],
+  "legacySceneFunctions": {
+    "status": "SEMANTIC_MODULES_NOT_FIXED_ROUTE_NODES",
+    "functions": [
+      {
+        "id": "prologue",
+        "role": "context_and_reading_grammar"
+      },
+      {
+        "id": "descent",
+        "role": "noise_reduction_uncertainty_and_hidden_structure"
+      },
+      {
+        "id": "archive",
+        "role": "sources_entities_versions_and_provenance"
+      },
+      {
+        "id": "machine",
+        "role": "rules_code_simulation_and_transformation"
+      },
+      {
+        "id": "cosmology",
+        "role": "larger_relational_systems"
+      },
+      {
+        "id": "commons-wall",
+        "role": "optional_post_y_public_trace_surface"
+      }
+    ],
+    "rule": "These functions may appear inside one or more letter coordinates and must not be interpreted as one compulsory sequence."
+  },
+  "functionalSpectrum": [
+    {
+      "id": "obsidian",
+      "role": "unintegrated potential and common origin"
+    },
+    {
+      "id": "red",
+      "role": "activation, orientation and living pulse"
+    },
+    {
+      "id": "orange",
+      "role": "transformation, rupture and machine process"
+    },
+    {
+      "id": "yellow",
+      "role": "agency, attention and active selection"
+    },
+    {
+      "id": "green",
+      "role": "relation, growth and connective opening"
+    },
+    {
+      "id": "cyan",
+      "role": "signal and live technical relation when grounded"
+    },
+    {
+      "id": "blue",
+      "role": "structure, language and inspectable knowledge"
+    },
+    {
+      "id": "indigo",
+      "role": "deep pattern recognition and cross-world relation"
+    },
+    {
+      "id": "violet",
+      "role": "ambiguity, synthesis and expanded relation"
+    },
+    {
+      "id": "open-white",
+      "role": "integration, legibility and Return"
+    }
+  ],
+  "spectrumRules": [
+    "The spectrum is a functional and mythopoetic design grammar, not a scientific emotion hierarchy.",
+    "A trajectory may traverse any coherent subset and does not follow a compulsory rainbow ladder.",
+    "Essential meaning never depends on color alone.",
+    "No consciousness score, emotional frequency number or fabricated telemetry is permitted.",
+    "Y synthesizes spectrum from the actual event trace."
+  ],
+  "edgeResolverInputs": [
+    "CURRENT_LETTER",
+    "COMMITTED_ACTIONS",
+    "VISITED_LETTERS",
+    "VISIT_COUNTS",
+    "TRACED_RELATIONS",
+    "IGNORED_SIGNALS",
+    "SPECTRAL_STATE",
+    "BOUNDED_SERENDIPITY_SEED",
+    "ACCESSIBILITY_MODE"
+  ],
+  "firstExecutableSlice": {
+    "status": "NOT_IMPLEMENTED",
+    "minimumConsequentialCoordinates": 6,
+    "minimumMultiExitMoments": 3,
+    "minimumConnectedWorlds": 2,
+    "minimumQATrajectorySignatures": 8,
+    "requiresLoop": true,
+    "requiresMutatedRevisit": true,
+    "requiresDelayedConsequence": true,
+    "requiresMFromMultipleRegions": true,
+    "requiresRouteWithoutM": true,
+    "requiresRouteWithM": true,
+    "requiresYFromFullEventTrace": true
+  },
+  "invariants": [
+    "Every completed canonical journey begins at A.",
+    "M is always potentially discoverable and never mandatory.",
+    "Every completed canonical journey converges at Y.",
+    "B through X form an interwoven field rather than an ordered sequence.",
+    "Every meaningful decision changes a later consequence.",
+    "Every route preserves privacy-minimized session memory.",
+    "Every factual element provides provenance and epistemic status.",
+    "Every route provides an immediate safe exit.",
+    "No deployment occurs without APROBAR DEPLOY."
+  ]
+}

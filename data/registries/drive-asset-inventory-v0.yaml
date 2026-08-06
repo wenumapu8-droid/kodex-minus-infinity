@@ -1,0 +1,274 @@
+version: 0.1.0
+status: VERIFIED_METADATA_INVENTORY_PARTIAL
+inspected_at: 2026-08-06T08:54:00-07:00
+scope:
+  mode: READ_ONLY
+  limitations:
+    - Direct-folder metadata inspection only; archive contents were not re-extracted in this pass.
+    - Large folders may exceed connector display limits; counts are not declared complete unless stated.
+    - No source file was moved, renamed, deleted or made public.
+    - Rights and cultural review remain required before publication or commercial use.
+
+roots:
+  - id: DRV-KODEX
+    title: Kodex
+    drive_id: 1zsE-nWBw6-JNZRepXeSm-Dr81n4ibw-D
+    url: https://drive.google.com/drive/folders/1zsE-nWBw6-JNZRepXeSm-Dr81n4ibw-D
+    role: PRIMARY_KODEX_ASSET_WAREHOUSE
+    source_visibility_status: access_not_verified
+    can_list_children: true
+    canonical_use:
+      - PROTOTYPES
+      - GENERATIVE_ENGINES
+      - VISUAL_SYSTEMS
+      - EMBLEMS
+      - DOSSIERS
+      - PREVIEWS
+      - SELLABLE_PACKS
+
+  - id: DRV-BOOK-MIXED
+    title: book
+    drive_id: 1rjXSHRBwJhwiRVxKrEsvatugA7CU1fbT
+    url: https://drive.google.com/drive/folders/1rjXSHRBwJhwiRVxKrEsvatugA7CU1fbT
+    role: MIXED_CREATIVE_ROOT_NOT_BOOK_ONLY
+    source_visibility_status: mixed
+    can_list_children: true
+    observed_children:
+      - Kodex
+      - 0cin
+      - 0phidis
+      - DJ
+      - Bul.ma
+      - Paisajes
+      - PSYFran
+      - multiple private photo-session folders
+      - one 85.4 MB screen recording
+    warning: Do not ingest this root as a public book corpus. Curate child folders individually and preserve private photo material.
+
+  - id: DRV-OCIN
+    title: 0cin
+    drive_id: 1v2ujUFmOjhVrGkC7ylsj-SDEAsz2fS1x
+    url: https://drive.google.com/drive/folders/1v2ujUFmOjhVrGkC7ylsj-SDEAsz2fS1x
+    role: OCIN_CREATIVE_PORTFOLIO_SOURCE
+    source_visibility_status: not_shared
+    can_list_children: true
+    observed_structure:
+      - Elementos gráficos
+      - Banner
+      - Circular
+      - Cuadrado
+      - Fractal
+      - Mandala
+      - Molecular
+      - Patron
+      - Psycho
+      - Toroide
+      - Triangular
+    canonical_use:
+      - ARTIFACT_ALTARS
+      - PORTFOLIO_PATHS
+      - GLYPH_FIELDS
+      - TEXTURES
+      - CREATIVE_LINEAGE
+    warning: Contains old reference imagery and culturally loaded source material; rights and cultural review are mandatory before public reuse.
+
+  - id: DRV-PORTFOLIO
+    title: portafolio
+    drive_id: 1_lTMZhA9kvX-pT_1CNgnS3Psw6aqe9lu
+    url: https://drive.google.com/drive/folders/1_lTMZhA9kvX-pT_1CNgnS3Psw6aqe9lu
+    role: SPECIALIZED_PORTFOLIO_ROOT
+    source_visibility_status: access_not_verified
+    observed_children:
+      - Piercing proyect
+      - Mapping ear
+    warning: This folder is not the main digital-art portfolio source; 0cin is currently the stronger KODEX candidate.
+
+  - id: DRV-KODEX-IMAGE-BANK
+    title: Banco de imagen
+    drive_id: 1DjJjqbKRFCPCHQC41hTDY0_yrwo-4b9I
+    url: https://drive.google.com/drive/folders/1DjJjqbKRFCPCHQC41hTDY0_yrwo-4b9I
+    role: VISUAL_REFERENCE_AND_GENERATED_ASSET_BANK
+    source_visibility_status: access_not_verified
+    can_list_children: true
+
+high_value_kodex_assets:
+  - title: KODEX_PRODUCTION_OS_MASTER_v1.zip
+    drive_id: 1BUA0a2Bf9tWrv1pYWzIjarbxPfwqZyt7
+    size_bytes: 29850
+    class: SYSTEM_PACKAGE
+    candidate_role: CANON_AND_PRODUCTION_REFERENCE
+
+  - title: KODEX_GENERATIVE_MODULES_MASTER_v1.zip
+    drive_id: 1NuuDeINpyl8sNzsxp1slQDChUXlOS600
+    size_bytes: 75558
+    class: CODE_PACKAGE
+    candidate_role: MACHINE_AND_INTERACTION_ENGINE
+
+  - title: kodex-visual-grammar-system-v1.zip
+    drive_id: 12tXNquTIItTQjjKilnssQVjxm0NNtB6B
+    size_bytes: 353924
+    class: DESIGN_SYSTEM_PACKAGE
+    candidate_role: SCENE_COMPOSER
+
+  - title: kodex-design-system-pack-v1.zip
+    drive_id: 1SnRwVllQmf4hHQaqGCq-ASlc8rZ1EBRO
+    size_bytes: 40146
+    class: DESIGN_SYSTEM_PACKAGE
+    candidate_role: TOKENS_AND_COMPONENT_GRAMMAR
+
+  - title: kodex-typography-system-v2.zip
+    drive_id: 1GineUUPXGBES0HWgWDgF36w-amyLjdZj
+    size_bytes: 18716
+    class: TYPOGRAPHY_PACKAGE
+    candidate_role: TYPE_SYSTEM
+
+  - title: KODEX_Master_Seal_PNG_SVG.zip
+    drive_id: 1Sgd1NmCvRf7to4l6Q_0AB3rJgBs8_HMI
+    size_bytes: 4781210
+    class: SYMBOL_PACKAGE
+    candidate_role: MASTER_SEAL
+
+  - title: kodex-7-emblemas-separados.zip
+    drive_id: 1eC_WQ65puo62irhz-9NIok-eXolPVfFh
+    size_bytes: 6571661
+    class: EMBLEM_PACKAGE
+    candidate_role: SEVEN_SCENE_EMBLEMS
+
+  - title: KODEX_visual_dossiers_01_10.zip
+    drive_id: 1GFDcjJ32turxaqj01PLF1GoKa3OJxYo_
+    size_bytes: 16306817
+    class: EDITORIAL_VISUAL_PACKAGE
+    candidate_role: ARCHIVE_AND_INFORMATION_DESIGN
+
+  - title: KODEX_QUIET_FRAMES_CONTEXT_v1.zip
+    drive_id: 1ZGDX9SiBO8fK1MxMXyKbfotnZ4fQIEXc
+    size_bytes: 113606
+    class: CONTEXT_PACKAGE
+    candidate_role: CONTEMPLATIVE_AND_REDUCED_MOTION_REFERENCE
+
+  - title: KODEX_MODULAR_SIGIL_TYPE_SYSTEM_v1.zip
+    drive_id: 1UXNvJ1HL9ATRf8JZV1TpJ1J3453XLJaZ
+    size_bytes: 28008
+    class: GLYPH_PACKAGE
+    candidate_role: GLYPH_FIELD_AND_NAVIGATION
+
+  - title: KODEX_CRT_MASTER_KIT_v1.zip
+    drive_id: 1gPpEHHY8anxPk8wvEEzMXvzv7G3PTCTh
+    size_bytes: 637180
+    class: RENDER_STYLE_PACKAGE
+    candidate_role: CONTEXTUAL_TECHNICAL_PLATE_ONLY
+
+  - title: KODEX_Helix_Transparent.zip
+    drive_id: 1zfyA1bXd6TKJlvn6yY0BwtyZg3z4p2dT
+    size_bytes: 3908
+    class: CODE_PACKAGE
+    candidate_role: TRANSPARENT_GENERATIVE_PRIMITIVE
+
+  - title: KODEX_Impossible_Forms_Vol1_SELLABLE.zip
+    drive_id: 1TLuR9OJuO7Tv59xOb5h_7c-Vw6IYcSYW
+    size_bytes: 4396112
+    class: COMMERCIAL_PRODUCT_PACKAGE
+    candidate_role: PRODUCT_AND_MACHINE_CASE_STUDY
+
+  - title: kodex-spatial-engine-v2.zip
+    drive_id: 1dNUp-30ZvFn2Jzp5fRfTaDQi6WOHpGOG
+    size_bytes: 22862
+    class: CODE_PACKAGE
+    candidate_role: THRESHOLD_SPATIAL_ENGINE
+
+  - title: kodex-spatial-engine-v1.zip
+    drive_id: 1en-0a7TLISZTWmMiCGjlvcIhkeDYVQg4
+    size_bytes: 15136
+    class: CODE_PACKAGE
+    candidate_role: VERSION_HISTORY_ONLY
+
+  - title: kodex-impossible-structure-v1.zip
+    drive_id: 1Yjh9zLM0qXk8xNzhjRHYQOErfg6mln0F
+    size_bytes: 22154
+    class: CODE_PACKAGE
+    candidate_role: IMPOSSIBLE_SPACE_PROTOTYPE
+
+  - title: kodex_micrographics_kit.zip
+    drive_id: 1yL17JbxnMAl0yZff5jKEawIVKVGHleSr
+    size_bytes: 12797
+    class: SVG_UI_PACKAGE
+    candidate_role: MICROGRAPHICS_AND_INTERFACE_CHROME
+
+duplicate_groups_observed:
+  - title: KODEX_Impossible_Forms_Vol1_SELLABLE.zip
+    status: EXACT_TITLE_AND_SIZE_MATCH_REVIEW_REQUIRED
+    size_bytes: 4396112
+    file_ids:
+      - 1TLuR9OJuO7Tv59xOb5h_7c-Vw6IYcSYW
+      - 1flhz0IKLEX5ASiLDqt5E4k_hyvsA5UH3
+
+  - title: kodex-living-elements-live-gallery.zip
+    status: EXACT_TITLE_AND_SIZE_MATCH_REVIEW_REQUIRED
+    size_bytes: 6302
+    file_ids:
+      - 1z7wNTzzDrF_0_1WvQ0zxY7Lp2czwWlje
+      - 1D1mT1BwDbQSiRNbFMJwqVDIJeGUmf7Bi
+
+  - title: KODEX_Tesis_Package_v1.zip
+    status: EXACT_TITLE_AND_SIZE_MATCH_REVIEW_REQUIRED
+    size_bytes: 3141404
+    file_ids:
+      - 1TEcQIUKos96XAv0TNF0BfsEHsUD89zt6
+      - 1vghdTpmREuHw3W_DKW76GBrQGMOiSqiA
+
+  - title: kodex_kodelife_detail_v2.gif
+    status: EXACT_TITLE_AND_SIZE_MATCH_REVIEW_REQUIRED
+    size_bytes: 4479446
+    file_ids:
+      - 1AQuesyJJ9yU4z0CXsp5mCEOYJGu-2bo3
+      - 16Ek25MJLj1ffHCcCNiSCLDnQ8QzMZhh5
+
+  - title: kodex-ripple-floor-v1.zip
+    status: SAME_TITLE_AND_SIZE_ACROSS_UPLOAD_BATCHES
+    size_bytes: 23241
+    file_ids:
+      - 1ujdoi_3l7TCuEEsTwY9qd1lsKtkCbu2j
+      - 1GZrvjn5euEjJPC2P3LH0jYLnrizMPB3-
+
+  - title: kodex-split-corridor-v1.zip
+    status: SAME_TITLE_AND_SIZE_ACROSS_UPLOAD_BATCHES
+    size_bytes: 24221
+    file_ids:
+      - 1POiDhR67nAvt4nS8EP85vndydeBI1bxP
+      - 1oK1M3TTzzsdB9wXRj4ZUTA8oai-2KQif
+
+  - title: kodex-wrinkled-reality-v1.zip
+    status: SAME_TITLE_AND_SIZE_ACROSS_UPLOAD_BATCHES
+    size_bytes: 25935
+    file_ids:
+      - 1OHBnpJmsSvnubKYTIa-HcYL1Ra8wYXKF
+      - 155wVu_tgEKGub88JxhbvF5Qn7POGTs_L
+
+  - title: kodex_ascii_petscii_kit_v1.zip
+    status: SAME_TITLE_AND_SIZE_ACROSS_UPLOAD_BATCHES
+    size_bytes: 23662
+    file_ids:
+      - 1Mu_o_DCY8u35bf5hQ2W3JbKhwqnKMfOo
+      - 1VaG99XRlZB7QLj7BOgZXjrS8sqxfb5eF
+
+  - title: kodex-perspective-flip-v1.zip
+    status: SAME_TITLE_AND_SIZE_ACROSS_UPLOAD_BATCHES
+    size_bytes: 25741
+    file_ids:
+      - 1QorETTJhjGhzJxJSOU3DpwISfuSp2We8
+      - 1ApK4KFIXdnL2nnjqyXe-nOnPeHrCWeqX
+
+classification_rules:
+  - Keep Drive originals immutable during audit.
+  - Do not delete duplicates until byte checksums confirm identity and a human approves consolidation.
+  - Assign stable KDX-ASSET IDs before scene integration.
+  - Public status, rights status and cultural status are separate fields.
+  - Generated concept boards are references until source, license and intended semantic role are declared.
+  - The first implementation selects a small verified corpus instead of importing the entire warehouse.
+
+next_inventory_batch:
+  - Inspect archive manifests for the high-value package list.
+  - Create checksum-backed duplicate decisions.
+  - Select 15 KODEX visual assets, 10 0cin works and 6 Book fragments for the vertical slice.
+  - Record dimensions, duration, rights, public status, scene role and interaction role.
+  - Build one real Artifact Altar corpus before expanding to all portfolio material.

@@ -1,0 +1,14 @@
+{
+  "name": "@kodex/core-reference",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free executable reference for the canonical KODEX−∞ algorithm.",
+  "scripts": {
+    "test": "node --test",
+    "example": "node examples/genesis-session.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

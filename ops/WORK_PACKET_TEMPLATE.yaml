@@ -1,0 +1,100 @@
+version: 1
+system: KODEX−∞
+
+work_packet:
+  id: WP-0000
+  title: ""
+  owner_role: ""
+  status: PROPOSED
+  problem: ""
+  user_value: ""
+  product_consequence: ""
+
+  repositories:
+    canonical: wenumapu8-droid/kodex-minus-infinity
+    implementation: wenumapu8-droid/wenu-frontend
+    working_branch: ""
+
+  required_reading:
+    - START_HERE.md
+    - SKILL.md
+    - AGENTS.md
+    - context/MASTER_CONTEXT.md
+    - context/PROTOTYPE_AND_CODE_INVENTORY.md
+    - architecture/KODEX_ALGORITHM.md
+    - product/CURRENT_STATE.md
+
+  affected_nodes: []
+  affected_modules: []
+  affected_claim_classes: []
+
+  in_scope: []
+  out_of_scope: []
+  dependencies: []
+  inputs: []
+  expected_outputs: []
+
+  source_requirements:
+    primary_sources: []
+    claim_ledger_required: false
+    rights_review_required: false
+    cultural_review_required: false
+    privacy_review_required: false
+
+  semantic_requirements:
+    question: ""
+    semantic_passports_required: true
+    transformations_required: true
+    provenance_access_required: true
+    uncertainty_behavior_required: true
+
+  interaction_requirements:
+    meaningful_decisions: []
+    writes_to_memory: []
+    later_consequences: []
+    return_contribution: ""
+
+  accessibility_requirements:
+    keyboard: true
+    touch: true
+    reduced_motion: true
+    motion_off: true
+    text_alternative: true
+    immediate_exit: true
+
+  technical_requirements:
+    framework: ""
+    dependencies_allowed: false
+    webgl_cleanup_required: false
+    fallback_required: true
+    target_viewports:
+      - 390x844
+      - 412x915
+      - desktop
+
+  acceptance_criteria: []
+  tests_required: []
+  screenshots_required: []
+
+  risks: []
+  unresolved: []
+  stop_conditions: []
+
+  deployment:
+    requested: false
+    status: BLOCKED
+    approval_phrase: APROBAR DEPLOY
+
+handoff:
+  status: NOT_STARTED
+  files_read: []
+  files_created: []
+  files_modified: []
+  files_migrated: []
+  provenance_added: []
+  decisions_proposed: []
+  tests_run: []
+  tests_not_run: []
+  known_limitations: []
+  next_actions: []
+  next_owner: ""

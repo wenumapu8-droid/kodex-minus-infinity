@@ -1,0 +1,88 @@
+{
+  "system": "KODEX−∞ Interaction Registry",
+  "version": "0.1.0",
+  "status": "CANONICAL_DIRECTION",
+  "defaults": {
+    "coreSceneScroll": false,
+    "activeWebGLScenes": 1,
+    "pointerNormalization": "[-1,1]",
+    "dampingRequired": true,
+    "touchParityRequired": true,
+    "keyboardParityRequired": true,
+    "reducedMotionRequired": true,
+    "motionOffRequired": true
+  },
+  "primitives": [
+    {
+      "id": "proximity-field",
+      "status": "FIRST_IMPLEMENTATION_TARGET",
+      "role": "REVEAL",
+      "purpose": "Use damped pointer or touch proximity to expose depth, relation or focus.",
+      "renderers": ["SVG", "CANVAS", "WEBGL"],
+      "visualChannels": ["ORIENTATION", "DEFORMATION", "FOCUS", "COLOR"],
+      "fallback": "Static focus states selected through named controls."
+    },
+    {
+      "id": "semantic-hotspot",
+      "status": "FIRST_IMPLEMENTATION_TARGET",
+      "role": "NAVIGATE",
+      "purpose": "Create accessible scene-integrated targets that reveal or enter a real relation.",
+      "renderers": ["DOM", "SVG"],
+      "visualChannels": ["FOCUS", "RELATION_HIGHLIGHT", "TEXT"],
+      "fallback": "Visible named button or link preserving the same consequence."
+    },
+    {
+      "id": "color-state-transition",
+      "status": "FIRST_IMPLEMENTATION_TARGET",
+      "role": "TRANSFORM",
+      "purpose": "Mutate approved color tokens according to route, evidence class or lifecycle state.",
+      "renderers": ["DOM", "SVG", "CANVAS", "WEBGL"],
+      "visualChannels": ["COLOR"],
+      "fallback": "Immediate token state change without animated interpolation."
+    },
+    {
+      "id": "drag-deformation",
+      "status": "SPECIFICATION",
+      "role": "TRANSFORM",
+      "purpose": "Allow direct manipulation of generative organisms or diagrams with bounded parameters.",
+      "renderers": ["SVG", "CANVAS", "WEBGL"],
+      "visualChannels": ["POSITION", "DEFORMATION", "DENSITY"],
+      "fallback": "Preset parameter controls."
+    },
+    {
+      "id": "inspection-trail",
+      "status": "SPECIFICATION",
+      "role": "TRACE",
+      "purpose": "Temporarily visualize where a visitor has inspected without storing passive pointer history.",
+      "renderers": ["CANVAS", "WEBGL"],
+      "visualChannels": ["POSITION", "OPACITY"],
+      "fallback": "No trail; focused targets remain visible."
+    },
+    {
+      "id": "commons-vector-draw",
+      "status": "SPECIFICATION",
+      "role": "CONTRIBUTE",
+      "purpose": "Create normalized vector strokes for a moderated public trace.",
+      "renderers": ["DOM", "CANVAS", "SVG"],
+      "visualChannels": ["POSITION", "COLOR", "SCALE"],
+      "fallback": "Text contribution mode and local SVG export."
+    }
+  ],
+  "sceneBudget": {
+    "primaryInteractions": 1,
+    "secondaryHotspotsMin": 1,
+    "secondaryHotspotsMax": 3,
+    "atmosphericResponsesMax": 2,
+    "linearNextRequired": true,
+    "immediateExitRequired": true
+  },
+  "prohibitions": [
+    "hover_only_essential_action",
+    "random_color_without_semantic_state",
+    "passive_pointer_history_in_session_memory",
+    "fake_biometric_or_frequency_response",
+    "scroll_jacking",
+    "cursor_effect_over_controls",
+    "interaction_without_later_consequence"
+  ]
+}
