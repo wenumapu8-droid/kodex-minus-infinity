@@ -1,162 +1,280 @@
 # KODEX−∞ ROADMAP
 
-Status: `CANONICAL / BOOTSTRAP`
+Status: `CANONICAL EXECUTION ROUTE / V0.3`  
+Execution window: `2026-08-06 → 2026-11-02`
 
 ## North-star outcome
 
-Launch a coherent, high-quality KODEX−∞ vertical slice that demonstrates the complete product thesis:
-
-```text
-−∞ → THRESHOLD → UNIQUE PATH → ARCHIVE / HEART → RETURN / +∞
-```
-
-The slice must make one real body of information understandable, produce a unique artifact, preserve provenance, invite contribution and create a reason to re-enter.
-
-## Phase 0 — Canon and control
-
-Objective: stop agent drift and establish one source of truth.
-
-Deliverables:
-
-- canonical skill and agent contract;
-- product canon and epistemic standard;
-- experience architecture;
-- current-state register;
-- ingestion and AI handoff protocols;
-- decision, source, influence and rights registries;
-- quality gates;
-- dedicated repository bootstrap.
-
-Exit criteria:
-
-- every agent can identify canonical, experimental and unresolved material;
-- no deployment occurs;
-- no new scene is accepted without a node contract.
-
-## Phase 1 — Inventory and controlled migration
-
-Objective: make all useful KODEX knowledge retrievable, attributable and maintainable.
-
-Deliverables:
-
-- inventory existing KODEX routes, components, assets, shaders and documents in `wenu-frontend`;
-- preserve original files and record checksums before migration;
-- import approved ZIP packages and generated systems;
-- parse KODEX-relevant conversation exports in a private staging area;
-- identify duplicates, variants and superseded material;
-- classify rights and cultural status;
-- define what remains in each repository.
-
-Exit criteria:
-
-- every canonical artifact has origin, status and owner;
-- public and private layers are separated;
-- no rights-unclear material ships.
-
-## Phase 2 — Experience graph and runtime architecture
-
-Objective: replace disconnected scenes with a navigable, memory-preserving system.
-
-Deliverables:
-
-- machine-readable experience graph;
-- node contracts;
-- session-memory model;
-- decision and convergence rules;
-- accessibility and safe-exit paths;
-- mobile/desktop state diagrams;
-- runtime architecture and package boundaries;
-- first content corpus selected.
-
-Exit criteria:
-
-- every decision has a later consequence;
-- every route converges through memory, provenance, reflection and re-entry.
-
-## Phase 3 — Vertical slice v0
-
-Objective: complete one end-to-end experience before expanding the universe.
-
-Scope:
+Deliver one coherent, reviewable KODEX−∞ vertical slice that proves the complete product thesis without attempting to build the whole universe.
 
 ```text
 −∞
 → THRESHOLD
-→ OBSERVE or REMEMBER
-→ ARCHIVE
-→ HEART
+→ TWO GENUINELY DIFFERENT WORLD PATHS
+→ OPTIONAL HEART / 0 PORTAL
+→ RETURN / +∞
+→ PATH ARTIFACT + SOURCES + RE-ENTRY
+```
+
+The slice must use verified Ocín/KODEX material, make one real body of information understandable, preserve provenance, remember consequential choices, transform from obsidian toward open white and remain complete without sound or WebGL.
+
+## Definition of product completion
+
+The vertical slice is complete only when an external visitor can:
+
+1. enter through one common Threshold;
+2. make a choice whose later consequence is visible;
+3. travel through at least two distinct semantic worlds;
+4. understand that the visual codes belong to one authored language;
+5. discover or bypass Heart voluntarily;
+6. reach Return without being forced through Heart;
+7. inspect sources and uncertainty;
+8. receive a path-dependent artifact;
+9. use the complete journey on mobile, keyboard and reduced-motion mode;
+10. explain, in their own words, what changed between entry and Return.
+
+## Operating constraints
+
+- One primary work packet at a time.
+- No new world before the vertical slice passes.
+- No new visual family without a named node, source and interaction role.
+- No new foundational document unless an existing canonical file cannot hold the decision.
+- No generic AI art replacing Ocín's real lineage.
+- No fake telemetry, consciousness score or scientific-looking mysticism.
+- No uncontrolled Obsidian or Drive publication.
+- No production deployment without `APROBAR DEPLOY`.
+
+## M0 — Canon + verified corpus
+
+Target: `2026-08-17`
+
+Objective: freeze the philosophical premise and select the finite material that will enter the first journey.
+
+Deliverables:
+
+- creator-approved canon, multiverse topology and finite creation law;
+- approved first corpus decision;
+- 15 verified KODEX visual/code assets;
+- 10 verified Ocín works;
+- 6 approved Book fragments or images;
+- provenance, rights, privacy and cultural status for selected assets;
+- duplicate review without deleting originals;
+- implementation inventory across relevant `wenu-frontend` branches;
+- one Artifact Altar candidate selected.
+
+Exit gate:
+
+```text
+CORPUS LOCKED
++ RIGHTS CLASSIFIED
++ SOURCE PATHS VERIFIED
++ NO CRITICAL HIGH-VALUE ENGINE MISSING
+```
+
+Nothing new is generated to compensate for missing curation.
+
+## M1 — Interaction runtime
+
+Target: `2026-08-31`
+
+Objective: prove that KODEX can remember meaningful decisions and respond across input modes.
+
+Deliverables:
+
+- graph-based journey state;
+- normalized pointer, touch and keyboard controller;
+- session-memory store;
+- semantic interaction event contract;
+- `PROXIMITY FIELD`;
+- `SEMANTIC HOTSPOT`;
+- `COLOR STATE TRANSITION`;
+- Heart portal state: `LATENT → RESONANT → AVAILABLE`;
+- exact route-anchor restoration;
+- full, reduced and motion-off representations;
+- isolated noindex laboratory.
+
+Exit gate:
+
+- passive pointer movement does not write personal memory;
+- committed decisions change later state;
+- Back/Forward does not duplicate memory;
+- keyboard and touch produce equivalent consequences;
+- Heart can be entered and exited without losing route state;
+- build passes on the implementation branch.
+
+## M2 — Vertical multiverse journey
+
+Target: `2026-09-28`
+
+Objective: complete the first end-to-end experience before adding further engines.
+
+Active scope:
+
+```text
+COMMON ORIGIN
+→ THRESHOLD
+→ MEMORY WORLD or MACHINE/ARTIFACT WORLD
+→ ONE CROSS-WORLD RELATION
+→ OPTIONAL HEART / 0
 → RETURN / +∞
 ```
 
 Deliverables:
 
-- one real dataset or documented corpus;
-- Archive visualization with source inspection;
-- Heart orientation module;
-- path-dependent artifact;
-- white/spectral return sequence;
-- contribution and repository links;
-- reduced-motion and keyboard-complete modes;
-- performance and visual-regression tests.
+- `−∞` field built from verified KODEX grammar;
+- Threshold with consent and first meaningful decision;
+- one Memory path using Archive/versions/traces;
+- one Machine or Artifact path using code/rules/works;
+- one real cross-world portal;
+- one complete Artifact Altar;
+- optional Heart sanctuary;
+- Return that visibly differs according to the route;
+- source/evidence reader;
+- path-dependent SVG or Canvas artifact;
+- stable URLs and Browser History;
+- mobile compositions at 390×844 and 412×915.
 
-Exit criteria:
+Exit gate:
 
-- mobile and desktop quality approved;
-- semantic gate passed;
-- no invented metrics;
-- user can understand, inspect and continue.
+- both paths start from the same origin but produce visibly different consequences;
+- Heart is optional, discoverable and accessible;
+- Return is possible with and without Heart;
+- no factual element lacks provenance;
+- the journey is complete with sound off, WebGL unavailable and motion reduced;
+- no critical mobile or keyboard failure remains.
 
-## Phase 4 — Modular expansion
+## M3 — Voice, audio and living artifact
 
-Priority engines:
+Target: `2026-10-12`
 
-1. Evidence Engine
-2. Archive Graph
-3. Heart Engine
-4. State Portals
-5. Memory Topography
-6. Transmission Field
-7. Signal Portrait
-8. Contribution Engine
-9. Open Source Lab
-10. Cosmology Engine
+Objective: make the system feel alive through synchronized state, voice, rhythm and memory rather than decorative animation.
 
-Each engine requires a specification, data contract, interaction contract, accessibility behavior, fallback, tests, example and license status.
+Deliverables:
 
-## Phase 5 — Public alpha
+- approved authorial poetic corpus derived from Ocín's writing;
+- restrained KODEX Voice with canonical fallback lines;
+- captions and transcript controls;
+- ambient field and node-specific audio states;
+- Heart pulse clearly labeled as synthetic or user-tapped;
+- codes that breathe from actual runtime state;
+- memory echoes from earlier decisions;
+- Return artifact reproducible from a technical seed;
+- audio-off experience with equal narrative completeness.
 
-Requirements:
+Exit gate:
 
-- consent and privacy language;
-- moderation workflow;
-- public roadmap;
-- contributor guide;
-- issue and PR templates;
-- source and methods pages;
-- analytics limited to necessary product learning;
-- recovery and rollback plan.
+- every spoken line causes or accompanies a visible state consequence;
+- no voice line claims omniscience, diagnosis or spiritual authority;
+- no pulse is presented as measured physiology;
+- artifact output can be reproduced from recorded session events;
+- silence remains a deliberately designed state.
 
-Deployment remains blocked until `APROBAR DEPLOY`.
+## M4 — THE COMMONS postscript
 
-## Phase 6 — Cultural and commercial platform
+Target: `2026-10-26`
 
-Potential product lines:
+Objective: add the optional collective trace after the personal Return without turning KODEX into a popularity feed.
 
-- commissioned living archives;
-- generative identities;
-- data storytelling for cultural institutions;
-- audiovisual installations;
-- artist and festival systems;
-- KODEX Creator SDK;
-- licensed visualization engines;
-- educational portals;
-- editions, prints and path artifacts;
-- research and cultural-mapping collaborations.
+Deliverables:
 
-## Work policy until the vertical slice is complete
+- write, draw, observe and accessible-list modes;
+- private preview before submission;
+- attribution choice;
+- rights and public-display confirmation;
+- moderation states;
+- report and withdrawal behavior;
+- growing scroll archive isolated from the no-scroll journey;
+- private session history excluded by default.
 
-- no uncontrolled expansion into dozens of portals;
-- no visual asset production without a named module or node;
-- no new canonical terminology without a recorded decision;
-- no public claim exceeding available evidence;
-- no deployment.
+Exit gate:
+
+- public contribution is always optional;
+- nothing publishes without explicit consent;
+- moderation and removal paths are testable;
+- keyboard and non-visual access are complete;
+- THE COMMONS does not block Return or re-entry.
+
+## M5 — QA, comprehension and release gate
+
+Target: `2026-11-02`
+
+Objective: determine whether the vertical slice is coherent, usable and truthful enough for a controlled public decision.
+
+Deliverables:
+
+- accessibility audit;
+- mobile and desktop QA;
+- performance profile and fallback report;
+- provenance, rights and cultural review;
+- visual-regression captures;
+- five to eight invited user sessions;
+- comprehension interview summary;
+- case-study draft;
+- deployment and rollback plan;
+- prioritized post-v0 backlog.
+
+Exit gate:
+
+- no critical accessibility, privacy, provenance or rights failure;
+- invited users perceive meaningful consequence rather than random effects;
+- users can distinguish evidence from mythopoetic expression;
+- at least one route is understood without facilitator explanation;
+- performance budgets pass on target devices;
+- production remains blocked until the creator provides `APROBAR DEPLOY`.
+
+## Weekly execution rhythm
+
+### Monday — select
+
+- update `CURRENT_STATE.md`;
+- choose one primary work packet;
+- identify one measurable exit condition;
+- record blockers and required evidence.
+
+### Tuesday to Thursday — build
+
+- inspect actual code and assets before changing them;
+- implement only the selected work packet;
+- validate incrementally;
+- capture screenshots, tests and decisions.
+
+### Friday — converge
+
+- compare work against the exit gate;
+- update registries and handoff;
+- close or explicitly carry the work packet;
+- choose one highest-leverage next action;
+- reject unrelated concept expansion.
+
+## Decision filter for new ideas
+
+Every new idea is classified immediately:
+
+```text
+NOW
+  required to pass the current milestone
+
+NEXT
+  valuable after the vertical slice
+
+ARCHIVE
+  meaningful research without current implementation role
+
+REJECT
+  duplication, generic decoration, unsupported claim or scope drift
+```
+
+A new idea enters `NOW` only when it names:
+
+- the milestone;
+- the affected node or engine;
+- the source or authored work;
+- the user consequence;
+- the acceptance criterion;
+- the owner.
+
+## Final anti-infinity rule
+
+The universe may be infinite. The active release is not.
+
+KODEX advances by completing one bounded organism, observing what it teaches and refining the next version. It does not advance by continuously adding concepts before the first journey can be experienced from beginning to Return.
