@@ -1,7 +1,13 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.1.1",
   "status": "PROPOSED",
   "updated": "2026-08-06",
+  "implementationReference": {
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "branch": "feature/kodex-organism-engine-foundation",
+    "pullRequest": 4,
+    "validationStatus": "BUILD_AND_DEVICE_QA_REQUIRED"
+  },
   "families": [
     {
       "id": "FIELD",
@@ -9,7 +15,11 @@
       "primaryVerbs": ["BREATHE", "OPEN", "REFRACT", "RECURSE", "ALIGN", "REVEAL"],
       "preferredRenderModes": ["IMAGE_FIELD", "SHADER", "DEPTH_STACK"],
       "firstPrototype": "threshold-portal",
-      "implementationStatus": "EXISTING_LINEAGE_ADAPTER_EXTRACTION_REQUIRED"
+      "implementationStatus": "ADAPTER_PROTOTYPE_WRAPS_EXISTING_THREE_PASS_RUNTIME",
+      "limitations": [
+        "FULL_GPU_DISPOSAL_REQUIRES_HARDENING",
+        "REGRESSION_AND_DEVICE_QA_NOT_RECORDED"
+      ]
     },
     {
       "id": "VORTEX",
@@ -17,7 +27,12 @@
       "primaryVerbs": ["ROTATE", "CONVERGE", "ABSORB", "EMIT", "DISTORT"],
       "preferredRenderModes": ["SHADER", "PARTICLES", "IMAGE_FIELD"],
       "firstPrototype": "signal-vortex",
-      "implementationStatus": "PLANNED"
+      "implementationStatus": "PROCEDURAL_WEBGL2_ADAPTER_PROTOTYPE_IN_PR_4",
+      "limitations": [
+        "BUILD_NOT_YET_VERIFIED_BY_CI",
+        "VISUAL_AND_DEVICE_QA_REQUIRED",
+        "SINGLE_PASS_NO_TEMPORAL_FEEDBACK_YET"
+      ]
     },
     {
       "id": "ORBITAL",
