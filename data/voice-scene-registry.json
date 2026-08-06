@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "status": "CANONICAL_DIRECTION",
   "primaryLanguage": "en",
   "voiceEntity": {
@@ -116,6 +116,16 @@
       "visualEvent": "The dark field opens into white and spectral color while the path becomes an artifact.",
       "brightnessStage": 1,
       "pulseStage": 0.32
+    },
+    {
+      "id": "commons-wall",
+      "voiceMode": "SYSTEM",
+      "primaryLine": "What you release here becomes part of the common field.",
+      "invitation": "WRITE / DRAW / OBSERVE",
+      "visualEvent": "A black public field accepts a private preview, then displays only moderated approved traces in constrained spectral color.",
+      "brightnessStage": 0.16,
+      "pulseStage": 0.08,
+      "speechPolicy": "Speak once on entry, then remain silent while the visitor creates or observes."
     }
   ],
   "generationRule": {
@@ -133,7 +143,8 @@
       "visitor_diagnosis",
       "generic_motivational_copy",
       "unattributed_cultural_language",
-      "fabricated_frequency_or_coordinate"
+      "fabricated_frequency_or_coordinate",
+      "speaking_public_wall_content_before_moderation"
     ]
   }
 }
