@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "0.1.0",
+  "status": "PROPOSED",
+  "updated": "2026-08-06",
+  "families": [
+    {
+      "id": "FIELD",
+      "definition": "Image-driven or procedural fields whose structure is radial, recursive or surface-based.",
+      "primaryVerbs": ["BREATHE", "OPEN", "REFRACT", "RECURSE", "ALIGN", "REVEAL"],
+      "preferredRenderModes": ["IMAGE_FIELD", "SHADER", "DEPTH_STACK"],
+      "firstPrototype": "threshold-portal",
+      "implementationStatus": "EXISTING_LINEAGE_ADAPTER_EXTRACTION_REQUIRED"
+    },
+    {
+      "id": "VORTEX",
+      "definition": "Spiral or convergent systems organized around an attractor, sink or emission core.",
+      "primaryVerbs": ["ROTATE", "CONVERGE", "ABSORB", "EMIT", "DISTORT"],
+      "preferredRenderModes": ["SHADER", "PARTICLES", "IMAGE_FIELD"],
+      "firstPrototype": "signal-vortex",
+      "implementationStatus": "PLANNED"
+    },
+    {
+      "id": "ORBITAL",
+      "definition": "Nested relational systems organized around one or more attractors and phase relationships.",
+      "primaryVerbs": ["ORBIT", "SYNCHRONIZE", "PRECESS", "ALIGN", "RESONATE"],
+      "preferredRenderModes": ["LAYERED_PLANES", "GLB", "SVG", "PARTICLES"],
+      "firstPrototype": "cosmology-core",
+      "implementationStatus": "PLANNED"
+    },
+    {
+      "id": "GROWTH",
+      "definition": "Temporal organisms whose structure emerges through rooting, branching and accumulation.",
+      "primaryVerbs": ["GERMINATE", "ROOT", "BRANCH", "ACCRETE", "RADIATE", "REGENERATE"],
+      "preferredRenderModes": ["SVG", "CANVAS", "PARTICLES", "LAYERED_PLANES"],
+      "firstPrototype": "archive-tree",
+      "implementationStatus": "PLANNED"
+    },
+    {
+      "id": "SPECIMEN",
+      "definition": "Objects observed through rotation, scans, sectional views and diagnostic treatment modes.",
+      "primaryVerbs": ["ROTATE", "SCAN", "ISOLATE", "CLASSIFY", "REVEAL"],
+      "preferredRenderModes": ["GLB", "DEPTH_STACK", "LAYERED_PLANES"],
+      "firstPrototype": "specimen-skull",
+      "implementationStatus": "ASSET_DECISION_REQUIRED"
+    },
+    {
+      "id": "TERRAIN",
+      "definition": "Topographic or architectural systems exposed through layers, sections, stress fields and reconstruction.",
+      "primaryVerbs": ["UNFOLD", "SECTION", "SURVEY", "STRESS", "POPULATE", "RECONSTRUCT"],
+      "preferredRenderModes": ["GLB", "LAYERED_PLANES", "SHADER", "CANVAS"],
+      "firstPrototype": "floating-world",
+      "implementationStatus": "PLANNED"
+    }
+  ],
+  "prototypeOrder": [
+    "threshold-portal",
+    "signal-vortex",
+    "cosmology-core",
+    "archive-tree",
+    "specimen-skull",
+    "floating-world"
+  ],
+  "universalConstraints": [
+    "ONE_ACTIVE_WEBGL_ORGANISM_MAXIMUM",
+    "REDUCED_MOTION_REQUIRED",
+    "NON_WEBGL_FALLBACK_REQUIRED",
+    "TOUCH_AND_KEYBOARD_EQUIVALENCE_REQUIRED",
+    "PROVENANCE_REQUIRED",
+    "MEMORY_WRITE_DECLARATION_REQUIRED",
+    "DESTROY_DISPOSAL_REQUIRED",
+    "NO_DEPLOY_WITHOUT_APPROVAL"
+  ]
+}
