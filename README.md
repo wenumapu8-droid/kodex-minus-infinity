@@ -1,230 +1,211 @@
 # KODEX−∞
 
-**Living Information Design · Generative Archive · Contemplative Interface · Creative Operating System**
+**Living visual language · Generative archive · Interactive multiverse · Creative operating system**
 
-KODEX−∞ transforms evidence, memory, culture, symbols, code and user decisions into explorable, generative and interactive structures.
+KODEX−∞ is the evolving environment in which Ocín's visual codes, works, symbols, research and computational systems acquire relation, memory and consequence.
 
-> Information is not displayed. It is embodied.
+> The codes were not waiting to be explained. They were waiting to be related.
 >
 > The archive does not store. It remembers.
 >
 > The heart does not score. It orients.
 >
-> Every path preserves memory. Every convergence changes the observer.
+> The light does not eliminate the mystery. It makes the relation visible.
+
+## Canonical experience topology
+
+KODEX is not a linear website and does not offer a small set of predetermined routes. Its complete coordinate system is an operational alphabet from `A` through `Y`.
+
+```text
+A B C D E F G H I J K L M N O P Q R S T U V W X Y
+```
+
+```text
+A = −∞ / common origin / Threshold
+M = HEART / 0 / optional distributed depth
+Y = RETURN / +∞ / route-derived convergence
+B–X = interwoven concept-nodes
+```
+
+The alphabet is not traversed in order. Letters may be skipped, revisited and transformed by accumulated session memory.
+
+```text
+A → C → H → F → Q → Y
+A → B → K → M → K′ → R → X → Y
+A → J → D → J′ → P → N → Y
+```
+
+`M` is always potentially discoverable but never mandatory. `Y` is shared, but its visual and narrative manifestation is generated from the actual trajectory.
+
+Canonical decision:
+
+- [`ADR-0010 — Alphabetic Multiverse Topology A–M–Y`](./docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md)
+- [`data/alphabet-topology.json`](./data/alphabet-topology.json)
+
+## Product thesis
+
+KODEX is a computational metaphor of being alive:
+
+```text
+WE ENTER WITHOUT KNOWING THE COMPLETE SYSTEM.
+OUR ACTIONS CREATE CONSEQUENCES.
+CHANCE AND OTHER SYSTEMS ALTER THE ROUTE.
+WE DO NOT CONTROL EVERY OUTCOME.
+WE REMAIN RESPONSIBLE FOR HOW WE PARTICIPATE.
+RETURN MAKES RELATIONS VISIBLE WITHOUT ENDING THE MYSTERY.
+```
+
+The system must enact this thesis through state, interaction, memory, delayed consequence and Return—not merely state it in written copy.
 
 ## Start here
 
-Every human contributor and AI model begins with:
+Every human contributor and AI agent begins with:
 
-**[`START_HERE.md`](./START_HERE.md)**
+1. [`START_HERE.md`](./START_HERE.md)
+2. [`PROJECT_MANIFEST.json`](./PROJECT_MANIFEST.json)
+3. [`canon/KODEX_CANON.md`](./canon/KODEX_CANON.md)
+4. [`docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md`](./docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md)
+5. [`data/alphabet-topology.json`](./data/alphabet-topology.json)
+6. [`product/CURRENT_STATE.md`](./product/CURRENT_STATE.md)
+7. The active Linear work packet and affected implementation files.
 
-Machine-readable project identity and invariants:
-
-**[`PROJECT_MANIFEST.json`](./PROJECT_MANIFEST.json)**
-
-Model-specific entry files:
+Model entry points:
 
 - [`CHATGPT.md`](./CHATGPT.md)
 - [`CLAUDE.md`](./CLAUDE.md)
-- [`GEMINI.md`](./GEMINI.md)
 - [`CODEX.md`](./CODEX.md)
+- [`GEMINI.md`](./GEMINI.md)
 - [`HERMES.md`](./HERMES.md)
-
-## Experience invariant
-
-```text
-−∞ / OBSIDIAN / FRAGMENTATION
-        ↓
-THRESHOLD
-        ↓
-USER DECISIONS + UNIQUE PATH
-        ↓
-ARCHIVE / MACHINE / HEART / COSMOLOGY
-        ↓
-RETURN / +∞
-        ↓
-OPEN WHITE + PURE SPECTRAL COLOR
-        ↓
-ARTIFACT / SOURCES / CONTRIBUTION / CODE / RE-ENTRY
-```
-
-`RETURN / +∞` is not a decorative ending or redirect. It is the semantic convergence of the path:
-
-```text
-MEMORY → PROVENANCE → RELATION → REFLECTION → CONTRIBUTION → RE-ENTRY
-```
-
-## Required reading order
-
-1. [`START_HERE.md`](./START_HERE.md)
-2. [`SKILL.md`](./SKILL.md)
-3. [`AGENTS.md`](./AGENTS.md)
-4. [`context/MASTER_CONTEXT.md`](./context/MASTER_CONTEXT.md)
-5. [`context/PROTOTYPE_AND_CODE_INVENTORY.md`](./context/PROTOTYPE_AND_CODE_INVENTORY.md)
-6. [`context/CONVERSATION_DECISIONS.md`](./context/CONVERSATION_DECISIONS.md)
-7. [`context/REJECTED_DIRECTIONS.md`](./context/REJECTED_DIRECTIONS.md)
-8. [`canon/KODEX_CANON.md`](./canon/KODEX_CANON.md)
-9. [`canon/KODEX_EPISTEMIC_STANDARD.md`](./canon/KODEX_EPISTEMIC_STANDARD.md)
-10. [`architecture/KODEX_ALGORITHM.md`](./architecture/KODEX_ALGORITHM.md)
-11. [`architecture/RUNTIME_ARCHITECTURE.md`](./architecture/RUNTIME_ARCHITECTURE.md)
-12. [`architecture/SESSION_MEMORY_AND_PATHS.md`](./architecture/SESSION_MEMORY_AND_PATHS.md)
-13. [`product/CURRENT_STATE.md`](./product/CURRENT_STATE.md)
-14. [`product/EXPERIENCE_ARCHITECTURE.md`](./product/EXPERIENCE_ARCHITECTURE.md)
-15. The affected design-system, experience, module and registry files.
 
 ## Repository roles
 
 ```text
 wenumapu8-droid/kodex-minus-infinity
-  Canon, context, algorithms, registries, reusable engines, methods and future product architecture.
+  Canon, context, algorithms, graph contracts, registries, research,
+  reusable engine specifications and agent operating rules.
 
 wenumapu8-droid/wenu-frontend
-  Existing Astro implementation, routes, components, shaders, assets and experiments.
+  Existing Astro implementation, routes, components, shaders,
+  visual assets and interactive laboratories.
 ```
 
-The verified advanced implementation branch currently includes:
+The canonical repository records what KODEX means and how it must operate. The implementation repository contains what currently runs. Documentation never counts as completed implementation.
+
+## Current status
 
 ```text
-feature/kodex-depth-engine
+CANON                    RECORDED
+A–M–Y TOPOLOGY           RECORDED
+ALPHABET REGISTRY        RECORDED
+GENESIS CORPUS           PARTIALLY CURATED
+REFERENCE ALGORITHM      PRESENT
+INTERACTION LAB          PROTOTYPE IN PRIVATE IMPLEMENTATION REPOSITORY
+A–Y JOURNEY ENGINE       NOT IMPLEMENTED
+PUBLIC EXPERIENCE        NOT DEPLOYED
 ```
 
-Migration is additive and provenance-preserving. Do not delete, reset or overwrite the source implementation.
+The active product target is a finite prototype of the larger alphabetic universe. It must prove:
+
+- one common entry at A;
+- a connected subset of intermediate letters;
+- multiple nonalphabetical trajectories;
+- meaningful loops and mutated revisits;
+- contextual access to optional M from more than one region;
+- Y generated from the complete event trace;
+- mobile, keyboard, touch, reduced-motion and non-WebGL equivalence.
+
+See:
+
+- [`experiences/vertical-slice-v0/README.md`](./experiences/vertical-slice-v0/README.md)
+- [`experiences/vertical-slice-v0/spec.yaml`](./experiences/vertical-slice-v0/spec.yaml)
+- [`product/ROADMAP.md`](./product/ROADMAP.md)
+
+## Core operating law
+
+Every node, interaction and visual activator must answer:
+
+```text
+WHAT REAL WORK, SOURCE, RELATION OR QUESTION DOES THIS CARRY?
+WHAT USER ACTION CHANGES IT?
+WHAT MEMORY DOES IT WRITE?
+WHAT LATER CONSEQUENCE DOES IT CREATE?
+HOW DOES IT CONTRIBUTE TO Y?
+```
+
+An element that cannot answer these questions is research, atmosphere or scope drift—not active product logic.
+
+## Information integrity
+
+KODEX distinguishes:
+
+- `VERIFIED` — supported by executable code, primary evidence or an official record;
+- `CANONICAL` — an approved internal law of the creative universe;
+- `INFERRED` — a conclusion whose supporting basis remains visible;
+- `SPECULATIVE` — an artistic, philosophical or future hypothesis;
+- `NEEDS_CONFIRMATION` — incomplete or contradictory information;
+- `DEPRECATED` — preserved history that no longer governs implementation.
+
+Scientific, cultural and mythopoetic layers must never be silently fused.
 
 ## Repository map
 
 ```text
 /
-├── START_HERE.md              # mandatory context gateway
-├── PROJECT_MANIFEST.json      # machine-readable identity and invariants
-├── CHATGPT.md                 # GPT orchestration entry
-├── CLAUDE.md                  # Claude architecture entry
-├── GEMINI.md                  # Gemini multimodal entry
-├── CODEX.md                   # Codex implementation entry
-├── HERMES.md                  # bounded autonomy entry
-├── SKILL.md                   # master operating skill
-├── AGENTS.md                  # cross-model agent contract
-├── canon/                     # identity, laws and epistemic standard
-├── context/                   # recovered conversation and prototype context
-├── architecture/              # algorithm, runtime and memory
-├── design-system/             # visual, information, motion and token system
-├── experiences/               # product-path specifications
-├── modules/                   # reusable KODEX engines
-├── data/                      # graphs and machine-readable registries
-├── ops/                       # prompts, ingestion, handoff and work packets
-├── product/                   # current state, roadmap and execution plan
-├── research/                  # corpus decisions and research programs
-├── business/                  # product, service, pricing and licensing strategy
-├── scripts/                   # dependency-free integrity checks
-├── docs/                      # decisions, migration and public methods
-└── .github/                   # workflows and collaboration templates
+├── START_HERE.md
+├── PROJECT_MANIFEST.json
+├── AGENTS.md
+├── CHATGPT.md / CLAUDE.md / CODEX.md / GEMINI.md / HERMES.md
+├── canon/                 # identity, laws and epistemic standard
+├── context/               # recovered history and verified inventories
+├── architecture/          # graph, runtime, memory and interaction contracts
+├── design-system/         # visual, motion, information and typography systems
+├── experiences/           # finite executable product slices
+├── modules/               # reusable KODEX engines
+├── data/                  # alphabet, graphs, states and registries
+├── docs/decisions/        # accepted architectural decisions
+├── ops/                   # work packets, ingestion and handoff protocols
+├── product/               # current state, quality gates and roadmap
+├── research/              # corpus and reference analysis
+├── packages/              # executable references and recovered source
+├── schemas/               # machine-readable contracts
+├── scripts/               # integrity and ingestion tools
+└── tests/                 # reference validation
 ```
 
-## First product target
+## Existing visual and computational lineage
 
-```text
-−∞
-→ THRESHOLD
-→ OBSERVE or REMEMBER
-→ ARCHIVE
-→ HEART
-→ RETURN / +∞
-→ path artifact + sources + contribution + re-entry
-```
+The verified inventory includes:
 
-Specification:
-
-- [`experiences/vertical-slice-v0/README.md`](./experiences/vertical-slice-v0/README.md)
-- [`experiences/vertical-slice-v0/spec.yaml`](./experiences/vertical-slice-v0/spec.yaml)
-
-Recommended first corpus:
-
-- [`research/FIRST_CORPUS_SELECTION.md`](./research/FIRST_CORPUS_SELECTION.md)
-
-## Core algorithm and information integrity
-
-- Every scene begins from a question—not a preferred visual effect.
-- Every factual claim has a source and truth class.
-- Every essential visual element has a semantic passport.
-- Missing information remains visibly missing.
-- User decisions create later consequences.
-- Session memory constructs Return and the final artifact.
-- Symbolic, scientific, testimonial and speculative material remain distinguishable.
-
-## Existing system lineage
-
-The recovered inventory includes:
-
-- current Astro KODEX implementation and visual grammar;
-- Threshold Portal multipass shader scaffold;
+- Threshold Portal;
 - OBSERVE and OBSERVE V2;
 - Spatial Engine v1/v2;
-- Split Corridor and impossible-space systems;
-- KODEX SVG and Design System packs;
-- Impossible Forms Vol. 1;
-- transparent Canvas helix;
-- contemplative-state specifications;
-- scientific/computational research branch.
+- Split Corridor;
+- Ripple Floor;
+- Mirror Identity;
+- Perspective Flip;
+- Wrinkled Reality;
+- Impossible Structure;
+- Helix Transparent;
+- SVG, design-system, visual-grammar and typography packages;
+- Open Visual Lab;
+- Astro scene, shader, fallback and visual-QA systems.
 
-See [`context/PROTOTYPE_AND_CODE_INVENTORY.md`](./context/PROTOTYPE_AND_CODE_INVENTORY.md) and [`data/registries/prototypes.yaml`](./data/registries/prototypes.yaml). Reported packages are not treated as repository-verified until their bytes and provenance are recovered.
-
-## Business architecture
-
-KODEX is designed as an open cultural project with commercial layers:
-
-- public experience and methods;
-- procedural asset products;
-- engine and studio licenses;
-- creative-system and AI-context services;
-- commissioned living archives;
-- generative identities;
-- editions, workshops and installations;
-- future Creator Toolkit / SDK.
-
-See:
-
-- [`business/BUSINESS_MODEL.md`](./business/BUSINESS_MODEL.md)
-- [`business/PRODUCT_CATALOG.md`](./business/PRODUCT_CATALOG.md)
-- [`business/MARKET_AND_PRICING_REFERENCE_2026.md`](./business/MARKET_AND_PRICING_REFERENCE_2026.md)
+These are source materials and candidate engines. Their existence does not mean the alphabetic journey is already assembled.
 
 ## Non-negotiable rules
 
-- Work on a branch and submit a pull request.
-- Never create parallel canon silently.
-- Never fabricate data, biometrics, frequencies, citations, files, tests or cultural authority.
-- Keep evidence, interpretation, speculation, myth and atmosphere visibly distinct.
-- Preserve attribution, rights status, territory and permission requirements.
-- Keep private conversations, personal data and restricted knowledge outside this public repository.
-- Respect reduced motion, keyboard access, touch, fallback and immediate exit.
-- No deployment occurs without the exact phrase `APROBAR DEPLOY`.
-
-## Integrity validation
-
-Run:
-
-```bash
-python scripts/validate_context.py
-```
-
-The repository also contains a GitHub Actions workflow for context, graph, JSON and public-boundary validation.
-
-## Artifact status vocabulary
-
-- `CANONICAL`
-- `APPROVED`
-- `EXPERIMENTAL`
-- `REFERENCE`
-- `SUPERSEDED`
-- `DEPRECATED`
-- `PRIVATE`
-- `RIGHTS_UNCLEAR`
-
-## Rights and licensing
-
-This repository is public for inspection and collaboration, but no general reuse license has been selected yet. Unless a file states otherwise, publication here does not grant permission to reproduce KODEX branding, written canon, cultural material or visual assets. Third-party references remain the property of their respective creators.
+- Preserve Ocín's original visual lineage and provenance.
+- Never fabricate data, biometrics, frequencies, citations, tests or cultural authority.
+- Never present metaphorical quantum language as scientific implementation.
+- Never turn M into a compulsory checkpoint, score or spiritual hierarchy.
+- Never reduce the universe to Path A / Path B.
+- Never expose private Obsidian, Drive or conversation material without review.
+- Maintain touch, keyboard, reduced-motion, fallback and immediate-exit behavior.
+- Work through branches, reviewable changes and explicit status labels.
 
 ## Deployment
 
-Repository preparation, branches, pull requests and previews do not authorize production deployment.
+Repository commits, merges, previews and prototypes do not authorize production deployment.
 
 ```text
 DEPLOYMENT STATUS: BLOCKED
