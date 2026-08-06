@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.example/schemas/module.schema.json",
+  "title": "KODEX Module Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "status",
+    "purpose",
+    "questionTypes",
+    "supportedClaimClasses",
+    "semanticChannels",
+    "interactionRoles",
+    "accessibilityModes",
+    "renderers",
+    "performanceCost"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum": ["SPECIFICATION", "EXPERIMENTAL", "APPROVED", "CANONICAL", "DEPRECATED"]},
+    "purpose": {"type": "string", "minLength": 1},
+    "questionTypes": {"type": "array", "items": {"type": "string"}},
+    "supportedClaimClasses": {
+      "type": "array",
+      "items": {
+        "enum": ["OBSERVED", "DERIVED", "ESTIMATED", "PROXY", "INTERPRETATION", "TESTIMONY", "SPECULATION", "MYTHOPOETIC", "SYNTHETIC", "UNKNOWN"]
+      }
+    },
+    "inputSchema": {"type": ["string", "null"]},
+    "outputSchema": {"type": ["string", "null"]},
+    "semanticChannels": {"type": "array", "items": {"type": "string"}},
+    "interactionRoles": {"type": "array", "items": {"type": "string"}},
+    "writesToMemory": {"type": "array", "items": {"type": "string"}},
+    "emitsEvents": {"type": "array", "items": {"type": "string"}},
+    "acceptsEvents": {"type": "array", "items": {"type": "string"}},
+    "accessibilityModes": {"type": "array", "items": {"type": "string"}},
+    "renderers": {"type": "array", "items": {"enum": ["DOM", "SVG", "CANVAS", "WEBGL"]}, "uniqueItems": true},
+    "performanceCost": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+    "fallback": {"type": ["string", "null"]},
+    "rightsRequirements": {"type": "array", "items": {"type": "string"}},
+    "culturalReview": {"type": "boolean"},
+    "contemplativeReview": {"type": "boolean"},
+    "tests": {"type": "array", "items": {"type": "string"}}
+  }
+}
