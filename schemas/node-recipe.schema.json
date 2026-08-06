@@ -1,0 +1,313 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex-minus-infinity.local/schemas/node-recipe.schema.json",
+  "title": "KODEX−∞ Node Recipe Registry",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "registryId",
+    "status",
+    "coordinateAuthority",
+    "creatorApprovalRequiredForAssignments",
+    "recipes"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "registryId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "status": {
+      "type": "string",
+      "enum": ["PROPOSED", "CREATOR_REVIEW", "CANONICAL", "DEPRECATED"]
+    },
+    "coordinateAuthority": { "const": "data/alphabet-topology.json" },
+    "creatorApprovalRequiredForAssignments": { "const": true },
+    "recipes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/nodeRecipe" }
+    },
+    "trajectorySignatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "route", "purpose", "mVisited"],
+        "properties": {
+          "id": { "type": "string" },
+          "route": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string", "pattern": "^[A-Y](?:′)?$" }
+          },
+          "purpose": { "type": "string" },
+          "mVisited": { "type": "boolean" },
+          "requiredEvidence": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "coordinate": {
+      "type": "string",
+      "pattern": "^[A-Y]$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "CANONICAL",
+        "PROPOSED_FOR_VERTICAL_SLICE",
+        "NEEDS_CREATOR_APPROVAL",
+        "LATENT",
+        "PROTOTYPE",
+        "IMPLEMENTED",
+        "VALIDATED",
+        "DEPRECATED"
+      ]
+    },
+    "epistemicStatus": {
+      "type": "string",
+      "enum": [
+        "CANONICAL_PROJECT_CONSTRUCT",
+        "AUTHORED_INTERPRETATION",
+        "EVIDENCE_LINKED",
+        "SPECULATIVE",
+        "ATMOSPHERIC",
+        "NEEDS_REVIEW"
+      ]
+    },
+    "organismFamily": {
+      "type": "string",
+      "enum": ["FIELD", "VORTEX", "ORBITAL", "GROWTH", "SPECIMEN", "TERRAIN"]
+    },
+    "renderMode": {
+      "type": "string",
+      "enum": [
+        "SHADER",
+        "IMAGE_FIELD",
+        "DEPTH_STACK",
+        "PARTICLES",
+        "GLB",
+        "SVG",
+        "CANVAS",
+        "LAYERED_PLANES"
+      ]
+    },
+    "action": {
+      "type": "object",
+      "required": ["id", "label", "kind", "consequence", "memoryWrites"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
+        "label": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "COMMIT",
+            "TRACE_RELATION",
+            "INSPECT_SOURCE",
+            "ACTIVATE",
+            "PLANT",
+            "SELECT",
+            "RETURN",
+            "SAFE_EXIT"
+          ]
+        },
+        "consequence": { "type": "string", "minLength": 1 },
+        "memoryWrites": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[A-Z0-9_]+$" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "edge": {
+      "type": "object",
+      "required": ["target", "relationId", "condition", "consequence"],
+      "properties": {
+        "target": { "$ref": "#/$defs/coordinate" },
+        "relationId": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
+        "condition": { "type": "string", "minLength": 1 },
+        "consequence": { "type": "string", "minLength": 1 },
+        "priority": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "serendipityEligible": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "organismRecipe": {
+      "type": "object",
+      "required": [
+        "family",
+        "presetId",
+        "renderMode",
+        "implementationStatus",
+        "fallback",
+        "reducedMotion"
+      ],
+      "properties": {
+        "family": { "$ref": "#/$defs/organismFamily" },
+        "presetId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "renderMode": { "$ref": "#/$defs/renderMode" },
+        "implementationStatus": {
+          "type": "string",
+          "enum": ["PLANNED", "PROTOTYPE", "IMPLEMENTED", "TESTED", "DEPRECATED"]
+        },
+        "fallback": { "type": "string" },
+        "reducedMotion": { "type": "string" },
+        "semanticControls": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "contextualVariants": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "nodeRecipe": {
+      "type": "object",
+      "required": [
+        "coordinate",
+        "assignmentStatus",
+        "structuralRole",
+        "concept",
+        "worldIds",
+        "content",
+        "graph",
+        "interaction",
+        "memory",
+        "spectrum",
+        "returnContribution",
+        "accessibility"
+      ],
+      "properties": {
+        "coordinate": { "$ref": "#/$defs/coordinate" },
+        "assignmentStatus": { "$ref": "#/$defs/status" },
+        "structuralRole": { "type": "string" },
+        "canonicalIdentity": { "type": "string" },
+        "concept": {
+          "type": "object",
+          "required": ["id", "title", "statement", "question", "epistemicStatus"],
+          "properties": {
+            "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+            "title": { "type": "string" },
+            "statement": { "type": "string" },
+            "question": { "type": "string" },
+            "epistemicStatus": { "$ref": "#/$defs/epistemicStatus" }
+          },
+          "additionalProperties": false
+        },
+        "worldIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["memory-world", "machine-world", "cosmology-world", "artifact-world", "threshold-world", "return-world"]
+          }
+        },
+        "content": {
+          "type": "object",
+          "required": [
+            "sourceIds",
+            "visualActivatorIds",
+            "provenanceStatus",
+            "rightsStatus",
+            "culturalStatus"
+          ],
+          "properties": {
+            "sourceIds": { "type": "array", "items": { "type": "string" } },
+            "visualActivatorIds": { "type": "array", "items": { "type": "string" } },
+            "provenanceStatus": { "type": "string" },
+            "rightsStatus": { "type": "string" },
+            "culturalStatus": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "graph": {
+          "type": "object",
+          "required": ["entryConditions", "exits", "portalToM"],
+          "properties": {
+            "entryConditions": { "type": "array", "items": { "type": "string" } },
+            "exits": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+            "portalToM": {
+              "type": "object",
+              "required": ["state", "conditions", "returnBehavior"],
+              "properties": {
+                "state": { "type": "string", "enum": ["LATENT", "RESONANT", "AVAILABLE", "NOT_APPLICABLE"] },
+                "conditions": { "type": "array", "items": { "type": "string" } },
+                "returnBehavior": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "interaction": {
+          "type": "object",
+          "required": ["meaningfulActions", "passiveEffects"],
+          "properties": {
+            "meaningfulActions": { "type": "array", "items": { "$ref": "#/$defs/action" } },
+            "passiveEffects": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "memory": {
+          "type": "object",
+          "required": ["reads", "writes", "revisitMutation"],
+          "properties": {
+            "reads": { "type": "array", "items": { "type": "string" } },
+            "writes": { "type": "array", "items": { "type": "string" } },
+            "revisitMutation": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "organism": {
+          "oneOf": [
+            { "$ref": "#/$defs/organismRecipe" },
+            { "type": "null" }
+          ]
+        },
+        "presentationMode": {
+          "type": "string",
+          "enum": ["ORGANISM", "TRACE_COMPOSITE", "CONTEXTUAL_HEART", "DOCUMENTARY", "STATIC"]
+        },
+        "spectrum": {
+          "type": "object",
+          "required": ["entry", "active", "yContribution"],
+          "properties": {
+            "entry": { "type": "array", "items": { "type": "string" } },
+            "active": { "type": "array", "items": { "type": "string" } },
+            "yContribution": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "returnContribution": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "accessibility": {
+          "type": "object",
+          "required": ["keyboard", "touch", "reducedMotion", "motionOff", "nonVisualAlternative", "immediateExit"],
+          "properties": {
+            "keyboard": { "const": true },
+            "touch": { "const": true },
+            "reducedMotion": { "const": true },
+            "motionOff": { "const": true },
+            "nonVisualAlternative": { "const": true },
+            "immediateExit": { "const": true }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
