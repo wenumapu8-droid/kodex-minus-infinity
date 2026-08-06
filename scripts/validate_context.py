@@ -26,10 +26,18 @@ REQUIRED_FILES = [
     "architecture/SESSION_MEMORY_AND_PATHS.md",
     "product/CURRENT_STATE.md",
     "product/EXPERIENCE_ARCHITECTURE.md",
+    "experiences/vertical-slice-v0/README.md",
+    "experiences/vertical-slice-v0/spec.yaml",
+    "modules/MODULE_CONTRACT.md",
     "data/experience-graph.json",
     "data/state-registry.json",
     "data/module-registry.json",
     "design-system/tokens/kodex.tokens.json",
+    "schemas/source.schema.json",
+    "schemas/claim.schema.json",
+    "schemas/semantic-passport.schema.json",
+    "schemas/session-memory.schema.json",
+    "schemas/module.schema.json",
 ]
 
 JSON_FILES = [
@@ -38,6 +46,11 @@ JSON_FILES = [
     "data/state-registry.json",
     "data/module-registry.json",
     "design-system/tokens/kodex.tokens.json",
+    "schemas/source.schema.json",
+    "schemas/claim.schema.json",
+    "schemas/semantic-passport.schema.json",
+    "schemas/session-memory.schema.json",
+    "schemas/module.schema.json",
 ]
 
 FORBIDDEN_PUBLIC_PATHS = [
@@ -132,6 +145,29 @@ def validate_state_registry(errors: list[str]) -> None:
         errors.append(f"Expected 14 functional states, found {len(ids)}")
 
 
+def validate_module_registry(errors: list[str]) -> None:
+    try:
+        registry = load_json("data/module-registry.json")
+    except (OSError, json.JSONDecodeError):
+        return
+
+    modules = registry.get("modules", [])
+    ids: list[str] = []
+    for module in modules:
+        if not isinstance(module, dict):
+            errors.append("Module registry contains a non-object module")
+            continue
+        module_id = module.get("id")
+        module_path = module.get("path")
+        if isinstance(module_id, str):
+            ids.append(module_id)
+        if not isinstance(module_path, str) or not (ROOT / module_path).is_file():
+            errors.append(f"Module registry target missing: {module_path!r}")
+
+    if len(ids) != len(set(ids)):
+        errors.append("Module registry contains duplicate IDs")
+
+
 def validate_public_boundary(errors: list[str]) -> None:
     for relative_path in FORBIDDEN_PUBLIC_PATHS:
         path = ROOT / relative_path
@@ -153,6 +189,7 @@ def main() -> int:
     validate_manifest(errors)
     validate_experience_graph(errors)
     validate_state_registry(errors)
+    validate_module_registry(errors)
     validate_public_boundary(errors)
 
     if errors:
