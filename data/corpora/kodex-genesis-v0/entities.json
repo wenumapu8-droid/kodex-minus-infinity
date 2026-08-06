@@ -1,0 +1,119 @@
+[
+  {
+    "id": "ENT-KODEX",
+    "type": "SYSTEM",
+    "names": ["KODEX−∞", "kodex-minus-infinity"],
+    "sourceIds": [
+      "SRC-KDX-CANON-REPO",
+      "SRC-WENU-KODEX-INDEX",
+      "SRC-WENU-UNIVERSE",
+      "SRC-WENU-GRAMMAR"
+    ],
+    "attributes": {
+      "category": "Living Information Design",
+      "creator": "Nicolás Ortega / Ocín"
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-CANON-REPO",
+    "type": "REPOSITORY",
+    "names": ["KODEX canonical repository"],
+    "sourceIds": ["SRC-KDX-CANON-REPO"],
+    "attributes": {
+      "repository": "wenumapu8-droid/kodex-minus-infinity",
+      "status": "draft bootstrap"
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-WENU-IMPLEMENTATION",
+    "type": "REPOSITORY",
+    "names": ["Existing Astro KODEX implementation"],
+    "sourceIds": [
+      "SRC-WENU-KODEX-INDEX",
+      "SRC-WENU-UNIVERSE",
+      "SRC-WENU-GRAMMAR",
+      "SRC-WENU-THRESHOLD-SPEC"
+    ],
+    "attributes": {
+      "repository": "wenumapu8-droid/wenu-frontend",
+      "verifiedBranch": "feature/kodex-depth-engine"
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-VISUAL-GRAMMAR",
+    "type": "SYSTEM",
+    "names": ["KODEX visual grammar"],
+    "sourceIds": ["SRC-WENU-GRAMMAR"],
+    "attributes": {
+      "implementation": "TypeScript and JSON",
+      "role": "scene recipe, grid, density, motion and field selection"
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-THRESHOLD-PORTAL",
+    "type": "SYSTEM",
+    "names": ["KODEX Threshold Portal"],
+    "sourceIds": ["SRC-WENU-THRESHOLD-SPEC"],
+    "attributes": {
+      "pipeline": ["source", "feedback", "composite"],
+      "states": ["DORMANT", "AWARE", "OPEN"]
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-HELIX",
+    "type": "ARTIFACT",
+    "names": ["KODEX Helix Transparent"],
+    "sourceIds": ["SRC-KDX-HELIX-ARCHIVE"],
+    "attributes": {
+      "renderer": "Canvas 2D",
+      "alpha": true,
+      "migratedPath": "packages/recovered/helix-transparent-v1/"
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-IMPOSSIBLE-FORMS",
+    "type": "PRODUCT",
+    "names": ["KODEX Impossible Forms Vol. 1"],
+    "sourceIds": ["SRC-KDX-IMPOSSIBLE-FORMS-ARCHIVE"],
+    "attributes": {
+      "formCount": 12,
+      "archiveFileCount": 77,
+      "publicMigration": "blocked pending license and delivery review"
+    },
+    "rightsStatus": "REFERENCE_ONLY"
+  },
+  {
+    "id": "ENT-HEART",
+    "type": "SYSTEM",
+    "names": ["KODEX Heart Engine"],
+    "sourceIds": ["SRC-KDX-CANON-REPO"],
+    "attributes": {
+      "principle": "The heart does not score. It orients.",
+      "sensorMode": "disabled until verified integration"
+    },
+    "rightsStatus": "CLEAR"
+  },
+  {
+    "id": "ENT-RETURN",
+    "type": "SYSTEM",
+    "names": ["RETURN / +∞"],
+    "sourceIds": ["SRC-KDX-CANON-REPO"],
+    "attributes": {
+      "convergence": [
+        "memory",
+        "provenance",
+        "relation",
+        "reflection",
+        "contribution",
+        "re-entry"
+      ]
+    },
+    "rightsStatus": "CLEAR"
+  }
+]
