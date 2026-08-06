@@ -1,413 +1,177 @@
 {
   "system": "KODEX−∞",
-  "version": "0.3.0-multiverse",
-  "entry": "minus-infinity",
-  "threshold": "threshold",
-  "convergence": "return-plus-infinity",
-  "optionalDepthLayer": "heart",
-  "optionalPostscript": "commons-wall",
+  "version": "0.4.0-alphabet-authority",
+  "status": "CANONICAL_TOPOLOGY_PARTIAL_IMPLEMENTATION",
+  "authoritativeCoordinateRegistry": "data/alphabet-topology.json",
   "topology": {
-    "model": "DIRECTED_MEMORY_PRESERVING_MULTIVERSE_GRAPH",
-    "commonOrigin": true,
-    "parallelWorlds": true,
+    "model": "DIRECTED_WEIGHTED_STATEFUL_MEMORY_PRESERVING_ALPHABET_GRAPH",
+    "coordinates": "A_THROUGH_Y",
+    "entry": "A",
+    "optionalDistributedHeart": "M",
+    "completedJourneyTerminal": "Y",
+    "alphabeticalTraversalRequired": false,
+    "allCoordinatesRequiredPerJourney": false,
+    "loopsAllowed": true,
+    "mutatedRevisitsAllowed": true,
+    "boundedSerendipity": true,
     "heartMandatory": false,
-    "returnMandatoryForCompletedJourney": true,
-    "immediateExitAvailable": true
+    "immediateSafeExitAvailable": true
   },
-  "worlds": [
+  "coordinateSemantics": {
+    "A": {
+      "canonicalIdentity": "−∞ / THRESHOLD",
+      "role": "COMMON_ORIGIN_AND_FIRST_MEMORY_WRITE"
+    },
+    "M": {
+      "canonicalIdentity": "HEART / 0",
+      "role": "OPTIONAL_DISTRIBUTED_DEPTH_AND_ORIENTATION",
+      "portalStates": [
+        "LATENT",
+        "RESONANT",
+        "AVAILABLE"
+      ],
+      "exitBehavior": "RESTORE_EXACT_PRIOR_ROUTE_ANCHOR"
+    },
+    "Y": {
+      "canonicalIdentity": "RETURN / +∞",
+      "role": "ROUTE_DERIVED_CONVERGENCE_AND_REENTRY"
+    }
+  },
+  "semanticWorlds": [
     {
       "id": "memory-world",
       "title": "MEMORY WORLD",
-      "function": "Versions, testimony, descent, archive, traces and reconstructed relations.",
-      "nodeIds": [
-        "prologue",
-        "descent",
-        "archive"
-      ],
-      "defaultSpectralBands": [
-        "violet",
-        "blue",
-        "green"
-      ]
+      "function": "Versions, testimony, archive, traces and reconstructed relations."
     },
     {
       "id": "machine-world",
       "title": "MACHINE WORLD",
-      "function": "Computational transformation, generative rules, simulation and inspectable code.",
-      "nodeIds": [
-        "machine"
-      ],
-      "defaultSpectralBands": [
-        "orange",
-        "cyan",
-        "yellow"
-      ]
+      "function": "Computational transformation, generative rules, simulation and inspectable code."
     },
     {
       "id": "cosmology-world",
       "title": "COSMOLOGY WORLD",
-      "function": "Relations across time, territory, ecology, culture, technology and possible futures.",
-      "nodeIds": [
-        "cosmology"
-      ],
-      "defaultSpectralBands": [
-        "magenta",
-        "indigo",
-        "violet"
-      ]
+      "function": "Relations across time, territory, ecology, culture, technology and possible futures."
     },
     {
       "id": "artifact-world",
       "title": "ARTIFACT WORLD",
-      "function": "Works, books, creator lineage, visual systems and Artifact Altars.",
-      "nodeIds": [
-        "prologue",
-        "archive",
-        "machine"
-      ],
-      "defaultSpectralBands": [
-        "red",
-        "yellow",
-        "violet"
-      ]
+      "function": "Works, books, visual lineage, systems and Artifact Altars."
     }
   ],
+  "legacySceneFunctions": {
+    "status": "SEMANTIC_MODULES_NOT_FIXED_ROUTE_NODES",
+    "functions": [
+      {
+        "id": "prologue",
+        "role": "context_and_reading_grammar"
+      },
+      {
+        "id": "descent",
+        "role": "noise_reduction_uncertainty_and_hidden_structure"
+      },
+      {
+        "id": "archive",
+        "role": "sources_entities_versions_and_provenance"
+      },
+      {
+        "id": "machine",
+        "role": "rules_code_simulation_and_transformation"
+      },
+      {
+        "id": "cosmology",
+        "role": "larger_relational_systems"
+      },
+      {
+        "id": "commons-wall",
+        "role": "optional_post_y_public_trace_surface"
+      }
+    ],
+    "rule": "These functions may appear inside one or more letter coordinates and must not be interpreted as one compulsory sequence."
+  },
   "functionalSpectrum": [
     {
       "id": "obsidian",
-      "order": 0,
       "role": "unintegrated potential and common origin"
     },
     {
       "id": "red",
-      "order": 1,
       "role": "activation, orientation and living pulse"
     },
     {
       "id": "orange",
-      "order": 2,
       "role": "transformation, rupture and machine process"
     },
     {
       "id": "yellow",
-      "order": 3,
       "role": "agency, attention and active selection"
     },
     {
       "id": "green",
-      "order": 4,
       "role": "relation, growth and connective opening"
     },
     {
       "id": "cyan",
-      "order": 5,
       "role": "signal and live technical relation when grounded"
     },
     {
       "id": "blue",
-      "order": 6,
       "role": "structure, language and inspectable knowledge"
     },
     {
       "id": "indigo",
-      "order": 7,
       "role": "deep pattern recognition and cross-world relation"
     },
     {
       "id": "violet",
-      "order": 8,
       "role": "ambiguity, synthesis and expanded relation"
     },
     {
       "id": "open-white",
-      "order": 9,
       "role": "integration, legibility and Return"
     }
   ],
   "spectrumRules": [
-    "The spectrum is a functional design grammar, not a scientific emotion hierarchy.",
-    "Routes may visit a subset of bands and do not need to follow a rigid rainbow ladder.",
+    "The spectrum is a functional and mythopoetic design grammar, not a scientific emotion hierarchy.",
+    "A trajectory may traverse any coherent subset and does not follow a compulsory rainbow ladder.",
     "Essential meaning never depends on color alone.",
-    "Frequency may refer only to actual audio, tempo, recurrence, event density or clearly labeled mythopoetic language.",
     "No consciousness score, emotional frequency number or fabricated telemetry is permitted.",
-    "Return synthesizes the route spectrum from committed decisions and traced relations."
+    "Y synthesizes spectrum from the actual event trace."
   ],
-  "heartPortal": {
-    "nodeId": "heart",
-    "mandatory": false,
-    "states": [
-      "LATENT",
-      "RESONANT",
-      "AVAILABLE"
-    ],
-    "eligibleConditions": [
-      "meaningful decisions committed in at least two semantic families",
-      "a relation traced across at least two worlds",
-      "a repeated pulse glyph explicitly discovered and activated",
-      "a declared contemplative interaction completed"
-    ],
-    "forbiddenUnlockSignals": [
-      "passive pointer movement",
-      "time on page alone",
-      "inferred emotional state",
-      "biometric simulation",
-      "spiritual or consciousness score"
-    ],
-    "entry": "VOLUNTARY",
-    "exitBehavior": "RESTORE_EXACT_ROUTE_ANCHOR",
-    "accessibility": {
-      "keyboard": true,
-      "touch": true,
-      "screenReaderStatus": true,
-      "reducedMotion": true,
-      "motionOff": true,
-      "immediateExit": true
-    }
+  "edgeResolverInputs": [
+    "CURRENT_LETTER",
+    "COMMITTED_ACTIONS",
+    "VISITED_LETTERS",
+    "VISIT_COUNTS",
+    "TRACED_RELATIONS",
+    "IGNORED_SIGNALS",
+    "SPECTRAL_STATE",
+    "BOUNDED_SERENDIPITY_SEED",
+    "ACCESSIBILITY_MODE"
+  ],
+  "firstExecutableSlice": {
+    "status": "NOT_IMPLEMENTED",
+    "minimumConsequentialCoordinates": 6,
+    "minimumMultiExitMoments": 3,
+    "minimumConnectedWorlds": 2,
+    "minimumQATrajectorySignatures": 8,
+    "requiresLoop": true,
+    "requiresMutatedRevisit": true,
+    "requiresDelayedConsequence": true,
+    "requiresMFromMultipleRegions": true,
+    "requiresRouteWithoutM": true,
+    "requiresRouteWithM": true,
+    "requiresYFromFullEventTrace": true
   },
-  "nodes": [
-    {
-      "id": "minus-infinity",
-      "title": "−∞",
-      "function": "Represent unintegrated potential, fragmented information and incomplete relations without moral judgment.",
-      "layer": "atmosphere",
-      "spectralBand": "obsidian",
-      "scrollMode": "LOCKED_100SVH",
-      "exits": [
-        "threshold"
-      ]
-    },
-    {
-      "id": "threshold",
-      "title": "THRESHOLD",
-      "function": "Consent, accessibility, orientation, intention and first meaningful decision.",
-      "worldIds": [],
-      "spectralBand": "red",
-      "decisions": [
-        "observe",
-        "remember",
-        "connect",
-        "transform",
-        "contribute"
-      ],
-      "scrollMode": "LOCKED_100SVH",
-      "interactionPrimitives": [
-        "proximity-field",
-        "semantic-hotspot",
-        "color-state-transition"
-      ],
-      "exits": [
-        "prologue",
-        "archive",
-        "machine",
-        "cosmology",
-        "return-plus-infinity"
-      ]
-    },
-    {
-      "id": "prologue",
-      "title": "PROLOGUE",
-      "function": "Establish the question, context and reading grammar through verified author material and portfolio artifacts.",
-      "worldIds": [
-        "memory-world",
-        "artifact-world"
-      ],
-      "spectralBand": "violet",
-      "scrollMode": "LOCKED_100SVH",
-      "exits": [
-        "descent",
-        "archive",
-        "machine",
-        "cosmology",
-        "return-plus-infinity"
-      ],
-      "optionalPortals": [
-        "heart"
-      ]
-    },
-    {
-      "id": "descent",
-      "title": "DESCENT",
-      "function": "Reduce noise and reveal uncertainty, contradiction, absence or hidden structure.",
-      "worldIds": [
-        "memory-world"
-      ],
-      "spectralBand": "indigo",
-      "scrollMode": "LOCKED_100SVH",
-      "exits": [
-        "archive",
-        "machine",
-        "cosmology",
-        "return-plus-infinity"
-      ],
-      "optionalPortals": [
-        "heart"
-      ]
-    },
-    {
-      "id": "archive",
-      "title": "ARCHIVE",
-      "function": "Expose entities, sources, relations, provenance, uncertainty and memory.",
-      "worldIds": [
-        "memory-world",
-        "artifact-world"
-      ],
-      "spectralBand": "blue",
-      "scrollMode": "LOCKED_100SVH",
-      "interactionPrimitives": [
-        "semantic-hotspot",
-        "proximity-field",
-        "inspection-trail"
-      ],
-      "exits": [
-        "prologue",
-        "descent",
-        "machine",
-        "cosmology",
-        "return-plus-infinity"
-      ],
-      "optionalPortals": [
-        "heart"
-      ]
-    },
-    {
-      "id": "machine",
-      "title": "MACHINE",
-      "function": "Reveal computational transformation, simulation, generative rules and inspectable code.",
-      "worldIds": [
-        "machine-world",
-        "artifact-world"
-      ],
-      "spectralBand": "orange",
-      "scrollMode": "LOCKED_100SVH",
-      "interactionPrimitives": [
-        "drag-deformation",
-        "color-state-transition",
-        "semantic-hotspot"
-      ],
-      "exits": [
-        "archive",
-        "cosmology",
-        "prologue",
-        "return-plus-infinity"
-      ],
-      "optionalPortals": [
-        "heart"
-      ]
-    },
-    {
-      "id": "heart",
-      "title": "HEART / 0",
-      "function": "Offer an optional sanctuary that restores orientation and connects worlds through a non-scoring pulse.",
-      "layer": "orthogonal-depth",
-      "optional": true,
-      "spectralBand": "red",
-      "modes": [
-        "guided_pulse",
-        "tap_pulse",
-        "sensor_pulse_disabled"
-      ],
-      "scrollMode": "LOCKED_100SVH",
-      "entryConditionsReference": "heartPortal.eligibleConditions",
-      "exitBehavior": "RESTORE_EXACT_ROUTE_ANCHOR",
-      "exits": [
-        "return-anchor",
-        "return-plus-infinity"
-      ]
-    },
-    {
-      "id": "cosmology",
-      "title": "COSMOLOGY",
-      "function": "Connect the local path to larger systems across time, territory, culture, ecology, technology and possible futures.",
-      "worldIds": [
-        "cosmology-world"
-      ],
-      "spectralBand": "violet",
-      "scrollMode": "LOCKED_100SVH",
-      "exits": [
-        "archive",
-        "machine",
-        "prologue",
-        "return-plus-infinity"
-      ],
-      "optionalPortals": [
-        "heart"
-      ]
-    },
-    {
-      "id": "return-plus-infinity",
-      "title": "RETURN / +∞",
-      "function": "Converge through memory, provenance, relation, reflection, contribution and re-entry without requiring Heart.",
-      "spectralBand": "open-white",
-      "scrollMode": "LOCKED_100SVH",
-      "requiredOutputs": [
-        "path_summary",
-        "worlds_visited",
-        "spectral_bands_encountered",
-        "heart_visit_status_without_ranking",
-        "source_access",
-        "uncertainty_summary",
-        "generated_artifact",
-        "contribution_option",
-        "sharing_option",
-        "repository_or_code_option",
-        "new_route"
-      ],
-      "visualTransition": {
-        "from": "obsidian_fragmentation",
-        "through": "route_derived_spectrum",
-        "to": "open_white_integration"
-      },
-      "exits": [
-        "commons-wall",
-        "threshold",
-        "archive",
-        "machine",
-        "cosmology"
-      ]
-    },
-    {
-      "id": "commons-wall",
-      "title": "THE COMMONS / PUBLIC TRACE WALL",
-      "function": "Offer an optional moderated public surface where visitors may write, draw, observe accumulated traces, report content, exit or re-enter KODEX.",
-      "layer": "public-contribution-postscript",
-      "optional": true,
-      "scrollMode": "GROWING_DOCUMENT_SCROLL",
-      "modes": [
-        "write",
-        "draw",
-        "observe",
-        "accessible-list"
-      ],
-      "interactionPrimitives": [
-        "commons-vector-draw",
-        "semantic-hotspot",
-        "color-state-transition"
-      ],
-      "privacy": {
-        "privateSessionAttachedByDefault": false,
-        "publicConsentRequired": true,
-        "moderationRequired": true
-      },
-      "exits": [
-        "return-plus-infinity",
-        "threshold",
-        "archive",
-        "machine",
-        "cosmology"
-      ]
-    }
-  ],
   "invariants": [
-    "Every decision changes a later consequence.",
-    "Every canonical route preserves privacy-minimized session memory.",
-    "Every route provides provenance access.",
+    "Every completed canonical journey begins at A.",
+    "M is always potentially discoverable and never mandatory.",
+    "Every completed canonical journey converges at Y.",
+    "B through X form an interwoven field rather than an ordered sequence.",
+    "Every meaningful decision changes a later consequence.",
+    "Every route preserves privacy-minimized session memory.",
+    "Every factual element provides provenance and epistemic status.",
     "Every route provides an immediate safe exit.",
-    "Every completed route converges semantically rather than redirecting mechanically.",
-    "Heart is optional and never a rank, score or mandatory checkpoint.",
-    "Entering Heart is voluntary and leaving it restores the exact prior route anchor.",
-    "Core journey nodes use one active 100svh scene without document scroll.",
-    "The Commons Wall is an optional postscript and the only planned canonical document-scroll exception.",
-    "Public contributions require preview, consent, moderation, reporting and withdrawal behavior.",
     "No deployment occurs without APROBAR DEPLOY."
   ]
 }
