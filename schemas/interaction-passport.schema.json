@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.example/schemas/interaction-passport.schema.json",
+  "title": "KODEX Interaction Passport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "nodeId",
+    "role",
+    "target",
+    "triggers",
+    "stateChange",
+    "writesToMemory",
+    "laterConsequences",
+    "accessibility",
+    "fallback"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "nodeId": { "type": "string", "minLength": 1 },
+    "role": {
+      "enum": [
+        "REVEAL",
+        "TRANSFORM",
+        "TRACE",
+        "COMPARE",
+        "NAVIGATE",
+        "ORIENT",
+        "ANNOTATE",
+        "CONTRIBUTE",
+        "CONTEMPLATE",
+        "ATMOSPHERE"
+      ]
+    },
+    "target": { "type": "string", "minLength": 1 },
+    "triggers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pointer", "touch", "keyboard"],
+      "properties": {
+        "pointer": { "type": "boolean" },
+        "touch": { "type": "boolean" },
+        "keyboard": { "type": "boolean" }
+      }
+    },
+    "inputFields": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "visualChannels": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "POSITION",
+          "ORIENTATION",
+          "SCALE",
+          "DEFORMATION",
+          "DENSITY",
+          "OPACITY",
+          "COLOR",
+          "FOCUS",
+          "SOUND",
+          "TEXT",
+          "RELATION_HIGHLIGHT"
+        ]
+      },
+      "default": []
+    },
+    "stateChange": { "type": "string", "minLength": 1 },
+    "writesToMemory": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "laterConsequences": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "claimIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nonPointerAlternative",
+        "reducedMotionBehavior",
+        "motionOffBehavior"
+      ],
+      "properties": {
+        "nonPointerAlternative": { "type": "string", "minLength": 1 },
+        "reducedMotionBehavior": { "type": "string", "minLength": 1 },
+        "motionOffBehavior": { "type": "string", "minLength": 1 }
+      }
+    },
+    "fallback": { "type": "string", "minLength": 1 },
+    "cleanup": { "type": "string" },
+    "status": {
+      "enum": ["SPECIFICATION", "EXPERIMENTAL", "APPROVED", "CANONICAL", "DEPRECATED"],
+      "default": "SPECIFICATION"
+    }
+  }
+}
