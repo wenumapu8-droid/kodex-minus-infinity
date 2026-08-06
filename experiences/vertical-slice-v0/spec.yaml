@@ -1,63 +1,133 @@
-version: 0.1.0
+version: 0.2.0
 experience:
-  id: KDX_VERTICAL_SLICE_V0
+  id: KDX_ALPHABET_VERTICAL_SLICE_V0
   title: KODEX Genesis Archive
   status: CANONICAL_TARGET_NOT_IMPLEMENTED
-  central_question: How did KODEX change from a visual language into a living information system?
-  corpus_status: PROPOSED_FOR_HUMAN_APPROVAL
+  central_question: How did Ocín's unresolved visual codes become KODEX, a living information system with memory, relation and consequence?
+  corpus_status: PARTIALLY_CURATED_CREATOR_AND_RIGHTS_REVIEW_REQUIRED
 
-entry: minus-infinity
-convergence: return-plus-infinity
+topology:
+  coordinate_system: KODEX_A_TO_Y
+  entry: A
+  optional_distributed_heart: M
+  completed_journey_terminal: Y
+  alphabetical_traversal_required: false
+  all_letters_required_per_journey: false
+  loops_allowed: true
+  mutated_revisits_required: true
+  heart_mandatory: false
+  return_derived_from_event_trace: true
+  registry: data/alphabet-topology.json
 
-paths:
-  OBSERVE:
-    priorities: [current_evidence, comparison, source_inspection, current_relations, uncertainty]
-    artifact_grammar: relation_constellation
-  REMEMBER:
-    priorities: [sequence, versions, testimony, temporal_trace, carried_memory]
-    artifact_grammar: memory_topography
+minimum_scope:
+  consequential_coordinates: 6
+  multi_exit_moments: 3
+  connected_semantic_worlds: 2
+  reproducible_qa_trajectory_signatures: 8
+  required_loops: 1
+  required_mutated_revisits: 1
+  required_delayed_consequences: 1
+  heart_approach_regions: 2
+  completed_route_without_heart: true
+  completed_route_with_heart: true
 
-nodes:
-  - id: minus-infinity
-    purpose: reveal fragmented but approved records before integration
-    required_modules: [memory]
-    writes_to_memory: [session_started]
-    exits: [threshold]
+coordinate_contracts:
+  A:
+    role: COMMON_ORIGIN
+    identity: minus_infinity_and_threshold
+    required_functions:
+      - orientation
+      - consent
+      - accessibility_configuration
+      - first_meaningful_action
+      - initial_memory_write
+      - multiple_state_dependent_exits
+    spectral_state: OBSIDIAN
 
-  - id: threshold
-    purpose: consent, accessibility and first consequential decision
-    required_modules: [memory]
-    decisions: [OBSERVE, REMEMBER]
-    writes_to_memory: [path_choice, accessibility_preferences]
-    exits: [archive]
+  INTERMEDIATE:
+    domain: B_THROUGH_X_EXCLUDING_M
+    required_fields:
+      - concept_ids
+      - world_ids
+      - source_ids
+      - visual_activator_ids
+      - meaningful_actions
+      - semantic_edges
+      - memory_reads
+      - memory_writes
+      - spectral_behavior
+      - y_contribution
+      - epistemic_status
+      - rights_status
+      - cultural_status
+      - accessibility_equivalent
 
-  - id: archive
-    purpose: inspect records, relations, versions, sources and unresolved states
-    required_modules: [evidence, archive, memory]
-    interactions: [OPEN_SOURCE, TRACE, COMPARE, FILTER, REVEAL]
-    writes_to_memory: [records_opened, sources_opened, relations_traced, versions_compared, contradictions_seen]
-    exits: [heart, return-plus-infinity]
+  M:
+    role: OPTIONAL_DISTRIBUTED_HEART
+    identity: heart_zero
+    portal_states:
+      - LATENT
+      - RESONANT
+      - AVAILABLE
+    potentially_reachable_from_every_nonterminal_region: true
+    entry: VOLUNTARY
+    exit_behavior: RESTORE_EXACT_PRIOR_ROUTE_ANCHOR
+    ranking: FORBIDDEN
+    biometric_claims: FORBIDDEN
+    required_route_without_m: true
 
-  - id: heart
-    purpose: optional orientation and integration before Return
-    required_modules: [heart, memory]
-    modes: [NATURAL_BREATH, GUIDED_PULSE, TAP_PULSE]
-    default_mode: NATURAL_BREATH
-    prohibited_modes: [UNVERIFIED_SENSOR, HIGH_VENTILATION, PROLONGED_HOLD]
-    writes_to_memory: [heart_mode]
-    exits: [return-plus-infinity]
+  Y:
+    role: ROUTE_DERIVED_CONVERGENCE
+    identity: return_plus_infinity
+    spectral_state: OPEN_WHITE
+    required_outputs:
+      - visited_letters
+      - visit_counts
+      - revisit_mutations
+      - committed_actions
+      - delayed_consequences
+      - ignored_signals_with_later_effect
+      - traced_relations
+      - spectral_trace
+      - m_visit_status_without_ranking
+      - source_access
+      - epistemic_status_and_uncertainty
+      - unresolved_questions
+      - route_specific_artifact
+      - reentry_possibilities
 
-  - id: return-plus-infinity
-    purpose: semantic convergence, artifact, sources, contribution and re-entry
-    required_modules: [evidence, memory, return, contribution, open-source]
-    outputs: [path_summary, source_manifest, limitations, unresolved_questions, artifact, contribution_options, repository_access, re_entry]
-    exits: [threshold, archive]
+edge_resolver_inputs:
+  - current_letter
+  - committed_actions
+  - visited_letters
+  - visit_counts
+  - traced_relations
+  - ignored_signals
+  - spectral_state
+  - bounded_serendipity_seed
+  - accessibility_mode
+
+session_memory:
+  current_letter: A
+  letter_trace: []
+  visit_counts: {}
+  committed_actions: []
+  ignored_signals: []
+  relations_traced: []
+  source_ids_opened: []
+  spectral_trace: []
+  m_portal_states: {}
+  m_visits: []
+  return_anchor: null
+  accessibility_preferences: {}
+  consent: {}
+  artifact_seed: null
 
 renderers:
-  DOM: controls_text_sources_methods
-  SVG: archive_graph_annotations_artifact
-  CANVAS: lightweight_fragments_and_export
-  WEBGL: optional_threshold_or_transition
+  DOM: meaning_controls_sources_and_accessibility
+  SVG: glyphs_relations_annotations_traces_and_artifact
+  CANVAS: lightweight_procedural_fields_and_export
+  WEBGL: optional_organisms_impossible_space_and_depth
 
 fallback_ladder:
   - FULL_WEBGL
@@ -67,13 +137,17 @@ fallback_ladder:
   - STRUCTURED_TEXT
 
 acceptance_criteria:
-  - One real rights-cleared corpus.
-  - OBSERVE and REMEMBER produce distinct consequences and artifacts.
-  - Every factual item has provenance.
-  - Every essential visual variable has a semantic passport.
-  - Private conversation content is excluded.
+  - No Path A or Path B interface and no fixed complete-route selector.
+  - One common entry at A.
+  - Successive interactions produce multiple emergent nonalphabetical trajectories.
+  - At least eight reproducible QA trajectory signatures exist.
+  - At least one coordinate revisit produces a mutated state.
+  - At least one early action produces a delayed visible consequence.
+  - M is approachable from more than one region and remains optional.
+  - Y is generated from the complete event trace.
+  - Every factual item has provenance and epistemic status.
+  - Private source material is excluded.
   - Keyboard, touch, reduced motion and motion off are complete.
   - Target viewports 390x844, 412x915 and desktop pass.
-  - Heart is optional and non-clinical.
-  - Return is semantic and path-dependent.
-  - No deployment without APROBAR DEPLOY.
+  - The complete journey remains available without WebGL.
+  - No deployment occurs without APROBAR DEPLOY.
