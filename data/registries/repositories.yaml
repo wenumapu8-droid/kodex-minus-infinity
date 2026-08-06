@@ -1,0 +1,62 @@
+version: 1
+snapshot_date: 2026-08-05
+
+repositories:
+  - id: REPO-KODEX-CANON
+    full_name: wenumapu8-droid/kodex-minus-infinity
+    role: canonical_context_algorithms_registries_and_future_product_architecture
+    default_branch: main
+    active_branch: chore/canonical-bootstrap
+    active_pull_request: 2
+    visibility: public
+    status: CANONICAL_BOOTSTRAP
+    deployment_authorized: false
+
+  - id: REPO-WENU-FRONTEND
+    full_name: wenumapu8-droid/wenu-frontend
+    role: existing_astro_implementation_source
+    default_branch: main
+    verified_branches:
+      - feature/kodex-depth-engine
+      - feature/kodex-mini
+      - redesign-v2
+      - chore/kodex-canonical-bootstrap
+    status: INVENTORY_REQUIRED
+    migration_policy: additive_non_destructive
+    known_deployment_target: wenumapuonline.com/kodex/
+    deployment_authorized: false
+
+verified_implementation_files:
+  - repository_id: REPO-WENU-FRONTEND
+    branch: feature/kodex-depth-engine
+    path: src/pages/kodex/index.astro
+    blob_sha: 528549b119e7a5bcfb0b97838d92b8576bdb1324
+    status: REPOSITORY_VERIFIED
+    role: fullscreen_deck_entry_and_threshold
+
+  - repository_id: REPO-WENU-FRONTEND
+    branch: feature/kodex-depth-engine
+    path: src/lib/kodexUniverse.js
+    blob_sha: ad96a48e32dd601b8db27727d9478a09c1f6b174
+    status: REPOSITORY_VERIFIED
+    role: entity_scene_status_and_atmospheric_registry
+
+  - repository_id: REPO-WENU-FRONTEND
+    branch: feature/kodex-depth-engine
+    path: src/lib/kodex/grammar.ts
+    blob_sha: 841174bec9d96be28d603f2c5f21ecb7fcafb37a
+    status: REPOSITORY_VERIFIED
+    role: data_driven_scene_grid_motion_and_field_grammar
+
+  - repository_id: REPO-WENU-FRONTEND
+    branch: feature/kodex-depth-engine
+    path: src/kodex/threshold-portal/README.md
+    blob_sha: 2a783bc4d9a43cc90cd891daf40090d21ee015df
+    status: REPOSITORY_VERIFIED
+    role: threshold_multipass_shader_specification
+
+rules:
+  - Never assume the default branch contains the latest KODEX implementation.
+  - Preserve repository, branch, path and blob SHA for every migrated file.
+  - Do not delete or overwrite the source implementation after copying.
+  - Deployment requires the exact phrase APROBAR DEPLOY.
