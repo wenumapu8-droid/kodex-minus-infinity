@@ -1,0 +1,77 @@
+version: 1
+system: KODEX−∞
+purpose: Preserve shared context and prevent agent drift across models.
+
+required_reading:
+  - SKILL.md
+  - AGENTS.md
+  - canon/KODEX_CANON.md
+  - canon/KODEX_EPISTEMIC_STANDARD.md
+  - product/CURRENT_STATE.md
+  - product/EXPERIENCE_ARCHITECTURE.md
+
+preflight:
+  objective: ""
+  repository: ""
+  branch: ""
+  canonical_files_read: []
+  affected_modules: []
+  current_state_summary: ""
+  canonical_constraints: []
+  unresolved_questions: []
+  proposed_file_plan: []
+  deployment_requested: false
+
+work_packet:
+  id: "WP-"
+  title: ""
+  problem: ""
+  user_value: ""
+  in_scope: []
+  out_of_scope: []
+  dependencies: []
+  inputs: []
+  expected_outputs: []
+  acceptance_criteria: []
+  evidence_requirements: []
+  accessibility_requirements: []
+  cultural_review: false
+  contemplative_review: false
+  branch: ""
+  deployment: BLOCKED
+
+handoff:
+  work_packet_id: ""
+  status: COMPLETE | PARTIAL | BLOCKED
+  summary: ""
+  files_read: []
+  files_created: []
+  files_modified: []
+  decisions_proposed: []
+  decisions_approved: []
+  tests_run: []
+  tests_not_run: []
+  screenshots: []
+  provenance_added: []
+  risks: []
+  unresolved: []
+  next_actions: []
+  next_owner: ""
+  deploy_status: NOT_APPROVED
+
+context_priority:
+  - non_negotiable_rules
+  - current_product_objective
+  - approved_decisions
+  - current_state_and_blockers
+  - affected_files_and_interfaces
+  - evidence_and_provenance
+  - aesthetic_references
+  - optional_explorations
+
+rules:
+  - An agent must not claim to have read a file it has not fetched.
+  - An agent must not silently create new canon.
+  - An agent must not invent tests, sources, files or successful results.
+  - Canonical conflicts require explicit comparison and human review.
+  - Deployment remains blocked without the exact phrase APROBAR DEPLOY.
