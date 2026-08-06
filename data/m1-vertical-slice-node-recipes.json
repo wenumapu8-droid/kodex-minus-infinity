@@ -1,0 +1,871 @@
+{
+  "schemaVersion": "0.1.0",
+  "registryId": "m1-vertical-slice-node-recipes",
+  "status": "CREATOR_REVIEW",
+  "coordinateAuthority": "data/alphabet-topology.json",
+  "creatorApprovalRequiredForAssignments": true,
+  "recipes": [
+    {
+      "coordinate": "A",
+      "assignmentStatus": "CANONICAL",
+      "structuralRole": "COMMON_ORIGIN",
+      "canonicalIdentity": "−∞ / THRESHOLD",
+      "concept": {
+        "id": "threshold-common-origin",
+        "title": "THRESHOLD",
+        "statement": "A is the common origin where orientation, consent and the first consequential signal become possible.",
+        "question": "What are you willing to activate, and under which conditions?",
+        "epistemicStatus": "CANONICAL_PROJECT_CONSTRUCT"
+      },
+      "worldIds": ["threshold-world"],
+      "content": {
+        "sourceIds": ["EXPERIENCE_ARCHITECTURE", "ALPHABET_TOPOLOGY"],
+        "visualActivatorIds": ["KODEX_THRESHOLD_MANDALA"],
+        "provenanceStatus": "RECORDED_CANONICAL_STRUCTURE",
+        "rightsStatus": "CREATOR_AUTHORED_REVIEWED_FOR_INTERNAL_PROTOTYPE",
+        "culturalStatus": "PROJECT_CONSTRUCT_NO_EXTERNAL_CULTURAL_CLAIM"
+      },
+      "graph": {
+        "entryConditions": ["CANONICAL_SESSION_START", "OR_EXPLICIT_REENTRY_FROM_Y"],
+        "exits": [
+          {
+            "target": "B",
+            "relationId": "A_TO_B_FIRST_SIGNAL",
+            "condition": "CONSENT_RECORDED AND ACTION_ORIENT_SIGNAL",
+            "consequence": "Signal becomes the first active relation.",
+            "priority": 90,
+            "serendipityEligible": false
+          },
+          {
+            "target": "C",
+            "relationId": "A_TO_C_FIRST_TRACE",
+            "condition": "CONSENT_RECORDED AND ACTION_OPEN_TRACE",
+            "consequence": "The journey begins through evidence and archive relation.",
+            "priority": 85,
+            "serendipityEligible": false
+          },
+          {
+            "target": "H",
+            "relationId": "A_TO_H_FIRST_RELATION",
+            "condition": "CONSENT_RECORDED AND ACTION_MAP_RELATION",
+            "consequence": "The journey begins through relational orientation.",
+            "priority": 80,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "RESONANT",
+          "conditions": ["CONSENT_RECORDED", "AT_LEAST_ONE_MEANINGFUL_ACTION"],
+          "returnBehavior": "RESTORE_A_WITH_UPDATED_ORIENTATION_STATE"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "ORIENT_SIGNAL",
+            "label": "Orient toward signal",
+            "kind": "COMMIT",
+            "consequence": "Prioritizes the signal field and records the first authored direction.",
+            "memoryWrites": ["CONSENT_RECORDED", "A_ORIENTATION_SIGNAL"]
+          },
+          {
+            "id": "OPEN_TRACE",
+            "label": "Open the first trace",
+            "kind": "COMMIT",
+            "consequence": "Prioritizes provenance and memory as the initial mode of traversal.",
+            "memoryWrites": ["CONSENT_RECORDED", "A_ORIENTATION_TRACE"]
+          },
+          {
+            "id": "MAP_RELATION",
+            "label": "Map the first relation",
+            "kind": "COMMIT",
+            "consequence": "Prioritizes relational structure as the initial mode of traversal.",
+            "memoryWrites": ["CONSENT_RECORDED", "A_ORIENTATION_RELATION"]
+          }
+        ],
+        "passiveEffects": ["POINTER_PARALLAX_ONLY", "NO_CONSEQUENTIAL_MEMORY_FROM_HOVER"]
+      },
+      "memory": {
+        "reads": ["ACCESSIBILITY_PREFERENCES", "CONSENT_STATE"],
+        "writes": ["SESSION_STARTED", "CONSENT_RECORDED", "FIRST_ORIENTATION"],
+        "revisitMutation": "A revisited after Y presents the prior trace as a re-entry seed without fabricating a new beginning."
+      },
+      "organism": {
+        "family": "FIELD",
+        "presetId": "threshold-portal",
+        "renderMode": "IMAGE_FIELD",
+        "implementationStatus": "PROTOTYPE",
+        "fallback": "/img/kodex/works/mandala-0cin-negativo.png",
+        "reducedMotion": "STATIC_SOURCE_WITH_DISCRETE_SIGNAL_PULSE",
+        "semanticControls": {
+          "signal": 0.62,
+          "memory": 0.18,
+          "entropy": 0.22,
+          "cohesion": 0.82,
+          "depth": 0.66,
+          "convergence": 0.34
+        },
+        "contextualVariants": ["A_FIRST_ENTRY", "A_REENTRY_AFTER_Y"]
+      },
+      "presentationMode": "ORGANISM",
+      "spectrum": {
+        "entry": ["OBSIDIAN"],
+        "active": ["OBSIDIAN", "RED"],
+        "yContribution": ["COMMON_ORIGIN", "FIRST_ORIENTATION"]
+      },
+      "returnContribution": ["FIRST_ACTION", "CONSENT_AND_ACCESSIBILITY_STATE", "INITIAL_DIRECTION"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    },
+    {
+      "coordinate": "B",
+      "assignmentStatus": "NEEDS_CREATOR_APPROVAL",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE",
+      "concept": {
+        "id": "signal-vortex",
+        "title": "SIGNAL VORTEX",
+        "statement": "Signal becomes visible through attraction, interference and convergence around a changing center.",
+        "question": "When many signals converge, what remains distinguishable?",
+        "epistemicStatus": "AUTHORED_INTERPRETATION"
+      },
+      "worldIds": ["machine-world", "cosmology-world"],
+      "content": {
+        "sourceIds": ["KODEX_SIGNAL_VORTEX_REFERENCE"],
+        "visualActivatorIds": ["SIGNAL_VORTEX_PROCEDURAL_FIELD"],
+        "provenanceStatus": "INTERNAL_REFERENCE_AND_PROCEDURAL_PROTOTYPE",
+        "rightsStatus": "CREATOR_REVIEW_REQUIRED_BEFORE_PUBLICATION",
+        "culturalStatus": "PROJECT_CONSTRUCT_NO_EXTERNAL_CULTURAL_CLAIM"
+      },
+      "graph": {
+        "entryConditions": ["FROM_A_SIGNAL_ORIENTATION", "OR_VALID_RELATION_FROM_C_H_K"],
+        "exits": [
+          {
+            "target": "H",
+            "relationId": "B_TO_H_SIGNAL_BECOMES_ORBIT",
+            "condition": "ACTION_OBSERVE_ATTRACTOR",
+            "consequence": "A convergent signal is reframed as a relation among moving bodies.",
+            "priority": 90,
+            "serendipityEligible": false
+          },
+          {
+            "target": "C",
+            "relationId": "B_TO_C_SIGNAL_BECOMES_TRACE",
+            "condition": "ACTION_ISOLATE_ECHO",
+            "consequence": "One signal echo becomes an inspectable archive trace.",
+            "priority": 85,
+            "serendipityEligible": false
+          },
+          {
+            "target": "M",
+            "relationId": "B_TO_M_CONVERGENCE_RESONANCE",
+            "condition": "M_PORTAL_AVAILABLE AND TWO_SIGNAL_DECISIONS_COMMITTED",
+            "consequence": "The attractor becomes an optional orientation portal rather than a compulsory destination.",
+            "priority": 70,
+            "serendipityEligible": false
+          },
+          {
+            "target": "Y",
+            "relationId": "B_TO_Y_SIGNAL_RETURN",
+            "condition": "Y_ELIGIBLE",
+            "consequence": "The Return records how signal selection shaped the route.",
+            "priority": 50,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "RESONANT",
+          "conditions": ["SIGNAL_OBSERVED", "AT_LEAST_TWO_COMMITTED_ACTIONS_IN_SESSION"],
+          "returnBehavior": "RESTORE_B_OR_B_PRIME_WITH_ATTRACTOR_MEMORY"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "OBSERVE_ATTRACTOR",
+            "label": "Observe the attractor",
+            "kind": "ACTIVATE",
+            "consequence": "Increases convergence and makes relational exits available.",
+            "memoryWrites": ["B_ATTRACTOR_OBSERVED", "VORTEX_OBSERVED"]
+          },
+          {
+            "id": "ISOLATE_ECHO",
+            "label": "Isolate one echo",
+            "kind": "TRACE_RELATION",
+            "consequence": "Selects a persistent signal that later reappears as an archive trace.",
+            "memoryWrites": ["B_ECHO_ISOLATED", "DELAYED_ECHO_PENDING"]
+          }
+        ],
+        "passiveEffects": ["POINTER_ATTRACTOR_OFFSET", "AUDIO_MODULATION_WITHOUT_IDENTITY_INFERENCE"]
+      },
+      "memory": {
+        "reads": ["A_ORIENTATION_SIGNAL", "B_ECHO_ISOLATED", "VISIT_COUNT_B"],
+        "writes": ["B_ATTRACTOR_OBSERVED", "B_ECHO_ISOLATED", "DELAYED_ECHO_PENDING"],
+        "revisitMutation": "B′ reveals the previously isolated echo as a stable filament and changes one available exit."
+      },
+      "organism": {
+        "family": "VORTEX",
+        "presetId": "signal-vortex",
+        "renderMode": "SHADER",
+        "implementationStatus": "PROTOTYPE",
+        "fallback": "/img/kodex/organisms/signal-vortex-fallback.svg",
+        "reducedMotion": "LOW_FPS_ROTATION_OR_STATIC_CONVERGENCE_DIAGRAM",
+        "semanticControls": {
+          "signal": 0.82,
+          "memory": 0.66,
+          "entropy": 0.38,
+          "cohesion": 0.62,
+          "depth": 0.82,
+          "convergence": 0.84
+        },
+        "contextualVariants": ["B_FIRST_VISIT", "B_PRIME_ECHO_STABILIZED"]
+      },
+      "presentationMode": "ORGANISM",
+      "spectrum": {
+        "entry": ["RED", "VIOLET"],
+        "active": ["VIOLET", "CYAN"],
+        "yContribution": ["SIGNAL_SELECTION", "CONVERGENCE_TRACE", "DELAYED_ECHO"]
+      },
+      "returnContribution": ["SELECTED_SIGNAL", "IGNORED_SIGNAL", "ECHO_REAPPEARANCE", "ATTRACTOR_RELATION"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    },
+    {
+      "coordinate": "C",
+      "assignmentStatus": "NEEDS_CREATOR_APPROVAL",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE",
+      "concept": {
+        "id": "archive-trace-field",
+        "title": "ARCHIVE TRACE FIELD",
+        "statement": "The archive preserves versions, sources and relations rather than presenting memory as a single immutable object.",
+        "question": "What changes when a trace is inspected instead of merely remembered?",
+        "epistemicStatus": "CANONICAL_PROJECT_CONSTRUCT"
+      },
+      "worldIds": ["memory-world", "artifact-world"],
+      "content": {
+        "sourceIds": ["KODEX_GENESIS_ARCHIVE", "SOURCE_MANIFEST"],
+        "visualActivatorIds": ["ARCHIVE_FIELD_SOURCE_IMAGE_TBD"],
+        "provenanceStatus": "SOURCE_LINKAGE_REQUIRED_PER_TRACE",
+        "rightsStatus": "MIXED_CORPUS_CREATOR_REVIEW_REQUIRED",
+        "culturalStatus": "PER_SOURCE_REVIEW_REQUIRED"
+      },
+      "graph": {
+        "entryConditions": ["FROM_A_TRACE_ORIENTATION", "OR_SIGNAL_ECHO_FROM_B", "OR_RELATION_FROM_K"],
+        "exits": [
+          {
+            "target": "K",
+            "relationId": "C_TO_K_ARCHIVE_GERMINATES",
+            "condition": "ACTION_TRACE_ARCHIVE_RELATION",
+            "consequence": "A verified relation becomes a seed for visible growth.",
+            "priority": 90,
+            "serendipityEligible": false
+          },
+          {
+            "target": "B",
+            "relationId": "C_TO_B_TRACE_RETURNS_AS_SIGNAL",
+            "condition": "DELAYED_ECHO_PENDING OR ACTION_RELEASE_TRACE",
+            "consequence": "An archive trace re-enters the signal field and mutates B on revisit.",
+            "priority": 85,
+            "serendipityEligible": false
+          },
+          {
+            "target": "M",
+            "relationId": "C_TO_M_MEMORY_RESONANCE",
+            "condition": "SOURCE_OPENED AND RELATION_TRACED",
+            "consequence": "Memory becomes an optional Heart approach through provenance and relation.",
+            "priority": 70,
+            "serendipityEligible": false
+          },
+          {
+            "target": "Y",
+            "relationId": "C_TO_Y_ARCHIVE_RETURN",
+            "condition": "Y_ELIGIBLE",
+            "consequence": "The Return includes source access, unresolved provenance and traced relations.",
+            "priority": 50,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "RESONANT",
+          "conditions": ["SOURCE_OPENED", "RELATION_TRACED"],
+          "returnBehavior": "RESTORE_C_OR_C_PRIME_WITH_SOURCE_CONTEXT"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "OPEN_SOURCE",
+            "label": "Open source record",
+            "kind": "INSPECT_SOURCE",
+            "consequence": "Adds provenance to the route and may expose uncertainty rather than resolving it.",
+            "memoryWrites": ["C_SOURCE_OPENED", "SOURCE_ACCESS_RECORDED"]
+          },
+          {
+            "id": "TRACE_ARCHIVE_RELATION",
+            "label": "Trace a relation",
+            "kind": "TRACE_RELATION",
+            "consequence": "Connects two records and creates a later growth or Return contribution.",
+            "memoryWrites": ["C_RELATION_TRACED", "ARCHIVE_SEED_CREATED"]
+          }
+        ],
+        "passiveEffects": ["VERSION_HIGHLIGHT", "NO_AUTOMATIC_TRUTH_RANKING"]
+      },
+      "memory": {
+        "reads": ["B_ECHO_ISOLATED", "SOURCE_ACCESS_RECORDED", "VISIT_COUNT_C"],
+        "writes": ["C_SOURCE_OPENED", "C_RELATION_TRACED", "ARCHIVE_SEED_CREATED"],
+        "revisitMutation": "C′ foregrounds the previously traced relation and records whether the visitor opened its supporting source."
+      },
+      "organism": {
+        "family": "FIELD",
+        "presetId": "archive-trace-field",
+        "renderMode": "IMAGE_FIELD",
+        "implementationStatus": "PLANNED",
+        "fallback": "/img/kodex/organisms/archive-trace-field-fallback.svg",
+        "reducedMotion": "STATIC_RELATION_MAP_WITH_DISCRETE_TRACE_STATES",
+        "semanticControls": {
+          "signal": 0.42,
+          "memory": 0.86,
+          "entropy": 0.18,
+          "cohesion": 0.78,
+          "depth": 0.56,
+          "convergence": 0.38
+        },
+        "contextualVariants": ["C_UNOPENED", "C_SOURCE_OPENED", "C_PRIME_RELATION_ACTIVE"]
+      },
+      "presentationMode": "ORGANISM",
+      "spectrum": {
+        "entry": ["BLUE", "INDIGO"],
+        "active": ["BLUE", "GREEN"],
+        "yContribution": ["SOURCE_ACCESS", "TRACED_RELATION", "UNRESOLVED_PROVENANCE"]
+      },
+      "returnContribution": ["OPENED_SOURCES", "TRACED_ARCHIVE_RELATION", "UNCERTAINTY_STATUS", "VERSION_HISTORY"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    },
+    {
+      "coordinate": "H",
+      "assignmentStatus": "NEEDS_CREATOR_APPROVAL",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE",
+      "concept": {
+        "id": "cosmology-core",
+        "title": "COSMOLOGY CORE",
+        "statement": "A cosmology is treated as a relational system of bodies, scales and perspectives rather than a decorative celestial diagram.",
+        "question": "Which relation becomes visible when the center is no longer fixed?",
+        "epistemicStatus": "AUTHORED_INTERPRETATION"
+      },
+      "worldIds": ["cosmology-world", "machine-world"],
+      "content": {
+        "sourceIds": ["KODEX_COSMOLOGY_REFERENCE_SET"],
+        "visualActivatorIds": ["COSMOLOGY_CORE_ORBITAL_SYSTEM"],
+        "provenanceStatus": "CONCEPT_AND_ASSET_REVIEW_REQUIRED",
+        "rightsStatus": "CREATOR_REVIEW_REQUIRED_BEFORE_PUBLICATION",
+        "culturalStatus": "NO_UNATTRIBUTED_ANCESTRAL_COSMOLOGY_CLAIMS"
+      },
+      "graph": {
+        "entryConditions": ["RELATION_OR_SIGNAL_PATH_ACTIVE", "OR_VALID_EDGE_FROM_A_B_K"],
+        "exits": [
+          {
+            "target": "K",
+            "relationId": "H_TO_K_ORBIT_BECOMES_GROWTH",
+            "condition": "ACTION_SELECT_ORBIT",
+            "consequence": "A selected relation becomes a growth condition rather than a fixed hierarchy.",
+            "priority": 90,
+            "serendipityEligible": false
+          },
+          {
+            "target": "B",
+            "relationId": "H_TO_B_ORBIT_BECOMES_SIGNAL",
+            "condition": "ACTION_DESTABILIZE_CENTER",
+            "consequence": "The selected orbit collapses into a revisitable signal attractor.",
+            "priority": 80,
+            "serendipityEligible": true
+          },
+          {
+            "target": "M",
+            "relationId": "H_TO_M_COSMOLOGY_RESONANCE",
+            "condition": "TWO_RELATIONS_SELECTED OR PRIOR_M_RESONANCE",
+            "consequence": "The orbital center becomes an optional Heart approach without ranking the visitor.",
+            "priority": 70,
+            "serendipityEligible": false
+          },
+          {
+            "target": "Y",
+            "relationId": "H_TO_Y_RELATIONAL_RETURN",
+            "condition": "Y_ELIGIBLE",
+            "consequence": "The Return includes selected relations and displaced centers.",
+            "priority": 50,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "RESONANT",
+          "conditions": ["AT_LEAST_TWO_RELATIONS_TRACED", "OR_M_PREVIOUSLY_VISITED"],
+          "returnBehavior": "RESTORE_H_OR_H_PRIME_WITH_PHASE_OFFSET"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "SELECT_ORBIT",
+            "label": "Select an orbital relation",
+            "kind": "SELECT",
+            "consequence": "Records one relation and changes the next available field.",
+            "memoryWrites": ["H_ORBIT_SELECTED", "ORBITAL_RELATION_OBSERVED"]
+          },
+          {
+            "id": "DESTABILIZE_CENTER",
+            "label": "Displace the center",
+            "kind": "COMMIT",
+            "consequence": "Changes phase relationships and enables a mutated signal revisit.",
+            "memoryWrites": ["H_CENTER_DISPLACED", "B_MUTATION_ARMED"]
+          }
+        ],
+        "passiveEffects": ["POINTER_PARALLAX", "ORBIT_LABEL_FOCUS_WITHOUT_AUTOMATIC_SELECTION"]
+      },
+      "memory": {
+        "reads": ["TRACED_RELATIONS", "H_CENTER_DISPLACED", "VISIT_COUNT_H"],
+        "writes": ["H_ORBIT_SELECTED", "H_CENTER_DISPLACED", "B_MUTATION_ARMED"],
+        "revisitMutation": "H′ preserves prior phase selections and reveals one relation that was previously latent."
+      },
+      "organism": {
+        "family": "ORBITAL",
+        "presetId": "cosmology-core",
+        "renderMode": "LAYERED_PLANES",
+        "implementationStatus": "PLANNED",
+        "fallback": "/img/kodex/organisms/cosmology-core-fallback.svg",
+        "reducedMotion": "STATIC_ORBIT_MAP_WITH_MANUAL_PHASE_SELECTION",
+        "semanticControls": {
+          "signal": 0.58,
+          "memory": 0.44,
+          "entropy": 0.2,
+          "cohesion": 0.88,
+          "depth": 0.72,
+          "convergence": 0.52
+        },
+        "contextualVariants": ["H_BASE_PHASE", "H_CENTER_DISPLACED", "H_PRIME_RELATION_REVEALED"]
+      },
+      "presentationMode": "ORGANISM",
+      "spectrum": {
+        "entry": ["CYAN", "INDIGO"],
+        "active": ["CYAN", "VIOLET"],
+        "yContribution": ["SELECTED_RELATION", "DISPLACED_CENTER", "PHASE_TRACE"]
+      },
+      "returnContribution": ["ORBITAL_RELATIONS", "CENTER_CHANGES", "PHASE_SELECTIONS", "CROSS_WORLD_LINKS"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    },
+    {
+      "coordinate": "K",
+      "assignmentStatus": "NEEDS_CREATOR_APPROVAL",
+      "structuralRole": "INTERWOVEN_CONCEPT_NODE",
+      "concept": {
+        "id": "archive-tree",
+        "title": "ARCHIVE TREE",
+        "statement": "Memory becomes visible as staged growth: roots, branches and accumulated relations rather than instant completion.",
+        "question": "What must be rooted before a form can remember?",
+        "epistemicStatus": "CANONICAL_PROJECT_CONSTRUCT"
+      },
+      "worldIds": ["memory-world", "artifact-world", "cosmology-world"],
+      "content": {
+        "sourceIds": ["KODEX_ARCHIVE_TREE_REFERENCE", "KODEX_GENESIS_ARCHIVE"],
+        "visualActivatorIds": ["ARCHIVE_TREE_GROWTH_SYSTEM"],
+        "provenanceStatus": "AUTHORED_ASSET_PACKET_REQUIRED",
+        "rightsStatus": "CREATOR_ASSET_SELECTION_REQUIRED",
+        "culturalStatus": "TREE_SYMBOLISM_MUST_REMAIN_PROJECT_SPECIFIC_UNLESS_SOURCED"
+      },
+      "graph": {
+        "entryConditions": ["ARCHIVE_SEED_CREATED", "OR_ORBIT_SELECTED", "OR_VALID_EDGE_FROM_H_C"],
+        "exits": [
+          {
+            "target": "C",
+            "relationId": "K_TO_C_GROWTH_RETURNS_TO_ARCHIVE",
+            "condition": "ACTION_ADVANCE_GROWTH AND SOURCE_NOT_OPENED",
+            "consequence": "The growing form requests provenance before stabilization.",
+            "priority": 90,
+            "serendipityEligible": false
+          },
+          {
+            "target": "H",
+            "relationId": "K_TO_H_BRANCH_BECOMES_RELATION",
+            "condition": "ACTION_SELECT_BRANCH",
+            "consequence": "A branch becomes an orbital relation and changes its future phase.",
+            "priority": 85,
+            "serendipityEligible": false
+          },
+          {
+            "target": "M",
+            "relationId": "K_TO_M_GROWTH_RESONANCE",
+            "condition": "GROWTH_STAGE_AT_LEAST_BRANCHING",
+            "consequence": "A rooted structure opens an optional Heart manifestation through memory.",
+            "priority": 75,
+            "serendipityEligible": false
+          },
+          {
+            "target": "Y",
+            "relationId": "K_TO_Y_GROWTH_RETURN",
+            "condition": "Y_ELIGIBLE AND GROWTH_STAGE_AT_LEAST_TRUNK",
+            "consequence": "The Return receives the actual growth state rather than a generic completed tree.",
+            "priority": 55,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "LATENT",
+          "conditions": ["GROWTH_STAGE_BRANCHING", "OR_M_PREVIOUSLY_VISITED"],
+          "returnBehavior": "RESTORE_K_OR_K_PRIME_AT_RECORDED_GROWTH_STAGE"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "PLANT_SEED",
+            "label": "Plant the archive seed",
+            "kind": "PLANT",
+            "consequence": "Creates a deterministic growth sequence linked to an actual prior relation.",
+            "memoryWrites": ["K_SEED_PLANTED", "GROWTH_STAGE_SEED"]
+          },
+          {
+            "id": "ADVANCE_GROWTH",
+            "label": "Advance one growth stage",
+            "kind": "COMMIT",
+            "consequence": "Moves growth by one explicit stage and changes later Return output.",
+            "memoryWrites": ["K_GROWTH_ADVANCED", "GROWTH_STAGE_ADVANCED"]
+          },
+          {
+            "id": "SELECT_BRANCH",
+            "label": "Select one branch relation",
+            "kind": "TRACE_RELATION",
+            "consequence": "Commits one branch as a relation that may reappear in H or Y.",
+            "memoryWrites": ["K_BRANCH_SELECTED", "BRANCH_RELATION_TRACED"]
+          }
+        ],
+        "passiveEffects": ["LOCAL_SIGNAL_REVEAL", "NO_PASSIVE_GERMINATION"]
+      },
+      "memory": {
+        "reads": ["ARCHIVE_SEED_CREATED", "H_ORBIT_SELECTED", "GROWTH_STAGE", "VISIT_COUNT_K"],
+        "writes": ["K_SEED_PLANTED", "GROWTH_STAGE", "K_BRANCH_SELECTED"],
+        "revisitMutation": "K′ resumes the exact recorded stage and reveals consequences of previously selected branches."
+      },
+      "organism": {
+        "family": "GROWTH",
+        "presetId": "archive-tree",
+        "renderMode": "SVG",
+        "implementationStatus": "PLANNED",
+        "fallback": "/img/kodex/organisms/archive-tree-fallback.svg",
+        "reducedMotion": "MANUAL_DISCRETE_GROWTH_STAGES",
+        "semanticControls": {
+          "signal": 0.48,
+          "memory": 0.86,
+          "entropy": 0.12,
+          "cohesion": 0.9,
+          "depth": 0.46,
+          "convergence": 0.34,
+          "growth": 0.08
+        },
+        "contextualVariants": ["K_SEED", "K_ROOT", "K_TRUNK", "K_BRANCHING", "K_CROWN", "K_PRIME_MEMORY_STABILIZED"]
+      },
+      "presentationMode": "ORGANISM",
+      "spectrum": {
+        "entry": ["GREEN", "GOLD"],
+        "active": ["GREEN", "YELLOW", "OPEN_WHITE"],
+        "yContribution": ["GROWTH_STAGE", "SELECTED_BRANCH", "ROOTED_RELATION"]
+      },
+      "returnContribution": ["SEED_ORIGIN", "GROWTH_STAGE", "SELECTED_BRANCH", "UNFINISHED_GROWTH"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    },
+    {
+      "coordinate": "M",
+      "assignmentStatus": "CANONICAL",
+      "structuralRole": "OPTIONAL_DISTRIBUTED_HEART_INVARIANT",
+      "canonicalIdentity": "HEART / 0",
+      "concept": {
+        "id": "distributed-heart",
+        "title": "HEART",
+        "statement": "M is an optional distributed depth and orientation function that restores the exact prior route anchor.",
+        "question": "What relation becomes coherent when the route pauses without being ranked?",
+        "epistemicStatus": "CANONICAL_PROJECT_CONSTRUCT"
+      },
+      "worldIds": ["memory-world", "machine-world", "cosmology-world", "artifact-world"],
+      "content": {
+        "sourceIds": ["EXPERIENCE_ARCHITECTURE", "ADR_0010_ALPHABETIC_MULTIVERSE"],
+        "visualActivatorIds": ["M_CONTEXTUAL_MANIFESTATION_TBD"],
+        "provenanceStatus": "CANONICAL_FUNCTION_CONTEXTUAL_VISUALS_PENDING",
+        "rightsStatus": "CREATOR_ASSET_REVIEW_REQUIRED",
+        "culturalStatus": "PROJECT_CONSTRUCT_NOT_A_SPIRITUAL_RANK_OR_DIAGNOSTIC"
+      },
+      "graph": {
+        "entryConditions": ["VOLUNTARY_ENTRY", "LOCAL_M_PORTAL_AVAILABLE"],
+        "exits": [
+          {
+            "target": "B",
+            "relationId": "M_RETURN_B_ANCHOR",
+            "condition": "RETURN_ANCHOR_B",
+            "consequence": "Restores B as B′ with the Heart visit recorded but not scored.",
+            "priority": 100,
+            "serendipityEligible": false
+          },
+          {
+            "target": "C",
+            "relationId": "M_RETURN_C_ANCHOR",
+            "condition": "RETURN_ANCHOR_C",
+            "consequence": "Restores C as C′ with source context preserved.",
+            "priority": 100,
+            "serendipityEligible": false
+          },
+          {
+            "target": "H",
+            "relationId": "M_RETURN_H_ANCHOR",
+            "condition": "RETURN_ANCHOR_H",
+            "consequence": "Restores H as H′ with prior phase and focus preserved.",
+            "priority": 100,
+            "serendipityEligible": false
+          },
+          {
+            "target": "K",
+            "relationId": "M_RETURN_K_ANCHOR",
+            "condition": "RETURN_ANCHOR_K",
+            "consequence": "Restores K as K′ at the exact recorded growth stage.",
+            "priority": 100,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "NOT_APPLICABLE",
+          "conditions": [],
+          "returnBehavior": "RESTORE_EXACT_PRIOR_ROUTE_ANCHOR"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "ACKNOWLEDGE_RELATION",
+            "label": "Acknowledge the active relation",
+            "kind": "COMMIT",
+            "consequence": "Records a voluntary orientation without inferring emotion, identity or spiritual status.",
+            "memoryWrites": ["M_RELATION_ACKNOWLEDGED", "M_VISIT_RECORDED"]
+          },
+          {
+            "id": "RETURN_TO_ANCHOR",
+            "label": "Return to the prior coordinate",
+            "kind": "RETURN",
+            "consequence": "Restores the exact prior route anchor and exposes its mutated state.",
+            "memoryWrites": ["M_RETURN_COMMITTED"]
+          }
+        ],
+        "passiveEffects": ["CONTEXTUAL_RESONANCE", "NO_PASSIVE_RANKING", "NO_BIOMETRIC_INFERENCE"]
+      },
+      "memory": {
+        "reads": ["RETURN_ANCHOR", "CURRENT_WORLD", "LOCAL_FOCUS", "M_VISIT_COUNT"],
+        "writes": ["M_VISIT_RECORDED", "M_RELATION_ACKNOWLEDGED", "M_RETURN_COMMITTED"],
+        "revisitMutation": "M changes manifestation according to the active world but remains one canonical Heart function."
+      },
+      "organism": null,
+      "presentationMode": "CONTEXTUAL_HEART",
+      "spectrum": {
+        "entry": ["ROUTE_DERIVED"],
+        "active": ["RED", "VIOLET", "OPEN_WHITE"],
+        "yContribution": ["M_VISIT_STATUS_WITHOUT_RANKING", "ACKNOWLEDGED_RELATION"]
+      },
+      "returnContribution": ["M_VISIT_STATUS", "CONTEXTUAL_MANIFESTATION", "PRIOR_ROUTE_ANCHOR", "ACKNOWLEDGED_RELATION"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    },
+    {
+      "coordinate": "Y",
+      "assignmentStatus": "CANONICAL",
+      "structuralRole": "ROUTE_DERIVED_CONVERGENCE",
+      "canonicalIdentity": "RETURN / +∞",
+      "concept": {
+        "id": "trace-derived-return",
+        "title": "RETURN",
+        "statement": "Y synthesizes the actual event trace into a route-specific artifact and re-entry field.",
+        "question": "What did this route make visible, and what remains unresolved?",
+        "epistemicStatus": "CANONICAL_PROJECT_CONSTRUCT"
+      },
+      "worldIds": ["return-world", "memory-world", "artifact-world"],
+      "content": {
+        "sourceIds": ["SESSION_EVENT_TRACE", "OPENED_SOURCE_RECORDS"],
+        "visualActivatorIds": ["TRACE_DERIVED_RETURN_COMPOSITE"],
+        "provenanceStatus": "DERIVED_FROM_CURRENT_SESSION_AND_REFERENCED_SOURCES",
+        "rightsStatus": "NO_RIGHTS_UNCLEAR_ASSET_MAY_ENTER_OUTPUT",
+        "culturalStatus": "OUTPUT_MUST_PRESERVE_PER_SOURCE_CONTEXT_AND_LIMITS"
+      },
+      "graph": {
+        "entryConditions": ["Y_ELIGIBLE", "VOLUNTARY_COMPLETION_ACTION"],
+        "exits": [
+          {
+            "target": "A",
+            "relationId": "Y_TO_A_REENTRY",
+            "condition": "ACTION_BEGIN_NEW_CYCLE",
+            "consequence": "Returns to A with a re-entry seed while preserving the prior artifact separately.",
+            "priority": 100,
+            "serendipityEligible": false
+          },
+          {
+            "target": "C",
+            "relationId": "Y_TO_C_UNRESOLVED_SOURCE",
+            "condition": "ACTION_REENTER_UNRESOLVED_SOURCE AND C_WAS_VISITED",
+            "consequence": "Re-enters the archive at an unresolved source without fabricating a new session history.",
+            "priority": 70,
+            "serendipityEligible": false
+          },
+          {
+            "target": "H",
+            "relationId": "Y_TO_H_UNRESOLVED_RELATION",
+            "condition": "ACTION_REENTER_UNRESOLVED_RELATION AND H_WAS_VISITED",
+            "consequence": "Re-enters the relational field at a previously unresolved phase.",
+            "priority": 70,
+            "serendipityEligible": false
+          },
+          {
+            "target": "K",
+            "relationId": "Y_TO_K_UNFINISHED_GROWTH",
+            "condition": "ACTION_REENTER_UNFINISHED_GROWTH AND K_WAS_VISITED",
+            "consequence": "Re-enters the exact unfinished growth stage as a new cycle seed.",
+            "priority": 70,
+            "serendipityEligible": false
+          }
+        ],
+        "portalToM": {
+          "state": "NOT_APPLICABLE",
+          "conditions": [],
+          "returnBehavior": "M_VISIT_STATUS_IS_REPORTED_WITHOUT_JUDGMENT"
+        }
+      },
+      "interaction": {
+        "meaningfulActions": [
+          {
+            "id": "GENERATE_RETURN",
+            "label": "Generate the Return",
+            "kind": "COMMIT",
+            "consequence": "Produces a deterministic artifact manifest from the current event trace.",
+            "memoryWrites": ["Y_RETURN_GENERATED", "ROUTE_ARTIFACT_CREATED"]
+          },
+          {
+            "id": "BEGIN_NEW_CYCLE",
+            "label": "Begin a transformed cycle",
+            "kind": "RETURN",
+            "consequence": "Creates a new session seed referencing but not overwriting the completed route.",
+            "memoryWrites": ["Y_REENTRY_SELECTED"]
+          }
+        ],
+        "passiveEffects": ["TRACE_VISUALIZATION", "NO_COMPLETION_SCORE", "NO_SPIRITUAL_RANKING"]
+      },
+      "memory": {
+        "reads": ["FULL_EVENT_TRACE", "VISIT_COUNTS", "COMMITTED_ACTIONS", "IGNORED_SIGNALS", "TRACED_RELATIONS", "SOURCES_OPENED", "SPECTRAL_TRACE", "M_VISITS"],
+        "writes": ["Y_RETURN_GENERATED", "ROUTE_ARTIFACT_CREATED", "Y_REENTRY_SELECTED"],
+        "revisitMutation": "A revisited Y displays the previously generated artifact and any new relation created through re-entry."
+      },
+      "organism": null,
+      "presentationMode": "TRACE_COMPOSITE",
+      "spectrum": {
+        "entry": ["ROUTE_DERIVED_SPECTRUM"],
+        "active": ["OPEN_WHITE", "ROUTE_DERIVED_ACCENTS"],
+        "yContribution": ["FINAL_TRACE_SYNTHESIS", "REENTRY_POSSIBILITIES"]
+      },
+      "returnContribution": ["VISITED_COORDINATES", "MUTATED_REVISITS", "COMMITTED_ACTIONS", "IGNORED_SIGNALS_WITH_CONSEQUENCE", "TRACED_RELATIONS", "OPENED_SOURCES", "M_VISIT_STATUS", "UNRESOLVED_QUESTIONS", "ROUTE_SPECIFIC_ARTIFACT"],
+      "accessibility": {
+        "keyboard": true,
+        "touch": true,
+        "reducedMotion": true,
+        "motionOff": true,
+        "nonVisualAlternative": true,
+        "immediateExit": true
+      }
+    }
+  ],
+  "trajectorySignatures": [
+    {
+      "id": "M1-T01-SIGNAL-ORBIT-GROWTH-NO-M",
+      "route": ["A", "B", "H", "K", "Y"],
+      "purpose": "Proves a complete route without M and a Return containing signal, relation and unfinished or completed growth state.",
+      "mVisited": false,
+      "requiredEvidence": ["B_ATTRACTOR_OBSERVED", "H_ORBIT_SELECTED", "GROWTH_STAGE"]
+    },
+    {
+      "id": "M1-T02-ARCHIVE-GROWTH-HEART-RETURN",
+      "route": ["A", "C", "K", "M", "K′", "H", "Y"],
+      "purpose": "Proves M as optional contextual depth and exact anchor restoration into a mutated growth node.",
+      "mVisited": true,
+      "requiredEvidence": ["C_RELATION_TRACED", "M_RETURN_COMMITTED", "K_REVISIT_MUTATED"]
+    },
+    {
+      "id": "M1-T03-DELAYED-ECHO-LOOP",
+      "route": ["A", "B", "C", "B′", "H", "Y"],
+      "purpose": "Proves a delayed consequence where an isolated signal echo becomes visible on revisit.",
+      "mVisited": false,
+      "requiredEvidence": ["B_ECHO_ISOLATED", "C_SOURCE_OPENED", "B_PRIME_ECHO_STABILIZED"]
+    },
+    {
+      "id": "M1-T04-COSMOLOGY-HEART-GROWTH",
+      "route": ["A", "H", "M", "H′", "K", "Y"],
+      "purpose": "Proves M approachable from a second semantic region and return to an orbital mutation.",
+      "mVisited": true,
+      "requiredEvidence": ["H_ORBIT_SELECTED", "M_VISIT_RECORDED", "H_PRIME_RELATION_REVEALED"]
+    },
+    {
+      "id": "M1-T05-ARCHIVE-SIGNAL-ORBIT",
+      "route": ["A", "C", "B", "H", "Y"],
+      "purpose": "Proves cross-world movement from provenance to signal to relational structure.",
+      "mVisited": false,
+      "requiredEvidence": ["C_SOURCE_OPENED", "B_ATTRACTOR_OBSERVED", "H_ORBIT_SELECTED"]
+    },
+    {
+      "id": "M1-T06-GROWTH-ARCHIVE-REPAIR",
+      "route": ["A", "H", "K", "C", "K′", "Y"],
+      "purpose": "Proves that missing provenance can redirect growth to the archive and later restore the exact stage.",
+      "mVisited": false,
+      "requiredEvidence": ["K_SEED_PLANTED", "C_SOURCE_OPENED", "K_GROWTH_RESUMED"]
+    },
+    {
+      "id": "M1-T07-MULTI-HEART-CONTEXT",
+      "route": ["A", "B", "M", "B′", "C", "M", "C′", "Y"],
+      "purpose": "Proves zero-or-more M cardinality and distinct contextual manifestations of one Heart function.",
+      "mVisited": true,
+      "requiredEvidence": ["M_AT_SIGNAL", "M_AT_MEMORY", "EXACT_ANCHOR_RESTORATION"]
+    },
+    {
+      "id": "M1-T08-RETURN-REENTRY",
+      "route": ["A", "C", "H", "K", "Y", "C′"],
+      "purpose": "Proves a completed Return followed by explicit re-entry into an unresolved source relation.",
+      "mVisited": false,
+      "requiredEvidence": ["Y_RETURN_GENERATED", "Y_REENTRY_SELECTED", "PRIOR_ARTIFACT_PRESERVED"]
+    }
+  ]
+}
