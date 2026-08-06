@@ -1,12 +1,12 @@
 {
-  "schemaVersion": "0.2.1",
+  "schemaVersion": "0.3.0",
   "project": {
     "name": "KODEX−∞",
     "technicalName": "kodex-minus-infinity",
     "category": "Living Information Design",
     "creator": "Nicolás Ortega / Ocín",
     "professionalPosition": "Creative Technologist + Generative Art Director",
-    "status": "CANONICAL_CONTEXT_AND_ALGORITHM_BOOTSTRAP",
+    "status": "CANONICAL_CONTEXT_INTERACTION_AND_CONTRIBUTION_BOOTSTRAP",
     "snapshotDate": "2026-08-06"
   },
   "repositories": {
@@ -34,7 +34,10 @@
     "architecture/KODEX_ALGORITHM.md",
     "architecture/RUNTIME_ARCHITECTURE.md",
     "architecture/SESSION_MEMORY_AND_PATHS.md",
+    "architecture/KODEX_INTERACTION_ENGINE.md",
     "design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md",
+    "modules/public-wall/README.md",
+    "ops/OBSIDIAN_VAULT_BRIDGE.md",
     "product/CURRENT_STATE.md",
     "product/EXPERIENCE_ARCHITECTURE.md"
   ],
@@ -43,9 +46,19 @@
     "data/state-registry.json",
     "data/module-registry.json",
     "data/voice-scene-registry.json",
+    "data/interaction-registry.json",
     "data/registries/repositories.yaml",
     "data/registries/prototypes.yaml",
     "data/registries/package-checksums.yaml"
+  ],
+  "schemas": [
+    "schemas/source.schema.json",
+    "schemas/claim.schema.json",
+    "schemas/semantic-passport.schema.json",
+    "schemas/session-memory.schema.json",
+    "schemas/module.schema.json",
+    "schemas/interaction-passport.schema.json",
+    "schemas/public-wall-entry.schema.json"
   ],
   "executableReferences": [
     {
@@ -69,7 +82,8 @@
     "machine",
     "heart",
     "cosmology",
-    "return-plus-infinity"
+    "return-plus-infinity",
+    "commons-wall"
   ],
   "firstVerticalSlice": [
     "minus-infinity",
@@ -78,6 +92,9 @@
     "archive",
     "heart",
     "return-plus-infinity"
+  ],
+  "optionalPostscript": [
+    "commons-wall"
   ],
   "claimClasses": [
     "OBSERVED",
@@ -92,9 +109,9 @@
     "UNKNOWN"
   ],
   "renderResponsibilities": {
-    "DOM": "meaning, text, controls and accessibility",
-    "SVG": "symbols, diagrams, annotation and vector artifacts",
-    "CANVAS": "lightweight procedural graphics and transparent exports",
+    "DOM": "meaning, text, controls, forms and accessibility",
+    "SVG": "symbols, diagrams, annotation, path artifacts and vector traces",
+    "CANVAS": "lightweight procedural graphics, drawing input and transparent exports",
     "WEBGL": "organisms, depth, impossible space and multipass feedback"
   },
   "sourceAuthorityOrder": [
@@ -109,11 +126,15 @@
     "Every essential visual element has a semantic passport or declared atmospheric role.",
     "Every factual claim has provenance.",
     "Every user decision creates a later consequence.",
-    "Every path preserves session memory.",
+    "Every path preserves privacy-minimized session memory.",
     "Every path provides source and uncertainty access.",
     "Every path can pause, reverse or exit.",
     "Every path converges through memory, provenance, relation, reflection, contribution and re-entry.",
     "Every spoken canonical line produces or coincides with a visible scene consequence.",
+    "Every nontrivial interaction has an interaction passport and a non-pointer alternative.",
+    "Core journey scenes use one active 100svh scene without document scroll.",
+    "The Commons Wall is an optional postscript and the only planned canonical document-scroll exception.",
+    "Public wall content requires exact preview, explicit consent, moderation, reporting and withdrawal behavior.",
     "The KODEX Voice distinguishes evidence, interpretation and mythopoetic language.",
     "No deployment occurs without APROBAR DEPLOY."
   ],
@@ -127,6 +148,8 @@
     "privateReflectionAllowed": false,
     "restrictedCulturalKnowledgeAllowed": false,
     "secretsAllowed": false,
-    "commercialBinaryMigrationRequiresReview": true
+    "commercialBinaryMigrationRequiresReview": true,
+    "publicUserGeneratedContentRequiresModeration": true,
+    "privateSessionAttachedToPublicContributionByDefault": false
   }
 }
