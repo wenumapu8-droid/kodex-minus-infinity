@@ -1,0 +1,79 @@
+version: 0.1.0
+experience:
+  id: KDX_VERTICAL_SLICE_V0
+  title: KODEX Genesis Archive
+  status: CANONICAL_TARGET_NOT_IMPLEMENTED
+  central_question: How did KODEX change from a visual language into a living information system?
+  corpus_status: PROPOSED_FOR_HUMAN_APPROVAL
+
+entry: minus-infinity
+convergence: return-plus-infinity
+
+paths:
+  OBSERVE:
+    priorities: [current_evidence, comparison, source_inspection, current_relations, uncertainty]
+    artifact_grammar: relation_constellation
+  REMEMBER:
+    priorities: [sequence, versions, testimony, temporal_trace, carried_memory]
+    artifact_grammar: memory_topography
+
+nodes:
+  - id: minus-infinity
+    purpose: reveal fragmented but approved records before integration
+    required_modules: [memory]
+    writes_to_memory: [session_started]
+    exits: [threshold]
+
+  - id: threshold
+    purpose: consent, accessibility and first consequential decision
+    required_modules: [memory]
+    decisions: [OBSERVE, REMEMBER]
+    writes_to_memory: [path_choice, accessibility_preferences]
+    exits: [archive]
+
+  - id: archive
+    purpose: inspect records, relations, versions, sources and unresolved states
+    required_modules: [evidence, archive, memory]
+    interactions: [OPEN_SOURCE, TRACE, COMPARE, FILTER, REVEAL]
+    writes_to_memory: [records_opened, sources_opened, relations_traced, versions_compared, contradictions_seen]
+    exits: [heart, return-plus-infinity]
+
+  - id: heart
+    purpose: optional orientation and integration before Return
+    required_modules: [heart, memory]
+    modes: [NATURAL_BREATH, GUIDED_PULSE, TAP_PULSE]
+    default_mode: NATURAL_BREATH
+    prohibited_modes: [UNVERIFIED_SENSOR, HIGH_VENTILATION, PROLONGED_HOLD]
+    writes_to_memory: [heart_mode]
+    exits: [return-plus-infinity]
+
+  - id: return-plus-infinity
+    purpose: semantic convergence, artifact, sources, contribution and re-entry
+    required_modules: [evidence, memory, return, contribution, open-source]
+    outputs: [path_summary, source_manifest, limitations, unresolved_questions, artifact, contribution_options, repository_access, re_entry]
+    exits: [threshold, archive]
+
+renderers:
+  DOM: controls_text_sources_methods
+  SVG: archive_graph_annotations_artifact
+  CANVAS: lightweight_fragments_and_export
+  WEBGL: optional_threshold_or_transition
+
+fallback_ladder:
+  - FULL_WEBGL
+  - REDUCED_WEBGL
+  - CANVAS_OR_SVG
+  - STATIC_SVG_OR_IMAGE
+  - STRUCTURED_TEXT
+
+acceptance_criteria:
+  - One real rights-cleared corpus.
+  - OBSERVE and REMEMBER produce distinct consequences and artifacts.
+  - Every factual item has provenance.
+  - Every essential visual variable has a semantic passport.
+  - Private conversation content is excluded.
+  - Keyboard, touch, reduced motion and motion off are complete.
+  - Target viewports 390x844, 412x915 and desktop pass.
+  - Heart is optional and non-clinical.
+  - Return is semantic and path-dependent.
+  - No deployment without APROBAR DEPLOY.
