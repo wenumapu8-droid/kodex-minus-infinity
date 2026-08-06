@@ -1,16 +1,17 @@
 # KODEX−∞ CURRENT STATE
 
 Last updated: 2026-08-05  
-Status: `DEDICATED REPOSITORY BOOTSTRAP IN PROGRESS`
+Status: `CONTEXT AND ALGORITHM BOOTSTRAP SUBSTANTIALLY COMPLETE / REVIEW REQUIRED`
 
 ## Repository state
 
 - Canonical repository: `wenumapu8-droid/kodex-minus-infinity`
-- Visibility at bootstrap: `PUBLIC`
+- Visibility: `PUBLIC`
 - Default branch: `main`
-- Bootstrap branch: `chore/canonical-bootstrap`
+- Active bootstrap branch: `chore/canonical-bootstrap`
+- Active draft pull request: `#2`
 - Existing implementation repository: `wenumapu8-droid/wenu-frontend`
-- Previous staging branch: `chore/kodex-canonical-bootstrap`
+- Verified advanced implementation branch: `feature/kodex-depth-engine`
 - Deployment permission: **NOT GRANTED**
 - Required deployment phrase: `APROBAR DEPLOY`
 
@@ -18,80 +19,182 @@ Status: `DEDICATED REPOSITORY BOOTSTRAP IN PROGRESS`
 
 ### `kodex-minus-infinity`
 
-Canonical system, product architecture, information grammar, evidence model, reusable modules, public methods and future application source after migration decisions are approved.
+Canonical context, identity, algorithms, evidence rules, design system, experience architecture, machine-readable registries, reusable module specifications, business architecture and future application packages.
 
 ### `wenu-frontend`
 
-Current implementation environment containing the existing Astro frontend and KODEX routes, components, shaders and assets. It must be inventoried before migration or deletion.
+Current Astro implementation containing KODEX routes, components, shaders, assets and experiments. It remains the implementation source until a provenance-preserving inventory and migration decision are approved.
 
-## Confirmed product direction
+## Canonical product direction
 
-KODEX−∞ is **Living Information Design**: a generative archive, interactive information system and contemplative interface.
+KODEX−∞ is **Living Information Design**: a generative archive, interactive information system, contemplative interface and creative operating system.
 
-Confirmed principles:
+Confirmed invariants:
 
-- unique decision-driven paths;
-- preserved session memory;
-- evidence-aware visualization;
-- distinction between evidence, interpretation, speculation, myth and atmosphere;
-- meaningful convergence at `RETURN / +∞`;
-- transition from black/obsidian toward white and pure spectral color;
-- open-source code and inspectable systems where rights allow;
-- contribution, sharing and re-entry;
-- heart pulse as orientation, not scoring;
-- cultural provenance and permissions;
-- no fabricated metrics or biometrics.
+- every scene begins from a question;
+- every factual claim has provenance and truth class;
+- every essential visual variable has a semantic passport or declared atmospheric role;
+- user decisions create later consequences;
+- session memory constructs Return and the path artifact;
+- evidence, interpretation, speculation, myth and atmosphere remain distinct;
+- `RETURN / +∞` converges through memory, provenance, relation, reflection, contribution and re-entry;
+- Heart orients without scoring;
+- cultural materials require provenance, status and review;
+- mobile, keyboard, reduced motion, fallback and safe exit are first-class requirements;
+- no fabricated metrics, biometrics, frequencies, tests or production status;
+- no deployment without approval.
 
-## Canonical bootstrap on this branch
+## Completed on the active branch
 
-- root identity and repository map;
-- master AI/system skill;
-- multi-agent contract;
-- product canon;
-- epistemic and evidence standard;
-- experience architecture;
-- machine-readable experience graph;
-- functional-state registry;
-- Heart Engine specification;
-- ingestion and AI handoff protocols;
-- roadmap and quality gates;
-- collaboration and rights boundaries.
+### Canon and governance
+
+- repository gateway and machine-readable manifest;
+- master skill and multi-agent contract;
+- canonical product and epistemic standards;
+- decisions, migration, security and contribution protocols;
+- deployment lock.
+
+### Full context for models
+
+- `START_HERE.md`;
+- master cross-conversation context;
+- prototype and code inventory;
+- recovered product decisions;
+- rejected directions and recurring failures;
+- root entry files for ChatGPT, Claude, Gemini, Codex and Hermes;
+- universal and model-specific startup prompts;
+- work-packet and handoff schemas.
+
+### Algorithms and runtime
+
+- core KODEX algorithm;
+- source, claim, entity, relation, node, module and memory objects;
+- ingestion, validation, question, path, module-selection and convergence algorithms;
+- runtime, renderer, shader, event, fallback and export architecture;
+- privacy-preserving session-memory architecture.
+
+### Design system
+
+- visual language;
+- information-design standard;
+- motion semantics;
+- symbol and typography standards;
+- core JSON and CSS tokens;
+- functional-state color registry.
+
+### Product modules
+
+Specifications exist for:
+
+- Evidence Engine;
+- Archive Engine;
+- Memory Engine;
+- Heart Engine;
+- Return Engine;
+- Contribution Engine;
+- Open Source Engine;
+- common module contract and module registry.
+
+### Product and commercial architecture
+
+- first vertical-slice specification;
+- recommended first corpus: KODEX Genesis Archive, pending human approval;
+- 90-day execution plan;
+- open-core business model;
+- product and service catalog;
+- 2026 market and pricing reference snapshot.
+
+### Integrity automation
+
+- dependency-free Python context validator;
+- GitHub Actions context-integrity workflow;
+- public/private boundary checks;
+- graph and JSON validation.
+
+## Verified implementation evidence
+
+The branch `wenu-frontend/feature/kodex-depth-engine` contains verified implementation including:
+
+- `src/pages/kodex/index.astro` fullscreen/deck entry and Threshold;
+- `src/lib/kodexUniverse.js` entity, scene, state and atmospheric registries;
+- `src/lib/kodex/grammar.ts` JSON/TypeScript grid, recipe, density and motion system;
+- `src/kodex/threshold-portal/README.md` multipass portal specification.
+
+These files are not yet migrated. Existing atmospheric metadata requires semantic review before canonical reuse.
+
+## Recovered but not yet migrated
+
+The context inventory records:
+
+- OBSERVE and OBSERVE V2;
+- Spatial Engine v1/v2;
+- Split Corridor;
+- impossible structures and Mirror Identity;
+- KODEX SVG Pack v1;
+- Design System Pack V1;
+- Visual Grammar System;
+- Impossible Forms Vol. 1;
+- transparent helix package;
+- contemplative engine materials;
+- scientific/computational research branch.
+
+Reported packages remain unverified in this repository until bytes, checksums, dates, creator and rights are recovered.
+
+## Current first-product target
+
+```text
+−∞
+→ THRESHOLD
+→ OBSERVE or REMEMBER
+→ ARCHIVE
+→ HEART
+→ RETURN / +∞
+→ artifact + sources + contribution + code + re-entry
+```
+
+Recommended corpus:
+
+```text
+KODEX Genesis Archive
+```
+
+Decision status: `PROPOSED / HUMAN APPROVAL REQUIRED`.
 
 ## Next required work
 
-1. Inventory all KODEX routes, components, assets, shaders and documents in `wenu-frontend`.
-2. Preserve originals and record checksums and provenance before migration.
-3. Classify every artifact as canonical, approved, experimental, reference, superseded, deprecated, private or rights-unclear.
-4. Map the current implementation onto the canonical experience graph.
-5. Select one real corpus or dataset for the first vertical slice.
-6. Define the application package and runtime architecture.
-7. Create source, influence, decision and rights registries.
-8. Establish tests and visual quality baselines.
-9. Review and merge the canonical bootstrap PR.
-10. Implement `THRESHOLD → ARCHIVE → HEART → RETURN / +∞` on a separate feature branch.
+1. Review the expanded draft PR and resolve any mergeability or workflow issue.
+2. Approve or reject the KODEX Genesis Archive as the first corpus.
+3. Inventory `wenu-frontend` completely across relevant branches.
+4. Recover generated package bytes from conversation/library storage.
+5. Populate artifact, source, influence and rights registries with checksums.
+6. Define the minimum implementation migration set.
+7. Create the runtime feature branch and persistent shell.
+8. Implement the vertical slice using one real corpus.
+9. Validate mobile, accessibility, fallback, provenance and performance.
+10. Productize one procedural asset pack and prepare a truthful case study.
 
 ## Unresolved decisions
 
-- Exact public license and commercial licensing model.
-- Which components remain open source versus commercially licensed.
-- First real corpus for the Archive vertical slice.
-- Exact relationship between Wenu Mapu and KODEX at brand and infrastructure levels.
-- Whether application source moves entirely here or remains connected to `wenu-frontend` temporarily.
-- Data retention policy for private reflections and contributions.
-- Moderation model for community submissions.
-- Sound identity and rights-cleared audio strategy.
-- Whether the repository should remain public before the rights and privacy inventory is complete.
+- approval of the first corpus;
+- exact public/open-source license matrix;
+- final trademark and asset-rights policy;
+- application migration timing and repository split;
+- first production font families and rights;
+- sound identity and rights-cleared audio;
+- community-contribution moderation and storage;
+- final product pricing after package and demand validation;
+- whether the public repository remains the long-term home for all canonical documentation.
 
 ## Current risks
 
-- continued production of isolated visual experiments without architectural integration;
-- accidental mixing of symbolic claims with evidence;
-- duplicated files across chats, local machines, ZIP packages and repositories;
-- use of third-party references without rights classification;
-- agent drift caused by incomplete context;
-- public exposure of private or culturally restricted material;
-- premature deployment before a coherent vertical slice exists.
+- treating context documents as if implementation were complete;
+- migrating reported packages without file verification;
+- leaving pseudo-telemetry from historical UI unclassified;
+- uncontrolled concept expansion before the vertical slice;
+- public exposure of private or restricted material;
+- premature licensing or deployment;
+- relying on one visual style instead of question-driven information design.
 
 ## Immediate definition of success
 
-Phase 0 is successful when every agent can enter this repository, read the same files, understand what KODEX is, identify what remains unresolved and produce work that advances one shared product rather than another disconnected concept.
+Phase 0 is successful when every model can read the repository, identify the actual implementation, distinguish verified from reported artifacts, explain the KODEX algorithm, create one bounded work packet and advance the same vertical slice without inventing parallel canon.
