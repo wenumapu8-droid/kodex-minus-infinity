@@ -1,95 +1,222 @@
 # KODEX−∞ EXPERIENCE ARCHITECTURE
 
-Status: `CANONICAL / BOOTSTRAP V0.2`
+Status: `CANONICAL / A–M–Y TOPOLOGY / V0.4`
 
 ## Product model
 
-KODEX is a directed, memory-preserving experience graph. It is not a linear website, a random scene selector or an engagement feed.
+KODEX is a directed, weighted, stateful and memory-preserving interaction field. It is not a linear website, a random scene selector, a personality test or an engagement feed.
 
-Each session contains:
+The complete coordinate system is:
 
 ```text
-ENTRY CONTEXT
-+ USER DECISIONS
-+ SOURCE MATERIAL
-+ SYSTEM STATE
+A B C D E F G H I J K L M N O P Q R S T U V W X Y
+```
+
+```text
+A = −∞ / COMMON ORIGIN / THRESHOLD
+M = HEART / 0 / OPTIONAL DISTRIBUTED DEPTH
+Y = RETURN / +∞ / ROUTE-DERIVED CONVERGENCE
+B–X = INTERWOVEN CONCEPT-NODES
+```
+
+The letters are stable coordinate IDs. They are not compulsory chapters and do not need to be visible as menu labels.
+
+## Governing proposition
+
+> KODEX does not offer a fixed path. It offers an interwoven alphabet of concepts through which each visitor writes a personal trajectory.
+
+A session is generated from:
+
+```text
+CURRENT COORDINATE
++ COMMITTED ACTIONS
++ VISITED AND IGNORED SIGNALS
++ REVISITS
++ TRACED RELATIONS
++ ACCESSIBILITY MODE
++ BOUNDED SERENDIPITY
 + SESSION MEMORY
-= UNIQUE PATH
+= NEXT FIELD OF POSSIBILITIES
 ```
 
-## Canonical experience graph
+The visitor does not choose a complete route at entry. The trajectory emerges continuously from interaction.
+
+## Canonical route laws
+
+A completed journey has the form:
 
 ```text
-                    ┌──────────── ARCHIVE ────────────┐
-                    │                                  │
-−∞ → THRESHOLD → PROLOGUE → DESCENT → MACHINE → COSMOLOGY
-          │             │          │        │          │
-          │             └──── HEART ┴────────┘          │
-          │                                             │
-          └──────── ACCESSIBILITY / EXIT ───────────────┘
-                                  ↓
-                           RETURN / +∞
-                                  ↓
-                ARTIFACT / SOURCES / RE-ENTRY
-                                  ↓ optional
-                       THE COMMONS / PUBLIC WALL
+A → v1 → v2 → ... → vn → Y
 ```
 
-The graph defines functions, not one fixed order. A valid route may enter HEART earlier, return to ARCHIVE, bypass MACHINE or open COSMOLOGY directly when the content requires it.
+where:
 
-Every personal route converges at `RETURN / +∞`. THE COMMONS is an optional public postscript, not a requirement for completion.
+- intermediate coordinates may appear in any nonalphabetical order;
+- letters may be skipped;
+- letters may be revisited;
+- revisits may expose mutated states such as `K′` or `J′`;
+- M may appear zero, one or multiple times;
+- M is never required to reach Y;
+- Y derives from the complete event trace;
+- safe exit remains available at every coordinate.
 
-## Spatial rule
-
-Primary experience nodes are one active `100svh` scene without document scroll.
+Representative examples:
 
 ```text
-−∞ / THRESHOLD / PROLOGUE / DESCENT / ARCHIVE /
-MACHINE / HEART / COSMOLOGY / RETURN
+A → C → H → F → Q → Y
+A → B → K → M → K′ → R → X → Y
+A → J → D → J′ → P → N → Y
 ```
 
-Long content opens in an accessible reader overlay or documentary route.
+Examples are test trajectories, not the architecture itself.
 
-`THE COMMONS` is the only planned canonical document-scroll exception because its approved public archive grows over time. Its creation canvas remains viewport-sized; the archive below may scroll.
+## A — Common origin
 
-## Persistent shell
+A is the only canonical beginning of a completed journey.
 
-Right rail:
+A must provide:
+
+- immediate orientation without resolving all mystery;
+- consent and privacy boundaries;
+- language, sound and motion controls;
+- keyboard, touch and non-visual access;
+- the initial obsidian state;
+- one first meaningful action;
+- the first session-memory event;
+- multiple state-dependent exits into the concept field.
+
+A deep link may open another coordinate in inspection mode, but it may not fabricate a prior journey.
+
+## B–X — Interwoven concept field
+
+Each intermediate letter is a macro-node capable of containing:
+
+- one or more concepts;
+- original visual activators by Ocín;
+- source records and works;
+- questions and unresolved contradictions;
+- internal subnodes;
+- multiple meaningful exits;
+- relations to other coordinates and worlds;
+- contextual manifestations of M;
+- memory writes;
+- spectral behavior;
+- a contribution to Y.
+
+A letter receives canonical meaning only after creator approval, source linkage, interaction definition, rights review and a declared contribution to Y.
+
+Unassigned coordinates remain `LATENT` or `NEEDS_CONFIRMATION`; they are not filled with invented concepts merely to complete the alphabet.
+
+## M — Distributed Heart / 0
+
+M is a canonical coordinate and a distributed possibility beneath the complete field.
+
+From every nonterminal region there must be a possible relation to M, but its local portal may remain:
 
 ```text
-INDEX / MAP / CURRENT PATH / VISITED / UNSEEN / NEXT / RETURN
+LATENT → RESONANT → AVAILABLE
 ```
 
-Left rail:
+M may manifest contextually as:
 
 ```text
-WORKS / BOOK / DOWNLOADS / COMMISSIONS / PRODUCTS /
-REPOSITORIES / ABOUT / CONTACT / ACCESSIBILITY
+M@MEMORY
+M@MACHINE
+M@COSMOLOGY
+M@ARTIFACT
 ```
 
-The shell remains stable while scene compositions, organisms, colors and information structures transform.
+These are different approaches to one Heart, not separate hearts.
 
-## Node contract
+M is not:
 
-Every experience node must declare:
+- a compulsory checkpoint;
+- a spiritual rank;
+- a reward for passive time on page;
+- an inferred emotional state;
+- a biometric detector;
+- an accidental pointer-only secret.
+
+Entering M is voluntary. Leaving M restores the exact prior coordinate, world, focus, local state and route anchor. A return from M may reveal a mutated version of the prior node because the journey now contains additional memory.
+
+## Y — Return / +∞
+
+Y is the only canonical completion function for a finished journey.
+
+The visitor is not required to visit every letter. Y becomes available when the current trajectory has sufficient local coherence to synthesize what actually occurred.
+
+Y must reveal:
+
+- visited coordinates;
+- revisits and mutations;
+- committed actions;
+- ignored signals that later acquired consequence;
+- traced relations;
+- worlds and spectral bands encountered;
+- whether M was visited, without judgment;
+- sources, rights status and uncertainty;
+- unresolved questions;
+- a route-specific visual or narrative artifact;
+- re-entry possibilities.
+
+Y is shared but never identical:
+
+```text
+ONE TERMINAL FUNCTION
++ MANY TRACE-DERIVED MANIFESTATIONS
+```
+
+The visual field moves from obsidian toward open white, but white represents sufficient legibility—not final truth or spiritual superiority.
+
+## Edge resolver
+
+At time `t`, available exits are resolved from:
+
+```text
+availableEdges(t) = F(
+  currentLetter,
+  committedActions,
+  visitedLetters,
+  visitCounts,
+  tracedRelations,
+  ignoredSignals,
+  spectralState,
+  boundedSerendipitySeed,
+  accessibilityMode
+)
+```
+
+Every surfaced edge requires a declared semantic, causal, visual or narrative relation. Bounded serendipity may alter which valid relation appears, but may not produce arbitrary navigation.
+
+Passive pointer movement alone cannot write consequential personal memory or make claims about identity, emotion or consciousness.
+
+## Macro-node contract
+
+Every letter implementation must declare:
 
 ```yaml
 node:
-  id: ""
-  title: ""
-  function: ""
-  scroll_mode: LOCKED_100SVH | READER_OVERLAY | GROWING_DOCUMENT_SCROLL
+  letter_id: ""
+  status: LATENT | ASSIGNED | PROTOTYPE | IMPLEMENTED | VALIDATED | DEPRECATED
+  concept_ids: []
+  world_ids: []
+  source_ids: []
+  visual_activator_ids: []
+  questions: []
+  internal_subnodes: []
   entry_conditions: []
-  required_memory: []
-  sources: []
-  user_decisions: []
-  visual_variables: []
-  interactions: []
-  interaction_passports: []
-  state_changes: []
-  writes_to_memory: []
-  exits: []
-  convergence_contribution: ""
+  meaningful_actions: []
+  semantic_edges: []
+  portal_to_m:
+    state: LATENT | RESONANT | AVAILABLE
+    conditions: []
+  memory_reads: []
+  memory_writes: []
+  spectral_behavior: []
+  y_contribution: []
+  epistemic_status: ""
+  rights_status: ""
+  cultural_status: ""
   accessibility:
     keyboard: true
     touch: true
@@ -101,26 +228,25 @@ node:
 
 ## Decision law
 
-A decision is canonical only when it changes at least one of:
+A user action is consequential only when it changes at least one later property:
 
-- content selected;
-- order of scenes;
-- level of detail;
-- representation;
-- interaction;
-- sonic behavior;
+- available coordinates or exits;
+- content emphasis;
+- scene representation;
+- spectral state;
+- motion or sonic behavior;
+- a later visual echo;
+- M portal state;
 - session memory;
-- final artifact;
-- later available routes;
-- contribution state.
+- Y eligibility;
+- the final artifact;
+- re-entry possibilities.
 
-A decorative button that produces the same consequence is not a decision.
+A decorative interaction that produces no later difference is not a canonical decision.
 
-## Interaction law
+## Interaction families
 
-Every nontrivial interaction must reveal, transform, compare, trace, navigate, orient, annotate, contribute or contemplate.
-
-Canonical primitive families:
+Canonical primitive families include:
 
 ```text
 PROXIMITY FIELD
@@ -128,269 +254,108 @@ SEMANTIC HOTSPOT
 COLOR STATE TRANSITION
 DRAG DEFORMATION
 INSPECTION TRAIL
+RELATION TRACE
+MUTATED REVISIT
 COMMONS VECTOR DRAWING
 ```
 
-Pointer interactions require touch and keyboard parity. Passive pointer movement is never stored as personal profiling data.
+Pointer interactions require touch and keyboard parity. Essential meaning must never depend on color, hover or WebGL alone.
 
 ## Session memory
 
-The system records only what is necessary for continuity and user value.
+The runtime records only what is necessary for continuity and user value.
 
 ```yaml
 session_memory:
-  path: []
-  decisions: []
-  interactions_committed: []
+  current_letter: A
+  letter_trace: []
+  visit_counts: {}
+  committed_actions: []
+  ignored_signals: []
+  relations_traced: []
   sources_opened: []
-  concepts_encountered: []
-  annotations: []
+  spectral_trace: []
+  m_portal_states: {}
+  m_visits: []
+  return_anchor: null
   accessibility_preferences: {}
-  contemplative_preferences: {}
-  generated_artifacts: []
-  commons:
-    opened: false
-    mode_used: null
-    submitted_entry_id: null
   consent: {}
+  generated_artifacts: []
 ```
 
 Private reflection remains local or explicitly user-controlled unless the user consents to save or contribute it.
 
-## Entry: `−∞`
+## Spatial and interface rule
 
-Purpose:
+The core journey uses one active `100svh` composition without mandatory document scroll. Long evidence or reading opens in an accessible overlay or documentary route.
 
-- establish mystery without confusion;
-- show incomplete relationships;
-- invite orientation;
-- avoid presenting darkness as moral failure.
-
-Required behaviors:
-
-- fast access to controls;
-- no forced audio;
-- no surprise intense motion;
-- visible route to THRESHOLD.
-
-## THRESHOLD
-
-Purpose:
-
-- consent;
-- accessibility;
-- language;
-- motion and sound settings;
-- session intention;
-- first meaningful choice.
-
-Possible first-choice families:
-
-- `OBSERVE`
-- `REMEMBER`
-- `CONNECT`
-- `TRANSFORM`
-- `CONTRIBUTE`
-
-These verbs shape the path but do not rank the user.
-
-Interaction behavior:
-
-- portal responds to pointer/touch proximity;
-- color and topology change according to the selected relation;
-- keyboard controls produce the same path consequence;
-- reduced-motion mode replaces absorption with direct state transition.
-
-## PROLOGUE / ARTIFACT ALTARS
-
-Purpose:
-
-- introduce verified work from `Book`, `Ocin` or KODEX;
-- establish the creator's question and process;
-- let one artwork contain several meaningful exits.
-
-Possible hotspots:
-
-- concept or book fragment;
-- process and prior versions;
-- code or generative rule;
-- related artwork;
-- commission or product context;
-- source/provenance.
-
-The portfolio is woven into the journey rather than isolated as a conventional gallery.
-
-## ARCHIVE
-
-Purpose:
-
-- expose entities, sources and relationships;
-- let users inspect provenance;
-- represent absence and contradiction;
-- allow retrieval and comparison.
-
-Core interactions:
-
-- open source;
-- trace relation;
-- compare versions;
-- filter by evidence class;
-- reveal uncertainty;
-- save a node to session memory.
-
-## MACHINE
-
-Purpose:
-
-- reveal computational transformations;
-- permit simulation and generative manipulation;
-- distinguish real data from synthetic or speculative output;
-- expose code when publishable.
-
-The Machine must never imitate scientific instrumentation without a real signal.
-
-## HEART
-
-Purpose:
-
-- restore orientation;
-- provide a central pulse;
-- coordinate optional breathing or stillness;
-- connect paths through a living, non-scoring symbol.
-
-Modes:
-
-- `GUIDED_PULSE`: synthetic tempo, labeled `NOT MEASURED`;
-- `TAP_PULSE`: user-tapped approximate rhythm, non-clinical;
-- `SENSOR_PULSE`: future, disabled until real integration and consent exist.
-
-The user can pause, stop, reduce motion or return to natural breathing at all times.
-
-## COSMOLOGY
-
-Purpose:
-
-- reveal how local information participates in larger systems;
-- connect time, territory, culture, ecology, technology and possible futures;
-- distinguish factual, interpretive, speculative and mythopoetic layers.
-
-Cosmology is a model of relationships, not an imposed universal truth.
-
-## RETURN / `+∞`
-
-Required sequence:
-
-1. reduce unresolved motion;
-2. reorient the user to ordinary time and interface controls;
-3. reveal how the path changed the system;
-4. expose sources and uncertainty;
-5. generate or present the path artifact;
-6. offer contribution, sharing and code access;
-7. open a new branch based on unexplored relations;
-8. optionally enter THE COMMONS.
-
-Visual transformation:
+A persistent shell may provide:
 
 ```text
-OBSIDIAN → OPEN WHITE
-CONTAMINATED SIGNAL → PURE SPECTRUM
-DENSE OVERLAY → SPATIAL CLARITY
-FRAGMENT → RELATION
-CONSUMPTION → CONTRIBUTION
+CURRENT COORDINATE
+TRACE / MAP
+VISITED / MUTATED / LATENT
+SOURCE ACCESS
+ACCESSIBILITY
+SAFE EXIT
+RETURN STATUS
 ```
 
-## THE COMMONS / PUBLIC TRACE WALL
+The shell must orient without exposing the entire graph as a conventional sitemap or reducing discovery to a progress bar.
 
-Purpose:
+`THE COMMONS` remains an optional post-Y public trace surface and the only planned canonical growing-document-scroll exception.
 
-- provide an optional shared surface after personal Return;
-- allow short written or vector-drawn traces;
-- let visitors observe accumulated approved contributions;
-- preserve public memory without creating a popularity economy.
+## Visual and spectral law
 
-Canonical modes:
+The functional spectrum may move through:
 
 ```text
-WRITE
-DRAW
-OBSERVE
-ACCESSIBLE LIST
+OBSIDIAN
+→ RED
+→ ORANGE
+→ YELLOW
+→ GREEN
+→ CYAN / BLUE
+→ INDIGO
+→ VIOLET
+→ OPEN WHITE
 ```
 
-Submission sequence:
+A trajectory may visit any coherent subset and does not follow a fixed rainbow ladder. Color is a state grammar, not a scientific hierarchy of emotions or consciousness.
 
-```text
-CREATE
-→ PRIVATE PREVIEW
-→ CHOOSE ATTRIBUTION
-→ CONFIRM RIGHTS AND PUBLIC DISPLAY
-→ MODERATION
-→ PUBLICATION OR REJECTION
-```
+## Full universe versus finite release
 
-The black surface represents shared unknown space, not a regression to `−∞`.
+All 25 coordinates exist canonically. The first release does not require 25 fully produced scenes.
 
-Public traces must support reporting, withdrawal and moderation. Private session history is not attached by default.
+V0 must instantiate a connected subset that proves the complete behavior:
 
-## Contribution layer
+- A as common origin;
+- at least six consequential coordinates in total;
+- at least three moments with multiple meaningful exits;
+- at least two connected semantic worlds;
+- loops and mutated revisits;
+- at least eight reproducible trajectory signatures for QA;
+- M approachable from more than one region;
+- Y generated from the actual event trace;
+- source and uncertainty access;
+- mobile, keyboard, touch, reduced-motion and non-WebGL completeness.
 
-Permitted contribution types:
+The test signatures are validation coverage, not a limit on possible visitor trajectories.
 
-- source suggestion;
-- annotation;
-- personal reflection kept private by default;
-- correction;
-- translation;
-- code contribution;
-- visual interpretation;
-- public text trace;
-- public vector drawing;
-- community review.
+## Current corpus
 
-All public contributions require attribution choice, moderation, rights checks and explicit publication consent.
+The first curated corpus is `KODEX Genesis Archive`: selected original Ocín works, verified KODEX systems, code lineage and approved Book fragments.
 
-## Obsidian and asset warehouse
-
-The private Obsidian vault is the working warehouse. GitHub is the reviewed canonical layer.
-
-Google Drive folders such as `KODEX`, `Book` and `Ocin` must be inventoried and rights-classified before assets are promoted into scenes or the public repository. Raw private notes and unreviewed references are never published automatically.
-
-See `ops/OBSIDIAN_VAULT_BRIDGE.md`.
-
-## Vertical slice v0
-
-The first complete product slice remains:
-
-```text
-−∞
-→ THRESHOLD
-→ choose OBSERVE or REMEMBER
-→ ARCHIVE
-→ HEART
-→ RETURN / +∞
-→ path artifact + sources + re-entry
-```
-
-The first interaction milestone additionally integrates:
-
-```text
-PROXIMITY FIELD at THRESHOLD
-SEMANTIC HOTSPOTS at ARCHIVE
-COLOR STATE TRANSITION in one ARTIFACT ALTAR
-```
-
-THE COMMONS is a post-vertical-slice module unless deliberately moved earlier through a reviewed product decision.
+The corpus provides material for nodes. It does not predetermine the user's route.
 
 ## Success criteria
 
-- works on mobile and desktop;
-- no scroll-dependent core interaction;
-- Commons scrolling is isolated and intentional;
-- one real dataset or documented corpus;
-- verified portfolio assets are integrated with provenance;
-- every visual variable has a declared meaning;
-- every nontrivial interaction has an interaction passport;
-- reduced-motion and motion-off modes are complete;
-- route choices affect the artifact;
-- public contributions use preview, consent and moderation;
-- no deployment without approval.
+- visitors begin at the same A but produce different meaningful traces;
+- no interface offers only Path A / Path B;
+- at least one earlier action creates a delayed visible consequence;
+- a revisit produces a materially altered node state;
+- M is optional, accessible and context-sensitive;
+- Y differs according to the complete trace;
+- every factual element opens provenance and uncertainty;
+- the journey remains complete with sound off, WebGL unavailable and motion reduced;
+- no production deployment occurs without `APROBAR DEPLOY`.
