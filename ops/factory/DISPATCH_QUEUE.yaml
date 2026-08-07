@@ -1,0 +1,101 @@
+schema_version: 1
+updated_at: "2026-08-07T23:30:00Z"
+authority:
+  supervisor: "ORCHESTRATOR"
+  queue_issue: "KOD-44"
+  factory_os: "ops/factory/FACTORY_OS.md"
+  router_policy: "ops/factory/ROUTER_POLICY.md"
+  heartbeat_protocol: "ops/factory/HEARTBEAT_PROTOCOL.md"
+  event_schema: "ops/factory/FACTORY_EVENT_SCHEMA.yaml"
+
+rules:
+  - "Connected is not Running. Execution requires fresh heartbeat, commit, test, PR or packet-specific evidence."
+  - "Each station executes only its current_packet and referenced packet manifest."
+  - "Do not duplicate packet prose into chat. Repository packet manifests are authoritative."
+  - "Do not edit main directly."
+  - "Do not merge unless the packet/reviewer gate explicitly authorizes merge."
+  - "Deployment remains blocked without the exact creator phrase APROBAR DEPLOY."
+  - "Do not expose secrets, private paths, raw conversations or chain-of-thought in queue/heartbeat/handoff."
+
+stations:
+  - station_id: "GEMINI_ANTIGRAVITY"
+    profile: "MULTIMODAL_VISUAL_SPEC"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "ASSIGNED_UNKNOWN"
+    current_packet: "KOD-38"
+    packet_path: "ops/factory/packets/KOD-38.yaml"
+    target_repository: "wenumapu8-droid/kodex-minus-infinity"
+    target_branch: "feature/visual-passport-field-of-eyes-v1"
+    mode: "WRITE_BOUNDED"
+    next_expected_evidence: "heartbeat or commit adding ops/factory/passports/FIELD_OF_EYES.v1.yaml"
+    wip_limit: 1
+
+  - station_id: "CLAUDE_MAX_MACMINI"
+    profile: "LONG_CONTEXT_ARCHITECT"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "ASSIGNED_UNKNOWN"
+    current_packet: "KOD-42"
+    packet_path: "ops/factory/packets/KOD-42.yaml"
+    target_repository: "wenumapu8-droid/wenu-frontend"
+    target_branch: null
+    mode: "READ_ONLY_AUDIT"
+    next_expected_evidence: "STARTED heartbeat or KOD-42 audit handoff"
+    wip_limit: 1
+
+  - station_id: "HERMES_TELEGRAM"
+    profile: "OPERATIONS_NOTIFICATION_AGENT"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "ASSIGNED_UNKNOWN"
+    current_packet: "KOD-36"
+    packet_path: "ops/factory/packets/KOD-36.yaml"
+    target_repository: "external Hermes runtime / local operations configuration"
+    target_branch: null
+    mode: "OPERATIONS_ADAPTER"
+    next_expected_evidence: "STARTED heartbeat plus capability/preflight report"
+    wip_limit: 1
+
+  - station_id: "OPENCLAUDE_DEEPSEEK"
+    profile: "BOUNDED_CODING_WORKER"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "ASSIGNED_UNKNOWN"
+    current_packet: "KOD-28"
+    packet_path: "ops/factory/packets/KOD-28.yaml"
+    target_repository: "wenumapu8-droid/wenu-frontend"
+    target_branch: "feature/kodex-journey-state-v1"
+    mode: "WRITE_BOUNDED"
+    next_expected_evidence: "heartbeat or commit implementing JourneyState + EventTrace"
+    wip_limit: 1
+
+  - station_id: "CLAUDE_PRO_IMAC"
+    profile: "LEGACY_CONTEXT_ARCHIVE"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "PAUSED_CAPACITY"
+    current_packet: "KOD-26"
+    packet_path: "ops/factory/packets/KOD-26.yaml"
+    target_repository: "wenumapu8-droid/kodex-minus-infinity"
+    target_branch: null
+    mode: "WRITE_BOUNDED_AFTER_RESUME"
+    blocker_class: "WORKER_CAPACITY_QUOTA"
+    resume_condition: "usage quota reset, then inspect existing local work before continuing"
+    next_expected_evidence: "STARTED/RUNNING heartbeat after reset, then regenerated Bridge 1 Draft PR"
+    wip_limit: 1
+
+  - station_id: "CHATGPT_ORCHESTRATOR"
+    profile: "ORCHESTRATOR"
+    connection_status: "ACTIVE"
+    execution_status: "RUNNING"
+    current_packet: "KOD-44"
+    packet_path: null
+    target_repository: "wenumapu8-droid/kodex-minus-infinity"
+    target_branch: "feature/repo-native-dispatch-v1"
+    mode: "CONTROL_PLANE"
+    next_expected_evidence: "repo-native dispatch protocol PR and queue activation"
+    wip_limit: 1
+
+dependency_frontier:
+  - "KOD-26 blocks KOD-29."
+  - "KOD-28 review gate is KOD-41 before downstream runtime integration."
+  - "KOD-30 requires KOD-28 + KOD-29."
+  - "KOD-38 visual WIP must pass review before KOD-39 becomes active."
+
+deployment_status: "BLOCKED"
