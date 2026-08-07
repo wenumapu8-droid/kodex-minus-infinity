@@ -1,33 +1,57 @@
 schema_version: 1
-updated_at: "2026-08-07T23:34:00Z"
+updated_at: "2026-08-07T23:42:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
+  loop_controller_issue: "KOD-45"
+  completion_scope: "KOD-18 / KODEX−∞ Vertical Slice v0 release gate"
   factory_os: "ops/factory/FACTORY_OS.md"
   router_policy: "ops/factory/ROUTER_POLICY.md"
   heartbeat_protocol: "ops/factory/HEARTBEAT_PROTOCOL.md"
   event_schema: "ops/factory/FACTORY_EVENT_SCHEMA.yaml"
+  loop_protocol: "ops/factory/FACTORY_LOOP_PROTOCOL.md"
 
 rules:
   - "Connected is not Running. Execution requires fresh heartbeat, commit, test, PR or packet-specific evidence."
   - "Each station executes only its current_packet and referenced packet manifest."
   - "Do not duplicate packet prose into chat. Repository packet manifests are authoritative."
+  - "After handoff, re-read this queue before taking any new work; never self-assign a next packet."
+  - "Keep WIP finite and do not overlap file ownership across active write packets."
   - "Do not edit main directly."
   - "Do not merge unless the packet/reviewer gate explicitly authorizes merge."
   - "Deployment remains blocked without the exact creator phrase APROBAR DEPLOY."
   - "Do not expose secrets, private paths, raw conversations or chain-of-thought in queue/heartbeat/handoff."
 
+loop_policy:
+  enabled: true
+  target: "complete the finite KOD-18 Vertical Slice v0 through release review"
+  transport: "GitHub + Linear; chat is bootstrap/fallback only"
+  cycle: "observe evidence -> gate -> rework/complete -> route next dependency-ready packet -> repeat"
+  lane_blocking: "a blocker pauses only its dependent lane; independent lanes continue"
+  stop_conditions:
+    - "creator/canonical decision required"
+    - "cultural or rights authorization required"
+    - "missing provenance/source contract"
+    - "worker capacity/quota unavailable"
+    - "CI/test failure requiring rework"
+    - "file ownership collision"
+    - "release gate reached"
+  deployment_status: "BLOCKED"
+
 stations:
   - station_id: "GEMINI_ANTIGRAVITY"
     profile: "MULTIMODAL_VISUAL_SPEC"
     connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "ASSIGNED_UNKNOWN"
+    execution_status: "REVIEW_REWORK"
     current_packet: "KOD-38"
     packet_path: "ops/factory/packets/KOD-38.yaml"
     target_repository: "wenumapu8-droid/kodex-minus-infinity"
     target_branch: "feature/visual-passport-field-of-eyes-v1"
     mode: "WRITE_BOUNDED"
-    next_expected_evidence: "heartbeat or commit adding ops/factory/passports/FIELD_OF_EYES.v1.yaml"
+    latest_evidence: "Draft PR #23 at fa245ea24ff74813aa86e74c66a3ab6addb1b23a; CI passed; supervisor rework requirements posted"
+    current_step: "revise same PR for provenance, implementation grounding, semantic memory boundary, GPU lifecycle, exact mobile behavior, handoff evidence"
+    next_after_gate: "KOD-39"
+    next_expected_evidence: "new PR #23 commit addressing review requirements"
     wip_limit: 1
 
   - station_id: "CLAUDE_MAX_MACMINI"
@@ -39,6 +63,7 @@ stations:
     target_repository: "wenumapu8-droid/wenu-frontend"
     target_branch: null
     mode: "READ_ONLY_AUDIT"
+    next_after_gate: "KOD-41 when KOD-28 reaches REVIEW"
     next_expected_evidence: "STARTED heartbeat or KOD-42 audit handoff"
     wip_limit: 1
 
@@ -53,6 +78,7 @@ stations:
     mode: "OPERATIONS_ADAPTER"
     latest_evidence: "KOD-36 preflight passed; supervisor implementation decision recorded in Linear"
     current_step: "implement bounded adapter + persistent dedupe + five fixtures"
+    next_after_gate: "live event-feed integration packet to be created only after KOD-36 evidence passes"
     next_expected_evidence: "fixture results, one controlled Telegram delivery, KOD-36 handoff"
     wip_limit: 1
 
@@ -66,6 +92,7 @@ stations:
     target_repository: "wenumapu8-droid/wenu-frontend"
     target_branch: "feature/kodex-journey-state-v1"
     mode: "WRITE_BOUNDED"
+    next_after_gate: "KOD-41 review by CLAUDE_MAX_MACMINI"
     next_expected_evidence: "heartbeat or commit implementing JourneyState + EventTrace"
     wip_limit: 1
 
@@ -80,6 +107,7 @@ stations:
     mode: "WRITE_BOUNDED_AFTER_RESUME"
     blocker_class: "WORKER_CAPACITY_QUOTA"
     resume_condition: "usage quota reset, then inspect existing local work before continuing"
+    next_after_gate: "KOD-29"
     next_expected_evidence: "STARTED/RUNNING heartbeat after reset, then regenerated Bridge 1 Draft PR"
     wip_limit: 1
 
@@ -87,18 +115,21 @@ stations:
     profile: "ORCHESTRATOR"
     connection_status: "ACTIVE"
     execution_status: "RUNNING"
-    current_packet: "KOD-44"
+    current_packet: "KOD-45"
     packet_path: null
     target_repository: "wenumapu8-droid/kodex-minus-infinity"
-    target_branch: "feature/repo-native-dispatch-v1"
+    target_branch: "feature/factory-loop-controller-v1"
     mode: "CONTROL_PLANE"
-    next_expected_evidence: "repo-native dispatch protocol PR and queue activation"
+    current_step: "maintain repo-native loop, inspect evidence, apply gates, route dependency frontier"
+    next_expected_evidence: "Factory Loop Protocol merged and subsequent station evidence routed"
     wip_limit: 1
 
 dependency_frontier:
   - "KOD-26 blocks KOD-29."
   - "KOD-28 review gate is KOD-41 before downstream runtime integration."
   - "KOD-30 requires KOD-28 + KOD-29."
-  - "KOD-38 visual WIP must pass review before KOD-39 becomes active."
+  - "KOD-38 must pass review before GEMINI_ANTIGRAVITY advances to KOD-39, then KOD-40."
+  - "KOD-42 can proceed independently as read-only integration readiness work."
+  - "KOD-36 can proceed independently and should provide the Andon path for later loop state changes."
 
 deployment_status: "BLOCKED"
