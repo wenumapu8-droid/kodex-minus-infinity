@@ -1,0 +1,130 @@
+passportId: "VP-FIELD-OF-EYES-V1"
+conceptId: "KDX-NODE-FIELD-OF-EYES"
+title: "FIELD OF EYES"
+status: "DRAFT"
+semanticPurpose: "To represent recursive observation, where the act of looking places the viewer as a node within a distributed field of attention."
+nodeQuestion: "Ningún ojo observa solo. Mirar es ya ser parte del campo que mira."
+coordinateAssignment: null
+sourceRefs:
+  - id: "kodex-node-field-of-eyes"
+    relation: "PRIMARY_CONCEPT"
+    notes: 
+      - "Summary: Represents recursive observation and a distributed field of attention."
+  - id: "kodex-crt-observe-preset"
+    relation: "DESIGN_SYSTEM"
+    notes: 
+      - "Spectral violet tint, ghost frames, surveillance aesthetic."
+  - id: "r2-reference-art"
+    relation: "REFERENCE"
+    notes: 
+      - "pub-2b45...r2.dev reference material."
+provenanceBoundaries:
+  mayAbstract: 
+    - "Distributed node topologies"
+    - "Nested recursive eye structures"
+  mustNotCopy: 
+    - "Direct photographs of human eyes without alteration"
+  culturalSensitivity: 
+    - "Buddhist or 'Third Eye' iconography must be treated with caution, avoiding exact replication of sacred geometries or explicit spiritual claims. Retain a computational/algorithmic framing."
+informationHierarchy:
+  primary: "The distributed field / lattice of eyes."
+  secondary: 
+    - "The user's active gaze/interaction point (the 'self' node)."
+  tertiary: 
+    - "Background telemetry, signal values, and structural tethering."
+geometry:
+  primitives: 
+    - "Node (Eye)"
+    - "Tether (Lattice Edge)"
+    - "Focus Ring"
+  topology: "Distributed Astral Lattice"
+  coordinateSystem: "Infinite continuous 3D coordinate space"
+  spatialLayers: 
+    - "Background Void"
+    - "Structural Lattice"
+    - "Active Nodes"
+    - "Foreground Gaze Anchor"
+composition:
+  focalStructure: "Decentralized with local concentration around interaction points."
+  grid: "Non-linear / Organic Lattice"
+  depthModel: "Infinite Z-depth with depth-of-field blurring on distant nodes."
+  negativeSpace: "Vast void to emphasize isolation yet connectedness of nodes."
+  responsiveRules:
+    desktop: "Wide aspect, expansive lattice visible, mouse controls gaze center."
+    mobile: "Vertical slice, denser vertical stacking of nodes, touch drives focal shifts."
+paletteRoles:
+  - role: "Observe Base"
+    semanticMeaning: "The fundamental state of the archive watching"
+    tokenOrRange: "Observe Spectral Violet"
+    colorIsNotOnlyChannel: true
+  - role: "Active Gaze"
+    semanticMeaning: "Nodes actively observing the user"
+    tokenOrRange: "Cyan (accent from KDX-NODE-FIELD-OF-EYES)"
+    colorIsNotOnlyChannel: true
+typographyRoles:
+  - role: "Telemetry"
+    behavior: "Monospaced, overlaid, reacting to focus states."
+motion:
+  timescales: 
+    - "Ambient drift (slow)"
+    - "Gaze snap (fast)"
+  stateTransitions: 
+    - "Idle to Observing"
+    - "Observing to Locked"
+  loopingBehavior: "Continuous subtle ambient drift and procedural gaze shifts."
+  reducedMotion: "Static nodes, no drift, instant state changes without interpolation."
+interaction:
+  inputs: 
+    - "POINTER"
+    - "TOUCH"
+    - "KEYBOARD"
+  semanticActions: 
+    - "Attract gaze of surrounding nodes"
+    - "Reveal hidden lattice connections"
+  stateChanges: 
+    - "Hovering over a node focuses the field."
+    - "Clicking/Tapping locks observation."
+  memoryWrite:
+    enabled: true
+    key: "kodex-field-of-eyes-observed"
+    description: "Records that the user has triggered a deep observation state within the lattice."
+  exitBehavior: "Eyes dilate and fade into the void."
+implementation:
+  medium: "WEBGL"
+  reusableEngineBoundary: "EyeFieldRenderer (handles node instantiation, lattice connecting, and gaze vectors independently of scene logic)."
+  sceneSpecificParts: 
+    - "Kodex Observe V2 integration"
+    - "CRT post-processing layer"
+  dependencies: 
+    - "Three.js / WebGL framework"
+    - "KodexCrtLayer"
+  performanceRisk: "HIGH"
+fallback:
+  noWebGL: "Static SVG or raster of the lattice with CSS hover states for nearest nodes."
+  noAudio: "Visual telemetry and focus rings carry the weight of state changes."
+  staticMode: "A single, highly detailed frame of the field."
+accessibility:
+  keyboardEquivalent: "Tab navigation cycles through major focal nodes, triggering 'locked' states."
+  touchEquivalent: "Taps act as gaze anchors, equivalent to pointer hover+click."
+  screenReaderAlternative: "Aria live region describing the density of observation ('The field is watching you.')"
+  nonColorEquivalent: "Focus rings and scale changes signify active gaze instead of just color shifts."
+  reducedMotionEquivalent: "Static background, no camera pan, abrupt transitions."
+reviewChecks:
+  - "Does the lattice feel computationally infinite rather than spiritually mystic?"
+  - "Are pointer, touch, and keyboard interactions semantically equivalent?"
+  - "Is the EyeFieldRenderer cleanly separated from the CRT layer?"
+  - "Does it perform smoothly on mobile (390x844/412x915)?"
+targetCaptures:
+  - name: "desktop_wide"
+    width: 1920
+    height: 1080
+  - name: "mobile_ios"
+    width: 390
+    height: 844
+  - name: "mobile_android"
+    width: 412
+    height: 915
+epistemicConstraints:
+  - "Recursive observation is an artistic/interaction frame, not third-eye science."
+  - "Generated frequencies/telemetry are not factual."
+scientificClaimPolicy: "SYMBOLIC_ONLY"
