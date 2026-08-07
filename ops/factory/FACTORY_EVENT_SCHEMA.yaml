@@ -16,6 +16,7 @@ factory_event:
   next_owner: ""
   created_at: ""
   deployment_authorized: false
+  notification_reason: ""
 
 notification_policy:
   INFO:
