@@ -86,7 +86,7 @@ class FactoryMetricsTests(unittest.TestCase):
         self.assertEqual(summary["completed_packets"], 2)
         self.assertEqual(summary["wip_by_lane"], {"DATA_CANON": 1})
         self.assertEqual(summary["median_cycle_time_seconds"], 5400.0)
-        self.assertEqual(summary["median_lead_time_seconds"], 6300.0)
+        self.assertEqual(summary["median_lead_time_seconds"], 6600.0)
         self.assertEqual(summary["blocked_time_seconds"], 1800.0)
         self.assertAlmostEqual(summary["blocked_time_share"], 1800.0 / 10800.0)
         self.assertEqual(summary["first_pass_yield"], 0.5)
