@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex-minus-infinity.local/schemas/organism-preset.schema.json",
+  "title": "KODEX Organism Preset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "family",
+    "renderMode",
+    "status",
+    "concept",
+    "assets",
+    "behaviors",
+    "interaction",
+    "memory",
+    "transition",
+    "accessibility",
+    "performance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "family": {
+      "enum": ["FIELD", "VORTEX", "ORBITAL", "GROWTH", "SPECIMEN", "TERRAIN"]
+    },
+    "renderMode": {
+      "enum": ["SHADER", "IMAGE_FIELD", "DEPTH_STACK", "PARTICLES", "SVG", "GLB", "LAYERED_PLANES"]
+    },
+    "status": {
+      "enum": ["REFERENCE", "EXPERIMENTAL", "PROTOTYPE", "IMPLEMENTED", "TESTED", "DEPRECATED"]
+    },
+    "epistemicStatus": {
+      "enum": ["VERIFIED", "CANONICAL", "INFERRED", "SPECULATIVE", "NEEDS_CONFIRMATION", "DEPRECATED"]
+    },
+    "concept": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity", "primaryVerb", "spatialLogic"],
+      "properties": {
+        "entity": { "type": "string", "minLength": 1 },
+        "primaryVerb": { "type": "string", "minLength": 1 },
+        "spatialLogic": {
+          "enum": ["PLANAR", "RADIAL", "AXIAL", "ORBITAL", "BRANCHING", "RECURSIVE", "VOLUMETRIC", "TOPOGRAPHIC", "SECTIONAL"]
+        },
+        "statement": { "type": "string" }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fallback"],
+      "properties": {
+        "source": { "type": "string" },
+        "fallback": { "type": "string", "minLength": 1 },
+        "alpha": { "type": "string" },
+        "height": { "type": "string" },
+        "normal": { "type": "string" },
+        "emission": { "type": "string" },
+        "model": { "type": "string" },
+        "spriteSequence": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2
+        },
+        "sourceId": { "type": "string" },
+        "rightsStatus": {
+          "enum": ["CLEARED", "INTERNAL_ONLY", "REVIEW_REQUIRED", "UNKNOWN"]
+        }
+      }
+    },
+    "behaviors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "BREATHE", "ROTATE", "PULSE", "ORBIT", "PRECESS", "GROW", "ROOT", "BRANCH",
+          "REVEAL", "SCAN", "SHIMMER", "GLITCH", "PARALLAX", "COLLAPSE", "RADIATE",
+          "FEEDBACK", "DISPLACE", "DISSOLVE", "REASSEMBLE"
+        ]
+      }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "interaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pointer", "primaryAction"],
+      "properties": {
+        "pointer": {
+          "enum": ["NONE", "PARALLAX", "ORIENT", "DISTORT", "ATTRACT", "REVEAL"]
+        },
+        "primaryAction": { "type": "string", "minLength": 1 },
+        "secondaryAction": { "type": "string" },
+        "audioReactive": { "type": "boolean", "default": false },
+        "keyboardEquivalent": { "type": "string" },
+        "touchEquivalent": { "type": "string" }
+      }
+    },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["writes"],
+      "properties": {
+        "writes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "reads": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enter", "exit"],
+      "properties": {
+        "enter": {
+          "enum": ["NONE", "CONVERGE", "DISSOLVE", "ORBITAL_HANDOFF", "GROWTH_TRANSFER", "SCAN_REWRITE", "FEEDBACK_RECURSION", "SECTION_COLLAPSE", "REASSEMBLE"]
+        },
+        "exit": {
+          "enum": ["NONE", "CONVERGE", "DISSOLVE", "ORBITAL_HANDOFF", "GROWTH_TRANSFER", "SCAN_REWRITE", "FEEDBACK_RECURSION", "SECTION_COLLAPSE", "REASSEMBLE"]
+        },
+        "durationMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "reducedMotion", "noWebGL"],
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "reducedMotion": {
+          "enum": ["STATIC", "STATIC_PULSE", "STEPPED", "SVG", "CANVAS_LOW_MOTION"]
+        },
+        "noWebGL": {
+          "enum": ["STATIC_IMAGE", "STATIC_SVG", "CANVAS", "TEXTUAL"]
+        }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mobileTier", "desktopTier", "maxDpr"],
+      "properties": {
+        "mobileTier": { "enum": ["HIGH", "MEDIUM", "LOW", "FALLBACK"] },
+        "desktopTier": { "enum": ["HIGH", "MEDIUM", "LOW", "FALLBACK"] },
+        "maxDpr": { "type": "number", "minimum": 0.5, "maximum": 2 },
+        "particleBudget": { "type": "integer", "minimum": 0 },
+        "feedbackPasses": { "type": "integer", "minimum": 0, "maximum": 4 },
+        "targetFps": { "type": "integer", "enum": [24, 30, 45, 60] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "author": { "type": "string" },
+        "sourceIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
