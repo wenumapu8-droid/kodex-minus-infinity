@@ -1,0 +1,86 @@
+schema_version: 1
+visual_passport:
+  passportId: "KDX-VP-"
+  conceptId: ""
+  title: ""
+  status: "DRAFT"
+  semanticPurpose: ""
+  nodeQuestion: ""
+  coordinateAssignment: null
+  sourceRefs:
+    - id: ""
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: null
+      notes: []
+  provenanceBoundaries:
+    mayAbstract: []
+    mustNotCopy: []
+    culturalSensitivity: []
+  informationHierarchy:
+    primary: ""
+    secondary: []
+    tertiary: []
+  geometry:
+    primitives: []
+    topology: ""
+    coordinateSystem: ""
+    spatialLayers: []
+  composition:
+    focalStructure: ""
+    grid: ""
+    depthModel: ""
+    negativeSpace: ""
+    responsiveRules:
+      desktop: ""
+      mobile: ""
+  paletteRoles:
+    - role: ""
+      semanticMeaning: ""
+      tokenOrRange: ""
+      colorIsNotOnlyChannel: true
+  typographyRoles:
+    - role: ""
+      behavior: ""
+  motion:
+    timescales: []
+    stateTransitions: []
+    loopingBehavior: ""
+    reducedMotion: ""
+  interaction:
+    inputs: []
+    semanticActions: []
+    stateChanges: []
+    memoryWrite:
+      enabled: false
+      key: ""
+      description: ""
+    exitBehavior: ""
+  implementation:
+    medium: "HYBRID"
+    reusableEngineBoundary: ""
+    sceneSpecificParts: []
+    dependencies: []
+    performanceRisk: "MEDIUM"
+  fallback:
+    noWebGL: ""
+    noAudio: ""
+    staticMode: ""
+  accessibility:
+    keyboardEquivalent: ""
+    touchEquivalent: ""
+    screenReaderAlternative: ""
+    nonColorEquivalent: ""
+    reducedMotionEquivalent: ""
+  reviewChecks: []
+  targetCaptures:
+    - name: "mobile-390x844"
+      width: 390
+      height: 844
+    - name: "mobile-412x915"
+      width: 412
+      height: 915
+  epistemicConstraints:
+    - "Do not introduce pseudo-telemetry or unsupported scientific claims."
+    - "Symbolic/spiritual meaning must remain explicitly artistic unless supported by verified sources."
+  scientificClaimPolicy: "SYMBOLIC_ONLY"
+  notes: []
