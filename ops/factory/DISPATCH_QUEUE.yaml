@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-08-07T23:42:00Z"
+updated_at: "2026-08-07T23:55:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
@@ -70,16 +70,16 @@ stations:
   - station_id: "HERMES_TELEGRAM"
     profile: "OPERATIONS_NOTIFICATION_AGENT"
     connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "RUNNING"
-    current_packet: "KOD-36"
-    packet_path: "ops/factory/packets/KOD-36.yaml"
+    execution_status: "ASSIGNED_READY"
+    current_packet: "KOD-46"
+    packet_path: "ops/factory/packets/KOD-46.yaml"
     target_repository: "external Hermes runtime / local operations configuration"
     target_branch: null
-    mode: "OPERATIONS_ADAPTER"
-    latest_evidence: "KOD-36 preflight passed; supervisor implementation decision recorded in Linear"
-    current_step: "implement bounded adapter + persistent dedupe + five fixtures"
-    next_after_gate: "live event-feed integration packet to be created only after KOD-36 evidence passes"
-    next_expected_evidence: "fixture results, one controlled Telegram delivery, KOD-36 handoff"
+    mode: "OPERATIONS_OBSERVER"
+    latest_evidence: "KOD-36 DONE: adapter, persistent dedupe, 5 fixtures and controlled Telegram delivery message_id 24188 accepted by supervisor"
+    current_step: "build deterministic repo-native observer that emits canonical factory_event transitions into the stable KOD-36 inbox"
+    next_after_gate: "keep observer+transport running as Andon source for Factory Loop; evaluate push/webhooks only if measured polling latency becomes a bottleneck"
+    next_expected_evidence: "KOD-46 STARTED heartbeat, observer fixtures, restart/no-replay evidence and one downstream Telegram event"
     wip_limit: 1
 
   - station_id: "OPENCLAUDE_DEEPSEEK"
@@ -118,10 +118,10 @@ stations:
     current_packet: "KOD-45"
     packet_path: null
     target_repository: "wenumapu8-droid/kodex-minus-infinity"
-    target_branch: "feature/factory-loop-controller-v1"
+    target_branch: null
     mode: "CONTROL_PLANE"
-    current_step: "maintain repo-native loop, inspect evidence, apply gates, route dependency frontier"
-    next_expected_evidence: "Factory Loop Protocol merged and subsequent station evidence routed"
+    current_step: "maintain repo-native loop, inspect evidence, apply gates, route dependency frontier; KOD-36 closed and KOD-46 dispatched"
+    next_expected_evidence: "new station evidence routed through Factory Loop and Hermes live observer"
     wip_limit: 1
 
 dependency_frontier:
@@ -130,6 +130,6 @@ dependency_frontier:
   - "KOD-30 requires KOD-28 + KOD-29."
   - "KOD-38 must pass review before GEMINI_ANTIGRAVITY advances to KOD-39, then KOD-40."
   - "KOD-42 can proceed independently as read-only integration readiness work."
-  - "KOD-36 can proceed independently and should provide the Andon path for later loop state changes."
+  - "KOD-36 is DONE; KOD-46 now provides the live observer/source side of the Andon path."
 
 deployment_status: "BLOCKED"
