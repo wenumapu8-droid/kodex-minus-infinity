@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-08-07T23:30:00Z"
+updated_at: "2026-08-07T23:34:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
@@ -45,16 +45,19 @@ stations:
   - station_id: "HERMES_TELEGRAM"
     profile: "OPERATIONS_NOTIFICATION_AGENT"
     connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "ASSIGNED_UNKNOWN"
+    execution_status: "RUNNING"
     current_packet: "KOD-36"
     packet_path: "ops/factory/packets/KOD-36.yaml"
     target_repository: "external Hermes runtime / local operations configuration"
     target_branch: null
     mode: "OPERATIONS_ADAPTER"
-    next_expected_evidence: "STARTED heartbeat plus capability/preflight report"
+    latest_evidence: "KOD-36 preflight passed; supervisor implementation decision recorded in Linear"
+    current_step: "implement bounded adapter + persistent dedupe + five fixtures"
+    next_expected_evidence: "fixture results, one controlled Telegram delivery, KOD-36 handoff"
     wip_limit: 1
 
   - station_id: "OPENCLAUDE_DEEPSEEK"
+    runtime_client: "OpenCode/OpenClaude"
     profile: "BOUNDED_CODING_WORKER"
     connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
     execution_status: "ASSIGNED_UNKNOWN"
