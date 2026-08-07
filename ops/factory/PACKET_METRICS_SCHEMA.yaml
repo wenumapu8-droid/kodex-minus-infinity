@@ -1,0 +1,46 @@
+schema_version: 1
+packet_metrics:
+  packet_id: ""
+  packet_archetype: ""
+  lane: ""
+  complexity: "C0|C1|C2|C3|C4|C5"
+  producer_profile: ""
+  reviewer_profile: ""
+  repository: ""
+  branch: ""
+  dependencies: []
+  timestamps:
+    ready_at: ""
+    running_at: ""
+    review_at: ""
+    qa_at: ""
+    done_at: ""
+  blocked_intervals: []
+  cycle_time_seconds: null
+  lead_time_seconds: null
+  blocked_time_seconds: null
+  first_pass_yield: null
+  rework_count: 0
+  rework_causes: []
+  declared_files: []
+  actual_files_changed: []
+  ownership_violation: false
+  tests_declared: []
+  tests_run: []
+  tests_passed: null
+  integration_result: "NOT_ATTEMPTED|PASS|FAIL"
+  reusable_outputs: []
+  handoff_required_fields: 0
+  handoff_completed_fields: 0
+  evidence_urls: []
+  commit_sha: ""
+  pull_request: ""
+  unresolved: []
+  deployment_status: "NOT_REQUESTED"
+
+recipe_feedback:
+  bottleneck_class: ""
+  defect_origin_cell: ""
+  context_was_sufficient: null
+  packet_was_over_scoped: null
+  recommended_recipe_change: ""
