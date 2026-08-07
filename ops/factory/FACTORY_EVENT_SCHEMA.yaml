@@ -1,0 +1,55 @@
+schema_version: 1
+factory_event:
+  event_id: ""
+  packet_id: ""
+  lane: ""
+  severity: "INFO|ACTION|BLOCKED|FAILURE|REVIEW|QA|RELEASE_GATE"
+  source: "GITHUB|LINEAR|DRIVE|WORKER|CI|INTEGRATION|RELEASE_AUDIT"
+  status: "READY|RUNNING|BLOCKED|REVIEW|QA|DONE|FAILED"
+  summary: ""
+  evidence_urls: []
+  commit_sha: ""
+  pull_request: ""
+  human_action_required: false
+  requested_action: ""
+  blocker_class: ""
+  next_owner: ""
+  created_at: ""
+  deployment_authorized: false
+
+notification_policy:
+  INFO:
+    notify_when:
+      - batch_completed
+      - scheduled_summary
+  ACTION:
+    notify_when:
+      - creator_decision_required
+      - canon_decision_required
+      - rights_or_cultural_review_required
+  BLOCKED:
+    notify_when:
+      - hard_dependency_blocked
+      - packet_blocked_beyond_threshold
+  FAILURE:
+    notify_when:
+      - build_failed
+      - CI_failed
+      - deterministic_regeneration_failed
+      - worker_failed
+  REVIEW:
+    notify_when:
+      - pull_request_ready
+      - architecture_review_required
+  QA:
+    notify_when:
+      - QA_defect_requires_owner_action
+  RELEASE_GATE:
+    notify_when:
+      - release_candidate_ready_for_human_review
+
+constraints:
+  - notification_is_not_authorization
+  - merge_requires_explicit_review_policy
+  - deployment_requires_exact_phrase_APROBAR_DEPLOY
+  - never_include_tokens_secrets_or_private_payloads
