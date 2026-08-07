@@ -1,0 +1,36 @@
+schema_version: 1
+context_vault_handoff:
+  handoff_id: "KDX-CV-"
+  source_station: "LEGACY_CONTEXT_VAULT"
+  source_repository: ""
+  source_branch: ""
+  source_commit: ""
+  snapshot_reference: "LOCAL_ONLY"
+  reviewed_items:
+    - path: ""
+      source_ref: ""
+      sha256: ""
+      classification: "CANON_CANDIDATE|IMPLEMENTATION_EVIDENCE|HISTORICAL|PRIVATE|RIGHTS_REVIEW|DEPRECATED|DUPLICATE"
+      promotion_status: "DO_NOT_PROMOTE|SUMMARY_ONLY|CODE_CANDIDATE|CANON_REVIEW_REQUIRED|MIGRATION_PLAN_REQUIRED"
+      lineage_notes: []
+      risks: []
+      destination_repository: ""
+      destination_path: ""
+  public_safe_summary: ""
+  canonical_implications: []
+  implementation_implications: []
+  unresolved: []
+  next_work_packets: []
+  evidence_urls: []
+  private_material_excluded: true
+  secrets_excluded: true
+  destructive_actions_performed: false
+  deployment_status: "NOT_REQUESTED"
+
+constraints:
+  - snapshot_content_remains_local_until_review
+  - never_promote_dotenv_tokens_credentials_or_private_conversations
+  - do_not_reset_delete_or_clean_the_legacy_workspace
+  - preserve_source_path_ref_and_checksum_when_possible
+  - promotion_requires_explicit_public_safe_review
+  - no_local_only_claim_counts_as_shared_implementation_without_git_evidence
