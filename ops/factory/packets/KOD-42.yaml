@@ -1,0 +1,50 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-INTEGRATION-AUDIT-01"
+  linear_issue: "KOD-42"
+  title: "Integration Readiness Audit — wenu-frontend PR #3 + #4"
+  lane: "INTEGRATION_PREP"
+  modality: "SUBSYSTEM_INTEGRATION"
+  complexity: "C0"
+  owner_profile: "LONG_CONTEXT_ARCHITECT"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Perform a read-only audit of the existing interaction runtime and organism engine PRs before A–M–Y integration work consumes them."
+  repository: "wenumapu8-droid/wenu-frontend"
+  base_branch: "read-only across PR #3/#4 refs"
+  dependencies: []
+  read_only_context:
+    - "kodex-minus-infinity:START_HERE.md"
+    - "kodex-minus-infinity:AGENTS.md"
+    - "kodex-minus-infinity:product/EXPERIENCE_ARCHITECTURE.md"
+    - "kodex-minus-infinity:data/alphabet-topology.json"
+    - "kodex-minus-infinity:ops/factory/FACTORY_OS.md"
+    - "wenu-frontend:PR #3 actual diff"
+    - "wenu-frontend:PR #4 actual diff"
+  may_edit: []
+  must_not_edit:
+    - "all code; audit is read-only"
+  inspect:
+    - "branch ancestry/base/head relationships"
+    - "interaction event contract and input normalization"
+    - "cleanup/dispose behavior"
+    - "one-heavy-renderer constraint"
+    - "WebGL loss/static/reduced-motion fallbacks"
+    - "mobile assumptions"
+    - "duplicate abstractions likely to conflict with A–M–Y runtime"
+    - "actual build/test commands"
+    - "future integration/rebase/split sequence"
+  acceptance:
+    - "verified findings are separated for PR #3 vs PR #4"
+    - "reusable contracts are explicit"
+    - "missing validation is explicit"
+    - "branch/dependency map is explicit"
+    - "future work is decomposed into bounded micro-packets"
+  evidence_required:
+    - "PR refs/head SHAs inspected"
+    - "actual files/diffs inspected"
+    - "tests run, if any, are identified as read-only validation"
+  stop_conditions:
+    - "audit would require code rewrite/rebase/merge"
+  status: "READY"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"
