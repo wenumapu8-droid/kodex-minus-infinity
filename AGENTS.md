@@ -13,6 +13,7 @@ Before proposing or editing anything:
 5. Read `product/EXPERIENCE_ARCHITECTURE.md`.
 6. Inspect the affected files and recent relevant decisions.
 7. State what is canonical, experimental and unresolved.
+8. If operating as a KODEX Factory station, read `ops/factory/DISPATCH_QUEUE.yaml` and the packet referenced for your `station_id` before taking work.
 
 ## Agent roles
 
@@ -65,6 +66,10 @@ handoff:
   next_owner: ""
   deployment_status: NOT_REQUESTED
 ```
+
+## Factory dispatch bootstrap
+
+Connected Factory stations do not require repeated chat prompts for normal production. On session start, read `ops/factory/DISPATCH_QUEUE.yaml`, select your exact `station_id`, then read only the referenced packet and its declared context. `CONNECTED` is not `RUNNING`: emit heartbeat/commit/test/PR evidence before execution is reported as active. Re-read the queue after completion, review or block. Follow `ops/factory/REPO_NATIVE_DISPATCH_PROTOCOL.md`.
 
 ## Forbidden behavior
 
