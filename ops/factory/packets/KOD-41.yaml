@@ -1,0 +1,43 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-REVIEW-RUNTIME-01"
+  linear_issue: "KOD-41"
+  title: "Review KOD-28 — JourneyState/EventTrace integration gate"
+  lane: "RUNTIME_REVIEW"
+  modality: "SUBSYSTEM_INTEGRATION"
+  complexity: "C0"
+  owner_profile: "LONG_CONTEXT_ARCHITECT"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Review KOD-28 evidence and determine whether JourneyState/EventTrace is safe and sufficiently narrow to feed graph projection and edge resolution."
+  repository: "wenumapu8-droid/wenu-frontend"
+  base_branch: "feature/kodex-journey-state-v1"
+  dependencies:
+    - "KOD-28"
+  read_only_context:
+    - "kodex-minus-infinity:data/alphabet-topology.json"
+    - "kodex-minus-infinity:product/EXPERIENCE_ARCHITECTURE.md"
+    - "kodex-minus-infinity:ops/factory/packets/KOD-28.yaml"
+    - "wenu-frontend:actual KOD-28 diff/tests"
+    - "wenu-frontend:interaction runtime event contract"
+  may_edit: []
+  must_not_edit:
+    - "all files; review is read-only"
+  acceptance:
+    - "same event sequence deterministically reproduces state"
+    - "event identity prevents duplicate Browser Back/Forward memory writes"
+    - "revisits preserve prior trace"
+    - "M remains optional in data model"
+    - "exact return anchor is restorable without UI coupling"
+    - "persistent state excludes raw pointer/touch telemetry"
+    - "producer stayed inside file ownership"
+    - "interfaces are narrow enough for KOD-29/KOD-30"
+  evidence_required:
+    - "commit reviewed"
+    - "files/tests verified"
+    - "contract/canon/privacy issues"
+    - "PASS|REWORK|BLOCKED verdict"
+  stop_conditions:
+    - "KOD-28 lacks real commit/test evidence"
+  status: "BLOCKED"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"
