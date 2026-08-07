@@ -1,0 +1,40 @@
+schema_version: 1
+factory_board:
+  batch_id: ""
+  recipe_version: "1"
+  active_constraint: ""
+  wip_limits:
+    DATA_CANON: 2
+    RUNTIME: 3
+    VISUAL: 3
+    INTEGRATION: 1
+    QA_RELEASE: 2
+  packets:
+    - packet_id: ""
+      title: ""
+      lane: ""
+      complexity: "C0|C1|C2|C3|C4|C5"
+      producer_profile: ""
+      reviewer_profile: ""
+      dependency_ids: []
+      repository: ""
+      branch: ""
+      owned_files: []
+      status: "READY|RUNNING|BLOCKED|REVIEW|QA|DONE|CANCELED"
+      last_evidence: ""
+      blocker: ""
+      next_owner: ""
+  queues:
+    ready: []
+    blocked: []
+    awaiting_review: []
+    awaiting_human_decision: []
+  batch_metrics:
+    verified_throughput: null
+    median_cycle_time_seconds: null
+    lead_time_seconds: null
+    blocked_time_share: null
+    first_pass_yield: null
+    rework_rate: null
+    integration_failure_rate: null
+    reuse_ratio: null
