@@ -1,0 +1,128 @@
+schema_version: 1
+
+principles:
+  - route_by_capability_not_brand
+  - prefer_producer_reviewer_separation_for_C2_plus
+  - no_worker_has_canonical_authority_by_default
+  - no_private_machine_or_account_details_in_public_registry
+  - every_worker_uses_same_evidence_and_test_gates
+
+profiles:
+  ORCHESTRATOR:
+    strengths:
+      - decomposition
+      - dependency_graphs
+      - cross_model_handoffs
+      - canon_and_epistemic_arbitration
+      - process_metrics
+      - bottleneck_analysis
+    preferred_complexity: [C0, C3, C4, C5]
+    produces:
+      - work_packets
+      - routing_decisions
+      - acceptance_gates
+      - recipe_updates
+
+  MULTIMODAL_VISUAL_SPEC:
+    strengths:
+      - reference_decomposition
+      - composition_analysis
+      - visual_passports
+      - geometry_and_motion_specification
+      - visual_review
+    preferred_complexity: [C0, C1, C2, C4]
+    produces:
+      - visual_passport
+      - implementation_ready_visual_spec
+      - visual_QA_report
+
+  LONG_CONTEXT_ARCHITECT:
+    strengths:
+      - repository_archaeology
+      - long_context_synthesis
+      - architecture_review
+      - complex_refactoring
+      - subsystem_integration
+    preferred_complexity: [C0, C3, C4]
+    produces:
+      - architecture_review
+      - integration_patch
+      - conflict_report
+
+  BOUNDED_CODING_AGENT:
+    strengths:
+      - TypeScript_modules
+      - unit_tests
+      - parsers
+      - validators
+      - deterministic_logic
+      - focused_bug_fixes
+    preferred_complexity: [C1, C2]
+    produces:
+      - small_reviewable_PR
+      - tests
+      - exact_handoff
+
+  HIGH_VOLUME_LOW_COST_WORKER:
+    strengths:
+      - repetitive_transformations
+      - fixtures
+      - boilerplate
+      - static_analysis
+      - data_cleanup
+      - documentation_normalization
+      - independent_checks
+    preferred_complexity: [C0, C1]
+    constraints:
+      - requires_strong_schema_and_tests
+      - no_final_canon_or_cultural_authority
+    produces:
+      - candidate_patch
+      - evidence_report
+
+  RESEARCH_EVIDENCE_AGENT:
+    strengths:
+      - primary_source_research
+      - claim_extraction
+      - contradiction_mapping
+      - provenance
+      - corpus_comparison
+    preferred_complexity: [C0, C1, C2]
+    produces:
+      - source_registry
+      - claim_ledger
+      - evidence_packet
+
+  OPERATIONS_NOTIFICATION_AGENT:
+    strengths:
+      - structured_status_notifications
+      - blocker_escalation
+      - recurring_factory_summaries
+      - completion_alerts
+    preferred_complexity: [C0]
+    consumes:
+      - factory_event
+    produces:
+      - notification
+    constraints:
+      - never_interprets_notification_as_merge_or_deploy_authorization
+
+routing_examples:
+  runtime_pure_logic:
+    producer: BOUNDED_CODING_AGENT
+    reviewer: LONG_CONTEXT_ARCHITECT
+
+  visual_engine:
+    spec: MULTIMODAL_VISUAL_SPEC
+    producer: BOUNDED_CODING_AGENT
+    reviewer: MULTIMODAL_VISUAL_SPEC
+
+  canonical_ingestion:
+    producer: HIGH_VOLUME_LOW_COST_WORKER
+    reviewer: RESEARCH_EVIDENCE_AGENT
+    final_gate: ORCHESTRATOR
+
+  subsystem_integration:
+    producer: LONG_CONTEXT_ARCHITECT
+    reviewer: BOUNDED_CODING_AGENT
+    final_gate: ORCHESTRATOR
