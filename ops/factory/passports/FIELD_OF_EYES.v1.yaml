@@ -1,0 +1,429 @@
+schema_version: 1
+visual_passport:
+  passportId: "KDX-VP-FIELD-OF-EYES-V1"
+  conceptId: "observation-eye"
+  title: "FIELD OF EYES"
+  status: "DRAFT"
+
+  semanticPurpose: >-
+    Compose the canonical `observation-eye` organism (manifest `organismos[02]`, role "detecta y reconoce",
+    states DORMANT / AWARE / ACTIVE, verbs track / scan / block) into a distributed field instead of a single
+    core eye. Where OBSERVE V2 stages one eye that watches the visitor, FIELD OF EYES distributes observation
+    across many eyes so that the visitor discovers observation as a relation rather than a spectacle: the field
+    attends, the visitor attends back, and only the relations the visitor deliberately commits are kept. This is
+    the "ocular field" already named in the existing scene copy (`Ocular field starts revealing.`,
+    `Full ocular field active.` in src/kodex/observe-v2/config.ts) promoted from background atmosphere to the
+    semantic subject of its own scene.
+
+  nodeQuestion: >-
+    When many eyes observe you and you observe back, which of those relations is worth keeping — and who decides
+    that it was kept?
+
+  coordinateAssignment: null
+
+  sourceRefs:
+    - id: "ops/factory/packets/KOD-38.yaml (KDX-WP-VISUAL-01)"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "The string FIELD OF EYES occurs in no other file of kodex-minus-infinity or wenu-frontend. Verified by full-tree grep of both repositories."
+        - "The packet's source_inputs name 'actual FIELD OF EYES concept/reference images available to the visual worker'. No such image set reached this worker."
+    - id: "wenu-frontend public/kodex-content/manifest.json — organismos[02] observation-eye"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Canonical organism 02. rol: 'detecta y reconoce'. estados: DORMANT / AWARE / ACTIVE. verbos ES: sigue, escanea, bloquea. EN: track, scan, block."
+        - "Canonical fx_chain: [crt-scan, chromatic-split]. Canonical audio routing: mid+high+pointer."
+        - "Organism palette declared as #903CFF, #00F7FF, #FF2028, #0A0A0A — see notes for the conflict with the design-system tokens."
+    - id: "wenu-frontend public/kodex-content/manifest.json — sistemas.gramatica"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "'un motor (KDX CORE) + una suite de 8 tratamientos GPU (KDX FX SUITE), 8 organismos = presets data-driven. Cualquier tratamiento se aplica a cualquier organismo.'"
+        - "This is the authority for treating FIELD OF EYES as a preset of an existing organism rather than a new renderer."
+    - id: "wenu-frontend src/components/kodex/scenes/KodexObserveV2Scene.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Existing shell grid, fallback layer, glyph layers, 8-node cloud, dossier and meta row. Inspected read-only; not modified."
+    - id: "wenu-frontend src/components/kodex/scenes/kodex-observe-v2-client.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "KdxObserveV2Runtime: WebGL2 six-pass pipeline source -> displace -> threshold -> chroma -> feedback -> crt, ping-pong framebuffers, fullscreen triangle."
+        - "Pointer normalization to [-1,1] with y negated; pointer activeUntil now+1400ms; aware decays to idle after 3200ms; locked auto-advances to observing after 820ms."
+        - "Profiles full / balanced / low-power resolved from prefers-reduced-motion, max-width 760px and devicePixelRatio."
+    - id: "wenu-frontend src/kodex/observe-v2/config.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "States idle/aware/locked/observing, per-state bilingual copy, OBSERVE_V2_PROFILE_SCALE (dpr 1.5 / 1.25 / 1.0)."
+        - "Source of the phrase 'ocular field', which is the closest existing name for this concept."
+    - id: "wenu-frontend src/kodex/observe-v2/shaders/*.glsl"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Existing and verified: fullscreen.vert, source.frag, displace.frag, threshold.frag, chroma.frag, feedback.frag, crt.frag."
+        - "crt.frag.glsl and chroma.frag.glsl already implement the organism's canonical fx_chain, so this passport requires no new shader."
+    - id: "wenu-frontend src/components/kodex/motion/ObservationEye.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Existing per-eye primitive with three slots — field / pupil / overlay — all aria-hidden. Adopted unchanged as the eye node structure."
+    - id: "kodex-minus-infinity design-system/tokens/kodex.tokens.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Authoritative colour, spacing, line, duration and easing tokens used throughout this passport."
+    - id: "kodex-minus-infinity docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Concept assignment law: letters are not assigned without creator approval, so coordinateAssignment stays null."
+        - "'Passive pointer movement alone cannot make identity claims or write consequential personal memory.' This governs the atmospheric/consequential split below."
+        - "Return-anchor law and mutated-revisit (K-prime) behaviour govern exitBehavior."
+    - id: "kodex-minus-infinity canon/KODEX_EPISTEMIC_STANDARD.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Prohibited pseudo-metrics and metric admission requirements govern every numeric readout in this scene."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes fic-razas-estelares-iconografia"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "The only existing KODEX position on Buddhist imagery. registro: ficcion, paleta: neon, review: false."
+        - "'Se tratan como glifos ... y no como afirmaciones sobre el origen de ninguna especie ni de ningun pueblo. Donde una imagen viene de una tradicion viva se nombra como prestamo del imaginario y no como su doctrina.'"
+        - "Its declared resonances touch no documented-register volume of Mapuche root."
+    - id: "R2 bucket pub-2b4562c758ed440ab047fe9523a2d99c.r2.dev/kodex-content/art/"
+      relation: "REFERENCE"
+      rightsStatus: "UNKNOWN"
+      notes:
+        - "Bucket referenced by manifest cover URLs. Located but NOT opened by this worker; no image was inspected."
+        - "No visual element of this passport derives from it. Any resemblance found at implementation time is coincidence and must be reported, not preserved."
+
+  provenanceBoundaries:
+    mayAbstract:
+      - "Distributed multi-observer composition as generic information design: many peer nodes, one committed focus, explicit relations between nodes."
+      - "Iris, pupil and lid as neutral geometric primitives — ring stroke, filled disc, swept arc — composed as the three existing slots of ObservationEye.astro."
+      - "The organism's own canonical state vocabulary (DORMANT / AWARE / ACTIVE) and verbs (track / scan / block)."
+      - "CRT scanline and chromatic-split treatment, which are the organism's declared canonical fx_chain and already exist as shaders in the implementation repository."
+      - "Instrument/dossier chrome from OBSERVE V2, reused as layout rather than reinvented."
+    mustNotCopy:
+      - "No external reference image reached this worker. Therefore no external artwork, frame, figure or layout may be reproduced. Anything in the implementation that resembles a specific external work is an invention introduced downstream and must be rejected at visual review."
+      - "No Buddhist or Buddha-derived iconography by default: no thousand-eyed or thousand-armed Avalokitesvara form, no urna or third-eye forehead mark on any human or deity figure, no lotus throne, no halo or mandorla, no mandala construction geometry, and no Devanagari or other dharmic script used as ornament."
+      - "No photographic or photorealistic human eye, and no eye that can be read as a specific identifiable person."
+      - "No eye-of-providence / all-seeing-eye emblem — it carries unrelated political-symbolic freight that this scene does not intend to claim."
+      - "FX treatments must never be applied to Ocin's finished specimen artwork. Per manifest fx_chain_nota, treatments apply only to photographs and derivatives, never to the completed work."
+    culturalSensitivity:
+      - "Buddhist material in KODEX is already governed and this scene must inherit that governance rather than invent its own: the fic-razas-estelares-iconografia volume places buddhas in the marked-fiction register (registro: ficcion, paleta: neon), treats them as glyphs, and names any image drawn from a living tradition as a borrowing from the imaginary and never as its doctrine."
+      - "The register decision is a prerequisite, not a detail. FIELD OF EYES must sit in the documented register or the fiction register, never in both, because the register determines the palette and the permitted links. The orchestrator must rule before implementation."
+      - "Mapuche material must never be blended in. Manifest note: 'Mapuche y Codex Estelar NUNCA se mezclan.' Do not substitute Mapuche, Andean or generic 'ancestral' / 'tribal' motifs for the unresolved Buddhist reference."
+      - "Do not resolve the open provenance question with generic 'sacred geometry'. If the reference cannot be identified, the field stays as specified here: a seeded irregular lattice that copies nothing."
+      - "The deliberately acentric lattice specified in geometry.topology is itself a cultural safeguard: concentric rings around a single centre would reproduce mandala construction, which is exactly the boundary above."
+
+  informationHierarchy:
+    primary: >-
+      The one eye currently holding the visitor's committed focus, and the relation being drawn from it.
+    secondary:
+      - "Attention state of the eyes adjacent to the focused one in the lattice."
+      - "Relations already traced earlier in the session and still persisting in the field."
+      - "Field state: dormant / aware / converging / witnessing."
+    tertiary:
+      - "Ambient depth field behind the lattice — atmosphere only, carries no data."
+      - "Instrument chrome and dossier readouts, all explicitly marked non-factual."
+      - "Scene progress and navigation affordances."
+
+  geometry:
+    primitives:
+      - "eye node = iris ring (stroke) + pupil disc (fill) + lid arc (mask), composed as the field / pupil / overlay slots of the existing ObservationEye.astro"
+      - "gaze vector = straight segment from pupil centre toward its aim point, length <= 0.35 of iris radius, drawn only for eyes in ACTIVE state"
+      - "lattice edge = hairline connector between two eye nodes, token line.hairline (1px)"
+      - "traced relation = persistent stroke drawn over a lattice edge, token line.signal (2px)"
+      - "focus reticle = four-corner bracket, reusing the existing .kdx-observe-v2__reticle-frame form"
+      - "depth field = fullscreen-triangle WebGL quad behind all other layers, using the existing three-vertex buffer"
+    topology: >-
+      Irregular quasi-lattice. Not a regular grid and not a radial arrangement. Eye centres are placed by seeded
+      Poisson-disk sampling inside an ellipse inscribed in the field box, with a minimum centre-to-centre distance
+      of 0.18 field units. Each eye connects to its three nearest neighbours; duplicate edges are removed, yielding
+      one connected graph. A regular grid is rejected because it reads as interface chrome rather than as a field
+      of observers; a concentric or radial arrangement is rejected because rings around a single centre reproduce
+      mandala construction, which provenanceBoundaries forbids. The seed is deterministic per session (session
+      memory `artifactSeed`), so a revisit regenerates the identical lattice and redraws relations traced earlier.
+    coordinateSystem: >-
+      Normalized field space with x and y in [-1, 1], origin at the field-box centre, y up. Identical to the pointer
+      normalization already implemented in kodex-observe-v2-client.ts (rect-relative, scaled by 2 and offset by -1,
+      y negated). Aspect correction is applied on the shorter axis so eye nodes stay circular at every viewport.
+    spatialLayers:
+      - "L0 depth field — WebGL multipass background. Atmospheric only, carries no data, fully removable."
+      - "L1 lattice edges — DOM/SVG hairlines. Non-interactive."
+      - "L2 eye nodes — DOM/SVG, one element per eye. The only interactive layer."
+      - "L3 focus layer — reticle, gaze vectors and traced relations belonging to the focused eye."
+      - "L4 instrument chrome — header, rails, dossier stack, meta row, footer. Existing OBSERVE V2 shell."
+
+  composition:
+    focalStructure: >-
+      Exactly one eye holds focus at any moment, and focus is committed rather than hovered. Unfocused eyes stay
+      legible but their pupils are undirected and carry no gaze vector. The focused eye grows to 1.35x its rest
+      radius, gains the reticle bracket, and aims its gaze vector at the last input point. While a relation is being
+      traced, the focused eye and the candidate eye are the only elements at full contrast; every other layer drops
+      to 40% opacity so the relation, not the field, is the subject.
+    grid: >-
+      Reuse the existing OBSERVE V2 shell grid unchanged — header / left rail / scene code / hero block / visual
+      shell / data stack / right rail / meta row / footer. The eye field occupies the visual shell only and never
+      escapes it. On desktop the field box takes token layout.worldShare (0.75) of the shell width.
+    depthModel: >-
+      Three parallax planes, no perspective projection and no camera. Pointer-linked offsets are 0.6% of field width
+      for L0, 1.6% for L1 and 2.8% for L2, so total displacement never exceeds 4%. Depth is reinforced by scale
+      rather than by projection: rest radius varies by +/-18% across the three planes.
+    negativeSpace: >-
+      At least 40% of the field box stays unpopulated. The Poisson minimum distance guarantees no two eyes touch.
+      A margin of 0.12 field units is kept inside the field-box edge so no eye is clipped, and the central disc of
+      radius 0.2 is left deliberately empty — the field has no single centre, which is what separates it from
+      OBSERVE V2's single core eye and from any concentric construction.
+    responsiveRules:
+      desktop: >-
+        1024px and above: 24 eyes at the full profile, 12 at balanced. The field box is the visual shell at
+        worldShare 0.75; both rails and the dossier stack remain visible. Pointer proximity drives atmospheric
+        attention only; a click is required to commit. Reference capture at 1440x900.
+      mobile: >-
+        Below 760px: the field goes full-bleed above the fold. Eye count follows the profile — 12 at balanced,
+        6 at low-power — and is further capped by touch-target geometry: 8 eyes at 390x844 and 10 at 412x915, so
+        that every 44x44 CSS px target stays non-overlapping. Both rails collapse into the meta row and the dossier
+        stack becomes a single horizontal two-row strip below the field. No hover state is required for any
+        semantic action on any viewport.
+
+  paletteRoles:
+    - role: "field ground"
+      semanticMeaning: "The archive at rest; the absence of observation."
+      tokenOrRange: "color.field.obsidian (#050608)"
+      colorIsNotOnlyChannel: true
+    - role: "eye at rest (DORMANT)"
+      semanticMeaning: "An eye that is present but not attending."
+      tokenOrRange: "color.text.mutedOnDark (#9A9992) at 0.55 alpha"
+      colorIsNotOnlyChannel: true
+    - role: "eye attending (AWARE)"
+      semanticMeaning: "The eye has registered presence but no claim has been committed."
+      tokenOrRange: "color.signal.cyan (#00E8F0)"
+      colorIsNotOnlyChannel: true
+    - role: "eye active / focused (ACTIVE)"
+      semanticMeaning: "The single eye the visitor has committed to."
+      tokenOrRange: "color.signal.livingRed (#FF3833)"
+      colorIsNotOnlyChannel: true
+    - role: "traced relation"
+      semanticMeaning: "A relation the visitor committed and the session kept."
+      tokenOrRange: "color.signal.violet (#7855D5)"
+      colorIsNotOnlyChannel: true
+    - role: "contested / unresolved marker"
+      semanticMeaning: "A record the epistemic standard marks CONTESTED or UNKNOWN."
+      tokenOrRange: "color.signal.magenta (#FF1EAA)"
+      colorIsNotOnlyChannel: true
+    - role: "instrument text"
+      semanticMeaning: "Chrome, labels and non-factual readouts."
+      tokenOrRange: "color.text.onDark (#F0ECE3), muted variant color.text.mutedOnDark (#9A9992)"
+      colorIsNotOnlyChannel: true
+
+  typographyRoles:
+    - role: "instrument label"
+      behavior: >-
+        Mono, uppercase, letter-spaced. Used for rail marks, chips and dossier labels. Never carries a claim and
+        never states a measurement.
+    - role: "field headline"
+      behavior: >-
+        Display weight, at most two lines. Changes only on a committed state change and never on pointer movement,
+        so the headline cannot flicker as a hover side effect.
+    - role: "bilingual state copy"
+      behavior: >-
+        ES and EN strings per state, in the same shape as OBSERVE_V2_COPY in src/kodex/observe-v2/config.ts.
+        FIELD OF EYES supplies its own strings; the structure is reused. Announced to screen readers on commit only.
+    - role: "non-factual readout"
+      behavior: >-
+        Mono, reduced contrast, and always preceded by a persistent marker (EN "SIMULATED" / ES "ATMOSFERA") so that
+        no number in the chrome can be read as a measurement. This is a requirement, not a suggestion: the existing
+        OBSERVE V2 dossier renders generated percentages with no such marker and must not be copied in that respect.
+
+  motion:
+    timescales:
+      - "duration.micro (120ms) — pupil re-aim and blink sweep"
+      - "duration.short (240ms) — focus acquire and release, eye scale change"
+      - "duration.medium (600ms) — lattice edge draw-in and traced-relation commit"
+      - "duration.long (1600ms) — field-wide state transition"
+      - "duration.ambient (12000ms) — per-eye blink base period and depth drift cycle"
+      - "easing.standard for state changes, easing.enter for appearance, easing.exit for release"
+    stateTransitions:
+      - "dormant -> aware: any input arrives. Maps to the existing engine transition idle -> aware. Atmospheric; nothing is written."
+      - "aware -> dormant: 3200ms without input, matching the existing decay in kodex-observe-v2-client.ts."
+      - "aware -> converging: the visitor commits focus to one eye. Maps to the existing 'locked'. Consequential."
+      - "converging -> witnessing: 820ms after the commit, matching the existing locked -> observing timeout. Maps to 'observing'."
+      - "witnessing -> witnessing (relation traced): the visitor commits a second eye; one relation is written and drawn permanently for the session."
+      - "any -> released: the visitor exits. The field returns to aware; traced relations persist."
+      - "FIELD OF EYES introduces no parallel state machine. It renames the four existing engine states for this scene and adds one committed sub-event inside 'witnessing'."
+    loopingBehavior: >-
+      Each eye blinks on a 12000ms base period jittered by +/-35%, with a phase offset derived deterministically
+      from the field seed and the eye index. The field must never blink in unison — unison reads as a cut rather
+      than as life. A blink is a 120ms lid-arc sweep. There is no global loop restart, and the render loop pauses
+      on document visibilitychange exactly as the existing runtime already does.
+    reducedMotion: >-
+      No depth drift, no feedback trail, no blink. Every eye state change becomes a single 240ms opacity and stroke
+      step. Pupil re-aim is instantaneous. Gaze vectors are drawn but never animate. The profile resolves to
+      low-power, which the existing resolveProfile() already returns when prefers-reduced-motion is set.
+
+  interaction:
+    inputs:
+      - "POINTER"
+      - "TOUCH"
+      - "KEYBOARD"
+      - "TIME"
+    semanticActions:
+      - "ATMOSPHERIC — pointer proximity raises the attention of nearby eyes and aims their pupils. Nothing is committed and nothing is written. Required by ADR-0010: passive pointer movement alone cannot make identity claims or write consequential personal memory."
+      - "ATMOSPHERIC — dwell without commitment. The field drifts back to dormant after 3200ms and leaves no trace."
+      - "CONSEQUENTIAL — FOCUS_EYE: commit to one eye by click, tap, Enter or Space on the eye holding roving keyboard focus."
+      - "CONSEQUENTIAL — TRACE_RELATION: with one eye focused, commit a second eye to draw a persistent relation between the two."
+      - "CONSEQUENTIAL — RELEASE_FIELD: Esc, tap outside the field, or the explicit exit control."
+      - "EXPLICITLY NOT AN ACTION — scroll position, hover duration, pointer path shape and the number of eyes passed over. None of these may be recorded, scored, aggregated or used to infer anything about the visitor."
+    stateChanges:
+      - "Field state advances dormant -> aware -> converging -> witnessing, and decays aware -> dormant on inactivity."
+      - "Per-eye state advances DORMANT -> AWARE on proximity or roving focus, and AWARE -> ACTIVE only on commit."
+      - "At most one eye is ACTIVE at a time; committing a new eye returns the previous one to AWARE."
+      - "A committed relation adds a persistent traced edge, which survives release and reappears on revisit."
+      - "Releasing the field returns every eye to AWARE and clears the reticle, without erasing traced relations."
+    memoryWrite:
+      enabled: true
+      key: "relationsTraced"
+      description: >-
+        Only TRACE_RELATION writes. It appends one relation id of the form "rel:<eyeIdA>~<eyeIdB>", with the two ids
+        sorted so the pair is order-independent, to the session memory array `relationsTraced` defined in
+        schemas/session-memory.schema.json. The write is idempotent by event identity: replaying the same committed
+        event must not double-write, per the KOD-28 acceptance criterion. FOCUS_EYE alone writes nothing, and no
+        atmospheric action writes anything. No identity claim, score, ranking, profile, biometric value or attention
+        metric is ever written. The visitor must be able to see exactly what was written and to clear it, and the
+        stored accessibility preferences must never be inferred from behaviour.
+    exitBehavior: >-
+      RELEASE_FIELD restores the exact prior route anchor, node, focus and scroll position, applying the ADR-0010
+      return-anchor law. Traced relations persist for the session, so a revisit regenerates the identical seeded
+      lattice with previous relations already drawn — the mutated-revisit (K-prime) behaviour the ADR requires.
+      On exit the scene must release its animation frame, WebGL context, framebuffers, textures and every event
+      listener it registered; see the disposal requirement in implementation.reusableEngineBoundary.
+
+  implementation:
+    medium: "HYBRID"
+    reusableEngineBoundary: >-
+      `EyeField` — a data-driven preset of the canonical `observation-eye` organism running on KDX CORE, not a new
+      renderer. EyeField owns seeded lattice generation, per-eye state, the focus/trace state machine, pointer
+      normalization, profile resolution, the render-loop lifecycle and reduced-motion handling. It consumes the
+      existing multipass WebGL runtime (source -> displace -> threshold -> chroma -> feedback -> crt) as an optional
+      background adapter; the organism's canonical fx_chain [crt-scan, chromatic-split] maps to the existing
+      crt.frag.glsl and chroma.frag.glsl, so no new shader is required. Everything scene-specific is configuration.
+      EyeField must expose an explicit destroy(): the current runtime registers window 'resize' and document
+      'visibilitychange' listeners inside bindEvents() and never removes them, and there is no teardown path, so a
+      second mount leaks. Fixing that is a precondition for reuse and belongs to the implementation packet, not to
+      this passport.
+    sceneSpecificParts:
+      - "Eye count per profile and per viewport, and the touch-target cap that overrides it on small screens."
+      - "Bilingual copy strings for the four field states."
+      - "Mapping of organism states DORMANT / AWARE / ACTIVE onto the palette roles declared above."
+      - "Chrome layout: which rails, dossier blocks and meta rows this scene shows."
+      - "The empty-centre and 40% negative-space composition rules."
+    dependencies:
+      - "Existing shaders in src/kodex/observe-v2/shaders/ — no new shader."
+      - "Existing state and profile config in src/kodex/observe-v2/config.ts."
+      - "Existing per-eye primitive src/components/kodex/motion/ObservationEye.astro."
+      - "design-system/tokens/kodex.tokens.json."
+      - "KOD-28 (JourneyState + EventTrace). TRACE_RELATION cannot be implemented before it lands, because the memory write depends on event identity for idempotent replay."
+      - "No new third-party dependency."
+    performanceRisk: "MEDIUM"
+
+  fallback:
+    noWebGL: >-
+      The scene stays fully functional. L0 is the only WebGL layer and carries no data; without it the field renders
+      on obsidian with a static CSS radial wash. This path is already proven in the implementation: the existing
+      runtime always renders its DOM fallback layer and only adds `.is-active` to the canvas when WebGL2 initialises,
+      and it can be forced with the `?fallback=1` parameter it already supports. Every eye, edge, focus action,
+      traced relation, memory write and accessibility affordance behaves identically with and without WebGL.
+    noAudio: >-
+      FIELD OF EYES declares no audio dependency. The organism's canonical audio routing (mid+high+pointer) is
+      optional atmosphere only. With sound off, no semantic action, state, transition or memory write changes, and
+      no information is available exclusively through sound.
+    staticMode: >-
+      A single frame rendered at the 'aware' state: all eyes at rest radius, pupils undirected, lattice edges drawn,
+      no blink, no drift, no parallax, no feedback trail. Focus and tracing remain available through keyboard and
+      tap with instantaneous transitions. This is the mode used to produce the target captures.
+
+  accessibility:
+    keyboardEquivalent: >-
+      The field is a single stop in the tab order, exposed as one composite widget with roving tabindex and
+      aria-activedescendant. Arrow keys move the roving focus between eyes along lattice adjacency, choosing the
+      nearest neighbour in the pressed direction with a deterministic tie-break by eye id. Enter or Space commits
+      FOCUS_EYE; a second Enter on another eye commits TRACE_RELATION; Esc releases the field. Home moves to the
+      first eye and End to the last. Every consequential action is reachable without a pointer and without any
+      hover state, and a visible focus indicator is present at every step.
+    touchEquivalent: >-
+      Tap commits focus — no hover is required for any semantic action. A second tap on another eye traces the
+      relation; a tap outside the field releases it. Hit targets are at least 44x44 CSS px regardless of the
+      rendered eye radius, which is what caps eye count on small viewports. No long-press, multi-touch gesture,
+      swipe or drag is required for any consequential action.
+    screenReaderAlternative: >-
+      The field is exposed as a named list of observation nodes. Each eye carries an accessible name ("eye 7 of 24"),
+      its current state, and the relations traced from it. Committed actions are announced through a polite live
+      region; pointer movement and atmospheric attention are never announced. A text summary of all traced relations
+      is available on demand and contains exactly the same data written to session memory. Decorative layers — the
+      depth field, reticle and gaze vectors — are aria-hidden, as ObservationEye.astro already marks its slots.
+    nonColorEquivalent: >-
+      Every colour role carries a second channel. Rest versus attending is also pupil aperture (0.28 to 0.52 of the
+      iris radius). Focused is also 1.35x scale plus the reticle bracket. A traced relation is also a 2px solid
+      stroke against 1px hairline lattice edges. Contested or unresolved is also a 4-2 dashed stroke. State is
+      additionally exposed as a data attribute and in the accessible name, so the field remains fully usable in
+      monochrome.
+    reducedMotionEquivalent: >-
+      As motion.reducedMotion. In addition, a stored accessibility.motion preference of OFF in session memory
+      overrides the media query, and no motion, sound or contrast setting is ever inferred from behaviour.
+
+  reviewChecks:
+    - "No two eye nodes overlap and none is clipped at the field-box edge, at 1440x900, 390x844 and 412x915."
+    - "The central disc of radius 0.2 is empty; the field shows no single dominant centre and does not read as concentric rings."
+    - "Exactly one eye is focused at a time; releasing focus leaves no second reticle on screen."
+    - "Hover alone never changes a readout that implies a committed state and never writes to session memory — verify against the event trace after sweeping the pointer across every eye."
+    - "Every numeric readout in the chrome carries its persistent non-factual marker; no readout can be mistaken for a measurement."
+    - "Full keyboard pass with no pointer: enter the field, traverse every eye with arrows, commit a focus, trace a relation, release with Esc, with a visible focus indicator at every step."
+    - "Minimum 44x44 px touch targets verified on 390x844 and 412x915, with no two targets overlapping."
+    - "With prefers-reduced-motion set: no blink, no drift, no feedback trail, and all transitions are 240ms opacity or stroke steps."
+    - "With ?fallback=1: the scene is fully usable, all eyes, edges, focus and tracing are present, and there is no layout shift versus the WebGL path."
+    - "Screen-reader pass: every eye has a name and a state, commits are announced, pointer movement is not."
+    - "Monochrome pass under a grayscale filter: rest, attending, focused, traced and contested remain distinguishable."
+    - "Leaving and re-entering the scene regenerates the identical lattice and redraws previously traced relations, and no duplicate relation is written on replay."
+    - "After unmount, no animation frame is running, the WebGL context is released, and no window or document listener registered by the scene remains."
+    - "No Buddhist-derived iconography, no photographic human eye, no mandala construction geometry and no eye-of-providence emblem is present in the rendered scene."
+    - "Sustained 50fps or better at the full profile on desktop with no frame-time regression versus OBSERVE V2 at the same profile, and 30fps or better at low-power on mobile."
+
+  targetCaptures:
+    - name: "desktop-1440x900"
+      width: 1440
+      height: 900
+    - name: "mobile-390x844"
+      width: 390
+      height: 844
+    - name: "mobile-412x915"
+      width: 412
+      height: 915
+
+  epistemicConstraints:
+    - "Recursive observation and metacognition are an artistic and interaction frame in this scene. Nothing here is a claim about perception, consciousness, third-eye anatomy or any spiritual faculty."
+    - "Every numeric readout — signal, focus, anomaly, latency, node count, checksum — is generated atmosphere, not measurement. None may be presented as system state, biometric data, attention score or consciousness level, per the prohibited pseudo-metrics section of canon/KODEX_EPISTEMIC_STANDARD.md."
+    - "The scene must not profile the visitor, rank them, or infer identity, mood, ability or intent from interaction."
+    - "Buddhist imagery, if the orchestrator admits any, is a borrowing from the marked-fiction imaginary and never doctrine, inheriting the position already recorded in the fic-razas-estelares-iconografia volume."
+    - "Registers must not blend. The field sits in the documented register or the fiction register, never both, and must not touch Mapuche material."
+    - "The lattice is generated, not measured. Its geometry represents no dataset and must never be captioned or labelled as if it did."
+
+  scientificClaimPolicy: "SYMBOLIC_ONLY"
+
+  notes:
+    - "PROVENANCE QUESTION 1 — concept identity. The title FIELD OF EYES exists in no file of either repository except KOD-38 itself, and the concept/reference images named in the packet's source_inputs never reached this worker. This passport is therefore derived from canonical material that already exists: the observation-eye organism, the 'ocular field' phrase in the OBSERVE V2 copy, and the shipped OBSERVE V2 engine. The orchestrator must confirm that this is the intended concept before any implementation packet is issued. Status stays DRAFT for this reason."
+    - "PROVENANCE QUESTION 2 — Buddhist source material. The packet declares that Buddha-inspired source material requires provenance review, but no Buddhist reference reached this worker and none exists in either repository apart from the marked-fiction position in fic-razas-estelares-iconografia. If the withheld reference set is Buddha-derived, the orchestrator must assign FIELD OF EYES to the fiction register — neon palette, glyph treatment, named as a borrowing and not as doctrine — before implementation, because that decision changes the palette. Until it is answered, this passport specifies a field that copies nothing, so the packet's stop condition is not triggered: copying boundaries are stated, they are simply stated conservatively."
+    - "PROVENANCE QUESTION 3 — R2 art references. The bucket pub-2b4562c758ed440ab047fe9523a2d99c.r2.dev was located through manifest cover URLs but no image was opened and none informed this passport. If the orchestrator intends specific R2 pieces as references, they must be named explicitly and given rights and cultural status before implementation."
+    - "PALETTE CONFLICT — the canonical organism palette (#903CFF, #00F7FF, #FF2028, #0A0A0A) is close to but not identical with the design-system tokens (violet #7855D5, cyan #00E8F0, livingRed #FF3833, obsidian #050608). This passport uses the design-system tokens as authoritative because they are the versioned artefact in the canon repository. The delta is real and visible; the orchestrator should rule on which is canonical rather than letting the implementation choose."
+    - "CONCEPT ID — no canonical id exists for the field composition itself, so conceptId is set to the organism it composes (observation-eye). If the field warrants its own registry entry, the orchestrator should assign one; this passport does not create canon."
+    - "COORDINATE — coordinateAssignment stays null. ADR-0010's concept assignment law requires creator approval before any A-Y letter is assigned, and no canonical source assigns one to this concept."
+    - "DEPENDENCY — TRACE_RELATION cannot be implemented before KOD-28 (JourneyState + EventTrace) lands, because idempotent replay by event identity is what keeps the memory write from double-writing."
+    - "PERFORMANCE RISKS — the reason implementation.performanceRisk is MEDIUM rather than LOW. (1) Per-frame style writes: the existing runtime already sets CSS custom properties on 44 elements every frame (24 waveform bars, 12 signal bars, 8 nodes); at 24 eyes plus roughly 36 lattice edges this grows to about 60 elements, so per-eye updates must be restricted to transform and opacity and batched in one write phase, never interleaved with reads. (2) Six-pass ping-pong at DPR 1.5 on a full-profile desktop is the existing cost and must not regress; the eye layer is DOM/SVG on top and adds compositing, not fill. (3) Blink jitter must not force layout — lid arcs animate by transform or clip-path, never by width or radius. (4) Traced relations accumulate for the session and are never removed, so their draw cost must stay O(traced) with no full-field repaint per commit. (5) Mobile low-power caps at 6 eyes and DPR 1.0, so the binding constraint there is touch-target geometry rather than fill rate. (6) The listener leak recorded in the defect note below becomes a compounding performance problem, not merely a correctness one, if the scene is mounted more than once."
+    - "IMPLEMENTATION PACKET RECOMMENDATION — split into two packets. (a) C2, producer BOUNDED_CODING_AGENT, reviewer LONG_CONTEXT_ARCHITECT: extract EyeField from the existing OBSERVE V2 runtime with an explicit destroy(), seeded lattice generation, the focus/trace state machine, the keyboard model and unit tests. No new shaders and no visual novelty. (b) C1, MULTIMODAL_VISUAL_SPEC: visual review against reviewChecks at the three target captures, after (a). Do not issue (a) until provenance questions 1 and 2 are answered, because the register decision changes the palette."
+    - "DEFECT FOUND IN EXISTING CODE — reported, not fixed, since this packet may not edit runtime code. kodex-observe-v2-client.ts bindEvents() adds a window 'resize' listener and a document 'visibilitychange' listener and never removes them; there is no destroy path, so mounting a second scene leaks listeners and a WebGL context. Separately, the OBSERVE V2 dossier renders generated percentages (SIGNAL, FOCUS, ANOMALY, LATENCY) with no non-factual marker, which this passport requires for FIELD OF EYES and which is worth backporting to OBSERVE V2."
+    - "EVIDENCE — sources actually inspected are listed field-by-field in sourceRefs. Every file named there was read in this session. The R2 bucket is the one source located but deliberately not opened, and it is marked as such."
