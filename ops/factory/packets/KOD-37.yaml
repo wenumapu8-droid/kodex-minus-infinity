@@ -1,0 +1,56 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-CONTEXT-VAULT-01"
+  linear_issue: "KOD-37"
+  title: "Context Vault Run 001"
+  lane: "CONTEXT_VAULT"
+  modality: "RESEARCH_EVIDENCE"
+  complexity: "C0"
+  owner_profile: "LONG_CONTEXT_ARCHITECT"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Snapshot and review current-production local-only KODEX evidence on the legacy workspace without destructive actions or bulk migration."
+  repository: "legacy local KODEX git workspaces"
+  base_branch: "read-only inventory; no branch mutation required"
+  dependencies:
+    - "context_vault_bridge_v1_merged"
+  read_only_context:
+    - "kodex-minus-infinity:ops/factory/CONTEXT_VAULT_PROTOCOL.md"
+    - "kodex-minus-infinity:ops/factory/CONTEXT_VAULT_HANDOFF_SCHEMA.yaml"
+    - "kodex-minus-infinity:scripts/context_vault_snapshot.py"
+  may_edit:
+    - "/tmp metadata snapshots only"
+    - "public-safe handoff draft after review"
+  must_not_edit:
+    - "local source workspaces during inventory"
+    - "main branches"
+    - "private/rights-unclear assets"
+  inputs:
+    priority_context:
+      - "KOD-26 Bridge 1 local artifacts"
+      - "KOD-28/KOD-29/KOD-30 runtime evidence"
+      - "organism engine / shaders / components relevant to active work"
+  outputs:
+    - "one metadata snapshot per relevant workspace"
+    - "classified current-production deltas"
+    - "public-safe promotion candidates"
+    - "migration plans or explicit exclusions"
+  acceptance:
+    - "no reset/clean/delete/destructive checkout"
+    - "no secrets/private conversations copied into public outputs"
+    - "each relevant local-only item has stable lineage or disposition"
+    - "another machine can reproduce next packet from shared evidence"
+  tests:
+    - "run context_vault_snapshot.py outside each source repository"
+    - "review snapshot safety flags before any promotion"
+  evidence_required:
+    - "verified local repo names"
+    - "branch/head facts"
+    - "relative paths/checksums where safe"
+    - "classification and disposition"
+  stop_conditions:
+    - "rights/cultural permission unclear"
+    - "promotion would expose secret/private material"
+    - "canon change required"
+  status: "READY"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"

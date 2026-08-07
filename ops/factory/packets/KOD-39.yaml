@@ -1,0 +1,55 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-VISUAL-02"
+  linear_issue: "KOD-39"
+  title: "Visual Passport — DNA PASSAGE"
+  lane: "VISUAL_SPEC"
+  modality: "VISUAL_SPEC"
+  complexity: "C1"
+  owner_profile: "MULTIMODAL_VISUAL_SPEC"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Convert actual DNA PASSAGE concept/reference material into a complete implementation-ready Visual Passport without writing renderer code."
+  repository: "wenumapu8-droid/kodex-minus-infinity"
+  base_branch: "main"
+  dependencies:
+    - "visual_passport_contract_v1_merged"
+  read_only_context:
+    - "ops/factory/VISUAL_PASSPORT_PROTOCOL.md"
+    - "ops/factory/VISUAL_PASSPORT_TEMPLATE.yaml"
+    - "schemas/visual-passport.schema.json"
+    - "design-system/tokens/kodex.tokens.json"
+  source_inputs:
+    - "actual DNA PASSAGE concept/reference images available to the visual worker"
+  may_edit:
+    - "one passport output file only after supervisor chooses shared destination"
+  must_not_edit:
+    - "runtime code"
+    - "renderer/shader code"
+    - "canon coordinate assignments"
+  canonical_constraints:
+    - "coordinateAssignment remains null unless an existing canonical source explicitly assigns it"
+    - "do not invent B–L or N–X meanings"
+  epistemic_constraints:
+    - "real DNA biology may inform the helix primitive"
+    - "spiritual/cosmic/source passage is mythopoetic, not scientific DNA function"
+    - "particle/light telemetry must not become fake biological measurement"
+  acceptance:
+    - "biologically recognizable vs symbolic geometry is explicitly separated"
+    - "traversal/orbit behavior does not create compulsory alphabet traversal"
+    - "pointer/touch/keyboard semantics are equivalent"
+    - "memory write behavior is explicit"
+    - "desktop, 390x844 and 412x915 compositions are defined"
+    - "full/reduced/static modes and no-WebGL fallback are defined"
+    - "reusable HelixPassage engine boundary is identified"
+    - "resource cleanup/performance risks and visual checks are defined"
+  evidence_required:
+    - "sources actually inspected"
+    - "complete schema-conforming passport"
+    - "scientific boundaries"
+    - "implementation packet recommendation"
+  stop_conditions:
+    - "implementation requires unsupported scientific claim"
+    - "source/provenance uncertainty prevents safe reference use"
+  status: "READY"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"

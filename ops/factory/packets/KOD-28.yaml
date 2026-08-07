@@ -1,0 +1,79 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-RUNTIME-01"
+  linear_issue: "KOD-28"
+  title: "JourneyState + EventTrace core"
+  lane: "RUNTIME"
+  modality: "PURE_RUNTIME_LOGIC"
+  complexity: "C2"
+  owner_profile: "BOUNDED_CODING_AGENT"
+  reviewer_profile: "LONG_CONTEXT_ARCHITECT"
+  objective: "Implement the smallest deterministic serializable state kernel for the A–M–Y journey."
+  repository: "wenumapu8-droid/wenu-frontend"
+  base_branch: "feature/kodex-vertical-slice-v0"
+  dependencies: []
+  read_only_context:
+    - "kodex-minus-infinity:START_HERE.md"
+    - "kodex-minus-infinity:canon/KODEX_CANON.md"
+    - "kodex-minus-infinity:data/alphabet-topology.json"
+    - "kodex-minus-infinity:product/EXPERIENCE_ARCHITECTURE.md"
+    - "kodex-minus-infinity:ops/factory/WORK_PACKET_SCHEMA.yaml"
+  source_inputs: []
+  may_edit:
+    - "one JourneyState implementation file after repo inspection"
+    - "one colocated JourneyState/EventTrace test file"
+    - "one colocated type file only if strictly required"
+  must_not_edit:
+    - "canonical repo canon/**"
+    - "routes/scenes"
+    - "shaders/renderers"
+    - "deployment/workflows"
+  inputs:
+    canonical_state_fields:
+      - current coordinate/world metadata reference
+      - visit counts
+      - ordered event trace
+      - committed actions
+      - traced relations
+      - ignored signals/delayed-consequence placeholders
+      - spectral trace
+      - Heart portal state and visit count
+      - exact return anchor
+      - bounded serendipity seed
+  outputs:
+    - deterministic initial state
+    - deterministic state transition/reducer surface
+    - serializable privacy-minimized state
+    - idempotent replay behavior by event identity
+    - unit tests
+  canonical_constraints:
+    - "A is the common origin."
+    - "M/Heart is optional and never a score."
+    - "Y is not composed in this packet."
+    - "Do not invent meanings for B–L or N–X."
+    - "Revisits preserve prior trace and increment visit count."
+  epistemic_constraints:
+    - "Do not infer spiritual, biometric or psychological state."
+  acceptance:
+    - "same ordered event sequence produces same state"
+    - "duplicate replay event cannot double-write memory when event identity is unchanged"
+    - "revisits increment count without destroying prior trace"
+    - "Heart state can exist without forcing a Heart visit"
+    - "return anchor round-trips exactly"
+    - "serialization/restoration excludes raw/private pointer telemetry"
+    - "tests cover initial state, action commit, revisit, ignored signal, Heart state and replay idempotency"
+  tests:
+    - "targeted JourneyState/EventTrace unit tests"
+    - "repository build/typecheck/test command relevant to affected module"
+  evidence_required:
+    - "branch"
+    - "commit_sha"
+    - "exact files changed"
+    - "test commands and results"
+  stop_conditions:
+    - "actual repository structure conflicts with assumed ownership"
+    - "canonical contradiction"
+    - "task requires scene/UI/shader refactor"
+  status: "READY"
+  handoff_to: "LONG_CONTEXT_ARCHITECT"
+  deployment: "BLOCKED"

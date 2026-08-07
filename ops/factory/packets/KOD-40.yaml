@@ -1,0 +1,57 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-VISUAL-03"
+  linear_issue: "KOD-40"
+  title: "Visual Passport — SOURCE SPHERE"
+  lane: "VISUAL_SPEC"
+  modality: "VISUAL_SPEC"
+  complexity: "C1"
+  owner_profile: "MULTIMODAL_VISUAL_SPEC"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Convert actual SOURCE SPHERE concept/reference material into a complete implementation-ready Visual Passport without writing renderer code."
+  repository: "wenumapu8-droid/kodex-minus-infinity"
+  base_branch: "main"
+  dependencies:
+    - "visual_passport_contract_v1_merged"
+  read_only_context:
+    - "ops/factory/VISUAL_PASSPORT_PROTOCOL.md"
+    - "ops/factory/VISUAL_PASSPORT_TEMPLATE.yaml"
+    - "schemas/visual-passport.schema.json"
+    - "design-system/tokens/kodex.tokens.json"
+  source_inputs:
+    - "actual SOURCE SPHERE concept/reference images available to the visual worker"
+  may_edit:
+    - "one passport output file only after supervisor chooses shared destination"
+  must_not_edit:
+    - "runtime code"
+    - "renderer/shader code"
+    - "canon coordinate assignments"
+  canonical_constraints:
+    - "coordinateAssignment remains null unless an existing canonical source explicitly assigns it"
+    - "do not invent B–L or N–X meanings"
+  epistemic_constraints:
+    - "source/light/origin/return is mythopoetic unless separately verified"
+    - "do not claim factual knowledge of souls, afterlife or literal metaphysical transit"
+    - "generated telemetry is not factual"
+  cultural_rights_constraints:
+    - "record provenance boundaries for tree/sphere/manuscript references"
+  acceptance:
+    - "sphere/shell/core/tree-flow geometry is concrete"
+    - "observer interaction and consequential vs atmospheric behavior are explicit"
+    - "pointer/touch/keyboard semantics are equivalent"
+    - "memory write behavior is explicit"
+    - "desktop, 390x844 and 412x915 compositions are defined"
+    - "reduced/static/no-WebGL behavior is defined"
+    - "reusable SourceSphere organism boundary is identified"
+    - "performance/resource-cleanup risks and exact visual acceptance checks are defined"
+  evidence_required:
+    - "sources actually inspected"
+    - "complete schema-conforming passport"
+    - "metaphoric/scientific boundaries"
+    - "provenance questions"
+    - "implementation packet recommendation"
+  stop_conditions:
+    - "reference provenance/copying boundary cannot be stated"
+  status: "READY"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"
