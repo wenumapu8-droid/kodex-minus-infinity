@@ -37,6 +37,7 @@ REQUIRED_FILES = [
     "schemas/source.schema.json",
     "schemas/claim.schema.json",
     "schemas/semantic-passport.schema.json",
+    "schemas/visual-passport.schema.json",
     "schemas/session-memory.schema.json",
     "schemas/module.schema.json",
 ]
@@ -51,6 +52,7 @@ JSON_FILES = [
     "schemas/source.schema.json",
     "schemas/claim.schema.json",
     "schemas/semantic-passport.schema.json",
+    "schemas/visual-passport.schema.json",
     "schemas/session-memory.schema.json",
     "schemas/module.schema.json",
 ]
