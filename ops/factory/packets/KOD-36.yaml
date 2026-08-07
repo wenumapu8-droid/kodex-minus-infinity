@@ -1,0 +1,53 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-ANDON-TRANSPORT-01"
+  linear_issue: "KOD-36"
+  title: "Hermes Andon Transport"
+  lane: "OPERATIONS"
+  modality: "NOTIFICATION"
+  complexity: "C1"
+  owner_profile: "OPERATIONS_NOTIFICATION_AGENT"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Wire validated KODEX factory-event output into the existing Hermes Telegram notification path without leaking private payloads or turning alerts into authorization."
+  repository: "external Hermes runtime / local operations configuration"
+  base_branch: "inspect before edit"
+  dependencies:
+    - "factory_andon_v1_merged"
+  read_only_context:
+    - "kodex-minus-infinity:ops/factory/FACTORY_EVENT_SCHEMA.yaml"
+    - "kodex-minus-infinity:scripts/factory_andon.py"
+    - "kodex-minus-infinity:ops/factory/QUALITY_GATES.md"
+  may_edit:
+    - "only the Hermes notification adapter/config actually required after inspection"
+    - "local test fixture/state required for dedupe"
+  must_not_edit:
+    - "KODEX canon"
+    - "production site"
+    - "Telegram credentials in any tracked/public file"
+  inputs:
+    event_contract: "validated factory_event -> build_notification() output"
+  outputs:
+    - "bounded Telegram transport adapter"
+    - "dedupe state/policy"
+    - "manual end-to-end fixture evidence"
+  acceptance:
+    - "REVIEW event sends exactly one useful message"
+    - "BLOCKED human-action event includes requested action"
+    - "duplicate event state is suppressed"
+    - "chatty INFO without allowed reason is suppressed"
+    - "RELEASE_GATE explicitly says review required and deploy not authorized"
+    - "tokens/secrets/private paths never appear in message or handoff"
+  tests:
+    - "five fixture events listed in Linear KOD-36"
+    - "one real Telegram delivery test using existing secret storage"
+  evidence_required:
+    - "Hermes files/config changed without secret values"
+    - "fixture results"
+    - "Telegram delivery evidence"
+    - "dedupe evidence"
+  stop_conditions:
+    - "transport requires exposing a token or credential"
+    - "current Hermes runtime cannot consume structured events without broad refactor"
+  status: "READY"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"
