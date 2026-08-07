@@ -1,0 +1,47 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-"
+  title: ""
+  lane: ""
+  complexity: "C0|C1|C2|C3|C4|C5"
+  owner_profile: ""
+  reviewer_profile: ""
+  objective: ""
+  repository: ""
+  base_branch: ""
+  integration_branch: ""
+  dependencies: []
+  read_only_context: []
+  source_inputs: []
+  may_edit: []
+  must_not_edit: []
+  file_ownership_notes: []
+  inputs: {}
+  outputs: {}
+  canonical_constraints: []
+  epistemic_constraints: []
+  cultural_rights_constraints: []
+  acceptance: []
+  tests: []
+  evidence_required: []
+  stop_conditions: []
+  estimated_review_load: "LOW|MEDIUM|HIGH"
+  status: "READY|RUNNING|BLOCKED|REVIEW|QA|DONE|CANCELED"
+  handoff_to: ""
+  deployment: "BLOCKED"
+
+handoff:
+  packet_id: ""
+  status: "DONE|BLOCKED|REVIEW"
+  files_read: []
+  files_changed: []
+  evidence_used: []
+  decisions_made: []
+  assumptions: []
+  unresolved: []
+  risks: []
+  tests_run: []
+  commit_sha: ""
+  pull_request: ""
+  next_owner: ""
+  deployment_status: "NOT_REQUESTED"
