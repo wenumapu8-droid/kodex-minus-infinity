@@ -1,0 +1,103 @@
+schema_version: 1
+factory_board:
+  batch_id: "KDX-BATCH-001"
+  recipe_version: "1"
+  objective: "Commission KODEX Factory with three non-overlapping production lines and supervisor-controlled review."
+  active_constraint: "integration_and_review_capacity"
+  wip_limits:
+    DATA_CANON: 1
+    RUNTIME: 1
+    VISUAL: 1
+    INTEGRATION: 1
+    QA_RELEASE: 1
+  packets:
+    - packet_id: "KOD-26"
+      title: "Bridge 1 — Atlas + Research Corpus ingestion"
+      lane: "DATA_CANON"
+      complexity: "C2"
+      producer_profile: "LONG_CONTEXT_ARCHITECT"
+      reviewer_profile: "ORCHESTRATOR"
+      dependency_ids: []
+      repository: "wenumapu8-droid/kodex-minus-infinity"
+      branch: "TBD_BY_WORKER"
+      owned_files:
+        - "ingestion outputs and directly related schemas/scripts declared by worker before edit"
+      status: "RUNNING"
+      last_evidence: "Linear KOD-26 work packet approved; Drive sources directly verified"
+      blocker: ""
+      next_owner: "ORCHESTRATOR"
+    - packet_id: "KOD-28"
+      title: "JourneyState + EventTrace core"
+      lane: "RUNTIME"
+      complexity: "C2"
+      producer_profile: "BOUNDED_CODING_AGENT"
+      reviewer_profile: "LONG_CONTEXT_ARCHITECT"
+      dependency_ids: []
+      repository: "wenumapu8-droid/wenu-frontend"
+      branch: "TBD_BY_WORKER"
+      owned_files:
+        - "journeyState.ts"
+        - "journeyState.test.ts"
+      status: "READY"
+      last_evidence: "Linear KOD-28 bounded packet"
+      blocker: ""
+      next_owner: "LONG_CONTEXT_ARCHITECT"
+    - packet_id: "KOD-35"
+      title: "Visual Passport pilot — Eyes / DNA / Source"
+      lane: "VISUAL"
+      complexity: "C1"
+      producer_profile: "MULTIMODAL_VISUAL_SPEC"
+      reviewer_profile: "ORCHESTRATOR"
+      dependency_ids: []
+      repository: "specification output; no implementation file ownership"
+      branch: "N/A"
+      owned_files: []
+      status: "READY"
+      last_evidence: "Linear KOD-35 visual passport contract"
+      blocker: ""
+      next_owner: "ORCHESTRATOR"
+    - packet_id: "KOD-29"
+      title: "Canonical graph projection contract"
+      lane: "RUNTIME"
+      complexity: "C2"
+      producer_profile: "BOUNDED_CODING_AGENT"
+      reviewer_profile: "LONG_CONTEXT_ARCHITECT"
+      dependency_ids: ["KOD-26"]
+      repository: "wenumapu8-droid/wenu-frontend"
+      branch: "TBD"
+      owned_files:
+        - "journeyGraph/projection files declared after repository inspection"
+      status: "BLOCKED"
+      last_evidence: "Linear KOD-29"
+      blocker: "waiting_for_KOD-26_frozen_graph_input"
+      next_owner: "BOUNDED_CODING_AGENT"
+    - packet_id: "KOD-30"
+      title: "EdgeResolver + bounded serendipity"
+      lane: "RUNTIME"
+      complexity: "C2"
+      producer_profile: "BOUNDED_CODING_AGENT"
+      reviewer_profile: "LONG_CONTEXT_ARCHITECT"
+      dependency_ids: ["KOD-28", "KOD-29"]
+      repository: "wenumapu8-droid/wenu-frontend"
+      branch: "TBD"
+      owned_files: ["edgeResolver.ts", "edgeResolver.test.ts"]
+      status: "BLOCKED"
+      last_evidence: "Linear KOD-30"
+      blocker: "waiting_for_KOD-28_and_KOD-29"
+      next_owner: "BOUNDED_CODING_AGENT"
+  queues:
+    ready: ["KOD-28", "KOD-35"]
+    running: ["KOD-26"]
+    blocked: ["KOD-29", "KOD-30"]
+    awaiting_review: []
+    awaiting_human_decision: []
+  batch_metrics:
+    verified_throughput: 0
+    median_cycle_time_seconds: null
+    lead_time_seconds: null
+    blocked_time_share: null
+    first_pass_yield: null
+    rework_rate: null
+    integration_failure_rate: null
+    reuse_ratio: null
+  deployment_status: "BLOCKED"
