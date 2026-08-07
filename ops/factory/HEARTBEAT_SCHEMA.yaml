@@ -1,0 +1,38 @@
+schema_version: 1
+heartbeat:
+  station_id: ""
+  packet_id: ""
+  status: "STARTED|RUNNING|BLOCKED|REVIEW|IDLE"
+  current_step: ""
+  percent_estimate: null
+  branch: ""
+  latest_commit_sha: ""
+  last_test: ""
+  blocker_class: ""
+  needs_human_action: false
+  next_expected_evidence: ""
+  timestamp: ""
+  deployment_status: "NOT_REQUESTED"
+
+status_semantics:
+  VERIFIED_ACTIVE:
+    max_age_minutes: 60
+  STALE_WARNING:
+    min_age_minutes: 60
+    max_age_minutes: 180
+  UNKNOWN_STALE:
+    min_age_minutes: 180
+
+constraints:
+  - "percent_estimate may only be supplied explicitly by the worker"
+  - "branch existence alone is not execution evidence"
+  - "Linear In Progress alone is not execution evidence"
+  - "never include chain-of-thought, raw prompts, credentials, secrets, private payloads or visitor analytics"
+  - "heartbeat never authorizes merge or deployment"
+
+andon_mapping:
+  STARTED: "SUPERVISOR_ONLY"
+  RUNNING: "SUPERVISOR_ONLY"
+  BLOCKED: "BLOCKED"
+  REVIEW: "REVIEW"
+  IDLE: "SUPERVISOR_ONLY"
