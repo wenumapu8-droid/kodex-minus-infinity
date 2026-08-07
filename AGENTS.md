@@ -71,6 +71,17 @@ handoff:
 
 Connected Factory stations do not require repeated chat prompts for normal production. On session start, read `ops/factory/DISPATCH_QUEUE.yaml`, select your exact `station_id`, then read only the referenced packet and its declared context. `CONNECTED` is not `RUNNING`: emit heartbeat/commit/test/PR evidence before execution is reported as active. Re-read the queue after completion, review or block. Follow `ops/factory/REPO_NATIVE_DISPATCH_PROTOCOL.md`.
 
+## Factory loop behavior
+
+When `ops/factory/DISPATCH_QUEUE.yaml` has `loop_policy.enabled: true`, the station participates in the bounded release loop defined by `ops/factory/FACTORY_LOOP_PROTOCOL.md`.
+
+- Execute only `current_packet` for your exact `station_id`.
+- After a handoff, review or block, stop and re-read the queue before taking more work.
+- Never infer or self-assign the next packet.
+- Preserve one-packet WIP unless the supervisor explicitly changes the limit.
+- A blocker pauses only the dependent lane; unrelated stations may continue.
+- The active loop may continue through release review, but it never authorizes deployment.
+
 ## Forbidden behavior
 
 - Editing `main` directly.
