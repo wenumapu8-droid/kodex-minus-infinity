@@ -59,6 +59,12 @@ Each cell has explicit inputs, outputs and quality gates. Work should not move d
 - `FACTORY_EVENT_SCHEMA.yaml` — structured events for status/notification systems.
 - `QUALITY_GATES.md` — evidence gates between production cells.
 - `RECIPE_LEARNING.md` — measurable continuous-improvement loop.
+- `PACKET_METRICS_SCHEMA.yaml` — per-packet throughput/rework evidence record.
+- `FACTORY_BOARD_TEMPLATE.yaml` — WIP, ownership, dependencies and queue state.
+
+## Baseline dependency
+
+Factory validation relies on the corrected A–M–Y context validator merged through PR #9. Factory rules do not replace or redefine the canonical A/M/Y topology.
 
 ## Repository boundary
 
