@@ -1,0 +1,87 @@
+schema_version: 1
+work_packet:
+  id: "KDX-WP-DATA-01"
+  linear_issue: "KOD-26"
+  title: "Bridge 1 — Visual Atlas + Research Corpus ingestion"
+  lane: "DATA_CANON"
+  modality: "DATA_INGESTION"
+  complexity: "C2"
+  owner_profile: "LONG_CONTEXT_ARCHITECT"
+  reviewer_profile: "ORCHESTRATOR"
+  objective: "Regenerate and commit a deterministic bridge from reviewed KODEX source tables into canonical graph/source/claim artifacts without modifying source originals or inventing alphabet assignments."
+  repository: "wenumapu8-droid/kodex-minus-infinity"
+  base_branch: "main"
+  dependencies: []
+  read_only_context:
+    - "START_HERE.md"
+    - "AGENTS.md"
+    - "canon/KODEX_EPISTEMIC_STANDARD.md"
+    - "data/alphabet-topology.json"
+    - "schemas/source.schema.json"
+    - "schemas/claim.schema.json"
+    - "ops/factory/QUALITY_GATES.md"
+  source_inputs:
+    - "reviewed Visual Atlas source table"
+    - "reviewed Source Registry"
+    - "reviewed Research Corpus"
+    - "reviewed Production Blueprint"
+  source_structure:
+    - "KDX-* visual inventory rows are one table/schema"
+    - "R-* research/provenance rows are a separate table/schema"
+  may_edit:
+    - "bounded ingestion script(s)"
+    - "generated normalized graph/source/claim registries"
+    - "mapping/anomaly/regeneration documentation"
+    - "tests directly required by ingestion"
+  must_not_edit:
+    - "source Drive/Sheet originals"
+    - "A–Y canonical meanings beyond existing A/M/Y invariants"
+    - "private/raw assets"
+    - "deployment/workflow behavior unrelated to validation"
+  canonical_constraints:
+    - "A = common origin / Threshold"
+    - "M = optional Heart / 0"
+    - "Y = Return / route-derived terminal"
+    - "do not invent B–L or N–X meanings"
+  classification_rules:
+    unmapped_values:
+      - NODE_CANDIDATE
+      - CONTENT_FAMILY
+      - TRANSVERSAL_LAYER
+      - SYSTEM_MODULE
+      - NEEDS_CONFIRMATION
+    epistemic_enum:
+      - VERIFIED
+      - CANONICAL
+      - INFERRED
+      - SPECULATIVE
+      - NEEDS_CONFIRMATION
+      - DEPRECATED
+    anomaly: "SOURCE_DATA_ANOMALY / NEEDS_SOURCE_FIX"
+  acceptance:
+    - "regenerate from source from a clean output state"
+    - "visual and research table parsing are explicit"
+    - "source schema validation passes"
+    - "duplicate-ID check passes"
+    - "dangling-edge check passes"
+    - "unknown-enum check passes"
+    - "source and claim counts reconcile with parsed inputs"
+    - "two consecutive regenerations produce deterministic equivalent output/hash"
+    - "cultural/rights/sensitivity restrictions travel with data where supported"
+  evidence_required:
+    - "source_rows_visual"
+    - "source_rows_research"
+    - "nodes"
+    - "edges"
+    - "sources"
+    - "claims"
+    - "schema validation results"
+    - "anomalies"
+    - "branch/commit/PR"
+  stop_conditions:
+    - "source ambiguity would require silent correction"
+    - "new canonical alphabet assignment is required"
+    - "private or rights-unclear material would be exposed"
+  status: "RUNNING"
+  handoff_to: "ORCHESTRATOR"
+  deployment: "BLOCKED"
