@@ -1,0 +1,36 @@
+schema_version: 1
+recipe_memory:
+  recipe_id: "KDX-RECIPE-"
+  version: 1
+  packet_archetype: ""
+  modality: ""
+  complexity_ceiling: "C0|C1|C2|C3|C4|C5"
+  preferred_producer_profile: ""
+  preferred_reviewer_profile: ""
+  minimum_context_set: []
+  required_quality_gates: []
+  effective_tests: []
+  reusable_templates: []
+  reusable_fixtures: []
+  observed_batches: 0
+  observed_packets: 0
+  median_cycle_time_seconds: null
+  first_pass_yield: null
+  rework_rate: null
+  common_defect_classes: []
+  repeated_blocker_classes: []
+  active_constraint: ""
+  process_variable_under_test: ""
+  previous_version: null
+  change_hypothesis: ""
+  comparison_result: "PENDING|KEEP|REVERT|INCONCLUSIVE"
+  evidence_urls: []
+  updated_at: ""
+  deployment_status: "NOT_REQUESTED"
+
+constraints:
+  - learn_from_process_evidence_not_model_confidence
+  - change_one_important_process_variable_at_a_time_when_feasible
+  - never_store_secrets_private_conversations_or_raw_visitor_data
+  - recipe_changes_do_not_modify_KODEX_canon
+  - deployment_requires_exact_phrase_APROBAR_DEPLOY
