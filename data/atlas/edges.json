@@ -1,0 +1,4483 @@
+{
+  "system": "KODEX−∞",
+  "artifact": "derived-from-visual-atlas-master",
+  "bridge": "KOD-19 / Bridge 1",
+  "sourceOfTruth": "https://docs.google.com/spreadsheets/d/1RLhA2xmApx1YDfHIeWjIqlYz17OHkuxFbfUXejzcS_4",
+  "regenerable": true,
+  "doNotEditByHand": true,
+  "coordinateAssignmentPolicy": "Only A/M/Y are canonical. B–L and N–X are derived in Bridge 2 (KODEX_ALPHABET_MATRIX), never inferred from initials.",
+  "claimClassPolicy": "claimClass is never inferred. Unresolved records stay UNKNOWN per canon/KODEX_EPISTEMIC_STANDARD.md.",
+  "count": 894,
+  "edges": [
+    {
+      "from": "CLM-R-001",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-001"
+    },
+    {
+      "from": "CLM-R-001",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-LIVING-GATE"
+    },
+    {
+      "from": "CLM-R-001",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-MORPHOGENESIS"
+    },
+    {
+      "from": "CLM-R-001",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-REACTION-DIFFUSION"
+    },
+    {
+      "from": "CLM-R-002",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-002"
+    },
+    {
+      "from": "CLM-R-002",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-014"
+    },
+    {
+      "from": "CLM-R-002",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-REGENERATION"
+    },
+    {
+      "from": "CLM-R-003",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-003"
+    },
+    {
+      "from": "CLM-R-003",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-020"
+    },
+    {
+      "from": "CLM-R-003",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ADAPTIVE-SURFACE"
+    },
+    {
+      "from": "CLM-R-004",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-004"
+    },
+    {
+      "from": "CLM-R-004",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-019"
+    },
+    {
+      "from": "CLM-R-004",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ECHOLOCATION"
+    },
+    {
+      "from": "CLM-R-005",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-005"
+    },
+    {
+      "from": "CLM-R-005",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-FOUR-DIRECTIONS"
+    },
+    {
+      "from": "CLM-R-005",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-WENU-MAPU"
+    },
+    {
+      "from": "CLM-R-006",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-006"
+    },
+    {
+      "from": "CLM-R-006",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-LAKE-TAHOE"
+    },
+    {
+      "from": "CLM-R-006",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-TERRITORY"
+    },
+    {
+      "from": "CLM-R-006",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-WASHOE"
+    },
+    {
+      "from": "CLM-R-007",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-007"
+    },
+    {
+      "from": "CLM-R-007",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-037"
+    },
+    {
+      "from": "CLM-R-007",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-DARK-GODDESS"
+    },
+    {
+      "from": "CLM-R-008",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-008"
+    },
+    {
+      "from": "CLM-R-008",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-040"
+    },
+    {
+      "from": "CLM-R-008",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-OBSTACLE-THRESHOLD"
+    },
+    {
+      "from": "CLM-R-009",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-009"
+    },
+    {
+      "from": "CLM-R-009",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-044"
+    },
+    {
+      "from": "CLM-R-009",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-LIONESS-SOLAR-GUARDIAN"
+    },
+    {
+      "from": "CLM-R-010",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-010"
+    },
+    {
+      "from": "CLM-R-010",
+      "relation": "SUPPORTS",
+      "to": "KDX-BANK-RAW-043"
+    },
+    {
+      "from": "CLM-R-010",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-FEATHERED-REPTILE"
+    },
+    {
+      "from": "CLM-R-011",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-011"
+    },
+    {
+      "from": "CLM-R-011",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-OBSERVER"
+    },
+    {
+      "from": "CLM-R-011",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-SELF"
+    },
+    {
+      "from": "CLM-R-011",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-SHADOW"
+    },
+    {
+      "from": "CLM-R-012",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-012"
+    },
+    {
+      "from": "CLM-R-012",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-11-11"
+    },
+    {
+      "from": "CLM-R-012",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-OBSERVER"
+    },
+    {
+      "from": "CLM-R-012",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-SYNCHRONICITY"
+    },
+    {
+      "from": "CLM-R-013",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-013"
+    },
+    {
+      "from": "CLM-R-013",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-HYPERBOLIC-FIELD"
+    },
+    {
+      "from": "CLM-R-013",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-NEGATIVE-INFINITY"
+    },
+    {
+      "from": "CLM-R-014",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-014"
+    },
+    {
+      "from": "CLM-R-014",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-BOUNDARY"
+    },
+    {
+      "from": "CLM-R-014",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-COSMOLOGY"
+    },
+    {
+      "from": "CLM-R-014",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-HOLOGRAPHY"
+    },
+    {
+      "from": "CLM-R-015",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-015"
+    },
+    {
+      "from": "CLM-R-015",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-BLACK-HOLE"
+    },
+    {
+      "from": "CLM-R-015",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-INFORMATION"
+    },
+    {
+      "from": "CLM-R-015",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-RETURN"
+    },
+    {
+      "from": "CLM-R-016",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-016"
+    },
+    {
+      "from": "CLM-R-016",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ENTROPY"
+    },
+    {
+      "from": "CLM-R-016",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-NOISE"
+    },
+    {
+      "from": "CLM-R-016",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-SIGNAL"
+    },
+    {
+      "from": "CLM-R-017",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-017"
+    },
+    {
+      "from": "CLM-R-017",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ANOMALY"
+    },
+    {
+      "from": "CLM-R-017",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-OBSERVER"
+    },
+    {
+      "from": "CLM-R-017",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-SOURCE"
+    },
+    {
+      "from": "CLM-R-017",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-UAP"
+    },
+    {
+      "from": "CLM-R-018",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-018"
+    },
+    {
+      "from": "CLM-R-018",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-BIOLOGICAL-INFORMATION"
+    },
+    {
+      "from": "CLM-R-018",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-COMPLEMENTARITY"
+    },
+    {
+      "from": "CLM-R-018",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-DNA"
+    },
+    {
+      "from": "CLM-R-019",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-019"
+    },
+    {
+      "from": "CLM-R-019",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-PERMACULTURE"
+    },
+    {
+      "from": "CLM-R-019",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-REGENERATION"
+    },
+    {
+      "from": "CLM-R-019",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-TERRITORY"
+    },
+    {
+      "from": "CLM-R-020",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-020"
+    },
+    {
+      "from": "CLM-R-020",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ANUNNA"
+    },
+    {
+      "from": "CLM-R-020",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-MESOPOTAMIA"
+    },
+    {
+      "from": "CLM-R-020",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-MYTH-HISTORY"
+    },
+    {
+      "from": "CLM-R-021",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-021"
+    },
+    {
+      "from": "CLM-R-021",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-HYDROLOGY"
+    },
+    {
+      "from": "CLM-R-021",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-MOLECULE"
+    },
+    {
+      "from": "CLM-R-021",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-WATER"
+    },
+    {
+      "from": "CLM-R-022",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-022"
+    },
+    {
+      "from": "CLM-R-022",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-MYCELIUM"
+    },
+    {
+      "from": "CLM-R-022",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-NETWORK"
+    },
+    {
+      "from": "CLM-R-022",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-SYMBIOSIS"
+    },
+    {
+      "from": "CLM-R-023",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-023"
+    },
+    {
+      "from": "CLM-R-023",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ALTERED-STATES"
+    },
+    {
+      "from": "CLM-R-023",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-NEUROPLASTICITY"
+    },
+    {
+      "from": "CLM-R-023",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-PLANT-MEDICINE"
+    },
+    {
+      "from": "CLM-R-024",
+      "relation": "EVIDENCED_BY",
+      "to": "SRC-R-024"
+    },
+    {
+      "from": "CLM-R-024",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-NAMMA"
+    },
+    {
+      "from": "CLM-R-024",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-ORIGIN"
+    },
+    {
+      "from": "CLM-R-024",
+      "relation": "SUPPORTS",
+      "to": "KDX-NODE-WATER"
+    },
+    {
+      "from": "KDX-DUP-DIAGNOSTICS-018-A",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-DUP-DIAGNOSTICS-018-A"
+    },
+    {
+      "from": "KDX-DUP-MACHINE-011-A",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-DUP-MACHINE-011-A"
+    },
+    {
+      "from": "KDX-DUP-SYNTHESIS-019-A",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-DUP-SYNTHESIS-019-A"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-DESIGN-SYSTEM"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-D4-SYMMETRY"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-GLYPH-F07"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TILE-SYSTEM"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-GLYPH-ARCHIVE"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-PATTERN"
+    },
+    {
+      "from": "KDX-GLYPH-TILE-F07",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-GLYPH-TILE-F07"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ANIMAL-GUIDES"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-WE-TRIPANTU"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-WENU-MAPU"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CICLO"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RETORNO"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-TERRITORIO"
+    },
+    {
+      "from": "KDX-IMG-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-001"
+    },
+    {
+      "from": "KDX-IMG-002",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-THRESHOLD"
+    },
+    {
+      "from": "KDX-IMG-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LIVING-GATE"
+    },
+    {
+      "from": "KDX-IMG-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEMBRANE"
+    },
+    {
+      "from": "KDX-IMG-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PORTAL-ORGANISM"
+    },
+    {
+      "from": "KDX-IMG-002",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-UMBRAL"
+    },
+    {
+      "from": "KDX-IMG-002",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-002"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HEART-M"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEMORY-BLOSSOM"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PULSE"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RETURN-ROOT"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CONVERGENCIA"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-INTEGRACI-N"
+    },
+    {
+      "from": "KDX-IMG-003",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-003"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-NAVIGATION"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "DEPICTS",
+      "to": "KDX-MAP-FLOW-001"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CONVERGENCE"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RETURN"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-THRESHOLD"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MAPA-COMPLETO"
+    },
+    {
+      "from": "KDX-IMG-004",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-004"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HYPERCOIL"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MOBIUS"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RECURSION"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-M-QUINA"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RETORNO"
+    },
+    {
+      "from": "KDX-IMG-005",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-005"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-DESCENT"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ANOMALY"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-NULL-KNOT"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RELIC-ENGINE"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ANOMAL-A"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-DIVERGENCIA"
+    },
+    {
+      "from": "KDX-IMG-006",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-006"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-OBSERVER"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PERSPECTIVE"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SPECTRAL-FRAME"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-EXPLORACI-N"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-OBSERVADOR"
+    },
+    {
+      "from": "KDX-IMG-007",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-007"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ANATOMY"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BODY-FIELD"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TORUS"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CUERPO"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-INTEGRACI-N"
+    },
+    {
+      "from": "KDX-IMG-008",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-008"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BREATH"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEDITATING-POLARITY"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TORUS"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CUERPO"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-INTEGRACI-N"
+    },
+    {
+      "from": "KDX-IMG-013",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-013"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BREATH"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RESPIRATORY-NETWORK"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-STERNAL-STAR"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CUERPO"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SE-AL"
+    },
+    {
+      "from": "KDX-IMG-014",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-014"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CRANIAL-AXIS"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PERCEPTION"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-THOUGHT-FOUNTAIN"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-DESCENSO"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-OBSERVADOR"
+    },
+    {
+      "from": "KDX-IMG-015",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-015"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CARDIAC-COSMOS"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HEART-M"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEMORY-CROWN"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CONVERGENCIA"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-HEART"
+    },
+    {
+      "from": "KDX-IMG-016",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-016"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-BESTIARY"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-INTEGRATION"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PENGUIN"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-THERMAL-COLLECTIVE"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-THERMALCOLLECTIVESCENE-TS"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-COLECTIVO"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CUERPO"
+    },
+    {
+      "from": "KDX-IMG-025",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-TERRITORIO"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-BESTIARY"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BAT"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ECHO-MAP"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-ECHOMAPPROTOCOL-TS"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NOCHE"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-OBSERVADOR"
+    },
+    {
+      "from": "KDX-IMG-026",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SE-AL"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-BESTIARY"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CHAMELEON"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CHROMATIC-STATE"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-CHROMATICNEGOTIATIONSHADER-GLSL"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ANOMAL-A"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-INTERFAZ"
+    },
+    {
+      "from": "KDX-IMG-027",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VIDA"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-BESTIARY"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-DESCENT"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ABYSSAL-DRAGON"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BIOLUMINESCENT-THRESHOLD"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-BIOLUMINESCENTTHRESHOLDSCENE-TS"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ABISMO"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-DESCENSO"
+    },
+    {
+      "from": "KDX-IMG-028",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SE-AL"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-NETWORK"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PATTERN-WEAVER"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TENSION"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-WEB-SIGNAL"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-VERLET-WEB-TS-VIBRATION-PROPAGATION-GLSL"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ANOMAL-A"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-BESTIARIO"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RED"
+    },
+    {
+      "from": "KDX-IMG-029",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-029"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-POLAR-SIGHT"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-QUIET-SIGNAL"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SILENT-OBSERVER"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-STILLNESS-DETECTOR-TS-POLAR-NOISE-GLSL"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-OBSERVADOR"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SILENCIO"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-TERRITORIO"
+    },
+    {
+      "from": "KDX-IMG-030",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-030"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-LIVING-SYSTEMS"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-AQUATIC-CARE"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COILED-RETURN"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SPIRAL-INCUBATOR"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-AQUATIC-SPLINE-TS-MEMBRANE-SHADER-GLSL"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-AGUA"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RETORNO"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VIDA"
+    },
+    {
+      "from": "KDX-IMG-031",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-031"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-LIVING-SYSTEMS"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-THRESHOLD"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BODY-REPAIR"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-NEOTENY"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-THRESHOLD-REGENERATOR"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-REGENERATION-STATE-TS-TISSUE-GROWTH-GLSL"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-AGUA"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-REGENERACI-N"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-UMBRAL"
+    },
+    {
+      "from": "KDX-IMG-032",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-IMG-032"
+    },
+    {
+      "from": "KDX-MOTION-KODELIFE-002",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-MOTION-KODELIFE-002"
+    },
+    {
+      "from": "KDX-MOTION-LIVING-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-MOTION-LIVING-001"
+    },
+    {
+      "from": "KDX-MOTION-STRANDS-003",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-MOTION-STRANDS-003"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ALPHABET"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GENESIS"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HEART-M"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ORIGINAL-FLOW-MAP"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RETURN"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-THRESHOLD"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-FLOWMAPPROVENANCE-TS"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-GENESIS"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NAVIGATION"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-PROVENANCE"
+    },
+    {
+      "from": "KDX-ORIGIN-SKETCH-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-ORIGIN-SKETCH-001"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-VISUAL-SYSTEM"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COMPASS-FRAGMENT"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-DIAGONAL-BAND"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PASSAGE"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NAVIGATION"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-PATTERN"
+    },
+    {
+      "from": "KDX-PATTERN-DIAGONAL-006",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-PATTERN-DIAGONAL-006"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SIGNAL"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ANCESTRAL-DATA-STREAM"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ARCHIVE-SIGNAL"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LAYER-STACK"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVE"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VISUAL-SYSTEM"
+    },
+    {
+      "from": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-POSTER-ARCHIVE-SIGNAL-001"
+    },
+    {
+      "from": "KDX-REF-RENDAH-014",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-REF-RENDAH-014"
+    },
+    {
+      "from": "KDX-REF-SIGNAL-FIELD-014",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-EDITORIAL-SYSTEM"
+    },
+    {
+      "from": "KDX-REF-SIGNAL-FIELD-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-FIELD"
+    },
+    {
+      "from": "KDX-REF-SIGNAL-FIELD-014",
+      "relation": "DEPICTS",
+      "to": "KDX-REF-RENDAH"
+    },
+    {
+      "from": "KDX-REF-SIGNAL-FIELD-014",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-REFERENCE"
+    },
+    {
+      "from": "KDX-REF-SIGNAL-FIELD-014",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VISUAL-GRAMMAR"
+    },
+    {
+      "from": "KDX-REF-SIGNAL-FIELD-014",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-REF-SIGNAL-FIELD-014"
+    },
+    {
+      "from": "KDX-ROOT-INDEX-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-ROOT-INDEX-001"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-LIVING"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LIVING-ARCHIVE"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-REBORN-SIGNAL"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TREE-ORACLE"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVE"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-LIVING-ELEMENTS"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RETURN"
+    },
+    {
+      "from": "KDX-ROOT-RAW-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-ROOT-RAW-001"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-NAVIGATION"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "DEPICTS",
+      "to": "KDX-MAP-ALPHABET"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-A"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-M"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-Y"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-ALPHABETGRAPH-TS"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MAPA"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NAVEGACI-N"
+    },
+    {
+      "from": "KDX-SCREEN-ALPHABET-004",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-ALPHABET-004"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-BODY"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ANATOMICAL-STAR"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BODY-MAP"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SOMATIC-PORTALS"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-ANATOMICALCOSMOLOGY-TS"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-COSMOLOG-A"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CUERPO"
+    },
+    {
+      "from": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-ANATOMICAL-STAR-007"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-DESCENT"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ANOMALY"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-NEW-FORM"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RUPTURE"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-ANOMALYMUTATION-TS"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ANOMAL-A"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MUTACI-N"
+    },
+    {
+      "from": "KDX-SCREEN-ANOMALY-008",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-ANOMALY-008"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ARCHIVE-ENGINE"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LINEAGE"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEMORY-TREE"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-VAULT"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-ARCHIVEENGINE-TS"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MEMORY"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RETURN"
+    },
+    {
+      "from": "KDX-SCREEN-ARCHIVE-015",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-ARCHIVE-015"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COMMONS"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COLLECTIVE-TRACE"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COMMONS"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PUBLIC-MEMORY"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-COMMONSTRACE-TS"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVO-COLECTIVO"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-COMMONS"
+    },
+    {
+      "from": "KDX-SCREEN-COMMONS-010",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-COMMONS-010"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COSMOLOGY-CORE"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-REALM-LAYERS"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SOURCE-CORE"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SOURCE"
+    },
+    {
+      "from": "KDX-SCREEN-COSMOLOGY-012",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-COSMOLOGY-012"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CONSTRUCTOR-AGENT"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-FLOATING-WORLD"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-WORLD-DIAGNOSTICS"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SIMULATION"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-WORLD-SYSTEMS"
+    },
+    {
+      "from": "KDX-SCREEN-DIAGNOSTICS-018",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-DIAGNOSTICS-018"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-PROLOGUE"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-GENESIS"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-OCIN"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-VISUAL-LINEAGE"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-VISUALLINEAGE-TS"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVO"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ORIGEN"
+    },
+    {
+      "from": "KDX-SCREEN-GENESIS-005",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-GENESIS-005"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COMPASS"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HEART-M"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RETURN-ROOT"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-HEARTORIENTATION-TS"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-HEART"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-INTEGRACI-N"
+    },
+    {
+      "from": "KDX-SCREEN-HEART-000",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-HEART-000"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-LIVING-ELEMENTS"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LIVING-ELEMENT"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEMBRANE"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ORGANIC-NODE"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ROOT-FILAMENT"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-LIVING-SYSTEMS"
+    },
+    {
+      "from": "KDX-SCREEN-LIVING-013",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-LIVING-013"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-DIMENSIONAL-WEAVER"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-QUANTUM-FABRICATOR"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-REALITY-ENGINE"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SIMULATION"
+    },
+    {
+      "from": "KDX-SCREEN-MACHINE-011",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-MACHINE-011"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-EROSION"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MEMORY"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-REENTRY"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-STRATIFIEDMEMORY-TS"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVO"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MEMORIA"
+    },
+    {
+      "from": "KDX-SCREEN-MEMORY-006",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-MEMORY-006"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-OBSERVE"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-FEEDBACK"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MIRROR"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-OBSERVER"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-OBSERVERMIRROR-TS"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-OBSERVADOR"
+    },
+    {
+      "from": "KDX-SCREEN-OBSERVER-007",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-OBSERVER-007"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ORIGIN"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LATENT-SIGNAL"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ORIGIN-FIELD"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-POTENTIAL"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-ORIGINFIELDSCENE-TS"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ORIGEN"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-POTENCIAL"
+    },
+    {
+      "from": "KDX-SCREEN-ORIGIN-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-ORIGIN-001"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CONTAINMENT"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MATERIAL-ANALYSIS"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RELIC-KX8"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ANOMALY"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RELIC"
+    },
+    {
+      "from": "KDX-SCREEN-RELIC-020",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-RELIC-020"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-RETURN"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LIVING-PATTERN"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RETURN"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ROUTE-SIGNATURE"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-RETURNARTIFACT-TS"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NUEVA-FORMA"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RETORNO"
+    },
+    {
+      "from": "KDX-SCREEN-RETURN-003",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-RETURN-003"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CONTAINMENT-CHAMBER"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CRYSTAL-HEART"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RITUAL-DEVICE"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARTIFACT"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RITUAL"
+    },
+    {
+      "from": "KDX-SCREEN-RITUAL-017",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-RITUAL-017"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SIGNAL-VORTEX"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RECEIVER"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-VORTEX"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TRANSLATION-FIELD"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CONVERGENCE"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SIGNAL"
+    },
+    {
+      "from": "KDX-SCREEN-SIGNAL-014",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-SIGNAL-014"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SOURCE"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PROVENANCE"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SOURCE"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TRUTH-CLASS"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-SOURCETRUTHMATRIX-TS"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-FUENTES"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-PROCEDENCIA"
+    },
+    {
+      "from": "KDX-SCREEN-SOURCE-009",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-SOURCE-009"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-LIVING-ELEMENTS"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BIO-INTEGRATION"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-BIOMECH-CHASSIS"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SYNTHESIS-CHAMBER"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-LIVING-SYSTEMS"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SYNTHESIS"
+    },
+    {
+      "from": "KDX-SCREEN-SYNTHESIS-019",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-SYNTHESIS-019"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-THRESHOLD"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CONSENT"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ENTRY-VECTOR"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-THRESHOLD"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "IMPLEMENTED_BY",
+      "to": "KDX-MODULE-THRESHOLDCONSENT-TS"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-UMBRAL"
+    },
+    {
+      "from": "KDX-SCREEN-THRESHOLD-002",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SCREEN-THRESHOLD-002"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-HEART"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-NAVIGATION"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ORIENTATION"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RETURN"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-STAR-COMPASS"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ORIENTATION"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SYMBOLS"
+    },
+    {
+      "from": "KDX-SEAL-STAR-COMPASS-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SEAL-STAR-COMPASS-001"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COSMIC-SPHERE"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HARMONIC-SPECTRUM"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ORBIT-MAP"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NAVIGATION"
+    },
+    {
+      "from": "KDX-SYS-COSMO-ORBIT-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYS-COSMO-ORBIT-001"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-DESIGN-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-LIVING-SIGNAL-MATRIX"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-ORIGIN"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-UNFOLDING-RING"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-VOID-STAR"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-MASTER-VISUAL-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-MASTER-BOARD-010",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYS-MASTER-BOARD-010"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-DESIGN-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-HERO-MARK"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PORTAL-FRAME"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RITUAL-CORE"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RITUAL-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-RITUAL-UI"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VISUAL-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-RITUAL-POSTER-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYS-RITUAL-POSTER-001"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-GLOBAL-DESIGN-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-FRAME-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MASTER-GLYPH"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PATTERN-SAMPLE"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-CORE"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-BRAND-SYSTEM"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VISUAL-GRAMMAR"
+    },
+    {
+      "from": "KDX-SYS-VISUAL-GUIDE-001",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYS-VISUAL-GUIDE-001"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ALPHABET"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COSMIC-ANCHOR"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COSMOLOGY-MAP"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-ORBITAL-PATH"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-COSMOLOGY"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NAVIGATION"
+    },
+    {
+      "from": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-COSMOLOGY-NODE-MAP-003"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SYMBOL-ENGINE"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-FIELD-MATRIX"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-GLYPH-SYSTEM"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PORTAL-RING"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-CORE"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-DESIGN-SYSTEM"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SYMBOLS"
+    },
+    {
+      "from": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-GLYPH-BOARD-0002"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SYMBOL-ENGINE"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-AXIS"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-EVOLUTION-CHAIN"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-MANDALA-INDEX"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-TESSERA"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-GENERATIVE-GRAMMAR"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SYMBOLS"
+    },
+    {
+      "from": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-MANDALA-INDEX-008"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-THRESHOLD"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-CORE-SIGNAL"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PORTAL-RING"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-STRUCTURAL-BAND"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARTIFACT"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-THRESHOLD"
+    },
+    {
+      "from": "KDX-SYSTEM-PORTAL-RING-002",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-PORTAL-RING-002"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-DESCENT"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-NAVIGATION"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-JAGUAR-TUNNEL"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PROCESSION-FIELD"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-WAYPOINT"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-DESCENT"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-PROCESSION"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-TERRITORY"
+    },
+    {
+      "from": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-PROCESSION-FIELD-005"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-ARCHIVE"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PROTECTION-SEAL"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-RITUAL-DEVICE"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-LOCK"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-ARTIFACT"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-VISUAL-SYSTEM"
+    },
+    {
+      "from": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-RITUAL-DEVICE-001B"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-MACHINE"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SIGNAL-VORTEX"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-COHERENCE"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-PATTERN-FIELD"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "DEPICTS",
+      "to": "KDX-NODE-SIGNAL-SPHERE"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-FIELD"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SIGNAL"
+    },
+    {
+      "from": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-KDX-SYSTEM-SIGNAL-SPHERE-004"
+    },
+    {
+      "from": "NODE_ID",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-STATUS"
+    },
+    {
+      "from": "NODE_ID",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-NODE-ID"
+    },
+    {
+      "from": "RESEARCH_ID",
+      "relation": "APPEARS_IN",
+      "to": "KDX-SCENE-SOURCE-TYPE"
+    },
+    {
+      "from": "RESEARCH_ID",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-SOURCE-URL"
+    },
+    {
+      "from": "RESEARCH_ID",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-RESEARCH-ID"
+    },
+    {
+      "from": "SOURCE_NODE",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SOURCE-NODE"
+    },
+    {
+      "from": "SPEC-KDX-MAP-FLOW-001-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-MAP-FLOW-001-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-MAP-FLOW-001-01"
+    },
+    {
+      "from": "SPEC-KDX-MAP-FLOW-001-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-MAP-FLOW-001"
+    },
+    {
+      "from": "SPEC-KDX-MAP-FLOW-001-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-MAP-FLOW-001-02"
+    },
+    {
+      "from": "SPEC-KDX-MAP-FLOW-001-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-MAP-FLOW-001"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ALTAR-NETWORK-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ALTAR-NETWORK-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ALTAR-NETWORK-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ALTAR-NETWORK-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ALTAR-NETWORK"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ALTAR-NETWORK-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ALTAR-NETWORK-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ALTAR-NETWORK-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ALTAR-NETWORK"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-PROVENANCE-REVIEW"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ANCESTRAL-SIGNAL-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ANCESTRAL-SIGNAL"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ANCESTRAL-SIGNAL-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ANCESTRAL-SIGNAL"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANIMAL-GUIDES-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-PROVENANCE-REVIEW"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANIMAL-GUIDES-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ANIMAL-GUIDES-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANIMAL-GUIDES-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ANIMAL-GUIDES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANIMAL-GUIDES-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ANIMAL-GUIDES-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ANIMAL-GUIDES-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ANIMAL-GUIDES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ARCHIVE-ROUTE-21-30-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-INCOMPLETE-PAGE-26"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ARCHIVE-ROUTE-21-30-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ARCHIVE-ROUTE-21-30-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ARCHIVE-ROUTE-21-30-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ARCHIVE-ROUTE-21-30"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-RETURN-GATE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-RETURN-GATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-RETURN-GATE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-RETURN-GATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-04",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-04"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-04",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-05",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-05"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-05",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-06",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-06"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-06",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-07",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ASTRAL-ROUTE-07"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ASTRAL-ROUTE-07",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CARDIAC-COSMOS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CARDIAC-COSMOS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CARDIAC-COSMOS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CARDIAC-COSMOS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CARDIAC-COSMOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CARDIAC-COSMOS-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CARDIAC-COSMOS-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CARDIAC-COSMOS-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CARDIAC-COSMOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CHRONO-SPIRAL-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CHRONO-SPIRAL-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CHRONO-SPIRAL-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CHRONO-SPIRAL-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CHRONO-SPIRAL"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CHRONO-SPIRAL-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CHRONO-SPIRAL-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CHRONO-SPIRAL-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CHRONO-SPIRAL"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CRANIAL-AXIS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CRANIAL-AXIS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CRANIAL-AXIS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CRANIAL-AXIS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CRANIAL-AXIS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CRANIAL-AXIS-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CRANIAL-AXIS-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CRANIAL-AXIS-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CRANIAL-AXIS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CREATION-WEAVE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CREATION-WEAVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CREATION-WEAVE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CREATION-WEAVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-CREATION-WEAVE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-CREATION-WEAVE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-CREATION-WEAVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DIGITAL-ALTAR-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DIGITAL-ALTAR"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DIGITAL-ALTAR-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DIGITAL-ALTAR"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DIGITAL-ALTAR-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DIGITAL-ALTAR"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-04",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DIGITAL-ALTAR-04"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DIGITAL-ALTAR-04",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DIGITAL-ALTAR"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DNA-ASCENT-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DNA-ASCENT-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DNA-ASCENT-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DNA-ASCENT-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DNA-ASCENT"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DNA-ASCENT-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DNA-ASCENT-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DNA-ASCENT-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DNA-ASCENT"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DREAM-CARTOGRAPHY-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DREAM-CARTOGRAPHY"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DREAM-CARTOGRAPHY-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DREAM-CARTOGRAPHY"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DREAM-CARTOGRAPHY-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DREAM-CARTOGRAPHY"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-GATE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-GATE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DREAM-GATE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-GATE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DREAM-GATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-GATE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-DREAM-GATE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-DREAM-GATE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-DREAM-GATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ECHO-COMMONS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ECHO-COMMONS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ECHO-COMMONS-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ECHO-COMMONS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ECHO-COMMONS-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ECHO-COMMONS-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ECHO-COMMONS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EGO-DISSOLUTION-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-RESEARCH"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EGO-DISSOLUTION-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-EGO-DISSOLUTION-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EGO-DISSOLUTION-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-EGO-DISSOLUTION"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EGO-DISSOLUTION-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-EGO-DISSOLUTION-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EGO-DISSOLUTION-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-EGO-DISSOLUTION"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-AERELIDOS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-AERELIDOS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-AERELIDOS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-AERELIDOS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-AERELIDOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-CREPUSCULOS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-CREPUSCULOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-CREPUSCULOS-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-CREPUSCULOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-IGNIFEROS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-IGNIFEROS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-IGNIFEROS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-IGNIFEROS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-IGNIFEROS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-LITOFIDOS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-LITOFIDOS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-LITOFIDOS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-LITOFIDOS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-LITOFIDOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-LUMENAS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-LUMENAS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-LUMENAS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-LUMENAS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-LUMENAS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-MICELIARES-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-MICELIARES-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-MICELIARES-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-MICELIARES-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-MICELIARES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-MICELIARES-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-MICELIARES-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-MICELIARES-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-MICELIARES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-NOMADAS-VERDES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-NOMADAS-VERDES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-POLINIS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-POLINIS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-POLINIS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-POLINIS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-POLINIS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-POLINIS-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-POLINIS-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-POLINIS-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-POLINIS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-RIOIDES-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-RIOIDES-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-RIOIDES-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-RIOIDES-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-RIOIDES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-SILVANOS-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-SILVANOS-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEM-SILVANOS-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEM-SILVANOS-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEM-SILVANOS"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-04",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-04"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-04",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-05",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-05"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-05",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-06",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-06"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-06",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-07",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-07"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-07",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-08",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-08"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-08",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-09",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-09"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-09",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-10",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-10"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-10",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-11",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-11"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-11",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-GARDEN-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-GARDEN"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-GARDEN-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-GARDEN"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-ELEMENTAL-GARDEN-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-ELEMENTAL-GARDEN"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-EYE-WITHIN-EYE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-EYE-WITHIN-EYE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-EYE-WITHIN-EYE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-EYE-WITHIN-EYE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-EYE-WITHIN-EYE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-EYE-WITHIN-EYE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-EYE-WITHIN-EYE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-FIELD-OF-EYES-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-FIELD-OF-EYES-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-FIELD-OF-EYES-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-FIELD-OF-EYES-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-FIELD-OF-EYES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-FIELD-OF-EYES-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-FIELD-OF-EYES-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-FIELD-OF-EYES-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-FIELD-OF-EYES"
+    },
+    {
+      "from": "SPEC-KDX-NODE-GENESIS-CRADLE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-GENESIS-CRADLE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-GENESIS-CRADLE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-GENESIS-CRADLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-CHAMBER-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-CHAMBER-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-HEART-CHAMBER-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-CHAMBER-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-HEART-CHAMBER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-CHAMBER-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-HEART-CHAMBER-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-CHAMBER-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-HEART-CHAMBER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-M-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-M-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-HEART-M-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-M-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-HEART-M"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-M-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-HEART-M-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-HEART-M-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-HEART-M"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-PROVENANCE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-KUNDALINI-PASSAGE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-KUNDALINI-PASSAGE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-KUNDALINI-PASSAGE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-KUNDALINI-PASSAGE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-KUNDALINI-PASSAGE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-KUNDALINI-PASSAGE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-LIVING-TEMPLE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-LIVING-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-LIVING-TEMPLE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-LIVING-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-LIVING-TEMPLE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-LIVING-TEMPLE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-LIVING-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MATTERS-CLAIM-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-RESEARCH"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MATTERS-CLAIM-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MATTERS-CLAIM-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MATTERS-CLAIM-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MATTERS-CLAIM"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MATTERS-CLAIM-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MATTERS-CLAIM-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MATTERS-CLAIM-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MATTERS-CLAIM"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEDITATING-POLARITY-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEDITATING-POLARITY-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MEDITATING-POLARITY-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEDITATING-POLARITY-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MEDITATING-POLARITY"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEDITATING-POLARITY-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MEDITATING-POLARITY-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEDITATING-POLARITY-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MEDITATING-POLARITY"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-ENGINE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-ENGINE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MEMORY-ENGINE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-ENGINE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MEMORY-ENGINE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-ENGINE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MEMORY-ENGINE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-ENGINE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MEMORY-ENGINE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-RIVER-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-RIVER-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MEMORY-RIVER-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-RIVER-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MEMORY-RIVER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-RIVER-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MEMORY-RIVER-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MEMORY-RIVER-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MEMORY-RIVER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-METAMORPHIC-THRESHOLD"
+    },
+    {
+      "from": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-METAMORPHIC-THRESHOLD"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIND-PRISON-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIND-PRISON-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MIND-PRISON-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIND-PRISON-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MIND-PRISON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIND-PRISON-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MIND-PRISON-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIND-PRISON-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MIND-PRISON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIRROR-ENGINE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIRROR-ENGINE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MIRROR-ENGINE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIRROR-ENGINE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MIRROR-ENGINE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIRROR-ENGINE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-MIRROR-ENGINE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-MIRROR-ENGINE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-MIRROR-ENGINE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-OBSIDIAN-VAULT-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-OBSIDIAN-VAULT-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-OBSIDIAN-VAULT-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-OBSIDIAN-VAULT-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-OBSIDIAN-VAULT"
+    },
+    {
+      "from": "SPEC-KDX-NODE-OBSIDIAN-VAULT-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-OBSIDIAN-VAULT-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-OBSIDIAN-VAULT-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-OBSIDIAN-VAULT"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PORTAL-ORGANISM-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PORTAL-ORGANISM"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PORTAL-ORGANISM-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PORTAL-ORGANISM"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PORTAL-ORGANISM-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PORTAL-ORGANISM-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PORTAL-ORGANISM"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PRIME-DOSSIER-31-37-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PRIME-DOSSIER-31-37"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PRIME-DOSSIER-31-37-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PRIME-DOSSIER-31-37"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PULSE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PULSE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PULSE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PULSE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PULSE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PULSE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-PULSE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-PULSE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-PULSE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-RETURN-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-RETURN-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-RETURN-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-RETURN-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-RETURN"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SIGNAL-TEMPLE-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SIGNAL-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SIGNAL-TEMPLE-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SIGNAL-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-03",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SIGNAL-TEMPLE-03"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-03",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SIGNAL-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-04",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SIGNAL-TEMPLE-04"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-TEMPLE-04",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SIGNAL-TEMPLE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-VORTEX-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-VORTEX-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SIGNAL-VORTEX-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-VORTEX-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SIGNAL-VORTEX"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-VORTEX-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SIGNAL-VORTEX-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SIGNAL-VORTEX-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SIGNAL-VORTEX"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOUL-WEAVER-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SOUL-WEAVER-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOUL-WEAVER-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SOUL-WEAVER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOURCE-CHAMBER-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOURCE-CHAMBER-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SOURCE-CHAMBER-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOURCE-CHAMBER-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SOURCE-CHAMBER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOURCE-CHAMBER-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-SOURCE-CHAMBER-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-SOURCE-CHAMBER-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-SOURCE-CHAMBER"
+    },
+    {
+      "from": "SPEC-KDX-NODE-STERNAL-STAR-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-STERNAL-STAR-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-STERNAL-STAR-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-STERNAL-STAR-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-STERNAL-STAR"
+    },
+    {
+      "from": "SPEC-KDX-NODE-STERNAL-STAR-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-STERNAL-STAR-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-STERNAL-STAR-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-STERNAL-STAR"
+    },
+    {
+      "from": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-CANON-CANDIDATE"
+    },
+    {
+      "from": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-UNIVERSE-ROUTE-11-20"
+    },
+    {
+      "from": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-UNIVERSE-ROUTE-11-20"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WE-TRIPANTU-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-PROVENANCE-REVIEW"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WE-TRIPANTU-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-WE-TRIPANTU-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WE-TRIPANTU-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-WE-TRIPANTU"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WE-TRIPANTU-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-WE-TRIPANTU-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WE-TRIPANTU-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-WE-TRIPANTU"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WENU-MAPU-01",
+      "relation": "IN_ZONE",
+      "to": "KDX-ZONE-NEEDS-PROVENANCE-REVIEW"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WENU-MAPU-01",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-WENU-MAPU-01"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WENU-MAPU-01",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-WENU-MAPU"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WENU-MAPU-02",
+      "relation": "SOURCED_FROM",
+      "to": "SRC-SPEC-KDX-NODE-WENU-MAPU-02"
+    },
+    {
+      "from": "SPEC-KDX-NODE-WENU-MAPU-02",
+      "relation": "SPECIFIES",
+      "to": "KDX-NODE-WENU-MAPU"
+    }
+  ]
+}

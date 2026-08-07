@@ -1,0 +1,7410 @@
+{
+  "system": "KODEX−∞",
+  "artifact": "derived-from-visual-atlas-master",
+  "bridge": "KOD-19 / Bridge 1",
+  "sourceOfTruth": "https://docs.google.com/spreadsheets/d/1RLhA2xmApx1YDfHIeWjIqlYz17OHkuxFbfUXejzcS_4",
+  "regenerable": true,
+  "doNotEditByHand": true,
+  "coordinateAssignmentPolicy": "Only A/M/Y are canonical. B–L and N–X are derived in Bridge 2 (KODEX_ALPHABET_MATRIX), never inferred from initials.",
+  "claimClassPolicy": "claimClass is never inferred. Unresolved records stay UNKNOWN per canon/KODEX_EPISTEMIC_STANDARD.md.",
+  "count": 600,
+  "nodes": [
+    {
+      "id": "KDX-BANK-RAW-014",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-014"
+    },
+    {
+      "id": "KDX-BANK-RAW-019",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-019"
+    },
+    {
+      "id": "KDX-BANK-RAW-020",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-020"
+    },
+    {
+      "id": "KDX-BANK-RAW-037",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-037"
+    },
+    {
+      "id": "KDX-BANK-RAW-040",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-040"
+    },
+    {
+      "id": "KDX-BANK-RAW-043",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-043"
+    },
+    {
+      "id": "KDX-BANK-RAW-044",
+      "type": "NODE",
+      "label": "KDX-BANK-RAW-044"
+    },
+    {
+      "id": "KDX-DUP-DIAGNOSTICS-018-A",
+      "type": "VISUAL_SPECIMEN",
+      "label": "1786031969249.png",
+      "specifies": null,
+      "primaryConcept": "DUPLICATE_ASSET → KDX-SCREEN-DIAGNOSTICS-018",
+      "secondaryConcepts": [
+        "Simulation Output",
+        "World Diagnostics alternate copy"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-DUP-MACHINE-011-A",
+      "type": "VISUAL_SPECIMEN",
+      "label": "1786031974820.png",
+      "specifies": null,
+      "primaryConcept": "DUPLICATE_ASSET → KDX-SCREEN-MACHINE-011",
+      "secondaryConcepts": [
+        "Quantum Fabricator",
+        "Reality Engine alternate copy"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-DUP-SYNTHESIS-019-A",
+      "type": "VISUAL_SPECIMEN",
+      "label": "1786031928170.png",
+      "specifies": null,
+      "primaryConcept": "DUPLICATE_ASSET → KDX-SCREEN-SYNTHESIS-019",
+      "secondaryConcepts": [
+        "Synthesis Chamber alternate copy"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-GLYPH-TILE-F07",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Glyph Tile System / Family F07",
+      "specifies": null,
+      "primaryConcept": "Sistema modular de glifos para tiling, expansión y campos complejos",
+      "secondaryConcepts": [
+        "base tile",
+        "D4 symmetry",
+        "module grid",
+        "rotation set",
+        "glyph breakdown",
+        "tiling modes"
+      ],
+      "mapZones": [
+        "GLYPH ARCHIVE",
+        "PATTERN"
+      ],
+      "symbols": [
+        "spire",
+        "fan",
+        "core",
+        "arm",
+        "void-star tile"
+      ],
+      "geometry": [
+        "D4 symmetry",
+        "8x8 module grid",
+        "grid",
+        "hex",
+        "radial tiling"
+      ],
+      "domains": [
+        "MATH",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "D4 symmetry is a real mathematical symmetry class; specific glyph is authorial",
+      "atlasStatus": "CANON_SYSTEM",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "DESIGN_SYSTEM"
+      ]
+    },
+    {
+      "id": "KDX-IMG-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Tríptico Wenu Mapu / Animales de Poder / We Tripantu",
+      "specifies": null,
+      "primaryConcept": "Cosmología territorial y ciclo",
+      "secondaryConcepts": [
+        "Wenu Mapu",
+        "animales guardianes",
+        "fuego",
+        "luna",
+        "montaña",
+        "raíz",
+        "renacimiento"
+      ],
+      "mapZones": [
+        "RETORNO",
+        "TERRITORIO",
+        "CICLO"
+      ],
+      "symbols": [
+        "estrella",
+        "media luna",
+        "ave",
+        "felino",
+        "zorro",
+        "serpiente",
+        "fuego",
+        "fases lunares"
+      ],
+      "geometry": [
+        "simetría axial",
+        "círculos concéntricos",
+        "eje vertical",
+        "tríptico"
+      ],
+      "domains": [
+        "ANC",
+        "SYM",
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Referencia autoral; requiere procedencia cultural detallada antes de canonizar significados",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-002",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Portal Organism",
+      "specifies": null,
+      "primaryConcept": "Umbral orgánico digital",
+      "secondaryConcepts": [
+        "membrana",
+        "núcleo",
+        "crecimiento",
+        "simbiosis",
+        "mutación",
+        "código",
+        "señal"
+      ],
+      "mapZones": [
+        "UMBRAL"
+      ],
+      "symbols": [
+        "núcleo",
+        "cavidad",
+        "portal",
+        "matriz ASCII"
+      ],
+      "geometry": [
+        "metaballs",
+        "SDF",
+        "cavidades celulares",
+        "crecimiento no simétrico"
+      ],
+      "domains": [
+        "ART",
+        "COMP",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Diseño conceptual KODEX; referencias biomórficas por documentar",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-003",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Heart / Node M",
+      "specifies": null,
+      "primaryConcept": "Nodo de orientación e integración",
+      "secondaryConcepts": [
+        "pulso",
+        "memoria",
+        "santuario",
+        "raíz",
+        "compasión",
+        "coherencia",
+        "retorno"
+      ],
+      "mapZones": [
+        "CONVERGENCIA",
+        "INTEGRACIÓN"
+      ],
+      "symbols": [
+        "corazón",
+        "toroide",
+        "rosa de brújula",
+        "raíz",
+        "flor",
+        "cámara"
+      ],
+      "geometry": [
+        "simetría radial",
+        "toroide",
+        "red vascular",
+        "cilindro"
+      ],
+      "domains": [
+        "BIO",
+        "PHI",
+        "SYM",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Corazón anatómico usado como símbolo autoral; separar fisiología de metáfora",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-004",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Flow Map / Arquitectura de experiencia",
+      "specifies": null,
+      "primaryConcept": "Topología maestra del viaje",
+      "secondaryConcepts": [
+        "potencial",
+        "umbral",
+        "divergencia",
+        "exploración",
+        "corazón",
+        "integración",
+        "retorno",
+        "nueva forma"
+      ],
+      "mapZones": [
+        "MAPA COMPLETO"
+      ],
+      "symbols": [
+        "corrientes",
+        "corazón",
+        "portal",
+        "infinito",
+        "pulso",
+        "vórtice"
+      ],
+      "geometry": [
+        "campo de líneas",
+        "atractores",
+        "bifurcaciones",
+        "simetría longitudinal"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Arquitectura autoral KODEX; no representa una ley universal de conciencia",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "domain": [
+        "MODEL_CANDIDATE"
+      ]
+    },
+    {
+      "id": "KDX-IMG-005",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Hypercoil / Möbius Lattice",
+      "specifies": null,
+      "primaryConcept": "Continuidad recursiva y superficie sin orientación",
+      "secondaryConcepts": [
+        "Möbius",
+        "lazo",
+        "recursión",
+        "continuidad",
+        "torsión",
+        "retorno",
+        "memoria"
+      ],
+      "mapZones": [
+        "MÁQUINA",
+        "RETORNO"
+      ],
+      "symbols": [
+        "lazo",
+        "toroide",
+        "cinta",
+        "espina"
+      ],
+      "geometry": [
+        "banda de Möbius",
+        "entramado helicoidal",
+        "superficie retorcida"
+      ],
+      "domains": [
+        "MATH",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Estudio visual autoral; la cinta de Möbius es una referencia matemática real",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-006",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Null Knot / Relic Engine",
+      "specifies": null,
+      "primaryConcept": "Nudo imposible como motor de anomalía",
+      "secondaryConcepts": [
+        "nudo",
+        "reliquia",
+        "intersección",
+        "conflicto",
+        "pliegue",
+        "anomalía",
+        "vacío"
+      ],
+      "mapZones": [
+        "ANOMALÍA",
+        "DIVERGENCIA"
+      ],
+      "symbols": [
+        "nudo",
+        "anillos cruzados",
+        "espinas",
+        "bucles"
+      ],
+      "geometry": [
+        "entrelazado espacial",
+        "lazos no resolubles visualmente"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Objeto especulativo KODEX; no representa un nudo matemático identificado todavía",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "domain": [
+        "MODEL_CANDIDATE"
+      ]
+    },
+    {
+      "id": "KDX-IMG-007",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Spectral Frame / Perspective Engine",
+      "specifies": null,
+      "primaryConcept": "La estructura cambia con el punto de vista",
+      "secondaryConcepts": [
+        "marco",
+        "perspectiva",
+        "observador",
+        "frecuencia",
+        "elección",
+        "superposición"
+      ],
+      "mapZones": [
+        "OBSERVADOR",
+        "EXPLORACIÓN"
+      ],
+      "symbols": [
+        "marcos",
+        "aros",
+        "cuerdas",
+        "doble círculo"
+      ],
+      "geometry": [
+        "poliedros incompletos",
+        "superficies regladas",
+        "lazos enlazados"
+      ],
+      "domains": [
+        "PHI",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Afirmación filosófica y artística; no equivale a relatividad física",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-008",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Anatomical Torus / Body Field",
+      "specifies": null,
+      "primaryConcept": "Cuerpo como interfaz entre materia y campo",
+      "secondaryConcepts": [
+        "anatomía",
+        "esqueleto",
+        "toroide",
+        "eje",
+        "respiración",
+        "orientación",
+        "microcosmos"
+      ],
+      "mapZones": [
+        "CUERPO",
+        "INTEGRACIÓN"
+      ],
+      "symbols": [
+        "cuerpo axial",
+        "toroides",
+        "sol",
+        "luna",
+        "estrellas",
+        "cruz direccional"
+      ],
+      "geometry": [
+        "simetría bilateral",
+        "doble toroide",
+        "eje cefalocaudal"
+      ],
+      "domains": [
+        "BIO",
+        "SYM",
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Anatomía real combinada con campo toroidal simbólico; no afirmar campo energético medido sin fuente",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-013",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Meditating Polarity Torus",
+      "specifies": null,
+      "primaryConcept": "Cuerpo meditante entre polaridades",
+      "secondaryConcepts": [
+        "toroide",
+        "polaridad",
+        "respiración",
+        "presencia",
+        "equilibrio",
+        "eje"
+      ],
+      "mapZones": [
+        "CUERPO",
+        "INTEGRACIÓN"
+      ],
+      "symbols": [
+        "más",
+        "menos",
+        "cuerpo",
+        "doble toroide",
+        "eje"
+      ],
+      "geometry": [
+        "doble toroide",
+        "simetría bilateral",
+        "eje vertical"
+      ],
+      "domains": [
+        "BIO",
+        "SYM",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Anatomía y meditación combinadas con campo toroidal simbólico; no afirmar bioenergía medida sin fuente",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-014",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Sternal Star / Respiratory Constellation",
+      "specifies": null,
+      "primaryConcept": "Respiración como orientación estelar",
+      "secondaryConcepts": [
+        "caja torácica",
+        "pulmones",
+        "esternón",
+        "estrella",
+        "red",
+        "aliento",
+        "eje"
+      ],
+      "mapZones": [
+        "CUERPO",
+        "SEÑAL"
+      ],
+      "symbols": [
+        "estrella",
+        "costillas",
+        "pulmones",
+        "constelación",
+        "eje"
+      ],
+      "geometry": [
+        "simetría torácica",
+        "estrella radial",
+        "grafo constelar"
+      ],
+      "domains": [
+        "BIO",
+        "SYM",
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Anatomía respiratoria real con estrella y red como traducción simbólica KODEX",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-015",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Cranial Axis / Thought Fountain",
+      "specifies": null,
+      "primaryConcept": "Cráneo como cámara de orientación y emisión",
+      "secondaryConcepts": [
+        "cráneo",
+        "cerebro",
+        "columna",
+        "fuente",
+        "eje",
+        "percepción",
+        "señal"
+      ],
+      "mapZones": [
+        "OBSERVADOR",
+        "DESCENSO"
+      ],
+      "symbols": [
+        "cráneo",
+        "esfera",
+        "haz axial",
+        "malla toroidal"
+      ],
+      "geometry": [
+        "esfera armilar",
+        "eje cefalocaudal",
+        "líneas de flujo"
+      ],
+      "domains": [
+        "BIO",
+        "PHI",
+        "SYM",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Anatomía craneal real combinada con campo y emisión simbólicos; evitar neuroafirmaciones no sustentadas",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-016",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Cardiac Cosmos / Memory Crown",
+      "specifies": null,
+      "primaryConcept": "Corazón como germinador de memoria cósmica",
+      "secondaryConcepts": [
+        "corazón",
+        "estrellas",
+        "árbol",
+        "corona",
+        "memoria",
+        "toroide",
+        "orientación"
+      ],
+      "mapZones": [
+        "HEART",
+        "CONVERGENCIA"
+      ],
+      "symbols": [
+        "corazón",
+        "árbol estelar",
+        "doble toroide",
+        "cuatro coordenadas"
+      ],
+      "geometry": [
+        "simetría axial",
+        "doble toroide",
+        "ramificación fractal"
+      ],
+      "domains": [
+        "BIO",
+        "SYM",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Corazón anatómico con árbol estelar y toroide como construcción visual KODEX",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-017",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Mirrored Bodies Shared Field",
+      "specifies": null,
+      "primaryConcept": null,
+      "secondaryConcepts": [],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "STUB"
+    },
+    {
+      "id": "KDX-IMG-018",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Polar Bear Cryosphere Guardian",
+      "specifies": null,
+      "primaryConcept": null,
+      "secondaryConcepts": [],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "STUB"
+    },
+    {
+      "id": "KDX-IMG-019",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Red Serpent Transformation Coil",
+      "specifies": null,
+      "primaryConcept": null,
+      "secondaryConcepts": [],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "STUB"
+    },
+    {
+      "id": "KDX-IMG-020",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Jellyfish Luminous Drifter",
+      "specifies": null,
+      "primaryConcept": null,
+      "secondaryConcepts": [],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "STUB"
+    },
+    {
+      "id": "KDX-IMG-025",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Penguin / Thermal Collective",
+      "specifies": null,
+      "primaryConcept": "Adaptación térmica y cooperación corporal",
+      "secondaryConcepts": [
+        "penguin",
+        "cold",
+        "huddle",
+        "insulation",
+        "colony",
+        "orientation",
+        "endurance"
+      ],
+      "mapZones": [
+        "TERRITORIO",
+        "CUERPO",
+        "COLECTIVO"
+      ],
+      "symbols": [
+        "plumage",
+        "flippers",
+        "compact body",
+        "boundary"
+      ],
+      "geometry": [
+        "bilateral symmetry",
+        "thermal envelope",
+        "clustered field"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Real animal reference with stylized iridescence; species identification pending",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Prototype flock compression and reduced-motion state",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-026",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Bat / Echolocation Cartographer",
+      "specifies": null,
+      "primaryConcept": "Percepción espacial mediante señal reflejada",
+      "secondaryConcepts": [
+        "bat",
+        "echolocation",
+        "night",
+        "membrane",
+        "pulse",
+        "mapping",
+        "return signal"
+      ],
+      "mapZones": [
+        "SEÑAL",
+        "OBSERVADOR",
+        "NOCHE"
+      ],
+      "symbols": [
+        "wing membrane",
+        "ear",
+        "pulse rings",
+        "dark field"
+      ],
+      "geometry": [
+        "radial wavefronts",
+        "triangulation",
+        "membrane topology"
+      ],
+      "domains": [
+        "BIO",
+        "COMP",
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Real biological capacity translated into speculative interface",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Separate real echolocation from symbolic navigation",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-027",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Chameleon / Chromatic Negotiator",
+      "specifies": null,
+      "primaryConcept": "Adaptation as active negotiation with environment",
+      "secondaryConcepts": [
+        "chameleon",
+        "color",
+        "skin",
+        "perception",
+        "camouflage",
+        "communication",
+        "gaze"
+      ],
+      "mapZones": [
+        "VIDA",
+        "ANOMALÍA",
+        "INTERFAZ"
+      ],
+      "symbols": [
+        "spiral tail",
+        "eye turret",
+        "granular scales",
+        "crest"
+      ],
+      "geometry": [
+        "surface field",
+        "distributed cells",
+        "radial gaze"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Real animal reference with exaggerated palette; species sourcing pending",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Document color as signaling and regulation",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-028",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Abyssal Dragon / Bioluminescent Threshold",
+      "specifies": null,
+      "primaryConcept": "Self-generated light inside an opaque environment",
+      "secondaryConcepts": [
+        "deep sea",
+        "bioluminescence",
+        "pressure",
+        "predator",
+        "signal",
+        "aquatic dragon"
+      ],
+      "mapZones": [
+        "DESCENSO",
+        "ABISMO",
+        "SEÑAL"
+      ],
+      "symbols": [
+        "elongated body",
+        "fins",
+        "filament",
+        "luminous organs",
+        "coil"
+      ],
+      "geometry": [
+        "serpentine curve",
+        "wave body",
+        "point-light network"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "SPEC",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Highly stylized creature; taxonomic identity uncertain",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Prototype darkness-preserving navigation",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-029",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Iridescent Spider / Pattern Weaver",
+      "specifies": null,
+      "primaryConcept": "Construcción de redes, tensión y percepción distribuida",
+      "secondaryConcepts": [
+        "araña",
+        "seda",
+        "vibración",
+        "simetría corporal",
+        "patrón",
+        "trampa",
+        "sensibilidad",
+        "arquitectura"
+      ],
+      "mapZones": [
+        "RED",
+        "ANOMALÍA",
+        "BESTIARIO"
+      ],
+      "symbols": [
+        "araña",
+        "red",
+        "rombo",
+        "abdomen segmentado",
+        "ocho ejes"
+      ],
+      "geometry": [
+        "simetría bilateral",
+        "red radial",
+        "articulaciones",
+        "patrones lineales"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "COMP",
+        "SYM"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Referencia visual estilizada; identificar especie antes de cualquier afirmación biológica específica",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Prototipo de red táctil con memoria de perturbaciones",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-030",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Snowy Owl / Silent Observer",
+      "specifies": null,
+      "primaryConcept": "Observación silenciosa y orientación en baja señal",
+      "secondaryConcepts": [
+        "búho nival",
+        "mirada frontal",
+        "silencio",
+        "nieve",
+        "audición",
+        "vigilancia",
+        "territorio polar"
+      ],
+      "mapZones": [
+        "OBSERVADOR",
+        "TERRITORIO",
+        "SILENCIO"
+      ],
+      "symbols": [
+        "ojos",
+        "plumas",
+        "máscara facial",
+        "glifos dérmicos",
+        "blanco polar"
+      ],
+      "geometry": [
+        "simetría bilateral",
+        "disco facial",
+        "óvalo",
+        "capas plumarias"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "PHI",
+        "SYM"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Búho nival estilizado; patrones iridiscentes son intervención artística KODEX",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Crear interacción basada en quietud sin activar cámara ni recopilar datos personales",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-031",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Crystal Seahorse / Spiral Incubator",
+      "specifies": null,
+      "primaryConcept": "Gestación, protección y movimiento espiral en medio acuático",
+      "secondaryConcepts": [
+        "caballito de mar",
+        "cola espiral",
+        "placas",
+        "incubación",
+        "cuidado",
+        "deriva",
+        "agua",
+        "transparencia"
+      ],
+      "mapZones": [
+        "AGUA",
+        "VIDA",
+        "RETORNO"
+      ],
+      "symbols": [
+        "espiral",
+        "placas",
+        "corona",
+        "aleta dorsal",
+        "ojo",
+        "cavidad gestante"
+      ],
+      "geometry": [
+        "espiral logarítmica aproximada",
+        "segmentación",
+        "eje curvo",
+        "repetición de placas"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "SYM",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Caballito de mar altamente estilizado; verificar biología reproductiva antes del texto científico",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Prototipo de incubación interactiva sin gamificar el cuidado como puntaje",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-IMG-032",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Pale Axolotl / Threshold Regenerator",
+      "specifies": null,
+      "primaryConcept": "Regeneración visible y permanencia en estado liminal",
+      "secondaryConcepts": [
+        "axolote",
+        "branquias externas",
+        "neotenia",
+        "agua",
+        "reparación",
+        "continuidad",
+        "umbral"
+      ],
+      "mapZones": [
+        "AGUA",
+        "UMBRAL",
+        "REGENERACIÓN"
+      ],
+      "symbols": [
+        "branquias ramificadas",
+        "rostro frontal",
+        "piel translúcida",
+        "seis coronas laterales"
+      ],
+      "geometry": [
+        "simetría bilateral",
+        "ramificación",
+        "membrana",
+        "volumen blando"
+      ],
+      "domains": [
+        "BIO",
+        "ART",
+        "PHI",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Axolote estilizado; documentar regeneración real y evitar extrapolarla a humanos",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": "Crear relación formal con KDX-IMG-021 sin duplicar el mismo nodo",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-MAP-ALPHABET",
+      "type": "ROUTE",
+      "label": "KDX-MAP-ALPHABET"
+    },
+    {
+      "id": "KDX-MAP-FLOW-001",
+      "type": "ROUTE",
+      "label": "KDX-MAP-FLOW-001"
+    },
+    {
+      "id": "KDX-MODULE-ALPHABETGRAPH-TS",
+      "type": "CODE_MODULE",
+      "label": "AlphabetGraph.ts"
+    },
+    {
+      "id": "KDX-MODULE-ANATOMICALCOSMOLOGY-TS",
+      "type": "CODE_MODULE",
+      "label": "AnatomicalCosmology.ts"
+    },
+    {
+      "id": "KDX-MODULE-ANOMALYMUTATION-TS",
+      "type": "CODE_MODULE",
+      "label": "AnomalyMutation.ts"
+    },
+    {
+      "id": "KDX-MODULE-AQUATIC-SPLINE-TS-MEMBRANE-SHADER-GLSL",
+      "type": "CODE_MODULE",
+      "label": "aquatic-spline.ts; membrane-shader.glsl"
+    },
+    {
+      "id": "KDX-MODULE-ARCHIVEENGINE-TS",
+      "type": "CODE_MODULE",
+      "label": "ArchiveEngine.ts"
+    },
+    {
+      "id": "KDX-MODULE-BIOLUMINESCENTTHRESHOLDSCENE-TS",
+      "type": "CODE_MODULE",
+      "label": "BioluminescentThresholdScene.ts"
+    },
+    {
+      "id": "KDX-MODULE-CHROMATICNEGOTIATIONSHADER-GLSL",
+      "type": "CODE_MODULE",
+      "label": "ChromaticNegotiationShader.glsl"
+    },
+    {
+      "id": "KDX-MODULE-COMMONSTRACE-TS",
+      "type": "CODE_MODULE",
+      "label": "CommonsTrace.ts"
+    },
+    {
+      "id": "KDX-MODULE-ECHOMAPPROTOCOL-TS",
+      "type": "CODE_MODULE",
+      "label": "EchoMapProtocol.ts"
+    },
+    {
+      "id": "KDX-MODULE-FLOWMAPPROVENANCE-TS",
+      "type": "CODE_MODULE",
+      "label": "FlowMapProvenance.ts"
+    },
+    {
+      "id": "KDX-MODULE-HEARTORIENTATION-TS",
+      "type": "CODE_MODULE",
+      "label": "HeartOrientation.ts"
+    },
+    {
+      "id": "KDX-MODULE-OBSERVERMIRROR-TS",
+      "type": "CODE_MODULE",
+      "label": "ObserverMirror.ts"
+    },
+    {
+      "id": "KDX-MODULE-ORIGINFIELDSCENE-TS",
+      "type": "CODE_MODULE",
+      "label": "OriginFieldScene.ts"
+    },
+    {
+      "id": "KDX-MODULE-REGENERATION-STATE-TS-TISSUE-GROWTH-GLSL",
+      "type": "CODE_MODULE",
+      "label": "regeneration-state.ts; tissue-growth.glsl"
+    },
+    {
+      "id": "KDX-MODULE-RETURNARTIFACT-TS",
+      "type": "CODE_MODULE",
+      "label": "ReturnArtifact.ts"
+    },
+    {
+      "id": "KDX-MODULE-SOURCETRUTHMATRIX-TS",
+      "type": "CODE_MODULE",
+      "label": "SourceTruthMatrix.ts"
+    },
+    {
+      "id": "KDX-MODULE-STILLNESS-DETECTOR-TS-POLAR-NOISE-GLSL",
+      "type": "CODE_MODULE",
+      "label": "stillness-detector.ts; polar-noise.glsl"
+    },
+    {
+      "id": "KDX-MODULE-STRATIFIEDMEMORY-TS",
+      "type": "CODE_MODULE",
+      "label": "StratifiedMemory.ts"
+    },
+    {
+      "id": "KDX-MODULE-THERMALCOLLECTIVESCENE-TS",
+      "type": "CODE_MODULE",
+      "label": "ThermalCollectiveScene.ts"
+    },
+    {
+      "id": "KDX-MODULE-THRESHOLDCONSENT-TS",
+      "type": "CODE_MODULE",
+      "label": "ThresholdConsent.ts"
+    },
+    {
+      "id": "KDX-MODULE-VERLET-WEB-TS-VIBRATION-PROPAGATION-GLSL",
+      "type": "CODE_MODULE",
+      "label": "verlet-web.ts; vibration-propagation.glsl"
+    },
+    {
+      "id": "KDX-MODULE-VISUALLINEAGE-TS",
+      "type": "CODE_MODULE",
+      "label": "VisualLineage.ts"
+    },
+    {
+      "id": "KDX-MOTION-KODELIFE-002",
+      "type": "VISUAL_SPECIMEN",
+      "label": "kodex_kodelife_detail_v2.gif",
+      "specifies": null,
+      "primaryConcept": "MOTION_REFERENCE / SHADER",
+      "secondaryConcepts": [
+        "PENDING_MOTION_ANALYSIS"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-MOTION-LIVING-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "kodex_living_elements_preview.gif",
+      "specifies": null,
+      "primaryConcept": "MOTION_ASSET / LIVING ELEMENTS",
+      "secondaryConcepts": [
+        "PENDING_MOTION_ANALYSIS"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-MOTION-STRANDS-003",
+      "type": "VISUAL_SPECIMEN",
+      "label": "kodex_parametric_strands_real.gif",
+      "specifies": null,
+      "primaryConcept": "MOTION_REFERENCE / PARAMETRIC STRANDS",
+      "secondaryConcepts": [
+        "PENDING_MOTION_ANALYSIS"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-NODE-11-11",
+      "type": "NODE",
+      "label": "KDX-NODE-11-11"
+    },
+    {
+      "id": "KDX-NODE-A",
+      "type": "NODE",
+      "label": "KDX-NODE-A"
+    },
+    {
+      "id": "KDX-NODE-ABYSSAL-DRAGON",
+      "type": "NODE",
+      "label": "KDX-NODE-ABYSSAL-DRAGON"
+    },
+    {
+      "id": "KDX-NODE-ADAPTIVE-SURFACE",
+      "type": "NODE",
+      "label": "KDX-NODE-ADAPTIVE-SURFACE"
+    },
+    {
+      "id": "KDX-NODE-ALTAR-NETWORK",
+      "type": "NODE",
+      "label": "KDX-NODE-ALTAR-NETWORK"
+    },
+    {
+      "id": "KDX-NODE-ALTERED-STATES",
+      "type": "NODE",
+      "label": "KDX-NODE-ALTERED-STATES"
+    },
+    {
+      "id": "KDX-NODE-ANATOMICAL-STAR",
+      "type": "NODE",
+      "label": "KDX-NODE-ANATOMICAL-STAR"
+    },
+    {
+      "id": "KDX-NODE-ANATOMY",
+      "type": "NODE",
+      "label": "KDX-NODE-ANATOMY"
+    },
+    {
+      "id": "KDX-NODE-ANCESTRAL-DATA-STREAM",
+      "type": "NODE",
+      "label": "KDX-NODE-ANCESTRAL-DATA-STREAM"
+    },
+    {
+      "id": "KDX-NODE-ANCESTRAL-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-ANCESTRAL-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-ANIMAL-GUIDES",
+      "type": "NODE",
+      "label": "KDX-NODE-ANIMAL-GUIDES"
+    },
+    {
+      "id": "KDX-NODE-ANOMALY",
+      "type": "NODE",
+      "label": "KDX-NODE-ANOMALY"
+    },
+    {
+      "id": "KDX-NODE-ANUNNA",
+      "type": "NODE",
+      "label": "KDX-NODE-ANUNNA"
+    },
+    {
+      "id": "KDX-NODE-AQUATIC-CARE",
+      "type": "NODE",
+      "label": "KDX-NODE-AQUATIC-CARE"
+    },
+    {
+      "id": "KDX-NODE-ARCHIVE-ENGINE",
+      "type": "NODE",
+      "label": "KDX-NODE-ARCHIVE-ENGINE"
+    },
+    {
+      "id": "KDX-NODE-ARCHIVE-ROUTE-21-30",
+      "type": "NODE",
+      "label": "KDX-NODE-ARCHIVE-ROUTE-21-30"
+    },
+    {
+      "id": "KDX-NODE-ARCHIVE-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-ARCHIVE-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-ASTRAL-RETURN-GATE",
+      "type": "NODE",
+      "label": "KDX-NODE-ASTRAL-RETURN-GATE"
+    },
+    {
+      "id": "KDX-NODE-ASTRAL-ROUTE",
+      "type": "NODE",
+      "label": "KDX-NODE-ASTRAL-ROUTE"
+    },
+    {
+      "id": "KDX-NODE-AXIS",
+      "type": "NODE",
+      "label": "KDX-NODE-AXIS"
+    },
+    {
+      "id": "KDX-NODE-BAT",
+      "type": "NODE",
+      "label": "KDX-NODE-BAT"
+    },
+    {
+      "id": "KDX-NODE-BIO-INTEGRATION",
+      "type": "NODE",
+      "label": "KDX-NODE-BIO-INTEGRATION"
+    },
+    {
+      "id": "KDX-NODE-BIOLOGICAL-INFORMATION",
+      "type": "NODE",
+      "label": "KDX-NODE-BIOLOGICAL-INFORMATION"
+    },
+    {
+      "id": "KDX-NODE-BIOLUMINESCENT-THRESHOLD",
+      "type": "NODE",
+      "label": "KDX-NODE-BIOLUMINESCENT-THRESHOLD"
+    },
+    {
+      "id": "KDX-NODE-BIOMECH-CHASSIS",
+      "type": "NODE",
+      "label": "KDX-NODE-BIOMECH-CHASSIS"
+    },
+    {
+      "id": "KDX-NODE-BLACK-HOLE",
+      "type": "NODE",
+      "label": "KDX-NODE-BLACK-HOLE"
+    },
+    {
+      "id": "KDX-NODE-BODY-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-BODY-FIELD"
+    },
+    {
+      "id": "KDX-NODE-BODY-MAP",
+      "type": "NODE",
+      "label": "KDX-NODE-BODY-MAP"
+    },
+    {
+      "id": "KDX-NODE-BODY-REPAIR",
+      "type": "NODE",
+      "label": "KDX-NODE-BODY-REPAIR"
+    },
+    {
+      "id": "KDX-NODE-BOUNDARY",
+      "type": "NODE",
+      "label": "KDX-NODE-BOUNDARY"
+    },
+    {
+      "id": "KDX-NODE-BREATH",
+      "type": "NODE",
+      "label": "KDX-NODE-BREATH"
+    },
+    {
+      "id": "KDX-NODE-CARDIAC-COSMOS",
+      "type": "NODE",
+      "label": "KDX-NODE-CARDIAC-COSMOS"
+    },
+    {
+      "id": "KDX-NODE-CHAMELEON",
+      "type": "NODE",
+      "label": "KDX-NODE-CHAMELEON"
+    },
+    {
+      "id": "KDX-NODE-CHROMATIC-STATE",
+      "type": "NODE",
+      "label": "KDX-NODE-CHROMATIC-STATE"
+    },
+    {
+      "id": "KDX-NODE-CHRONO-SPIRAL",
+      "type": "NODE",
+      "label": "KDX-NODE-CHRONO-SPIRAL"
+    },
+    {
+      "id": "KDX-NODE-COHERENCE",
+      "type": "NODE",
+      "label": "KDX-NODE-COHERENCE"
+    },
+    {
+      "id": "KDX-NODE-COILED-RETURN",
+      "type": "NODE",
+      "label": "KDX-NODE-COILED-RETURN"
+    },
+    {
+      "id": "KDX-NODE-COLLECTIVE-TRACE",
+      "type": "NODE",
+      "label": "KDX-NODE-COLLECTIVE-TRACE"
+    },
+    {
+      "id": "KDX-NODE-COMMONS",
+      "type": "NODE",
+      "label": "KDX-NODE-COMMONS"
+    },
+    {
+      "id": "KDX-NODE-COMPASS",
+      "type": "NODE",
+      "label": "KDX-NODE-COMPASS"
+    },
+    {
+      "id": "KDX-NODE-COMPASS-FRAGMENT",
+      "type": "NODE",
+      "label": "KDX-NODE-COMPASS-FRAGMENT"
+    },
+    {
+      "id": "KDX-NODE-COMPLEMENTARITY",
+      "type": "NODE",
+      "label": "KDX-NODE-COMPLEMENTARITY"
+    },
+    {
+      "id": "KDX-NODE-CONSENT",
+      "type": "NODE",
+      "label": "KDX-NODE-CONSENT"
+    },
+    {
+      "id": "KDX-NODE-CONSTRUCTOR-AGENT",
+      "type": "NODE",
+      "label": "KDX-NODE-CONSTRUCTOR-AGENT"
+    },
+    {
+      "id": "KDX-NODE-CONTAINMENT",
+      "type": "NODE",
+      "label": "KDX-NODE-CONTAINMENT"
+    },
+    {
+      "id": "KDX-NODE-CONTAINMENT-CHAMBER",
+      "type": "NODE",
+      "label": "KDX-NODE-CONTAINMENT-CHAMBER"
+    },
+    {
+      "id": "KDX-NODE-CONVERGENCE",
+      "type": "NODE",
+      "label": "KDX-NODE-CONVERGENCE"
+    },
+    {
+      "id": "KDX-NODE-CORE-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-CORE-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-COSMIC-ANCHOR",
+      "type": "NODE",
+      "label": "KDX-NODE-COSMIC-ANCHOR"
+    },
+    {
+      "id": "KDX-NODE-COSMIC-SPHERE",
+      "type": "NODE",
+      "label": "KDX-NODE-COSMIC-SPHERE"
+    },
+    {
+      "id": "KDX-NODE-COSMOLOGY",
+      "type": "NODE",
+      "label": "KDX-NODE-COSMOLOGY"
+    },
+    {
+      "id": "KDX-NODE-COSMOLOGY-CORE",
+      "type": "NODE",
+      "label": "KDX-NODE-COSMOLOGY-CORE"
+    },
+    {
+      "id": "KDX-NODE-COSMOLOGY-MAP",
+      "type": "NODE",
+      "label": "KDX-NODE-COSMOLOGY-MAP"
+    },
+    {
+      "id": "KDX-NODE-CRANIAL-AXIS",
+      "type": "NODE",
+      "label": "KDX-NODE-CRANIAL-AXIS"
+    },
+    {
+      "id": "KDX-NODE-CREATION-WEAVE",
+      "type": "NODE",
+      "label": "KDX-NODE-CREATION-WEAVE"
+    },
+    {
+      "id": "KDX-NODE-CRYSTAL-HEART",
+      "type": "NODE",
+      "label": "KDX-NODE-CRYSTAL-HEART"
+    },
+    {
+      "id": "KDX-NODE-D4-SYMMETRY",
+      "type": "NODE",
+      "label": "KDX-NODE-D4-SYMMETRY"
+    },
+    {
+      "id": "KDX-NODE-DARK-GODDESS",
+      "type": "NODE",
+      "label": "KDX-NODE-DARK-GODDESS"
+    },
+    {
+      "id": "KDX-NODE-DIAGONAL-BAND",
+      "type": "NODE",
+      "label": "KDX-NODE-DIAGONAL-BAND"
+    },
+    {
+      "id": "KDX-NODE-DIGITAL-ALTAR",
+      "type": "NODE",
+      "label": "KDX-NODE-DIGITAL-ALTAR"
+    },
+    {
+      "id": "KDX-NODE-DIMENSIONAL-WEAVER",
+      "type": "NODE",
+      "label": "KDX-NODE-DIMENSIONAL-WEAVER"
+    },
+    {
+      "id": "KDX-NODE-DNA",
+      "type": "NODE",
+      "label": "KDX-NODE-DNA"
+    },
+    {
+      "id": "KDX-NODE-DNA-ASCENT",
+      "type": "NODE",
+      "label": "KDX-NODE-DNA-ASCENT"
+    },
+    {
+      "id": "KDX-NODE-DREAM-CARTOGRAPHY",
+      "type": "NODE",
+      "label": "KDX-NODE-DREAM-CARTOGRAPHY"
+    },
+    {
+      "id": "KDX-NODE-DREAM-GATE",
+      "type": "NODE",
+      "label": "KDX-NODE-DREAM-GATE"
+    },
+    {
+      "id": "KDX-NODE-ECHO-COMMONS",
+      "type": "NODE",
+      "label": "KDX-NODE-ECHO-COMMONS"
+    },
+    {
+      "id": "KDX-NODE-ECHO-MAP",
+      "type": "NODE",
+      "label": "KDX-NODE-ECHO-MAP"
+    },
+    {
+      "id": "KDX-NODE-ECHOLOCATION",
+      "type": "NODE",
+      "label": "KDX-NODE-ECHOLOCATION"
+    },
+    {
+      "id": "KDX-NODE-EGO-DISSOLUTION",
+      "type": "NODE",
+      "label": "KDX-NODE-EGO-DISSOLUTION"
+    },
+    {
+      "id": "KDX-NODE-ELEM-AERELIDOS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-AERELIDOS"
+    },
+    {
+      "id": "KDX-NODE-ELEM-CREPUSCULOS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-CREPUSCULOS"
+    },
+    {
+      "id": "KDX-NODE-ELEM-IGNIFEROS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-IGNIFEROS"
+    },
+    {
+      "id": "KDX-NODE-ELEM-LITOFIDOS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-LITOFIDOS"
+    },
+    {
+      "id": "KDX-NODE-ELEM-LUMENAS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-LUMENAS"
+    },
+    {
+      "id": "KDX-NODE-ELEM-MICELIARES",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-MICELIARES"
+    },
+    {
+      "id": "KDX-NODE-ELEM-NOMADAS-VERDES",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-NOMADAS-VERDES"
+    },
+    {
+      "id": "KDX-NODE-ELEM-POLINIS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-POLINIS"
+    },
+    {
+      "id": "KDX-NODE-ELEM-RIOIDES",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-RIOIDES"
+    },
+    {
+      "id": "KDX-NODE-ELEM-SILVANOS",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEM-SILVANOS"
+    },
+    {
+      "id": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEMENTAL-ARCHIVE"
+    },
+    {
+      "id": "KDX-NODE-ELEMENTAL-GARDEN",
+      "type": "NODE",
+      "label": "KDX-NODE-ELEMENTAL-GARDEN"
+    },
+    {
+      "id": "KDX-NODE-ENTROPY",
+      "type": "NODE",
+      "label": "KDX-NODE-ENTROPY"
+    },
+    {
+      "id": "KDX-NODE-ENTRY-VECTOR",
+      "type": "NODE",
+      "label": "KDX-NODE-ENTRY-VECTOR"
+    },
+    {
+      "id": "KDX-NODE-EROSION",
+      "type": "NODE",
+      "label": "KDX-NODE-EROSION"
+    },
+    {
+      "id": "KDX-NODE-EVOLUTION-CHAIN",
+      "type": "NODE",
+      "label": "KDX-NODE-EVOLUTION-CHAIN"
+    },
+    {
+      "id": "KDX-NODE-EYE-WITHIN-EYE",
+      "type": "NODE",
+      "label": "KDX-NODE-EYE-WITHIN-EYE"
+    },
+    {
+      "id": "KDX-NODE-FEATHERED-REPTILE",
+      "type": "NODE",
+      "label": "KDX-NODE-FEATHERED-REPTILE"
+    },
+    {
+      "id": "KDX-NODE-FEEDBACK",
+      "type": "NODE",
+      "label": "KDX-NODE-FEEDBACK"
+    },
+    {
+      "id": "KDX-NODE-FIELD-MATRIX",
+      "type": "NODE",
+      "label": "KDX-NODE-FIELD-MATRIX"
+    },
+    {
+      "id": "KDX-NODE-FIELD-OF-EYES",
+      "type": "NODE",
+      "label": "KDX-NODE-FIELD-OF-EYES"
+    },
+    {
+      "id": "KDX-NODE-FLOATING-WORLD",
+      "type": "NODE",
+      "label": "KDX-NODE-FLOATING-WORLD"
+    },
+    {
+      "id": "KDX-NODE-FOUR-DIRECTIONS",
+      "type": "NODE",
+      "label": "KDX-NODE-FOUR-DIRECTIONS"
+    },
+    {
+      "id": "KDX-NODE-FRAME-SYSTEM",
+      "type": "NODE",
+      "label": "KDX-NODE-FRAME-SYSTEM"
+    },
+    {
+      "id": "KDX-NODE-GENESIS",
+      "type": "NODE",
+      "label": "KDX-NODE-GENESIS"
+    },
+    {
+      "id": "KDX-NODE-GENESIS-CRADLE",
+      "type": "NODE",
+      "label": "KDX-NODE-GENESIS-CRADLE"
+    },
+    {
+      "id": "KDX-NODE-GLYPH-F07",
+      "type": "NODE",
+      "label": "KDX-NODE-GLYPH-F07"
+    },
+    {
+      "id": "KDX-NODE-GLYPH-SYSTEM",
+      "type": "NODE",
+      "label": "KDX-NODE-GLYPH-SYSTEM"
+    },
+    {
+      "id": "KDX-NODE-HARMONIC-SPECTRUM",
+      "type": "NODE",
+      "label": "KDX-NODE-HARMONIC-SPECTRUM"
+    },
+    {
+      "id": "KDX-NODE-HEART-CHAMBER",
+      "type": "NODE",
+      "label": "KDX-NODE-HEART-CHAMBER"
+    },
+    {
+      "id": "KDX-NODE-HEART-M",
+      "type": "NODE",
+      "label": "KDX-NODE-HEART-M"
+    },
+    {
+      "id": "KDX-NODE-HERO-MARK",
+      "type": "NODE",
+      "label": "KDX-NODE-HERO-MARK"
+    },
+    {
+      "id": "KDX-NODE-HOLOGRAPHY",
+      "type": "NODE",
+      "label": "KDX-NODE-HOLOGRAPHY"
+    },
+    {
+      "id": "KDX-NODE-HYDROLOGY",
+      "type": "NODE",
+      "label": "KDX-NODE-HYDROLOGY"
+    },
+    {
+      "id": "KDX-NODE-HYPERBOLIC-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-HYPERBOLIC-FIELD"
+    },
+    {
+      "id": "KDX-NODE-HYPERCOIL",
+      "type": "NODE",
+      "label": "KDX-NODE-HYPERCOIL"
+    },
+    {
+      "id": "KDX-NODE-INFORMATION",
+      "type": "NODE",
+      "label": "KDX-NODE-INFORMATION"
+    },
+    {
+      "id": "KDX-NODE-JAGUAR-TUNNEL",
+      "type": "NODE",
+      "label": "KDX-NODE-JAGUAR-TUNNEL"
+    },
+    {
+      "id": "KDX-NODE-KUNDALINI-PASSAGE",
+      "type": "NODE",
+      "label": "KDX-NODE-KUNDALINI-PASSAGE"
+    },
+    {
+      "id": "KDX-NODE-LAKE-TAHOE",
+      "type": "NODE",
+      "label": "KDX-NODE-LAKE-TAHOE"
+    },
+    {
+      "id": "KDX-NODE-LATENT-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-LATENT-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-LAYER-STACK",
+      "type": "NODE",
+      "label": "KDX-NODE-LAYER-STACK"
+    },
+    {
+      "id": "KDX-NODE-LINEAGE",
+      "type": "NODE",
+      "label": "KDX-NODE-LINEAGE"
+    },
+    {
+      "id": "KDX-NODE-LIONESS-SOLAR-GUARDIAN",
+      "type": "NODE",
+      "label": "KDX-NODE-LIONESS-SOLAR-GUARDIAN"
+    },
+    {
+      "id": "KDX-NODE-LIVING-ARCHIVE",
+      "type": "NODE",
+      "label": "KDX-NODE-LIVING-ARCHIVE"
+    },
+    {
+      "id": "KDX-NODE-LIVING-ELEMENT",
+      "type": "NODE",
+      "label": "KDX-NODE-LIVING-ELEMENT"
+    },
+    {
+      "id": "KDX-NODE-LIVING-GATE",
+      "type": "NODE",
+      "label": "KDX-NODE-LIVING-GATE"
+    },
+    {
+      "id": "KDX-NODE-LIVING-PATTERN",
+      "type": "NODE",
+      "label": "KDX-NODE-LIVING-PATTERN"
+    },
+    {
+      "id": "KDX-NODE-LIVING-SIGNAL-MATRIX",
+      "type": "NODE",
+      "label": "KDX-NODE-LIVING-SIGNAL-MATRIX"
+    },
+    {
+      "id": "KDX-NODE-LIVING-TEMPLE",
+      "type": "NODE",
+      "label": "KDX-NODE-LIVING-TEMPLE"
+    },
+    {
+      "id": "KDX-NODE-M",
+      "type": "NODE",
+      "label": "KDX-NODE-M"
+    },
+    {
+      "id": "KDX-NODE-MANDALA-INDEX",
+      "type": "NODE",
+      "label": "KDX-NODE-MANDALA-INDEX"
+    },
+    {
+      "id": "KDX-NODE-MASTER-GLYPH",
+      "type": "NODE",
+      "label": "KDX-NODE-MASTER-GLYPH"
+    },
+    {
+      "id": "KDX-NODE-MATERIAL-ANALYSIS",
+      "type": "NODE",
+      "label": "KDX-NODE-MATERIAL-ANALYSIS"
+    },
+    {
+      "id": "KDX-NODE-MATTERS-CLAIM",
+      "type": "NODE",
+      "label": "KDX-NODE-MATTERS-CLAIM"
+    },
+    {
+      "id": "KDX-NODE-MEDITATING-POLARITY",
+      "type": "NODE",
+      "label": "KDX-NODE-MEDITATING-POLARITY"
+    },
+    {
+      "id": "KDX-NODE-MEMBRANE",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMBRANE"
+    },
+    {
+      "id": "KDX-NODE-MEMORY",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMORY"
+    },
+    {
+      "id": "KDX-NODE-MEMORY-BLOSSOM",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMORY-BLOSSOM"
+    },
+    {
+      "id": "KDX-NODE-MEMORY-CROWN",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMORY-CROWN"
+    },
+    {
+      "id": "KDX-NODE-MEMORY-ENGINE",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMORY-ENGINE"
+    },
+    {
+      "id": "KDX-NODE-MEMORY-RIVER",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMORY-RIVER"
+    },
+    {
+      "id": "KDX-NODE-MEMORY-TREE",
+      "type": "NODE",
+      "label": "KDX-NODE-MEMORY-TREE"
+    },
+    {
+      "id": "KDX-NODE-MESOPOTAMIA",
+      "type": "NODE",
+      "label": "KDX-NODE-MESOPOTAMIA"
+    },
+    {
+      "id": "KDX-NODE-METAMORPHIC-THRESHOLD",
+      "type": "NODE",
+      "label": "KDX-NODE-METAMORPHIC-THRESHOLD"
+    },
+    {
+      "id": "KDX-NODE-MIND-PRISON",
+      "type": "NODE",
+      "label": "KDX-NODE-MIND-PRISON"
+    },
+    {
+      "id": "KDX-NODE-MIRROR",
+      "type": "NODE",
+      "label": "KDX-NODE-MIRROR"
+    },
+    {
+      "id": "KDX-NODE-MIRROR-ENGINE",
+      "type": "NODE",
+      "label": "KDX-NODE-MIRROR-ENGINE"
+    },
+    {
+      "id": "KDX-NODE-MOBIUS",
+      "type": "NODE",
+      "label": "KDX-NODE-MOBIUS"
+    },
+    {
+      "id": "KDX-NODE-MOLECULE",
+      "type": "NODE",
+      "label": "KDX-NODE-MOLECULE"
+    },
+    {
+      "id": "KDX-NODE-MORPHOGENESIS",
+      "type": "NODE",
+      "label": "KDX-NODE-MORPHOGENESIS"
+    },
+    {
+      "id": "KDX-NODE-MYCELIUM",
+      "type": "NODE",
+      "label": "KDX-NODE-MYCELIUM"
+    },
+    {
+      "id": "KDX-NODE-MYTH-HISTORY",
+      "type": "NODE",
+      "label": "KDX-NODE-MYTH-HISTORY"
+    },
+    {
+      "id": "KDX-NODE-NAMMA",
+      "type": "NODE",
+      "label": "KDX-NODE-NAMMA"
+    },
+    {
+      "id": "KDX-NODE-NEGATIVE-INFINITY",
+      "type": "NODE",
+      "label": "KDX-NODE-NEGATIVE-INFINITY"
+    },
+    {
+      "id": "KDX-NODE-NEOTENY",
+      "type": "NODE",
+      "label": "KDX-NODE-NEOTENY"
+    },
+    {
+      "id": "KDX-NODE-NETWORK",
+      "type": "NODE",
+      "label": "KDX-NODE-NETWORK"
+    },
+    {
+      "id": "KDX-NODE-NEUROPLASTICITY",
+      "type": "NODE",
+      "label": "KDX-NODE-NEUROPLASTICITY"
+    },
+    {
+      "id": "KDX-NODE-NEW-FORM",
+      "type": "NODE",
+      "label": "KDX-NODE-NEW-FORM"
+    },
+    {
+      "id": "KDX-NODE-NOISE",
+      "type": "NODE",
+      "label": "KDX-NODE-NOISE"
+    },
+    {
+      "id": "KDX-NODE-NULL-KNOT",
+      "type": "NODE",
+      "label": "KDX-NODE-NULL-KNOT"
+    },
+    {
+      "id": "KDX-NODE-OBSERVER",
+      "type": "NODE",
+      "label": "KDX-NODE-OBSERVER"
+    },
+    {
+      "id": "KDX-NODE-OBSIDIAN-VAULT",
+      "type": "NODE",
+      "label": "KDX-NODE-OBSIDIAN-VAULT"
+    },
+    {
+      "id": "KDX-NODE-OBSTACLE-THRESHOLD",
+      "type": "NODE",
+      "label": "KDX-NODE-OBSTACLE-THRESHOLD"
+    },
+    {
+      "id": "KDX-NODE-OCIN",
+      "type": "NODE",
+      "label": "KDX-NODE-OCIN"
+    },
+    {
+      "id": "KDX-NODE-ORBIT-MAP",
+      "type": "NODE",
+      "label": "KDX-NODE-ORBIT-MAP"
+    },
+    {
+      "id": "KDX-NODE-ORBITAL-PATH",
+      "type": "NODE",
+      "label": "KDX-NODE-ORBITAL-PATH"
+    },
+    {
+      "id": "KDX-NODE-ORGANIC-NODE",
+      "type": "NODE",
+      "label": "KDX-NODE-ORGANIC-NODE"
+    },
+    {
+      "id": "KDX-NODE-ORIENTATION",
+      "type": "NODE",
+      "label": "KDX-NODE-ORIENTATION"
+    },
+    {
+      "id": "KDX-NODE-ORIGIN",
+      "type": "NODE",
+      "label": "KDX-NODE-ORIGIN"
+    },
+    {
+      "id": "KDX-NODE-ORIGIN-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-ORIGIN-FIELD"
+    },
+    {
+      "id": "KDX-NODE-ORIGINAL-FLOW-MAP",
+      "type": "NODE",
+      "label": "KDX-NODE-ORIGINAL-FLOW-MAP"
+    },
+    {
+      "id": "KDX-NODE-PASSAGE",
+      "type": "NODE",
+      "label": "KDX-NODE-PASSAGE"
+    },
+    {
+      "id": "KDX-NODE-PATTERN-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-PATTERN-FIELD"
+    },
+    {
+      "id": "KDX-NODE-PATTERN-SAMPLE",
+      "type": "NODE",
+      "label": "KDX-NODE-PATTERN-SAMPLE"
+    },
+    {
+      "id": "KDX-NODE-PATTERN-WEAVER",
+      "type": "NODE",
+      "label": "KDX-NODE-PATTERN-WEAVER"
+    },
+    {
+      "id": "KDX-NODE-PENGUIN",
+      "type": "NODE",
+      "label": "KDX-NODE-PENGUIN"
+    },
+    {
+      "id": "KDX-NODE-PERCEPTION",
+      "type": "NODE",
+      "label": "KDX-NODE-PERCEPTION"
+    },
+    {
+      "id": "KDX-NODE-PERMACULTURE",
+      "type": "NODE",
+      "label": "KDX-NODE-PERMACULTURE"
+    },
+    {
+      "id": "KDX-NODE-PERSPECTIVE",
+      "type": "NODE",
+      "label": "KDX-NODE-PERSPECTIVE"
+    },
+    {
+      "id": "KDX-NODE-PLANT-MEDICINE",
+      "type": "NODE",
+      "label": "KDX-NODE-PLANT-MEDICINE"
+    },
+    {
+      "id": "KDX-NODE-POLAR-SIGHT",
+      "type": "NODE",
+      "label": "KDX-NODE-POLAR-SIGHT"
+    },
+    {
+      "id": "KDX-NODE-PORTAL-FRAME",
+      "type": "NODE",
+      "label": "KDX-NODE-PORTAL-FRAME"
+    },
+    {
+      "id": "KDX-NODE-PORTAL-ORGANISM",
+      "type": "NODE",
+      "label": "KDX-NODE-PORTAL-ORGANISM"
+    },
+    {
+      "id": "KDX-NODE-PORTAL-RING",
+      "type": "NODE",
+      "label": "KDX-NODE-PORTAL-RING"
+    },
+    {
+      "id": "KDX-NODE-POTENTIAL",
+      "type": "NODE",
+      "label": "KDX-NODE-POTENTIAL"
+    },
+    {
+      "id": "KDX-NODE-PRIME-DOSSIER-31-37",
+      "type": "NODE",
+      "label": "KDX-NODE-PRIME-DOSSIER-31-37"
+    },
+    {
+      "id": "KDX-NODE-PROCESSION-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-PROCESSION-FIELD"
+    },
+    {
+      "id": "KDX-NODE-PROTECTION-SEAL",
+      "type": "NODE",
+      "label": "KDX-NODE-PROTECTION-SEAL"
+    },
+    {
+      "id": "KDX-NODE-PROVENANCE",
+      "type": "NODE",
+      "label": "KDX-NODE-PROVENANCE"
+    },
+    {
+      "id": "KDX-NODE-PUBLIC-MEMORY",
+      "type": "NODE",
+      "label": "KDX-NODE-PUBLIC-MEMORY"
+    },
+    {
+      "id": "KDX-NODE-PULSE",
+      "type": "NODE",
+      "label": "KDX-NODE-PULSE"
+    },
+    {
+      "id": "KDX-NODE-QUANTUM-FABRICATOR",
+      "type": "NODE",
+      "label": "KDX-NODE-QUANTUM-FABRICATOR"
+    },
+    {
+      "id": "KDX-NODE-QUIET-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-QUIET-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-REACTION-DIFFUSION",
+      "type": "NODE",
+      "label": "KDX-NODE-REACTION-DIFFUSION"
+    },
+    {
+      "id": "KDX-NODE-REALITY-ENGINE",
+      "type": "NODE",
+      "label": "KDX-NODE-REALITY-ENGINE"
+    },
+    {
+      "id": "KDX-NODE-REALM-LAYERS",
+      "type": "NODE",
+      "label": "KDX-NODE-REALM-LAYERS"
+    },
+    {
+      "id": "KDX-NODE-REBORN-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-REBORN-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-RECEIVER",
+      "type": "NODE",
+      "label": "KDX-NODE-RECEIVER"
+    },
+    {
+      "id": "KDX-NODE-RECURSION",
+      "type": "NODE",
+      "label": "KDX-NODE-RECURSION"
+    },
+    {
+      "id": "KDX-NODE-REENTRY",
+      "type": "NODE",
+      "label": "KDX-NODE-REENTRY"
+    },
+    {
+      "id": "KDX-NODE-REGENERATION",
+      "type": "NODE",
+      "label": "KDX-NODE-REGENERATION"
+    },
+    {
+      "id": "KDX-NODE-RELIC-ENGINE",
+      "type": "NODE",
+      "label": "KDX-NODE-RELIC-ENGINE"
+    },
+    {
+      "id": "KDX-NODE-RELIC-KX8",
+      "type": "NODE",
+      "label": "KDX-NODE-RELIC-KX8"
+    },
+    {
+      "id": "KDX-NODE-RESPIRATORY-NETWORK",
+      "type": "NODE",
+      "label": "KDX-NODE-RESPIRATORY-NETWORK"
+    },
+    {
+      "id": "KDX-NODE-RETURN",
+      "type": "NODE",
+      "label": "KDX-NODE-RETURN"
+    },
+    {
+      "id": "KDX-NODE-RETURN-ROOT",
+      "type": "NODE",
+      "label": "KDX-NODE-RETURN-ROOT"
+    },
+    {
+      "id": "KDX-NODE-RITUAL-CORE",
+      "type": "NODE",
+      "label": "KDX-NODE-RITUAL-CORE"
+    },
+    {
+      "id": "KDX-NODE-RITUAL-DEVICE",
+      "type": "NODE",
+      "label": "KDX-NODE-RITUAL-DEVICE"
+    },
+    {
+      "id": "KDX-NODE-RITUAL-SYSTEM",
+      "type": "NODE",
+      "label": "KDX-NODE-RITUAL-SYSTEM"
+    },
+    {
+      "id": "KDX-NODE-ROOT-FILAMENT",
+      "type": "NODE",
+      "label": "KDX-NODE-ROOT-FILAMENT"
+    },
+    {
+      "id": "KDX-NODE-ROUTE-SIGNATURE",
+      "type": "NODE",
+      "label": "KDX-NODE-ROUTE-SIGNATURE"
+    },
+    {
+      "id": "KDX-NODE-RUPTURE",
+      "type": "NODE",
+      "label": "KDX-NODE-RUPTURE"
+    },
+    {
+      "id": "KDX-NODE-SELF",
+      "type": "NODE",
+      "label": "KDX-NODE-SELF"
+    },
+    {
+      "id": "KDX-NODE-SHADOW",
+      "type": "NODE",
+      "label": "KDX-NODE-SHADOW"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-CORE",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-CORE"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-FIELD"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-LOCK",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-LOCK"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-ORIGIN",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-ORIGIN"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-SPHERE",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-SPHERE"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-TEMPLE",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-TEMPLE"
+    },
+    {
+      "id": "KDX-NODE-SIGNAL-VORTEX",
+      "type": "NODE",
+      "label": "KDX-NODE-SIGNAL-VORTEX"
+    },
+    {
+      "id": "KDX-NODE-SILENT-OBSERVER",
+      "type": "NODE",
+      "label": "KDX-NODE-SILENT-OBSERVER"
+    },
+    {
+      "id": "KDX-NODE-SOMATIC-PORTALS",
+      "type": "NODE",
+      "label": "KDX-NODE-SOMATIC-PORTALS"
+    },
+    {
+      "id": "KDX-NODE-SOUL-WEAVER",
+      "type": "NODE",
+      "label": "KDX-NODE-SOUL-WEAVER"
+    },
+    {
+      "id": "KDX-NODE-SOURCE",
+      "type": "NODE",
+      "label": "KDX-NODE-SOURCE"
+    },
+    {
+      "id": "KDX-NODE-SOURCE-CHAMBER",
+      "type": "NODE",
+      "label": "KDX-NODE-SOURCE-CHAMBER"
+    },
+    {
+      "id": "KDX-NODE-SOURCE-CORE",
+      "type": "NODE",
+      "label": "KDX-NODE-SOURCE-CORE"
+    },
+    {
+      "id": "KDX-NODE-SPECTRAL-FRAME",
+      "type": "NODE",
+      "label": "KDX-NODE-SPECTRAL-FRAME"
+    },
+    {
+      "id": "KDX-NODE-SPIRAL-INCUBATOR",
+      "type": "NODE",
+      "label": "KDX-NODE-SPIRAL-INCUBATOR"
+    },
+    {
+      "id": "KDX-NODE-STAR-COMPASS",
+      "type": "NODE",
+      "label": "KDX-NODE-STAR-COMPASS"
+    },
+    {
+      "id": "KDX-NODE-STERNAL-STAR",
+      "type": "NODE",
+      "label": "KDX-NODE-STERNAL-STAR"
+    },
+    {
+      "id": "KDX-NODE-STRUCTURAL-BAND",
+      "type": "NODE",
+      "label": "KDX-NODE-STRUCTURAL-BAND"
+    },
+    {
+      "id": "KDX-NODE-SYMBIOSIS",
+      "type": "NODE",
+      "label": "KDX-NODE-SYMBIOSIS"
+    },
+    {
+      "id": "KDX-NODE-SYNCHRONICITY",
+      "type": "NODE",
+      "label": "KDX-NODE-SYNCHRONICITY"
+    },
+    {
+      "id": "KDX-NODE-SYNTHESIS-CHAMBER",
+      "type": "NODE",
+      "label": "KDX-NODE-SYNTHESIS-CHAMBER"
+    },
+    {
+      "id": "KDX-NODE-TENSION",
+      "type": "NODE",
+      "label": "KDX-NODE-TENSION"
+    },
+    {
+      "id": "KDX-NODE-TERRITORY",
+      "type": "NODE",
+      "label": "KDX-NODE-TERRITORY"
+    },
+    {
+      "id": "KDX-NODE-TESSERA",
+      "type": "NODE",
+      "label": "KDX-NODE-TESSERA"
+    },
+    {
+      "id": "KDX-NODE-THERMAL-COLLECTIVE",
+      "type": "NODE",
+      "label": "KDX-NODE-THERMAL-COLLECTIVE"
+    },
+    {
+      "id": "KDX-NODE-THOUGHT-FOUNTAIN",
+      "type": "NODE",
+      "label": "KDX-NODE-THOUGHT-FOUNTAIN"
+    },
+    {
+      "id": "KDX-NODE-THRESHOLD",
+      "type": "NODE",
+      "label": "KDX-NODE-THRESHOLD"
+    },
+    {
+      "id": "KDX-NODE-THRESHOLD-REGENERATOR",
+      "type": "NODE",
+      "label": "KDX-NODE-THRESHOLD-REGENERATOR"
+    },
+    {
+      "id": "KDX-NODE-TILE-SYSTEM",
+      "type": "NODE",
+      "label": "KDX-NODE-TILE-SYSTEM"
+    },
+    {
+      "id": "KDX-NODE-TORUS",
+      "type": "NODE",
+      "label": "KDX-NODE-TORUS"
+    },
+    {
+      "id": "KDX-NODE-TRANSLATION-FIELD",
+      "type": "NODE",
+      "label": "KDX-NODE-TRANSLATION-FIELD"
+    },
+    {
+      "id": "KDX-NODE-TREE-ORACLE",
+      "type": "NODE",
+      "label": "KDX-NODE-TREE-ORACLE"
+    },
+    {
+      "id": "KDX-NODE-TRUTH-CLASS",
+      "type": "NODE",
+      "label": "KDX-NODE-TRUTH-CLASS"
+    },
+    {
+      "id": "KDX-NODE-UAP",
+      "type": "NODE",
+      "label": "KDX-NODE-UAP"
+    },
+    {
+      "id": "KDX-NODE-UNFOLDING-RING",
+      "type": "NODE",
+      "label": "KDX-NODE-UNFOLDING-RING"
+    },
+    {
+      "id": "KDX-NODE-UNIVERSE-ROUTE-11-20",
+      "type": "NODE",
+      "label": "KDX-NODE-UNIVERSE-ROUTE-11-20"
+    },
+    {
+      "id": "KDX-NODE-VAULT",
+      "type": "NODE",
+      "label": "KDX-NODE-VAULT"
+    },
+    {
+      "id": "KDX-NODE-VISUAL-LINEAGE",
+      "type": "NODE",
+      "label": "KDX-NODE-VISUAL-LINEAGE"
+    },
+    {
+      "id": "KDX-NODE-VOID-STAR",
+      "type": "NODE",
+      "label": "KDX-NODE-VOID-STAR"
+    },
+    {
+      "id": "KDX-NODE-WASHOE",
+      "type": "NODE",
+      "label": "KDX-NODE-WASHOE"
+    },
+    {
+      "id": "KDX-NODE-WATER",
+      "type": "NODE",
+      "label": "KDX-NODE-WATER"
+    },
+    {
+      "id": "KDX-NODE-WAYPOINT",
+      "type": "NODE",
+      "label": "KDX-NODE-WAYPOINT"
+    },
+    {
+      "id": "KDX-NODE-WE-TRIPANTU",
+      "type": "NODE",
+      "label": "KDX-NODE-WE-TRIPANTU"
+    },
+    {
+      "id": "KDX-NODE-WEB-SIGNAL",
+      "type": "NODE",
+      "label": "KDX-NODE-WEB-SIGNAL"
+    },
+    {
+      "id": "KDX-NODE-WENU-MAPU",
+      "type": "NODE",
+      "label": "KDX-NODE-WENU-MAPU"
+    },
+    {
+      "id": "KDX-NODE-WORLD-DIAGNOSTICS",
+      "type": "NODE",
+      "label": "KDX-NODE-WORLD-DIAGNOSTICS"
+    },
+    {
+      "id": "KDX-NODE-Y",
+      "type": "NODE",
+      "label": "KDX-NODE-Y"
+    },
+    {
+      "id": "KDX-ORIGIN-SKETCH-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Original Flow Map Sketch / Inicio −∞ → Fin +∞",
+      "specifies": null,
+      "primaryConcept": "Dibujo de origen que fija la topología narrativa: múltiples caminos, Heart central, umbral y convergencia final",
+      "secondaryConcepts": [
+        "hand sketch",
+        "branching paths",
+        "heart",
+        "threshold",
+        "menus",
+        "−∞",
+        "+∞",
+        "awakening",
+        "cult underground deep"
+      ],
+      "mapZones": [
+        "GENESIS",
+        "NAVIGATION",
+        "PROVENANCE"
+      ],
+      "symbols": [
+        "heart",
+        "bifurcating lines",
+        "threshold",
+        "directional arrows",
+        "infinity signs"
+      ],
+      "geometry": [
+        "many-to-many flow",
+        "central attractor",
+        "convergent topology"
+      ],
+      "domains": [
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Primary creator artifact photographed from Ocín's notebook; preserve without aesthetic rewriting as provenance evidence",
+      "atlasStatus": "CANON_SOURCE",
+      "nextAction": "Create lineage links Sketch → Architecture Map → Alphabet → Heart / Return",
+      "ingestStatus": "POPULATED",
+      "contentFamily": [
+        "ORIGIN",
+        "ARCHIVE"
+      ]
+    },
+    {
+      "id": "KDX-PATTERN-DIAGONAL-006",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Diagonal Code Band / Issue 06",
+      "specifies": null,
+      "primaryConcept": "Banda diagonal como ruta, código y pasaje visual",
+      "secondaryConcepts": [
+        "ancestral band",
+        "passage",
+        "path",
+        "remembered code",
+        "compass fragment",
+        "core fragment"
+      ],
+      "mapZones": [
+        "PATTERN",
+        "NAVIGATION"
+      ],
+      "symbols": [
+        "diagonal glyph band",
+        "compass star",
+        "signal core"
+      ],
+      "geometry": [
+        "33.333° diagonal modular strip",
+        "repeated tile sequence"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX pattern plate",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "DESIGN_SYSTEM"
+      ]
+    },
+    {
+      "id": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Archive Signal / Poster 01",
+      "specifies": null,
+      "primaryConcept": "Póster de señal de archivo compuesto por ocho capas del sistema visual",
+      "secondaryConcepts": [
+        "sigil core",
+        "ancestral band",
+        "signal sphere",
+        "radial tunnel",
+        "geometric frame",
+        "star matrix",
+        "mandala layer",
+        "compass sigil"
+      ],
+      "mapZones": [
+        "ARCHIVE",
+        "VISUAL SYSTEM"
+      ],
+      "symbols": [
+        "central seal",
+        "diagonal code bands",
+        "compass",
+        "mandala",
+        "signal sphere"
+      ],
+      "geometry": [
+        "concentric radial stack + eight-layer composition"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX poster-system plate",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "DESIGN_SYSTEM"
+      ]
+    },
+    {
+      "id": "KDX-REF-RENDAH",
+      "type": "NODE",
+      "label": "KDX-REF-RENDAH"
+    },
+    {
+      "id": "KDX-REF-RENDAH-014",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Rendah Mag 014 / High-Contrast Editorial Reference",
+      "specifies": null,
+      "primaryConcept": null,
+      "secondaryConcepts": [],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "STUB"
+    },
+    {
+      "id": "KDX-REF-SIGNAL-FIELD-014",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Signal Field / Rendah Mag Issue 014",
+      "specifies": null,
+      "primaryConcept": "Referencia editorial para presentar una señal central dentro de bandas y matrices radiales",
+      "secondaryConcepts": [
+        "archive signal",
+        "radial band",
+        "central core",
+        "signal log",
+        "observe only",
+        "editorial crop"
+      ],
+      "mapZones": [
+        "VISUAL GRAMMAR",
+        "REFERENCE"
+      ],
+      "symbols": [
+        "white radial band",
+        "pink core",
+        "yellow microtype"
+      ],
+      "geometry": [
+        "concentric radial composition",
+        "vertical editorial framing"
+      ],
+      "domains": [
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "External/editorial visual reference stored in KODEX; preserve attribution and do not confuse with canonical authored content",
+      "atlasStatus": "REFERENCE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "sourceType": [
+        "REFERENCE"
+      ]
+    },
+    {
+      "id": "KDX-ROOT-INDEX-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "KODEX_NEXT_10_CONTACT_SHEET.png",
+      "specifies": null,
+      "primaryConcept": "CONTACT SHEET / SERIES INDEX",
+      "secondaryConcepts": [
+        "Series 11–20 overview"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-ROOT-RAW-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "file_0000000019a081f889374bc6e3300884.png",
+      "specifies": null,
+      "primaryConcept": "REBORN SIGNAL / TREE-ORACLE PROTOCOL",
+      "secondaryConcepts": [
+        "tree",
+        "koi",
+        "roots",
+        "flora",
+        "water",
+        "code seed",
+        "pollination",
+        "oracle core",
+        "rebirth"
+      ],
+      "mapZones": [
+        "LIVING ELEMENTS",
+        "ARCHIVE",
+        "RETURN"
+      ],
+      "symbols": [
+        "tree",
+        "roots",
+        "koi",
+        "crystal",
+        "orbital rings",
+        "flowing channels"
+      ],
+      "geometry": [
+        "axial tree",
+        "branching roots",
+        "circular reservoir",
+        "nested containment"
+      ],
+      "domains": [
+        "BIO",
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "KODEX original concept plate; biological motifs are reference, machine/oracle functions are speculative",
+      "atlasStatus": "ANALYZED / SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCENE-ALPHABET",
+      "type": "SCENE",
+      "label": "ALPHABET",
+      "functionCategory": "SYSTEM_MODULE",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-ARCHIVE",
+      "type": "SCENE",
+      "label": "ARCHIVE",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-BESTIARY",
+      "type": "SCENE",
+      "label": "BESTIARY",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-BODY",
+      "type": "SCENE",
+      "label": "BODY",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-COMMONS",
+      "type": "SCENE",
+      "label": "COMMONS",
+      "functionCategory": "SYSTEM_MODULE",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-COSMOLOGY",
+      "type": "SCENE",
+      "label": "COSMOLOGY",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-DESCENT",
+      "type": "SCENE",
+      "label": "DESCENT",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-EDITORIAL-SYSTEM",
+      "type": "SCENE",
+      "label": "EDITORIAL SYSTEM",
+      "functionCategory": "TRANSVERSAL_LAYER",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-GENESIS",
+      "type": "SCENE",
+      "label": "GENESIS",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-GLOBAL-DESIGN-SYSTEM",
+      "type": "SCENE",
+      "label": "GLOBAL DESIGN SYSTEM",
+      "functionCategory": "TRANSVERSAL_LAYER",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-GLOBAL-NAVIGATION",
+      "type": "SCENE",
+      "label": "GLOBAL NAVIGATION",
+      "functionCategory": "TRANSVERSAL_LAYER",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-GLOBAL-VISUAL-SYSTEM",
+      "type": "SCENE",
+      "label": "GLOBAL VISUAL SYSTEM",
+      "functionCategory": "TRANSVERSAL_LAYER",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-HEART",
+      "type": "SCENE",
+      "label": "HEART",
+      "functionCategory": "NODE_CANDIDATE",
+      "coordinate": "M"
+    },
+    {
+      "id": "KDX-SCENE-INTEGRATION",
+      "type": "SCENE",
+      "label": "INTEGRATION",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-LIVING",
+      "type": "SCENE",
+      "label": "LIVING",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-LIVING-ELEMENTS",
+      "type": "SCENE",
+      "label": "LIVING ELEMENTS",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-LIVING-SYSTEMS",
+      "type": "SCENE",
+      "label": "LIVING SYSTEMS",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-MACHINE",
+      "type": "SCENE",
+      "label": "MACHINE",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-NAVIGATION",
+      "type": "SCENE",
+      "label": "NAVIGATION",
+      "functionCategory": "TRANSVERSAL_LAYER",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-NETWORK",
+      "type": "SCENE",
+      "label": "NETWORK",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-OBSERVE",
+      "type": "SCENE",
+      "label": "OBSERVE",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-ORIGIN",
+      "type": "SCENE",
+      "label": "ORIGIN",
+      "functionCategory": "NODE_CANDIDATE",
+      "coordinate": "A"
+    },
+    {
+      "id": "KDX-SCENE-PROLOGUE",
+      "type": "SCENE",
+      "label": "PROLOGUE",
+      "functionCategory": "NEEDS_CONFIRMATION",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-RETURN",
+      "type": "SCENE",
+      "label": "RETURN",
+      "functionCategory": "NODE_CANDIDATE",
+      "coordinate": "Y"
+    },
+    {
+      "id": "KDX-SCENE-SIGNAL",
+      "type": "SCENE",
+      "label": "SIGNAL",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-SIGNAL-VORTEX",
+      "type": "SCENE",
+      "label": "SIGNAL VORTEX",
+      "functionCategory": "SYSTEM_MODULE",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-SOURCE",
+      "type": "SCENE",
+      "label": "SOURCE",
+      "functionCategory": "CONTENT_FAMILY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-SOURCE-TYPE",
+      "type": "SCENE",
+      "label": "SOURCE_TYPE",
+      "functionCategory": "SOURCE_DATA_ANOMALY",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-SYMBOL-ENGINE",
+      "type": "SCENE",
+      "label": "SYMBOL ENGINE",
+      "functionCategory": "SYSTEM_MODULE",
+      "coordinate": null
+    },
+    {
+      "id": "KDX-SCENE-THRESHOLD",
+      "type": "SCENE",
+      "label": "THRESHOLD",
+      "functionCategory": "NODE_CANDIDATE",
+      "coordinate": "A"
+    },
+    {
+      "id": "KDX-SCREEN-ALPHABET-004",
+      "type": "VISUAL_SPECIMEN",
+      "label": "ALPHABET — Relation Field",
+      "specifies": null,
+      "primaryConcept": "Topología navegable A–Y",
+      "secondaryConcepts": [
+        "A origin",
+        "M heart optional",
+        "Y return",
+        "latent links",
+        "revisits"
+      ],
+      "mapZones": [
+        "MAPA",
+        "NAVEGACIÓN"
+      ],
+      "symbols": [
+        "letras",
+        "rutas",
+        "nodos",
+        "ecos",
+        "anclas"
+      ],
+      "geometry": [
+        "grafo",
+        "bifurcaciones",
+        "convergencias"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Arquitectura narrativa autoral KODEX",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Convertir en mapa principal persistente",
+      "ingestStatus": "POPULATED",
+      "domain": [
+        "MODEL_CANDIDATE"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-ANATOMICAL-STAR-007",
+      "type": "VISUAL_SPECIMEN",
+      "label": "ANATOMICAL STAR — The Body as Map",
+      "specifies": null,
+      "primaryConcept": "Interfaz entre anatomía y cosmología simbólica",
+      "secondaryConcepts": [
+        "skeleton",
+        "nerves",
+        "vessels",
+        "glands",
+        "organs",
+        "fascia",
+        "torus",
+        "seven portals"
+      ],
+      "mapZones": [
+        "CUERPO",
+        "COSMOLOGÍA"
+      ],
+      "symbols": [
+        "estrella",
+        "cuerpo",
+        "eje",
+        "toroide",
+        "siete centros"
+      ],
+      "geometry": [
+        "simetría bilateral",
+        "geometría radial"
+      ],
+      "domains": [
+        "BIO",
+        "SYM",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Etiquetar siete centros y toroide como simbólicos, no anatomía universal",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Conectar con Heart y Source",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-ANOMALY-008",
+      "type": "VISUAL_SPECIMEN",
+      "label": "ANOMALY — Mutation",
+      "specifies": null,
+      "primaryConcept": "Ruptura, deriva y nueva estabilización",
+      "secondaryConcepts": [
+        "interference",
+        "corruption",
+        "rupture",
+        "drift",
+        "mutation",
+        "adaptation"
+      ],
+      "mapZones": [
+        "ANOMALÍA",
+        "MUTACIÓN"
+      ],
+      "symbols": [
+        "fractura",
+        "deriva",
+        "entidad estabilizada"
+      ],
+      "geometry": [
+        "diagrama procesual vertical"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Modelo narrativo/computacional de mutación",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Conectar con Memory y Return",
+      "ingestStatus": "POPULATED",
+      "domain": [
+        "MODEL_CANDIDATE"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-ARCHIVE-015",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Archive Engine / Living Memory Tree",
+      "specifies": null,
+      "primaryConcept": "Archivo vivo como árbol-raíz que conserva relaciones, linajes y estados a través del tiempo",
+      "secondaryConcepts": [
+        "tree",
+        "roots",
+        "memory",
+        "vault",
+        "origins",
+        "civilizations",
+        "technologies",
+        "artefacts",
+        "prophecies",
+        "timeless archive"
+      ],
+      "mapZones": [
+        "ARCHIVE",
+        "MEMORY",
+        "RETURN"
+      ],
+      "symbols": [
+        "tree",
+        "roots",
+        "orbital memory paths",
+        "infinity seal",
+        "archive rings"
+      ],
+      "geometry": [
+        "radial tree",
+        "root mirror",
+        "concentric archive rings",
+        "orbital trajectories"
+      ],
+      "domains": [
+        "COMP",
+        "PHI",
+        "ART",
+        "SYM",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Concept plate; archive-tree metaphor is artistic/computational, not a claim that memory is literally stored in trees",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Map archive categories to canonical graph relations",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-COMMONS-010",
+      "type": "VISUAL_SPECIMEN",
+      "label": "THE COMMONS — Collective Trace",
+      "specifies": null,
+      "primaryConcept": "Memoria colectiva post-retorno",
+      "secondaryConcepts": [
+        "write",
+        "draw",
+        "observe",
+        "consent",
+        "public trace",
+        "moderation"
+      ],
+      "mapZones": [
+        "COMMONS",
+        "ARCHIVO COLECTIVO"
+      ],
+      "symbols": [
+        "constelación",
+        "glifo",
+        "mensaje",
+        "marca"
+      ],
+      "geometry": [
+        "campo radial colaborativo"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Requiere privacidad, moderación y consentimiento explícito",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Conectar con Return y Archive",
+      "ingestStatus": "POPULATED",
+      "sourceType": [
+        "SOCIAL"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-COSMOLOGY-012",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Cosmology Core / Primordial Navigation Chart",
+      "specifies": null,
+      "primaryConcept": "Mapa cosmológico editorial que mezcla constantes físicas, ciclos simbólicos y navegación recursiva",
+      "secondaryConcepts": [
+        "realm layers",
+        "universal constants",
+        "forces",
+        "source core",
+        "cycle matrix",
+        "sacred geometry",
+        "telemetry"
+      ],
+      "mapZones": [
+        "COSMOLOGY",
+        "SOURCE"
+      ],
+      "symbols": [
+        "orbital map",
+        "flower geometry",
+        "horizon infinities",
+        "zenith",
+        "nadir axis",
+        "cycle matrix"
+      ],
+      "geometry": [
+        "concentric orbits",
+        "radial symmetry",
+        "axial cross",
+        "nested circles"
+      ],
+      "domains": [
+        "PHY",
+        "MATH",
+        "PHI",
+        "SYM",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Physical constants require verification; realm layers and consciousness claims are symbolic/speculative, not established cosmology",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-DIAGNOSTICS-018",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Simulation Output / World Diagnostics",
+      "specifies": null,
+      "primaryConcept": "Diagnóstico de un mundo simulado y supervisión de su integridad dimensional",
+      "secondaryConcepts": [
+        "floating world",
+        "tectonic stress",
+        "constructor agents",
+        "temporal stability",
+        "reality coherence",
+        "error injection"
+      ],
+      "mapZones": [
+        "SIMULATION",
+        "WORLD SYSTEMS"
+      ],
+      "symbols": [
+        "cutaway world",
+        "stress map",
+        "radar metrics",
+        "agent markers",
+        "construct log"
+      ],
+      "geometry": [
+        "sectioned sphere",
+        "layered terrain",
+        "nested field",
+        "radar polygon"
+      ],
+      "domains": [
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Concept plate explicitly marked as not deployed; metrics are fictional interface data",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-GENESIS-005",
+      "type": "VISUAL_SPECIMEN",
+      "label": "GENESIS — Visual Lineage",
+      "specifies": null,
+      "primaryConcept": "Genealogía del lenguaje visual de Ocín",
+      "secondaryConcepts": [
+        "artifact source",
+        "recurring geometry",
+        "symbol",
+        "rule",
+        "code",
+        "organism"
+      ],
+      "mapZones": [
+        "ORIGEN",
+        "ARCHIVO"
+      ],
+      "symbols": [
+        "trazo",
+        "símbolo",
+        "regla",
+        "código",
+        "organismo"
+      ],
+      "geometry": [
+        "cronología",
+        "transformación por etapas"
+      ],
+      "domains": [
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Trayectoria autoral de Ocín; requiere fechas y archivos fuente",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Construir cronología verificable",
+      "ingestStatus": "POPULATED",
+      "sourceType": [
+        "BIOGRAPHY"
+      ],
+      "contentFamily": [
+        "ARCHIVE"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-HEART-000",
+      "type": "VISUAL_SPECIMEN",
+      "label": "HEART / 0 — Orientation Chamber",
+      "specifies": null,
+      "primaryConcept": "Cámara de orientación e integración",
+      "secondaryConcepts": [
+        "resonance",
+        "memory blossom",
+        "compass",
+        "root",
+        "sanctuary",
+        "depth portal"
+      ],
+      "mapZones": [
+        "HEART",
+        "INTEGRACIÓN"
+      ],
+      "symbols": [
+        "corazón",
+        "cámara",
+        "toroide",
+        "brújula",
+        "raíz"
+      ],
+      "geometry": [
+        "simetría radial",
+        "red vascular",
+        "anillos"
+      ],
+      "domains": [
+        "BIO",
+        "PHI",
+        "SYM",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Separar fisiología de función simbólica",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Vincular con Memory y Return",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-LIVING-013",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Living Elements / Organic Node",
+      "specifies": null,
+      "primaryConcept": "Vida como expresión bioinformacional que crece, conecta y recuerda",
+      "secondaryConcepts": [
+        "membrane",
+        "signal nodes",
+        "core",
+        "root filaments",
+        "growth",
+        "adaptive network",
+        "memory tether"
+      ],
+      "mapZones": [
+        "LIVING SYSTEMS",
+        "ARCHIVE"
+      ],
+      "symbols": [
+        "seed",
+        "membrane",
+        "luminous nodes",
+        "roots",
+        "echo log"
+      ],
+      "geometry": [
+        "bilateral organic seed",
+        "radial network",
+        "filament growth",
+        "nested membrane"
+      ],
+      "domains": [
+        "BIO",
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Biological metaphors translated into a speculative organic interface; sentience is not scientifically established",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-MACHINE-011",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Quantum Fabricator / Reality Engine",
+      "specifies": null,
+      "primaryConcept": "Motor especulativo de construcción de mundos y formas paramétricas",
+      "secondaryConcepts": [
+        "dimensional weaver",
+        "fluid matrix",
+        "lattice",
+        "object creation",
+        "simulation",
+        "coherence",
+        "entropy"
+      ],
+      "mapZones": [
+        "MACHINE",
+        "SIMULATION"
+      ],
+      "symbols": [
+        "lattice",
+        "cube clusters",
+        "central seed",
+        "woven field",
+        "QR markers"
+      ],
+      "geometry": [
+        "fractal lattice",
+        "spline bundles",
+        "nested polyhedron",
+        "voxel clusters"
+      ],
+      "domains": [
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Concept plate; speculative world-building interface, not a deployed quantum technology",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-MEMORY-006",
+      "type": "VISUAL_SPECIMEN",
+      "label": "MEMORY — Temporal Archaeology",
+      "specifies": null,
+      "primaryConcept": "Memoria estratificada y recontextualización",
+      "secondaryConcepts": [
+        "raw impression",
+        "signal",
+        "event",
+        "semantic",
+        "context",
+        "echo"
+      ],
+      "mapZones": [
+        "ARCHIVO",
+        "MEMORIA"
+      ],
+      "symbols": [
+        "estratos",
+        "sedimento",
+        "traza",
+        "línea temporal"
+      ],
+      "geometry": [
+        "capas verticales",
+        "timeline",
+        "degradación"
+      ],
+      "domains": [
+        "PHI",
+        "COMP",
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Modelo conceptual; no equiparar a mecanismo neurológico literal",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Conectar con Source y Return",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-OBSERVER-007",
+      "type": "VISUAL_SPECIMEN",
+      "label": "OBSERVER — Mirror Chamber",
+      "specifies": null,
+      "primaryConcept": "El observador dentro del sistema",
+      "secondaryConcepts": [
+        "perception",
+        "focus",
+        "reflection",
+        "state shift",
+        "feedback"
+      ],
+      "mapZones": [
+        "OBSERVADOR"
+      ],
+      "symbols": [
+        "espejo",
+        "ojo",
+        "retícula",
+        "bucle"
+      ],
+      "geometry": [
+        "simetría",
+        "reflexión",
+        "lattice"
+      ],
+      "domains": [
+        "PHI",
+        "COMP",
+        "ART"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "No presentar como simplificación de física cuántica",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Vincular con Source y Anomaly",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-ORIGIN-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "ORIGIN FIELD — Before Language, Before Form",
+      "specifies": null,
+      "primaryConcept": "Campo inicial anterior a toda forma estable",
+      "secondaryConcepts": [
+        "potencial",
+        "caos",
+        "señal",
+        "relaciones latentes",
+        "entropía",
+        "entrada"
+      ],
+      "mapZones": [
+        "POTENCIAL",
+        "ORIGEN"
+      ],
+      "symbols": [
+        "campo",
+        "nodos latentes",
+        "vector de entrada"
+      ],
+      "geometry": [
+        "campo de partículas",
+        "red incompleta",
+        "atractores débiles"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Pantalla autoral KODEX; potencial como construcción conceptual",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Integrar antes de Threshold",
+      "ingestStatus": "POPULATED",
+      "domain": [
+        "MODEL_CANDIDATE"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-RELIC-020",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Relic Dossier / Ritual Head KX-8",
+      "specifies": null,
+      "primaryConcept": "Arqueología especulativa y análisis de una reliquia de origen desconocido",
+      "secondaryConcepts": [
+        "ritual head",
+        "unknown origin",
+        "material analysis",
+        "containment",
+        "evidence log",
+        "symbols",
+        "provenance"
+      ],
+      "mapZones": [
+        "ARCHIVE",
+        "RELIC",
+        "ANOMALY"
+      ],
+      "symbols": [
+        "fragmented face",
+        "infinity medallion",
+        "containment seal",
+        "coordinates",
+        "evidence thumbnails"
+      ],
+      "geometry": [
+        "frontal axial portrait",
+        "concentric assessment grid",
+        "forensic panel system"
+      ],
+      "domains": [
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Speculative artifact; do not assign an actual culture or archaeological origin without evidence",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "contentFamily": [
+        "ARCHIVE"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-RETURN-003",
+      "type": "VISUAL_SPECIMEN",
+      "label": "RETURN — Open White",
+      "specifies": null,
+      "primaryConcept": "Convergencia e integración del recorrido",
+      "secondaryConcepts": [
+        "A→C→H→M→Q→Y",
+        "artifact",
+        "reintegration",
+        "open questions"
+      ],
+      "mapZones": [
+        "RETORNO",
+        "NUEVA FORMA"
+      ],
+      "symbols": [
+        "sello",
+        "trayectoria",
+        "campo blanco",
+        "firma"
+      ],
+      "geometry": [
+        "convergencia radial",
+        "grafo de ruta"
+      ],
+      "domains": [
+        "PHI",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Pantalla autoral; evitar afirmaciones identitarias absolutas",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Vincular con Alphabet y Commons",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-RITUAL-017",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Ritual Device / Containment Chamber",
+      "specifies": null,
+      "primaryConcept": "Artefacto especulativo que contiene intención codificada dentro de una cámara ritual",
+      "secondaryConcepts": [
+        "crystal heart",
+        "orbital confinement",
+        "zero-point stabilization",
+        "living root",
+        "ritual access",
+        "containment seal"
+      ],
+      "mapZones": [
+        "ARTIFACT",
+        "RITUAL",
+        "MACHINE"
+      ],
+      "symbols": [
+        "crystal",
+        "crown assembly",
+        "rings",
+        "roots",
+        "seal",
+        "ritual port"
+      ],
+      "geometry": [
+        "cylindrical relic chamber",
+        "axial suspension",
+        "concentric orbital rings"
+      ],
+      "domains": [
+        "ART",
+        "SPEC",
+        "COMP",
+        "SYM"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Speculative ritual technology; zero-point, transmutation and consciousness functions are fictional or symbolic",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-SIGNAL-014",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Signal Vortex / Translation Field",
+      "specifies": null,
+      "primaryConcept": "Convergencia de señales en un campo que traduce ruido en patrones navegables",
+      "secondaryConcepts": [
+        "vortex",
+        "frequency",
+        "coherence",
+        "entropy",
+        "interference",
+        "receiver",
+        "message",
+        "translation"
+      ],
+      "mapZones": [
+        "SIGNAL",
+        "CONVERGENCE"
+      ],
+      "symbols": [
+        "spiral field",
+        "waveform",
+        "concentric radar",
+        "node markers",
+        "telemetry feed"
+      ],
+      "geometry": [
+        "logarithmic-spiral-inspired flow",
+        "radial convergence",
+        "waveform overlay"
+      ],
+      "domains": [
+        "COMP",
+        "PHI",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Signal-processing metaphors and speculative cosmology; avoid presenting natural vortices as universal meaning engines",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-SOURCE-009",
+      "type": "VISUAL_SPECIMEN",
+      "label": "SOURCE — Truth Chamber",
+      "specifies": null,
+      "primaryConcept": "Clasificación epistemológica y procedencia",
+      "secondaryConcepts": [
+        "verified",
+        "canonical",
+        "inferred",
+        "speculative",
+        "needs confirmation"
+      ],
+      "mapZones": [
+        "FUENTES",
+        "PROCEDENCIA"
+      ],
+      "symbols": [
+        "matriz",
+        "sello",
+        "hash",
+        "trazabilidad"
+      ],
+      "geometry": [
+        "tabla",
+        "flujo de validación",
+        "sello radial"
+      ],
+      "domains": [
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Sistema autoral para separar evidencia, canon e interpretación",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Aplicar a todos los nodos",
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "EPISTEMIC"
+      ],
+      "contentFamily": [
+        "ARCHIVE"
+      ]
+    },
+    {
+      "id": "KDX-SCREEN-SYNTHESIS-019",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Synthesis Chamber / Module Integration Protocol",
+      "specifies": null,
+      "primaryConcept": "Integración de biomecánica, núcleo neural y ecosistema contenido en un organismo-máquina",
+      "secondaryConcepts": [
+        "biomech chassis",
+        "green core",
+        "flora module",
+        "nutrient circulation",
+        "neural sync",
+        "containment field"
+      ],
+      "mapZones": [
+        "SYNTHESIS",
+        "LIVING SYSTEMS"
+      ],
+      "symbols": [
+        "chrome chassis",
+        "green sphere",
+        "contained tree",
+        "root network",
+        "portal ring"
+      ],
+      "geometry": [
+        "asymmetric biomorphic shell",
+        "spherical core",
+        "terrarium volume",
+        "fractal field"
+      ],
+      "domains": [
+        "BIO",
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Synthetic biosphere concept plate; neural sync and containment metrics are fictional interface constructs",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SCREEN-THRESHOLD-002",
+      "type": "VISUAL_SPECIMEN",
+      "label": "THRESHOLD — The First Consequence",
+      "specifies": null,
+      "primaryConcept": "Entrada voluntaria y consentimiento",
+      "secondaryConcepts": [
+        "sound",
+        "motion",
+        "intent",
+        "presence",
+        "boundary",
+        "consent"
+      ],
+      "mapZones": [
+        "UMBRAL"
+      ],
+      "symbols": [
+        "portal",
+        "membrana",
+        "vector",
+        "sello de consentimiento"
+      ],
+      "geometry": [
+        "elipse",
+        "anillos",
+        "distorsión localizada"
+      ],
+      "domains": [
+        "PHI",
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Diseño autoral; consentimiento implementable en UX",
+      "atlasStatus": "SCREEN_CANDIDATE",
+      "nextAction": "Conectar con Origin y Alphabet",
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SEAL-STAR-COMPASS-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Star Compass Seal",
+      "specifies": null,
+      "primaryConcept": "Sello direccional para orientación, retorno y navegación entre nodos",
+      "secondaryConcepts": [
+        "compass",
+        "star",
+        "axis",
+        "cardinal direction",
+        "core signal",
+        "glyph border"
+      ],
+      "mapZones": [
+        "ORIENTATION",
+        "SYMBOLS"
+      ],
+      "symbols": [
+        "asymmetric star",
+        "four-axis markers",
+        "corner glyphs",
+        "lower core seal"
+      ],
+      "geometry": [
+        "radial star",
+        "concentric rings",
+        "cardinal cross"
+      ],
+      "domains": [
+        "ART",
+        "SYM",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX seal; symbolic navigation, not a literal astronomical compass",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYS-COSMO-ORBIT-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Cosmology / Orbit Map System",
+      "specifies": null,
+      "primaryConcept": "Sistema orbital navegable para cosmología, nodos planetarios y señal armónica",
+      "secondaryConcepts": [
+        "navigation glyph",
+        "ancestral gateway",
+        "cosmic sphere",
+        "core signal",
+        "waveform",
+        "harmonic spectrum",
+        "planetary nodes"
+      ],
+      "mapZones": [
+        "COSMOLOGY",
+        "NAVIGATION"
+      ],
+      "symbols": [
+        "8-point star",
+        "gateway ring",
+        "sphere",
+        "geometric core"
+      ],
+      "geometry": [
+        "concentric orbits",
+        "radial system",
+        "node graph"
+      ],
+      "domains": [
+        "PHY",
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "KODEX interface plate; numerical telemetry must be treated as fictional unless sourced",
+      "atlasStatus": "CANON_SYSTEM",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYS-MASTER-BOARD-010",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Master System Board / Pattern Interlock",
+      "specifies": null,
+      "primaryConcept": "Síntesis maestra de núcleo, anillo, campo, banda, tile, sello y estado del sistema",
+      "secondaryConcepts": [
+        "signal origin",
+        "cycle of unfolding",
+        "living signal matrix",
+        "interference stripe",
+        "void star",
+        "motif library",
+        "system synthesis"
+      ],
+      "mapZones": [
+        "MASTER VISUAL SYSTEM"
+      ],
+      "symbols": [
+        "signal core",
+        "glyph ring",
+        "color field",
+        "code band",
+        "void star",
+        "aeteria seal"
+      ],
+      "geometry": [
+        "radial core",
+        "modular stripe",
+        "tiling field",
+        "layered synthesis"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX master system board",
+      "atlasStatus": "CANON_SYSTEM",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "DESIGN_SYSTEM"
+      ]
+    },
+    {
+      "id": "KDX-SYS-RITUAL-POSTER-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Ritual Device / Poster System",
+      "specifies": null,
+      "primaryConcept": "Sistema modular de lenguaje ritual aplicado a poster, interfaz, altar y entorno",
+      "secondaryConcepts": [
+        "hero mark",
+        "portal frame",
+        "field texture",
+        "ritual core",
+        "glyph key",
+        "compatibility"
+      ],
+      "mapZones": [
+        "VISUAL SYSTEM",
+        "RITUAL UI"
+      ],
+      "symbols": [
+        "8-point glyph",
+        "ancestral border",
+        "activation core",
+        "infinity mark"
+      ],
+      "geometry": [
+        "radial seal",
+        "concentric frame",
+        "modular composition"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX visual-system plate",
+      "atlasStatus": "CANON_SYSTEM",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "DESIGN_SYSTEM"
+      ]
+    },
+    {
+      "id": "KDX-SYS-VISUAL-GUIDE-001",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Visual-System Reference / Master Emblem Usage",
+      "specifies": null,
+      "primaryConcept": "Guía maestra para glifo primario, marco ritual, patrón y núcleo de señal",
+      "secondaryConcepts": [
+        "scale hierarchy",
+        "contrast",
+        "clear space",
+        "layering",
+        "accent use",
+        "approved combinations"
+      ],
+      "mapZones": [
+        "VISUAL GRAMMAR",
+        "BRAND SYSTEM"
+      ],
+      "symbols": [
+        "primary star glyph",
+        "ancestral border",
+        "pattern sphere",
+        "signal core"
+      ],
+      "geometry": [
+        "radial glyph",
+        "circular border",
+        "layered seal"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX design-system reference",
+      "atlasStatus": "CANON_SYSTEM",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "systemLayer": [
+        "DESIGN_SYSTEM"
+      ]
+    },
+    {
+      "id": "KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Cosmology Node Map / Ritual Navigation Chart",
+      "specifies": null,
+      "primaryConcept": "Mapa cosmológico nodal con anclas, órbitas y enlaces armónicos",
+      "secondaryConcepts": [
+        "node index",
+        "orbital paths",
+        "cosmic anchor",
+        "harmonic links",
+        "navigation key",
+        "coordinate system"
+      ],
+      "mapZones": [
+        "COSMOLOGY",
+        "NAVIGATION"
+      ],
+      "symbols": [
+        "star compass",
+        "snowflake-like sigils",
+        "central pink polyhedron",
+        "orbit markers"
+      ],
+      "geometry": [
+        "concentric orbits",
+        "axial symmetry",
+        "radial node network"
+      ],
+      "domains": [
+        "ART",
+        "COMP",
+        "SYM",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "KODEX cosmology interface; orbital values shown are fictional unless separately sourced",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYSTEM-GLYPH-BOARD-0002",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Glyph System / System Board KS-0002",
+      "specifies": null,
+      "primaryConcept": "Descomposición explícita del lenguaje visual en glifo, anillo, campo, señal y lógica compuesta",
+      "secondaryConcepts": [
+        "core glyph",
+        "portal ring",
+        "field matrix",
+        "signal core",
+        "composite logic",
+        "glyph interactions"
+      ],
+      "mapZones": [
+        "SYMBOLS",
+        "DESIGN SYSTEM"
+      ],
+      "symbols": [
+        "8-point core",
+        "recursive ring",
+        "tile field",
+        "central polyhedron"
+      ],
+      "geometry": [
+        "radial symmetry",
+        "modular tiling",
+        "composite layering"
+      ],
+      "domains": [
+        "ART",
+        "COMP"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Canonical KODEX design-system plate defining how symbolic layers compose",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYSTEM-MANDALA-INDEX-008",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Mandala Index / Ritual Mandala System",
+      "specifies": null,
+      "primaryConcept": "Sistema generativo de mandalas recursivos como gramática de orden, ritual y variación",
+      "secondaryConcepts": [
+        "root logic",
+        "axis variants",
+        "edge behavior",
+        "tessera library",
+        "context fields",
+        "evolution chain",
+        "micro icons"
+      ],
+      "mapZones": [
+        "SYMBOLS",
+        "GENERATIVE GRAMMAR"
+      ],
+      "symbols": [
+        "mandala",
+        "star",
+        "tessera",
+        "axis",
+        "micro glyphs"
+      ],
+      "geometry": [
+        "radial symmetry",
+        "recursive edge",
+        "D4",
+        "D8",
+        "D12",
+        "D16 variants",
+        "scale recursion"
+      ],
+      "domains": [
+        "ART",
+        "COMP",
+        "SYM"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial KODEX generative system; ritual meanings are symbolic, not universal claims",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYSTEM-PORTAL-RING-002",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Portal Ring / Ancestral Interface Archive",
+      "specifies": null,
+      "primaryConcept": "Anillo de transición compuesto por señal central, patrón, campo y matrices estabilizadoras",
+      "secondaryConcepts": [
+        "core signal",
+        "ancestral pattern",
+        "resonance field",
+        "axial tunnel",
+        "structural band",
+        "stabilization matrices"
+      ],
+      "mapZones": [
+        "THRESHOLD",
+        "ARTIFACT"
+      ],
+      "symbols": [
+        "ring",
+        "radial code band",
+        "core diamond",
+        "star matrices"
+      ],
+      "geometry": [
+        "recursive radial ring",
+        "circular containment",
+        "axial tunnel"
+      ],
+      "domains": [
+        "ART",
+        "COMP",
+        "SYM",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Ancestral language in this plate is authorial/speculative; do not assign to a real culture without provenance",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Procession Field / Jaguar Tunnel",
+      "specifies": null,
+      "primaryConcept": "Corredor ritual perspectivo construido por repetición de señales y waypoints",
+      "secondaryConcepts": [
+        "jaguar silhouette",
+        "procession",
+        "tunnel",
+        "waypoint",
+        "ritual corridor",
+        "signal path"
+      ],
+      "mapZones": [
+        "DESCENT",
+        "TERRITORY",
+        "PROCESSION"
+      ],
+      "symbols": [
+        "repeated animal-like glyphs",
+        "starbursts",
+        "waypoint seals",
+        "vanishing point"
+      ],
+      "geometry": [
+        "perspective tunnel",
+        "recursive repetition",
+        "vanishing-point field"
+      ],
+      "domains": [
+        "ART",
+        "COMP",
+        "SYM"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Jaguar symbolism must not be assigned to a specific ancestral tradition without documented source",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED",
+      "domain": [
+        "ANC"
+      ]
+    },
+    {
+      "id": "KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Ritual Device / Archive Signal Vol.001",
+      "specifies": null,
+      "primaryConcept": "Póster operativo que integra dispositivo, glifo protector, anillo codificado y señal central",
+      "secondaryConcepts": [
+        "ritual device",
+        "protect",
+        "perpetuate",
+        "signal lock",
+        "archive volume",
+        "central seal"
+      ],
+      "mapZones": [
+        "ARTIFACT",
+        "VISUAL SYSTEM"
+      ],
+      "symbols": [
+        "large white star seal",
+        "radial code band",
+        "pink hemisphere",
+        "signal core"
+      ],
+      "geometry": [
+        "axial machine stack",
+        "concentric containment",
+        "radial glyph band"
+      ],
+      "domains": [
+        "ART",
+        "COMP",
+        "SYM"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "Authorial visual-system artifact; protection is symbolic/systemic unless otherwise specified",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "type": "VISUAL_SPECIMEN",
+      "label": "Signal Sphere / Coherent Pattern Modulation Field",
+      "specifies": null,
+      "primaryConcept": "Esfera de señal como campo modular de repetición, reflexión, interferencia y coherencia",
+      "secondaryConcepts": [
+        "repetition",
+        "reflection",
+        "interference",
+        "harmonics",
+        "resonance",
+        "coherence",
+        "phase"
+      ],
+      "mapZones": [
+        "SIGNAL",
+        "FIELD"
+      ],
+      "symbols": [
+        "sphere",
+        "repeated floral",
+        "star cells",
+        "orbital frame"
+      ],
+      "geometry": [
+        "spherical tiling",
+        "radial repetition",
+        "symmetry fields"
+      ],
+      "domains": [
+        "COMP",
+        "ART",
+        "SPEC"
+      ],
+      "claimClass": "UNKNOWN",
+      "provenance": "432 Hz and other telemetry in the plate are design data unless separately sourced; no therapeutic claim",
+      "atlasStatus": "CANON_CANDIDATE",
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "KDX-ZONE-ABISMO",
+      "type": "MAP_ZONE",
+      "label": "ABISMO"
+    },
+    {
+      "id": "KDX-ZONE-AGUA",
+      "type": "MAP_ZONE",
+      "label": "AGUA"
+    },
+    {
+      "id": "KDX-ZONE-ANOMAL-A",
+      "type": "MAP_ZONE",
+      "label": "ANOMALÍA"
+    },
+    {
+      "id": "KDX-ZONE-ANOMALY",
+      "type": "MAP_ZONE",
+      "label": "ANOMALY"
+    },
+    {
+      "id": "KDX-ZONE-ARCHIVE",
+      "type": "MAP_ZONE",
+      "label": "ARCHIVE"
+    },
+    {
+      "id": "KDX-ZONE-ARCHIVO",
+      "type": "MAP_ZONE",
+      "label": "ARCHIVO"
+    },
+    {
+      "id": "KDX-ZONE-ARCHIVO-COLECTIVO",
+      "type": "MAP_ZONE",
+      "label": "ARCHIVO COLECTIVO"
+    },
+    {
+      "id": "KDX-ZONE-ARTIFACT",
+      "type": "MAP_ZONE",
+      "label": "ARTIFACT"
+    },
+    {
+      "id": "KDX-ZONE-BESTIARIO",
+      "type": "MAP_ZONE",
+      "label": "BESTIARIO"
+    },
+    {
+      "id": "KDX-ZONE-BRAND-SYSTEM",
+      "type": "MAP_ZONE",
+      "label": "BRAND SYSTEM"
+    },
+    {
+      "id": "KDX-ZONE-CANON",
+      "type": "MAP_ZONE",
+      "label": "CANON"
+    },
+    {
+      "id": "KDX-ZONE-CANON-CANDIDATE",
+      "type": "MAP_ZONE",
+      "label": "CANON_CANDIDATE"
+    },
+    {
+      "id": "KDX-ZONE-CICLO",
+      "type": "MAP_ZONE",
+      "label": "CICLO"
+    },
+    {
+      "id": "KDX-ZONE-COLECTIVO",
+      "type": "MAP_ZONE",
+      "label": "COLECTIVO"
+    },
+    {
+      "id": "KDX-ZONE-COMMONS",
+      "type": "MAP_ZONE",
+      "label": "COMMONS"
+    },
+    {
+      "id": "KDX-ZONE-CONVERGENCE",
+      "type": "MAP_ZONE",
+      "label": "CONVERGENCE"
+    },
+    {
+      "id": "KDX-ZONE-CONVERGENCIA",
+      "type": "MAP_ZONE",
+      "label": "CONVERGENCIA"
+    },
+    {
+      "id": "KDX-ZONE-COSMOLOG-A",
+      "type": "MAP_ZONE",
+      "label": "COSMOLOGÍA"
+    },
+    {
+      "id": "KDX-ZONE-COSMOLOGY",
+      "type": "MAP_ZONE",
+      "label": "COSMOLOGY"
+    },
+    {
+      "id": "KDX-ZONE-CUERPO",
+      "type": "MAP_ZONE",
+      "label": "CUERPO"
+    },
+    {
+      "id": "KDX-ZONE-DESCENSO",
+      "type": "MAP_ZONE",
+      "label": "DESCENSO"
+    },
+    {
+      "id": "KDX-ZONE-DESCENT",
+      "type": "MAP_ZONE",
+      "label": "DESCENT"
+    },
+    {
+      "id": "KDX-ZONE-DESIGN-SYSTEM",
+      "type": "MAP_ZONE",
+      "label": "DESIGN SYSTEM"
+    },
+    {
+      "id": "KDX-ZONE-DIVERGENCIA",
+      "type": "MAP_ZONE",
+      "label": "DIVERGENCIA"
+    },
+    {
+      "id": "KDX-ZONE-EXPLORACI-N",
+      "type": "MAP_ZONE",
+      "label": "EXPLORACIÓN"
+    },
+    {
+      "id": "KDX-ZONE-FIELD",
+      "type": "MAP_ZONE",
+      "label": "FIELD"
+    },
+    {
+      "id": "KDX-ZONE-FUENTES",
+      "type": "MAP_ZONE",
+      "label": "FUENTES"
+    },
+    {
+      "id": "KDX-ZONE-GENERATIVE-GRAMMAR",
+      "type": "MAP_ZONE",
+      "label": "GENERATIVE GRAMMAR"
+    },
+    {
+      "id": "KDX-ZONE-GENESIS",
+      "type": "MAP_ZONE",
+      "label": "GENESIS"
+    },
+    {
+      "id": "KDX-ZONE-GLYPH-ARCHIVE",
+      "type": "MAP_ZONE",
+      "label": "GLYPH ARCHIVE"
+    },
+    {
+      "id": "KDX-ZONE-HEART",
+      "type": "MAP_ZONE",
+      "label": "HEART"
+    },
+    {
+      "id": "KDX-ZONE-INCOMPLETE-PAGE-26",
+      "type": "MAP_ZONE",
+      "label": "INCOMPLETE_PAGE_26"
+    },
+    {
+      "id": "KDX-ZONE-INTEGRACI-N",
+      "type": "MAP_ZONE",
+      "label": "INTEGRACIÓN"
+    },
+    {
+      "id": "KDX-ZONE-INTERFAZ",
+      "type": "MAP_ZONE",
+      "label": "INTERFAZ"
+    },
+    {
+      "id": "KDX-ZONE-LIVING-ELEMENTS",
+      "type": "MAP_ZONE",
+      "label": "LIVING ELEMENTS"
+    },
+    {
+      "id": "KDX-ZONE-LIVING-SYSTEMS",
+      "type": "MAP_ZONE",
+      "label": "LIVING SYSTEMS"
+    },
+    {
+      "id": "KDX-ZONE-M-QUINA",
+      "type": "MAP_ZONE",
+      "label": "MÁQUINA"
+    },
+    {
+      "id": "KDX-ZONE-MACHINE",
+      "type": "MAP_ZONE",
+      "label": "MACHINE"
+    },
+    {
+      "id": "KDX-ZONE-MAPA",
+      "type": "MAP_ZONE",
+      "label": "MAPA"
+    },
+    {
+      "id": "KDX-ZONE-MAPA-COMPLETO",
+      "type": "MAP_ZONE",
+      "label": "MAPA COMPLETO"
+    },
+    {
+      "id": "KDX-ZONE-MASTER-VISUAL-SYSTEM",
+      "type": "MAP_ZONE",
+      "label": "MASTER VISUAL SYSTEM"
+    },
+    {
+      "id": "KDX-ZONE-MEMORIA",
+      "type": "MAP_ZONE",
+      "label": "MEMORIA"
+    },
+    {
+      "id": "KDX-ZONE-MEMORY",
+      "type": "MAP_ZONE",
+      "label": "MEMORY"
+    },
+    {
+      "id": "KDX-ZONE-MUTACI-N",
+      "type": "MAP_ZONE",
+      "label": "MUTACIÓN"
+    },
+    {
+      "id": "KDX-ZONE-NAVEGACI-N",
+      "type": "MAP_ZONE",
+      "label": "NAVEGACIÓN"
+    },
+    {
+      "id": "KDX-ZONE-NAVIGATION",
+      "type": "MAP_ZONE",
+      "label": "NAVIGATION"
+    },
+    {
+      "id": "KDX-ZONE-NEEDS-PROVENANCE",
+      "type": "MAP_ZONE",
+      "label": "NEEDS_PROVENANCE"
+    },
+    {
+      "id": "KDX-ZONE-NEEDS-PROVENANCE-REVIEW",
+      "type": "MAP_ZONE",
+      "label": "NEEDS_PROVENANCE_REVIEW"
+    },
+    {
+      "id": "KDX-ZONE-NEEDS-RESEARCH",
+      "type": "MAP_ZONE",
+      "label": "NEEDS_RESEARCH"
+    },
+    {
+      "id": "KDX-ZONE-NOCHE",
+      "type": "MAP_ZONE",
+      "label": "NOCHE"
+    },
+    {
+      "id": "KDX-ZONE-NUEVA-FORMA",
+      "type": "MAP_ZONE",
+      "label": "NUEVA FORMA"
+    },
+    {
+      "id": "KDX-ZONE-OBSERVADOR",
+      "type": "MAP_ZONE",
+      "label": "OBSERVADOR"
+    },
+    {
+      "id": "KDX-ZONE-ORIENTATION",
+      "type": "MAP_ZONE",
+      "label": "ORIENTATION"
+    },
+    {
+      "id": "KDX-ZONE-ORIGEN",
+      "type": "MAP_ZONE",
+      "label": "ORIGEN"
+    },
+    {
+      "id": "KDX-ZONE-PATTERN",
+      "type": "MAP_ZONE",
+      "label": "PATTERN"
+    },
+    {
+      "id": "KDX-ZONE-POTENCIAL",
+      "type": "MAP_ZONE",
+      "label": "POTENCIAL"
+    },
+    {
+      "id": "KDX-ZONE-PROCEDENCIA",
+      "type": "MAP_ZONE",
+      "label": "PROCEDENCIA"
+    },
+    {
+      "id": "KDX-ZONE-PROCESSION",
+      "type": "MAP_ZONE",
+      "label": "PROCESSION"
+    },
+    {
+      "id": "KDX-ZONE-PROVENANCE",
+      "type": "MAP_ZONE",
+      "label": "PROVENANCE"
+    },
+    {
+      "id": "KDX-ZONE-RED",
+      "type": "MAP_ZONE",
+      "label": "RED"
+    },
+    {
+      "id": "KDX-ZONE-REFERENCE",
+      "type": "MAP_ZONE",
+      "label": "REFERENCE"
+    },
+    {
+      "id": "KDX-ZONE-REGENERACI-N",
+      "type": "MAP_ZONE",
+      "label": "REGENERACIÓN"
+    },
+    {
+      "id": "KDX-ZONE-RELIC",
+      "type": "MAP_ZONE",
+      "label": "RELIC"
+    },
+    {
+      "id": "KDX-ZONE-RETORNO",
+      "type": "MAP_ZONE",
+      "label": "RETORNO"
+    },
+    {
+      "id": "KDX-ZONE-RETURN",
+      "type": "MAP_ZONE",
+      "label": "RETURN"
+    },
+    {
+      "id": "KDX-ZONE-RITUAL",
+      "type": "MAP_ZONE",
+      "label": "RITUAL"
+    },
+    {
+      "id": "KDX-ZONE-RITUAL-UI",
+      "type": "MAP_ZONE",
+      "label": "RITUAL UI"
+    },
+    {
+      "id": "KDX-ZONE-SE-AL",
+      "type": "MAP_ZONE",
+      "label": "SEÑAL"
+    },
+    {
+      "id": "KDX-ZONE-SIGNAL",
+      "type": "MAP_ZONE",
+      "label": "SIGNAL"
+    },
+    {
+      "id": "KDX-ZONE-SILENCIO",
+      "type": "MAP_ZONE",
+      "label": "SILENCIO"
+    },
+    {
+      "id": "KDX-ZONE-SIMULATION",
+      "type": "MAP_ZONE",
+      "label": "SIMULATION"
+    },
+    {
+      "id": "KDX-ZONE-SOURCE",
+      "type": "MAP_ZONE",
+      "label": "SOURCE"
+    },
+    {
+      "id": "KDX-ZONE-SOURCE-URL",
+      "type": "MAP_ZONE",
+      "label": "SOURCE_URL"
+    },
+    {
+      "id": "KDX-ZONE-STATUS",
+      "type": "MAP_ZONE",
+      "label": "STATUS"
+    },
+    {
+      "id": "KDX-ZONE-SYMBOLS",
+      "type": "MAP_ZONE",
+      "label": "SYMBOLS"
+    },
+    {
+      "id": "KDX-ZONE-SYNTHESIS",
+      "type": "MAP_ZONE",
+      "label": "SYNTHESIS"
+    },
+    {
+      "id": "KDX-ZONE-TERRITORIO",
+      "type": "MAP_ZONE",
+      "label": "TERRITORIO"
+    },
+    {
+      "id": "KDX-ZONE-TERRITORY",
+      "type": "MAP_ZONE",
+      "label": "TERRITORY"
+    },
+    {
+      "id": "KDX-ZONE-THRESHOLD",
+      "type": "MAP_ZONE",
+      "label": "THRESHOLD"
+    },
+    {
+      "id": "KDX-ZONE-UMBRAL",
+      "type": "MAP_ZONE",
+      "label": "UMBRAL"
+    },
+    {
+      "id": "KDX-ZONE-VIDA",
+      "type": "MAP_ZONE",
+      "label": "VIDA"
+    },
+    {
+      "id": "KDX-ZONE-VISUAL-GRAMMAR",
+      "type": "MAP_ZONE",
+      "label": "VISUAL GRAMMAR"
+    },
+    {
+      "id": "KDX-ZONE-VISUAL-SYSTEM",
+      "type": "MAP_ZONE",
+      "label": "VISUAL SYSTEM"
+    },
+    {
+      "id": "KDX-ZONE-WORLD-SYSTEMS",
+      "type": "MAP_ZONE",
+      "label": "WORLD SYSTEMS"
+    },
+    {
+      "id": "NODE_ID",
+      "type": "VISUAL_SPECIMEN",
+      "label": "NAME",
+      "specifies": null,
+      "primaryConcept": "MAP_ZONE",
+      "secondaryConcepts": [
+        "FUNCTION"
+      ],
+      "mapZones": [
+        "STATUS"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "RESEARCH_ID",
+      "type": "VISUAL_SPECIMEN",
+      "label": "TOPIC",
+      "specifies": null,
+      "primaryConcept": "EPISTEMIC_LAYER",
+      "secondaryConcepts": [
+        "SOURCE_NAME"
+      ],
+      "mapZones": [
+        "SOURCE_URL"
+      ],
+      "symbols": [
+        "RELATED_NODES"
+      ],
+      "geometry": [
+        "DO_NOT_CLAIM"
+      ],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SOURCE_NODE",
+      "type": "VISUAL_SPECIMEN",
+      "label": "RELATION",
+      "specifies": null,
+      "primaryConcept": "RATIONALE",
+      "secondaryConcepts": [
+        "STATUS"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-MAP-FLOW-001-01",
+      "type": "NODE_SPEC",
+      "label": "Living Flow Map",
+      "specifies": "KDX-MAP-FLOW-001",
+      "primaryConcept": "GLOBAL",
+      "secondaryConcepts": [
+        "Organiza todas las rutas y familias conceptuales"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-MAP-FLOW-001-02",
+      "type": "NODE_SPEC",
+      "label": "CONVERGES_AT",
+      "specifies": "KDX-MAP-FLOW-001",
+      "primaryConcept": "El corazón integra rutas sin clausurarlas",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ALTAR-NETWORK-01",
+      "type": "NODE_SPEC",
+      "label": "Altar Network",
+      "specifies": "KDX-NODE-ALTAR-NETWORK",
+      "primaryConcept": "UNIVERSE / GATE 16",
+      "secondaryConcepts": [
+        "Links multiple altar nodes so offerings, traces and memory can circulate across the system."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ALTAR-NETWORK-02",
+      "type": "NODE_SPEC",
+      "label": "GROWS_INTO",
+      "specifies": "KDX-NODE-ALTAR-NETWORK",
+      "primaryConcept": "Connected altars aggregate into a larger persistent sanctuary state.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-01",
+      "type": "NODE_SPEC",
+      "label": "Ancestral Signal",
+      "specifies": "KDX-NODE-ANCESTRAL-SIGNAL",
+      "primaryConcept": "UNIVERSE / GATE 14",
+      "secondaryConcepts": [
+        "Connects lineage, oral transmission, material traces and symbolic inheritance with strict provenance boundaries."
+      ],
+      "mapZones": [
+        "NEEDS_PROVENANCE_REVIEW"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-02",
+      "type": "NODE_SPEC",
+      "label": "ROOTS_IN",
+      "specifies": "KDX-NODE-ANCESTRAL-SIGNAL",
+      "primaryConcept": "Lineage returns to territory, ecology and material continuity.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ANIMAL-GUIDES-01",
+      "type": "NODE_SPEC",
+      "label": "Animales de Poder / Guardianes",
+      "specifies": "KDX-NODE-ANIMAL-GUIDES",
+      "primaryConcept": "EXPLORACIÓN",
+      "secondaryConcepts": [
+        "Abre rutas de comportamiento, territorio y símbolo"
+      ],
+      "mapZones": [
+        "NEEDS_PROVENANCE_REVIEW"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ANIMAL-GUIDES-02",
+      "type": "NODE_SPEC",
+      "label": "RETURNS_THROUGH",
+      "specifies": "KDX-NODE-ANIMAL-GUIDES",
+      "primaryConcept": "La guía conduce hacia renovación y continuidad del ciclo",
+      "secondaryConcepts": [
+        "HYPOTHESIS"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ARCHIVE-ROUTE-21-30-01",
+      "type": "NODE_SPEC",
+      "label": "Universal Archive Route 21–30",
+      "specifies": "KDX-NODE-ARCHIVE-ROUTE-21-30",
+      "primaryConcept": "UNIVERSAL ARCHIVE",
+      "secondaryConcepts": [
+        "Orders potential → creation → mycelial life → navigation → identity → [gap] → Gaia → silence → metaphysical memory → genesis."
+      ],
+      "mapZones": [
+        "INCOMPLETE_PAGE_26"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-01",
+      "type": "NODE_SPEC",
+      "label": "Astral Return Gate",
+      "specifies": "KDX-NODE-ASTRAL-RETURN-GATE",
+      "primaryConcept": "ASTRAL / RETURN",
+      "secondaryConcepts": [
+        "Completes the astral route and re-enters the Signal Temple with transformed memory state."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-02",
+      "type": "NODE_SPEC",
+      "label": "MUTATES",
+      "specifies": "KDX-NODE-ASTRAL-RETURN-GATE",
+      "primaryConcept": "The completed route changes the persistent temple state for future visits.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-01",
+      "type": "NODE_SPEC",
+      "label": "Astral Route 01–06",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "ASTRAL",
+      "secondaryConcepts": [
+        "Orders Dream → Eyes → DNA → Source → Heart → Return as a reversible narrative-computational journey."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-02",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "Gate 01 of canonical Astral Route.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-03",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "Gate 02 of canonical Astral Route.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-04",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "Gate 03 of canonical Astral Route.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-05",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "Gate 04 of canonical Astral Route.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-06",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "Gate 05 of canonical Astral Route.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-07",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ASTRAL-ROUTE",
+      "primaryConcept": "Gate 06 of canonical Astral Route.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CARDIAC-COSMOS-01",
+      "type": "NODE_SPEC",
+      "label": "Cardiac Cosmos",
+      "specifies": "KDX-NODE-CARDIAC-COSMOS",
+      "primaryConcept": "HEART / CONVERGENCIA",
+      "secondaryConcepts": [
+        "Hace crecer una constelación de memoria desde el recorrido"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CARDIAC-COSMOS-02",
+      "type": "NODE_SPEC",
+      "label": "GROWS_FROM",
+      "specifies": "KDX-NODE-CARDIAC-COSMOS",
+      "primaryConcept": "La memoria del nodo corazón se manifiesta como árbol o constelación emergente",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CHRONO-SPIRAL-01",
+      "type": "NODE_SPEC",
+      "label": "Chrono Spiral",
+      "specifies": "KDX-NODE-CHRONO-SPIRAL",
+      "primaryConcept": "UNIVERSE / GATE 18",
+      "secondaryConcepts": [
+        "Maps revisits, branches, timestamps and mutations as recursive temporal structure."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CHRONO-SPIRAL-02",
+      "type": "NODE_SPEC",
+      "label": "BRANCHES_TO",
+      "specifies": "KDX-NODE-CHRONO-SPIRAL",
+      "primaryConcept": "Temporal echoes reappear as subjective dream pathways and symbolic maps.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CRANIAL-AXIS-01",
+      "type": "NODE_SPEC",
+      "label": "Cranial Axis",
+      "specifies": "KDX-NODE-CRANIAL-AXIS",
+      "primaryConcept": "OBSERVADOR / DESCENSO",
+      "secondaryConcepts": [
+        "Representa atención y pensamiento como flujo orientado"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CRANIAL-AXIS-02",
+      "type": "NODE_SPEC",
+      "label": "REFRAMES",
+      "specifies": "KDX-NODE-CRANIAL-AXIS",
+      "primaryConcept": "El observador se entiende como flujo de atención y no como centro fijo",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CREATION-WEAVE-01",
+      "type": "NODE_SPEC",
+      "label": "Creation Weave",
+      "specifies": "KDX-NODE-CREATION-WEAVE",
+      "primaryConcept": "PRIME DOSSIER / PAGE 36",
+      "secondaryConcepts": [
+        "Traduce redes, recursión y geometría generativa a una gramática computacional de creación."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CREATION-WEAVE-02",
+      "type": "NODE_SPEC",
+      "label": "DISSOLVES_INTO",
+      "specifies": "KDX-NODE-CREATION-WEAVE",
+      "primaryConcept": "El tejido de patrones culmina en una fase de desprendimiento de la identidad fija.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-CREATION-WEAVE-03",
+      "type": "NODE_SPEC",
+      "label": "RESONATES_WITH",
+      "specifies": "KDX-NODE-CREATION-WEAVE",
+      "primaryConcept": "Ambos expresan relaciones, redes, navegación y estructura multiescala.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DIGITAL-ALTAR-01",
+      "type": "NODE_SPEC",
+      "label": "Digital Altar",
+      "specifies": "KDX-NODE-DIGITAL-ALTAR",
+      "primaryConcept": "HEART / MACHINE / ARCHIVE",
+      "secondaryConcepts": [
+        "Recibe acciones voluntarias, las convierte en señales y escribe memoria que altera estados futuros"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DIGITAL-ALTAR-02",
+      "type": "NODE_SPEC",
+      "label": "WRITES_TO",
+      "specifies": "KDX-NODE-DIGITAL-ALTAR",
+      "primaryConcept": "Toda acción voluntaria del altar se registra como transformación y no solo como contenido estático",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DIGITAL-ALTAR-03",
+      "type": "NODE_SPEC",
+      "label": "ACTIVATES",
+      "specifies": "KDX-NODE-DIGITAL-ALTAR",
+      "primaryConcept": "La interacción activa el campo que traduce intención/acción en señal computacional observable",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DIGITAL-ALTAR-04",
+      "type": "NODE_SPEC",
+      "label": "FEDERATES_AS",
+      "specifies": "KDX-NODE-DIGITAL-ALTAR",
+      "primaryConcept": "The single altar becomes one addressable node in a distributed ritual-memory system.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DNA-ASCENT-01",
+      "type": "NODE_SPEC",
+      "label": "DNA Ascent",
+      "specifies": "KDX-NODE-DNA-ASCENT",
+      "primaryConcept": "ASTRAL / BODY",
+      "secondaryConcepts": [
+        "Bridges verified biology of inheritance with KODEX symbolic lineage and transformation layers."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DNA-ASCENT-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-DNA-ASCENT",
+      "primaryConcept": "The living-code layer transitions from documented biology into explicitly symbolic inquiry about origin.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-01",
+      "type": "NODE_SPEC",
+      "label": "Dream Cartography",
+      "specifies": "KDX-NODE-DREAM-CARTOGRAPHY",
+      "primaryConcept": "UNIVERSE / GATE 19",
+      "secondaryConcepts": [
+        "Turns subjective dream reports into a navigable personal topology while keeping scientific and symbolic layers distinct."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-02",
+      "type": "NODE_SPEC",
+      "label": "CONTRIBUTES_TO",
+      "specifies": "KDX-NODE-DREAM-CARTOGRAPHY",
+      "primaryConcept": "Private symbolic maps may become shared traces only through explicit contribution.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-03",
+      "type": "NODE_SPEC",
+      "label": "EXPANDS",
+      "specifies": "KDX-NODE-DREAM-CARTOGRAPHY",
+      "primaryConcept": "Gate 19 turns the earlier liminal dream threshold into a persistent map system.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DREAM-GATE-01",
+      "type": "NODE_SPEC",
+      "label": "Dream Gate",
+      "specifies": "KDX-NODE-DREAM-GATE",
+      "primaryConcept": "ASTRAL / THRESHOLD",
+      "secondaryConcepts": [
+        "Converts liminal dream imagery and intention into entry to the astral route."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-DREAM-GATE-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-DREAM-GATE",
+      "primaryConcept": "Dream dissolves ordinary framing before the observer confronts recursive perception.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ECHO-COMMONS-01",
+      "type": "NODE_SPEC",
+      "label": "Echo Commons",
+      "specifies": "KDX-NODE-ECHO-COMMONS",
+      "primaryConcept": "UNIVERSE / GATE 20",
+      "secondaryConcepts": [
+        "Collects public contributions into a moderated communal archive and emergent memory field."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ECHO-COMMONS-02",
+      "type": "NODE_SPEC",
+      "label": "WRITES_TO",
+      "specifies": "KDX-NODE-ECHO-COMMONS",
+      "primaryConcept": "Moderated collective traces become part of the persistent archive.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ECHO-COMMONS-03",
+      "type": "NODE_SPEC",
+      "label": "EXTENDS",
+      "specifies": "KDX-NODE-ECHO-COMMONS",
+      "primaryConcept": "The public wall/commons is the collective-scale manifestation of individual altar offerings.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-EGO-DISSOLUTION-01",
+      "type": "NODE_SPEC",
+      "label": "Ego Dissolution",
+      "specifies": "KDX-NODE-EGO-DISSOLUTION",
+      "primaryConcept": "PRIME DOSSIER / PAGE 37",
+      "secondaryConcepts": [
+        "Cierra la secuencia con desidentificación simbólica y reintegración orientada al retorno."
+      ],
+      "mapZones": [
+        "NEEDS_RESEARCH"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-EGO-DISSOLUTION-02",
+      "type": "NODE_SPEC",
+      "label": "RETURNS_THROUGH",
+      "specifies": "KDX-NODE-EGO-DISSOLUTION",
+      "primaryConcept": "La disolución no es final: debe reintegrarse en el corazón y volver con memoria.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-AERELIDOS-01",
+      "type": "NODE_SPEC",
+      "label": "Aerélidos",
+      "specifies": "KDX-NODE-ELEM-AERELIDOS",
+      "primaryConcept": "GAIA / ATMOSPHERE",
+      "secondaryConcepts": [
+        "Modela viento, dispersión y cambio mediante flow fields y una entidad simbólica."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-01",
+      "type": "NODE_SPEC",
+      "label": "Crepúsculos",
+      "specifies": "KDX-NODE-ELEM-CREPUSCULOS",
+      "primaryConcept": "GAIA / LIMINAL",
+      "secondaryConcepts": [
+        "Custodios autorales de transiciones UX, sueño y estados liminales."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-02",
+      "type": "NODE_SPEC",
+      "label": "GUARDS",
+      "specifies": "KDX-NODE-ELEM-CREPUSCULOS",
+      "primaryConcept": "Opera como guardián funcional de umbrales oníricos y transiciones.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-IGNIFEROS-01",
+      "type": "NODE_SPEC",
+      "label": "Igníferos",
+      "specifies": "KDX-NODE-ELEM-IGNIFEROS",
+      "primaryConcept": "GAIA / TRANSFORMATION",
+      "secondaryConcepts": [
+        "Representa combustión y transformación de materia con una capa ritual explícitamente artística."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-LITOFIDOS-01",
+      "type": "NODE_SPEC",
+      "label": "Litófidos",
+      "specifies": "KDX-NODE-ELEM-LITOFIDOS",
+      "primaryConcept": "GAIA / GEOLOGY",
+      "secondaryConcepts": [
+        "Conecta minerales, roca, estratos y tiempo profundo con una personificación autoral."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-LUMENAS-01",
+      "type": "NODE_SPEC",
+      "label": "Lúmenas",
+      "specifies": "KDX-NODE-ELEM-LUMENAS",
+      "primaryConcept": "GAIA / LIGHT",
+      "secondaryConcepts": [
+        "Representa luz, floración e inspiración en una criatura feérica propia de KODEX."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-MICELIARES-01",
+      "type": "NODE_SPEC",
+      "label": "Miceliares",
+      "specifies": "KDX-NODE-ELEM-MICELIARES",
+      "primaryConcept": "GAIA / MYCOLOGY",
+      "secondaryConcepts": [
+        "Traduce redes fúngicas y ciclos de nutrientes sin atribuir consciencia literal al micelio."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-MICELIARES-02",
+      "type": "NODE_SPEC",
+      "label": "EXPANDS",
+      "specifies": "KDX-NODE-ELEM-MICELIARES",
+      "primaryConcept": "Miceliares es la ficha elemental; Mycelial Oracle es su cámara/sistema expandido.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-01",
+      "type": "NODE_SPEC",
+      "label": "Nómadas Verdes",
+      "specifies": "KDX-NODE-ELEM-NOMADAS-VERDES",
+      "primaryConcept": "GAIA / RESTORATION",
+      "secondaryConcepts": [
+        "Representa restauración, sucesión ecológica y cuidado mediante una entidad vegetal autoral."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-02",
+      "type": "NODE_SPEC",
+      "label": "SUPPORTS",
+      "specifies": "KDX-NODE-ELEM-NOMADAS-VERDES",
+      "primaryConcept": "La regeneración local complementa la custodia planetaria del Sentinel.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-POLINIS-01",
+      "type": "NODE_SPEC",
+      "label": "Polinis",
+      "specifies": "KDX-NODE-ELEM-POLINIS",
+      "primaryConcept": "GAIA / ECOLOGY",
+      "secondaryConcepts": [
+        "Representa polinización, mutualismo y colaboración interespecie."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-POLINIS-02",
+      "type": "NODE_SPEC",
+      "label": "RESONATES_WITH",
+      "specifies": "KDX-NODE-ELEM-POLINIS",
+      "primaryConcept": "Polen/semillas pueden ser transportados por agentes bióticos y viento; la relación se representa como red complementaria.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-RIOIDES-01",
+      "type": "NODE_SPEC",
+      "label": "Ríoides",
+      "specifies": "KDX-NODE-ELEM-RIOIDES",
+      "primaryConcept": "GAIA / WATER",
+      "secondaryConcepts": [
+        "Representa flujo hídrico real y memoria líquida únicamente como capa simbólica."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEM-SILVANOS-01",
+      "type": "NODE_SPEC",
+      "label": "Silvanos",
+      "specifies": "KDX-NODE-ELEM-SILVANOS",
+      "primaryConcept": "GAIA / FOREST",
+      "secondaryConcepts": [
+        "Representa bosque, raíces y custodia ecológica mediante una entidad arbórea autoral."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-01",
+      "type": "NODE_SPEC",
+      "label": "Elemental Archive 01–10",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "GAIA / ELEMENTAL GARDEN",
+      "secondaryConcepts": [
+        "Organiza diez entidades autorales que traducen procesos ecológicos y fuerzas simbólicas de Gaia sin confundir ambos niveles."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-02",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Bosque / tierra.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-03",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Agua / flujo.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-04",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Tierra / mineral.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-05",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Aire / dispersión.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-06",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Fuego / transformación.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-07",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Hongos / red.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-08",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Luz / imaginario.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-09",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Umbral / transición.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-10",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Polinización / mutualismo.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-11",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-ARCHIVE",
+      "primaryConcept": "Regeneración / restauración.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-01",
+      "type": "NODE_SPEC",
+      "label": "Elemental Garden",
+      "specifies": "KDX-NODE-ELEMENTAL-GARDEN",
+      "primaryConcept": "UNIVERSE / GATE 15",
+      "secondaryConcepts": [
+        "Combines documented ecological systems with an explicitly symbolic layer of elemental beings."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-02",
+      "type": "NODE_SPEC",
+      "label": "DISTRIBUTES_TO",
+      "specifies": "KDX-NODE-ELEMENTAL-GARDEN",
+      "primaryConcept": "Local living nodes become a distributed network of ritual-memory interfaces.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-03",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-ELEMENTAL-GARDEN",
+      "primaryConcept": "El jardín funciona como bioma/entorno; el archivo organiza sus entidades y procesos.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-EYE-WITHIN-EYE-01",
+      "type": "NODE_SPEC",
+      "label": "Eye Within Eye",
+      "specifies": "KDX-NODE-EYE-WITHIN-EYE",
+      "primaryConcept": "PRIME DOSSIER / PAGE 35",
+      "secondaryConcepts": [
+        "Convierte la observación en objeto de observación mediante recursión perceptiva."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-EYE-WITHIN-EYE-02",
+      "type": "NODE_SPEC",
+      "label": "REVEALS",
+      "specifies": "KDX-NODE-EYE-WITHIN-EYE",
+      "primaryConcept": "La recursión del observador expone patrones y redes que estructuran la experiencia.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-EYE-WITHIN-EYE-03",
+      "type": "NODE_SPEC",
+      "label": "EXPANDS",
+      "specifies": "KDX-NODE-EYE-WITHIN-EYE",
+      "primaryConcept": "La percepción anidada profundiza la familia del observador creada en Field of Eyes.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-FIELD-OF-EYES-01",
+      "type": "NODE_SPEC",
+      "label": "Field of Eyes",
+      "specifies": "KDX-NODE-FIELD-OF-EYES",
+      "primaryConcept": "ASTRAL / OBSERVER",
+      "secondaryConcepts": [
+        "Represents recursive observation and a distributed field of attention."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-FIELD-OF-EYES-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-FIELD-OF-EYES",
+      "primaryConcept": "Observation turns inward from field/perception toward embodied biological lineage.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-GENESIS-CRADLE-01",
+      "type": "NODE_SPEC",
+      "label": "MIRRORS",
+      "specifies": "KDX-NODE-GENESIS-CRADLE",
+      "primaryConcept": "Both explore living embodiment, but Genesis focuses gestation while DNA Ascent focuses inheritance/code.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-HEART-CHAMBER-01",
+      "type": "NODE_SPEC",
+      "label": "Heart Chamber",
+      "specifies": "KDX-NODE-HEART-CHAMBER",
+      "primaryConcept": "ASTRAL / HEART",
+      "secondaryConcepts": [
+        "Returns cosmic abstraction to embodied integration, pulse and memory."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-HEART-CHAMBER-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-HEART-CHAMBER",
+      "primaryConcept": "Integration enables re-entry carrying memory rather than escaping the system.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-HEART-M-01",
+      "type": "NODE_SPEC",
+      "label": "Heart / Node M",
+      "specifies": "KDX-NODE-HEART-M",
+      "primaryConcept": "CONVERGENCIA",
+      "secondaryConcepts": [
+        "Integra memoria y orienta nuevas rutas"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-HEART-M-02",
+      "type": "NODE_SPEC",
+      "label": "ACTIVATES",
+      "specifies": "KDX-NODE-HEART-M",
+      "primaryConcept": "El pulso es su señal temporal y somática",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-01",
+      "type": "NODE_SPEC",
+      "label": "Kundalini Passage",
+      "specifies": "KDX-NODE-KUNDALINI-PASSAGE",
+      "primaryConcept": "PRIME DOSSIER / PAGE 32",
+      "secondaryConcepts": [
+        "Interpreta el ascenso serpentino como pasaje simbólico y requiere procedencia histórica explícita."
+      ],
+      "mapZones": [
+        "NEEDS_PROVENANCE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-KUNDALINI-PASSAGE",
+      "primaryConcept": "El ascenso simbólico desemboca en cambio de estado y metamorfosis.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-03",
+      "type": "NODE_SPEC",
+      "label": "RESONATES_WITH",
+      "specifies": "KDX-NODE-KUNDALINI-PASSAGE",
+      "primaryConcept": "La placa vincula ascenso y temporalidad; Chrono Spiral aporta la capa computacional de recursión temporal.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-LIVING-TEMPLE-01",
+      "type": "NODE_SPEC",
+      "label": "Living Temple",
+      "specifies": "KDX-NODE-LIVING-TEMPLE",
+      "primaryConcept": "UNIVERSE / GATE 17",
+      "secondaryConcepts": [
+        "Represents an evolved Signal Temple whose architecture grows from accumulated state and memory."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-LIVING-TEMPLE-02",
+      "type": "NODE_SPEC",
+      "label": "REMEMBERS_THROUGH",
+      "specifies": "KDX-NODE-LIVING-TEMPLE",
+      "primaryConcept": "Temple evolution becomes legible as recursive time and version history.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-LIVING-TEMPLE-03",
+      "type": "NODE_SPEC",
+      "label": "EVOLVES_FROM",
+      "specifies": "KDX-NODE-LIVING-TEMPLE",
+      "primaryConcept": "Living Temple is treated as a growth state of the existing Signal Temple rather than a duplicate place.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MATTERS-CLAIM-01",
+      "type": "NODE_SPEC",
+      "label": "Matter’s Claim",
+      "specifies": "KDX-NODE-MATTERS-CLAIM",
+      "primaryConcept": "PRIME DOSSIER / PAGE 34",
+      "secondaryConcepts": [
+        "Representa peso, inercia, apego y memoria corporal como fuerzas narrativas de estabilización."
+      ],
+      "mapZones": [
+        "NEEDS_RESEARCH"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MATTERS-CLAIM-02",
+      "type": "NODE_SPEC",
+      "label": "REFLECTS_THROUGH",
+      "specifies": "KDX-NODE-MATTERS-CLAIM",
+      "primaryConcept": "La tensión material se vuelve objeto de metapercepción.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MEDITATING-POLARITY-01",
+      "type": "NODE_SPEC",
+      "label": "Meditating Polarity",
+      "specifies": "KDX-NODE-MEDITATING-POLARITY",
+      "primaryConcept": "CUERPO / INTEGRACIÓN",
+      "secondaryConcepts": [
+        "Convierte polaridades en una relación respiratoria estable"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MEDITATING-POLARITY-02",
+      "type": "NODE_SPEC",
+      "label": "STABILIZES",
+      "specifies": "KDX-NODE-MEDITATING-POLARITY",
+      "primaryConcept": "La respiración y el pulso sincronizan la relación entre polos",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MEMORY-ENGINE-01",
+      "type": "NODE_SPEC",
+      "label": "Memory Engine",
+      "specifies": "KDX-NODE-MEMORY-ENGINE",
+      "primaryConcept": "ARCHIVE / RETURN",
+      "secondaryConcepts": [
+        "Mantiene historial, relaciones, mutaciones y estado de revisita"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MEMORY-ENGINE-02",
+      "type": "NODE_SPEC",
+      "label": "MUTATES",
+      "specifies": "KDX-NODE-MEMORY-ENGINE",
+      "primaryConcept": "La memoria acumulada modifica luz, geometría, corredores, símbolos y disponibilidad de rutas del templo",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MEMORY-RIVER-01",
+      "type": "NODE_SPEC",
+      "label": "Memory River",
+      "specifies": "KDX-NODE-MEMORY-RIVER",
+      "primaryConcept": "UNIVERSE / GATE 12",
+      "secondaryConcepts": [
+        "Transforms archive events into a visible current of remembered fragments and choices."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MEMORY-RIVER-02",
+      "type": "NODE_SPEC",
+      "label": "REFLECTS_THROUGH",
+      "specifies": "KDX-NODE-MEMORY-RIVER",
+      "primaryConcept": "Carried memories are reframed through observer-dependent reflection.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-01",
+      "type": "NODE_SPEC",
+      "label": "Metamorphic Threshold",
+      "specifies": "KDX-NODE-METAMORPHIC-THRESHOLD",
+      "primaryConcept": "PRIME DOSSIER / PAGE 33",
+      "secondaryConcepts": [
+        "Modela cambio de estado mediante metamorfosis biológica y metáfora de transformación."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-02",
+      "type": "NODE_SPEC",
+      "label": "CONFRONTS",
+      "specifies": "KDX-NODE-METAMORPHIC-THRESHOLD",
+      "primaryConcept": "La transformación encuentra el peso de cuerpo, hábito, materia e identidad.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MIND-PRISON-01",
+      "type": "NODE_SPEC",
+      "label": "Mind Prison",
+      "specifies": "KDX-NODE-MIND-PRISON",
+      "primaryConcept": "PRIME DOSSIER / PAGE 31",
+      "secondaryConcepts": [
+        "Hace visible la identidad como construcción revisable."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MIND-PRISON-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-MIND-PRISON",
+      "primaryConcept": "La observación del encierro abre un pasaje corporal-simbólico de transformación.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MIRROR-ENGINE-01",
+      "type": "NODE_SPEC",
+      "label": "Mirror Engine",
+      "specifies": "KDX-NODE-MIRROR-ENGINE",
+      "primaryConcept": "UNIVERSE / GATE 13",
+      "secondaryConcepts": [
+        "Produces recursive, delayed and branching representations of observer state."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-MIRROR-ENGINE-02",
+      "type": "NODE_SPEC",
+      "label": "REVEALS",
+      "specifies": "KDX-NODE-MIRROR-ENGINE",
+      "primaryConcept": "Personal reflection expands toward inherited and cultural memory.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-OBSIDIAN-VAULT-01",
+      "type": "NODE_SPEC",
+      "label": "Obsidian Vault",
+      "specifies": "KDX-NODE-OBSIDIAN-VAULT",
+      "primaryConcept": "UNIVERSE / GATE 11",
+      "secondaryConcepts": [
+        "Condenses latent records, archetypal fragments and deep archive states into a navigable chamber."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-OBSIDIAN-VAULT-02",
+      "type": "NODE_SPEC",
+      "label": "FLOWS_INTO",
+      "specifies": "KDX-NODE-OBSIDIAN-VAULT",
+      "primaryConcept": "Static depth becomes dynamic remembered flow.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PORTAL-ORGANISM-01",
+      "type": "NODE_SPEC",
+      "label": "Portal Organism",
+      "specifies": "KDX-NODE-PORTAL-ORGANISM",
+      "primaryConcept": "UMBRAL",
+      "secondaryConcepts": [
+        "Convierte proximidad en acceso voluntario"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PORTAL-ORGANISM-02",
+      "type": "NODE_SPEC",
+      "label": "LEADS_TO",
+      "specifies": "KDX-NODE-PORTAL-ORGANISM",
+      "primaryConcept": "El portal introduce al visitante al sistema de rutas",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PORTAL-ORGANISM-03",
+      "type": "NODE_SPEC",
+      "label": "RESONATES_WITH",
+      "specifies": "KDX-NODE-PORTAL-ORGANISM",
+      "primaryConcept": "Ambos operan como mediadores entre estados o territorios",
+      "secondaryConcepts": [
+        "HYPOTHESIS"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-01",
+      "type": "NODE_SPEC",
+      "label": "Prime Dossier 31–37",
+      "specifies": "KDX-NODE-PRIME-DOSSIER-31-37",
+      "primaryConcept": "PRIME DOSSIER",
+      "secondaryConcepts": [
+        "Secuencia de observación, desidentificación, metamorfosis, materia, metapercepción, creación e integración."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-02",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-PRIME-DOSSIER-31-37",
+      "primaryConcept": "Page 31 abre la ruta haciendo visible la construcción identitaria.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PULSE-01",
+      "type": "NODE_SPEC",
+      "label": "Pulse",
+      "specifies": "KDX-NODE-PULSE",
+      "primaryConcept": "INTEGRACIÓN",
+      "secondaryConcepts": [
+        "Sincroniza memoria, cuerpo y navegación"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-PULSE-02",
+      "type": "NODE_SPEC",
+      "label": "GUIDES_TO",
+      "specifies": "KDX-NODE-PULSE",
+      "primaryConcept": "El pulso funciona como ancla de reentrada",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-RETURN-01",
+      "type": "NODE_SPEC",
+      "label": "Return",
+      "specifies": "KDX-NODE-RETURN",
+      "primaryConcept": "RETORNO",
+      "secondaryConcepts": [
+        "Reintegra memoria en una nueva forma"
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SIGNAL-TEMPLE-01",
+      "type": "NODE_SPEC",
+      "label": "Signal Temple",
+      "specifies": "KDX-NODE-SIGNAL-TEMPLE",
+      "primaryConcept": "SANCTUARY / HEART / RETURN",
+      "secondaryConcepts": [
+        "Contiene el estado persistente del sistema y manifiesta espacialmente la memoria acumulada"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SIGNAL-TEMPLE-02",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-SIGNAL-TEMPLE",
+      "primaryConcept": "El altar es el núcleo operativo alojado dentro de una arquitectura de estado mayor",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SIGNAL-TEMPLE-03",
+      "type": "NODE_SPEC",
+      "label": "CONVERGES_AT",
+      "specifies": "KDX-NODE-SIGNAL-TEMPLE",
+      "primaryConcept": "El templo funciona como santuario expandido del Heart / Node M y mantiene su lógica de orientación voluntaria",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SIGNAL-TEMPLE-04",
+      "type": "NODE_SPEC",
+      "label": "OPENS_ROUTE",
+      "specifies": "KDX-NODE-SIGNAL-TEMPLE",
+      "primaryConcept": "The astral route is entered from the living temple through a liminal dream threshold.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SIGNAL-VORTEX-01",
+      "type": "NODE_SPEC",
+      "label": "Signal Vortex",
+      "specifies": "KDX-NODE-SIGNAL-VORTEX",
+      "primaryConcept": "MACHINE / HEART",
+      "secondaryConcepts": [
+        "Traduce acciones e historial en patrones visuales y estados mutados"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SIGNAL-VORTEX-02",
+      "type": "NODE_SPEC",
+      "label": "RETURNS_STATE_TO",
+      "specifies": "KDX-NODE-SIGNAL-VORTEX",
+      "primaryConcept": "El vórtice devuelve el resultado procesado a la arquitectura para producir una mutación espacial visible",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SOUL-WEAVER-01",
+      "type": "NODE_SPEC",
+      "label": "BRANCHES_THROUGH",
+      "specifies": "KDX-NODE-SOUL-WEAVER",
+      "primaryConcept": "Choice threads gain temporal/version history through Chrono Spiral.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SOURCE-CHAMBER-01",
+      "type": "NODE_SPEC",
+      "label": "Source Chamber",
+      "specifies": "KDX-NODE-SOURCE-CHAMBER",
+      "primaryConcept": "ASTRAL / SOURCE",
+      "secondaryConcepts": [
+        "Holds the KODEX concept of origin as pure potential, silence and non-final unity."
+      ],
+      "mapZones": [
+        "CANON"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-SOURCE-CHAMBER-02",
+      "type": "NODE_SPEC",
+      "label": "RETURNS_THROUGH",
+      "specifies": "KDX-NODE-SOURCE-CHAMBER",
+      "primaryConcept": "The route does not end at abstraction; the Source is integrated through the embodied heart node.",
+      "secondaryConcepts": [
+        "CANONICAL"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-STERNAL-STAR-01",
+      "type": "NODE_SPEC",
+      "label": "Sternal Star",
+      "specifies": "KDX-NODE-STERNAL-STAR",
+      "primaryConcept": "CUERPO / SEÑAL",
+      "secondaryConcepts": [
+        "Vincula respiración, anatomía y orientación estelar simbólica"
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-STERNAL-STAR-02",
+      "type": "NODE_SPEC",
+      "label": "EXPANDS",
+      "specifies": "KDX-NODE-STERNAL-STAR",
+      "primaryConcept": "La respiración convierte el pulso en una red de orientación corporal",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-01",
+      "type": "NODE_SPEC",
+      "label": "Universe Route 11–20",
+      "specifies": "KDX-NODE-UNIVERSE-ROUTE-11-20",
+      "primaryConcept": "UNIVERSE",
+      "secondaryConcepts": [
+        "Orders Archive → Memory → Reflection → Lineage → Gaia → Relay → Temple → Time → Dream → Commons as a recursive expansion route."
+      ],
+      "mapZones": [
+        "CANON_CANDIDATE"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-02",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-UNIVERSE-ROUTE-11-20",
+      "primaryConcept": "Gate 11 opens the deep archive branch.",
+      "secondaryConcepts": [
+        "VALID"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-WE-TRIPANTU-01",
+      "type": "NODE_SPEC",
+      "label": "We Tripantu",
+      "specifies": "KDX-NODE-WE-TRIPANTU",
+      "primaryConcept": "RETORNO",
+      "secondaryConcepts": [
+        "Representa renovación temporal y reentrada al ciclo"
+      ],
+      "mapZones": [
+        "NEEDS_PROVENANCE_REVIEW"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-WE-TRIPANTU-02",
+      "type": "NODE_SPEC",
+      "label": "EXPANDS",
+      "specifies": "KDX-NODE-WE-TRIPANTU",
+      "primaryConcept": "Ambos articulan renovación y continuidad cíclica",
+      "secondaryConcepts": [
+        "NEEDS_CULTURAL_REVIEW"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-WENU-MAPU-01",
+      "type": "NODE_SPEC",
+      "label": "Wenu Mapu",
+      "specifies": "KDX-NODE-WENU-MAPU",
+      "primaryConcept": "TERRITORIO / COSMOLOGY",
+      "secondaryConcepts": [
+        "Relaciona territorio, cielo, raíz y memoria"
+      ],
+      "mapZones": [
+        "NEEDS_PROVENANCE_REVIEW"
+      ],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    },
+    {
+      "id": "SPEC-KDX-NODE-WENU-MAPU-02",
+      "type": "NODE_SPEC",
+      "label": "CONTAINS",
+      "specifies": "KDX-NODE-WENU-MAPU",
+      "primaryConcept": "Los animales se sitúan dentro de territorio y cosmología",
+      "secondaryConcepts": [
+        "NEEDS_CULTURAL_REVIEW"
+      ],
+      "mapZones": [],
+      "symbols": [],
+      "geometry": [],
+      "domains": [],
+      "claimClass": "UNKNOWN",
+      "provenance": null,
+      "atlasStatus": null,
+      "nextAction": null,
+      "ingestStatus": "POPULATED"
+    }
+  ]
+}
