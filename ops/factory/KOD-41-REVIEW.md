@@ -1,18 +1,84 @@
-# KOD-41: RUNTIME REVIEW (KOD-28 JourneyState)
+# KOD-41: RUNTIME REVIEW — KOD-28 JourneyState/EventTrace
 
-## Verdict: PASS
+Date: 2026-08-07
+Reviewer: ORCHESTRATOR
+Verdict: **PASS**
+Deployment: **BLOCKED**
 
-### Evaluation Against Acceptance Criteria:
-1. **same event sequence deterministically reproduces state**: PASS. The reducer is fully deterministic and prevents side-effect mutations.
-2. **event identity prevents duplicate Browser Back/Forward memory writes**: PASS. The `journeyReducer` explicitly checks `state.eventTrace.some(e => e.id === event.id)` and drops duplicate events to enforce idempotency.
-3. **revisits preserve prior trace**: PASS. Revisits increment the `visitCount` while appending to the end of the `eventTrace`.
-4. **M remains optional in data model**: PASS. `heartState` exists passively; its `active` boolean controls whether M is considered part of the journey.
-5. **exact return anchor is restorable without UI coupling**: PASS. `returnAnchor` stores exact string references uncoupled from React or router logic.
-6. **persistent state excludes raw pointer/touch telemetry**: PASS. State only traces `committedActions`, `visitCounts`, and `tracedRelations`. No raw pointer data is stored.
-7. **producer stayed inside file ownership**: PASS. Only `JourneyState.ts` and `JourneyState.test.ts` were created. No canon files or UI components were touched.
-8. **interfaces are narrow enough for KOD-29/KOD-30**: PASS.
+## Scope correction
 
-### Deployment Authorization
-`DEPLOYMENT STATUS: BLOCKED` (Standard factory review protocol).
+The earlier revision of this report reviewed `src/state/JourneyState.ts`, an accidental parallel implementation that was not the canonical KOD-28 runtime kernel. That surface has since been removed.
 
-The module is safe to proceed to A-M-Y integration.
+This review supersedes the earlier verdict and evaluates the canonical implementation now integrated into `feature/kodex-vertical-slice-v0`:
+
+- `src/lib/kodex/runtime/journey-state.ts`
+- `src/lib/kodex/runtime/journey-state.test.ts`
+
+The corrected KOD-28 producer PR (#27) changed exactly those two files. Its corrected implementation was subsequently reconciled into the current Vertical Slice line through PR #28. Integration-only CI/duplicate-cleanup changes in PR #28 are orchestration work and are not attributed to the bounded KOD-28 producer.
+
+## Evidence reviewed
+
+- KOD-28 packet: `ops/factory/packets/KOD-28.yaml`
+- KOD-41 packet: `ops/factory/packets/KOD-41.yaml`
+- corrected KOD-28 PR #27 changed-file surface: exactly `journey-state.ts` + colocated test
+- current canonical kernel on `feature/kodex-vertical-slice-v0`
+- KOD-29 graph projection and KOD-30 EdgeResolver consuming the current JourneyState contract
+- reconciled KOD-28/29/30 integration PR #28
+- fresh merge-candidate CI on the Organism Engine integration line after the corrected Vertical Slice base:
+  - KODEX Vertical Slice run `31231420856`: SUCCESS
+  - KODEX Organism Engine CI run `31231420855`: SUCCESS
+  - KODEX Effect Foundry CI run `31231420853`: SUCCESS
+- Vertical Slice CI now executes the JourneyState + canonical graph + EdgeResolver TypeScript unit suite before the Astro build.
+
+## Acceptance review
+
+1. **same event sequence deterministically reproduces state — PASS**
+
+   `journeyReducer` is pure with respect to external effects and `replayJourney` applies the caller-provided ordered sequence by reduction. The serendipity seed is derived deterministically from trace length + event id; no random source is used.
+
+2. **event identity prevents duplicate Browser Back/Forward memory writes — PASS**
+
+   Before any write, the reducer checks whether `state.trace` already contains the incoming `event.id`. Replaying the same identity returns the prior state and cannot double-write memory.
+
+3. **revisits preserve prior trace — PASS**
+
+   `arrive` appends the coordinate to `letterTrace`, increments `visitCounts[letter]`, and preserves the prior ordered event trace.
+
+4. **M remains optional in data model — PASS**
+
+   Heart availability and Heart visitation are separate dimensions. `heart.portalState` may become `LATENT`, `RESONANT` or `AVAILABLE` without counting a visit. `heart.visitCount` increments only on an explicit `arrive` event whose letter is `M`. Nothing in the initial state or replay forces M.
+
+5. **exact return anchor is restorable without UI coupling — PASS**
+
+   `ReturnAnchor` is pure serializable data: letter, world, focus, localState and traceLength. It has no DOM/router/framework reference. `serializeJourney` and `restoreJourney` preserve the anchor structurally.
+
+6. **persistent state excludes raw pointer/touch telemetry — PASS**
+
+   The kernel applies `PAYLOAD_ALLOWLIST` per event kind at reducer ingress, serialization and restoration. Only semantic keys (`to`, `portalState`, `focus`, `localState`) are allowed to persist; arbitrary telemetry fields are discarded.
+
+7. **producer stayed inside file ownership — PASS**
+
+   Corrected KOD-28 PR #27 changed exactly the implementation file and its colocated test, matching the packet's allowed surface. No route, scene, shader, renderer, canon or deployment workflow was changed by that producer packet.
+
+8. **interfaces are narrow enough for KOD-29/KOD-30 — PASS**
+
+   KOD-29 canonical graph projection and KOD-30 EdgeResolver are already implemented against the same JourneyState surface. The combined runtime test gate passes before the Astro build on the current integration candidate.
+
+## Contract / canon / privacy findings
+
+- A remains the deterministic common origin.
+- M/Heart remains optional and is not a score.
+- Y composition remains outside KOD-28 and is handled by the resolver layer.
+- B–L and N–X receive no invented canonical meaning in JourneyState.
+- No spiritual, biometric or psychological inference is encoded by the kernel.
+- Persistent payloads are semantic allowlisted rather than blacklist-filtered.
+
+## Verdict
+
+`PASS`
+
+KOD-28 is sufficiently deterministic, idempotent, privacy-minimized and narrow to feed graph projection and edge resolution. The previous report based on the duplicate `src/state` implementation is **SUPERSEDED** and must not be cited as evidence.
+
+This PASS authorizes continued **feature-branch integration only**. It does not authorize public deployment.
+
+`DEPLOYMENT STATUS: BLOCKED`
