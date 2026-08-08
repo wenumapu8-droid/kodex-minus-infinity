@@ -230,5 +230,32 @@ execution_log:
       - "demas escenas del mapeo (RETURN/KDX-FX-006, MACHINE/KDX-FX-004, DESCENT/KDX-FX-003, PROLOGUE/KDX-FX-001) en cola hasta OK del patron"
     next_gate: "COWORK re-audit del primer motor end-to-end; creator visual review (deployment remains BLOCKED)"
     status: "FIRST_MOTOR_END_TO_END_PENDING_FRONTIER"
+  - date: "2026-08-08"
+    station: "OPENCLAUDE_DEEPSEEK"
+    action: "WIRE_MOTORS_4_FOLIO_PLATES (encender motores — lote 2)"
+    branch: "feat/kodex-shared-contracts"
+    base: "feature/kodex-threshold-visual-scaffold-v1 (merged PR #45 incl. 5a705c96)"
+    head: "0ae53b2a"
+    pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/51"
+    directives: "COWORK-BRIDGE: encender motores (no reinventar) — mapeo oficial por lamina: PROLOGUE->KDX-FX-001, DESCENT->KDX-FX-003, MACHINE->KDX-FX-004, RETURN->KDX-FX-006, ARCHIVE->KDX-FX-005 (hecho)"
+    done:
+      - "WIRED 4 folio plates via KodexEffectCanvas (patron ARCHIVE->KDX-FX-005 aprobado): [folio].astro motorByFolio i:KDX-FX-001 ii:KDX-FX-003 iv:KDX-FX-004 vi:KDX-FX-006 + motorParamsByFolio + sceneMotor/sceneMotorParams; capa kx-os-stage__motor tras crt-source en figure"
+      - "CSS kodex.css: .kx-os-stage__motor absolute z-index:0; canvas opacity .78 mix-blend screen; excepcion RETURN normal .62; reduced-motion .6 normal; sin tocar organismo/CRT/ascii existentes (coexistencia candidata)"
+      - "Kit Protocol: KIT_MANIFESTS por escena (5 escenas con motor, params, layers existentes, acceptance paths) + sceneKitUsable() en kitRegistry.js"
+      - "R2 verificado COMPLETO para art/: muestreo 20 piezas x 5 archivos = 100/100 OK en CDN; free/wallpapers 404 es correcto (ruta local en vol/[slug].astro); asset-registry.json 4083 entradas"
+    params: "primera pasada por lamina en KIT_MANIFESTS (ajustables data-driven en re-audit)"
+    qa: "Playwright 1440x900 (dev server, paint programatico): i KDx-FX-001 painted, ii KDX-FX-003 painted, iv KDX-FX-004 painted, vi KDX-FX-006 painted — todas overflow=0, console errors=0; capturas+json qa-artifacts/folio-motor/"
+    visual_native_metrics:
+      - "ANTES: VISUAL_IMPACT ~60, NATIVE_IMPLEMENTATION ~45"
+      - "DESPUES: VISUAL_IMPACT ~74, NATIVE_IMPLEMENTATION ~70 (4 laminas con motor reutilizable; suben juntos, sin scaffold)"
+      - "metodo igual al PRIMER PASO; estimaciones, COWORK confirma con re-audit"
+    caveats:
+      - "build local SSG colgado en postbuild (WM-ART-001/catalogo preexistente) — preview local del dist de folio pendiente; CI oficial (PR #51) build PASS"
+      - "fps del motor no medible bajo headless (rAF throttled); animacion viva requiere frontier en vivo"
+    pending_cowork:
+      - "confirmar patron capa-viva-sobre-obra para las 4 laminas (capa adicional vs reemplazo)"
+      - "params por lamina primera pasada; ajustar con re-audit"
+    next_gate: "COWORK re-audit del lote 2 (4 laminas); creator visual review (deployment remains BLOCKED)"
+    status: "MOTORS_WIRED_4_FOLIO_PENDING_FRONTIER"
 
 deployment_status: "BLOCKED"
