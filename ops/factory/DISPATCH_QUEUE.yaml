@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-08-08T01:44:00Z"
+updated_at: "2026-08-08T04:00:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
@@ -10,6 +10,7 @@ authority:
   router_policy: "ops/factory/ROUTER_POLICY.md"
   heartbeat_protocol: "ops/factory/HEARTBEAT_PROTOCOL.md"
   frontier_visual_gate: "ops/factory/FRONTIER_VISUAL_GATE.md"
+  visual_scaffold_protocol: "ops/factory/VISUAL_SCAFFOLD_PROTOCOL.md"
   event_schema: "ops/factory/FACTORY_EVENT_SCHEMA.yaml"
   loop_protocol: "ops/factory/FACTORY_LOOP_PROTOCOL.md"
 
@@ -25,13 +26,15 @@ rules:
   - "PRODUCT-FIRST: visible product, QA and creator-facing convergence outrank new control-plane expansion."
   - "FRONTIER VISUAL RULE: build/functional PASS does not equal visual PASS. Fast/volume workers cannot declare canonical visual acceptance."
   - "CREDENTIAL RULE: a station without valid model authentication is PAUSED, not RUNNING; its work is rerouted without discarding prior evidence."
+  - "FRONTIER CAPACITY RULE: Claude Pro remains READY/IDLE unless ambiguity, difficult integration, second-pass visual review or connection/MCP work justifies scarce context use."
+  - "VISUAL SCAFFOLD RULE: track VISUAL_IMPACT and NATIVE_IMPLEMENTATION separately; scaffold is a convergence aid, never a final static substitute for the living scene."
 
 loop_policy:
   enabled: true
-  target: "complete KOD-18 through visible internal assembly, frontier visual convergence and release review"
+  target: "complete KOD-18 through visible internal assembly, scene-by-scene visual convergence and release review"
   transport: "GitHub + Linear; chat is bootstrap/fallback only"
-  cycle: "observe evidence -> functional gate -> visible preview -> frontier visual audit -> delta packet -> bounded implementation -> QA -> creator acceptance -> repeat"
-  lane_blocking: "a blocker pauses only its dependent lane; independent lanes continue"
+  cycle: "visible preview -> evidence capture -> frontier visual audit -> measurable delta packet -> bounded implementation -> CI/device QA -> frontier re-audit -> creator acceptance -> next scene"
+  lane_blocking: "a blocker pauses only its dependent lane; independent reference/spec preparation continues"
   stop_conditions:
     - "creator/canonical decision required"
     - "cultural or rights authorization required"
@@ -42,50 +45,87 @@ loop_policy:
     - "release gate reached"
   deployment_status: "BLOCKED"
 
+active_product:
+  packet: "KOD-49"
+  title: "THRESHOLD Visual Scaffold / Scene Fidelity Sprint 01"
+  packet_path: "ops/factory/packets/KOD-49.yaml"
+  implementation_repository: "wenumapu8-droid/wenu-frontend"
+  implementation_branch: "feature/kodex-threshold-visual-scaffold-v1"
+  implementation_pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/35"
+  status: "REWORK_AFTER_FIRST_AUDIT"
+  evidence:
+    - "KODEX Threshold Fidelity CI run 31238279205: SUCCESS"
+    - "KODEX Vertical Slice run 31238279194: SUCCESS"
+    - "QA artifact 9016187692 digest sha256:45b579e86d79df68f337a4d4424d677c9ebf2722f9df6906e711d47e9fa4d6d1"
+    - "docs/kodex/THRESHOLD_VISUAL_AUDIT_V1.md records provisional VISUAL_IMPACT 58/100 and NATIVE_IMPLEMENTATION 48/100"
+  next_gate: "frontier review of D1-D8 -> bounded implementation -> re-run CI -> creator visual review"
+
+scene_fidelity_queue:
+  active:
+    - "KOD-49 / THRESHOLD"
+  queued:
+    - "KOD-50 / ARCHIVE / Linear / blocked by KOD-49"
+    - "KOD-51 / HEART-0 / Linear / blocked by KOD-50"
+    - "KOD-52 / RETURN-+∞ / Linear / blocked by KOD-51"
+  sequence: "THRESHOLD -> ARCHIVE -> HEART -> RETURN -> full P0 re-audit"
+
 stations:
   - station_id: "CLAUDE_MAX_MACMINI"
     profile: "FRONTIER_LONG_CONTEXT_ARCHITECT"
-    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "READY_PENDING_FRESH_HEARTBEAT"
-    current_packet: "KOD-53"
-    packet_path: "ops/factory/packets/KOD-53.yaml"
+    connection_status: "CREATOR_REPORTED_ACTIVE"
+    execution_status: "READY_FOR_EVIDENCE_HEARTBEAT"
+    current_packet: "KOD-49"
+    packet_path: "ops/factory/packets/KOD-49.yaml"
     target_repository: "wenumapu8-droid/wenu-frontend"
-    target_branch: null
-    mode: "FRONTIER_VISUAL_AUDIT"
-    latest_evidence: "Mac mini is the designated heavy/frontier integration station; fresh run evidence is still required before treating it as active."
-    current_step: "audit the openable KOD-47 visible assembly first, then DNA Passage candidate, against creator references and FRONTIER_VISUAL_GATE.md; absorb unresolved visual-spec judgment previously routed to Antigravity only when product convergence requires it"
-    next_after_gate: "emit measurable delta packets; take difficult implementation directly only when judgment/context dominates"
-    next_expected_evidence: "heartbeat + audit handoff with screenshots/reference deltas and PASS/REWORK verdict"
+    target_branch: "feature/kodex-threshold-visual-scaffold-v1"
+    mode: "PRIMARY_FRONTIER_VISUAL_AUDIT"
+    latest_evidence: "Creator reports Mac mini active. Repository evidence exists for the KOD-49 candidate, but a station-specific fresh heartbeat/handoff is still required before calling this station RUNNING."
+    current_step: "read docs/kodex/THRESHOLD_VISUAL_AUDIT_V1.md; inspect FULL-motion KOD-49 candidate and approved references; refine/accept/reject D1-D8 with measurable deltas"
+    next_after_gate: "emit FRONTIER_VISUAL_PASS or REWORK; take difficult material/renderer implementation only if judgment/context dominates"
+    next_expected_evidence: "fresh heartbeat + visual audit handoff grounded in screenshots/reference comparison"
+    file_ownership:
+      preferred: "review first; if implementing, own src/components/kodex/threshold/** only after explicit handoff"
+      avoid: "src/pages/kodex/lab/threshold-fidelity/** while volume worker owns deterministic page/HUD deltas"
     wip_limit: 1
 
   - station_id: "CLAUDE_PRO_IMAC"
     profile: "SECONDARY_FRONTIER_CONTEXT_REVIEWER"
-    connection_status: "CREATOR_REPORTED_ACCOUNT_AVAILABLE"
-    execution_status: "NEEDS_LOCAL_AUTH_HEALTH_CHECK"
+    connection_status: "CREATOR_REPORTED_AVAILABLE"
+    execution_status: "READY_IDLE_SCARCE_CAPACITY"
     current_packet: "KOD-53"
     packet_path: "ops/factory/packets/KOD-53.yaml"
     target_repository: "wenumapu8-droid/wenu-frontend"
     target_branch: null
-    mode: "FRONTIER_FALLBACK_REVIEW"
-    resume_condition: "Claude Code installed/healthy and authenticated interactively with the Claude App Pro account; quota available"
-    latest_evidence: "Claude Pro account/context exists on the iMac, but this station must not be treated as runnable until a fresh local auth/health heartbeat is recorded."
-    current_step: "after local health check, act as independent second-pass reviewer or bounded frontier implementer"
-    next_expected_evidence: "station bootstrap output summary + heartbeat without secrets"
-    wip_limit: 1
+    mode: "BRIDGE_AND_SECOND_PASS_ONLY"
+    latest_evidence: "Creator reports Claude Pro available and explicitly reserves it as bridge/high-value frontier capacity."
+    current_step: "remain READY/IDLE; do not consume quota on mechanical KOD-49 work"
+    activate_when:
+      - "frontier judgment remains ambiguous after primary review"
+      - "difficult integration/context reconciliation blocks KOD-49"
+      - "API/MCP/connection architecture requires high-context review"
+      - "independent second-pass visual gate is requested"
+    next_expected_evidence: "only a bounded handoff if activated; otherwise none"
+    wip_limit: 0
 
   - station_id: "OPENCLAUDE_DEEPSEEK"
     runtime_client: "OpenCode/OpenClaude"
     profile: "VOLUME_BOUNDED_CODING_WORKER"
-    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "WAIT_FRONTIER_REVIEW"
-    current_packet: "KOD-47"
-    packet_path: "ops/factory/packets/KOD-47.yaml"
+    connection_status: "CREATOR_REPORTED_ACTIVE"
+    execution_status: "READY_FOR_BOUNDED_KOD49_DELTAS"
+    current_packet: "KOD-49"
+    packet_path: "ops/factory/packets/KOD-49.yaml"
     target_repository: "wenumapu8-droid/wenu-frontend"
-    target_branch: "feature/kodex-visible-assembly-01"
-    mode: "BOUNDED_IMPLEMENTATION"
-    latest_evidence: "KOD-47 Visible Assembly PR #32 exists as an end-to-end internal product slice."
-    current_step: "hold new art-direction decisions; implement only deterministic deltas after frontier audit"
-    next_after_gate: "apply approved visual/interaction delta packet, tests and CI"
+    target_branch: "feature/kodex-threshold-visual-scaffold-v1"
+    mode: "DETERMINISTIC_IMPLEMENTATION"
+    latest_evidence: "KOD-49 native lab and CI are green; orchestrator audit provides D1-D8. Creator reports OpenCode active."
+    current_step: "take only deterministic/non-ambiguous deltas after reading docs/kodex/THRESHOLD_VISUAL_AUDIT_V1.md; prioritize truthful HUD/editorial density, responsive/mobile corrections, reduced/off states and QA"
+    preferred_file_ownership:
+      - "src/pages/kodex/lab/threshold-fidelity/**"
+      - ".github/workflows/kodex-threshold-fidelity-ci.yml"
+      - "tests or micrographics explicitly referenced by KOD-49"
+    avoid_file_ownership:
+      - "src/components/kodex/threshold/KodexThresholdMembrane.astro while frontier/Codex material work is active"
+    next_after_gate: "commit bounded deltas, run CI/device captures, hand off evidence; never declare visual acceptance"
     forbidden_authority:
       - "canonical visual acceptance"
       - "canon/narrative topology redefinition"
@@ -106,9 +146,9 @@ stations:
     mode: "NO_EXECUTION"
     blocker_class: "CREDENTIAL_UNAVAILABLE"
     resume_condition: "creator restores valid Gemini authentication/token and station returns a fresh heartbeat"
-    latest_evidence: "Creator reported on 2026-08-07 that Antigravity no longer has a Gemini token. Existing passport branches/PRs remain historical/spec evidence and are not discarded."
-    current_step: "do not execute or request Gemini-dependent work; preserve prior outputs and reroute any needed review/spec work to frontier stations or the orchestrator"
-    next_after_gate: "optional return as multimodal spec worker only after authentication is restored; not required for KODEX progress"
+    latest_evidence: "Creator reported Antigravity no longer has a Gemini token. Existing passport outputs remain evidence and are not discarded."
+    current_step: "do not execute or request Gemini-dependent work; KODEX does not wait on this lane"
+    next_after_gate: "optional return as multimodal spec worker only after authentication is restored"
     next_expected_evidence: "fresh auth heartbeat if restored; otherwise none"
     forbidden_authority:
       - "creator visual acceptance"
@@ -118,13 +158,14 @@ stations:
     profile: "ORCHESTRATOR_AND_ART_DIRECTION_SUPERVISOR"
     connection_status: "ACTIVE"
     execution_status: "RUNNING"
-    current_packet: "KOD-53"
-    packet_path: "ops/factory/packets/KOD-53.yaml"
+    current_packet: "KOD-49"
+    packet_path: "ops/factory/packets/KOD-49.yaml"
     target_repository: "wenumapu8-droid/kodex-minus-infinity + wenumapu8-droid/wenu-frontend"
-    target_branch: null
-    mode: "PRODUCT_CONVERGENCE_CONTROL"
-    current_step: "route KOD-47 and DNA Passage into frontier visual audits; absorb any necessary KOD-38/KOD-39/KOD-40 spec review from paused Antigravity; convert review deltas into bounded work for volume workers"
-    next_expected_evidence: "frontier audit handoff + measurable delta packet + updated preview evidence"
+    target_branch: "feature/kodex-threshold-visual-scaffold-v1"
+    mode: "SCENE_FIDELITY_CONTROL"
+    latest_evidence: "Created native Threshold membrane + Astro fidelity lab + CI; both KOD-49 and Vertical Slice workflows are green; visual audit v1 issued REWORK with D1-D8."
+    current_step: "hold one active visual write lane; route D1-D8 by file ownership; inspect new evidence; promote only after frontier + creator review"
+    next_expected_evidence: "worker commits + green CI/device captures + frontier re-audit"
     wip_limit: 1
 
   - station_id: "HERMES_TELEGRAM"
@@ -140,12 +181,14 @@ stations:
     wip_limit: 1
 
 dependency_frontier:
-  - "KOD-47 Visible Assembly PR #32 exists and is ready to enter frontier visual convergence review."
-  - "DNA Passage PR #33 is a tested visual/interaction candidate and requires frontier + creator visual acceptance before public integration."
-  - "KOD-53 establishes the frontier visual gate and Mac station routing."
-  - "OpenCode remains valuable for implementation volume but is no longer final visual authority."
-  - "Mac mini is primary frontier station; iMac Claude Pro is secondary/fallback after local auth/health check."
-  - "Antigravity is PAUSED because Gemini authentication/token is unavailable; this does not block KODEX. Existing KOD-38/KOD-39/KOD-40 outputs remain usable as prior evidence/specs."
-  - "No new public /kodex/ replacement or deployment is authorized."
+  - "KOD-47 Visible Assembly PR #32 is MERGED into feature/kodex-vertical-slice-v0 and its browser QA is green."
+  - "KOD-49 THRESHOLD native fidelity candidate exists on PR #35 with two green workflows and evidence artifact 9016187692."
+  - "KOD-49 visual audit v1 verdict is REWORK / STRONG BASE; material complexity, Z-depth, truthful editorial density and mobile focal scale remain the primary deltas."
+  - "KOD-50 ARCHIVE, KOD-51 HEART and KOD-52 RETURN are queued in Linear and must not open overlapping write lanes before handoff."
+  - "DNA Passage PR #33 remains a tested candidate requiring later frontier + creator visual acceptance before public integration."
+  - "OpenCode remains valuable for implementation volume but is never final visual authority."
+  - "Claude Pro is intentionally conserved as bridge/second-pass frontier capacity."
+  - "Antigravity remains PAUSED without Gemini auth; this does not block KODEX."
+  - "No public /kodex/ replacement or production deployment is authorized."
 
 deployment_status: "BLOCKED"
