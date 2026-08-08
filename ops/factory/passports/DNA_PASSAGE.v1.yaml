@@ -1,0 +1,637 @@
+schema_version: 1
+visual_passport:
+  passportId: "KDX-VP-DNA-PASSAGE-V1"
+  conceptId: "descent-tunnel"
+  title: "DNA PASSAGE"
+  status: "DRAFT"
+
+  semanticPurpose: >-
+    Compose the canonical `descent-tunnel` organism (manifest `organismos[03]`, role "profundidad infinita",
+    states DORMANT / DESCEND / ABSORB, verbs accelerate / distort / absorb) into a traversal whose wall is a
+    double helix, so that descent through depth and descent through scale become the same movement. KODEX
+    already ships this passage: `/manifesto` opens with ManifestoSpiral.astro — "the DNA-helix cosmos journey
+    (from a dream, 2026-07)", lede "From the earth, out through the source, into the cosmos" — and its WebGL
+    upgrade ManifestoSpiral3D.astro carries a 14-station version whose chapter XII is literally "The cosmic
+    code / The spiral within / At the center of the body: the same spiral as the sky". DNA PASSAGE promotes
+    that opening from page ornament to a semantic scene, and it does so under the two-layer DNA doctrine
+    already recorded in canon (manifest volume `fic-diseno-humano-adn`): documented DNA — the double helix,
+    the KODEX resonance `1-espiral` — and the esoteric/mythopoetic reading are two distinguished layers, and
+    "Nunca se funden" / "Never blended". The scene's whole reason to exist is to hold both layers at once
+    without letting either contaminate the other.
+
+  nodeQuestion: >-
+    The same helix is a molecule that has been measured and a story about where you came from. While you are
+    travelling it, which of the two are you inside — and what keeps the difference visible instead of letting
+    the beauty of the form quietly turn the myth into a fact?
+
+  coordinateAssignment: null
+
+  sourceRefs:
+    - id: "ops/factory/packets/KOD-39.yaml (KDX-WP-VISUAL-02)"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "The exact string 'DNA PASSAGE' occurs in no file of kodex-minus-infinity or wenu-frontend except this packet. Verified by full-tree grep of both repositories."
+        - "The packet's source_inputs name 'actual DNA PASSAGE concept/reference images available to the visual worker'. No image set reached this worker; no image was inspected. See PROVENANCE QUESTION 1."
+        - "Unlike KOD-38, the absence of images did NOT leave this passport ungrounded: a shipped, approved implementation of a DNA passage exists in wenu-frontend and is the primary anchor below."
+    - id: "wenu-frontend src/components/ManifestoSpiral.astro"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Read in full (260 lines). Header: 'ManifestoSpiral.astro — the DNA-helix cosmos journey (from a dream, 2026-07). Opening of /manifesto. Earth at the top; scrolling down travels out through the scales — atom, seed, cell, THE SOURCE, planets, sun, galaxy — and pours into a black hole at the bottom. Two strands: gold (organic/DNA) + cyan (cybernetic/informatic).'"
+        - "This is the DEFAULT served visual for /manifesto and the no-WebGL / reduced-motion / <360px fallback for the 3D version. Hand-coded inline SVG, no dependencies."
+        - "Measured geometry: cx=190, yTop=150, yBot=1490, k=0.0225 rad/px, y step 3px. Total twist (1490-150)*0.0225 = 30.15 rad = 4.80 turns. Rungs every 6th sample = every 18px = 0.405 rad, i.e. ~15.5 rungs per turn, ~74 rungs total. Amplitude envelope amp(y)=12+62*((yBot-y)/(yBot-yTop))^0.72 — wide at Earth, narrowing into the black hole."
+        - "Strand pair is P1 = cx + a*sin(th), P2 = cx - a*sin(th) — an exact pi phase offset, which yields two IDENTICAL grooves. Real B-DNA has unequal major/minor grooves. This helix is therefore symbolic, not biologically recognizable. That is correct for its register; see geometry and reviewChecks."
+        - "Stations, in served order: Earth / LA TIERRA, Atom / EL ATOMO, Seed / LA SEMILLA, Cell-DNA / LA CELULA, The Source / LA FUENTE, Planets / LOS PLANETAS, Sun / EL SOL, Galaxy / LA GALAXIA, Black Hole / EL AGUJERO NEGRO. Bilingual EN + ES on every station."
+        - "Strand colours as shipped: gold #c9a84c / #e8c766 (organic) and teal-cyan #64e0d0 / #7fe9db (cybernetic). These are wenu-frontend brand tokens (ember #c9a84c), NOT the kodex.tokens.json signal palette. See PALETTE CONFLICT in notes."
+        - "Accessibility as shipped: a real .sr-only paragraph describes the whole journey; prefers-reduced-motion disables every animation. There is no keyboard interaction because there is no interaction at all beyond scroll reveal."
+        - "DEFECT: window 'scroll' and 'resize' listeners are registered and never removed; there is no teardown. Reported, not fixed."
+    - id: "wenu-frontend src/components/ManifestoSpiral3D.astro"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "REVIEW_REQUIRED"
+      notes:
+        - "Inspected in detail (2555 lines), read-only. WebGL 'visionary' upgrade of the same journey; header says 'Ocin's dream, prototype v5 — audited + approved, 2026-07-18', ported 1:1 from a prototype index.html."
+        - "14 stations, chapter I..XIV, expressed as Mapuche cosmology: I Wenu Mapu, II Antu, III Rupu, IV Kuyen, V Nag Mapu, VI the descent toward Minche Mapu, VII Kutral, VIII Kuruf, IX Ko, X Kura, XI Meli Witran Mapu, XII The cosmic code, XIII Itrofill Mongen, XIV Minche Mapu."
+        - "The DNA object: turns 4.2, radius 8.5, spans world y -164 to -256. Strands are flat ribbons (custom BufferGeometry, width 1.8, MeshStandardMaterial emissive #a8c4ff) plus additive glow TubeGeometry radius 1.2. Base pairs are two BoxGeometry bars + two SphereGeometry junctions per rung, colour pairs amethyst/ember #9a7ee0-#c9a84c and teal/silver #64e0d0-#b8b4aa."
+        - "Second strand is generated at `ang + Math.PI` — again an exact pi offset, again equal grooves, again not biologically recognizable."
+        - "Base-pair COUNT CHANGES WITH VIEWPORT: STEPS 200 desktop / 110 mobile with a rung every 6th sample gives 34 base pairs on desktop and 19 on mobile — 8.1 and 4.5 per turn respectively, against ~10.5 in real B-DNA. A structure whose base-pair count depends on screen width is decorative by construction and must stay in the symbolic layer."
+        - "There is NO ethnographic or cultural citation anywhere in the file. Line 829 asserts an 'authentic kultrun drumhead — audited pass' without naming a source. See PROVENANCE QUESTION 2 and 3."
+        - "Interaction: pointermove only (eye-net pupil tracking, idle drift after 2s). Lenis smooth-scroll hijacks the window. ZERO keyboard handlers, zero tabindex, zero focusable control in the enhanced block. No storage, no fetch, no analytics — nothing is persisted."
+        - "No numeric readout is displayed anywhere; the progress rail is a CSS width only and is never rendered as text. This is good and must be preserved."
+        - "Capability gate: the SVG fallback is served when prefers-reduced-motion is set, OR innerWidth < 360, OR neither webgl2 nor webgl can be obtained, OR any exception. lowPerf (deviceMemory < 4 or hardwareConcurrency <= 2) deliberately does NOT gate the fallback; it only forces the lighter preset via `mobile = innerWidth < 760 || lowPerf`."
+        - "Dependencies: three, three/addons postprocessing (EffectComposer, RenderPass, UnrealBloomPass, ShaderPass, OutputPass), GLTFLoader, gsap, gsap/ScrollTrigger, lenis — all dynamic-imported inside an IntersectionObserver. The file states ~500kb. Also fetches /models/serpent_head_r2.glb at runtime."
+        - "It HAS a real dispose() (renderer.dispose, composer.dispose, lenis.destroy, scene traverse, ScrollTrigger kills, listener removal). See notes for exactly what it still leaks."
+    - id: "wenu-frontend src/pages/manifesto.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "The only consumer of ManifestoSpiral3D, which in turn renders ManifestoSpiral as its poster/fallback. Confirms the passage is shipped, not a sketch."
+    - id: "wenu-frontend public/kodex-content/manifest.json — organismos[03] descent-tunnel"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "rol: 'profundidad infinita'. estados: DORMANT / DESCEND / ABSORB. verbos ES: acelera, distorsiona, absorbe. EN: accelerate, distort, absorb."
+        - "Canonical paleta: #FF5A00, #FF2028, #FFB000, #0A0A0A. Canonical fx_chain: [chromatic-split, pixel-sort]. Canonical audio routing: 'low-mid+velocidad'."
+        - "This is the only one of the 8 organisms whose role is traversal-through-depth, which is why DNA PASSAGE is specified as its preset. NO organism is named DNA PASSAGE; see PROVENANCE QUESTION 4."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volume fic-diseno-humano-adn"
+      relation: "PROVENANCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "THE governing canonical statement for this passport. curaduria_en verbatim: 'Two distinguished layers: documented DNA (double helix = 1-spiral) and the esoteric Human Design reading. Never blended.' ES: '...Nunca se funden.'"
+        - "fuente field verbatim: 'ADN: ciencia. Diseño Humano: esotérico.' — canon already splits the science layer from the esoteric layer by name."
+        - "registro: ficcion. marco: ficcion. paleta: neon. resonancias include signal-bloom and cosmology-core."
+    - id: "wenu-frontend public/kodex-content/manifest.json — Codex Estelar Libro IV volumes"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "lore-4-el-diseno-original, lore-4-la-geometria-del-alma, lore-4-merkabah, lore-4-respiracion-primordial, lore-4-llama-del-corazon. Book IV is titled 'El ADN Sagrado y el Cuerpo de Luz'."
+        - "Every one carries registro: ficcion, marco: ficcion, paleta: neon, and nota_registro 'ficción/esotérico de autor, presentado como lore, sin claims de hecho ni de salud' — no claims of fact OR HEALTH. The health clause is load-bearing here and is carried into epistemicConstraints."
+        - "Parent volume vol-codex-estelar states '(Ficción/esotérica: separada de la cosmovisión mapuche documentada.)'"
+    - id: "wenu-frontend public/kodex-content/books/kodex-estelar/source-text/libro-4/01-el-diseno-original.txt"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "Primary lore text, READ IN FULL by this worker. It supplies the canonical visual instruction for this concept, verbatim: 'Símbolo Visual: Espiral doble de ADN dorado brillante, flotando en el espacio.' — a brilliant golden DNA double spiral floating in space."
+        - "That line is why the shipped gold strand (#c9a84c / #e8c766) is treated in this passport as canonical expression rather than as an arbitrary colour choice."
+        - "The same text asserts 'el ADN es energía', 'Matrix 5D', 'objetos hiperespaciales', and chapter II asserts 'los códigos dormidos del ADN se encienden' and 'Tu ADN vibra según proporciones numéricas'. These are MYTHOPOETIC claims in the fiction register. They are the exact material the epistemic constraints below exist to contain."
+        - "The Obsidian vault PDFs that the manifest names as the origin of these texts (/Users/user1/Obsidian/...) DO NOT EXIST on this machine. Only the derived .txt files are present. Verified."
+    - id: "wenu-frontend public/kodex-content/manifest.json — sistemas.gramatica and sistemas.registro_vocabulario"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "gramatica verbatim: 'un motor (KDX CORE) + una suite de 8 tratamientos GPU (KDX FX SUITE), 8 organismos = presets data-driven. Cualquier tratamiento se aplica a cualquier organismo.' This is the authority for specifying DNA PASSAGE as a preset of an existing organism, not a new renderer — and it is also the basis of the engine-divergence question in notes."
+        - "registro_vocabulario declares five registers: documentado, mito, esoterico, ficcion, estructura. 'ficcion' is defined as 'Nunca se mezcla con lo documentado ni con lo mapuche.'"
+        - "manifest.note verbatim: 'Dos registros siempre marcados: DOCUMENTADO (paleta marca) y MITO/FICCIÓN (paleta neon). Mapuche y Codex Estelar NUNCA se mezclan.'"
+    - id: "kodex-minus-infinity packages/recovered/helix-transparent-v1/ (PROTO-CANVAS-001)"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Read in full: helix.js, index.html, README.md. Registered in data/registries/prototypes.yaml as PROTO-CANVAS-001 'KODEX Helix Transparent', family transparent_line_organism, status SOURCE_MIGRATED, and checksummed in data/registries/package-checksums.yaml as PKG-HELIX-TRANSPARENT-V1 sha256 79e52eed4d867ea7fdca6e8a132897333eb901beca2c971a9907bf378cb4c98c."
+        - "IMPORTANT AND EASY TO MISREAD: this prototype is NOT a DNA double helix. It is a lobed spindle surface of revolution — 34 meridians x 32 parallels, turns 3.0, verticalSteps 180, baseRadius 0.245, heightRatio 0.84, perspective 3.8 — with progressive twist. It is a twisted lattice, not a base-paired duplex. It must not be presented as DNA."
+        - "What it DOES contribute, and the reason it is cited: a proven perfect-loop discipline (phase runs exactly 0 -> 2pi over 240 frames at 30fps, so the loop closes with no seam), a transparent-canvas method (ctx.clearRect each frame, alpha preserved), and depth by painter's-algorithm z-sorting of stroked paths. All three are adopted in motion.loopingBehavior and composition.depthModel."
+    - id: "wenu-frontend COWORK-BRIDGE.md"
+      relation: "RESEARCH"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "Line 173 establishes the archetype code: 'SPIRAL a 1-espiral'. SPIRAL is one of the 7 constellation glyphs that index the universe (SEED, WITNESS, SPIRAL, MIRROR, LATTICE, VOID, ANCHOR)."
+        - "Line 511 verbatim: 'ADN = 1-espiral (doble helice)'. Line 526: 'F7. DISENO HUMANO + ADN: diseno humano (esoterico) + ADN documentado (doble helice = 1-espiral) — distinguir las dos capas.' The two-layer rule appears independently in two places."
+        - "Line 175 is the counter-example this passport refuses: it prescribes 'Datos vivos: core temp 87.3K, field stability 94.6%, dark flow 13.7%, quantum noise 2.7dB, timeline drift 0.0009%, signal 87.6%'. These are almost verbatim the values canon/KODEX_EPISTEMIC_STANDARD.md lists as PROHIBITED pseudo-metrics. Canon overrides the bridge. See notes."
+    - id: "wenu-frontend src/pages/kodex/folio/[folio].astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "folio ii is the shipped descent scene: slug 'descent', motif 'descent-tunnel', accent var(--kdx-orange,#FF6A00), title 'THE TREE DESCENDS TO HOLD WHAT RISES.', cta 'DESCEND'."
+        - "Its meta row declares 'MODE · STEPWISE' and 'SKIP · INDEX'. The shipped descent already treats stepwise progression and an always-available skip as first-class. This passport makes that mandatory rather than decorative, because it is what keeps traversal non-compulsory under ADR-0010."
+    - id: "wenu-frontend src/components/kodex/scenes/kodex-observe-v2-client.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "KdxObserveV2Runtime — the shipped KDX CORE candidate: WebGL2 six-pass pipeline source -> displace -> threshold -> chroma -> feedback -> crt, ping-pong framebuffers, fullscreen triangle."
+        - "resolveProfile(): reduced-motion -> low-power; mobile (max-width 760px) with dpr > 2 -> low-power; mobile -> balanced; else dpr > 1.65 ? balanced : full. DPR capped at 1.5 (full) / 1.2 (otherwise)."
+        - "Supports ?fallback=1 and ?debug=1. The DOM fallback layer is always rendered; the canvas only gains .is-active when WebGL2 initialises. This is the proven progressive-enhancement pattern adopted in fallback.noWebGL."
+        - "DEFECT: bindEvents() registers addEventListener('resize', ...) and document.addEventListener('visibilitychange', ...) as anonymous arrows and never removes them. stop() only cancels the RAF and timeouts. There is no destroy path. Verified at lines 253-258 and 247-251."
+    - id: "wenu-frontend src/kodex/observe-v2/shaders/*.glsl"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Verified present: fullscreen.vert.glsl, source.frag.glsl, displace.frag.glsl, threshold.frag.glsl, chroma.frag.glsl, feedback.frag.glsl, crt.frag.glsl."
+        - "Treatment-to-shader map for the 8 canonical treatments: crt-scan -> crt.frag (EXISTS); bitmap-threshold -> threshold.frag (EXISTS); memory-feedback -> feedback.frag (EXISTS); chromatic-split -> chroma.frag (EXISTS); glitch-fracture -> displace.frag (PARTIAL, approximate only); dither-matrix -> NO SHADER; thermal-map -> NO SHADER; pixel-sort -> NO SHADER."
+        - "Consequence for this scene: descent-tunnel's canonical fx_chain is [chromatic-split, pixel-sort]. chroma.frag covers the first. PIXEL-SORT HAS NO SHADER and would have to be written or substituted. This is stated plainly rather than assumed away."
+    - id: "kodex-minus-infinity design-system/tokens/kodex.tokens.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Authoritative colour, space, line, duration, easing, layout and performance tokens. performance.maxActiveHeavyCanvases = 1 and mobileDprCap 1.2 / desktopDprCap 1.65 are treated as binding by this passport."
+        - "notes field verbatim: 'Color may not carry essential meaning alone.' and 'Typography families are intentionally omitted until font rights are approved.' — hence every paletteRole below sets colorIsNotOnlyChannel true, and typographyRoles name no family."
+    - id: "kodex-minus-infinity docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Concept assignment law — B-L and N-X meanings are not invented to complete a list, so coordinateAssignment stays null."
+        - "'A linear A->B->C sequence. Rejected. The alphabet defines the available conceptual universe, not a mandatory order.' This is the direct constraint on a scene that is literally a sequence of stations."
+        - "'Passive pointer movement alone cannot make identity claims or write consequential personal memory.' Governs the atmospheric/consequential split."
+        - "Return-anchor law: 'leaving M restores the exact prior node, focus, state and route anchor.' Governs exitBehavior."
+    - id: "kodex-minus-infinity canon/KODEX_EPISTEMIC_STANDARD.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Claim classes OBSERVED and MYTHOPOETIC are the two this scene must hold apart; the standard requires MYTHOPOETIC be 'preserved as symbolic discourse' and never converted into scientific fact."
+        - "Prohibited pseudo-metrics, metric admission, and the visual-truthfulness rules — in particular 'Particle density cannot imply a count unless particles encode units' and 'Animation cannot manufacture a trend' — govern every generated element in this scene."
+        - "'Provenance interaction: every canonical visualization must provide at least one route to inspect sources.' This is why the scene's consequential action is opening a source, not travelling."
+    - id: "kodex-minus-infinity schemas/session-memory.schema.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "sourcesOpened is declared as an array with uniqueItems: true, which makes the memory write specified below idempotent by construction rather than by convention."
+    - id: "wenu-frontend public/kodex-content/art/ and any concept/reference imagery"
+      relation: "REFERENCE"
+      rightsStatus: "UNKNOWN"
+      notes:
+        - "LOOKED FOR AND NOT FOUND. The directory public/kodex-content/art/ does not exist on this machine, so no artwork cover referenced by the manifest could be opened."
+        - "A filesystem search for dna/helix/espiral/adn image assets returned only public/img/piercing/types/helix.avif and forward-helix.avif — ear-piercing product photography, unrelated to this concept. Recorded so that a later worker does not mistake them for references."
+        - "No image informed this passport. Any resemblance to a specific external work found at implementation time is an invention introduced downstream and must be rejected at visual review."
+
+  provenanceBoundaries:
+    mayAbstract:
+      - "The double helix as a generic geometric primitive: two phase-offset helical curves about a shared axis with transverse connectors. The form is not owned by anyone; only a specific rendering of it could be."
+      - "The scale-ladder composition already shipped in ManifestoSpiral.astro — a vertical traversal whose stations move between orders of magnitude — reused as structure, with this scene's own station set and copy."
+      - "The organism's own canonical vocabulary: states DORMANT / DESCEND / ABSORB and verbs accelerate / distort / absorb."
+      - "The perfect-loop discipline and transparent-canvas method of PROTO-CANVAS-001 (phase exactly 0 -> 2pi, ctx.clearRect per frame, painter z-sorting)."
+      - "The progressive-enhancement pattern already proven in both repositories: a hand-coded static/SVG layer always rendered, the heavy engine attached only when capability allows."
+      - "The bilingual ES/EN station copy pattern, and the register-marking pattern (documentado = brand palette, ficcion = neon palette) that canon already applies to every volume."
+    mustNotCopy:
+      - "No external reference image reached this worker. Therefore no external artwork, frame, figure, poster or layout may be reproduced. This boundary is stated conservatively on purpose: nothing external may be reproduced because nothing external was seen."
+      - "Do not reproduce a specific published scientific figure of DNA — no recreation of the Franklin Photo 51 X-ray diffraction pattern, and no redraw of a particular journal or textbook plate. If a real structural figure is ever wanted, it must be sourced, rights-cleared and cited first."
+      - "Do not render a real, identifiable genomic sequence. No ACGT letter run, no chromosome ideogram, no accession number, no barcode-style sequence texture. Invented letters are pseudo-telemetry; real letters are somebody's data. Both are forbidden by default."
+      - "No human body, face, silhouette or medical-scan imagery attached to the helix. The lore speaks of 'tu ADN' and 'tu cuerpo'; the scene must not personalize that onto the visitor or onto any identifiable person."
+      - "Do not reproduce the kultrun drumhead, its four-direction cross, its choike terminals or its Antu / Kuyen / Melipal / Wuñelfe quadrant motifs into DNA PASSAGE. They belong to the Mapuche documented register and are the subject of an unresolved citation gap (PROVENANCE QUESTION 3); they must not be carried into a scene whose subject sits in the fiction register."
+      - "FX treatments must never be applied to Ocin's finished specimen artwork. Per the manifest's fx_chain_nota, treatments apply only to photographs and derivatives, never to the completed work."
+    culturalSensitivity:
+      - "REGISTER IS THE WHOLE PROBLEM HERE, and it must be ruled before implementation. The manifest states 'Mapuche y Codex Estelar NUNCA se mezclan' and defines the ficcion register as one that 'Nunca se mezcla con lo documentado ni con lo mapuche'. The sacred-DNA material that gives this concept its meaning is Codex Estelar Libro IV — registro ficcion, paleta neon. DNA PASSAGE must therefore sit in the FICTION register, with the neon palette and explicit fiction marking, and must not borrow Mapuche cosmology."
+      - "This matters because the only shipped 3D version of the passage does exactly what canon forbids: ManifestoSpiral3D.astro places 'XII · The cosmic code' — the DNA station — inside a fourteen-station Mapuche cosmology (Wenu Mapu, Nag Mapu, Meli Witran Mapu, Itrofill Mongen, Minche Mapu, Kutral/Kuruf/Ko/Kura). DNA PASSAGE must not inherit that arrangement by default. The orchestrator must rule; see PROVENANCE QUESTION 2."
+      - "Mapuche material in KODEX is a DOCUMENTED register that requires citation. Canon's own documented volumes cite their sources, and COWORK-BRIDGE records the rule as 'mapuche=documentado citado (Canio & Pozo), review:true donde no verifique'. ManifestoSpiral3D asserts an 'authentic kultrun' with no source named anywhere in the file. That gap must be closed in its own packet and must not be replicated here."
+      - "Do not substitute generic 'ancestral', 'tribal' or 'sacred geometry' motifs for the material this scene may not use. The lore text itself names Flower of Life, Metatron's cube and the Platonic solids; these are esoteric-tradition motifs and, if used at all, are marked fiction-register symbols, never presented as mathematics, physics or anatomy."
+      - "The Merkabah, the light body and prana breathing appear in the same book as the sacred DNA. They are attributed spiritual material. They may be preserved as symbolic discourse, per the epistemic standard, but never rendered as physiology and never as instruction."
+      - "'DNA activation' is a real-world pseudo-medical claim. The lore's 'los códigos dormidos del ADN se encienden' may exist in the scene only as marked fiction. It must never be phrased as something the visitor can do, receive or measure. The manifest's own nota_registro already binds this: 'sin claims de hecho ni de salud.'"
+
+  informationHierarchy:
+    primary: >-
+      The station the visitor currently occupies on the passage, its register mark (DOCUMENTED or FICTION),
+      and whether the geometry visible at that station belongs to the biological layer or the symbolic layer.
+    secondary:
+      - "The two helix strands and their base-pair connectors as the continuous form that carries the whole traversal."
+      - "The visitor's position along the passage, shown as a non-numeric progress rail plus a named station index."
+      - "The source record behind the current station, and whether it has been opened."
+    tertiary:
+      - "Ambient depth: starfield, drift, glow and grain. Atmosphere only; carries no data and is fully removable."
+      - "Bilingual station copy and the closing line."
+      - "Navigation and skip affordances."
+
+  geometry:
+    primitives:
+      - "helix strand = a parametric curve about a single vertical axis; two instances at a declared phase offset. Rendered as a stroked path (SVG/static) or a swept ribbon (WebGL)."
+      - "base-pair connector = a transverse segment joining the two strands at a sampled parameter, with a terminal mark at each strand end"
+      - "groove = the negative space between successive strand crossings; a first-class element because groove EQUALITY versus INEQUALITY is what separates the two geometric layers"
+      - "passage axis = the invisible vertical line both strands wind around; the traversal path and the camera/scroll track"
+      - "station node = a discrete marked position on the axis carrying a label, a register mark and a source affordance"
+      - "layer boundary = an explicit visible transition where the biological layer ends and the symbolic layer begins; never a crossfade"
+      - "depth field = starfield and ambient wash behind everything; atmosphere only, token color.field.obsidian ground"
+    topology: >-
+      An OPEN, SINGLE-AXIS HELICAL PASSAGE — not a graph, not a closed loop, not a spiral in the plane. Two
+      helical curves wind about one vertical axis; the visitor travels along that axis. The traversal is
+      one-dimensional and BIDIRECTIONAL: it must be possible to move backward as freely as forward, and to
+      leave from any station. Station spacing along the axis is deliberately IRREGULAR so the passage cannot be
+      read as a progress bar with equal steps, and the station count is a scene constant that never varies with
+      viewport (unlike the base-pair count, which may). A radial or concentric arrangement is rejected because
+      it would place the visitor at a single centre, which contradicts a passage. A closed loop is rejected
+      because it would imply the journey must be completed to return, which contradicts ADR-0010.
+      THE TWO GEOMETRIC LAYERS ARE DEFINED HERE AND ARE THE HEART OF THIS PASSPORT.
+      LAYER B — BIOLOGICALLY RECOGNIZABLE. Permitted ONLY where the object is explicitly labelled as the
+      molecule, and then it must actually be B-DNA: right-handed; approximately 10.5 base pairs per full turn;
+      strand phase offset approximately 140 degrees / 220 degrees (NOT 180), which is what produces the unequal
+      major and minor grooves; antiparallel strands; pitch-to-diameter ratio approximately 3.4 to 2.0, i.e.
+      about 1.7. Claim class OBSERVED, attributable to structural biology. If any of these is not met, the
+      object is NOT biologically recognizable and MUST NOT be labelled, captioned or narrated as DNA.
+      LAYER S — SYMBOLIC. Everything else: the golden double spiral floating in space that the lore text names
+      as its 'Símbolo Visual', the scale ladder, the Source, the toroid, the light body. Claim class
+      MYTHOPOETIC. Layer S is free to use any phase offset, any base-pair density, any handedness and any
+      amplitude envelope — precisely because it is not claiming to be the molecule.
+      THE TWO LAYERS MUST NEVER BE BLENDED INTO ONE CONTINUOUS OBJECT. Canon: 'Nunca se funden.' Where the
+      passage moves from one to the other it passes through an explicit layer boundary that the visitor can
+      see and that a screen reader announces. Both layers may exist in the same scene; they may not exist in
+      the same strand at the same moment without that boundary.
+      NOTE ON THE SHIPPED GEOMETRY: both existing implementations use an exact 180-degree strand offset, giving
+      equal grooves, and neither has 10.5 base pairs per turn (ManifestoSpiral ~15.5; ManifestoSpiral3D 8.1 on
+      desktop and 4.5 on mobile). Both are therefore Layer S, correctly. Nothing in them needs to change; what
+      must change is that neither may be captioned as biological DNA while it has that geometry.
+    coordinateSystem: >-
+      Passage-local coordinates. The axis parameter u runs 0 at the entry station to 1 at the final station and
+      is the single source of truth for position; every station, camera position and reveal derives from u.
+      Cross-section is normalized (x, z) in [-1, 1] with the axis at the origin, and the rendered amplitude is
+      amp(u) * r_max where amp(u) is a scene-authored envelope. In the static/SVG path the same u maps to a
+      viewBox y so the two paths agree station-for-station. Pointer, where used, is normalized to [-1, 1] with
+      y negated, identical to the convention already implemented in kodex-observe-v2-client.ts, so no new input
+      convention is introduced. Aspect correction is applied on the shorter axis so the helix cross-section
+      never reads as an ellipse caused by the viewport.
+    spatialLayers:
+      - "L0 depth field — starfield and ambient wash. Atmospheric only, carries no data, fully removable."
+      - "L1 far strand — the strand currently behind the axis, drawn first, reduced contrast."
+      - "L2 base-pair connectors — drawn between the strands, depth-sorted so they read as passing behind and in front."
+      - "L3 near strand — the strand currently in front of the axis, full contrast."
+      - "L4 station layer — station nodes, labels, register marks and source affordances. The only interactive layer."
+      - "L5 chrome — progress rail, station index, skip control, register legend, exit control."
+
+  composition:
+    focalStructure: >-
+      Exactly one station is current at any moment, and the current station is what the scene is about. The
+      helix is continuous through the whole passage but contrast is not: the current station and the two
+      strand-turns immediately around it hold full contrast, while the rest of the passage drops to roughly 45%
+      so the visitor always knows where they are without a numeric readout. The current station's register mark
+      is always visible at full contrast, never faded, because register is the one thing that must never be
+      ambiguous. The layer boundary, when one falls within view, is always drawn at full contrast regardless of
+      distance from the current station.
+    grid: >-
+      A single vertical column. The passage occupies a centred column of at most 560px on the static path
+      (matching the shipped #ms-wrap max-width) and token layout.worldShare (0.75) of the shell width on the
+      WebGL path. Station labels alternate left and right of the axis to avoid a centred stack, exactly as the
+      shipped SVG already does with its side parameter. Chrome sits outside the column and never overlaps the
+      helix.
+    depthModel: >-
+      Painter's algorithm with depth by contrast and stroke weight — no perspective camera is required for the
+      static path, and the WebGL path uses a shallow depth range only. Strand segments are z-sorted per frame,
+      as PROTO-CANVAS-001 already does, so the two strands genuinely appear to wind around one another rather
+      than crossing flat. Depth is reinforced by three channels at once: draw order, stroke weight (near strand
+      up to 2x the far strand) and opacity. Pointer-linked parallax, where present, is capped at 3% of column
+      width in total; the passage's depth must come from the geometry, not from the pointer.
+    negativeSpace: >-
+      The passage is mostly empty and must stay that way. At least 55% of the column remains unmarked. The
+      helix amplitude never exceeds 0.42 of the column width, so the strands never touch the column edge and
+      station labels always have clear space. No station may sit within 0.06 of u from another, and a margin of
+      0.05 of u is kept clear at both ends so the entry and the exit are not clipped. Absence is informational
+      here: where a station has no source record, the space stays visibly empty and is marked UNKNOWN rather
+      than filled, per the epistemic standard's failure behaviour.
+    responsiveRules:
+      desktop: >-
+        1024px and above: the full station set, the full base-pair density for the chosen layer, both strands
+        at full contrast, chrome and register legend visible in the rail. Profile resolves to full or balanced
+        per the existing resolveProfile() logic. Pointer parallax is atmospheric only; every consequential
+        action still requires a commit. Reference capture at 1440x900.
+      mobile: >-
+        Below 760px the passage goes full-bleed in a single column with chrome collapsed into a bottom bar. The
+        STATION COUNT AND ORDER DO NOT CHANGE — only density and effects scale, so the scene means the same
+        thing on every device. Base-pair connector density may be reduced for legibility and fill rate, and
+        this is exactly why connector count may never carry meaning. Station hit targets are at least 44x44 CSS
+        px per token layout.touchTargetMin, which is the binding constraint on how close stations may sit; if
+        44px cannot be met at 390x844, station spacing increases rather than the target shrinking. Below 360px
+        the static path is served, matching the existing capability gate. No hover is required for any semantic
+        action at any viewport. Reference captures at 390x844 and 412x915.
+
+  paletteRoles:
+    - role: "passage ground"
+      semanticMeaning: "The archive at rest; the depth the passage descends through."
+      tokenOrRange: "color.field.obsidian (#050608)"
+      colorIsNotOnlyChannel: true
+    - role: "symbolic strand — organic"
+      semanticMeaning: "Layer S. The golden double spiral the lore text names as its Símbolo Visual. Mythopoetic, never a measurement."
+      tokenOrRange: "shipped expression #c9a84c / #e8c766 (wenu ember). Token equivalent under review — see PALETTE CONFLICT in notes."
+      colorIsNotOnlyChannel: true
+    - role: "symbolic strand — informatic"
+      semanticMeaning: "Layer S. The second strand as the cybernetic/informatic counterpart already shipped alongside the gold."
+      tokenOrRange: "color.signal.cyan (#00E8F0); shipped expression #64e0d0 / #7fe9db"
+      colorIsNotOnlyChannel: true
+    - role: "biological layer"
+      semanticMeaning: "Layer B. Geometry that is claiming to be the molecule, and therefore must satisfy the B-DNA constraints in geometry.topology."
+      tokenOrRange: "color.text.onDark (#F0ECE3) on obsidian, deliberately achromatic to separate it from the neon fiction register"
+      colorIsNotOnlyChannel: true
+    - role: "register mark — fiction"
+      semanticMeaning: "This station's material is Codex Estelar lore: not history, not science, not health."
+      tokenOrRange: "color.signal.magenta (#FF1EAA) — the manifest's neon register"
+      colorIsNotOnlyChannel: true
+    - role: "register mark — documented"
+      semanticMeaning: "This station's material is documented and cited."
+      tokenOrRange: "color.text.mutedOnDark (#9A9992) — the manifest's brand register"
+      colorIsNotOnlyChannel: true
+    - role: "current station"
+      semanticMeaning: "The single station the visitor occupies."
+      tokenOrRange: "color.signal.livingRed (#FF3833)"
+      colorIsNotOnlyChannel: true
+    - role: "source opened"
+      semanticMeaning: "A source the visitor deliberately opened and the session kept."
+      tokenOrRange: "color.signal.violet (#7855D5)"
+      colorIsNotOnlyChannel: true
+    - role: "unresolved / unknown"
+      semanticMeaning: "A station with no source record, or a claim the epistemic standard marks UNKNOWN or CONTESTED."
+      tokenOrRange: "color.signal.orange (#FF7A00); descent-tunnel's own canonical palette also leads with #FF5A00"
+      colorIsNotOnlyChannel: true
+    - role: "layer boundary"
+      semanticMeaning: "The visible seam where biological geometry ends and symbolic geometry begins."
+      tokenOrRange: "color.signal.acid (#B9FF3B)"
+      colorIsNotOnlyChannel: true
+
+  typographyRoles:
+    - role: "station label"
+      behavior: >-
+        Bilingual EN over ES, as the shipped SVG already does (Latin name above, uppercase mono ES below).
+        Real DOM text at every viewport, never baked into a texture, never an image. Changes only on a station
+        change, never on pointer movement.
+    - role: "register mark"
+      behavior: >-
+        Mono, uppercase, letter-spaced, always adjacent to the station label and never removed at any
+        breakpoint. Carries the literal words FICTION / FICCION or DOCUMENTED / DOCUMENTADO. It is a text label
+        first and a colour second, so register survives monochrome, and it is never abbreviated to a glyph.
+    - role: "layer label"
+      behavior: >-
+        Mono, uppercase. States which geometric layer is on screen in words — BIOLOGICAL GEOMETRY / GEOMETRIA
+        BIOLOGICA or SYMBOLIC GEOMETRY / GEOMETRIA SIMBOLICA. Mandatory whenever Layer B is visible; a Layer B
+        rendering without this label is a defect, because an unlabelled accurate helix invites the viewer to
+        read the symbolic material around it as equally factual.
+    - role: "chapter / passage position"
+      behavior: >-
+        Mono, uppercase, low contrast, fixed corner. Names the station, e.g. 'IV · THE SOURCE'. It must never
+        show a percentage, a count, a coordinate, a frequency or any other number, because a mono uppercase
+        string in a fixed corner is exactly the shape a visitor reads as telemetry.
+    - role: "source citation"
+      behavior: >-
+        Reading-width prose, capped at token layout.maxReadingWidth (68ch). Shows the actual source record for
+        the station, including its register and its limitations, or the visible words NO SOURCE RECORDED. Never
+        auto-summarised into a claim.
+    - role: "non-factual marker"
+      behavior: >-
+        Any generated value that ever appears — and none should — must be preceded by a persistent marker
+        (EN 'SIMULATED', ES 'ATMOSFERA'). The shipped DNA passage displays no numbers at all, which is the
+        better answer and is the one this passport requires: prefer no number to a marked number.
+
+  motion:
+    timescales:
+      - "duration.micro (120ms) — station mark acquire, focus ring"
+      - "duration.short (240ms) — station change, label swap, contrast step"
+      - "duration.medium (600ms) — layer-boundary crossing announcement and its visual seam"
+      - "duration.long (1600ms) — register change, entry and exit of the passage"
+      - "duration.ambient (12000ms) — strand shimmer and depth drift base period"
+      - "easing.standard for state changes, easing.enter for appearance, easing.exit for release, easing.linear only for the continuous strand shimmer"
+    stateTransitions:
+      - "DORMANT -> DESCEND: the visitor begins traversing. Maps to the organism's canonical second state. Atmospheric; nothing is written."
+      - "DESCEND -> DORMANT: no input for 3200ms, matching the decay already implemented in kodex-observe-v2-client.ts. The passage does not reset position; only attention decays."
+      - "DESCEND -> ABSORB: the visitor commits at a station (ANCHOR_STATION). Maps to the organism's canonical third state. Consequential."
+      - "ABSORB -> DESCEND: the visitor resumes travelling. The anchored station remains marked."
+      - "any -> layer boundary crossing: an explicit 600ms transition with its own announcement. This transition may never be skipped, shortened below 240ms, or crossfaded, because it is the mechanism that keeps the two layers distinct."
+      - "any -> EXITED: the visitor leaves. Position and opened sources persist for the session."
+      - "DNA PASSAGE introduces no parallel state machine. It uses the organism's own three canonical states and adds the layer-boundary crossing as a transition, not as a state."
+    loopingBehavior: >-
+      The passage itself does NOT loop — it is an open traversal with an entry and an end, and arriving at the
+      end is not a completion (see interaction.exitBehavior). Only the ambient strand shimmer loops, and it
+      does so seamlessly using the discipline proven in PROTO-CANVAS-001: phase runs exactly 0 -> 2pi over a
+      fixed frame count so the loop closes with no visible seam. The shimmer must never travel in a way that
+      implies flow, transcription, replication or any directional biological process, because animation cannot
+      manufacture a trend. The render loop pauses when the scene leaves the viewport and on document
+      visibilitychange.
+    reducedMotion: >-
+      No drift, no parallax, no shimmer, no travelling pulse, no smooth-scroll interpolation. Station changes
+      become a single 240ms opacity and contrast step; the layer-boundary crossing remains but becomes an
+      instant, clearly marked switch rather than a 600ms transition, because the boundary is information and
+      may not be removed with the motion. Under prefers-reduced-motion the static path is served, which is
+      already the shipped behaviour of the capability gate, and resolveProfile() already returns low-power.
+
+  interaction:
+    inputs:
+      - "POINTER"
+      - "TOUCH"
+      - "KEYBOARD"
+      - "TIME"
+    semanticActions:
+      - "ATMOSPHERIC — TRAVERSE: moving along the passage by scroll, drag, arrow key or the station index. Changes what is on screen and nothing else. Position is scene state, never a claim about the visitor, and it is not written to memory. Required by ADR-0010: passive movement alone cannot make identity claims or write consequential personal memory."
+      - "ATMOSPHERIC — pointer parallax and ambient drift. Nothing is committed and nothing is written."
+      - "CONSEQUENTIAL — ANCHOR_STATION: commit at the current station by click, tap, Enter or Space. Marks the station for the session. Writes nothing by itself."
+      - "CONSEQUENTIAL — OPEN_SOURCE: open the source record behind the current station. This is the scene's only memory write, and it is deliberately the provenance action rather than the travel action, because the epistemic standard requires every canonical visualization to provide a route to inspect sources."
+      - "CONSEQUENTIAL — EXIT_PASSAGE: Esc, the explicit exit control, or the skip-to-index control."
+      - "EXPLICITLY NOT AN ACTION — scroll velocity, dwell time at a station, how far along the passage the visitor reached, whether they reached the end, how many stations they passed, pointer path shape, and time spent in either geometric layer. None of these may be recorded, scored, aggregated, ranked or used to infer anything about the visitor. In particular, depth reached is not achievement and must never be presented as one."
+    stateChanges:
+      - "Organism state advances DORMANT -> DESCEND -> ABSORB and decays DESCEND -> DORMANT on inactivity."
+      - "The current station changes as the visitor traverses; exactly one station is current at any time."
+      - "Crossing a layer boundary changes the active geometric layer and updates the mandatory layer label and the register mark together."
+      - "ANCHOR_STATION marks the current station for the session; anchoring a new station does not clear previously anchored ones."
+      - "OPEN_SOURCE marks the station's source as opened and appends to session memory."
+      - "Reaching the final station changes nothing except that there is no further station. It does not set completionEligible, does not unlock anything, and does not write."
+    memoryWrite:
+      enabled: true
+      key: "sourcesOpened"
+      description: >-
+        Only OPEN_SOURCE writes. It appends the source id of the record behind the current station to the
+        session memory array `sourcesOpened` defined in schemas/session-memory.schema.json. That array is
+        declared uniqueItems: true, so the write is idempotent by construction and replaying the same committed
+        event cannot double-write. TRAVERSE writes nothing, ANCHOR_STATION writes nothing, and no atmospheric
+        action writes anything. Nothing about progress, depth, speed, completion, duration, or which geometric
+        layer the visitor preferred is ever written. No identity claim, score, ranking, profile, biometric
+        value, genetic value, ancestry inference or 'activation' state is ever written — a scene about DNA must
+        be held to this more strictly than any other, because the subject matter invites exactly the inference
+        that canon forbids. The visitor must be able to see exactly what was written and to clear it, and
+        stored accessibility preferences must never be inferred from behaviour.
+    exitBehavior: >-
+      EXIT_PASSAGE restores the exact prior route anchor, node, focus and scroll position, applying the
+      ADR-0010 return-anchor law. Exit is available from EVERY station, is never gated on progress, and is
+      never presented as abandoning something. Reaching the final station is an ending of the scene and NOT a
+      canonical completion: it does not constitute Y, does not set completionEligible, and must not be
+      captioned as arrival, ascension, activation or awakening. Position and opened sources persist for the
+      session so a revisit returns the visitor where they were with previously opened sources still marked —
+      the mutated-revisit behaviour the ADR requires. On exit the scene must release its animation frame, its
+      WebGL context, all framebuffers, textures and geometries, its smooth-scroll instance, its ticker
+      callbacks and every event listener it registered; see implementation.reusableEngineBoundary.
+
+  implementation:
+    medium: "HYBRID"
+    reusableEngineBoundary: >-
+      `HelixPassage` — a data-driven preset of the canonical `descent-tunnel` organism, not a new renderer.
+      HelixPassage owns: parametric generation of the two strands from a declared layer profile (Layer B with
+      the B-DNA constraints, or Layer S with free parameters); base-pair connector sampling; station placement
+      along the axis u and the guarantee that station count and order never vary with viewport; the traversal
+      model and its keyboard equivalent; the layer-boundary crossing; register marking; profile resolution;
+      the static/SVG parity path; reduced-motion handling; and the full render-loop lifecycle. Everything
+      scene-specific is configuration. The layer profile is the single most important parameter: it is what
+      makes 'is this geometry claiming to be a molecule?' a declared, reviewable property of the scene rather
+      than an accident of whoever wrote the curve.
+      DISPOSAL IS A HARD REQUIREMENT, not a nicety. HelixPassage MUST expose an explicit destroy() that (a)
+      cancels the animation frame and all timeouts; (b) removes EVERY listener it registered, including any
+      ticker callback registered on an animation library and any subscription made on a smooth-scroll
+      instance — these are the two that the shipped ManifestoSpiral3D.dispose() misses, leaving a callback
+      invoking a destroyed Lenis instance; (c) disposes geometries, materials AND every texture slot, not only
+      material.map — emissiveMap, bumpMap and shader-uniform textures must be disposed too, which the shipped
+      dispose() also misses; (d) restores any global it mutated; and (e) is invoked when the scene leaves the
+      viewport and on visibilitychange, not only on pagehide. Today the shipped engine keeps its entire WebGL
+      context and GPU memory alive for the rest of the page life once scrolled past, and has no
+      visibilitychange listener at all. Token performance.maxActiveHeavyCanvases is 1, so a passage that never
+      releases its context makes every subsequent heavy scene a violation.
+      ENGINE CHOICE IS AN OPEN DECISION AND IS FLAGGED, NOT SILENTLY MADE. The canonical grammar says one
+      engine: 'un motor (KDX CORE)'. The shipped DNA passage instead runs on three.js plus gsap plus lenis
+      (~500kb dynamic import) with its own postprocessing composer. Specifying HelixPassage on KDX CORE would
+      honour the grammar and reuse the existing six-pass pipeline; keeping three.js would preserve the approved
+      visual but institutionalise a second engine. This passport does not decide it. See ENGINE DIVERGENCE in
+      notes.
+    sceneSpecificParts:
+      - "The station set: names, bilingual copy, order, irregular positions along u, and the source record behind each."
+      - "The layer profile per passage segment, and where the layer boundaries fall."
+      - "The register assignment for the scene as a whole and per station — pending the orchestrator's ruling."
+      - "The amplitude envelope amp(u) and the strand colour assignment."
+      - "The chrome layout: which rail, index, legend and exit controls this scene shows."
+      - "The 55% negative-space and station-spacing composition rules."
+    dependencies:
+      - "Existing shaders in src/kodex/observe-v2/shaders/ — chroma.frag.glsl covers chromatic-split."
+      - "NO SHADER EXISTS for pixel-sort, the second half of descent-tunnel's canonical fx_chain. It must be written, or the chain must be substituted, and the choice is the orchestrator's. This is a real gap, not an oversight."
+      - "Existing state and profile config in src/kodex/observe-v2/config.ts (resolveProfile, OBSERVE_V2_PROFILE_SCALE)."
+      - "design-system/tokens/kodex.tokens.json."
+      - "schemas/session-memory.schema.json for sourcesOpened."
+      - "KOD-28 (JourneyState + EventTrace) — OPEN_SOURCE depends on it for event identity, though sourcesOpened's uniqueItems constraint means a partial implementation degrades safely rather than double-writing."
+      - "A ruling on the engine question before any renderer work begins; if KDX CORE is chosen there is no new third-party dependency, if three.js is chosen there are three."
+    performanceRisk: "HIGH"
+
+  fallback:
+    noWebGL: >-
+      The scene stays fully functional, and this is already proven rather than hypothetical: ManifestoSpiral.astro
+      is a complete hand-coded SVG rendering of this exact passage and is the shipped default served whenever
+      WebGL is unavailable. The static path must present the SAME stations in the SAME order with the SAME
+      register marks, the SAME layer labels, the SAME source affordances, the SAME keyboard model and the SAME
+      memory write. Only atmosphere is lost. The existing runtime's ?fallback=1 parameter must force this path
+      for review, and the static layer must always be rendered rather than swapped in, so there is no layout
+      shift between the two paths.
+    noAudio: >-
+      DNA PASSAGE declares no audio dependency. The organism's canonical audio routing ('low-mid+velocidad')
+      is optional atmosphere only. With sound off, no semantic action, state, transition, station or memory
+      write changes, and no information is available exclusively through sound. One specific prohibition: the
+      canonical routing modulates by descent velocity, and that modulation must never be presented, captioned
+      or heard as a measurement of anything — not a frequency, not a resonance, not a body state. Per the
+      epistemic standard, a waveform cannot imply measured sound, pulse or brain activity without a real signal.
+    staticMode: >-
+      A single frame at a declared station with the full passage visible, all stations labelled and marked, both
+      layer labels and the layer boundary drawn, no drift, no shimmer, no parallax, no travelling pulse.
+      Traversal, anchoring and source opening remain available through keyboard and tap with instantaneous
+      transitions. This is the mode used to produce the target captures, so that captures are reproducible and
+      comparable across runs.
+
+  accessibility:
+    keyboardEquivalent: >-
+      This is the single largest gap in the shipped implementation, which has ZERO keyboard handlers, no
+      tabindex and no focusable control in its enhanced block — the passage is currently reachable only by
+      scrolling. HelixPassage must fix this. The passage is one composite widget with a single tab stop, roving
+      tabindex and aria-activedescendant. ArrowDown/ArrowUp (and ArrowRight/ArrowLeft) move between stations
+      one at a time; PageDown/PageUp move to the next and previous layer boundary; Home and End move to the
+      first and last station; Enter or Space performs ANCHOR_STATION; a second Enter, or a dedicated control,
+      performs OPEN_SOURCE; Esc performs EXIT_PASSAGE. A skip-to-station-index control is the FIRST focusable
+      element in the scene, so the entire passage can be bypassed or jumped without traversing it — this is
+      what makes the traversal genuinely non-compulsory rather than merely nominally so, and it matches the
+      'SKIP · INDEX' already declared by the shipped descent folio. Every consequential action is reachable
+      without a pointer and without any hover state, with a visible focus indicator at every step. Smooth-scroll
+      interpolation must never swallow or delay keyboard navigation.
+    touchEquivalent: >-
+      Tap a station to make it current and to anchor it; tap its source affordance to open it; tap the exit or
+      index control to leave. Vertical drag traverses. No hover is required for any semantic action. No
+      long-press, pinch, multi-touch gesture or horizontal swipe is required for anything consequential. Hit
+      targets are at least 44x44 CSS px per token layout.touchTargetMin, which is the binding constraint on
+      station spacing at 390x844 and 412x915. Smooth-scroll momentum must not make it impossible to stop at a
+      station: a station must be reachable and holdable by a single deliberate tap on the index.
+    screenReaderAlternative: >-
+      The passage is exposed as an ordered list of stations. Each station carries an accessible name including
+      its position ('station 5 of 9'), its bilingual label, its REGISTER in words, its geometric LAYER in words,
+      and whether its source has been opened. The layer-boundary crossing is announced through a polite live
+      region — a screen-reader user must never lose the distinction between biological and symbolic geometry,
+      since that distinction is carried visually for everyone else. Committed actions are announced; traversal
+      and pointer movement are not. A full text alternative for the whole passage is available on demand and
+      contains the same stations, registers, layers and sources as the visual scene; the shipped
+      ManifestoSpiral.astro already provides a real .sr-only description and that practice is inherited and
+      extended. Decorative layers — depth field, shimmer, parallax — are aria-hidden.
+    nonColorEquivalent: >-
+      Every colour role carries at least one more channel. Register is carried by the literal words FICTION or
+      DOCUMENTED, not by neon versus brand palette alone. Geometric layer is carried by the mandatory layer
+      label AND by stroke treatment: Layer B is a continuous solid stroke, Layer S is a distinguishable
+      treatment (for example a dashed or double stroke) fixed at implementation and held constant. The current
+      station is also 1.3x scale plus a focus ring. An opened source is also a filled marker against an outlined
+      one. Unresolved is also a 4-2 dashed stroke and the visible word UNKNOWN. The layer boundary is also a
+      full-width rule across the column. State is additionally exposed as a data attribute and in the accessible
+      name, so the scene remains fully usable in monochrome — which matters more than usual here, because
+      register is a truth claim and must survive any colour condition.
+    reducedMotionEquivalent: >-
+      As motion.reducedMotion, and the static path is served, matching the shipped capability gate. A stored
+      accessibility.motion preference of OFF in session memory overrides the media query. Smooth-scroll
+      interpolation is disabled entirely under reduced motion — hijacked scrolling is itself a motion effect.
+      No motion, sound or contrast setting is ever inferred from behaviour.
+
+  reviewChecks:
+    - "GEOMETRY GATE — for any element labelled or narrated as DNA, measure the rendered form: right-handed, ~10.5 base pairs per turn, unequal major and minor grooves (strand phase offset ~140/220 degrees, NOT 180), antiparallel strands, pitch-to-diameter ~1.7. If it fails any of these it must not be labelled DNA. Both currently shipped helices fail this test and are therefore Layer S."
+    - "LAYER SEPARATION — biological and symbolic geometry are never blended into one continuous object; every transition between them passes through a visible layer boundary that is also announced to screen readers. Verified at all three target captures."
+    - "LAYER LABEL — whenever Layer B geometry is on screen, the words BIOLOGICAL GEOMETRY / GEOMETRIA BIOLOGICA are visible. No unlabelled accurate helix appears anywhere."
+    - "REGISTER MARK — every station shows its register in words at every breakpoint, including 390x844, and register survives a grayscale filter."
+    - "NO NUMBERS — no percentage, count, frequency, temperature, coherence, integrity or activation value appears anywhere in the scene; the progress rail is graphic only and is never rendered as text. Confirm the chapter/corner element shows a station name, never a value."
+    - "NO SEQUENCE — no ACGT run, chromosome ideogram, accession number or sequence-like texture appears anywhere."
+    - "NON-COMPULSORY TRAVERSAL — the skip-to-index control is the first focusable element; every station is reachable directly from the index without traversing intermediate stations; exit is available from every station; reaching the final station unlocks nothing and is not captioned as completion, arrival, activation or awakening."
+    - "NO ALPHABET IMPLICATION — no station is labelled with, ordered by, or visually keyed to an A-Y letter, and nothing in the scene suggests the passage is a required stage of a lettered sequence."
+    - "TRAVERSAL WRITES NOTHING — sweep the full passage by pointer and by keyboard without opening a source, then inspect the event trace: session memory is unchanged. Depth reached, dwell time and speed appear nowhere."
+    - "FULL KEYBOARD PASS with no pointer: skip control, enter the passage, traverse every station with arrows, jump boundaries with PageUp/PageDown, anchor a station, open a source, exit with Esc — with a visible focus indicator at every step and no action reachable only by scrolling."
+    - "TOUCH TARGETS — minimum 44x44 px verified on 390x844 and 412x915, with no two station targets overlapping, and a station reachable and holdable by a single deliberate tap."
+    - "REDUCED MOTION — no drift, shimmer, parallax or travelling pulse; smooth-scroll interpolation disabled; the layer boundary is still present and still announced."
+    - "STATIC / NO-WEBGL PARITY — with the static path forced, the same stations in the same order with the same registers, layers, sources, keyboard model and memory write are present, and there is no layout shift versus the WebGL path."
+    - "STATION INVARIANCE — station count and order are identical at 1440x900, 390x844 and 412x915. Only density and effects differ."
+    - "MONOCHROME PASS under a grayscale filter: register, layer, current station, opened source, unresolved and the layer boundary all remain distinguishable."
+    - "REVISIT — leaving and re-entering restores position and previously opened sources, and no duplicate source id is written on replay."
+    - "DISPOSAL — after the scene leaves the viewport and after unmount: no animation frame is running, no ticker callback remains registered, no smooth-scroll subscription remains, the WebGL context is released, all textures including emissiveMap and bumpMap are disposed, and no window or document listener registered by the scene remains."
+    - "CULTURAL BOUNDARY — no kultrun, no four-direction cross, no choike terminals, no Antu/Kuyen/Melipal/Wuñelfe motifs, and no Mapuche cosmological terminology appear in the scene unless the orchestrator has explicitly ruled the register and supplied citations."
+    - "PERFORMANCE — no more than one heavy canvas active per token performance.maxActiveHeavyCanvases; DPR capped at 1.2 mobile / 1.65 desktop; sustained 50fps or better at full profile on desktop and 30fps or better at low-power on mobile; no frame-time regression versus the existing manifesto scene at equivalent settings."
+
+  targetCaptures:
+    - name: "desktop-1440x900"
+      width: 1440
+      height: 900
+    - name: "mobile-390x844"
+      width: 390
+      height: 844
+    - name: "mobile-412x915"
+      width: 412
+      height: 915
+
+  epistemicConstraints:
+    - "THE CENTRAL CONSTRAINT, inherited verbatim from canon (manifest volume fic-diseno-humano-adn): documented DNA — the double helix, resonance 1-espiral — and the esoteric reading are two distinguished layers and 'Nunca se funden' / 'Never blended'. This scene may show both. It may never merge them."
+    - "Real DNA structure is OBSERVED-class and may inform the helix primitive. The spiritual/cosmic 'source passage' is MYTHOPOETIC-class. The B-DNA parameters in geometry.topology are the operational boundary between the two: satisfy them and the object may be called DNA; do not satisfy them and it may not."
+    - "Nothing in this scene is a claim about genetics, heredity, ancestry, evolution, health or the body. The Codex Estelar material it draws on is marked in canon as 'ficción/esotérico de autor... sin claims de hecho ni de salud' — no claims of fact and no claims of health. That marking travels with the material into this scene and must be visible in it."
+    - "'DNA activation' is a real-world pseudo-medical claim and is treated as such. The lore's 'los códigos dormidos del ADN se encienden' may appear only as explicitly marked fiction. The scene must never imply the visitor's DNA is being activated, read, scanned, awakened, measured or changed, and must never offer an action framed as doing so."
+    - "No particle, light, glow, pulse or motion in this scene is a measurement. Per the epistemic standard: particle density cannot imply a count unless particles encode units, animation cannot manufacture a trend, and a waveform cannot imply measured sound, pulse or brain activity without a real signal. Base-pair connector count in particular carries NO meaning — it is a legibility and fill-rate parameter that already varies with viewport in the shipped implementation."
+    - "No numeric telemetry may be displayed as factual system state. This explicitly overrides the values prescribed in wenu-frontend COWORK-BRIDGE.md ('core temp 87.3K', 'field stability 94.6%', 'quantum noise 2.7dB', 'signal 87.6%'), which are close paraphrases of the examples canon/KODEX_EPISTEMIC_STANDARD.md lists as prohibited pseudo-metrics. Where the bridge and canon conflict, canon governs."
+    - "The scene must not profile the visitor, rank them, or infer identity, ancestry, mood, ability, spiritual state or intent from interaction. Depth reached is not attainment and must never be scored or displayed as one."
+    - "The helix is generated, not measured. Its geometry represents no dataset and must never be captioned or labelled as if it did."
+    - "Registers must not blend. DNA PASSAGE sits in the fiction register or the documented register, never both, and must not absorb Mapuche material — which is a separate, documented, citation-bearing register — pending the orchestrator's ruling."
+    - "Where a station has no source record, the absence stays visible and is marked UNKNOWN. It is not filled for aesthetic balance."
+
+  scientificClaimPolicy: "MIXED_WITH_EXPLICIT_LABELS"
+
+  notes:
+    - "WHY scientificClaimPolicy IS 'MIXED_WITH_EXPLICIT_LABELS' AND NOT 'SYMBOLIC_ONLY' — this is a deliberate departure from the template default and from KOD-38, and it is the single most consequential choice in this passport. The packet's own epistemic constraints say real DNA biology MAY inform the helix primitive while the source passage is mythopoetic. SYMBOLIC_ONLY would forbid the biological layer outright and would make acceptance criterion 1 vacuous — you cannot 'explicitly separate' biologically recognizable geometry from symbolic geometry if biologically recognizable geometry is not permitted to exist. MIXED_WITH_EXPLICIT_LABELS admits both classes and forces the labelling that keeps them apart, which is exactly what canon's 'Nunca se funden' requires. If the orchestrator prefers SYMBOLIC_ONLY, then Layer B must be removed entirely and the scene must never be captioned as DNA at all — that is a coherent alternative, but it is a different scene and the orchestrator should choose it explicitly rather than by default."
+    - "PROVENANCE QUESTION 1 — concept identity. The exact string 'DNA PASSAGE' exists in no file of either repository except KOD-39 itself, and the concept/reference images named in the packet's source_inputs never reached this worker; no image was inspected. UNLIKE KOD-38, however, this passport is not anchored in inference: a shipped, approved DNA passage exists at wenu-frontend /manifesto in two implementations, and the Codex Estelar Libro IV lore that gives it meaning is present locally as primary text. The orchestrator must confirm that this shipped manifesto passage IS the DNA PASSAGE concept the packet means. Status stays DRAFT for this reason. If it is a different, unseen concept, this passport must be re-derived rather than patched."
+    - "PROVENANCE QUESTION 2 — REGISTER BLEND, AND IT IS THE BLOCKING ONE. Canon states 'Mapuche y Codex Estelar NUNCA se mezclan' and defines the ficcion register as one that never mixes with documented or Mapuche material. The sacred-DNA material behind this concept is Codex Estelar Libro IV, registro ficcion, paleta neon. But the shipped ManifestoSpiral3D.astro places its DNA station — 'XII · The cosmic code / The spiral within' — inside a fourteen-station Mapuche cosmology running from Wenu Mapu to Miñche Mapu. On the face of it that is the blend canon forbids, in production, today. This passport therefore specifies DNA PASSAGE as a fiction-register scene that borrows no Mapuche material, and flags the shipped manifesto as needing its own review. The orchestrator must rule: (a) is the manifesto's cosmic DNA in fact Codex Estelar material, or an independent visionary motif that happens to share the form? and (b) does DNA PASSAGE inherit the manifesto's Mapuche framing or not? The register decision changes the palette, the permitted links and the permitted motifs, so it must be answered before any implementation packet is issued."
+    - "PROVENANCE QUESTION 3 — MAPUCHE CITATION GAP in existing production code. ManifestoSpiral3D.astro renders a detailed kultrun drumhead — four-direction cross, choike three-toed terminals, Antu, Küyen, Melipal and Wüñelfe quadrant motifs — and its comment at line 829 calls it an 'authentic kultrún drumhead — audited pass'. There is NO ethnographic or cultural source citation anywhere in the 2555-line file. Canon requires documented Mapuche material to be cited (COWORK-BRIDGE records 'mapuche=documentado citado (Canio & Pozo), review:true donde no verifique'), and canon's own documented volumes do cite. This is a finding about existing shipped code, outside KOD-39's scope to fix, and it should be routed to cultural review as its own packet. DNA PASSAGE must not replicate the pattern."
+    - "PROVENANCE QUESTION 4 — no organism is named DNA PASSAGE. There is no such organism among the canonical eight (threshold-portal, observation-eye, descent-tunnel, archive-tree, specimen-skull, ritual-device, cosmology-core, signal-bloom). conceptId is set to descent-tunnel because it is the only organism whose role is traversal through depth ('profundidad infinita', states DESCEND/ABSORB, verbs accelerate/distort/absorb), which is what a passage is. This choice is contestable and the contrary evidence is stated plainly: the canonical DNA volumes (fic-diseno-humano-adn, lore-4-el-diseno-original) declare their resonances to signal-bloom and cosmology-core, NOT to descent-tunnel. A defensible alternative is to treat DNA PASSAGE as a descent-tunnel traversal whose stations resonate to signal-bloom and cosmology-core, which is what this passport effectively describes. If the passage warrants its own registry entry, the orchestrator should assign one; this passport does not create canon."
+    - "PROVENANCE QUESTION 5 — source PDFs are absent. The manifest cites the Codex Estelar chapters to absolute paths under /Users/user1/Obsidian/WenuAgent/..., which DOES NOT EXIST on this machine (verified). Only the derived .txt files under public/kodex-content/books/kodex-estelar/source-text/ are present, and those were read. If the passport's reading of the lore matters to the design — and the 'Símbolo Visual: Espiral doble de ADN dorado brillante' line does matter, because it is why the gold strand is treated as canonical — the orchestrator should confirm the .txt derivation is faithful to the PDFs."
+    - "ENGINE DIVERGENCE — the canonical grammar declares one engine: 'un motor (KDX CORE) + una suite de 8 tratamientos GPU'. The shipped DNA passage does not use it. ManifestoSpiral3D.astro runs three.js + gsap + lenis (~500kb, dynamic-imported) with its own EffectComposer/UnrealBloomPass stack, while the KDX CORE candidate (kodex-observe-v2-client.ts) is a hand-written WebGL2 six-pass pipeline with no third-party dependency. Consolidating DNA PASSAGE onto KDX CORE would honour the grammar and reuse existing shaders but would require re-authoring an approved visual; keeping three.js preserves the approved visual but institutionalises a second engine and a 500kb budget. This is an architecture decision above this packet's authority and is escalated, not decided."
+    - "SHADER GAP — descent-tunnel's canonical fx_chain is [chromatic-split, pixel-sort]. chroma.frag.glsl exists and covers chromatic-split. THERE IS NO PIXEL-SORT SHADER. Full audit of the 8 canonical treatments against src/kodex/observe-v2/shaders/: crt-scan -> crt.frag EXISTS; bitmap-threshold -> threshold.frag EXISTS; memory-feedback -> feedback.frag EXISTS; chromatic-split -> chroma.frag EXISTS; glitch-fracture -> displace.frag PARTIAL/approximate; dither-matrix, thermal-map and pixel-sort have NO shader. Unlike KOD-38, this passport therefore CANNOT claim 'no new shader is required'. Either pixel-sort is written, or the chain is substituted, and that is the orchestrator's call."
+    - "PALETTE CONFLICT — three palettes are in play and they do not agree. (1) The design-system tokens (kodex.tokens.json): livingRed #FF3833, violet #7855D5, acid #B9FF3B, cyan #00E8F0, orange #FF7A00, magenta #FF1EAA. (2) The canonical descent-tunnel organism palette in the manifest: #FF5A00, #FF2028, #FFB000, #0A0A0A. (3) The shipped manifesto expression, which is the wenu-frontend BRAND palette: ember #c9a84c gold and teal #64e0d0 — and the gold is not arbitrary, it is the lore text's own 'Símbolo Visual: Espiral doble de ADN dorado brillante'. This passport uses design-system tokens as authoritative where it can, because they are the versioned artefact in the canon repository, but it preserves the gold/teal strand expression because it has independent canonical warrant. The three-way delta is real and visible; the orchestrator should rule rather than letting the implementation choose."
+    - "CONCEPT ID — no canonical id exists for the passage itself, so conceptId is set to the organism it composes (descent-tunnel). See PROVENANCE QUESTION 4."
+    - "COORDINATE — coordinateAssignment stays null. ADR-0010's concept assignment law requires creator approval before any A-Y letter is assigned, and no canonical source assigns one to this concept. Note the specific temptation this scene creates and rejects: a passage with ordered stations looks like it wants to be a lettered sequence. It is not one, and reviewChecks tests for that explicitly."
+    - "PERFORMANCE RISKS — the reason implementation.performanceRisk is HIGH rather than MEDIUM. (1) The only shipped implementation loads ~500kb of three.js + gsap + lenis plus a full postprocessing composer, and additionally fetches a GLB model at runtime; that is already the heaviest scene in either repository. (2) It builds up to 9000 connective-thread points, 1008 eye-net instances, 3000 starfield points and 6000 galaxy particles on desktop, with an UnrealBloomPass over all of it. (3) It never releases its WebGL context on scroll-out — only pause() is called — so with token performance.maxActiveHeavyCanvases at 1, any second heavy scene on the same page is a violation by construction. (4) The unremoved gsap ticker callback and lenis scroll subscription mean the leak compounds per mount rather than staying constant. (5) Smooth-scroll hijacking of the window is itself a main-thread cost and interacts badly with the keyboard model this passport requires. (6) The helix is a stroked/swept curve whose cost scales with sample count on every frame, and the static SVG path builds ~447 samples per strand plus ~74 rungs at DOM level, which must not be rebuilt on resize. (7) If HelixPassage is instead built on KDX CORE, risk drops toward MEDIUM — which is itself an argument for the consolidation decision above."
+    - "IMPLEMENTATION PACKET RECOMMENDATION — split into four, and do not start any of them until PROVENANCE QUESTION 2 (register) is answered, because the register decision changes the palette, the permitted motifs and the permitted links. (a) C1, ORCHESTRATOR/cultural review: rule the register for DNA PASSAGE, and separately open the Mapuche citation gap in ManifestoSpiral3D as its own remediation packet. Blocking for everything else. (b) C1, ORCHESTRATOR/architecture: rule the engine question — KDX CORE versus three.js — and, if KDX CORE, rule the pixel-sort shader gap. Blocking for (c). (c) C2, producer BOUNDED_CODING_AGENT, reviewer LONG_CONTEXT_ARCHITECT: build HelixPassage with the layer profile as a first-class declared parameter, the B-DNA geometry gate enforced in code (a Layer B profile that fails the constraint should fail a unit test, not a visual review), station invariance across viewports, the full keyboard model, the static/SVG parity path, and an explicit destroy() with a test asserting zero remaining listeners, tickers, subscriptions and undisposed textures. No new visual invention. (d) C1, MULTIMODAL_VISUAL_SPEC: visual review against reviewChecks at the three target captures, after (c). A separate small packet is worth opening for the leaks listed under DEFECTS below, since they affect production today and are independent of DNA PASSAGE."
+    - "DEFECTS FOUND IN EXISTING CODE — reported, not fixed, since this packet may not edit runtime code. (1) kodex-observe-v2-client.ts bindEvents() registers addEventListener('resize', ...) and document.addEventListener('visibilitychange', ...) as anonymous arrows and never removes them; stop() only cancels the RAF and timeouts and there is no destroy path, so a second mount leaks listeners and a WebGL context. (2) ManifestoSpiral3D.astro has a real dispose(), but gsap.ticker.add(...) is never removed and the retained closure keeps calling lenis.raf() on a Lenis instance dispose() already destroyed; lenis.on('scroll', ScrollTrigger.update) has no matching off(); gsap.ticker.lagSmoothing(0) is a global mutation never restored. (3) The same dispose() disposes only material.map, never emissiveMap, bumpMap or shader-uniform textures, so the DNA ribbon texture, the serpent maps and the kultrun emissive maps are never freed. (4) dispose() is reachable only from a pagehide listener; the IntersectionObserver's exit branch calls pause() only, so the WebGL context and all GPU memory survive for the rest of the page life once the section is scrolled past. There is no visibilitychange listener anywhere in the file, so a backgrounded tab keeps rendering unless it also happens to be scrolled out. renderer.forceContextLoss() is never called. (5) ManifestoSpiral.astro registers window 'scroll' and 'resize' listeners and never removes them. (6) The shipped DNA passage has ZERO keyboard affordance — no keydown handler, no tabindex, no focusable control — so the whole scene is pointer/scroll-only, which fails the packet's own equivalence criterion in production today. (7) ManifestoSpiral3D.astro's header comment (lines 15-17) describes the DNA as 'MeshPhysicalMaterial iridescent strands' with 'base pairs as glowing sacred-geometry star-cross Sprites'; the implementation actually uses MeshStandardMaterial ribbons with BoxGeometry bars and SphereGeometry junctions, and no Sprites. Documentation that contradicts the code it documents is a maintenance hazard worth a one-line fix. (8) COWORK-BRIDGE.md prescribes 'Datos vivos' — core temp 87.3K, field stability 94.6%, quantum noise 2.7dB, signal 87.6%, timeline drift 0.0009% — which are near-verbatim instances of the pseudo-metrics canon/KODEX_EPISTEMIC_STANDARD.md prohibits. This is a canon-versus-working-document conflict, not a code bug, and the bridge should be annotated so no future scene implements it."
+    - "EVIDENCE — sources actually inspected are listed file-by-file in sourceRefs, and every file named there was read in this session. Deliberately NOT inspected or not available: no concept/reference image of any kind (none reached this worker); public/kodex-content/art/ does not exist on this machine; the Obsidian vault PDFs at /Users/user1/Obsidian/ do not exist on this machine. The two ear-piercing assets public/img/piercing/types/helix.avif and forward-helix.avif were located, identified as unrelated product photography, and excluded."
