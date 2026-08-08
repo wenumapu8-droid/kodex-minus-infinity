@@ -181,5 +181,27 @@ execution_log:
       - "D7 full-motion latency/feel needs frontier browser pass (not measurable from stills)"
     next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
     status: "ALL_DELTAS_IMPL_PENDING_FRONTIER"
+  - date: "2026-08-08"
+    station: "OPENCLAUDE_DEEPSEEK"
+    action: "CAPTURE_FULL_MOTION_TIMELINE_EVIDENCE"
+    branch: "opencode/kod49-deterministic-deltas"
+    base: "feature/kodex-threshold-visual-scaffold-v1 (d6dd18cf)"
+    head: "243040b6"
+    pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/45"
+    note: "closes caveat 'D7 full-motion latency/feel not measurable from stills' — temporal capture across a full breath cycle (~9s, 9 frames per viewport) with pointer at focal center. Hashes of frames differ per viewport, confirming real pixel motion (breath), not identical stills."
+    deltas_evidenced:
+      - "D7: full-motion timeline desktop/390x844/412x915 at 1125ms cadence over 9000ms, state AWARE at all samples"
+      - "OFF state re-verified after timeline on all three viewports"
+    local_qa: "capture-motion-timeline.mjs PASS — 3 viewports x 9 frames, no console errors, no overflow"
+    evidence_added:
+      - "qa-artifacts/motion-timeline/<viewport>-full-t{0000..9000}.png"
+      - "qa-artifacts/motion-timeline/<viewport>-off.png"
+      - "qa-artifacts/motion-timeline/<viewport>-meta.json (state=AWARE, motion=full)"
+      - "qa-artifacts/motion-timeline/motion-timeline-acceptance.txt (PASS)"
+      - "snapshot versionado en dashboard reference-shots: 20260808-003403-motion-timeline (visible en :3390)"
+    caveats:
+      - "frontier visual judgment still REQUIRED for acceptance; implementation evidence complete, no visual acceptance declared"
+    next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
+    status: "ALL_DELTAS_IMPL_PENDING_FRONTIER"
 
 deployment_status: "BLOCKED"
