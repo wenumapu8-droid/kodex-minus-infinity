@@ -1,0 +1,427 @@
+[
+  {
+    "id": "SRC-KDX-CORPUS-001",
+    "title": "KDX_THRESHOLD_PORTAL_001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "record:PROTO-THRESHOLD-001",
+    "checksum": null,
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "path": "src/kodex/threshold-portal/README.md",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: MINUS_INFINITY, THRESHOLD, ORIENT, NAVIGATE, TRANSFORM"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-002",
+    "title": "PROTO-OBSERVE-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "abf9baa5403bc4cd0c162631559fcdabb63e726fc9efe03a7384125ef795039e",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: THRESHOLD, ARCHIVE, REVEAL, TRACE, COMPARE"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-003",
+    "title": "PROTO-SPATIAL-002",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "c48ddcc1bdbaeba3a7c5229b5c1b0f0d2e6246ad7c1b6e6601e617546ed0ffdf",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: THRESHOLD, CROSS_WORLD_PORTAL, TRANSFORM, NAVIGATE"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-004",
+    "title": "PROTO-SPLIT-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "c22dbd7ca23869d7529da3408e9a195b8c1f4381dfd55129c30d5ad531f58acf",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: PATH_BRANCH, NAVIGATE, TRANSFORM"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-005",
+    "title": "PROTO-IMPOSSIBLE-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "07e9fa37a00ec50e12ba196fefd38da21a19f47f991fd229667b2b5ed0295e46",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: ANOMALY, CROSS_WORLD_RELATION, INSPECT, TRANSFORM"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-006",
+    "title": "PROTO-MIRROR-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "0d3c785f081a0d682781ae9f048390c8941dce5ec5f3315d30756c2fd14fc21a",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: ARTIFACT_ALTAR, MEMORY_ECHO, REVEAL, COMPARE, CONTEMPLATE"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-007",
+    "title": "PROTO-RIPPLE-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "b95b0cb0392c60cfbd3061c36bcfe35cca617720e97b89dfc5af1acb196b9e18",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: RESPONSIVE_FIELD, TRANSFORM, ORIENT"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-008",
+    "title": "PROTO-PERSPECTIVE-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "f526bc3f03002977954b623157977b5816e515a1c475b3c924ca4ec95e1cc5d3",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: CROSS_WORLD_PORTAL, RETURN_ECHO, TRANSFORM, REORIENT"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-009",
+    "title": "PROTO-WRINKLE-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "7808723728e482a8b3892d2f8433f04fe4e488bb4910c08a171dff50ede2fa30",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: DEFORMATION, ANOMALY, TRANSFORM, INSPECT"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-010",
+    "title": "PROTO-CANVAS-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "packages/recovered/helix-transparent-v1/",
+    "checksum": "79e52eed4d867ea7fdca6e8a132897333eb901beca2c971a9907bf378cb4c98c",
+    "repository": "None",
+    "path": "packages/recovered/helix-transparent-v1/",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: THRESHOLD, HEART_PORTAL_CUE, RETURN, ORIENT, CONTEMPLATE, TRANSFORM"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-011",
+    "title": "PACK-SVG-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "1b27ce6b6acde7793534cb59452dbc8b49e899cd36f0f880e61a31274cf3f225",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: GLYPH_FIELD, INTERFACE, PATH_ARTIFACT, ORIENT, TRACE"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-012",
+    "title": "PACK-DESIGN-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "b043234ceac6d2a62babb8bf88457a7336ea7cab5e39310c1b2875a604f415f9",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: ALL_CORE_SCENES, ORIENT"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-013",
+    "title": "PACK-GRAMMAR-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "89b8ea354787b098d91036dc8d5f516c44e3c5b5f1fa4a5353fd38ebfd67a972",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: ARTIFACT_ALTAR, RETURN, TRACE, COMPARE"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-014",
+    "title": "PACK-TYPE-002",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "633dcb129dfac057595e4e4f924072f0d82df8d66f908e480b35f402b1be767d",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: ALL_CORE_SCENES, ORIENT, REVEAL"
+    ]
+  },
+  {
+    "id": "SRC-KDX-CORPUS-015",
+    "title": "PACK-OPEN-LAB-001",
+    "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
+    "sourceClass": "CODE",
+    "location": "None",
+    "checksum": "fc1e9b028b18278a7369cc248399f957962f63aa0f8072456b6233b7f7fa7ee4",
+    "repository": "None",
+    "path": "None",
+    "rightsStatus": "REFERENCE_ONLY",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "notes": [
+      "epistemic: VERIFIED",
+      "roles: MACHINE, OPEN_SOURCE_ACCESS, INSPECT, TRANSFORM, OPEN_SOURCE"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-001",
+    "title": "image3A32302_mirror7.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1L5_l8C3MoP1RquWoaaubSjhC5tIkcS0A",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/root",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: ARTIFACT_ALTAR_PRIMARY, MEMORY_ECHO"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-002",
+    "title": "image3A30212_mirror2.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:13jutXnFRQVnoXE1VO65LYeOgi9kC4jdh",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Circular",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: GLYPH_FIELD, RELATION_ORBIT"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-003",
+    "title": "image3A30006_mirror2.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1zAeyvWCkNleePJPxXfPmqke8iwjTLSMI",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Fractal",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: DESCENT, MEMORY_TOPOGRAPHY"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-004",
+    "title": "image3A30218_mirror5.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1s1UCCoVeLkN-uIa1Rc-igmYihhhqyubi",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Molecular",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: RELATION_GRAPH, COSMOLOGY"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-005",
+    "title": "image3A30211_mirror8.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:14cx78xMPhrgu-W8dElO3fUTXLQOi5rw1",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Cuadrado",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: ARCHIVE_GRID, MACHINE_FRAME"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-006",
+    "title": "image3A30213_mirror3.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1ZwH3RFY0cxVgeuxKH7Vv6iL90uNg5pJ3",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Patron",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: VISUAL_GRAMMAR, MEMORY_SURFACE"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-007",
+    "title": "image3A30006_mirror32.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1N8SZ3WWYRrpRKaGbkVsu_Puzu-UOfSDN",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Psycho",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: ANOMALY, DESCENT"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-008",
+    "title": "image3A30006_mirror5.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1DPsrHLLtpo7OEA9rchq9CUdwbvxUsJYu",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Toroide",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: HEART_ORBIT, COSMOLOGY"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-009",
+    "title": "image3A30212_mirror6.jpg",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1l68o9MujsENyebsrRnE3AWYrdwoz5Fnw",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Triangular",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: THRESHOLD_VECTOR, PATH_BRANCH"
+    ]
+  },
+  {
+    "id": "SRC-OCIN-CAND-010",
+    "title": "image3A30110_mirror4b.png",
+    "creator": "OCÍN / CREATOR CONFIRMATION REQUIRED",
+    "sourceClass": "CULTURAL_WORK",
+    "location": "drive:1bpdW0DNhJ1CNypGNaLrAwvJbA7UVtCXB",
+    "checksum": null,
+    "repository": null,
+    "path": "0cin/Mandala/Blanco y negro",
+    "rightsStatus": "UNKNOWN",
+    "privacyStatus": "RESTRICTED",
+    "culturalStatus": "REVIEW_REQUIRED",
+    "notes": [
+      "epistemic: NEEDS_CONFIRMATION",
+      "roles: ARTIFACT_ALTAR_SECONDARY, GLYPH_ORGANISM"
+    ]
+  }
+]

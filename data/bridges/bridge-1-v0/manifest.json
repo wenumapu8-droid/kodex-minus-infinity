@@ -1,0 +1,21 @@
+{
+  "bridge": "bridge-1-v0",
+  "generator": "scripts/bridge_atlas_corpus_v1.py",
+  "source_lock": "research/CORPUS_LOCK_V0_DRAFT.md",
+  "counts": {
+    "source_rows_visual": 15,
+    "source_rows_research": 10,
+    "sources": 25,
+    "claims": 82,
+    "nodes": 25,
+    "edges": 69
+  },
+  "anomalies": [],
+  "content_digest": {
+    "sources": "31b499684050317fdc827b7980a05c829254ab42ab029076fa550b74fa7f0ea8",
+    "claims": "b08a4f869654b3cdd97c9a716ff53e82a8f444120ba8f6fac0a33264afcf6512",
+    "nodes": "311d87a4b8a24230764e7f444810f31199a845e85352b1b73dd87b7e939c1c6b",
+    "edges": "6e7014719415b95923986b95eac3f276470122179429dacf6a15bc2861297fcd"
+  },
+  "digest": "9aaa3403ad43fbb776d657d1741593143dbee878bf7ce55c5766340a24186549"
+}

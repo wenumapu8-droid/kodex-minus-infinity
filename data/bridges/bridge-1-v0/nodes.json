@@ -1,0 +1,384 @@
+[
+  {
+    "id": "NODE-KDX-CORPUS-001",
+    "coordinateAssignment": "A",
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-001"
+    ],
+    "roles": [
+      "MINUS_INFINITY",
+      "THRESHOLD",
+      "ORIENT",
+      "NAVIGATE",
+      "TRANSFORM"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-002",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-002"
+    ],
+    "roles": [
+      "THRESHOLD",
+      "ARCHIVE",
+      "REVEAL",
+      "TRACE",
+      "COMPARE"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-003",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-003"
+    ],
+    "roles": [
+      "THRESHOLD",
+      "CROSS_WORLD_PORTAL",
+      "TRANSFORM",
+      "NAVIGATE"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-004",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-004"
+    ],
+    "roles": [
+      "PATH_BRANCH",
+      "NAVIGATE",
+      "TRANSFORM"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-005",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-005"
+    ],
+    "roles": [
+      "ANOMALY",
+      "CROSS_WORLD_RELATION",
+      "INSPECT",
+      "TRANSFORM"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-006",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-006"
+    ],
+    "roles": [
+      "ARTIFACT_ALTAR",
+      "MEMORY_ECHO",
+      "REVEAL",
+      "COMPARE",
+      "CONTEMPLATE"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-007",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-007"
+    ],
+    "roles": [
+      "RESPONSIVE_FIELD",
+      "TRANSFORM",
+      "ORIENT"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-008",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-008"
+    ],
+    "roles": [
+      "CROSS_WORLD_PORTAL",
+      "RETURN_ECHO",
+      "TRANSFORM",
+      "REORIENT"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-009",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-009"
+    ],
+    "roles": [
+      "DEFORMATION",
+      "ANOMALY",
+      "TRANSFORM",
+      "INSPECT"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-010",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "roles": [
+      "THRESHOLD",
+      "HEART_PORTAL_CUE",
+      "RETURN",
+      "ORIENT",
+      "CONTEMPLATE",
+      "TRANSFORM"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-011",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-011"
+    ],
+    "roles": [
+      "GLYPH_FIELD",
+      "INTERFACE",
+      "PATH_ARTIFACT",
+      "ORIENT",
+      "TRACE"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-012",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-012"
+    ],
+    "roles": [
+      "ALL_CORE_SCENES",
+      "ORIENT"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-013",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-013"
+    ],
+    "roles": [
+      "ARTIFACT_ALTAR",
+      "RETURN",
+      "TRACE",
+      "COMPARE"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-014",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-014"
+    ],
+    "roles": [
+      "ALL_CORE_SCENES",
+      "ORIENT",
+      "REVEAL"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-KDX-CORPUS-015",
+    "coordinateAssignment": null,
+    "epistemicStatus": "VERIFIED",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-015"
+    ],
+    "roles": [
+      "MACHINE",
+      "OPEN_SOURCE_ACCESS",
+      "INSPECT",
+      "TRANSFORM",
+      "OPEN_SOURCE"
+    ],
+    "rightsStatus": "REFERENCE_ONLY",
+    "culturalStatus": "STANDARD"
+  },
+  {
+    "id": "NODE-OCIN-CAND-001",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-001"
+    ],
+    "roles": [
+      "ARTIFACT_ALTAR_PRIMARY",
+      "MEMORY_ECHO"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-002",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-002"
+    ],
+    "roles": [
+      "GLYPH_FIELD",
+      "RELATION_ORBIT"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-003",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-003"
+    ],
+    "roles": [
+      "DESCENT",
+      "MEMORY_TOPOGRAPHY"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-004",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-004"
+    ],
+    "roles": [
+      "RELATION_GRAPH",
+      "COSMOLOGY"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-005",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-005"
+    ],
+    "roles": [
+      "ARCHIVE_GRID",
+      "MACHINE_FRAME"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-006",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-006"
+    ],
+    "roles": [
+      "VISUAL_GRAMMAR",
+      "MEMORY_SURFACE"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-007",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-007"
+    ],
+    "roles": [
+      "ANOMALY",
+      "DESCENT"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-008",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-008"
+    ],
+    "roles": [
+      "HEART_ORBIT",
+      "COSMOLOGY"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-009",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-009"
+    ],
+    "roles": [
+      "THRESHOLD_VECTOR",
+      "PATH_BRANCH"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  },
+  {
+    "id": "NODE-OCIN-CAND-010",
+    "coordinateAssignment": null,
+    "epistemicStatus": "NEEDS_CONFIRMATION",
+    "sourceIds": [
+      "SRC-OCIN-CAND-010"
+    ],
+    "roles": [
+      "ARTIFACT_ALTAR_SECONDARY",
+      "GLYPH_ORGANISM"
+    ],
+    "rightsStatus": "UNKNOWN",
+    "culturalStatus": "REVIEW_REQUIRED"
+  }
+]
