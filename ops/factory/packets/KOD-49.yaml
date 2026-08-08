@@ -156,5 +156,30 @@ execution_log:
     audit_v1_gap_closed: "full-motion behavior now has mobile evidence; frontier re-audit can inspect FULL/REDUCED/OFF from CI artifacts"
     next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
     status: "DETERMINISTIC_DELTAS_IMPL"
+  - date: "2026-08-08"
+    station: "OPENCLAUDE_DEEPSEEK"
+    action: "IMPLEMENT_MATERIAL_DELTAS_D1_D2_D3_D7"
+    branch: "opencode/kod49-deterministic-deltas"
+    base: "feature/kodex-threshold-visual-scaffold-v1 (d6dd18cf)"
+    head: "243040b6"
+    pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/45"
+    note: "creator instructed OpenCode to continue with all remaining KOD-49 deltas; frontier station not active. No visual acceptance declared."
+    deltas_applied:
+      - "D1: 5 structural lobes (replaces concentric rings), 26 non-uniform cavities via golden-angle scatter, specular arcs; no rotational repeating pattern"
+      - "D2: 3-shell obsidian body (dark shell / mineral rim / translucent violet signal), localized chrome highlight arc, violet haze reduced ~40%"
+      - "D3: embedded glyph field with truthful labels only (THRESHOLD, A / −∞, IDENTITY CLAIM: NONE) + decorative micro-ticks; no fabricated telemetry"
+      - "D7: local angular deformation (nearest shell/cavity bends to pointer), dwell stabilizes; slow dual-sine breath ~6-10s; REDUCED/OFF use discrete DORMANT/AWARE/OPEN shape states"
+    ci:
+      - "build: PASS (run 31244658382)"
+      - "verify-threshold-fidelity: PASS (run 31244658377) — desktop/390x844/412x915, FULL/REDUCED/OFF, no overflow, keyboard parity, no console errors"
+    organism_metrics:
+      - "desktop vertical span 81% vh, horizontal 62%, lit 32.5%, 23 specular samples"
+      - "390x844 vertical span 46% vh, lit 32.6%, 15 specular samples"
+      - "412x915 vertical span 45% vh, lit 31.7%, 12 specular samples"
+    caveats:
+      - "frontier visual judgment still REQUIRED for acceptance; these are implementation deltas, not creator-approved visual"
+      - "D7 full-motion latency/feel needs frontier browser pass (not measurable from stills)"
+    next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
+    status: "ALL_DELTAS_IMPL_PENDING_FRONTIER"
 
 deployment_status: "BLOCKED"
