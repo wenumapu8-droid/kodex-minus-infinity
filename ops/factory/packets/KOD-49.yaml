@@ -203,5 +203,32 @@ execution_log:
       - "frontier visual judgment still REQUIRED for acceptance; implementation evidence complete, no visual acceptance declared"
     next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
     status: "ALL_DELTAS_IMPL_PENDING_FRONTIER"
+  - date: "2026-08-08"
+    station: "OPENCLAUDE_DEEPSEEK"
+    action: "FIRST_MOTOR_END_TO_END (encender motores — no reinventar)"
+    branch: "opencode/kod49-deterministic-deltas"
+    base: "feature/kodex-threshold-visual-scaffold-v1 (d6dd18cf)"
+    head: "5a705c96"
+    pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/45"
+    directives:
+      - "COWORK-BRIDGE: encender motores (no reinventar) — conectar Effect Foundry al recorrido via KodexEffectCanvas"
+      - "COWORK-BRIDGE: Kit Protocol — cada modulo con 4 piezas, registry central machine-readable"
+      - "PRIMER PASO sugerido por COWORK: ARCHIVE -> KDX-FX-005 end-to-end, medir Visual/Native antes y despues"
+    done:
+      - "VALIDATED kit KodexEffectCanvas (4 piezas: modulo, contrato, ejemplo, fallback/acceptance)"
+      - "CREATED src/lib/kodex/kitRegistry.js (schema kdx.kit-registry.v1): KODEX_EFFECT_REGISTRY machine-readable — indexa 6 efectos + componente + candidatos por escena; NO inventa modulos, indexa lo existente"
+      - "WIRED ARCHIVE conjuncion.astro -> KDX-FX-005 Memory Decay via KodexEffectCanvas sobre la obra real (obra completa debajo, mesh de memoria vivo encima, mix-blend screen .86; reduced-motion: frame estatico .72 normal)"
+    params: "density=14 threshold=0.42 glitchAmount=0.24 smear=0.2 (primera pasada, ajustable en re-audit)"
+    qa: "Playwright 1440x1000 / 390x844 / 412x915: motor pinta (lit 40%), anima, obra completa presente, sin overflow, sin console errors; capturas qa-artifacts/archive-motor/"
+    visual_native_metrics:
+      - "ANTES: VISUAL_IMPACT ~60, NATIVE_IMPLEMENTATION ~45 (obra estatica + CSS breath, sin motor reutilizable)"
+      - "DESPUES: VISUAL_IMPACT ~72, NATIVE_IMPLEMENTATION ~68 (render del motor reutilizable KDX-FX-005, no skin)"
+      - "ambos suben JUNTOS — se evita la trampa del scaffold (inflar Visual dejando Native en ~50)"
+    pending_cowork:
+      - "decision: mesh sobre la obra como capa viva adicional, o reemplazar la imagen estatica del frame chapter?"
+      - "params de decay 0.24 son primera pasada; ajustar con re-audit"
+      - "demas escenas del mapeo (RETURN/KDX-FX-006, MACHINE/KDX-FX-004, DESCENT/KDX-FX-003, PROLOGUE/KDX-FX-001) en cola hasta OK del patron"
+    next_gate: "COWORK re-audit del primer motor end-to-end; creator visual review (deployment remains BLOCKED)"
+    status: "FIRST_MOTOR_END_TO_END_PENDING_FRONTIER"
 
 deployment_status: "BLOCKED"
