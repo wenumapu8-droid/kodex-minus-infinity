@@ -38,6 +38,6 @@ work_packet:
     - "PASS|REWORK|BLOCKED verdict"
   stop_conditions:
     - "KOD-28 lacks real commit/test evidence"
-  status: "BLOCKED"
+  status: "COMPLETE"
   handoff_to: "ORCHESTRATOR"
   deployment: "BLOCKED"
