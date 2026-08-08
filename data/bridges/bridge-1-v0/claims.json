@@ -1,0 +1,1888 @@
+[
+  {
+    "id": "CLM-KDX-CORPUS-001-001",
+    "class": "OBSERVED",
+    "statement": "KDX_THRESHOLD_PORTAL_001 is part of the KODEX corpus lock with role MINUS_INFINITY.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-001-002",
+    "class": "OBSERVED",
+    "statement": "KDX_THRESHOLD_PORTAL_001 is part of the KODEX corpus lock with role THRESHOLD.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-001-003",
+    "class": "OBSERVED",
+    "statement": "KDX_THRESHOLD_PORTAL_001 is part of the KODEX corpus lock with role ORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-001-004",
+    "class": "OBSERVED",
+    "statement": "KDX_THRESHOLD_PORTAL_001 is part of the KODEX corpus lock with role NAVIGATE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-001-005",
+    "class": "OBSERVED",
+    "statement": "KDX_THRESHOLD_PORTAL_001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-002-006",
+    "class": "OBSERVED",
+    "statement": "PROTO-OBSERVE-001 is part of the KODEX corpus lock with role THRESHOLD.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-002-007",
+    "class": "OBSERVED",
+    "statement": "PROTO-OBSERVE-001 is part of the KODEX corpus lock with role ARCHIVE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-002-008",
+    "class": "OBSERVED",
+    "statement": "PROTO-OBSERVE-001 is part of the KODEX corpus lock with role REVEAL.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-002-009",
+    "class": "OBSERVED",
+    "statement": "PROTO-OBSERVE-001 is part of the KODEX corpus lock with role TRACE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-002-010",
+    "class": "OBSERVED",
+    "statement": "PROTO-OBSERVE-001 is part of the KODEX corpus lock with role COMPARE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-003-011",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPATIAL-002 is part of the KODEX corpus lock with role THRESHOLD.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-003"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-003-012",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPATIAL-002 is part of the KODEX corpus lock with role CROSS_WORLD_PORTAL.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-003"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-003-013",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPATIAL-002 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-003"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-003-014",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPATIAL-002 is part of the KODEX corpus lock with role NAVIGATE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-003"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-004-015",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPLIT-001 is part of the KODEX corpus lock with role PATH_BRANCH.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-004"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-004-016",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPLIT-001 is part of the KODEX corpus lock with role NAVIGATE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-004"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-004-017",
+    "class": "OBSERVED",
+    "statement": "PROTO-SPLIT-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-004"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-005-018",
+    "class": "OBSERVED",
+    "statement": "PROTO-IMPOSSIBLE-001 is part of the KODEX corpus lock with role ANOMALY.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-005"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-005-019",
+    "class": "OBSERVED",
+    "statement": "PROTO-IMPOSSIBLE-001 is part of the KODEX corpus lock with role CROSS_WORLD_RELATION.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-005"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-005-020",
+    "class": "OBSERVED",
+    "statement": "PROTO-IMPOSSIBLE-001 is part of the KODEX corpus lock with role INSPECT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-005"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-005-021",
+    "class": "OBSERVED",
+    "statement": "PROTO-IMPOSSIBLE-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-005"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-006-022",
+    "class": "OBSERVED",
+    "statement": "PROTO-MIRROR-001 is part of the KODEX corpus lock with role ARTIFACT_ALTAR.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-006-023",
+    "class": "OBSERVED",
+    "statement": "PROTO-MIRROR-001 is part of the KODEX corpus lock with role MEMORY_ECHO.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-006-024",
+    "class": "OBSERVED",
+    "statement": "PROTO-MIRROR-001 is part of the KODEX corpus lock with role REVEAL.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-006-025",
+    "class": "OBSERVED",
+    "statement": "PROTO-MIRROR-001 is part of the KODEX corpus lock with role COMPARE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-006-026",
+    "class": "OBSERVED",
+    "statement": "PROTO-MIRROR-001 is part of the KODEX corpus lock with role CONTEMPLATE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-007-027",
+    "class": "OBSERVED",
+    "statement": "PROTO-RIPPLE-001 is part of the KODEX corpus lock with role RESPONSIVE_FIELD.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-007"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-007-028",
+    "class": "OBSERVED",
+    "statement": "PROTO-RIPPLE-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-007"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-007-029",
+    "class": "OBSERVED",
+    "statement": "PROTO-RIPPLE-001 is part of the KODEX corpus lock with role ORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-007"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-008-030",
+    "class": "OBSERVED",
+    "statement": "PROTO-PERSPECTIVE-001 is part of the KODEX corpus lock with role CROSS_WORLD_PORTAL.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-008"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-008-031",
+    "class": "OBSERVED",
+    "statement": "PROTO-PERSPECTIVE-001 is part of the KODEX corpus lock with role RETURN_ECHO.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-008"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-008-032",
+    "class": "OBSERVED",
+    "statement": "PROTO-PERSPECTIVE-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-008"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-008-033",
+    "class": "OBSERVED",
+    "statement": "PROTO-PERSPECTIVE-001 is part of the KODEX corpus lock with role REORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-008"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-009-034",
+    "class": "OBSERVED",
+    "statement": "PROTO-WRINKLE-001 is part of the KODEX corpus lock with role DEFORMATION.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-009"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-009-035",
+    "class": "OBSERVED",
+    "statement": "PROTO-WRINKLE-001 is part of the KODEX corpus lock with role ANOMALY.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-009"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-009-036",
+    "class": "OBSERVED",
+    "statement": "PROTO-WRINKLE-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-009"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-009-037",
+    "class": "OBSERVED",
+    "statement": "PROTO-WRINKLE-001 is part of the KODEX corpus lock with role INSPECT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-009"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-010-038",
+    "class": "OBSERVED",
+    "statement": "PROTO-CANVAS-001 is part of the KODEX corpus lock with role THRESHOLD.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-010-039",
+    "class": "OBSERVED",
+    "statement": "PROTO-CANVAS-001 is part of the KODEX corpus lock with role HEART_PORTAL_CUE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-010-040",
+    "class": "OBSERVED",
+    "statement": "PROTO-CANVAS-001 is part of the KODEX corpus lock with role RETURN.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-010-041",
+    "class": "OBSERVED",
+    "statement": "PROTO-CANVAS-001 is part of the KODEX corpus lock with role ORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-010-042",
+    "class": "OBSERVED",
+    "statement": "PROTO-CANVAS-001 is part of the KODEX corpus lock with role CONTEMPLATE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-010-043",
+    "class": "OBSERVED",
+    "statement": "PROTO-CANVAS-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-011-044",
+    "class": "OBSERVED",
+    "statement": "PACK-SVG-001 is part of the KODEX corpus lock with role GLYPH_FIELD.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-011"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-011-045",
+    "class": "OBSERVED",
+    "statement": "PACK-SVG-001 is part of the KODEX corpus lock with role INTERFACE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-011"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-011-046",
+    "class": "OBSERVED",
+    "statement": "PACK-SVG-001 is part of the KODEX corpus lock with role PATH_ARTIFACT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-011"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-011-047",
+    "class": "OBSERVED",
+    "statement": "PACK-SVG-001 is part of the KODEX corpus lock with role ORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-011"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-011-048",
+    "class": "OBSERVED",
+    "statement": "PACK-SVG-001 is part of the KODEX corpus lock with role TRACE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-011"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-012-049",
+    "class": "OBSERVED",
+    "statement": "PACK-DESIGN-001 is part of the KODEX corpus lock with role ALL_CORE_SCENES.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-012"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-012-050",
+    "class": "OBSERVED",
+    "statement": "PACK-DESIGN-001 is part of the KODEX corpus lock with role ORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-012"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-013-051",
+    "class": "OBSERVED",
+    "statement": "PACK-GRAMMAR-001 is part of the KODEX corpus lock with role ARTIFACT_ALTAR.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-013"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-013-052",
+    "class": "OBSERVED",
+    "statement": "PACK-GRAMMAR-001 is part of the KODEX corpus lock with role RETURN.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-013"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-013-053",
+    "class": "OBSERVED",
+    "statement": "PACK-GRAMMAR-001 is part of the KODEX corpus lock with role TRACE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-013"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-013-054",
+    "class": "OBSERVED",
+    "statement": "PACK-GRAMMAR-001 is part of the KODEX corpus lock with role COMPARE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-013"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-014-055",
+    "class": "OBSERVED",
+    "statement": "PACK-TYPE-002 is part of the KODEX corpus lock with role ALL_CORE_SCENES.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-014"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-014-056",
+    "class": "OBSERVED",
+    "statement": "PACK-TYPE-002 is part of the KODEX corpus lock with role ORIENT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-014"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-014-057",
+    "class": "OBSERVED",
+    "statement": "PACK-TYPE-002 is part of the KODEX corpus lock with role REVEAL.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-014"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-015-058",
+    "class": "OBSERVED",
+    "statement": "PACK-OPEN-LAB-001 is part of the KODEX corpus lock with role MACHINE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-015"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-015-059",
+    "class": "OBSERVED",
+    "statement": "PACK-OPEN-LAB-001 is part of the KODEX corpus lock with role OPEN_SOURCE_ACCESS.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-015"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-015-060",
+    "class": "OBSERVED",
+    "statement": "PACK-OPEN-LAB-001 is part of the KODEX corpus lock with role INSPECT.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-015"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-015-061",
+    "class": "OBSERVED",
+    "statement": "PACK-OPEN-LAB-001 is part of the KODEX corpus lock with role TRANSFORM.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-015"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-KDX-CORPUS-015-062",
+    "class": "OBSERVED",
+    "statement": "PACK-OPEN-LAB-001 is part of the KODEX corpus lock with role OPEN_SOURCE.",
+    "sourceIds": [
+      "SRC-KDX-CORPUS-015"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "KODEX−∞ / Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-OCIN-CAND-001-063",
+    "class": "OBSERVED",
+    "statement": "image3A32302_mirror7.jpg is part of the KODEX corpus lock with role ARTIFACT_ALTAR_PRIMARY.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-001-064",
+    "class": "OBSERVED",
+    "statement": "image3A32302_mirror7.jpg is part of the KODEX corpus lock with role MEMORY_ECHO.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-001"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-002-065",
+    "class": "OBSERVED",
+    "statement": "image3A30212_mirror2.jpg is part of the KODEX corpus lock with role GLYPH_FIELD.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-002-066",
+    "class": "OBSERVED",
+    "statement": "image3A30212_mirror2.jpg is part of the KODEX corpus lock with role RELATION_ORBIT.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-002"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-003-067",
+    "class": "OBSERVED",
+    "statement": "image3A30006_mirror2.jpg is part of the KODEX corpus lock with role DESCENT.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-003"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-003-068",
+    "class": "OBSERVED",
+    "statement": "image3A30006_mirror2.jpg is part of the KODEX corpus lock with role MEMORY_TOPOGRAPHY.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-003"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-004-069",
+    "class": "OBSERVED",
+    "statement": "image3A30218_mirror5.jpg is part of the KODEX corpus lock with role RELATION_GRAPH.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-004"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-004-070",
+    "class": "OBSERVED",
+    "statement": "image3A30218_mirror5.jpg is part of the KODEX corpus lock with role COSMOLOGY.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-004"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-005-071",
+    "class": "OBSERVED",
+    "statement": "image3A30211_mirror8.jpg is part of the KODEX corpus lock with role ARCHIVE_GRID.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-005"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-005-072",
+    "class": "OBSERVED",
+    "statement": "image3A30211_mirror8.jpg is part of the KODEX corpus lock with role MACHINE_FRAME.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-005"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-006-073",
+    "class": "OBSERVED",
+    "statement": "image3A30213_mirror3.jpg is part of the KODEX corpus lock with role VISUAL_GRAMMAR.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-006-074",
+    "class": "OBSERVED",
+    "statement": "image3A30213_mirror3.jpg is part of the KODEX corpus lock with role MEMORY_SURFACE.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-006"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-007-075",
+    "class": "OBSERVED",
+    "statement": "image3A30006_mirror32.jpg is part of the KODEX corpus lock with role ANOMALY.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-007"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-007-076",
+    "class": "OBSERVED",
+    "statement": "image3A30006_mirror32.jpg is part of the KODEX corpus lock with role DESCENT.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-007"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-008-077",
+    "class": "OBSERVED",
+    "statement": "image3A30006_mirror5.jpg is part of the KODEX corpus lock with role HEART_ORBIT.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-008"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-008-078",
+    "class": "OBSERVED",
+    "statement": "image3A30006_mirror5.jpg is part of the KODEX corpus lock with role COSMOLOGY.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-008"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-009-079",
+    "class": "OBSERVED",
+    "statement": "image3A30212_mirror6.jpg is part of the KODEX corpus lock with role THRESHOLD_VECTOR.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-009"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-009-080",
+    "class": "OBSERVED",
+    "statement": "image3A30212_mirror6.jpg is part of the KODEX corpus lock with role PATH_BRANCH.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-009"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-010-081",
+    "class": "OBSERVED",
+    "statement": "image3A30110_mirror4b.png is part of the KODEX corpus lock with role ARTIFACT_ALTAR_SECONDARY.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  },
+  {
+    "id": "CLM-OCIN-CAND-010-082",
+    "class": "OBSERVED",
+    "statement": "image3A30110_mirror4b.png is part of the KODEX corpus lock with role GLYPH_ORGANISM.",
+    "sourceIds": [
+      "SRC-OCIN-CAND-010"
+    ],
+    "variables": [
+      "corpus_role"
+    ],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-06",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct inspection of verified corpus lock records",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "OCÍN / CREATOR CONFIRMATION REQUIRED"
+  }
+]
