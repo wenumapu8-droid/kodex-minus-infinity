@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-08-08T01:38:00Z"
+updated_at: "2026-08-08T01:44:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
@@ -24,6 +24,7 @@ rules:
   - "Do not expose secrets, private paths, raw conversations or chain-of-thought in queue/heartbeat/handoff."
   - "PRODUCT-FIRST: visible product, QA and creator-facing convergence outrank new control-plane expansion."
   - "FRONTIER VISUAL RULE: build/functional PASS does not equal visual PASS. Fast/volume workers cannot declare canonical visual acceptance."
+  - "CREDENTIAL RULE: a station without valid model authentication is PAUSED, not RUNNING; its work is rerouted without discarding prior evidence."
 
 loop_policy:
   enabled: true
@@ -52,7 +53,7 @@ stations:
     target_branch: null
     mode: "FRONTIER_VISUAL_AUDIT"
     latest_evidence: "Mac mini is the designated heavy/frontier integration station; fresh run evidence is still required before treating it as active."
-    current_step: "audit the openable KOD-47 visible assembly first, then DNA Passage candidate, against creator references and FRONTIER_VISUAL_GATE.md"
+    current_step: "audit the openable KOD-47 visible assembly first, then DNA Passage candidate, against creator references and FRONTIER_VISUAL_GATE.md; absorb unresolved visual-spec judgment previously routed to Antigravity only when product convergence requires it"
     next_after_gate: "emit measurable delta packets; take difficult implementation directly only when judgment/context dominates"
     next_expected_evidence: "heartbeat + audit handoff with screenshots/reference deltas and PASS/REWORK verdict"
     wip_limit: 1
@@ -93,22 +94,25 @@ stations:
 
   - station_id: "GEMINI_ANTIGRAVITY"
     profile: "MULTIMODAL_VISUAL_SPEC"
-    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "REVIEW_ACTIVE"
-    current_packet: "KOD-38"
-    active_parallel_packets:
+    connection_status: "BLOCKED_NO_GEMINI_TOKEN"
+    execution_status: "PAUSED_AUTH"
+    current_packet: null
+    parked_packets:
       - "KOD-38"
       - "KOD-39"
       - "KOD-40"
-    packet_path: "ops/factory/packets/KOD-38.yaml"
     target_repository: "wenumapu8-droid/kodex-minus-infinity"
-    target_branch: "feature/visual-passport-field-of-eyes-v1"
-    mode: "WRITE_BOUNDED_SPEC"
-    current_step: "finish/rework visual passports and reference decomposition without treating specs as final art direction"
-    next_expected_evidence: "review-ready passport heads with exact provenance and implementation boundaries"
+    target_branch: null
+    mode: "NO_EXECUTION"
+    blocker_class: "CREDENTIAL_UNAVAILABLE"
+    resume_condition: "creator restores valid Gemini authentication/token and station returns a fresh heartbeat"
+    latest_evidence: "Creator reported on 2026-08-07 that Antigravity no longer has a Gemini token. Existing passport branches/PRs remain historical/spec evidence and are not discarded."
+    current_step: "do not execute or request Gemini-dependent work; preserve prior outputs and reroute any needed review/spec work to frontier stations or the orchestrator"
+    next_after_gate: "optional return as multimodal spec worker only after authentication is restored; not required for KODEX progress"
+    next_expected_evidence: "fresh auth heartbeat if restored; otherwise none"
     forbidden_authority:
       - "creator visual acceptance"
-    wip_limit: 1
+    wip_limit: 0
 
   - station_id: "CHATGPT_ORCHESTRATOR"
     profile: "ORCHESTRATOR_AND_ART_DIRECTION_SUPERVISOR"
@@ -119,7 +123,7 @@ stations:
     target_repository: "wenumapu8-droid/kodex-minus-infinity + wenumapu8-droid/wenu-frontend"
     target_branch: null
     mode: "PRODUCT_CONVERGENCE_CONTROL"
-    current_step: "route KOD-47 and DNA Passage into frontier visual audits; convert review deltas into bounded work for volume workers"
+    current_step: "route KOD-47 and DNA Passage into frontier visual audits; absorb any necessary KOD-38/KOD-39/KOD-40 spec review from paused Antigravity; convert review deltas into bounded work for volume workers"
     next_expected_evidence: "frontier audit handoff + measurable delta packet + updated preview evidence"
     wip_limit: 1
 
@@ -141,6 +145,7 @@ dependency_frontier:
   - "KOD-53 establishes the frontier visual gate and Mac station routing."
   - "OpenCode remains valuable for implementation volume but is no longer final visual authority."
   - "Mac mini is primary frontier station; iMac Claude Pro is secondary/fallback after local auth/health check."
+  - "Antigravity is PAUSED because Gemini authentication/token is unavailable; this does not block KODEX. Existing KOD-38/KOD-39/KOD-40 outputs remain usable as prior evidence/specs."
   - "No new public /kodex/ replacement or deployment is authorized."
 
 deployment_status: "BLOCKED"
