@@ -1,0 +1,130 @@
+schema_version: 1
+packet:
+  id: "KOD-49"
+  title: "THRESHOLD Visual Scaffold — Scene Fidelity Sprint 01"
+  issue: "https://github.com/wenumapu8-droid/kodex-minus-infinity/issues/38"
+  linear: "https://linear.app/kodex8/issue/KOD-49/threshold-visual-scaffold-scene-fidelity-sprint-01"
+  status: "READY_FOR_FRONTIER_AUDIT"
+  lane: "SCENE_FIDELITY"
+  complexity: "C3"
+  owner_profile: "FRONTIER_VISUAL_REVIEWER"
+  implementation_profile: "CODEX_OR_BOUNDED_IMPLEMENTER"
+  deployment: "BLOCKED"
+
+objective: >-
+  Make THRESHOLD the first KODEX scene to converge from functional Visible Assembly into a
+  creator-reviewable, reference-level visual experience while preserving the canonical runtime,
+  semantics, accessibility and no-production boundary.
+
+source_evidence:
+  visible_assembly_pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/32"
+  review_mirror: "https://rawcdn.githack.com/wenumapu8-droid/wenu-tools/d9f0b4d56c294b5916c5d60fd76249d87e8e6215/kodex-preview/index.html"
+  scene_bible: "https://docs.google.com/document/d/1ogEpV5Z8jne8Jk31f_L320-Fcn0RnUSfGKPVunHgA5o"
+  visual_atlas: "https://docs.google.com/spreadsheets/d/1RLhA2xmApx1YDfHIeWjIqlYz17OHkuxFbfUXejzcS_4"
+  atlas_target: "KDX-IMG-002 / Portal Organism"
+
+canonical_scene_contract:
+  function: "voluntary entry; recognize presence without claiming identity"
+  primary_question: "WILL YOU ENTER A SYSTEM THAT REMEMBERS TRANSFORMATION?"
+  copy:
+    - "THE GATE IS A LIVING AGREEMENT."
+    - "ENTER VOLUNTARILY."
+  visual:
+    - "living membrane / portal organism"
+    - "black field"
+    - "mineral/violet signal"
+    - "central aperture"
+  geometry:
+    - "SDF/metaball field"
+    - "reaction-diffusion-inspired texture"
+    - "radial aperture"
+  states:
+    - "dormant"
+    - "listening"
+    - "aware"
+    - "open"
+    - "crossed"
+    - "remembered"
+  interactions:
+    - "pointer proximity increases membrane tension"
+    - "dwell stabilizes opening"
+    - "explicit press/tap crosses"
+    - "return visit mutates gate using remembered route variables"
+  memory_events:
+    - "threshold_seen"
+    - "threshold_dwell"
+    - "threshold_crossed"
+    - "threshold_returned"
+  reduced_motion: "static aperture states + opacity/contrast changes; no continuous tunnel motion"
+
+visual_atlas_target:
+  composition: "dominant central organism + subordinate peripheral telemetry"
+  geometry: "metaballs; SDF; cellular cavities; asymmetric growth"
+  motion: "breathing; opening; reorganization; internal pulse"
+  interaction: "proximity opens membrane; intentional action confirms entry"
+  palette_reconciliation: "obsidian + mineral violet/chrome; local signal accents rather than global haze"
+
+visual_scaffold:
+  protocol: "ops/factory/VISUAL_SCAFFOLD_PROTOCOL.md"
+  maturity_start: "SCAFFOLD"
+  layers:
+    - "FUNCTIONAL_BASE"
+    - "VISUAL_SCAFFOLD"
+    - "LIVE_NATIVE_LAYERS"
+  metrics:
+    - "VISUAL_IMPACT"
+    - "NATIVE_IMPLEMENTATION"
+  rule: "temporary target skin must be progressively replaced and must never replace semantic controls"
+
+first_delta_hypothesis:
+  - "portal/membrane occupies approximately 50-65% desktop viewport"
+  - "portal/membrane occupies approximately 60-80% mobile crop"
+  - "three depth planes: atmosphere / organism / semantic UI"
+  - "copy avoids exact center so aperture remains dominant"
+  - "reduce peripheral HUD density and keep it subordinate"
+  - "concentrate bloom/signal locally around organism instead of global haze"
+  - "pointer/touch modulates membrane locally; semantic crossing remains explicit"
+  - "preserve FULL / REDUCED / OFF and no-WebGL fallback"
+
+routing:
+  frontier_primary: "CLAUDE_MAX_MACMINI"
+  frontier_secondary: "CLAUDE_PRO_IMAC"
+  difficult_renderer_implementation: "CODEX"
+  deterministic_delta_implementation: "OPENCLAUDE_DEEPSEEK"
+  supervisor: "CHATGPT_ORCHESTRATOR"
+
+required_loop:
+  - "OPEN_CURRENT_THRESHOLD"
+  - "COMPARE_AGAINST_SCENE_BIBLE_AND_KDX_IMG_002"
+  - "FRONTIER_VISUAL_AUDIT"
+  - "MEASURABLE_DELTA_PACKET"
+  - "IMPLEMENT_ON_FEATURE_BRANCH"
+  - "CI_AND_DEVICE_EVIDENCE"
+  - "UPDATE_REVIEW_PREVIEW"
+  - "FRONTIER_REAUDIT"
+  - "CREATOR_ACCEPTANCE_OR_REWORK"
+
+acceptance:
+  - "one openable noindex Threshold preview exists"
+  - "desktop + 390x844 + 412x915 evidence exists"
+  - "keyboard/touch semantic parity remains intact"
+  - "reduced-motion + no-WebGL remain usable"
+  - "no fabricated telemetry is introduced"
+  - "frontier reviewer returns PASS or REWORK with measurable deltas"
+  - "creator can compare current scene against target visually"
+  - "public /kodex/ remains untouched"
+
+stop_conditions:
+  - "creator reference/canonical decision required"
+  - "rights/provenance unclear for a scaffold asset"
+  - "current KOD-47 branch moved and would cause ownership collision"
+  - "functional CI regresses"
+  - "frontier reviewer unavailable and no second reviewer is healthy"
+
+references:
+  - "ops/factory/FRONTIER_VISUAL_GATE.md"
+  - "ops/factory/VISUAL_SCAFFOLD_PROTOCOL.md"
+  - "ops/factory/DISPATCH_QUEUE.yaml"
+  - "ops/factory/packets/KOD-53.yaml"
+
+deployment_status: "BLOCKED"
