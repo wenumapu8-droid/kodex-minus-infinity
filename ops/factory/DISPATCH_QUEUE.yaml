@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-08-07T23:55:00Z"
+updated_at: "2026-08-07T23:59:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
@@ -63,8 +63,9 @@ stations:
     target_repository: "wenumapu8-droid/wenu-frontend"
     target_branch: null
     mode: "READ_ONLY_AUDIT"
-    next_after_gate: "KOD-41 when KOD-28 reaches REVIEW"
-    next_expected_evidence: "STARTED heartbeat or KOD-42 audit handoff"
+    latest_evidence: "an early KOD-41-style PASS comment appeared on PR #22, but KOD-42 audit handoff is still absent and supervisor overrode the early PASS to REWORK"
+    next_after_gate: "KOD-41 after KOD-28 rework evidence"
+    next_expected_evidence: "KOD-42 audit handoff; later re-review updated KOD-28 head"
     wip_limit: 1
 
   - station_id: "HERMES_TELEGRAM"
@@ -86,14 +87,16 @@ stations:
     runtime_client: "OpenCode/OpenClaude"
     profile: "BOUNDED_CODING_WORKER"
     connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "ASSIGNED_UNKNOWN"
+    execution_status: "RUNNING_REWORK"
     current_packet: "KOD-28"
     packet_path: "ops/factory/packets/KOD-28.yaml"
     target_repository: "wenumapu8-droid/wenu-frontend"
     target_branch: "feature/kodex-journey-state-v1"
     mode: "WRITE_BOUNDED"
-    next_after_gate: "KOD-41 review by CLAUDE_MAX_MACMINI"
-    next_expected_evidence: "heartbeat or commit implementing JourneyState + EventTrace"
+    latest_evidence: "Draft PR #22 head 9acbb2a7d808a4d1cb605cc896898b9b40e8dade; two owned files; worker reports 13/13 node:test pass + clean strict typecheck; supervisor code review found rework"
+    current_step: "separate Heart availability from actual M visitCount; semantic-allowlist persisted payloads/restore; correct event-order comment; add tests"
+    next_after_gate: "KOD-41 re-review by CLAUDE_MAX_MACMINI"
+    next_expected_evidence: "new PR #22 head commit + tests covering availability-vs-visit and payload filtering"
     wip_limit: 1
 
   - station_id: "CLAUDE_PRO_IMAC"
@@ -120,13 +123,13 @@ stations:
     target_repository: "wenumapu8-droid/kodex-minus-infinity"
     target_branch: null
     mode: "CONTROL_PLANE"
-    current_step: "maintain repo-native loop, inspect evidence, apply gates, route dependency frontier; KOD-36 closed and KOD-46 dispatched"
+    current_step: "maintain repo-native loop, inspect evidence, apply cross-model gates, route dependency frontier; KOD-36 closed, KOD-46 dispatched, KOD-28 in rework"
     next_expected_evidence: "new station evidence routed through Factory Loop and Hermes live observer"
     wip_limit: 1
 
 dependency_frontier:
   - "KOD-26 blocks KOD-29."
-  - "KOD-28 review gate is KOD-41 before downstream runtime integration."
+  - "KOD-28 must pass KOD-41 re-review before downstream runtime integration."
   - "KOD-30 requires KOD-28 + KOD-29."
   - "KOD-38 must pass review before GEMINI_ANTIGRAVITY advances to KOD-39, then KOD-40."
   - "KOD-42 can proceed independently as read-only integration readiness work."
