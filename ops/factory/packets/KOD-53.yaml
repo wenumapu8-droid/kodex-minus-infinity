@@ -1,0 +1,101 @@
+schema_version: 1
+packet:
+  id: "KOD-53"
+  title: "Frontier visual convergence loop + Mac station routing"
+  issue: "https://github.com/wenumapu8-droid/kodex-minus-infinity/issues/35"
+  status: "READY_FOR_REVIEW"
+  lane: "PRODUCT_CONVERGENCE"
+  complexity: "C3"
+  owner_profile: "ORCHESTRATOR"
+  reviewer_profile: "FRONTIER_LONG_CONTEXT"
+  deployment: "BLOCKED"
+
+objective: >-
+  Route high-ambiguity visual/art-direction and architecture decisions through a frontier-model
+  station while retaining fast/free workers for bounded mechanical implementation, so KODEX can
+  iterate from an openable preview toward creator reference quality without making production the
+  experimentation surface.
+
+measured_blocker:
+  class: "QUALITY_CEILING"
+  description: >-
+    The factory can produce functional slices, but a fast implementation worker cannot be treated
+    as final authority for reference-sensitive art direction. Functional PASS alone does not prove
+    visual convergence.
+
+primary_frontier_station:
+  station_id: "CLAUDE_MAX_MACMINI"
+  responsibilities:
+    - "frontier visual audits"
+    - "high-ambiguity architecture"
+    - "difficult integration/reconciliation"
+    - "scene-level implementation when judgment and repo context dominate"
+
+secondary_frontier_station:
+  station_id: "CLAUDE_PRO_IMAC"
+  activation_condition: "Claude Code authenticated with Claude App Pro and quota available"
+  responsibilities:
+    - "independent second-pass visual/code review"
+    - "legacy context recovery"
+    - "bounded scene implementation"
+
+volume_station:
+  station_id: "OPENCLAUDE_DEEPSEEK"
+  responsibilities:
+    - "wiring/plumbing"
+    - "deterministic delta implementation"
+    - "tests/CI"
+    - "repetitive code changes"
+  forbidden_authority:
+    - "canonical visual acceptance"
+    - "canon redefinition"
+    - "narrative topology changes without packet authority"
+    - "scientific/cultural interpretation"
+
+spec_station:
+  station_id: "GEMINI_ANTIGRAVITY"
+  responsibilities:
+    - "visual passport extraction"
+    - "multimodal reference decomposition"
+    - "bounded visual specification"
+  forbidden_authority:
+    - "creator visual acceptance"
+
+required_loop:
+  - "VISIBLE_PREVIEW"
+  - "FRONTIER_VISUAL_AUDIT"
+  - "DELTA_PACKET"
+  - "BOUNDED_IMPLEMENTATION"
+  - "CI_AND_DEVICE_SCREENSHOTS"
+  - "FRONTIER_REAUDIT"
+  - "CREATOR_ACCEPTANCE"
+  - "PROMOTION_CANDIDATE"
+
+first_targets:
+  - id: "KOD-47"
+    artifact: "visible assembly"
+    action: "frontier visual audit after an openable preview + evidence exists"
+  - id: "KOD-39"
+    artifact: "DNA Passage / DNA Ascent"
+    action: "frontier visual audit against approved references before public integration"
+
+acceptance:
+  - "FRONTIER_VISUAL_GATE.md exists and is referenced by dispatch."
+  - "Mac station bootstrap/health script exists without credentials."
+  - "OpenCode is explicitly bounded to implementation, not final visual authority."
+  - "Mac mini is primary frontier station; iMac Claude Pro is defined as fallback/second-pass station."
+  - "KOD-47 and DNA Passage enter the frontier visual convergence loop."
+  - "No public deployment occurs."
+
+stop_conditions:
+  - "creator/canonical decision required"
+  - "rights/cultural authorization required"
+  - "frontier station quota unavailable and no fallback station is authenticated"
+  - "preview evidence unavailable"
+  - "CI/device QA fails before visual audit"
+
+references:
+  - "ops/factory/FRONTIER_VISUAL_GATE.md"
+  - "ops/factory/DISPATCH_QUEUE.yaml"
+  - "ops/factory/HEARTBEAT_PROTOCOL.md"
+  - "ops/factory/FACTORY_LOOP_PROTOCOL.md"
