@@ -127,4 +127,29 @@ references:
   - "ops/factory/DISPATCH_QUEUE.yaml"
   - "ops/factory/packets/KOD-53.yaml"
 
+execution_log:
+  - date: "2026-08-07"
+    station: "OPENCLAUDE_DEEPSEEK"
+    action: "IMPLEMENT_DELTAS_D4_D5_D6_D8"
+    branch: "opencode/kod49-deterministic-deltas"
+    base: "feature/kodex-threshold-visual-scaffold-v1 (d6dd18cf)"
+    head: "f8168270"
+    pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/45"
+    deltas_applied:
+      - "D4: organism scale mobile base 0.31->0.42, focal 0.39->0.32; desktop focal 64/50->60/46; shell overlaps copy column"
+      - "D5: truthful telemetry expanded to 8 clusters (MOTION, VISUAL STATE, MEMORY WRITE, ENTRY) + visual-index barcode (NOT AUTH)"
+      - "D6: low-contrast THRESHOLD macro typographic layer behind copy"
+      - "D8: vignette/depth/aperture-note realigned to focal; mobile copy density tuned"
+    deltas_not_touched: ["D1 (asymmetric shell)", "D2 (chrome/material)", "D3 (internal texture)", "D7 full-motion (local deformation) -> frontier/Codex"]
+    ci:
+      - "build: PASS (run 31240534415)"
+      - "verify-threshold-fidelity: PASS (run 31240534395) — desktop + 390x844 + 412x915, no overflow, keyboard motion toggle, native canvas, explicit entry"
+    local_qa: "QA PASS (same script as CI) against 1440x1000 / 390x844 / 412x915"
+    organism_metrics:
+      - "desktop vertical span 71% vh (target 58-68% + atmosphere), focal 44%"
+      - "390x844 vertical span 42% vh, focal 31% (target ~32%)"
+      - "412x915 vertical span 41% vh, focal 31%"
+    next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
+    status: "DETERMINISTIC_DELTAS_IMPL"
+
 deployment_status: "BLOCKED"
