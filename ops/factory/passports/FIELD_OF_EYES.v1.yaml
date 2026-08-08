@@ -1,45 +1,51 @@
 passportId: "VP-FIELD-OF-EYES-V1"
 conceptId: "KDX-NODE-FIELD-OF-EYES"
 title: "FIELD OF EYES"
-status: "DRAFT"
+status: "REVIEW"
 semanticPurpose: "To represent recursive observation, where the act of looking places the viewer as a node within a distributed field of attention."
 nodeQuestion: "Ningún ojo observa solo. Mirar es ya ser parte del campo que mira."
 coordinateAssignment: null
 sourceRefs:
   - id: "kodex-node-field-of-eyes"
     relation: "PRIMARY_CONCEPT"
-    notes: 
+    notes:
       - "Summary: Represents recursive observation and a distributed field of attention."
   - id: "kodex-crt-observe-preset"
     relation: "DESIGN_SYSTEM"
-    notes: 
+    notes:
       - "Spectral violet tint, ghost frames, surveillance aesthetic."
-  - id: "r2-reference-art"
+  - id: "chatgpt-file-library:file_00000000428081fba426a0a5aa5bc7a7"
     relation: "REFERENCE"
-    notes: 
-      - "pub-2b45...r2.dev reference material."
+    rightsStatus: null
+    notes:
+      - "Exact project asset inspected: Paneles cósmicos del Códex Infinito.png."
+      - "Contains the FIELD OF EYES panel with a central purple eye, concentric network of smaller eyes, golden lattice geometry and pseudo-telemetry such as COHERENCE 63.7%."
+      - "Asset identifier is exact; broader generation/rights provenance remains to be tracked separately and must not be inferred."
 provenanceBoundaries:
-  mayAbstract: 
+  mayAbstract:
     - "Distributed node topologies"
     - "Nested recursive eye structures"
-  mustNotCopy: 
+    - "Concentric relation fields and luminous tethers"
+  mustNotCopy:
     - "Direct photographs of human eyes without alteration"
-  culturalSensitivity: 
+    - "Distinctive Buddhist, third-eye, ceremonial or sacred-geometry iconography from external references"
+    - "Pseudo-telemetry numbers or labels as factual measurements"
+  culturalSensitivity:
     - "Buddhist or 'Third Eye' iconography must be treated with caution, avoiding exact replication of sacred geometries or explicit spiritual claims. Retain a computational/algorithmic framing."
 informationHierarchy:
   primary: "The distributed field / lattice of eyes."
-  secondary: 
+  secondary:
     - "The user's active gaze/interaction point (the 'self' node)."
-  tertiary: 
+  tertiary:
     - "Background telemetry, signal values, and structural tethering."
 geometry:
-  primitives: 
+  primitives:
     - "Node (Eye)"
     - "Tether (Lattice Edge)"
     - "Focus Ring"
-  topology: "Distributed Astral Lattice"
-  coordinateSystem: "Infinite continuous 3D coordinate space"
-  spatialLayers: 
+  topology: "Recursive observation lattice"
+  coordinateSystem: "Continuous 3D coordinate space with bounded implementation limits"
+  spatialLayers:
     - "Background Void"
     - "Structural Lattice"
     - "Active Nodes"
@@ -47,73 +53,74 @@ geometry:
 composition:
   focalStructure: "Decentralized with local concentration around interaction points."
   grid: "Non-linear / Organic Lattice"
-  depthModel: "Infinite Z-depth with depth-of-field blurring on distant nodes."
+  depthModel: "Layered Z-depth with depth-of-field or scale attenuation on distant nodes."
   negativeSpace: "Vast void to emphasize isolation yet connectedness of nodes."
   responsiveRules:
-    desktop: "Wide aspect, expansive lattice visible, mouse controls gaze center."
+    desktop: "Wide aspect, expansive lattice visible, pointer controls gaze center."
     mobile: "Vertical slice, denser vertical stacking of nodes, touch drives focal shifts."
 paletteRoles:
   - role: "Observe Base"
-    semanticMeaning: "The fundamental state of the archive watching"
+    semanticMeaning: "The fundamental state of the archive observing"
     tokenOrRange: "Observe Spectral Violet"
     colorIsNotOnlyChannel: true
   - role: "Active Gaze"
-    semanticMeaning: "Nodes actively observing the user"
+    semanticMeaning: "Nodes responding to the user's observation state"
     tokenOrRange: "Cyan (accent from KDX-NODE-FIELD-OF-EYES)"
     colorIsNotOnlyChannel: true
 typographyRoles:
   - role: "Telemetry"
-    behavior: "Monospaced, overlaid, reacting to focus states."
+    behavior: "Monospaced, overlaid, reacting to focus states; invented numeric values remain explicitly decorative."
 motion:
-  timescales: 
+  timescales:
     - "Ambient drift (slow)"
-    - "Gaze snap (fast)"
-  stateTransitions: 
+    - "Gaze response (fast)"
+  stateTransitions:
     - "Idle to Observing"
     - "Observing to Locked"
   loopingBehavior: "Continuous subtle ambient drift and procedural gaze shifts."
   reducedMotion: "Static nodes, no drift, instant state changes without interpolation."
 interaction:
-  inputs: 
+  inputs:
     - "POINTER"
     - "TOUCH"
     - "KEYBOARD"
-  semanticActions: 
+  semanticActions:
     - "Attract gaze of surrounding nodes"
     - "Reveal hidden lattice connections"
-  stateChanges: 
-    - "Hovering over a node focuses the field."
-    - "Clicking/Tapping locks observation."
+  stateChanges:
+    - "Hovering or keyboard focus on a node focuses the field."
+    - "Clicking, tapping or activating with keyboard locks observation."
   memoryWrite:
     enabled: true
     key: "kodex-field-of-eyes-observed"
-    description: "Records that the user has triggered a deep observation state within the lattice."
+    description: "Records that the user has triggered the committed observation state within the lattice; it does not record a psychological or biometric inference."
   exitBehavior: "Eyes dilate and fade into the void."
 implementation:
   medium: "WEBGL"
-  reusableEngineBoundary: "EyeFieldRenderer (handles node instantiation, lattice connecting, and gaze vectors independently of scene logic)."
-  sceneSpecificParts: 
+  reusableEngineBoundary: "EyeFieldRenderer (handles node instantiation, lattice connectivity and gaze vectors independently of scene logic)."
+  sceneSpecificParts:
     - "Kodex Observe V2 integration"
-    - "CRT post-processing layer"
-  dependencies: 
-    - "Three.js / WebGL framework"
-    - "KodexCrtLayer"
+    - "CRT post-processing layer when confirmed by the implementation packet"
+  dependencies:
+    - "Existing KODEX organism/WebGL runtime"
+    - "Existing KODEX lifecycle, input and fallback contracts"
   performanceRisk: "HIGH"
 fallback:
-  noWebGL: "Static SVG or raster of the lattice with CSS hover states for nearest nodes."
+  noWebGL: "Static SVG or raster of the lattice with keyboard/touch/pointer focus states for major nodes."
   noAudio: "Visual telemetry and focus rings carry the weight of state changes."
-  staticMode: "A single, highly detailed frame of the field."
+  staticMode: "A single, highly detailed frame of the field with semantic controls still available."
 accessibility:
-  keyboardEquivalent: "Tab navigation cycles through major focal nodes, triggering 'locked' states."
-  touchEquivalent: "Taps act as gaze anchors, equivalent to pointer hover+click."
-  screenReaderAlternative: "Aria live region describing the density of observation ('The field is watching you.')"
-  nonColorEquivalent: "Focus rings and scale changes signify active gaze instead of just color shifts."
-  reducedMotionEquivalent: "Static background, no camera pan, abrupt transitions."
+  keyboardEquivalent: "Tab navigation cycles through major focal nodes and Enter/Space triggers locked states."
+  touchEquivalent: "Taps act as gaze anchors and commitment actions without requiring hover."
+  screenReaderAlternative: "Live region describes observation density and state without implying factual surveillance or consciousness measurement."
+  nonColorEquivalent: "Focus rings and scale changes signify active gaze instead of color alone."
+  reducedMotionEquivalent: "Static background, no camera pan, abrupt state transitions."
 reviewChecks:
-  - "Does the lattice feel computationally infinite rather than spiritually mystic?"
+  - "Does the lattice feel computational and relational rather than presented as spiritual fact?"
   - "Are pointer, touch, and keyboard interactions semantically equivalent?"
-  - "Is the EyeFieldRenderer cleanly separated from the CRT layer?"
-  - "Does it perform smoothly on mobile (390x844/412x915)?"
+  - "Is EyeFieldRenderer separated from scene-specific CRT/post-processing?"
+  - "Are all numeric dossier values treated as decorative texture unless sourced?"
+  - "Does the design remain legible and performant at 390x844 and 412x915?"
 targetCaptures:
   - name: "desktop_wide"
     width: 1920
@@ -126,5 +133,8 @@ targetCaptures:
     height: 915
 epistemicConstraints:
   - "Recursive observation is an artistic/interaction frame, not third-eye science."
-  - "Generated frequencies/telemetry are not factual."
+  - "Generated frequencies, coherence values and telemetry are not factual."
+  - "The eye network represents relation/observation in KODEX and must not be presented as evidence of a universal consciousness network."
 scientificClaimPolicy: "SYMBOLIC_ONLY"
+notes:
+  - "Supervisor patch replaces ambiguous astral/cultural language and dependency assumptions with neutral implementation language."
