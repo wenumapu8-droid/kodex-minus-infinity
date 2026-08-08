@@ -1,0 +1,660 @@
+schema_version: 1
+visual_passport:
+  passportId: "KDX-VP-SOURCE-SPHERE-V1"
+  conceptId: "cosmology-core"
+  title: "SOURCE SPHERE"
+  status: "DRAFT"
+
+  semanticPurpose: >-
+    Compose the canonical `cosmology-core` organism (manifest `organismos[07]`, role "relaciones planetarias
+    (registro macro / llave de arquetipos)", states IDLE / ORBITING / EXPAND, verbs orbit / connect / expand)
+    as a shell-and-core body whose interior carries the branching flow of the canonical `archive-tree` organism
+    (`organismos[04]`, role "memoria y conexión (hub / capítulo-madre)", states DORMANT / GROWING / TRANSMIT,
+    verbs grow / connect / transmit). The scene names the KODEX volume literally called THE SOURCE —
+    `lore-1-la-fuente`, "La Fuente", Codex Estelar Book I chapter I — whose own canonical resonances are
+    `threshold-portal` and `cosmology-core`. Where COSMOLOGY reads relations at macro scale and TREE reads
+    memory at micro scale, SOURCE SPHERE stages the two as one figure, on the authority of the existing
+    hermetic volume `herm-tabla-esmeralda`, which states the identity in exactly those terms: "TREE (micro) vs
+    COSMOLOGY (macro): everything is the same." The visitor does not receive the source; the visitor chooses
+    one shell, follows one branch of flow out of the core, and opens the single record at its end. Everything
+    else is atmosphere.
+
+  nodeQuestion: >-
+    If everything in the archive branches out of one core, which single branch will you follow far enough to
+    open what is actually at the end of it — and what does the archive keep of that choice?
+
+  coordinateAssignment: null
+
+  sourceRefs:
+    - id: "kodex-minus-infinity ops/factory/packets/KOD-40.yaml (KDX-WP-VISUAL-03)"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "The string SOURCE SPHERE occurs in no other file of kodex-minus-infinity or wenu-frontend. Verified by case-insensitive full-tree grep of both repositories; KOD-40.yaml is the only hit."
+        - "The packet's source_inputs name 'actual SOURCE SPHERE concept/reference images available to the visual worker'. No such image set reached this worker. No image of any kind was inspected in producing this passport."
+        - "This passport is therefore derived entirely from canonical text and shipped code that genuinely exist and are listed below."
+    - id: "kodex-minus-infinity design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "This is the only canonical evidence in either repository that a sphere scene is intended. Its 'Reference qualities to preserve' list item 7 reads: 'repeated convergence into eye, sphere, torus, lattice and white expansion', and item 8 'a progression from obscurity to radiance'. Item 1 is 'a dark field with one dominant luminous object'."
+        - "The same document states the copying rule directly: 'This document translates the sensory qualities observed in the privately supplied video reference into an original KODEX system. The reference itself is not redistributed. KODEX must not copy its wording, imagery or identity.' The reference video did not reach this worker and must not be sought, reproduced or approximated."
+        - "It is also the source of the KODEX Voice prohibitions honoured below, including 'use another culture's sacred language as decoration' and 'claim to read energy, consciousness, frequency or biology'."
+    - id: "wenu-frontend public/kodex-content/manifest.json — organismos[07] cosmology-core"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Canonical organism 07. rol: 'relaciones planetarias (registro macro / llave de arquetipos)'. estados: IDLE / ORBITING / EXPAND. verbos ES: orbita, conecta, expande. EN: orbit, connect, expand."
+        - "Canonical fx_chain: [thermal-map, pixel-sort]. Canonical audio routing: mid+high+parallax. Declared palette #FF2CF0, #903CFF, #00F7FF, #0A0A0A."
+        - "NEITHER treatment in this organism's canonical fx_chain exists as a shader in the implementation repository. See implementation.dependencies and the shader-gap note."
+    - id: "wenu-frontend public/kodex-content/manifest.json — organismos[04] archive-tree"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Canonical organism 04. rol: 'memoria y conexión (hub / capítulo-madre)'. estados: DORMANT / GROWING / TRANSMIT. verbos ES: crece, conecta, transmite. EN: grow, connect, transmit."
+        - "Canonical fx_chain: [dither-matrix, bitmap-threshold]. Audio routing: low+mid+feedback, 'cada hoja es un archivo'. Declared palette #A6FF00, #E8E8E8, #0A0A0A."
+        - "Supplies the packet's 'tree-flow' requirement. It is an ARCHIVE tree — a memory-and-connection hub — and canonically not a world tree, a tree of life or any cosmological axis. See provenanceBoundaries."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes lore-1-la-fuente"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "'La Fuente' / 'The Source'. The only KODEX volume whose title is the word SOURCE. registro: ficcion. marco: ficcion. paleta: neon. categoria: cosmic origin."
+        - "resonancias: [threshold-portal, cosmology-core, libro-kodex-estelar-1, doc-evolucion-cosmica, cos-01-origen, pixel-sort]. This is the evidentiary link from the word SOURCE to the organism this passport presets."
+        - "Curaduria: 'The primordial consciousness that knows itself: the first pulse of vibration that fecundates every form. Book I chapter I. **Register: fiction.** KODEX ESTELAR myth, named as such: not history, not science, not health.'"
+        - "Because this volume is registro ficcion, SOURCE SPHERE's register is DECIDED, not open: the scene sits in the marked-fiction register with the neon palette. This is the one question FIELD_OF_EYES had to leave open and that this passport can close on evidence."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes herm-tabla-esmeralda"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "registro: esoterico. paleta: neon. Curaduria: 'As above so below: the hermetic principles of micro-macro. TREE (micro) vs COSMOLOGY (macro): everything is the same.'"
+        - "This is the only canonical statement that licenses composing archive-tree with cosmology-core in one figure. It is a SEMANTIC identity claim, not an engine-architecture rule — see the composition provenance question in notes."
+        - "registro esoterico is defined in sistemas.registro_vocabulario as 'Simbólico/hermético: marcado como creencia o práctica, nunca como hecho ni medicina.' Both anchors are non-documented and neon, so they do not blend registers with one another."
+    - id: "wenu-frontend public/kodex-content/manifest.json — sistemas.gramatica"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "'un motor (KDX CORE) + una suite de 8 tratamientos GPU (KDX FX SUITE), 8 organismos = presets data-driven. Cualquier tratamiento se aplica a cualquier organismo (combinaciones infinitas).'"
+        - "This is the authority for specifying SOURCE SPHERE as a data-driven preset rather than a new renderer. Note what it does and does not say: it licenses any TREATMENT on any ORGANISM. It does not explicitly license composing two organisms in one scene."
+    - id: "wenu-frontend public/kodex-content/manifest.json — sistemas.registro_vocabulario and top-level note"
+      relation: "PROVENANCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "note: 'Dos registros siempre marcados: DOCUMENTADO (paleta marca) y MITO/FICCIÓN (paleta neon). Mapuche y Codex Estelar NUNCA se mezclan.'"
+        - "registro ficcion: 'Lore/ficción de autor, presentado como tal. Nunca se mezcla con lo documentado ni con lo mapuche.'"
+        - "registro mito: 'Ficción / esotérico / lore marcado como tal, sin claims. Nunca se mezcla con lo documentado.'"
+        - "Volume register census taken by this worker: documentado 1352, ficcion 65, estructura 6, esoterico 4, across 1427 volumes."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes doc-wenu-mapu and doc-we-tripantu"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY — DOCUMENTED MAPUCHE RECORD, MUST NOT BE TOUCHED BY THIS SCENE"
+      notes:
+        - "doc-wenu-mapu is the declared 'root volume of the documented record'. registro documentado, paleta marca, review: false. Cited to Canio Llanquinao, M. & Pozo Menares, G. (2015), Wenumapu: astronomía y cosmología mapuche, Ocho Libros, ISBN 978-956-335-205-4."
+        - "Its resonancias include cosmology-core — the same organism this passport presets. That is the collision risk this passport exists to fence off."
+        - "doc-we-tripantu, same citation, is described as 'Return of the light, winter solstice (June 21): renewal, cleansing, beginning and return.' A scene about source, light, origin and return anchored in Codex Estelar fiction sits directly on top of that documented Mapuche material and must not absorb it."
+        - "Located and read as text. No Mapuche visual, term or cosmological structure is used anywhere in this passport."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes book-ocin-arte-digital-ritual and fx_chain_nota"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY — AUTHOR'S FINISHED WORK"
+      notes:
+        - "The only manuscript-class object in KODEX: 'OCÍN — Arte Digital Ritual (81 láminas)', a monograph of 81 plates. registro documentado, paleta 'libro'. 'the archive that remembers'."
+        - "Every organism record carries fx_chain_nota: 'Se aplica SOLO a fotos/derivados, NUNCA a la obra terminada de Ocin (specimens limpios).' Treatments may never be applied to the finished plates."
+        - "This is the manuscript reference the packet asks about. It is a living author's copyrighted body of work, not an antiquarian codex."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes fic-razas-estelares-iconografia"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "The standing KODEX position on iconography drawn from living traditions. registro ficcion, paleta neon, review: false."
+        - "'Where an image comes from a living tradition it is named as a borrowing from the imaginary, not as its doctrine.' review_nota records that its resonances touch no documented volume of Mapuche root."
+        - "SOURCE SPHERE inherits this governance rather than inventing its own."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes doc-geometria-sagrada"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "registro documentado. fuente: 'Matemática documentada.' 'Real mathematics: Fibonacci, the golden ratio phi, flower of life, platonic solids. The PHI LOCK (0.618) that reappears in THRESHOLD and COSMOLOGY.'"
+        - "This is the licence for using Fibonacci ratios as a composition device below. It is used as ARITHMETIC ONLY and carries no claim. The separate fiction volume lore-1-geometria-sagrada is NOT used and must not be invoked."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes cos-01-origen, cos-02-atomos, cos-03-estrellas"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY — DOCUMENTED SCIENCE, SEPARATE REGISTER"
+      notes:
+        - "registro documentado, fuente 'Eric Chaisson · evolución cósmica'. cos-01-origen: 'A hot point of energy that expands. Not an explosion in space: the expansion of space itself.'"
+        - "cos-01-origen's resonancias include lore-1-la-fuente, so the manifest already links documented cosmology to the fiction Source volume as RESONANCE. Resonance is not blending: the two remain separate volumes with separate registers and separate palettes."
+        - "SOURCE SPHERE must not present any of this documented cosmology as its own content. If a real cosmological fact ever appears in this scene it needs its own documented marking and its own source line."
+    - id: "wenu-frontend src/components/kodex/scenes/kodex-observe-v2-client.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "KdxObserveV2Runtime, 732 lines, read in full in the relevant sections. WebGL2 six-pass pipeline source -> displace -> threshold -> chroma -> feedback -> crt with ping-pong framebuffers over a fullscreen triangle."
+        - "Pointer normalization: rect-relative, scaled by 2, offset by -1, y negated; pointer.activeUntil = now + 1400ms. locked auto-advances to observing after 820ms via a tracked timeout."
+        - "resolveProfile(): ?profile= override, else low-power if prefers-reduced-motion, low-power if max-width 760px and dpr > 2, balanced if max-width 760px, else balanced if dpr > 1.65, else full."
+        - "?fallback=1 forces the DOM path, ?debug=1 shows the debug panel, ?state= forces a state. All verified in source."
+        - "Adopted read-only as the engine reference. Not modified. See the two defects recorded in notes."
+    - id: "wenu-frontend src/kodex/observe-v2/shaders/ (7 files)"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Present and read: fullscreen.vert.glsl, source.frag.glsl (139 lines), displace.frag.glsl, threshold.frag.glsl, chroma.frag.glsl, feedback.frag.glsl, crt.frag.glsl."
+        - "NAMING COLLISION WARNING for the implementer: source.frag.glsl is the pipeline's first PASS, not the SOURCE concept. They are unrelated. Do not conflate them."
+        - "Treatment coverage actually verified by reading each shader: crt-scan -> crt.frag.glsl (present); chromatic-split -> chroma.frag.glsl (present); memory-feedback -> feedback.frag.glsl (present); dither-matrix and bitmap-threshold -> threshold.frag.glsl only PARTIALLY (it is one combined Bayer-dither-plus-threshold pass with a hardcoded 4x4 matrix, while the canonical dither-matrix declares pattern 'Bayer 8x8', dither_scale 4, contrast 1.25, color_quant true, and canonical bitmap-threshold declares edge_width, posterize, crush and invert, none of which the shader exposes)."
+        - "thermal-map: NO SHADER EXISTS. pixel-sort: NO SHADER EXISTS. glitch-fracture: NO SHADER EXISTS."
+        - "Consequence: BOTH treatments of cosmology-core's canonical fx_chain are missing, and archive-tree's chain is only partially covered by one approximate shader. This is the single largest cost item in the implementation packet."
+    - id: "wenu-frontend src/components/kodex/scenes/KodexObserveV2Scene.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Shell grid: header / left rail / scene code / hero block / visual shell / data stack / right rail / meta row / footer. Reused as layout."
+        - "Already contains a shell-and-core DOM structure that this scene should adopt rather than reinvent: .kdx-observe-v2__phenomenon-core with children __core-ring, __core-ring--inner, __core-pulse (plus __core-eye and __core-pupil, which belong to observation-eye and are NOT used here)."
+        - "Also contains a glyph layer using KodexGlyph name='orbit' and name='nodeRing', and an always-rendered DOM fallback field at [data-kdx-fallback]."
+    - id: "wenu-frontend src/components/kodex/CosmologyMap.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "A shipped, purely-SVG orbital map: 500x500 viewBox, radial core gradient, two dashed shell circles at r=150 and r=220, six concept nodes on lines from the centre, and a separate <ol role='list'> of five ecosystem portals."
+        - "Proves the shell/core figure can ship as accessible SVG with no WebGL at all. Adopted as the structural precedent for the DOM/SVG layer of this passport."
+        - "Two defects found in it are recorded in notes; both are reasons this passport specifies keyboard and list behaviour explicitly rather than assuming the precedent is safe to copy wholesale."
+    - id: "wenu-frontend src/components/kodex/motion/OrbitEngine.astro and ParticleField.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "OrbitEngine.astro is a thin aria-hidden wrapper div with variant/scene props and a slot — a container, not a renderer. ParticleField.astro is a single labelled canvas element. Both are shells to be filled, so neither reduces the implementation cost materially. Recorded so the implementation packet is not over-credited."
+    - id: "wenu-frontend src/kodex/observe-v2/config.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "States idle/aware/locked/observing, bilingual per-state copy, and OBSERVE_V2_PROFILE_SCALE with dpr 1.5 / 1.25 / 1.0 and particle scale 1.0 / 0.76 / 0.44. Structure reused; SOURCE SPHERE supplies its own strings."
+    - id: "kodex-minus-infinity design-system/tokens/kodex.tokens.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Authoritative colour, space, line, duration, easing, layout and performance tokens used throughout this passport."
+        - "Its own notes include 'Color may not carry essential meaning alone' and 'Typography families are intentionally omitted until font rights are approved'. Both are honoured below."
+        - "performance tokens read and applied: maxActiveHeavyCanvases 1, mobileDprCap 1.2, desktopDprCap 1.65, highPriorityMotionMax 2. layout.touchTargetMin 44px."
+    - id: "kodex-minus-infinity schemas/session-memory.schema.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Read in full. Defines entitiesTraced, relationsTraced, sourcesOpened, artifactSeed, accessibility {motion, sound, contrast, textScale} and consent. The memory write below uses entitiesTraced, which is distinct from the relationsTraced key claimed by FIELD_OF_EYES."
+    - id: "kodex-minus-infinity docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Concept assignment law: a letter is assigned only with creator approval plus defined relation, sources, consequences, memory writes, Y contribution and epistemic/rights/cultural status. None exists for SOURCE SPHERE, so coordinateAssignment stays null."
+        - "'Passive pointer movement alone cannot make identity claims or write consequential personal memory.' This governs the atmospheric/consequential split below."
+        - "Return-anchor law ('leaving M restores the exact prior node, focus, state and route anchor') and mutated-revisit K-prime behaviour govern exitBehavior."
+        - "Explicit warning taken from this ADR: A is 'the source invariant' and Y is 'RETURN / +infinity'. SOURCE SPHERE is NOT A and is NOT Y. It must not be routed as either, and its use of the words source and return is scene-local, not topological."
+    - id: "kodex-minus-infinity canon/KODEX_EPISTEMIC_STANDARD.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Claim classes, metric admission requirements and the prohibited pseudo-metrics list — which explicitly names 'CONSCIOUSNESS 700', 'COSMIC COHERENCE 94%', 'ARCHIVE ENERGY 87.3%', 'RETURN SIGNAL 8.42 Hz', 'EMOTIONAL FREQUENCY 540'. Three of those five are exactly the readouts a scene named SOURCE SPHERE would invite. None may appear."
+        - "Visual truthfulness rules applied: 'Particle density cannot imply a count unless particles encode units' and 'Animation cannot manufacture a trend'."
+    - id: "kodex-minus-infinity ops/factory/VISUAL_PASSPORT_PROTOCOL.md"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Production contract. Its no-pseudo-telemetry, cultural provenance, interaction equivalence and disposal/lifecycle requirements are answered field by field below."
+    - id: "wenu-frontend _macmini-kodex-rescue/src/components/WenuSigil.astro"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY — BRAND EMBLEM, DO NOT REPRODUCE OR APPROXIMATE"
+      notes:
+        - "Read for the boundary only. Self-described: 'Simetría rotacional de 4 (Meli Witran Mapu / 4 direcciones): cuatro brazos creciente-garra en molinete horario, estrella-brújula de 8 puntas al centro, cuatro dagas cardinales con puntos, enmarcado por anillos de instrumento.' Declared 'Diseño ORIGINAL — no es calco de ninguna referencia' and 'la ÚNICA fuente de verdad del emblema'."
+        - "It is a 4-fold cardinal figure with an 8-point centre star inside instrument rings — geometrically very close to what a naive SOURCE SPHERE would produce. The symmetry rules in geometry.topology exist to keep this scene visibly distinct from it and from the Meli Witran Mapu structure it references."
+        - "It lives under _macmini-kodex-rescue/, which is not imported by any live source file in wenu-frontend. Treated as archive, not as shipping code."
+    - id: "R2 bucket pub-2b4562c758ed440ab047fe9523a2d99c.r2.dev/kodex-content/art/"
+      relation: "REFERENCE"
+      rightsStatus: "UNKNOWN"
+      notes:
+        - "Bucket referenced by manifest cover URLs. Located but deliberately NOT opened by this worker. No image was inspected."
+        - "No visual element of this passport derives from it. Any resemblance discovered at implementation time is coincidence and must be reported, not preserved."
+
+  provenanceBoundaries:
+    mayAbstract:
+      - "Core-and-shell as generic information design: one origin, ordered rings of increasing distance, branching connections outward. This is the shared structure of orbital diagrams, dendrograms and radial trees and belongs to no one."
+      - "The two organisms' own canonical vocabularies: IDLE / ORBITING / EXPAND with orbit / connect / expand, and DORMANT / GROWING / TRANSMIT with grow / connect / transmit."
+      - "Fibonacci integers and the ratio phi = 0.618 as pure arithmetic for radii and node counts, on the authority of doc-geometria-sagrada, which is registro documentado and sourced to 'Matemática documentada'. Arithmetic only; it asserts nothing."
+      - "The shipped DOM shell-and-core structure .kdx-observe-v2__phenomenon-core with __core-ring, __core-ring--inner and __core-pulse, reused rather than reinvented."
+      - "The shipped SVG orbital construction of CosmologyMap.astro — radial core gradient, dashed shell circles, nodes on radii — as a structural precedent for an accessible no-WebGL figure."
+      - "Instrument chrome, shell grid, chips, rails and the always-rendered DOM fallback of OBSERVE V2, reused as layout."
+    mustNotCopy:
+      - "No external reference image, video or artwork reached this worker, so nothing external may be reproduced. Anything in the implementation that resembles a specific external work is an invention introduced downstream and must be rejected at visual review."
+      - "The privately supplied video reference behind design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md must not be copied, sought out, reconstructed or approximated. The document's own rule governs: 'The reference itself is not redistributed. KODEX must not copy its wording, imagery or identity.' Only the abstract quality 'convergence into a sphere' is carried forward, and it is realised through this passport's own geometry."
+      - "No Mapuche cosmological structure of any kind: no Meli Witran Mapu quadripartite cardinal division, no kultrun drum-head figure, no rewe, no wenu leufü / Milky Way river motif, no antü / küyen sun-moon pairing, no We Tripantu solstice framing, and no Mapudungun term anywhere in the scene."
+      - "No reproduction or approximation of WenuSigil.astro: no 4-fold rotational pinwheel, no 8-point compass star at the centre, no four cardinal daggers, no crescent-claw arms."
+      - "No tree-of-life diagram in any tradition: no Kabbalistic sephirot arrangement or its 22 connecting paths, no Yggdrasil or Norse world tree, no Bodhi tree, no axis mundi. SOURCE SPHERE contains no trunk, no roots, no canopy and no vertical world-axis. Its tree is a rooted graph, never a tree silhouette."
+      - "No mandala construction geometry: no nested squares-in-circles, no gated four-portal enclosure, no radially repeated petal register."
+      - "No manuscript pastiche: no faux vellum or parchment texture, no aged-paper grain, no illuminated-manuscript border, no invented glyph system presented as a script, and no rendering of Devanagari, Arabic, Kana, Han, Hangul, Cyrillic or Greek characters as ornament."
+      - "No reproduction of any plate from book-ocin-arte-digital-ritual, and no GPU treatment applied to Ocín's finished work in any form. The manifest rule is absolute: 'Se aplica SOLO a fotos/derivados, NUNCA a la obra terminada de Ocin.'"
+      - "No eye at the centre of the sphere. The core belongs to cosmology-core; .kdx-observe-v2__core-eye and __core-pupil belong to observation-eye and to FIELD_OF_EYES, and importing them here would both blur the organism boundary and produce an all-seeing-eye-in-a-sphere emblem this scene does not intend."
+    culturalSensitivity:
+      - "REGISTER IS DECIDED, NOT OPEN. SOURCE SPHERE is anchored on lore-1-la-fuente, which is registro ficcion / paleta neon and self-marked 'not history, not science, not health'. The scene therefore sits in the marked-fiction register, uses the neon side of the palette, and must carry a persistent visible register marker. It may not be presented in the documented register under any circumstance."
+      - "THE MAPUCHE BOUNDARY IS THE CENTRAL RISK OF THIS SCENE, and it is structural rather than incidental. cosmology-core — the organism this passport presets — is a declared resonance of doc-wenu-mapu, the documented Mapuche root volume cited to Canio & Pozo (2015). doc-we-tripantu, from the same source, is literally described as 'the return of light, the beginning that comes back'. A fiction-register scene about source, light, origin and return therefore sits one step away from silently absorbing documented Mapuche cosmology. The manifest forbids it twice: 'Mapuche y Codex Estelar NUNCA se mezclan', and registro ficcion 'Nunca se mezcla con lo documentado ni con lo mapuche'. SOURCE SPHERE must not link to, quote, cite, echo or visually resemble doc-wenu-mapu, doc-we-tripantu, spec-wenu-mapu, doc-rutrafe or doc-constelaciones, and must not use the phrase 'return of light' or any translation of it."
+      - "The symmetry rules in geometry.topology are a cultural safeguard, not an aesthetic preference. Forbidding node counts divisible by four, forbidding shared divisors between shells, offsetting each shell centre and giving each shell a mutually non-commensurate rotation period together guarantee the figure never resolves into a four-fold cardinal frame, an eight-point star or a concentric mandala. Any implementation change that restores four-fold symmetry re-opens this boundary and must be rejected at review."
+      - "The tree is an ARCHIVE tree. Manifest role: 'memoria y conexión (hub / capítulo-madre)'. It is a memory topology, not a cosmological axis. Rendering it as a world tree would import a motif that is live and specific in Mapuche, Norse, Kabbalistic and Buddhist traditions simultaneously, none of which KODEX has cleared here."
+      - "The manuscript question resolves to a living author, not to antiquity. The only manuscript-class object in KODEX is Ocín's 81-plate monograph — copyrighted contemporary work under an explicit no-treatment rule — so 'manuscript reference' here is a rights question about a living artist's portfolio, not a heritage-imagery question. Nothing in this scene depicts a book, page, plate or script."
+      - "Do not resolve any residual gap with generic 'ancestral', 'tribal' or 'sacred geometry' substitution, which the protocol forbids outright. Where the reference is unknown, this passport specifies geometry that copies nothing rather than filling the space."
+      - "Where iconography from a living tradition is admitted at all, it inherits the standing position of fic-razas-estelares-iconografia: named as a borrowing from the imaginary and never as doctrine, in the fiction register, neon palette, with no crossing into the documented record. This scene requests no such admission and needs none."
+      - "OPEN CONFLICT ROUTED TO CULTURAL REVIEW: manifest estratos assign a living script to each stratum (macro-geometrias/devanagari, portales/arabic, geometrias-respirantes/kana, sol-negro/han, yayentru/hangul, laboratorio/cyrillic, artefacto/han, cosmos/greek), while design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md prohibits the KODEX Voice from 'use another culture's sacred language as decoration'. SOURCE SPHERE renders no script and so does not trigger it, but the conflict is real and belongs to the orchestrator."
+
+  informationHierarchy:
+    primary: >-
+      The single flow path the visitor has committed to — from the core, through each shell it crosses, to the
+      one record at its end — and that record itself.
+    secondary:
+      - "Which shell currently holds focus, and how many nodes it carries."
+      - "Flow paths committed earlier in the session and still drawn."
+      - "Sphere state: idle / orbiting / expanding, and the tree state growing / transmitting inside it."
+      - "The persistent register marker identifying the scene as marked fiction."
+    tertiary:
+      - "Shell rotation, parallax and the depth wash behind the sphere — atmosphere only, carrying no data."
+      - "Instrument chrome and any generated readout, each explicitly marked non-factual."
+      - "Scene progress and navigation affordances."
+
+  geometry:
+    primitives:
+      - "core = filled disc at the sphere centre, radius 0.14 field units, with one hairline halo ring at 0.19; reuses the existing .kdx-observe-v2__core-pulse and __core-ring DOM elements"
+      - "shell = ellipse stroked at token line.hairline (1px), semi-minor axis = semi-major * 0.42 (a fixed 65-degree inclination), three shells at semi-major radii 0.34, 0.55 and 0.89 field units"
+      - "node = small filled disc on a shell, rest radius 0.022 field units, scaled 0.7x and dimmed to 0.40 alpha when on the far half of its shell"
+      - "flow edge = curved segment from a node on shell k to a node on shell k+1, quadratic with its control point pulled 12% toward the core, token line.hairline (1px)"
+      - "root edge = flow edge from the core to a shell-1 node, same construction"
+      - "committed flow path = the full core-to-leaf chain redrawn at token line.signal (2px) and held for the session"
+      - "flow pulse = a short bright arc, 14% of an edge's length, travelling one edge in duration.medium (600ms); atmosphere, never a count"
+      - "focus reticle = four-corner bracket reusing the existing .kdx-observe-v2__reticle-frame form"
+      - "depth wash = fullscreen-triangle WebGL quad behind everything, reusing the existing three-vertex buffer"
+    topology: >-
+      A rooted directed acyclic branching graph — a tree in the graph sense, never a tree in the pictorial sense
+      — embedded on three eccentric elliptical shells around one core. The core is the single root. Every node on
+      shell 1 has exactly one root edge from the core. Every node on shell k>1 has exactly one parent on shell
+      k-1, chosen as the parent nearest in angle, and every parent must have at least one child, so no branch dies
+      and no node is orphaned. Node placement on each shell is by seeded jittered angular division: equal
+      divisions perturbed by up to +/-40% of the division width, seeded from session memory `artifactSeed`, so a
+      revisit regenerates the identical sphere. Four symmetry rules are binding and are cultural safeguards, not
+      preferences. (1) No shell may carry a node count divisible by 4. (2) No two shells may share a common
+      divisor greater than 1. (3) Each shell centre is offset from the core by a seeded 0.02 to 0.05 field units
+      in a different direction, so the figure is eccentric and has no single mandala centre. (4) Each shell
+      rotates with a distinct, mutually non-commensurate period. Together these guarantee the composite figure
+      never resolves into a four-fold cardinal frame, an eight-point star or a concentric mandala. Full-profile
+      counts are 5 / 13 / 21 — Fibonacci, all pairwise coprime, none divisible by 4 — giving exactly 39 nodes and
+      exactly 39 edges (5 root edges, plus one parent edge for each of the 34 nodes on shells 2 and 3).
+    coordinateSystem: >-
+      Normalized field space, x and y in [-1, 1], origin at the sphere centre, y up. Identical to the pointer
+      normalization already implemented in kodex-observe-v2-client.ts: rect-relative, scaled by 2, offset by -1,
+      y negated. Shell radii are semi-major axes in field units; the 0.42 minor-axis ratio is applied on the y
+      axis to produce the sphere read. Aspect correction is applied on the shorter viewport axis so the core disc
+      and every node stay circular at every viewport. There is no perspective projection, no camera and no z
+      buffer; the sphere is read from ellipse eccentricity plus far-side dimming and scaling alone.
+    spatialLayers:
+      - "L0 depth wash — WebGL multipass background. Atmospheric only, carries no data, fully removable."
+      - "L1 shell rings — DOM/SVG hairline ellipses. Non-interactive as strokes; each ring has one focusable handle."
+      - "L2 flow edges — DOM/SVG curves, including root edges and committed paths. Non-interactive."
+      - "L3 nodes and core — DOM/SVG. The only interactive elements besides the shell handles."
+      - "L4 focus layer — reticle, flow pulses and the highlight of the committed path."
+      - "L5 instrument chrome — header, rails, register marker, dossier stack, meta row, footer. Existing OBSERVE V2 shell."
+
+  composition:
+    focalStructure: >-
+      The core is the visual origin but never the focus target of last resort: at rest the eye is drawn outward
+      along the flow, not inward. Exactly one shell holds focus at a time, and exactly one node within it may be
+      committed. Focus is committed, never hovered. A focused shell brightens its ring to 2px, gains the reticle
+      bracket and scales its nodes to 1.3x rest. While a flow path is committed, that path and its terminal node
+      are the only elements at full contrast; every other layer drops to 40% opacity, so the branch — not the
+      sphere — is the subject. The core never occupies more than 8% of the field-box area, so the scene cannot
+      read as a single luminous orb demanding worship rather than a structure inviting traversal.
+    grid: >-
+      Reuse the existing OBSERVE V2 shell grid unchanged — header / left rail / scene code / hero block / visual
+      shell / data stack / right rail / meta row / footer. The sphere occupies the visual shell only and never
+      escapes it. On desktop the field box takes token layout.worldShare (0.75) of the shell width. The register
+      marker sits in the header chip row beside the status chip, where it is visible in every state.
+    depthModel: >-
+      Three parallax planes and no perspective projection. Pointer-linked offsets are 0.5% of field width for L0,
+      1.4% for L1/L2 and 2.4% for L3, so total displacement never exceeds 4%. Depth within the sphere is carried
+      entirely by ellipse eccentricity, far-side dimming to 0.40 alpha and far-side scaling to 0.7x. Per the
+      epistemic standard's visual-truthfulness rule that perspective distortion cannot imply false magnitude, no
+      node's rendered size may be read as a quantity: size encodes only front/back position on its shell.
+    negativeSpace: >-
+      At least 45% of the field box stays unpopulated. The annulus between shell 1 (0.34) and shell 2 (0.55) and
+      between shell 2 and shell 3 (0.89) must stay legibly empty apart from flow edges — no filler particles, no
+      decorative dust, no secondary rings. A margin of 0.10 field units is kept inside the field-box edge so the
+      outermost shell is never clipped. The seeded angular jitter must never leave a gap on any shell larger than
+      2.2x its mean node spacing, so the sphere cannot collapse into a crescent.
+    responsiveRules:
+      desktop: >-
+        1024px and above: three shells at 5 / 13 / 21 nodes on the full profile, 5 / 9 / 13 on balanced. Field box
+        is the visual shell at worldShare 0.75; both rails and the dossier stack remain visible. At a 720x720
+        field box the semi-major axes are 122 / 198 / 320 CSS px and, by the spacing formula below, minimum
+        on-screen node spacing at the full profile is 65 / 40 / 40 px. The 44 px touch minimum does NOT bind here
+        because desktop input is pointer and keyboard, which is why desktop carries more nodes than mobile.
+        Pointer proximity drives atmospheric attention only; a click is required to commit anything. Reference
+        capture at 1440x900.
+      mobile: >-
+        Below 760px the sphere goes full-bleed above the fold and both rails collapse into the meta row, with the
+        dossier stack becoming a two-row horizontal strip below the sphere. The register marker stays in the
+        header and never collapses. Node counts here are capped by touch-target geometry, not by fill rate, and
+        the cap must be computed from the ELLIPSE, not the circle. Because nodes are spaced equally in angle
+        around a shell and the shell is drawn at a 0.42 minor-axis ratio, on-screen spacing is smallest at the
+        left and right extremes of the ellipse, where it equals b * 2*pi/n with b = 0.42 * a. Requiring that
+        minimum to clear token layout.touchTargetMin (44px) gives n <= 0.42 * a * 2*pi / 44 per shell. At 390x844
+        the field half-width is 195 px, so the semi-major axes are 66 / 107 / 174 px and the caps are 3 / 6 / 10.
+        At 412x915 the half-width is 206 px, the axes are 70 / 113 / 183 px and the caps are 4 / 6 / 10. Applying
+        the symmetry rules on top of those caps — none divisible by 4, no two sharing a divisor — both viewports
+        resolve to 3 / 5 / 7, fifteen nodes. This is a real constraint and not a placeholder: 3 / 5 / 9 is
+        rejected because gcd(3,9)=3, and any count of 13 or more on the outer shell is rejected because it
+        breaches the 44px minimum. Far-side nodes keep full-size hit targets even though they render at 0.7x, and
+        where two targets would still overlap the far-side node becomes non-interactive and its parent edge is
+        committed in its place. No hover state is required for any semantic action on any viewport.
+
+  paletteRoles:
+    - role: "field ground"
+      semanticMeaning: "The archive before any traversal; the absence of flow."
+      tokenOrRange: "color.field.obsidian (#050608)"
+      colorIsNotOnlyChannel: true
+    - role: "core"
+      semanticMeaning: "The scene's origin point. A mythopoetic figure, not a light source and not an energy claim."
+      tokenOrRange: "color.signal.magenta (#FF1EAA) at 0.85 alpha, halo ring at 0.35"
+      colorIsNotOnlyChannel: true
+    - role: "shell at rest (IDLE)"
+      semanticMeaning: "A shell that is present but not attended."
+      tokenOrRange: "color.text.mutedOnDark (#9A9992) at 0.45 alpha"
+      colorIsNotOnlyChannel: true
+    - role: "shell attending (ORBITING)"
+      semanticMeaning: "The shell has registered presence; nothing has been committed."
+      tokenOrRange: "color.signal.cyan (#00E8F0)"
+      colorIsNotOnlyChannel: true
+    - role: "shell open (EXPAND)"
+      semanticMeaning: "The single shell the visitor has committed to opening."
+      tokenOrRange: "color.signal.violet (#7855D5)"
+      colorIsNotOnlyChannel: true
+    - role: "flow at rest / growing"
+      semanticMeaning: "Archive-tree connection that exists but has not been followed."
+      tokenOrRange: "color.text.mutedOnDark (#9A9992) at 0.30 alpha"
+      colorIsNotOnlyChannel: true
+    - role: "committed flow path (TRANSMIT)"
+      semanticMeaning: "A path the visitor committed and the session kept."
+      tokenOrRange: "color.signal.acid (#B9FF3B), the design-system token closest to archive-tree's canonical #A6FF00"
+      colorIsNotOnlyChannel: true
+    - role: "contested / unresolved marker"
+      semanticMeaning: "A record the epistemic standard marks CONTESTED or UNKNOWN, or a node whose volume has review: true."
+      tokenOrRange: "color.signal.orange (#FF7A00)"
+      colorIsNotOnlyChannel: true
+    - role: "fiction-register marker"
+      semanticMeaning: "Persistent declaration that this scene is marked fiction, per the manifest requirement that both registers are always marked."
+      tokenOrRange: "color.signal.violet (#7855D5) on obsidian — the neon side of the palette; NEVER color.signal.livingRed, which reads as the documented brand register"
+      colorIsNotOnlyChannel: true
+    - role: "instrument text"
+      semanticMeaning: "Chrome, labels and non-factual readouts."
+      tokenOrRange: "color.text.onDark (#F0ECE3), muted variant color.text.mutedOnDark (#9A9992)"
+      colorIsNotOnlyChannel: true
+
+  typographyRoles:
+    - role: "register marker"
+      behavior: >-
+        Mono, uppercase, always visible in the header chip row and never collapsed at any viewport. Reads
+        "REGISTRO · FICCIÓN" / "REGISTER · FICTION". This is a required element, not decoration: the manifest
+        requires both registers to be always marked, and it marks them by palette alone, which cannot satisfy the
+        design-system rule that colour may not carry essential meaning alone. The word is the non-colour channel.
+    - role: "instrument label"
+      behavior: >-
+        Mono, uppercase, letter-spaced. Used for rail marks, chips, shell labels and dossier labels. Never
+        carries a claim and never states a measurement.
+    - role: "sphere headline"
+      behavior: >-
+        Display weight, at most two lines. Changes only on a committed state change and never on pointer
+        movement, so it cannot flicker as a hover side effect.
+    - role: "bilingual state copy"
+      behavior: >-
+        ES and EN strings per state, in the same shape as OBSERVE_V2_COPY in src/kodex/observe-v2/config.ts.
+        SOURCE SPHERE supplies its own strings; only the structure is reused. Announced to screen readers on
+        commit only. No string may assert that the visitor has received, remembered, returned from or been
+        recognised by anything.
+    - role: "record label"
+      behavior: >-
+        The title of the volume a committed node stands for, shown with its own register tag. If a node's volume
+        is registro documentado it must be visually and textually separated from the fiction chrome — a
+        documented record may be reachable from this scene but must never be restyled into it.
+    - role: "non-factual readout"
+      behavior: >-
+        Mono, reduced contrast, always preceded by a persistent marker (EN "SIMULATED" / ES "ATMÓSFERA") so no
+        number in the chrome can be read as a measurement. This is a requirement, not a suggestion: the existing
+        OBSERVE V2 dossier renders generated SIGNAL, FOCUS, ANOMALY and LATENCY percentages with no such marker
+        and must not be copied in that respect.
+
+  motion:
+    timescales:
+      - "duration.micro (120ms) — node highlight and de-highlight"
+      - "duration.short (240ms) — shell focus acquire and release, node scale change"
+      - "duration.medium (600ms) — one flow pulse traversing one edge; committed-path draw-in"
+      - "duration.long (1600ms) — shell expand and collapse"
+      - "duration.ambient (12000ms) — shell 1 rotation period; shell 2 is 19000ms and shell 3 is 31000ms, deliberately non-commensurate so the three shells never realign into a symmetric frame"
+      - "easing.standard for state changes, easing.enter for appearance, easing.exit for release, easing.linear for shell rotation only"
+    stateTransitions:
+      - "IDLE -> ORBITING: any input arrives. Maps to the shipped engine transition idle -> aware. Atmospheric; nothing is written."
+      - "ORBITING -> IDLE: 3200ms without input, matching the shipped decay in kodex-observe-v2-client.ts."
+      - "ORBITING -> EXPAND: the visitor commits one shell. Maps to the shipped 'locked'. Consequential."
+      - "EXPAND -> EXPAND (path committed): the visitor commits a node on the open shell; the core-to-node path is written and drawn permanently for the session. Maps to the shipped 'observing' and to archive-tree TRANSMIT."
+      - "The archive-tree sub-state runs in parallel and is atmospheric only: DORMANT while the sphere is IDLE, GROWING while ORBITING (flow pulses circulate), TRANSMIT on a committed path. It has no independent consequence and writes nothing of its own."
+      - "any -> released: the visitor exits. The sphere returns to ORBITING; committed paths persist."
+      - "SOURCE SPHERE introduces no parallel state machine. It renames the four shipped engine states for this scene and adds one committed sub-event inside the fourth."
+    loopingBehavior: >-
+      The three shells rotate continuously at 12000 / 19000 / 31000 ms per revolution, in alternating directions
+      (shell 2 counter to shells 1 and 3), so the composite silhouette never repeats within a session and never
+      settles into an axis-aligned frame. Flow pulses are emitted per edge on a 12000ms base period jittered by
+      +/-35%, with phase offsets derived deterministically from the artifactSeed and the edge index; pulses must
+      never fire in unison, which would read as a heartbeat and invite a physiological reading the scene must not
+      make. There is no global loop restart. The render loop pauses on document visibilitychange exactly as the
+      shipped runtime already does — subject to the destroy() requirement in implementation, because that same
+      handler currently resurrects a stopped runtime.
+    reducedMotion: >-
+      No shell rotation, no parallax, no flow pulses, no depth drift, no feedback trail. Every state change
+      becomes a single 240ms opacity and stroke step. Committed paths are drawn instantly at full length rather
+      than animated. The profile resolves to low-power, which the shipped resolveProfile() already returns when
+      prefers-reduced-motion is set.
+
+  interaction:
+    inputs:
+      - "POINTER"
+      - "TOUCH"
+      - "KEYBOARD"
+      - "TIME"
+    semanticActions:
+      - "ATMOSPHERIC — pointer proximity brightens the nearest node and its parent edge, and applies parallax to the shells. Nothing is committed and nothing is written. Required by ADR-0010: passive pointer movement alone cannot make identity claims or write consequential personal memory."
+      - "ATMOSPHERIC — flow pulses circulate while the sphere is ORBITING. They indicate liveness only; they are not a count, a rate, a throughput or a signal strength, and no readout may derive a number from them."
+      - "ATMOSPHERIC — dwell without commitment. The sphere drifts back to IDLE after 3200ms and leaves no trace."
+      - "CONSEQUENTIAL — OPEN_SHELL: commit to one shell by click, tap, Enter or Space on its focusable handle or on any of its nodes. At most one shell is open at a time."
+      - "CONSEQUENTIAL — FOLLOW_FLOW: with a shell open, commit to one node on it. The full core-to-node path is drawn permanently for the session and the record that node stands for is opened. This is the only action that writes."
+      - "CONSEQUENTIAL — RETURN_TO_CORE: Esc, activation of the core, tap outside the sphere, or the explicit exit control. Scene-local only — it returns the view to the core and restores the route anchor. It asserts nothing about origin, homecoming or metaphysical return, and no copy may frame it as such."
+      - "EXPLICITLY NOT AN ACTION — scroll position, dwell duration, pointer path shape, rotation phase at the moment of input, how many nodes were passed over, or which shells were merely looked at. None may be recorded, scored, aggregated or used to infer anything about the visitor."
+    stateChanges:
+      - "Sphere state advances IDLE -> ORBITING -> EXPAND, and decays ORBITING -> IDLE on inactivity."
+      - "At most one shell is EXPAND at a time; opening another returns the previous one to ORBITING."
+      - "Per-node state advances rest -> attended on proximity or roving focus, and attended -> committed only on FOLLOW_FLOW."
+      - "A committed path adds a persistent 2px chain from the core to that node, which survives release and reappears on revisit."
+      - "RETURN_TO_CORE returns every shell to ORBITING and clears the reticle without erasing committed paths."
+      - "Opening a node whose volume is registro documentado must switch that record's presentation to the documented register rather than restyling it into the fiction chrome. The scene's own register marker never changes."
+    memoryWrite:
+      enabled: true
+      key: "entitiesTraced"
+      description: >-
+        Only FOLLOW_FLOW writes. It appends one entity id — the manifest volume id the committed node stands for,
+        for example "vol:lore-1-la-fuente" — to the session memory array `entitiesTraced` defined in
+        schemas/session-memory.schema.json. The key is deliberately distinct from the `relationsTraced` key
+        claimed by the FIELD OF EYES passport, so the two scenes cannot collide. The write is idempotent by event
+        identity: replaying the same committed event must not double-write. OPEN_SHELL alone writes nothing, and
+        no atmospheric action writes anything. `artifactSeed` is READ to regenerate the sphere and is never
+        written by this scene. No identity claim, score, ranking, profile, biometric value, attention metric,
+        consciousness level, spiritual state or affinity value is ever written — the epistemic standard's
+        prohibited-pseudo-metric list applies to storage as strictly as to display. The visitor must be able to
+        see exactly what was written and to clear it, and stored accessibility preferences must never be inferred
+        from behaviour.
+    exitBehavior: >-
+      RETURN_TO_CORE restores the exact prior route anchor, node, focus and scroll position, applying the
+      ADR-0010 return-anchor law. Committed paths persist for the session, so a revisit regenerates the identical
+      seeded sphere with previous paths already drawn — the mutated-revisit K-prime behaviour the ADR requires.
+      SOURCE SPHERE is neither A nor Y and must not be routed as either; its use of the words source and return
+      is scene-local and carries no topological claim. On exit the scene must release its animation frame, WebGL
+      context, framebuffers, textures, timeouts and every event listener it registered; see the disposal
+      requirement in implementation.reusableEngineBoundary.
+
+  implementation:
+    medium: "HYBRID"
+    reusableEngineBoundary: >-
+      `SourceSphere` — a data-driven preset composing the canonical `cosmology-core` and `archive-tree` organisms
+      on KDX CORE, not a new renderer. SourceSphere owns seeded shell and node generation under the four symmetry
+      rules, flow-graph construction, shell rotation, per-shell and per-node state, the open/follow state machine,
+      pointer normalization, profile resolution, the render-loop lifecycle and reduced-motion handling. Layers
+      L1-L4 are DOM/SVG and require no WebGL at all; L0 consumes the shipped multipass runtime
+      (source -> displace -> threshold -> chroma -> feedback -> crt) as an optional background adapter only.
+      Everything scene-specific is configuration. SourceSphere MUST expose an explicit destroy() that cancels the
+      animation frame, clears tracked timeouts, deletes programs, buffers, textures and framebuffers, loses the
+      WebGL context and removes every listener it added. This is not optional and not a nice-to-have: the shipped
+      runtime registers a window 'resize' listener and a document 'visibilitychange' listener inside bindEvents()
+      as inline arrow functions that can never be removed, and it has no teardown path at all, so an unmounted
+      instance both leaks and — because the visibilitychange handler calls this.start() unconditionally when the
+      document becomes visible — resurrects its render loop after being stopped. Fixing that is a precondition for
+      reuse and belongs to the implementation packet, not to this passport.
+    sceneSpecificParts:
+      - "Shell count, radii (0.34 / 0.55 / 0.89) and the minor-axis ratio 0.42."
+      - "Node counts per profile and per viewport, and the touch-target cap that overrides them on small screens."
+      - "The four symmetry rules, which are scene configuration but must be enforced as invariants, not defaults."
+      - "The flow-graph parent-selection rule (nearest in angle, every parent has at least one child)."
+      - "Mapping of cosmology-core IDLE / ORBITING / EXPAND and archive-tree DORMANT / GROWING / TRANSMIT onto the palette roles declared above."
+      - "Bilingual copy strings for the three sphere states, and the persistent register marker."
+      - "The node-to-volume binding: which manifest volumes the nodes stand for, and their register tags."
+      - "Chrome layout: which rails, dossier blocks and meta rows this scene shows."
+      - "The 45% negative-space and 8%-maximum-core composition rules."
+    dependencies:
+      - "design-system/tokens/kodex.tokens.json."
+      - "Existing state and profile config in src/kodex/observe-v2/config.ts."
+      - "Existing shell grid and DOM fallback in src/components/kodex/scenes/KodexObserveV2Scene.astro, including .kdx-observe-v2__phenomenon-core (__core-ring, __core-ring--inner, __core-pulse only — NOT __core-eye or __core-pupil)."
+      - "Structural precedent only, not a component dependency: src/components/kodex/CosmologyMap.astro."
+      - "SHADER GAP — the largest cost item. cosmology-core's canonical fx_chain is [thermal-map, pixel-sort] and NEITHER shader exists. archive-tree's is [dither-matrix, bitmap-threshold] and both are only partially and approximately covered by the single existing threshold.frag.glsl (hardcoded Bayer 4x4 against a canonical 'Bayer 8x8', and none of edge_width, posterize, crush or invert exposed). Three options for the orchestrator: (a) write thermal-map and pixel-sort as new shaders — pixel-sort is the expensive one, since a faithful sort needs a multi-pass sorting network rather than one fullscreen pass; (b) ship v1 on the already-implemented chain (crt-scan plus memory-feedback), explicitly deviating from both organisms' canonical fx_chains and recording the deviation; (c) ship v1 with the depth wash disabled entirely, which is viable because L0 carries no data. This passport recommends (c) for v1 and (a) as a separate packet."
+      - "KOD-28 (JourneyState + EventTrace). FOLLOW_FLOW cannot be implemented before it lands, because idempotent replay by event identity is what keeps the memory write from double-writing."
+      - "No new third-party dependency."
+    performanceRisk: "HIGH"
+
+  fallback:
+    noWebGL: >-
+      The scene stays fully functional and loses only atmosphere. L0 is the only WebGL layer and carries no data;
+      without it the sphere renders on obsidian with a static CSS radial wash. Core, shells, nodes, flow edges,
+      committed paths, every state and every action are DOM/SVG and unaffected. This path is already proven in the
+      implementation: the shipped runtime always renders its DOM fallback layer and only adds .is-active to the
+      canvas when WebGL2 initialises, and it can be forced with the ?fallback=1 parameter it already supports.
+      CosmologyMap.astro further proves a shell-and-core figure ships as plain SVG. Every action, state
+      transition, memory write and accessibility affordance behaves identically with and without WebGL, and there
+      must be no layout shift between the two paths.
+    noAudio: >-
+      SOURCE SPHERE declares no audio dependency. The organisms' canonical audio routings (cosmology-core
+      mid+high+parallax, archive-tree low+mid+feedback) are optional atmosphere only. With sound off, no semantic
+      action, state, transition or memory write changes, and no information is available exclusively through
+      sound. No audio-reactive value may drive a visible readout, since that would present a generated number as
+      a measurement.
+    staticMode: >-
+      A single frame rendered at ORBITING with the shells at their seed phase: all three shells drawn, all nodes
+      at rest radius with far-side dimming applied, every flow edge drawn at full length, no rotation, no
+      parallax, no pulses, no feedback trail. Shell focus and node commitment remain available through keyboard
+      and tap with instantaneous transitions. This is the mode used to produce the target captures, so that
+      captures are comparable across runs despite the seeded geometry.
+
+  accessibility:
+    keyboardEquivalent: >-
+      The sphere is a single stop in the tab order, exposed as one composite widget with roving tabindex and
+      aria-activedescendant. Up and Down arrows move the roving focus between rings — core, shell 1, shell 2,
+      shell 3 — and Left and Right move around the current shell in rendered angular order, wrapping at the seam,
+      with a deterministic tie-break by node id. Enter or Space commits OPEN_SHELL when the roving focus is on a
+      shell handle and FOLLOW_FLOW when it is on a node. Esc commits RETURN_TO_CORE. Home moves to the core and
+      End to the outermost shell. Because shells rotate, keyboard order is fixed to the seeded generation order
+      and never to on-screen position, so the traversal cannot shift under the user; while the roving focus is
+      inside the sphere, shell rotation pauses. Every consequential action is reachable without a pointer and
+      without any hover state, and a visible focus indicator is present at every step.
+    touchEquivalent: >-
+      Tap commits — no hover is required for any semantic action. A tap on a shell or any of its nodes opens that
+      shell; a second tap on a node commits the flow path; a tap on the core or outside the sphere returns. Hit
+      targets are at least 44x44 CSS px (token layout.touchTargetMin) regardless of rendered node radius, which is
+      what caps node count on small viewports. Far-side nodes keep full-size targets despite rendering at 0.7x,
+      and where two targets would overlap the far-side node becomes non-interactive and its parent edge is
+      committed in its place. No long-press, multi-touch gesture, swipe, drag or pinch is required for any
+      consequential action.
+    screenReaderAlternative: >-
+      The sphere is exposed as a nested list: "Source core", then each shell as "Shell 1 of 3, 5 nodes", then each
+      node with its accessible name — the title of the volume it stands for, its register tag, its state, and its
+      parent node. This adopts the list structure that CosmologyMap.astro's header comment promises but does not
+      actually implement, and it must be a real list in the accessibility tree rather than a role="img" with a
+      single title. A text summary of all committed paths is available on demand and contains exactly the same
+      data written to session memory. Committed actions are announced through a polite live region; pointer
+      movement, shell rotation and flow pulses are never announced. Decorative layers — the depth wash, reticle
+      and pulses — are aria-hidden.
+    nonColorEquivalent: >-
+      Every colour role carries a second channel. Shell at rest versus attending is also stroke weight (1px
+      versus 2px). An open shell is also the reticle bracket plus 1.3x node scale. A committed flow path is also a
+      2px solid stroke against 1px hairline edges and a filled terminal node against hollow ones. Contested or
+      unresolved is also a 4-2 dashed stroke. Front versus back of a shell is also scale, not only alpha. State is
+      additionally exposed as a data attribute and in the accessible name. Most importantly, the fiction register
+      is marked in WORDS, not only by the neon palette — the manifest marks register by palette alone, which
+      cannot satisfy the design-system rule that colour may not carry essential meaning alone, so the persistent
+      register marker text is the required non-colour channel. The scene must remain fully usable in monochrome.
+    reducedMotionEquivalent: >-
+      As motion.reducedMotion: no rotation, no parallax, no pulses, and all transitions become 240ms opacity or
+      stroke steps. In addition, a stored accessibility.motion preference of REDUCED or OFF in session memory
+      overrides the media query, OFF additionally freezing shell rotation permanently, and no motion, sound,
+      contrast or text-scale setting is ever inferred from behaviour.
+
+  reviewChecks:
+    - "No node overlaps another and the outermost shell is never clipped, at 1440x900, 390x844 and 412x915."
+    - "Symmetry audit: no shell's node count is divisible by 4, no two shells share a divisor greater than 1, every shell centre is offset from the core, and the three rotation periods are 12000 / 19000 / 31000 ms. Capture the sphere at ten random times and confirm it never presents a four-fold or eight-fold axis-aligned figure."
+    - "The figure does not read as a mandala, a kultrun face, a compass rose or the WenuSigil emblem — confirmed by a reviewer who has seen WenuSigil.astro rendered alongside it."
+    - "No trunk, roots, canopy or vertical world-axis appears; the tree is visible only as a rooted radial graph."
+    - "No Devanagari, Arabic, Kana, Han, Hangul, Cyrillic or Greek characters appear anywhere in the rendered scene, and no faux-manuscript or parchment texture is present."
+    - "No Mapuche term, motif or cosmological structure appears, and the scene links to no volume of documented Mapuche root."
+    - "The fiction register marker is visible in every state and at every viewport including 390x844, and it is legible under a grayscale filter."
+    - "Exactly one shell is open at a time; returning to the core leaves no second reticle on screen."
+    - "Hover alone never changes a readout that implies a committed state and never writes to session memory — verify against the event trace after sweeping the pointer across every node on every shell."
+    - "Every numeric readout in the chrome carries its persistent non-factual marker, and none of CONSCIOUSNESS, COHERENCE, ARCHIVE ENERGY, RETURN SIGNAL or EMOTIONAL FREQUENCY appears in any form."
+    - "Full keyboard pass with no pointer: enter the sphere, traverse core and all three shells with arrows, open a shell, commit a flow path, return with Esc, with a visible focus indicator at every step and shell rotation paused throughout."
+    - "Minimum 44x44 px touch targets verified on 390x844 and 412x915, with no two targets overlapping, including far-side nodes."
+    - "With prefers-reduced-motion set: no rotation, no parallax, no pulses, and all transitions are 240ms opacity or stroke steps."
+    - "With ?fallback=1: the scene is fully usable, core, shells, nodes, edges and committed paths are all present, and there is no layout shift versus the WebGL path."
+    - "Screen-reader pass: the sphere is a real nested list, every node has a name, a register tag and a parent; commits are announced; rotation and pointer movement are not."
+    - "Monochrome pass under a grayscale filter: rest, attending, open, committed and contested remain distinguishable, and the register is still readable."
+    - "Leaving and re-entering the scene regenerates the identical seeded sphere and redraws previously committed paths, and no duplicate entity is written on replay."
+    - "After unmount, no animation frame is running, the WebGL context is released, no timeout remains pending, and no window or document listener registered by the scene remains. Specifically verify that hiding and re-showing the tab after unmount does NOT restart the render loop."
+    - "Sustained 50fps or better at the full profile on desktop with 39 nodes and 39 edges animating and no frame-time regression versus OBSERVE V2 at the same profile, and 30fps or better at low-power on mobile with 15 nodes and 15 edges."
+    - "Touch-target arithmetic re-verified against the shipped build at 390x844 and 412x915: measure the minimum on-screen distance between adjacent node centres on each shell and confirm it is at least 44 px, taking the measurement at the left and right extremes of each ellipse where the spacing is smallest, not at the top and bottom where it is largest."
+
+  targetCaptures:
+    - name: "desktop-1440x900"
+      width: 1440
+      height: 900
+    - name: "mobile-390x844"
+      width: 390
+      height: 844
+    - name: "mobile-412x915"
+      width: 412
+      height: 915
+
+  epistemicConstraints:
+    - "Source, light, origin and return are mythopoetic in this scene and nothing else. The anchor volume lore-1-la-fuente is registro ficcion and marks itself 'not history, not science, not health'; SOURCE SPHERE inherits that marking and displays it persistently."
+    - "The scene makes no claim about souls, consciousness, afterlife, reincarnation, energy, frequency, biology or any literal metaphysical transit. It must not imply that the visitor originated anywhere, is returning anywhere, is being recognised, or is being read. The KODEX Voice prohibitions apply verbatim: the scene may not diagnose the visitor or claim to read energy, consciousness, frequency or biology."
+    - "Every numeric readout — flow, coherence, depth, latency, node count, checksum — is generated atmosphere, not measurement. None may be presented as system state, biometric data, attention score, resonance value or consciousness level. The prohibited pseudo-metrics of canon/KODEX_EPISTEMIC_STANDARD.md are directly in scope for a scene with this name, and three of the five it lists by example — ARCHIVE ENERGY, RETURN SIGNAL, COSMIC COHERENCE — are precisely the labels this scene must never invent."
+    - "Flow pulses indicate liveness only. Per the visual-truthfulness rule that particle density cannot imply a count unless particles encode units, no pulse rate, density or brightness may be captioned or derived as a quantity."
+    - "The sphere geometry is generated, not measured. It represents no dataset, no cosmology and no real structure, and must never be captioned or labelled as if it did. Fibonacci radii and node counts are arithmetic chosen for composition and non-symmetry; they assert nothing about nature, and the scene must not describe them as sacred, universal or fundamental."
+    - "Registers must not blend. SOURCE SPHERE sits in the marked-fiction register and must not touch Mapuche material, and must not restyle documented volumes into its own chrome when they are opened from it. Resonance links in the manifest are relations between separate records, not permission to merge them."
+    - "The scene may not present the documented cosmological volumes cos-01-origen, cos-02-atomos or cos-03-estrellas, or their Chaisson sourcing, as its own content or as corroboration of its mythopoetic frame."
+
+  scientificClaimPolicy: "SYMBOLIC_ONLY"
+
+  notes:
+    - "PROVENANCE QUESTION 1 — concept identity, and why status is DRAFT. The title SOURCE SPHERE exists in no file of either repository except KOD-40.yaml itself, verified by case-insensitive full-tree grep of both repos. The concept/reference images named in the packet's source_inputs never reached this worker and no image of any kind was inspected. This passport is therefore derived from canonical text that genuinely exists: the cosmology-core and archive-tree organism records, the lore-1-la-fuente volume that is literally titled The Source, the herm-tabla-esmeralda volume that declares TREE and COSMOLOGY identical, and the sphere named in design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md. The orchestrator must confirm this is the intended concept before any implementation packet is issued. Status stays DRAFT for this reason alone — every other question below is answered."
+    - "THE STOP CONDITION IS NOT TRIGGERED, and this is deliberate. The packet stops if 'reference provenance/copying boundary cannot be stated'. It can be stated, and conservatively: no external reference reached this worker, therefore nothing external may be copied; the one canonical reference that is acknowledged to exist — the privately supplied video behind KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md — carries its own explicit non-copying rule in that document, which this passport adopts verbatim. The boundary is total rather than uncertain."
+    - "PROVENANCE QUESTION 2 — organism composition is the one architectural assumption in this passport. Manifest sistemas.gramatica licenses any TREATMENT on any ORGANISM. It does not state that two organisms may be composed in one scene. The justification used here is herm-tabla-esmeralda's 'TREE (micro) vs COSMOLOGY (macro): everything is the same', which is a semantic identity claim in a registro esoterico volume, not an engine rule. If the orchestrator rejects organism composition, the fallback is to preset cosmology-core alone and render the branching flow as an internal connection layer rather than as archive-tree — the geometry survives, the archive-tree state vocabulary and fx_chain do not. This decision should be made before implementation because it changes which fx_chain the scene claims."
+    - "REGISTER — RESOLVED, unlike KOD-38. lore-1-la-fuente is registro ficcion / paleta neon and self-marks 'not history, not science, not health'. SOURCE SPHERE is therefore marked fiction, neon palette, with a persistent visible register marker. The orchestrator does not need to rule on this; it needs only to confirm the anchoring in question 1."
+    - "CULTURAL BOUNDARY — the single most important finding in this passport. cosmology-core, the organism being preset, is a declared resonance of doc-wenu-mapu, the documented Mapuche root volume cited to Canio & Pozo (2015), ISBN 978-956-335-205-4. Its companion doc-we-tripantu is described in the manifest as 'the return of light, the beginning that comes back'. A fiction-register scene about source, light, origin and return is therefore one careless step from absorbing documented Mapuche cosmology into Codex Estelar myth, which the manifest forbids twice over. This passport fences it structurally rather than by intention: the symmetry rules make a Meli Witran Mapu or kultrun reading geometrically impossible, the tree is a graph and never a silhouette, no Mapudungun appears, and no documented Mapuche volume may be linked. A cultural reviewer should confirm the fence before implementation, and specifically should look at the rendered sphere beside WenuSigil.astro."
+    - "MANUSCRIPT — the packet asks for provenance boundaries on manuscript references. Investigated: the only manuscript-class object in KODEX is book-ocin-arte-digital-ritual, an 81-plate monograph by a living author, registro documentado, paleta 'libro', under the manifest's absolute rule that treatments apply only to photos and derivatives and never to Ocín's finished work. So the manuscript question here is a rights question about a contemporary artist's portfolio, not a heritage-imagery question. SOURCE SPHERE resolves it by containing no book, page, plate, script or manuscript texture at all."
+    - "OPEN CONFLICT FOR THE ORCHESTRATOR — script as ornament. Manifest estratos assign a living writing system to each stratum (devanagari, arabic, kana, han, hangul, cyrillic, greek) while design/KODEX_VOICE_AND_SCENE_MESSAGE_SYSTEM.md prohibits 'use another culture's sacred language as decoration'. These cannot both stand. SOURCE SPHERE renders no script and so does not trigger the conflict, but it is a real contradiction inside canon and it will surface in any scene that displays a stratum badge."
+    - "OPEN CONFLICT FOR THE ORCHESTRATOR — register marking is colour-only. The manifest marks the two mandatory registers by palette ('DOCUMENTADO (paleta marca)' and 'MITO/FICCIÓN (paleta neon)'), while design-system/tokens/kodex.tokens.json states 'Color may not carry essential meaning alone.' Register is essential meaning. This passport resolves it locally by requiring a persistent textual register marker, but the contradiction is system-wide and every KODEX scene inherits it."
+    - "PALETTE CONFLICT — unchanged from KOD-38 and now affecting two more organisms. Canonical cosmology-core palette (#FF2CF0, #903CFF, #00F7FF, #0A0A0A) and archive-tree palette (#A6FF00, #E8E8E8, #0A0A0A) are close to but not identical with the design-system tokens (magenta #FF1EAA, violet #7855D5, cyan #00E8F0, acid #B9FF3B, obsidian #050608). This passport uses the design-system tokens as authoritative because they are the versioned artefact in the canon repository. The delta is real and visible; the orchestrator should rule on which is canonical rather than letting the implementation choose."
+    - "CONCEPT ID — no canonical id exists for the composite figure, so conceptId is set to the primary organism it presets (cosmology-core), with archive-tree declared as the composed secondary. If the composite warrants its own registry entry the orchestrator should assign one; this passport does not create canon."
+    - "COORDINATE — coordinateAssignment stays null. ADR-0010's concept assignment law requires creator approval plus a defined relation, sources, consequences, memory writes, Y contribution and epistemic/rights/cultural status before any A-Y letter is assigned, and no canonical source assigns one here. Note the specific trap this scene invites: ADR-0010 calls A 'the source invariant' and Y 'RETURN / +infinity'. A scene named SOURCE SPHERE whose exit action is called RETURN_TO_CORE must not be assigned A or Y on the strength of its name. Its use of both words is scene-local."
+    - "DEPENDENCY — FOLLOW_FLOW cannot be implemented before KOD-28 (JourneyState + EventTrace) lands, because idempotent replay by event identity is what keeps the memory write from double-writing."
+    - "WHY performanceRisk IS HIGH RATHER THAN MEDIUM. (1) The shader gap is the dominant factor: both of cosmology-core's canonical treatments are unimplemented, and a faithful pixel-sort needs a multi-pass sorting network rather than a single fullscreen pass, which would multiply the existing six-pass cost. (2) Element count exceeds FIELD OF EYES: at the full profile the sphere is exactly 39 nodes plus 39 flow edges plus 3 shell rings plus the core, 82 animated SVG elements, on top of the 44 elements the shipped runtime already writes CSS custom properties to every frame. Per-element updates must be restricted to transform and opacity, batched in a single write phase, never interleaved with reads. (3) Continuous shell rotation means every node's transform changes every frame, unlike FIELD OF EYES where nodes were static between commits — this is a genuinely higher steady-state cost and is the reason the depth wash should be dropped for v1. (4) Curved flow edges must animate by stroke-dashoffset or transform only, never by recomputing path d attributes per frame. (5) Committed paths accumulate for the session and are never removed, so their draw cost must stay O(committed) with no full-sphere repaint per commit. (6) Far-side dimming and scaling must be computed from the rotation phase arithmetically, not by hit-testing or sorting nodes per frame. (7) token performance.maxActiveHeavyCanvases is 1, so the depth wash and any other heavy canvas on the same route are mutually exclusive. (8) The listener leak and render-loop resurrection recorded below become compounding performance failures, not merely correctness ones, if the scene is mounted more than once."
+    - "IMPLEMENTATION PACKET RECOMMENDATION — split into three packets, in this order. (a) C2, producer BOUNDED_CODING_AGENT, reviewer LONG_CONTEXT_ARCHITECT: extract SourceSphere as a DOM/SVG organism preset with an explicit destroy(), seeded shell and flow-graph generation enforcing the four symmetry rules as invariants with unit tests, the open/follow state machine, the keyboard model, and NO WebGL layer at all. This is the whole scene and it is shippable, because L0 carries no data. (b) C1, MULTIMODAL_VISUAL_SPEC: visual and cultural review against reviewChecks at the three target captures, after (a), with the symmetry and Mapuche-boundary checks performed by a reviewer who has seen WenuSigil.astro rendered. (c) C2 or C3, separate and optional: implement thermal-map and pixel-sort as real shaders and attach the depth wash, only if the orchestrator wants the canonical fx_chain honoured. Do not bundle (c) into (a) — it is the expensive half and the scene does not need it. Do not issue (a) until provenance questions 1 and 2 are answered, because the organism-composition decision changes which state vocabulary the code implements."
+    - "DEFECT 1 FOUND IN EXISTING CODE — reported, not fixed, since this packet may not edit runtime code. src/components/kodex/scenes/kodex-observe-v2-client.ts bindEvents() adds addEventListener('resize', () => this.resize()) and document.addEventListener('visibilitychange', ...) as inline arrow functions that cannot be removed, and the class has no destroy() or dispose(). stop() only cancels the animation frame and clears timeouts. Two consequences, the second worse than the first: mounting a second scene leaks listeners and a WebGL context; and because the visibilitychange handler calls this.start() unconditionally when the document becomes visible, an unmounted or intentionally stopped runtime will resurrect its own render loop the next time the user switches back to the tab. This is a zombie-render defect, not only a leak."
+    - "DEFECT 2 FOUND IN EXISTING CODE — src/components/kodex/CosmologyMap.astro. Its header comment states 'Non-blocking: falls back to a legible list layout on <640px.' There is no 640px breakpoint anywhere in the file and the SVG map never becomes a list; the only media query is at max-width 820px and it merely collapses the stage grid to one column. The <ol role='list'> that exists is the separate ecosystem-portals panel, not a fallback for the map. The accessibility promise in the comment is not implemented. This passport's screenReaderAlternative specifies the list structure that comment describes, and it must be built rather than assumed."
+    - "DEFECT 3 FOUND IN EXISTING CODE — src/components/kodex/CosmologyMap.astro node interaction is pointer-only. The nodes are SVG <g> elements with a .kdx-cosmo__nodes g:hover rule that changes circle radius and fill, with no tabindex, no focus rule and no :focus-visible equivalent, inside an svg carrying role='img' and a single title. That violates the protocol's 'Pointer discovery is never the only way to access a semantic action.' It is currently harmless because the hover carries no semantic action, but the pattern must not be carried into SOURCE SPHERE, where nodes ARE the semantic action."
+    - "DEFECT 4 FOUND IN EXISTING CODE — the OBSERVE V2 dossier renders generated SIGNAL, FOCUS, ANOMALY and LATENCY percentages with no non-factual marker. This passport requires such a marker for SOURCE SPHERE and it is worth backporting. Recorded independently in the FIELD OF EYES passport; repeated here because it is unresolved."
+    - "EVIDENCE — sources actually inspected are listed field by field in sourceRefs, and every file named there was read in this session. Sources looked for and NOT found: any SOURCE SPHERE concept or reference image; any file naming SOURCE SPHERE other than KOD-40.yaml; any thermal-map, pixel-sort, dither-matrix, bitmap-threshold or glitch-fracture shader; any canonical A-Y letter assignment for this concept; any manifest volume named as a sphere (the string 'esfera' appears zero times in the manifest). The R2 bucket is the one source located but deliberately not opened, and it is marked as such."
