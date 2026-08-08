@@ -1,110 +1,133 @@
 passportId: "VP-DNA-PASSAGE-V1"
 conceptId: "KDX-NODE-DNA-ASCENT"
 title: "DNA PASSAGE"
-status: "DRAFT"
-semanticPurpose: "To bridge verified biology of inheritance with KODEX symbolic lineage, allowing the user to traverse an origin structure."
-nodeQuestion: "La herencia es dato antes que símbolo. El ascenso no niega la biología: la lee dos veces."
+status: "REVIEW"
+semanticPurpose: "To use the recognizable double-helix form as a biological reference primitive while keeping KODEX lineage, ascent and memory language explicitly symbolic."
+nodeQuestion: "¿Qué cambia cuando una forma biológica reconocible se lee también como símbolo, sin confundir una lectura con la otra?"
 coordinateAssignment: null
 sourceRefs:
   - id: "kodex-node-dna-ascent"
     relation: "PRIMARY_CONCEPT"
-    notes: 
-      - "Summary: Bridges verified biology of inheritance with symbolic lineage."
-  - id: "r2-reference-art"
+    notes:
+      - "Canonical node KDX-NODE-DNA-ASCENT (src/data/kodex/nodes/dna-ascent.json)."
+      - "The double helix is a recognizable biological reference form; KODEX ascent/lineage language remains symbolic."
+  - id: "kodex-design-tokens"
+    relation: "DESIGN_SYSTEM"
+    notes:
+      - "design-system/tokens/kodex.tokens.json provides violet, cyan, bone, acid and obsidian signal roles."
+  - id: "chatgpt-file-library:file_00000000428081fba426a0a5aa5bc7a7"
     relation: "REFERENCE"
-    notes: 
-      - "pub-2b45...r2.dev reference material."
+    rightsStatus: null
+    notes:
+      - "Exact project asset inspected: Paneles cósmicos del Códex Infinito.png."
+      - "Contains the DNA ASCENT panel with a luminous double helix, vertical traversal composition and pseudo-telemetry such as VITALITY 78.4%."
+      - "Asset identifier is exact; broader generation/rights provenance remains to be tracked separately and must not be inferred."
 provenanceBoundaries:
-  mayAbstract: 
-    - "Double helix structures"
-    - "Base pair ladder geometry"
-  mustNotCopy: 
-    - "Proprietary medical/genomic renders"
-  culturalSensitivity: 
-    - "Do not present symbolic lineage as a biological or genetic claim."
+  mayAbstract:
+    - "Double-helix silhouette as a generic biological reference form"
+    - "Dual-strand spacing and rung rhythm as geometric structure"
+    - "Vertical passage, depth and orbit/traversal composition"
+  mustNotCopy:
+    - "Real nucleotide sequence data or base-pair listings unless separately sourced and licensed"
+    - "Photographic or anatomical renderings of human cells/chromosomes from external references"
+    - "Any branding, logo or distinctive sacred/ethnic lineage iconography in references"
+    - "Pseudo-biological numbers such as vitality/coherence percentages as factual data"
+  culturalSensitivity:
+    - "DNA as 'source code of life', ancestral memory or spiritual lineage must stay symbolic and must not be presented as biological fact."
+    - "Avoid exact replication of sacred or ethnic lineage iconography; this passage is a KODEX model, not an ancestral-science claim."
 informationHierarchy:
-  primary: "The structural ascent (Helix Passage)."
-  secondary: 
-    - "The dual layers (biological data layer vs mythopoetic symbolic layer)."
-  tertiary: 
-    - "Particle telemetry and light indicators."
+  primary: "The double helix as a traversable biological-reference form."
+  secondary:
+    - "The user's traversal position along the helix."
+    - "Explicit separation between biological reference cues and KODEX symbolic cues."
+  tertiary:
+    - "Lattice tethers, particles and decorative telemetry readouts."
 geometry:
-  primitives: 
-    - "Helix Core"
-    - "Base Pair Rungs"
-    - "Particle Cloud"
-  topology: "Ascending Cylindrical Lattice"
-  coordinateSystem: "Vertical Y-axis progression"
-  spatialLayers: 
-    - "Deep Void Background"
-    - "Biological/Structural Layer"
-    - "Symbolic Aura Layer"
-    - "Foreground Observer Path"
+  primitives:
+    - "Helix Strand (Dual)"
+    - "Rung"
+    - "Locus Node"
+    - "Focus Ring"
+  topology: "Dual-strand vertical passage with repeated cross-rung structure"
+  coordinateSystem: "Continuous 3D passage with bounded traversal along a primary axis"
+  spatialLayers:
+    - "Background Void"
+    - "Biological Reference Strand"
+    - "KODEX Symbolic Overlay"
+    - "Traversal Focus / Foreground Anchor"
 composition:
-  focalStructure: "Centralized vertical column drawing the eye upward."
-  grid: "Helical/Cylindrical"
-  depthModel: "Extruded depth along the Y-axis."
-  negativeSpace: "Vast surrounding darkness to isolate the helix."
+  focalStructure: "Central vertical passage; user position resolves the visible helix section."
+  grid: "Helical grid, two strands phase-offset around a shared axis"
+  depthModel: "Deep Z along the traversal axis with attenuation on distant rungs."
+  negativeSpace: "Black void between and beyond strands keeps symbolic overlays separate from biological-reference geometry."
   responsiveRules:
-    desktop: "Centered helix, scrolling drives ascension."
-    mobile: "Tight crop on the helix, swipe drives ascension."
+    desktop: "Full passage visible with wide aspect; pointer offset modulates camera/orbit without forcing sequence order."
+    mobile: "Vertical slice of the passage; touch drag advances/orbits while keeping controls reachable without hover."
 paletteRoles:
-  - role: "Biological Layer"
-    semanticMeaning: "Verified data and structure"
-    tokenOrRange: "Neutral/Clinical White"
+  - role: "Biological Reference Strand"
+    semanticMeaning: "Recognizable helix geometry derived from general biological form, not a displayed genetic dataset"
+    tokenOrRange: "Cyan (signal family)"
     colorIsNotOnlyChannel: true
-  - role: "Symbolic Layer"
-    semanticMeaning: "Mythopoetic/Source lineage"
-    tokenOrRange: "Violet (accent from KDX-NODE-DNA-ASCENT)"
+  - role: "Symbolic Strand / Overlay"
+    semanticMeaning: "KODEX lineage, memory and ascent symbolism"
+    tokenOrRange: "Violet (node accent KDX-NODE-DNA-ASCENT)"
     colorIsNotOnlyChannel: true
 typographyRoles:
-  - role: "Telemetry"
-    behavior: "Monospaced, used strictly for abstract indicators, not fake biological readings."
+  - role: "Passage Labels"
+    behavior: "Monospaced labels distinguish BIOLOGICAL REFERENCE from KODEX SYMBOLIC content; invented numeric readouts are explicitly decorative."
 motion:
-  timescales: 
-    - "Continuous slow rotation (ambient)"
-    - "Scroll-driven Z/Y translation (interactive)"
-  stateTransitions: 
-    - "Resting to Ascending"
-  loopingBehavior: "Infinite vertical looping of the core structure."
-  reducedMotion: "Static helix without rotation, scroll jumps between distinct stages instead of smooth interpolation."
+  timescales:
+    - "Ambient helix drift (slow)"
+    - "Traversal/orbit response (user-driven)"
+  stateTransitions:
+    - "Idle to Traversing"
+    - "Traversing to Locked Rung"
+  loopingBehavior: "Subtle helix rotation and drifting locus markers; traversal remains user-controlled and non-compulsory."
+  reducedMotion: "Static helix, no camera ride or rotation, instant rung state changes."
 interaction:
-  inputs: 
+  inputs:
     - "POINTER"
     - "TOUCH"
     - "KEYBOARD"
-  semanticActions: 
-    - "Traverse (scroll/swipe)"
-    - "Toggle Layer (switch between Biological and Symbolic view)"
-  stateChanges: 
-    - "Scrolling moves the camera along the helix."
+  semanticActions:
+    - "Advance or orbit through the passage"
+    - "Commit a rung read that exposes biological-reference versus symbolic labels"
+  stateChanges:
+    - "Pointer/touch drag changes traversal or orbit position."
+    - "Click/tap or Enter/Space locks a rung and reveals its two explicitly labeled readings."
+    - "Keyboard arrows cycle reachable rungs without implying an A-to-Z genetic sequence."
   memoryWrite:
     enabled: true
     key: "kodex-dna-passage-traversed"
-    description: "Records the depth of ascension achieved by the user."
-  exitBehavior: "Camera breaks through the top of the helix into a bright void."
+    description: "Records that the user committed a traversal/rung-read interaction; it stores no genetic, biometric, spiritual or psychological inference."
+  exitBehavior: "The helix recedes and symbolic overlays dissolve independently into the void."
 implementation:
   medium: "WEBGL"
-  reusableEngineBoundary: "HelixPassageEngine (handles procedural generation of the double helix and traversal mechanics)."
-  sceneSpecificParts: 
-    - "Dual-layer rendering shader"
-  dependencies: 
-    - "Three.js"
+  reusableEngineBoundary: "HelixPassage (handles strand instantiation, rung layout, traversal/orbit position and reduced-motion geometry independently of scene logic)."
+  sceneSpecificParts:
+    - "KODEX symbolic overlay configuration"
+    - "CRT/post-processing only when confirmed by the bounded implementation packet"
+  dependencies:
+    - "Existing KODEX organism/WebGL runtime"
+    - "Existing KODEX lifecycle, input and fallback contracts"
   performanceRisk: "HIGH"
 fallback:
-  noWebGL: "CSS 3D transformed helix or a sequence of static raster cross-sections."
-  noAudio: "Visual velocity indicators communicate traversal speed."
-  staticMode: "A single, high-fidelity hero render of the dual-layer helix."
+  noWebGL: "SVG/canvas or static raster of the double helix with semantic rung controls and explicit BIOLOGICAL REFERENCE / KODEX SYMBOLIC labels."
+  noAudio: "Layer labels, focus rings and state changes communicate passage behavior without sound."
+  staticMode: "A single detailed helix frame with keyboard/touch-accessible rung selection."
 accessibility:
-  keyboardEquivalent: "Arrow keys (Up/Down) drive the traversal."
-  touchEquivalent: "Vertical swipe."
-  screenReaderAlternative: "Aria live region announcing progression milestones along the ascent."
-  nonColorEquivalent: "Biological vs Symbolic layers distinguished by line weight and particle density."
-  reducedMotionEquivalent: "Replaces continuous traversal with discrete, cross-faded snapshots."
+  keyboardEquivalent: "Tab/arrow navigation cycles semantic rungs; Enter/Space commits the selected rung read."
+  touchEquivalent: "Drag controls traversal/orbit and tap commits a rung without requiring hover."
+  screenReaderAlternative: "Live region announces traversal position and whether content is biological-reference or KODEX-symbolic."
+  nonColorEquivalent: "The two readings differ by position, line treatment and labels, not color alone."
+  reducedMotionEquivalent: "Static helix with direct rung selection and no camera movement."
 reviewChecks:
-  - "Are the biological and symbolic layers visually distinct without merging into pseudo-science?"
-  - "Does the traversal avoid creating a compulsory alphabet/reading sequence?"
-  - "Is the HelixPassage engine boundary clearly maintained?"
+  - "Can a viewer distinguish biological-reference geometry from KODEX symbolic content without relying only on color?"
+  - "Does any text accidentally imply that the artwork displays verified genetic data?"
+  - "Does traversal avoid imposing a compulsory alphabet, spiritual ascent or deterministic life sequence?"
+  - "Is HelixPassage separated from scene-specific overlays/post-processing?"
+  - "Are all numeric dossier values clearly decorative unless sourced?"
+  - "Does the design remain legible and performant at 390x844 and 412x915?"
 targetCaptures:
   - name: "desktop_wide"
     width: 1920
@@ -116,7 +139,11 @@ targetCaptures:
     width: 412
     height: 915
 epistemicConstraints:
-  - "Real DNA biology may inform the helix primitive."
+  - "The double helix is a recognizable biological reference primitive, not a simulation or measurement of a user's DNA."
   - "Spiritual/cosmic/source passage is mythopoetic, not scientific DNA function."
   - "Particle/light telemetry must not become fake biological measurement."
-scientificClaimPolicy: "MIXED_WITH_EXPLICIT_LABELS"
+  - "Any displayed sequence/readout is symbolic texture unless a separate verified scientific source is explicitly cited."
+scientificClaimPolicy: "SYMBOLIC_ONLY"
+notes:
+  - "Concept title in packet is DNA PASSAGE; canonical node title is DNA ASCENT. The passport uses the canonical conceptId while keeping the packet title."
+  - "Supervisor patch removes the unsupported 'Verified Strand' claim and treats biology only as a recognizable reference form."
