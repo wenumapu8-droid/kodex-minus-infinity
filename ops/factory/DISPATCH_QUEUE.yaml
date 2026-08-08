@@ -1,13 +1,15 @@
 schema_version: 1
-updated_at: "2026-08-08T01:03:30Z"
+updated_at: "2026-08-08T01:38:00Z"
 authority:
   supervisor: "ORCHESTRATOR"
   queue_issue: "KOD-44"
   loop_controller_issue: "KOD-45"
+  frontier_visual_issue: "KOD-53 / GitHub #35"
   completion_scope: "KOD-18 / KODEX−∞ Vertical Slice v0 release gate"
   factory_os: "ops/factory/FACTORY_OS.md"
   router_policy: "ops/factory/ROUTER_POLICY.md"
   heartbeat_protocol: "ops/factory/HEARTBEAT_PROTOCOL.md"
+  frontier_visual_gate: "ops/factory/FRONTIER_VISUAL_GATE.md"
   event_schema: "ops/factory/FACTORY_EVENT_SCHEMA.yaml"
   loop_protocol: "ops/factory/FACTORY_LOOP_PROTOCOL.md"
 
@@ -20,13 +22,14 @@ rules:
   - "Do not merge unless the packet/reviewer gate explicitly authorizes merge."
   - "Deployment remains blocked without the exact creator phrase APROBAR DEPLOY."
   - "Do not expose secrets, private paths, raw conversations or chain-of-thought in queue/heartbeat/handoff."
-  - "PRODUCT-FIRST: no new factory/control-plane subsystem unless a measured blocker in KOD-18 requires it. Visible assembly and QA now outrank infrastructure expansion."
+  - "PRODUCT-FIRST: visible product, QA and creator-facing convergence outrank new control-plane expansion."
+  - "FRONTIER VISUAL RULE: build/functional PASS does not equal visual PASS. Fast/volume workers cannot declare canonical visual acceptance."
 
 loop_policy:
   enabled: true
-  target: "complete the finite KOD-18 Vertical Slice v0 through visible internal assembly and release review"
+  target: "complete KOD-18 through visible internal assembly, frontier visual convergence and release review"
   transport: "GitHub + Linear; chat is bootstrap/fallback only"
-  cycle: "observe evidence -> gate -> integrate visible product -> QA -> route next dependency-ready packet -> repeat"
+  cycle: "observe evidence -> functional gate -> visible preview -> frontier visual audit -> delta packet -> bounded implementation -> QA -> creator acceptance -> repeat"
   lane_blocking: "a blocker pauses only its dependent lane; independent lanes continue"
   stop_conditions:
     - "creator/canonical decision required"
@@ -39,6 +42,55 @@ loop_policy:
   deployment_status: "BLOCKED"
 
 stations:
+  - station_id: "CLAUDE_MAX_MACMINI"
+    profile: "FRONTIER_LONG_CONTEXT_ARCHITECT"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "READY_PENDING_FRESH_HEARTBEAT"
+    current_packet: "KOD-53"
+    packet_path: "ops/factory/packets/KOD-53.yaml"
+    target_repository: "wenumapu8-droid/wenu-frontend"
+    target_branch: null
+    mode: "FRONTIER_VISUAL_AUDIT"
+    latest_evidence: "Mac mini is the designated heavy/frontier integration station; fresh run evidence is still required before treating it as active."
+    current_step: "audit the openable KOD-47 visible assembly first, then DNA Passage candidate, against creator references and FRONTIER_VISUAL_GATE.md"
+    next_after_gate: "emit measurable delta packets; take difficult implementation directly only when judgment/context dominates"
+    next_expected_evidence: "heartbeat + audit handoff with screenshots/reference deltas and PASS/REWORK verdict"
+    wip_limit: 1
+
+  - station_id: "CLAUDE_PRO_IMAC"
+    profile: "SECONDARY_FRONTIER_CONTEXT_REVIEWER"
+    connection_status: "CREATOR_REPORTED_ACCOUNT_AVAILABLE"
+    execution_status: "NEEDS_LOCAL_AUTH_HEALTH_CHECK"
+    current_packet: "KOD-53"
+    packet_path: "ops/factory/packets/KOD-53.yaml"
+    target_repository: "wenumapu8-droid/wenu-frontend"
+    target_branch: null
+    mode: "FRONTIER_FALLBACK_REVIEW"
+    resume_condition: "Claude Code installed/healthy and authenticated interactively with the Claude App Pro account; quota available"
+    latest_evidence: "Claude Pro account/context exists on the iMac, but this station must not be treated as runnable until a fresh local auth/health heartbeat is recorded."
+    current_step: "after local health check, act as independent second-pass reviewer or bounded frontier implementer"
+    next_expected_evidence: "station bootstrap output summary + heartbeat without secrets"
+    wip_limit: 1
+
+  - station_id: "OPENCLAUDE_DEEPSEEK"
+    runtime_client: "OpenCode/OpenClaude"
+    profile: "VOLUME_BOUNDED_CODING_WORKER"
+    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+    execution_status: "WAIT_FRONTIER_REVIEW"
+    current_packet: "KOD-47"
+    packet_path: "ops/factory/packets/KOD-47.yaml"
+    target_repository: "wenumapu8-droid/wenu-frontend"
+    target_branch: "feature/kodex-visible-assembly-01"
+    mode: "BOUNDED_IMPLEMENTATION"
+    latest_evidence: "KOD-47 Visible Assembly PR #32 exists as an end-to-end internal product slice."
+    current_step: "hold new art-direction decisions; implement only deterministic deltas after frontier audit"
+    next_after_gate: "apply approved visual/interaction delta packet, tests and CI"
+    forbidden_authority:
+      - "canonical visual acceptance"
+      - "canon/narrative topology redefinition"
+      - "scientific/cultural interpretation"
+    wip_limit: 1
+
   - station_id: "GEMINI_ANTIGRAVITY"
     profile: "MULTIMODAL_VISUAL_SPEC"
     connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
@@ -51,26 +103,24 @@ stations:
     packet_path: "ops/factory/packets/KOD-38.yaml"
     target_repository: "wenumapu8-droid/kodex-minus-infinity"
     target_branch: "feature/visual-passport-field-of-eyes-v1"
-    mode: "WRITE_BOUNDED"
-    latest_evidence: "KOD-38 PR #23, KOD-39 PR #26 and KOD-40 PR #27 exist and are in supervisor review; passports are specifications, not renderer completion."
-    current_step: "finish passport review/rework without inventing provenance, science claims or coordinate assignments"
-    next_after_gate: "produce renderer implementation packet only when KOD-47 assembly proves the renderer is needed"
+    mode: "WRITE_BOUNDED_SPEC"
+    current_step: "finish/rework visual passports and reference decomposition without treating specs as final art direction"
     next_expected_evidence: "review-ready passport heads with exact provenance and implementation boundaries"
+    forbidden_authority:
+      - "creator visual acceptance"
     wip_limit: 1
 
-  - station_id: "CLAUDE_MAX_MACMINI"
-    profile: "LONG_CONTEXT_ARCHITECT"
-    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
+  - station_id: "CHATGPT_ORCHESTRATOR"
+    profile: "ORCHESTRATOR_AND_ART_DIRECTION_SUPERVISOR"
+    connection_status: "ACTIVE"
     execution_status: "RUNNING"
-    current_packet: "KOD-42"
-    packet_path: "ops/factory/packets/KOD-42.yaml"
-    target_repository: "wenumapu8-droid/wenu-frontend"
+    current_packet: "KOD-53"
+    packet_path: "ops/factory/packets/KOD-53.yaml"
+    target_repository: "wenumapu8-droid/kodex-minus-infinity + wenumapu8-droid/wenu-frontend"
     target_branch: null
-    mode: "READ_ONLY_AUDIT"
-    latest_evidence: "Linear KOD-42 entered In Progress after Mac mini GitHub authentication repair."
-    current_step: "return integration-readiness verdict for PR #3/#4 against the corrected Vertical Slice runtime line"
-    next_after_gate: "KOD-41 corrected-kernel review; once KOD-41 + KOD-42 pass, release KOD-47 assembly"
-    next_expected_evidence: "KOD-42 audit handoff with branch map, reusable contracts, risks and recommended sequence"
+    mode: "PRODUCT_CONVERGENCE_CONTROL"
+    current_step: "route KOD-47 and DNA Passage into frontier visual audits; convert review deltas into bounded work for volume workers"
+    next_expected_evidence: "frontier audit handoff + measurable delta packet + updated preview evidence"
     wip_limit: 1
 
   - station_id: "HERMES_TELEGRAM"
@@ -82,65 +132,15 @@ stations:
     target_repository: "external Hermes runtime / local operations configuration"
     target_branch: null
     mode: "OPERATIONS_OBSERVER"
-    latest_evidence: "KOD-36 and KOD-46 are Done in Linear; repo-native observer/Andon path is established."
-    current_step: "remain operational; report meaningful factory events only"
-    next_after_gate: "no new Hermes infrastructure unless measured operational evidence requires it"
-    next_expected_evidence: "only ACTION/BLOCKED/FAILURE/REVIEW/QA/RELEASE_GATE events"
-    wip_limit: 1
-
-  - station_id: "OPENCLAUDE_DEEPSEEK"
-    runtime_client: "OpenCode/OpenClaude"
-    profile: "BOUNDED_CODING_WORKER"
-    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "WAIT_REVIEW"
-    current_packet: "KOD-28"
-    packet_path: "ops/factory/packets/KOD-28.yaml"
-    target_repository: "wenumapu8-droid/wenu-frontend"
-    target_branch: "feature/kodex-vertical-slice-v0"
-    mode: "REVIEW_WAIT"
-    latest_evidence: "Corrected JourneyState kernel was reconciled into feature/kodex-vertical-slice-v0 via merged PR #28; KOD-29 graph projection and KOD-30 EdgeResolver are also verified on that integration branch."
-    current_step: "do not reopen superseded stacked branches; wait for KOD-41 review of the corrected canonical kernel"
-    next_after_gate: "candidate implementation owner for KOD-47 after KOD-41 + KOD-42 pass"
-    next_expected_evidence: "KOD-41 PASS/REWORK verdict"
-    wip_limit: 1
-
-  - station_id: "CLAUDE_PRO_IMAC"
-    profile: "LEGACY_CONTEXT_ARCHIVE"
-    connection_status: "VERIFIED_CONNECTED_BY_CREATOR"
-    execution_status: "PAUSED_CAPACITY"
-    current_packet: "KOD-37"
-    packet_path: "ops/factory/packets/KOD-37.yaml"
-    target_repository: "legacy local KODEX workspaces -> canonical handoff"
-    target_branch: null
-    mode: "READ_ONLY_INVENTORY_AFTER_RESUME"
-    blocker_class: "WORKER_CAPACITY_QUOTA"
-    resume_condition: "usage quota reset; then run Context Vault inventory without deleting local work"
-    latest_evidence: "KOD-26 Bridge 1 is Done; do not reopen KOD-26 or KOD-29."
-    next_after_gate: "handoff only context that materially helps visible assembly"
-    next_expected_evidence: "KOD-37 inventory/handoff when capacity returns"
-    wip_limit: 1
-
-  - station_id: "CHATGPT_ORCHESTRATOR"
-    profile: "ORCHESTRATOR"
-    connection_status: "ACTIVE"
-    execution_status: "RUNNING"
-    current_packet: "KOD-47"
-    packet_path: "ops/factory/packets/KOD-47.yaml"
-    target_repository: "wenumapu8-droid/wenu-frontend"
-    target_branch: "feature/kodex-vertical-slice-v0"
-    mode: "PRODUCT_CONVERGENCE_CONTROL"
-    current_step: "hold KOD-47 code changes until KOD-41 + KOD-42 gates pass; then dispatch one bounded visible assembly packet"
-    next_expected_evidence: "integration audit + kernel review, followed by an openable noindex end-to-end KODEX preview"
+    current_step: "report meaningful ACTION/BLOCKED/FAILURE/REVIEW/QA/RELEASE_GATE events only"
     wip_limit: 1
 
 dependency_frontier:
-  - "KOD-26 is DONE."
-  - "KOD-29 is DONE and verified on feature/kodex-vertical-slice-v0."
-  - "KOD-30 is DONE and verified on feature/kodex-vertical-slice-v0."
-  - "KOD-28 corrected canonical kernel is integrated but still requires KOD-41 review."
-  - "KOD-42 integration-readiness audit is RUNNING on the Mac mini."
-  - "KOD-47 visible assembly is the next product frontier and is blocked by KOD-41 + KOD-42."
-  - "KOD-38/KOD-39/KOD-40 remain Visual Passport review work; they do not count as implemented scenes."
-  - "No new control-plane expansion is scheduled before KOD-47 and KOD-25 unless a measured blocker requires it."
+  - "KOD-47 Visible Assembly PR #32 exists and is ready to enter frontier visual convergence review."
+  - "DNA Passage PR #33 is a tested visual/interaction candidate and requires frontier + creator visual acceptance before public integration."
+  - "KOD-53 establishes the frontier visual gate and Mac station routing."
+  - "OpenCode remains valuable for implementation volume but is no longer final visual authority."
+  - "Mac mini is primary frontier station; iMac Claude Pro is secondary/fallback after local auth/health check."
+  - "No new public /kodex/ replacement or deployment is authorized."
 
 deployment_status: "BLOCKED"
