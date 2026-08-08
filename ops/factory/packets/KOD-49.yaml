@@ -133,7 +133,7 @@ execution_log:
     action: "IMPLEMENT_DELTAS_D4_D5_D6_D8"
     branch: "opencode/kod49-deterministic-deltas"
     base: "feature/kodex-threshold-visual-scaffold-v1 (d6dd18cf)"
-    head: "f8168270"
+    head: "e2f71678"
     pr: "https://github.com/wenumapu8-droid/wenu-frontend/pull/45"
     deltas_applied:
       - "D4: organism scale mobile base 0.31->0.42, focal 0.39->0.32; desktop focal 64/50->60/46; shell overlaps copy column"
@@ -142,13 +142,18 @@ execution_log:
       - "D8: vignette/depth/aperture-note realigned to focal; mobile copy density tuned"
     deltas_not_touched: ["D1 (asymmetric shell)", "D2 (chrome/material)", "D3 (internal texture)", "D7 full-motion (local deformation) -> frontier/Codex"]
     ci:
-      - "build: PASS (run 31240534415)"
-      - "verify-threshold-fidelity: PASS (run 31240534395) — desktop + 390x844 + 412x915, no overflow, keyboard motion toggle, native canvas, explicit entry"
+      - "build: PASS (run 31242055767)"
+      - "verify-threshold-fidelity: PASS (run 31242055764) — desktop + 390x844 + 412x915, no overflow, keyboard motion toggle, OFF state, native canvas, explicit entry"
     local_qa: "QA PASS (same script as CI) against 1440x1000 / 390x844 / 412x915"
+    evidence_added:
+      - "full-motion proximity captures for 390x844 and 412x915 (synthetic PointerEvent at focal center)"
+      - "OFF-state captures + keyboard verification on all three viewports (second toggle press)"
+      - "browser-acceptance.txt now asserts keyboard:motion-off and full-motion mobile evidence"
     organism_metrics:
       - "desktop vertical span 71% vh (target 58-68% + atmosphere), focal 44%"
       - "390x844 vertical span 42% vh, focal 31% (target ~32%)"
       - "412x915 vertical span 41% vh, focal 31%"
+    audit_v1_gap_closed: "full-motion behavior now has mobile evidence; frontier re-audit can inspect FULL/REDUCED/OFF from CI artifacts"
     next_gate: "FRONTIER_REAUDIT full-motion; creator visual review (deployment remains BLOCKED)"
     status: "DETERMINISTIC_DELTAS_IMPL"
 
