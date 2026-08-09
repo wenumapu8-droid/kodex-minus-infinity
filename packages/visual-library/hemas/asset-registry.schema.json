@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KODEX Asset Registry",
+  "type": "object",
+  "required": ["assets"],
+  "properties": {
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "kind", "sourceUrl", "author", "license", "licenseUrl", "attribution", "modifications", "status"],
+        "properties": {
+          "status": { "enum": ["candidate", "review", "approved", "rejected"] }
+        }
+      }
+    }
+  }
+}
