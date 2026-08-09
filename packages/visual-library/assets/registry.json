@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/asset-registry.schema.json",
+  "assets": [
+    {
+      "id": "kx-procedural-heart-placeholder",
+      "title": "Procedural heart placeholder",
+      "kind": "procedural",
+      "sourceUrl": "internal://src/primitives.js#assetSlot",
+      "author": "Nicolás Ortega / Ocín + KODEX contributors",
+      "license": "MIT",
+      "licenseUrl": "../../LICENSE",
+      "attribution": "KODEX−∞ procedural placeholder",
+      "modifications": "Original internal component",
+      "status": "approved"
+    }
+  ]
+}
