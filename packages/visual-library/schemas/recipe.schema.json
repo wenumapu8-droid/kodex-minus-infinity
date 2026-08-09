@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KODEX Visual Recipe",
+  "type": "object",
+  "required": ["id", "primitive", "content", "data", "palette"],
+  "properties": {
+    "id": { "type": "string" },
+    "primitive": { "type": "string" },
+    "palette": { "enum": ["violet", "gaia", "solar", "blood"] },
+    "content": { "type": "object" },
+    "data": { "type": "object" },
+    "assetId": { "type": ["string", "null"] }
+  }
+}
