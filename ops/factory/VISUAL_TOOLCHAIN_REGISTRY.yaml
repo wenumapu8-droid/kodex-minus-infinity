@@ -1,0 +1,123 @@
+version: 1
+status: PROPOSED
+updated_at: "2026-08-09"
+deployment: BLOCKED
+policy:
+  canon_override_allowed: false
+  creator_visual_authority: OCIN
+  required_visible_handoff_evidence:
+    - desktop
+    - mobile_390x844
+    - mobile_412x915
+    - reduced_motion
+    - browser_runtime_errors
+  production_gate: APROBAR_DEPLOY
+resources:
+  - id: DESIGN_MD
+    name: DESIGN.md portable design intent
+    class: ADOPT_NOW
+    layer: development
+    role: agent_visual_contract
+    runtime_dependency: false
+    target_repo: wenumapu8-droid/wenu-frontend
+  - id: IMPECCABLE
+    name: Impeccable
+    source: https://github.com/pbakaus/impeccable
+    license: Apache-2.0
+    class: ADOPT_NOW
+    layer: agent_skill
+    role: primary_design_audit
+    runtime_dependency: false
+  - id: TASTE_SKILL
+    name: Taste Skill
+    source: https://github.com/Leonxlnx/taste-skill
+    license: MIT
+    class: PILOT_BOUNDED
+    layer: agent_skill
+    role: secondary_design_audit
+    runtime_dependency: false
+    notes:
+      - design-taste-frontend v2 is experimental
+      - do not run as competing primary art director with Impeccable
+  - id: IMG2THREEJS
+    name: img2threejs
+    source: https://github.com/img2threejs/img2threejs
+    license: Apache-2.0
+    class: ADOPT_NOW_PILOT_FIRST
+    layer: agent_skill
+    role: procedural_reference_to_threejs
+    runtime_dependency: false
+  - id: PLAYWRIGHT_CLI
+    name: Playwright CLI
+    source: https://playwright.dev/docs/getting-started-cli
+    class: ADOPT_NOW_REQUIRED_VISIBLE_WORK
+    layer: development
+    role: browser_operator_and_evidence
+    runtime_dependency: false
+  - id: SCREENSHOT_TO_CODE
+    name: screenshot-to-code
+    source: https://github.com/abi/screenshot-to-code
+    license: MIT
+    class: PILOT_BOUNDED
+    layer: development
+    role: image_to_structural_draft
+    runtime_dependency: false
+  - id: GETLAYERS_METHOD
+    name: GetLayers methodology
+    source: https://www.getlayers.ai/docs
+    class: REFERENCE_METHOD
+    layer: methodology
+    role: standalone_layer_then_port
+    runtime_dependency: false
+  - id: PIXIJS
+    name: PixiJS
+    source: https://github.com/pixijs/pixijs
+    class: OPTIONAL_STRONG_FIT
+    layer: runtime_optional
+    role: gpu_2d_console_ascii_pixel
+    runtime_dependency: conditional
+  - id: GLTFJSX
+    name: gltfjsx
+    source: https://github.com/pmndrs/gltfjsx
+    class: OPTIONAL
+    layer: build_tool
+    role: gltf_to_reusable_r3f
+    runtime_dependency: false
+  - id: HUNYUAN3D
+    name: Hunyuan3D
+    source: https://github.com/Tencent-Hunyuan/Hunyuan3D-2
+    class: RESEARCH_PILOT
+    layer: asset_generation
+    role: image_text_to_3d_candidate
+    runtime_dependency: false
+    requires:
+      - exact_release_license_review
+      - provenance_record
+      - web_mesh_optimization
+  - id: LAPLASCIAN
+    name: LaplASCIIan
+    source: https://github.com/zalo/LaplASCIIan
+    class: REFERENCE_METHOD_OPTIONAL
+    layer: methodology
+    role: animated_ascii_svg_reference
+    runtime_dependency: false
+routing:
+  CLAUDE_MAX:
+    - DESIGN_MD
+    - IMPECCABLE
+    - IMG2THREEJS
+  CLAUDE_PRO:
+    - DESIGN_MD
+    - IMPECCABLE
+  CODEX:
+    - DESIGN_MD
+    - IMG2THREEJS
+    - PLAYWRIGHT_CLI
+    - TASTE_SKILL
+  OPENCODE:
+    - DESIGN_MD
+    - PLAYWRIGHT_CLI
+  ORCHESTRATOR:
+    - registry_governance
+    - source_verification
+    - acceptance_evidence
