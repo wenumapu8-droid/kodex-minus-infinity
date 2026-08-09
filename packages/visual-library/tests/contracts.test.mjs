@@ -74,10 +74,13 @@ test("agent resource catalog is broad, searchable, and license-aware", async () 
   assert.ok(data.resources.every((item) => item.id && item.url && item.license && item.trust && item.use.length));
   assert.equal(data.resources.find((item) => item.id === "polyhaven").license, "CC0-1.0");
   assert.equal(data.resources.find((item) => item.id === "sketchfab").trust, "quarantine");
-  assert.ok(data.resources.length >= 80);
+  assert.ok(data.resources.length >= 92);
   assert.ok(new Set(data.resources.map((item) => item.id)).size === data.resources.length);
   assert.ok(data.resources.some((item) => item.id === "gltf-transform"));
   assert.ok(data.resources.some((item) => item.id === "rawgraphs"));
+  assert.ok(data.resources.some((item) => item.id === "shader-park-core"));
+  assert.equal(data.resources.find((item) => item.id === "z-anatomy").trust, "conditional");
+  assert.equal(data.resources.find((item) => item.id === "phylopic").trust, "conditional");
   assert.equal(data.resources.find((item) => item.id === "cel-lab").trust, "radar-only");
 });
 
@@ -93,7 +96,7 @@ test("capability router returns small stacks with explicit fallbacks", async () 
   const data = JSON.parse(await readFile(new URL("../assets/capability-router.json", import.meta.url), "utf8"));
   const resourceData = JSON.parse(await readFile(new URL("../assets/resource-catalog.json", import.meta.url), "utf8"));
   const ids = new Set(resourceData.resources.map((resource) => resource.id));
-  assert.ok(data.routes.length >= 12);
+  assert.ok(data.routes.length >= 18);
   assert.ok(data.routes.every((route) => route.intent.length && route.primary.length && route.fallback));
   assert.ok(data.routes.every((route) => route.primary.length <= 2));
   for (const route of data.routes) {
