@@ -4,7 +4,8 @@ This is the permanent entrypoint for any agent composing KODEX visuals. Read
 this file, `assets/capability-router.json`, `assets/resource-catalog.json`,
 `assets/reference-map.json`, and `assets/registry.json` before introducing a
 new dependency or external asset. `docs/ATLAS-MISSION.md` defines governance
-and coverage metrics.
+and coverage metrics. `docs/DRIVE-ATLAS-CROSSWALK-2026-08-09.md` connects the
+resource system to the authored Drive graph without copying private media.
 
 ## Selection order
 
@@ -32,6 +33,10 @@ and coverage metrics.
 | GLB optimization | glTF Transform + gltfpack | Draco/KTX2 only for measured gains |
 | unusual chart prototype | RAWGraphs | production interaction requires D3/ECharts |
 | public drawing wall | Fabric.js | simple SVG/text input is sufficient |
+| living journey / authored edges | d3-sankey + Anime.js | plain SVG paths cover a small graph |
+| membrane / procedural organism | Shader Park + Three.js | an SVG morph communicates the state |
+| anatomy layers | model-viewer + audited extract | a licensed poster is sufficient |
+| bestiary silhouette | PhyloPic record | a creator-owned SVG already exists |
 
 ## Rights gates
 
