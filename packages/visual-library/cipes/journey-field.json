@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/recipe.schema.json",
+  "id": "memory-convergence",
+  "primitive": "journey-field",
+  "palette": "violet",
+  "content": {
+    "title": "MEMORY CONVERGENCE",
+    "eyebrow": "KODEX−∞ / RECIPE 001",
+    "footer": "ROUTES ARE DATA · THE HEART ORIENTS · RETURN REMEMBERS"
+  },
+  "data": { "routes": 21, "start": "−∞", "end": "+∞", "heart": true },
+  "assetId": "kx-procedural-heart-placeholder"
+}
