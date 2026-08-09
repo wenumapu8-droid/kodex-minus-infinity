@@ -1,0 +1,85 @@
+{
+  "sources": [
+    {
+      "id": "poly-haven",
+      "name": "Poly Haven",
+      "url": "https://polyhaven.com/",
+      "kinds": ["models", "textures", "hdri"],
+      "licensePolicy": "CC0-1.0",
+      "trust": "preferred",
+      "ingestion": "direct-after-technical-review"
+    },
+    {
+      "id": "ambientcg",
+      "name": "ambientCG",
+      "url": "https://ambientcg.com/",
+      "kinds": ["models", "materials", "textures", "hdri"],
+      "licensePolicy": "CC0-1.0",
+      "trust": "preferred",
+      "ingestion": "direct-after-technical-review"
+    },
+    {
+      "id": "sketchfab",
+      "name": "Sketchfab",
+      "url": "https://sketchfab.com/",
+      "kinds": ["models", "cultural-heritage", "animation"],
+      "licensePolicy": "per-asset",
+      "trust": "conditional",
+      "ingestion": "quarantine-until-exact-license-and-attribution"
+    },
+    {
+      "id": "free3d",
+      "name": "Free3D",
+      "url": "https://free3d.com/",
+      "kinds": ["models"],
+      "licensePolicy": "per-asset",
+      "trust": "conditional",
+      "ingestion": "quarantine-until-exact-license-and-attribution"
+    },
+    {
+      "id": "cgtrader",
+      "name": "CGTrader",
+      "url": "https://www.cgtrader.com/",
+      "kinds": ["models", "characters", "props"],
+      "licensePolicy": "per-asset-commercial-marketplace",
+      "trust": "conditional",
+      "ingestion": "discovery-only-until-explicit-review"
+    },
+    {
+      "id": "turbosquid",
+      "name": "TurboSquid",
+      "url": "https://www.turbosquid.com/",
+      "kinds": ["models", "characters", "props"],
+      "licensePolicy": "per-asset-commercial-marketplace",
+      "trust": "conditional",
+      "ingestion": "discovery-only-until-explicit-review"
+    },
+    {
+      "id": "blender-market",
+      "name": "Blender Market",
+      "url": "https://blendermarket.com/",
+      "kinds": ["models", "rigs", "materials", "tools"],
+      "licensePolicy": "per-product-commercial-marketplace",
+      "trust": "conditional",
+      "ingestion": "discovery-only-until-explicit-review"
+    },
+    {
+      "id": "smithsonian-open-access",
+      "name": "Smithsonian Open Access",
+      "url": "https://www.si.edu/openaccess",
+      "kinds": ["models", "scans", "images", "cultural-heritage"],
+      "licensePolicy": "verify-record-rights",
+      "trust": "preferred",
+      "ingestion": "record-level-review"
+    },
+    {
+      "id": "nasa-3d",
+      "name": "NASA 3D Resources",
+      "url": "https://nasa3d.arc.nasa.gov/",
+      "kinds": ["models", "textures", "planetary", "spacecraft"],
+      "licensePolicy": "US-government-media-guidelines",
+      "trust": "preferred",
+      "ingestion": "record-level-review"
+    }
+  ]
+}
