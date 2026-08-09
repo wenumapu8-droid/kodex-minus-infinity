@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "references": [
+    {"id":"ref-01","file":"01-Mapa-de-Flujo-del-C-dex-.png","role":"canonical-composition","families":["flow","field","telemetry","symbol","interface"],"recipe":["journey-field","route-reveal","heart-pulse","waveform","metric-bars"],"rights":"creator-supplied"},
+    {"id":"ref-02","file":"02-55973-1-.jpg","role":"origin-sketch","families":["flow"],"recipe":["journey-field"],"rights":"creator-supplied"},
+    {"id":"ref-03","file":"03-55967.jpg","role":"tool-reference","families":["motion"],"resourceIds":["animejs"],"rights":"reference-only"},
+    {"id":"ref-04","file":"04-55970.jpg","role":"tool-reference","families":["telemetry","visualization"],"resourceIds":["echarts","d3","vega-lite"],"rights":"reference-only"},
+    {"id":"ref-05","file":"05-55968.jpg","role":"tool-reference","families":["motion","interface"],"resourceIds":["motion"],"rights":"reference-only"},
+    {"id":"ref-06","file":"06-55969.jpg","role":"pattern-source","families":["interface","motion"],"resourceIds":["animejs","motion"],"rights":"reference-only"},
+    {"id":"ref-07","file":"07-55971.jpg","role":"closed-service-reference","families":["editorial"],"resourceIds":[],"rights":"reference-only","note":"Manus is not a required runtime or open asset source."},
+    {"id":"ref-08","file":"08-55694.png","role":"creature-asset-direction","families":["object","editorial"],"resourceIds":["smithsonian-oa","nih-3d","model-viewer","gltf-transform"],"rights":"reference-only"},
+    {"id":"ref-09","file":"09-55642.png","role":"canonical-poster","families":["field","telemetry","editorial"],"recipe":["flow-field","waveform","radial-scanner","metric-bars"],"rights":"creator-supplied"},
+    {"id":"ref-10","file":"10-55488.png","role":"toroidal-diagram-direction","families":["field","object","symbol"],"recipe":["toroidal-field","asset-slot","glyph-ring"],"rights":"reference-only"},
+    {"id":"ref-11","file":"11-55411.png","role":"canonical-system-board","families":["symbol","telemetry","editorial"],"recipe":["glyph-ring","metric-bars","waveform"],"rights":"creator-supplied"},
+    {"id":"ref-12","file":"12-55725.png","role":"deity-object-direction","families":["object","editorial"],"resourceIds":["smithsonian-oa","met-open-access","sketchfab"],"rights":"reference-only"},
+    {"id":"ref-13","file":"13-55063-1-.jpg","role":"editorial-collage-direction","families":["editorial","interface","motion","audio"],"resourceIds":["pixijs","animejs","wavesurfer","tonejs","lottie-web"],"rights":"reference-only"},
+    {"id":"ref-14","file":"14-55829-1-.jpg","role":"radial-information-direction","families":["taxonomy","flow"],"resourceIds":["d3","echarts","rawgraphs"],"rights":"reference-only"},
+    {"id":"ref-15","file":"15-55817-1-.jpg","role":"numeric-portrait-direction","families":["portrait"],"resourceIds":["d3","p5js","ptsjs"],"rights":"reference-only"},
+    {"id":"ref-16","file":"16-55823-1-.jpg","role":"stratigraphy-direction","families":["strata"],"resourceIds":["d3","paperjs"],"rights":"reference-only"}
+  ]
+}
