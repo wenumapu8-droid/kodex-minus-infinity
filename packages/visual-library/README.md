@@ -47,6 +47,22 @@ asset slots, and safety policy. See `docs/COVERAGE-MATRIX.md`.
 - `toroidal-field`: energy and magnetic-field compositions.
 - `glyph-ring`: procedural portal and symbol scaffolding.
 
+## Symbolic telemetry
+
+Every primitive that shows a figure takes `simbolico`, default `true`. A symbolic
+mark carries `data-symbolic="true"` and `role="img"` with an `aria-label` that
+says it is a plate marking, never `role="meter"`/`aria-valuenow`. The numbers on
+the reference plates are poster fiction and
+`ops/factory/VISUAL_PASSPORT_PROTOCOL.md` ("No pseudo-telemetry") forbids
+presenting them as system state.
+
+Pass `simbolico: false` only when the value comes from a real engine
+measurement; that is the one case where the ARIA measurement roles are emitted.
+`data-portrait` has no such switch — its digits are texture, never a readout.
+
+`tests/symbolic-telemetry.test.mjs` locks this contract with a dependency-free
+DOM stub (`tests/dom-stub.mjs`).
+
 ## Asset policy
 
 External files are never accepted from search results alone. Every asset needs

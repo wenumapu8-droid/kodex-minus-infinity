@@ -12,13 +12,51 @@ export function createSvg(viewBox = "0 0 1000 600", label = "KODEX visualization
   return svg;
 }
 
-export function signalGauge({ value = 72, label = "SIGNAL", max = 100 } = {}) {
+// Value-bearing primitives are assembled node by node instead of through
+// innerHTML: a caller-supplied label must never be able to inject the very ARIA
+// roles this module is careful not to emit.
+function box(tag, { className, text, attrs = {}, vars = {} } = {}) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined) node.textContent = String(text);
+  for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, String(value));
+  for (const [key, value] of Object.entries(vars)) node.style.setProperty(key, String(value));
+  return node;
+}
+
+/**
+ * VISUAL_PASSPORT_PROTOCOL "No pseudo-telemetry": the numbers on the reference
+ * plates are poster fiction. A symbolic mark must never tell a screen reader it
+ * is a measurement, so it carries data-symbolic="true" and role="img" instead of
+ * role="meter"/aria-valuenow. Only pass simbolico:false when the value really
+ * comes from an engine measurement — that is the single case where the ARIA
+ * measurement roles are admitted.
+ */
+export function applyValueSemantics(node, { simbolico = true, label = "VALUE", value = 0, min = 0, max = 100 } = {}) {
+  if (simbolico) {
+    node.setAttribute("data-symbolic", "true");
+    node.setAttribute("role", "img");
+    node.setAttribute("aria-label", `${label}: symbolic plate marking, not a system measurement`);
+    for (const attr of ["aria-valuemin", "aria-valuemax", "aria-valuenow", "aria-valuetext"]) node.removeAttribute(attr);
+    return node;
+  }
+  node.setAttribute("data-symbolic", "false");
+  node.setAttribute("role", "meter");
+  node.setAttribute("aria-label", String(label));
+  node.setAttribute("aria-valuemin", String(min));
+  node.setAttribute("aria-valuemax", String(max));
+  node.setAttribute("aria-valuenow", String(value));
+  return node;
+}
+
+export function signalGauge({ value = 72, label = "SIGNAL", max = 100, simbolico = true } = {}) {
   const root = document.createElement("figure");
   root.className = "kx-gauge";
   const safe = Math.max(0, Math.min(max, Number(value) || 0));
-  root.innerHTML = `<div class="kx-gauge__ring" style="--value:${safe / max}"
-    role="meter" aria-valuemin="0" aria-valuemax="${max}" aria-valuenow="${safe}">
-    <span>${safe.toFixed(0)}</span></div><figcaption>${label}</figcaption>`;
+  const ring = box("div", { className: "kx-gauge__ring", vars: { "--value": safe / max } });
+  ring.append(box("span", { text: safe.toFixed(0), attrs: { "aria-hidden": "true" } }));
+  applyValueSemantics(ring, { simbolico, label, value: safe, max });
+  root.append(ring, box("figcaption", { text: label }));
   return root;
 }
 
@@ -57,14 +95,23 @@ export function assetSlot({ kind = "GLB / PNG / SVG", label = "ASSET SLOT" } = {
   return root;
 }
 
-export function metricBars({ metrics = [] } = {}) {
+export function metricBars({ metrics = [], simbolico = true } = {}) {
   const root = document.createElement("div");
   root.className = "kx-metrics";
+  root.setAttribute("data-symbolic", simbolico ? "true" : "false");
+  root.setAttribute("role", "group");
+  root.setAttribute("aria-label", simbolico
+    ? "Symbolic plate markings, not system measurements"
+    : "Measured metrics");
   for (const metric of metrics) {
     const value = Math.max(0, Math.min(100, Number(metric.value) || 0));
-    const row = document.createElement("div");
-    row.className = "kx-metric";
-    row.innerHTML = `<span>${metric.label}</span><i style="--value:${value}%"></i><b>${value.toFixed(1)}%</b>`;
+    const row = box("div", { className: "kx-metric" });
+    row.append(
+      box("span", { text: metric.label, attrs: { "aria-hidden": "true" } }),
+      box("i", { vars: { "--value": `${value}%` } }),
+      box("b", { text: `${value.toFixed(1)}%`, attrs: { "aria-hidden": "true" } })
+    );
+    applyValueSemantics(row, { simbolico, label: metric.label ?? "METRIC", value });
     root.append(row);
   }
   return root;
@@ -101,6 +148,11 @@ export function radialTaxonomy({ groups = 7, items = 42, seed = 18 } = {}) {
 export function dataPortrait({ columns = 22, rows = 34, seed = 9 } = {}) {
   const root = document.createElement("div");
   root.className = "kx-data-portrait";
+  // The digits are texture that imitates the plate's stain. They are never a
+  // readout, so there is no simbolico:false path here.
+  root.setAttribute("data-symbolic", "true");
+  root.setAttribute("role", "img");
+  root.setAttribute("aria-label", "Data portrait: symbolic digit texture, not a data readout");
   root.style.setProperty("--columns", columns);
   let state = seed >>> 0;
   const random = () => ((state = (state * 1103515245 + 12345) >>> 0) / 4294967296);
@@ -168,15 +220,22 @@ export function activityRings({ metrics = [
   { label: "COHERENCE", value: 92 },
   { label: "SIGNAL", value: 71 },
   { label: "MEMORY", value: 48 }
-] } = {}) {
-  const svg = createSvg("0 0 320 320", "Nested KODEX activity rings");
+], simbolico = true } = {}) {
+  const svg = createSvg("0 0 320 320", simbolico
+    ? "Nested activity rings: symbolic plate markings, not system measurements"
+    : "Nested activity rings");
+  svg.setAttribute("data-symbolic", simbolico ? "true" : "false");
+  if (!simbolico) {
+    // role="img" would make the individual meters presentational.
+    svg.setAttribute("role", "group");
+  }
   const g = el("g", { transform: "translate(160 160) rotate(-90)" });
   metrics.slice(0, 4).forEach((metric, index) => {
     const radius = 118 - index * 28;
     const circumference = 2 * Math.PI * radius;
     const value = Math.max(0, Math.min(100, Number(metric.value) || 0));
     g.append(el("circle", { r: radius, class: "kx-ring-track" }));
-    g.append(el("circle", {
+    const ring = el("circle", {
       r: radius,
       class: "kx-ring-value",
       "data-kx-ring": metric.label,
@@ -184,7 +243,9 @@ export function activityRings({ metrics = [
       "stroke-dasharray": circumference,
       "stroke-dashoffset": circumference * (1 - value / 100),
       style: `--ring:${index}`
-    }));
+    });
+    if (!simbolico) applyValueSemantics(ring, { simbolico, label: metric.label ?? "RING", value });
+    g.append(ring);
   });
   svg.append(g);
   return svg;
