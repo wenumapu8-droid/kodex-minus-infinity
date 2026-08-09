@@ -30,3 +30,7 @@ fallback, and whether modification is allowed.
 
 Reference imagery may guide composition but is not copied or redistributed
 unless its exact rights are known.
+
+The machine-readable source policy lives in `assets/source-registry.json`.
+Sources marked `per-asset` never grant approval at platform level: each model
+must carry its own license evidence. “Free download” is not a license.
