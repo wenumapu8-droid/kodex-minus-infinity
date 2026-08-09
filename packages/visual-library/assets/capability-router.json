@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "rule": "Return the smallest viable stack. A match is a candidate, not installation authorization.",
+  "routes": [
+    {"intent":["flow","journey","routes","minus-infinity","heart","plus-infinity"],"families":["flow","field","symbol","telemetry"],"primary":["animejs","svgjs"],"optional":["tsparticles","tonejs"],"recipes":["journey-field","route-reveal","heart-pulse"],"fallback":"static SVG journey map"},
+    {"intent":["vortex","portal","energy-field","cosmic-field"],"families":["field","telemetry"],"primary":["threejs","ogl"],"optional":["lygia","simplex-noise","postprocessing"],"recipes":["flow-field","radial-scanner"],"fallback":"Canvas flow field or WebP poster"},
+    {"intent":["dashboard","hud","telemetry","metrics","signal"],"families":["telemetry","interface"],"primary":["echarts"],"optional":["d3","animejs","chroma-js"],"recipes":["metric-bars","waveform","activity-rings"],"fallback":"semantic HTML plus SVG"},
+    {"intent":["radial","taxonomy","cosmology-map","circular-hierarchy"],"families":["taxonomy","flow"],"primary":["d3"],"optional":["rawgraphs","paperjs"],"recipes":["radial-taxonomy"],"fallback":"SVG radial diagram"},
+    {"intent":["graph","atlas","knowledge-network","constellation"],"families":["flow","taxonomy"],"primary":["cytoscape"],"optional":["sigmajs","force-graph","3d-force-graph"],"recipes":["node-constellation"],"fallback":"static clustered SVG"},
+    {"intent":["numeric-portrait","glyph-portrait","data-formed-image"],"families":["portrait","symbol"],"primary":["d3","ptsjs"],"optional":["pixijs","paperjs"],"recipes":["numeric-portrait"],"fallback":"precomputed SVG glyph portrait"},
+    {"intent":["stratigraphy","topography","geological-layers","memory-layers"],"families":["strata","flow"],"primary":["d3","paperjs"],"optional":["simplex-noise","chroma-js"],"recipes":["stratigraphy"],"fallback":"layered SVG paths"},
+    {"intent":["editorial-collage","story-panel","media-archive"],"families":["editorial","interface","motion"],"primary":["css","animejs"],"optional":["pixijs","wavesurfer","lottie-web"],"recipes":["bento-collage","spotlight-card"],"fallback":"responsive CSS grid"},
+    {"intent":["3d-object","anatomy","creature","artifact","specimen"],"families":["object","editorial"],"primary":["model-viewer"],"optional":["threejs","gltf-transform","meshoptimizer","ktx-software"],"recipes":["asset-slot","specimen-viewer"],"fallback":"licensed poster image"},
+    {"intent":["interactive-character","state-machine","vector-creature"],"families":["object","motion","interface"],"primary":["rive-runtime"],"optional":["lottie-web","animejs"],"recipes":["observer-attractor"],"fallback":"SVG sprite or poster"},
+    {"intent":["public-wall","draw","leave-a-message","commons"],"families":["interface","editorial"],"primary":["fabricjs"],"optional":["svgjs"],"recipes":["commons-wall"],"fallback":"text-only message form"},
+    {"intent":["soundscape","audio-reactive","ceremonial-audio","waveform"],"families":["audio","field","telemetry"],"primary":["tonejs"],"optional":["meyda","wavesurfer","freesound"],"recipes":["audio-field","waveform"],"fallback":"user-triggered HTML audio plus static waveform"},
+    {"intent":["territory","map","planet","geospatial"],"families":["object","flow","taxonomy"],"primary":["maplibre"],"optional":["cesiumjs","deckgl"],"recipes":["territory-field"],"fallback":"GeoJSON-derived SVG map"},
+    {"intent":["streamgraph","convergence","divergence","authored-edges","living-journey"],"families":["flow","field","taxonomy"],"primary":["d3-sankey","animejs"],"optional":["d3","flubber"],"recipes":["journey-streamgraph","edge-memory"],"fallback":"semantic SVG route map"},
+    {"intent":["metaballs","living-portal","membrane","morphogenesis","sdf-organism"],"families":["field","object","motion"],"primary":["shader-park-core","threejs"],"optional":["flubber","simplex-noise"],"recipes":["living-gate","membrane-states"],"fallback":"SVG morph or licensed poster"},
+    {"intent":["bestiary","animal-guide","organism","species","life-silhouette"],"families":["object","taxonomy","editorial"],"primary":["phylopic","model-viewer"],"optional":["smithsonian-oa","nih-3d","threejs"],"recipes":["living-specimen","taxonomy-card"],"fallback":"record-level licensed SVG silhouette"},
+    {"intent":["body-field","anatomical-layer","skeleton","heart-chamber","cranial-axis"],"families":["object","field","telemetry"],"primary":["model-viewer"],"optional":["z-anatomy","bodyparts3d","threejs"],"recipes":["anatomy-layer-viewer","toroidal-field"],"fallback":"attributed anatomical SVG or poster"},
+    {"intent":["contours","isolines","density-field","terrain-memory","morphological-layers"],"families":["strata","field","flow"],"primary":["d3-contour"],"optional":["d3","simplex-noise","paperjs"],"recipes":["living-contours","stratigraphy"],"fallback":"precomputed layered SVG contours"}
+  ]
+}
