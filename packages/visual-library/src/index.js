@@ -5,6 +5,7 @@ export * from "./catalog.js";
 export * from "./resolver.js";
 export * from "./motion.js";
 export * from "./flow-field.js";
+export * from "./render.js";
 
 export const catalog = [
   { id: "signal-gauge", group: "telemetry", formats: ["DOM"] },
