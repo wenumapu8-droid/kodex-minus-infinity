@@ -60,3 +60,10 @@ Every assembly packet must name:
 
 The goal is not to pour every file into one page. The goal is to compose a living
 system in which every visible fragment has a job, a lineage and a fallback.
+
+## Starter corpus v1
+
+Before assembling the first bounded slice, read `assets/collage-starter-corpus-v1.json`.
+It covers all 16 control references exactly once across eight layers and all seven
+canonical scenes. Treat its `productionBytesApproved: 0` value literally: the
+manifest approves jobs and recipes, not automatic publication of source pixels.
