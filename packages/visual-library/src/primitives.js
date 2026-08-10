@@ -136,7 +136,9 @@ export function ringGauge({
     fill: "none",
     "stroke-width": String(thickness)
   });
-  if (rest) g.append(el("circle", { cx: d / 2, cy: d / 2, r: p2(R), stroke: rest, opacity: "0.22", class: "kx-ring-track" }));
+  // Clases propias: .kx-ring-track / .kx-ring-value son de activityRings y
+  // fijan stroke-width en el CSS, que pisaría el grosor pedido acá.
+  if (rest) g.append(el("circle", { cx: d / 2, cy: d / 2, r: p2(R), stroke: rest, opacity: "0.22", class: "kx-ring-gauge__track" }));
 
   // Se acumula el desfase para encadenar los gajos. dashoffset corre en sentido
   // horario negativo, de ahí el signo.
@@ -149,7 +151,7 @@ export function ringGauge({
       stroke: segment.color || "currentColor",
       "stroke-dasharray": `${p2(Math.max(0, long))} ${p2(C)}`,
       "stroke-dashoffset": p2(-C * acc),
-      class: "kx-ring-arc"
+      class: "kx-ring-gauge__arc"
     }));
     acc += frac;
   }
@@ -227,7 +229,9 @@ export function waveform({
 
   if (variant === "line") {
     const d = values.map((v, i) => `${i ? "L" : "M"}${p2(i * step)} ${p2(mid + (v - 0.5) * span)}`).join("");
-    svg.append(el("path", { d, fill: "none", stroke: color, "stroke-width": weight, "stroke-linejoin": "round", class: "kx-signal-line" }));
+    // No lleva .kx-signal-line: esa clase fija stroke-width en el CSS de la
+    // galería y pisaría el grosor medido.
+    svg.append(el("path", { d, fill: "none", stroke: color, "stroke-width": weight, "stroke-linejoin": "round", class: "kx-waveform__line" }));
     return svg;
   }
 
