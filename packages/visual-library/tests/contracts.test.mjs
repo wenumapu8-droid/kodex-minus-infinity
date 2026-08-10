@@ -104,6 +104,15 @@ test("portfolio ingestion contract keeps private sources separate from productio
   assert.equal(data.entryTemplate.visibility, "private-source");
 });
 
+test("collage source index connects all systems and portfolio families", async () => {
+  const data = JSON.parse(await readFile(new URL("../assets/collage-source-index.json", import.meta.url), "utf8"));
+  assert.equal(data.portfolioFamilies.length, 11);
+  assert.ok(["github", "google-drive", "linear", "legacy-imac"].every((system) => data.sources.some((source) => source.system === system)));
+  assert.ok(data.sources.every((source) => source.status && source.agentUse));
+  assert.ok(data.portfolioFamilies.every((family) => family.id && family.driveFolderId && family.status && family.receivers.length));
+  assert.ok(data.linearCrosswalk.some((item) => item.issue === "KOD-37" && item.blocking));
+});
+
 test("capability router returns small stacks with explicit fallbacks", async () => {
   const data = JSON.parse(await readFile(new URL("../assets/capability-router.json", import.meta.url), "utf8"));
   const resourceData = JSON.parse(await readFile(new URL("../assets/resource-catalog.json", import.meta.url), "utf8"));
