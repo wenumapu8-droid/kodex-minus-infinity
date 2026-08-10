@@ -127,3 +127,16 @@ test("capability router returns small stacks with explicit fallbacks", async () 
   }
   assert.ok(data.routes.some((route) => route.intent.includes("public-wall") && route.primary.includes("fabricjs")));
 });
+
+
+test("OCIN BOOK queue is item-level, deterministic, and honest about pending analysis", async () => {
+  const data = JSON.parse(await readFile(new URL("../assets/ocin-book-ingestion-queue.json", import.meta.url), "utf8"));
+  assert.equal(data.truth.totalUsableAssets, 116);
+  assert.equal(data.truth.pendingVisualAnalysis, data.entries.filter((item) => item.status === "PENDING_VISUAL_ANALYSIS").length);
+  assert.equal(new Set(data.entries.map((item) => item.driveFileId)).size, data.entries.length);
+  assert.ok(data.entries.every((item) => item.id && item.sourceName && item.family && item.driveUrl));
+  assert.ok(data.entries.every((item) => item.visibility === "private-source"));
+  assert.ok(data.entries.every((item) => item.epistemicStatus === "NEEDS_CONFIRMATION"));
+  assert.ok(data.entries.every((item) => item.requiredNext.includes("classify NEW/VARIANT/DUPLICATE")));
+  assert.ok(data.safeguards.some((item) => item.includes("do not delete physical files")));
+});
