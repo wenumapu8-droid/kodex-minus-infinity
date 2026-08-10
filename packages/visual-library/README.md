@@ -63,6 +63,15 @@ measurement; that is the one case where the ARIA measurement roles are emitted.
 `tests/symbolic-telemetry.test.mjs` locks this contract with a dependency-free
 DOM stub (`tests/dom-stub.mjs`).
 
+## Palette conflict (open)
+
+`src/tokens.css` (`--kx-*`) matches neither `design-system/tokens/kodex.tokens.css`
+(`--kdx-*`) nor the measured plate accents (`--lam-*`). Three systems, no shared
+source of truth. `docs/PALETTE-RECONCILIATION.md` lays them side by side, gives
+the exact deltas, and proposes a mapping — it does **not** pick a winner, which
+is a canon decision. Only the one lossless alias is live in `tokens.css`; the
+rest sit there as commented proposals.
+
 ## Asset policy
 
 External files are never accepted from search results alone. Every asset needs

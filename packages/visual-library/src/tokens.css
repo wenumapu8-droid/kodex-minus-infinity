@@ -1,24 +1,49 @@
+/**
+ * ATLAS TOKENS — third palette, unreconciled.
+ *
+ * These `--kx-*` values match neither `design-system/tokens/kodex.tokens.css`
+ * (`--kdx-*`) nor the measured plate accents in the site repo (`--lam-*`).
+ * The conflict, the exact deltas and a proposed mapping are written up in
+ * `docs/PALETTE-RECONCILIATION.md`.
+ *
+ * Which palette is canonical is a canon decision and belongs to the creator.
+ * So only the ONE lossless alias is live below (`--kx-radius`, 2px → 2px).
+ * Every other mapping is a commented proposal: enabling one changes pixels.
+ * Each alias keeps its current literal as a `var()` fallback, because the
+ * gallery loads this file standalone, without `kodex.tokens.css`.
+ */
 :root {
-  --kx-void: #050407;
-  --kx-surface: #0d0a12;
-  --kx-ink: #eeeaf2;
-  --kx-muted: #8f8797;
-  --kx-signal: #a95cff;
-  --kx-signal-hot: #e6bdff;
-  --kx-warning: #d9b82f;
+  --kx-void: #050407;                 /* proposed: var(--kdx-field-obsidian, #050407) — drops the violet tint */
+  --kx-surface: #0d0a12;              /* gap: no elevated-surface token exists in --kdx-* */
+  --kx-ink: #eeeaf2;                  /* proposed: var(--kdx-field-bone, #eeeaf2) — cool white becomes warm bone */
+  --kx-muted: #8f8797;                /* proposed: var(--kdx-text-muted-on-dark, #8f8797) */
+  --kx-signal: #a95cff;               /* proposed: var(--kdx-signal-violet, #a95cff) — hue shift, darker */
+  --kx-signal-hot: #e6bdff;           /* gap: --kdx-* has no tint scale */
+  --kx-warning: #d9b82f;              /* gap: canon has no warning role; orange means machine/rupture, not warning */
+  --kx-glyph: #787a77;                /* measured on the plates (neutral gray, never the accent); no --kdx-* counterpart */
   --kx-line: color-mix(in srgb, var(--kx-ink) 24%, transparent);
-  --kx-grid: 24px;
-  --kx-radius: 2px;
+  --kx-grid: 24px;                    /* proposed: var(--kdx-space-6, 24px) — equal only at a 16px root */
+  --kx-radius: var(--kdx-radius-micro, 2px);  /* lossless alias: 2px === 2px */
   --kx-mono: "IBM Plex Mono", "Space Mono", ui-monospace, monospace;
   --kx-serif: "Cormorant Garamond", Georgia, serif;
-  --kx-duration-fast: 180ms;
-  --kx-duration-slow: 1200ms;
+  --kx-duration-fast: 180ms;          /* proposed: var(--kdx-duration-short, 180ms) — 180ms becomes 240ms */
+  --kx-duration-slow: 1200ms;         /* proposed: var(--kdx-duration-long, 1200ms) — 1200ms becomes 1600ms */
 }
 
-[data-kx-palette="gaia"] { --kx-signal: #73d69b; --kx-signal-hot: #e0ffd8; }
-[data-kx-palette="solar"] { --kx-signal: #d9b82f; --kx-signal-hot: #fff0a6; }
-[data-kx-palette="blood"] { --kx-signal: #d82238; --kx-signal-hot: #ff8b8b; }
+/**
+ * The palette names below are an invented taxonomy: "gaia", "solar" and "blood"
+ * appear nowhere in the canon, and "violet" is a canonical ROLE (observation,
+ * memory, ambiguity), not a theme id. `--kdx-signal-cyan` and
+ * `--kdx-signal-magenta` are unreachable from here. See the reconciliation doc.
+ */
+[data-kx-palette="gaia"] { --kx-signal: #73d69b; --kx-signal-hot: #e0ffd8; }   /* proposed: --kdx-signal-acid #b9ff3b */
+[data-kx-palette="solar"] { --kx-signal: #d9b82f; --kx-signal-hot: #fff0a6; }  /* proposed: --kdx-signal-orange #ff7a00 */
+[data-kx-palette="blood"] { --kx-signal: #d82238; --kx-signal-hot: #ff8b8b; }  /* proposed: --kdx-signal-red #ff3833 */
 
+/**
+ * Note: this zeroes motion outright, while --kdx-* keeps 80–160ms under the
+ * same query. Adopting the duration aliases above also adopts that policy.
+ */
 @media (prefers-reduced-motion: reduce) {
   :root { --kx-duration-fast: 0ms; --kx-duration-slow: 0ms; }
 }
