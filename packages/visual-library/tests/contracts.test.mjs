@@ -140,3 +140,17 @@ test("OCIN BOOK queue is item-level, deterministic, and honest about pending ana
   assert.ok(data.entries.every((item) => item.requiredNext.includes("classify NEW/VARIANT/DUPLICATE")));
   assert.ok(data.safeguards.some((item) => item.includes("do not delete physical files")));
 });
+
+
+test("starter corpus covers every control reference exactly once without approving source pixels", async () => {
+  const corpus = JSON.parse(await readFile(new URL("../assets/collage-starter-corpus-v1.json", import.meta.url), "utf8"));
+  const refs = JSON.parse(await readFile(new URL("../assets/reference-map.json", import.meta.url), "utf8"));
+  const sourceIds = corpus.layers.flatMap((layer) => layer.sourceIds);
+  assert.equal(corpus.layers.length, 8);
+  assert.equal(sourceIds.length, 16);
+  assert.equal(new Set(sourceIds).size, 16);
+  assert.deepEqual(new Set(sourceIds), new Set(refs.references.map((item) => item.id)));
+  assert.equal(corpus.truth.productionBytesApproved, 0);
+  assert.ok(["THRESHOLD", "PROLOGUE", "DESCENT", "ARCHIVE", "MACHINE", "COSMOLOGY", "RETURN"].every((scene) => corpus.canonicalScenes.includes(scene)));
+  assert.ok(corpus.layers.every((layer) => layer.stack.length && layer.fallback && layer.acceptance.length));
+});
