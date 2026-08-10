@@ -1,0 +1,27 @@
+{
+  "id": "return",
+  "index": 6,
+  "title": "RETURN",
+  "route": "/kodex/#return",
+  "verb": "REMEMBER",
+  "accent": "#E8E5DF",
+  "heroModule": "root-lattice",
+  "fallback": "return-static.svg",
+  "states": [
+    "gathering",
+    "integrating",
+    "remembered"
+  ],
+  "primaryAction": "RETURN WITH MEMORY",
+  "completionEvent": "JOURNEY_COMPLETE",
+  "memoryWrites": [
+    "visited.return",
+    "journey.completed",
+    "artifact.finalized"
+  ],
+  "performance": {
+    "full": 4,
+    "balanced": 2,
+    "lowPower": 1
+  }
+}

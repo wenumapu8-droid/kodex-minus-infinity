@@ -1,0 +1,28 @@
+{
+  "id": "archive",
+  "index": 3,
+  "title": "ARCHIVE",
+  "route": "/kodex/#archive",
+  "verb": "OPEN",
+  "accent": "#A7FF00",
+  "heroModule": "archive-bloom",
+  "fallback": "archive-static.svg",
+  "states": [
+    "closed",
+    "indexing",
+    "open",
+    "recording"
+  ],
+  "primaryAction": "OPEN ARCHIVE",
+  "completionEvent": "ARCHIVE_OPENED",
+  "memoryWrites": [
+    "visited.archive",
+    "archive.openedRecords",
+    "archive.lastRecord"
+  ],
+  "performance": {
+    "full": 4,
+    "balanced": 2,
+    "lowPower": 1
+  }
+}

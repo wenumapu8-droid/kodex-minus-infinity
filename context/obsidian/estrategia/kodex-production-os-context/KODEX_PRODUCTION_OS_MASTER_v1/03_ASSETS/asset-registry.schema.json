@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KODEX Asset Registry",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "type",
+      "path",
+      "license",
+      "origin",
+      "allowedScenes"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "type": {
+        "enum": [
+          "svg",
+          "png",
+          "webp",
+          "video",
+          "audio",
+          "font",
+          "shader",
+          "code",
+          "texture"
+        ]
+      },
+      "path": {
+        "type": "string"
+      },
+      "license": {
+        "type": "string"
+      },
+      "origin": {
+        "enum": [
+          "KODEX-ORIGINAL",
+          "COMMISSIONED",
+          "THIRD-PARTY",
+          "CULTURAL-REVIEW"
+        ]
+      },
+      "creator": {
+        "type": "string"
+      },
+      "sourceUrl": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "allowedScenes": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "commercialUse": {
+        "type": "boolean"
+      },
+      "redistributable": {
+        "type": "boolean"
+      },
+      "attribution": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "notes": {
+        "type": "string"
+      }
+    }
+  }
+}

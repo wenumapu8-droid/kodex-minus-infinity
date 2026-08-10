@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KODEX Archive Record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "recordType",
+    "status",
+    "origin",
+    "createdAt"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^KDX-[A-Z]+-[0-9]{3,}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "recordType": {
+      "enum": [
+        "OBJECT",
+        "CONSTELLATION",
+        "SIGNAL",
+        "SPECIMEN",
+        "CHAPTER",
+        "SESSION"
+      ]
+    },
+    "status": {
+      "enum": [
+        "LATENT",
+        "DETECTED",
+        "MAPPED",
+        "FORGED",
+        "CARRIED",
+        "RETURNED",
+        "REPAIRED",
+        "ARCHIVED",
+        "TRANSMITTED"
+      ]
+    },
+    "origin": {
+      "type": "string"
+    },
+    "maker": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "material": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "edition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ownerPrivateId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relatedRecords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "careProtocol": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

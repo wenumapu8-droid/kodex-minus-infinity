@@ -1,0 +1,220 @@
+{
+  "product": "KODEX Impossible Forms — Vol. 1",
+  "version": "1.0.0",
+  "created": "2026-08-02",
+  "original_assets_only": true,
+  "external_assets_included": false,
+  "font_files_included": false,
+  "loop_spec": {
+    "resolution": "320x320",
+    "frames": 18,
+    "fps": 18,
+    "duration_seconds": 1.0
+  },
+  "forms": [
+    {
+      "id": "transmutation-cube",
+      "title": "Transmutation Cube",
+      "subtitle": "12 edges unravel into living metallic strands",
+      "accent": "#E9E0D2",
+      "secondary": "#8F55FF",
+      "family": "architectural",
+      "kind": "cube",
+      "index": 1,
+      "tags": [
+        "architectural",
+        "cube",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "mobius-weave",
+      "title": "Möbius Weave",
+      "subtitle": "A one-sided ribbon rebuilt as braided filaments",
+      "accent": "#00E8F0",
+      "secondary": "#B95CFF",
+      "family": "topological",
+      "kind": "mobius",
+      "index": 2,
+      "tags": [
+        "topological",
+        "mobius",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "torus-knot-reactor",
+      "title": "Torus Knot Reactor",
+      "subtitle": "Nested knot frequencies orbit a luminous core",
+      "accent": "#FF1EAA",
+      "secondary": "#5B7CFF",
+      "family": "topological",
+      "kind": "torus",
+      "index": 3,
+      "tags": [
+        "topological",
+        "torus",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "hypercube-threads",
+      "title": "Hypercube Threads",
+      "subtitle": "A rotating 4D tesseract projected through signal fibers",
+      "accent": "#FF1744",
+      "secondary": "#F5F2EA",
+      "family": "mathematical",
+      "kind": "hypercube",
+      "index": 4,
+      "tags": [
+        "mathematical",
+        "hypercube",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "chrysalis-spiral",
+      "title": "Chrysalis Spiral",
+      "subtitle": "Organic ribs curl around a changing central spine",
+      "accent": "#DCCEFF",
+      "secondary": "#7F4DFF",
+      "family": "organic",
+      "kind": "chrysalis",
+      "index": 5,
+      "tags": [
+        "organic",
+        "chrysalis",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "serpent-lattice",
+      "title": "Serpent Lattice",
+      "subtitle": "Two living tubes exchange structure along a double helix",
+      "accent": "#B9FF3B",
+      "secondary": "#00E8F0",
+      "family": "organic",
+      "kind": "serpent",
+      "index": 6,
+      "tags": [
+        "organic",
+        "serpent",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "orbital-cocoon",
+      "title": "Orbital Cocoon",
+      "subtitle": "Warped latitudes and longitudes breathe as one shell",
+      "accent": "#FF7A00",
+      "secondary": "#FF1EAA",
+      "family": "cosmological",
+      "kind": "cocoon",
+      "index": 7,
+      "tags": [
+        "cosmological",
+        "cocoon",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "fracture-crown",
+      "title": "Fracture Crown",
+      "subtitle": "Crystalline blades split, fold and recover symmetry",
+      "accent": "#F5F2EA",
+      "secondary": "#FF1744",
+      "family": "ritual",
+      "kind": "crown",
+      "index": 8,
+      "tags": [
+        "ritual",
+        "crown",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "resonance-spine",
+      "title": "Resonance Spine",
+      "subtitle": "Vertebrae travel through an impossible articulated body",
+      "accent": "#00E8F0",
+      "secondary": "#F5F2EA",
+      "family": "organic",
+      "kind": "spine",
+      "index": 9,
+      "tags": [
+        "organic",
+        "spine",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "impossible-flower",
+      "title": "Impossible Flower",
+      "subtitle": "Twisted petals rotate through themselves without collision",
+      "accent": "#FF1EAA",
+      "secondary": "#F5F2EA",
+      "family": "ritual",
+      "kind": "flower",
+      "index": 10,
+      "tags": [
+        "ritual",
+        "flower",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "archive-vortex",
+      "title": "Archive Vortex",
+      "subtitle": "Nested polygonal gates descend into a memory tunnel",
+      "accent": "#FF1744",
+      "secondary": "#8F55FF",
+      "family": "architectural",
+      "kind": "vortex",
+      "index": 11,
+      "tags": [
+        "architectural",
+        "vortex",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    },
+    {
+      "id": "mirror-organism",
+      "title": "Mirror Organism",
+      "subtitle": "Bilateral knot-lobes mutate while preserving a hidden axis",
+      "accent": "#B9FF3B",
+      "secondary": "#5B7CFF",
+      "family": "organic",
+      "kind": "mirror",
+      "index": 12,
+      "tags": [
+        "organic",
+        "mirror",
+        "procedural",
+        "loop",
+        "generative"
+      ]
+    }
+  ]
+}

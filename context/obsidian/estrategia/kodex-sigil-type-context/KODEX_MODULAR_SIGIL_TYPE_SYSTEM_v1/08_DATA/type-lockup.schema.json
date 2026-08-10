@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KODEX Modular Sigil Lockup",
+  "type": "object",
+  "required": [
+    "text",
+    "style"
+  ],
+  "properties": {
+    "text": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "style": {
+      "enum": [
+        "block",
+        "ritual",
+        "signal",
+        "outline"
+      ]
+    },
+    "displayFont": {
+      "enum": [
+        "Oxanium",
+        "Chakra Petch",
+        "Geist",
+        "Orbitron",
+        "KDX Sigil Grid"
+      ]
+    },
+    "interfaceFont": {
+      "enum": [
+        "Geist Mono",
+        "IBM Plex Mono"
+      ]
+    },
+    "accent": {
+      "enum": [
+        "none",
+        "cyan",
+        "violet",
+        "bronze",
+        "acid-muted"
+      ]
+    },
+    "preset": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KODEX Quiet Frame",
+  "type": "object",
+  "required": ["id", "preset", "variant", "archiveId", "label"],
+  "properties": {
+    "id": {"type": "string"},
+    "preset": {"type": "string"},
+    "variant": {"enum": ["image", "symbol", "material", "field-note", "threshold", "constellation"]},
+    "image": {"type": ["string", "null"]},
+    "alt": {"type": "string"},
+    "archiveId": {"type": "string"},
+    "label": {"type": "string"},
+    "status": {"type": "string"},
+    "node": {"type": "string"},
+    "origin": {"type": "string"},
+    "accent": {"enum": ["none", "cyan", "violet", "bronze"]},
+    "geometry": {"enum": ["steps", "brackets", "axis", "bars", "open-frame"]},
+    "align": {"enum": ["left", "center", "right"]},
+    "ratio": {"enum": ["1:1", "4:5", "3:4", "16:9", "2:3"]},
+    "motion": {"enum": ["none", "fade", "mask-reveal", "drift", "scan", "micro-flicker"]},
+    "sceneBefore": {"type": ["string", "null"]},
+    "sceneAfter": {"type": ["string", "null"]},
+    "narrativeFunction": {"type": "string"}
+  }
+}

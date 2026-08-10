@@ -1,0 +1,52 @@
+{
+  "brand": {
+    "name": "Wenu Mapu",
+    "role": "Contemporary ritual adornment house",
+    "core_belief": "The body is sacred territory.",
+    "promise": "Every piece becomes a coordinate in the body’s constellation."
+  },
+  "systems": {
+    "adornment": "What you carry",
+    "wultufe": "What you become",
+    "kodex": "What the archive remembers",
+    "almanac": "What the house knows",
+    "first_circle": "Who carries the signal",
+    "atelier": "How the object is made",
+    "oracle": "Where the journey begins"
+  },
+  "protocol": [
+    "READ",
+    "MAP",
+    "FORGE",
+    "MARK",
+    "REMEMBER"
+  ],
+  "product_tiers": [
+    "FOUNDATIONS",
+    "CONSTELLATIONS",
+    "RELICS",
+    "ONE OF ONE"
+  ],
+  "content_mix": {
+    "signal": 35,
+    "belief": 25,
+    "proof": 20,
+    "world": 15,
+    "action": 5
+  },
+  "community_ranks": [
+    "WITNESS",
+    "CARRIER",
+    "CARTOGRAPHER",
+    "ARCHIVIST",
+    "KEEPER"
+  ],
+  "cultural_classes": [
+    "MAPUCHE-DERIVED",
+    "CONTEMPORARY INTERPRETATION",
+    "KODEX-ORIGINAL",
+    "RESTRICTED",
+    "COLLABORATIVE",
+    "UNVERIFIED"
+  ]
+}

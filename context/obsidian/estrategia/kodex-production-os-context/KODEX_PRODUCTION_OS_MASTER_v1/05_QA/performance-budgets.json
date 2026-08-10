@@ -1,0 +1,33 @@
+{
+  "global": {
+    "lcpMs": 2500,
+    "inpMs": 200,
+    "cls": 0.1,
+    "jsInitialKbGzip": 180,
+    "imageHeroKb": 600,
+    "audioInitialKb": 0
+  },
+  "profiles": {
+    "full": {
+      "targetFps": 55,
+      "dprMax": 1.75,
+      "maxPasses": 5
+    },
+    "balanced": {
+      "targetFps": 30,
+      "dprMax": 1.25,
+      "maxPasses": 3
+    },
+    "low-power": {
+      "targetFps": 24,
+      "dprMax": 1.0,
+      "maxPasses": 1
+    }
+  },
+  "mobile": {
+    "maxActiveCanvases": 1,
+    "maxAnimatedStickers": 3,
+    "maxVideoStreams": 1,
+    "maxLongTasksOver50ms": 2
+  }
+}

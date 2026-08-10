@@ -1,0 +1,23 @@
+{
+  "package": "KODEX_QUIET_FRAMES_CONTEXT_v1",
+  "version": "1.0",
+  "purpose": "Context and code package for silent editorial interludes inside KODEX.",
+  "reference_image_included": true,
+  "files": [
+    "00_START_HERE/README.md",
+    "01_MASTER_CONTEXT/KODEX_QUIET_FRAMES_MASTER_CONTEXT.md",
+    "02_DESIGN_SYSTEM/QUIET_FRAMES_DESIGN_SYSTEM.md",
+    "03_COMPONENTS/astro/KodexQuietFrame.astro",
+    "03_COMPONENTS/scripts/mountQuietFrames.js",
+    "03_COMPONENTS/styles/kodex-quiet-frames.css",
+    "04_PRESETS/quiet-frames-presets.json",
+    "05_AGENT_PROMPTS/MASTER_IMPLEMENTATION_PROMPT.md",
+    "05_AGENT_PROMPTS/QUIET_FRAME_CONTENT_PROMPT.md",
+    "06_EXAMPLES/archive-fragment-example.astro",
+    "06_EXAMPLES/symbol-breath-example.astro",
+    "07_REFERENCE/reference-player-minimal.jpg",
+    "08_DATA/quiet-frame.schema.json",
+    "08_DATA/sample-quiet-frames.json",
+    "09_QA/QA_CHECKLIST.md"
+  ]
+}

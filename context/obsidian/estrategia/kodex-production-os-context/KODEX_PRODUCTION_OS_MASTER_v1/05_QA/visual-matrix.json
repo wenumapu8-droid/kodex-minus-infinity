@@ -1,0 +1,72 @@
+{
+  "viewports": [
+    {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-412",
+      "width": 412,
+      "height": 915
+    },
+    {
+      "name": "mobile-430",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-1920",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "states": {
+    "threshold": [
+      "latent",
+      "granted"
+    ],
+    "observe": [
+      "idle",
+      "aware",
+      "locked",
+      "observing"
+    ],
+    "descent": [
+      "surface",
+      "below"
+    ],
+    "archive": [
+      "closed",
+      "open"
+    ],
+    "machine": [
+      "idle",
+      "resolved"
+    ],
+    "cosmology": [
+      "isolated",
+      "aligned"
+    ],
+    "return": [
+      "gathering",
+      "remembered"
+    ]
+  },
+  "modes": [
+    "default",
+    "reduced-motion",
+    "fallback",
+    "low-power"
+  ]
+}

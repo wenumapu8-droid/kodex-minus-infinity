@@ -1,0 +1,13 @@
+id,title,subtitle,family,kind,accent,secondary,tags
+transmutation-cube,Transmutation Cube,12 edges unravel into living metallic strands,architectural,cube,#E9E0D2,#8F55FF,"architectural, cube, procedural, loop, generative"
+mobius-weave,Möbius Weave,A one-sided ribbon rebuilt as braided filaments,topological,mobius,#00E8F0,#B95CFF,"topological, mobius, procedural, loop, generative"
+torus-knot-reactor,Torus Knot Reactor,Nested knot frequencies orbit a luminous core,topological,torus,#FF1EAA,#5B7CFF,"topological, torus, procedural, loop, generative"
+hypercube-threads,Hypercube Threads,A rotating 4D tesseract projected through signal fibers,mathematical,hypercube,#FF1744,#F5F2EA,"mathematical, hypercube, procedural, loop, generative"
+chrysalis-spiral,Chrysalis Spiral,Organic ribs curl around a changing central spine,organic,chrysalis,#DCCEFF,#7F4DFF,"organic, chrysalis, procedural, loop, generative"
+serpent-lattice,Serpent Lattice,Two living tubes exchange structure along a double helix,organic,serpent,#B9FF3B,#00E8F0,"organic, serpent, procedural, loop, generative"
+orbital-cocoon,Orbital Cocoon,Warped latitudes and longitudes breathe as one shell,cosmological,cocoon,#FF7A00,#FF1EAA,"cosmological, cocoon, procedural, loop, generative"
+fracture-crown,Fracture Crown,"Crystalline blades split, fold and recover symmetry",ritual,crown,#F5F2EA,#FF1744,"ritual, crown, procedural, loop, generative"
+resonance-spine,Resonance Spine,Vertebrae travel through an impossible articulated body,organic,spine,#00E8F0,#F5F2EA,"organic, spine, procedural, loop, generative"
+impossible-flower,Impossible Flower,Twisted petals rotate through themselves without collision,ritual,flower,#FF1EAA,#F5F2EA,"ritual, flower, procedural, loop, generative"
+archive-vortex,Archive Vortex,Nested polygonal gates descend into a memory tunnel,architectural,vortex,#FF1744,#8F55FF,"architectural, vortex, procedural, loop, generative"
+mirror-organism,Mirror Organism,Bilateral knot-lobes mutate while preserving a hidden axis,organic,mirror,#B9FF3B,#5B7CFF,"organic, mirror, procedural, loop, generative"

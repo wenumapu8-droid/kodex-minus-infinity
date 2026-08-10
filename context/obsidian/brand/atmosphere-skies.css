@@ -1,0 +1,197 @@
+/* =====================================================================
+   WENU MAPU — ATMÓSFERA "CIELO VIVO" (gradientes tiempo-del-día)
+   Ref: brand guidelines Dawn/Day/Dusk/Evening (inspiración, no copia).
+   Estado: PROPUESTA — listo para aplicar. NO deployar sin ventana.
+   Fecha: 2026-07-02
+
+   PRINCIPIO RECTOR
+   ----------------
+   Los gradientes son ATMÓSFERA (fondo de página / hero / portal / secciones).
+   NO reemplazan la paleta canónica de marca: obsidian / bone / ember
+   siguen siendo los tokens de TEXTO y UI. El texto nunca se apoya
+   directo sobre un gradiente de tonalidad media — va sobre superficie
+   de marca (--surface) o bajo un scrim de legibilidad.
+
+   REVERSIBILIDAD (regla #1)
+   -------------------------
+   TODO acá está scopeado bajo [data-theme="..."]. Con el flag del sistema
+   de temas APAGADO (sin atributo data-theme en <html>), ninguna de estas
+   reglas matchea → el sitio queda byte-idéntico. Este archivo es aditivo:
+   no redefine ningún token de marca existente, solo agrega --sky-* y
+   --atmosphere-*, y utilidades opt-in por clase.
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   1. PALETA DE CIELOS  (tokens crudos, disponibles en cualquier tema)
+   Gradientes verticales: cenit arriba → horizonte abajo.
+   --------------------------------------------------------------------- */
+:root {
+  /* EVENING — noche que se entibia hacia el horizonte (negro → cálido tenue) */
+  --sky-evening: linear-gradient(
+    180deg,
+    #111111 0%,
+    #1a1416 35%,
+    #271f2f 70%,
+    #452e30 100%
+  );
+
+  /* DAY — cielo pálido de día (celeste claro → dorado pálido) */
+  --sky-day: linear-gradient(
+    180deg,
+    #c8d3ef 0%,
+    #dce6f2 45%,
+    #fbe7c0 82%,
+    #ffd990 100%
+  );
+
+  /* DUSK — atardecer chileno canónico (púrpura profundo → ember-naranja) */
+  --sky-dusk: linear-gradient(
+    180deg,
+    #2b2140 0%,
+    #865ab4 40%,
+    #c1502e 78%,
+    #e4631d 100%
+  );
+
+  /* DAWN — variante alterna documentada (predawn azul → durazno) */
+  --sky-dawn: linear-gradient(
+    180deg,
+    #0b3a5e 0%,
+    #008ed9 42%,
+    #79c1e5 72%,
+    #fdc492 100%
+  );
+}
+
+
+/* ---------------------------------------------------------------------
+   2. ASIGNACIÓN POR TEMA
+   Cada tema expone:
+     --atmosphere        gradiente de fondo full-bleed
+     --atmosphere-solid  color plano de respaldo (fallback / detrás de imágenes)
+     --scrim             velo para bloques de texto sobre atmósfera media
+     --scrim-2           velo reforzado (para el peor caso de Dusk)
+   El texto y la UI siguen usando los tokens de marca --fg/--fg-soft/--ember,
+   que YA define cada tema en tokens.css. Acá NO se tocan.
+   --------------------------------------------------------------------- */
+
+/* NOCTURNE (default actual) → EVENING. Texto bone. Atmósfera uniforme oscura:
+   el texto puede ir directo (bone vs stops 9.9–15:1). */
+[data-theme="nocturne"] {
+  --atmosphere: var(--sky-evening);
+  --atmosphere-solid: #111111;
+  --scrim: linear-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.35));
+  --scrim-2: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.6));
+}
+
+/* SOLAR → DAY. Texto obsidian. Atmósfera uniforme clara:
+   el texto puede ir directo (obsidian vs stops 13–16:1). */
+[data-theme="solar"] {
+  --atmosphere: var(--sky-day);
+  --atmosphere-solid: #dce6f2;
+  --scrim: linear-gradient(rgba(236, 229, 213, 0.4), rgba(236, 229, 213, 0.4));
+  --scrim-2: linear-gradient(rgba(236, 229, 213, 0.7), rgba(236, 229, 213, 0.7));
+}
+
+/* ATARDECER → DUSK. Texto bone. ATENCIÓN: gradiente de tonalidad media —
+   el texto NO va directo. Va sobre .surface o bajo --scrim-2. */
+[data-theme="atardecer"] {
+  --atmosphere: var(--sky-dusk);
+  --atmosphere-solid: #2b2140;
+  --scrim: linear-gradient(rgba(10, 10, 10, 0.45), rgba(10, 10, 10, 0.45));
+  --scrim-2: linear-gradient(rgba(10, 10, 10, 0.62), rgba(10, 10, 10, 0.62));
+}
+
+/* Variante opcional: forzar Dawn en Atardecer (ej. franja horaria matinal).
+   Activar agregando data-sky="dawn" junto a data-theme="atardecer". */
+[data-theme="atardecer"][data-sky="dawn"] {
+  --atmosphere: var(--sky-dawn);
+  --atmosphere-solid: #0b3a5e;
+}
+
+
+/* ---------------------------------------------------------------------
+   3. ZONAS DE APLICACIÓN  (utilidades opt-in por clase)
+   --------------------------------------------------------------------- */
+
+/* 3.1 Fondo de página — atmósfera fija, no scrollea (sensación de cielo real).
+       Aplicar en <body> o en el wrapper raíz del layout. */
+.sky-page {
+  background: var(--atmosphere) fixed, var(--atmosphere-solid);
+  background-attachment: fixed;
+}
+
+/* 3.2 Hero / Portal — atmósfera full-strength en el bloque protagonista. */
+.sky-hero,
+.sky-portal {
+  background-image: var(--atmosphere);
+  background-color: var(--atmosphere-solid);
+}
+
+/* 3.3 Sección con atmósfera suave — el gradiente atenuado por un scrim
+       para que respire sin competir con el contenido. */
+.sky-section {
+  background-image: var(--scrim), var(--atmosphere);
+  background-color: var(--atmosphere-solid);
+}
+
+/* 3.4 Bloque de texto sobre atmósfera — GARANTÍA de legibilidad.
+       Úsese cuando haya que poner texto directo sobre el gradiente
+       (sobre todo en Atardecer/Dusk). Aplica el scrim reforzado detrás
+       del contenido; el texto sigue siendo --fg (bone/obsidian del tema). */
+.on-atmosphere {
+  position: relative;
+  isolation: isolate;
+}
+.on-atmosphere::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--scrim-2);
+}
+
+/* 3.5 Superficie de marca — el patrón preferido para tarjetas / paneles
+       de contenido. Reusa el --surface del tema (obsidian o bone).
+       Contraste texto/superficie ~15.8:1 en ambos temas oscuros/claros. */
+.sky-surface {
+  background: var(--surface);
+  color: var(--fg);
+}
+
+
+/* ---------------------------------------------------------------------
+   4. "VENTANAS A LA NOCHE"
+   Imágenes cósmicas / mandala / banners oscuros que en Solar o Atardecer
+   chocarían con un fondo claro/medio. Se las enmarca como una ventana
+   que mira a la noche: fondo obsidian fijo + marco sutil, independiente
+   del tema. La imagen se mantiene oscura, intencional, no "rota".
+   --------------------------------------------------------------------- */
+.night-window {
+  background-color: #0a0a0a; /* obsidian de marca, fijo a propósito */
+  border-radius: var(--radius, 0);
+  box-shadow: inset 0 0 0 1px rgba(236, 229, 213, 0.08),
+    0 8px 40px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+/* En temas claros, un halo mínimo separa la ventana del fondo pálido. */
+[data-theme="solar"] .night-window {
+  box-shadow: inset 0 0 0 1px rgba(10, 10, 10, 0.12),
+    0 8px 40px rgba(10, 10, 10, 0.18);
+}
+
+
+/* ---------------------------------------------------------------------
+   5. TRANSICIONES  (respetando prefers-reduced-motion)
+   Cambios de tema animan la atmósfera suavemente, salvo que el usuario
+   pida menos movimiento.
+   --------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .sky-page,
+  .sky-hero,
+  .sky-portal,
+  .sky-section {
+    transition: background-color 600ms ease, background-image 600ms ease;
+  }
+}

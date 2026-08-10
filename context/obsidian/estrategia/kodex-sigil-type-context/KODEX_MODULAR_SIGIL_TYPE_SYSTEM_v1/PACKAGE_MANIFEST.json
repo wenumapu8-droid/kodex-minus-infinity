@@ -1,0 +1,33 @@
+{
+  "package": "KODEX_MODULAR_SIGIL_TYPE_SYSTEM_v1",
+  "version": "1.0",
+  "core_presets": 8,
+  "mood_presets": 4,
+  "total_presets": 12,
+  "glyphs": 42,
+  "font_binaries_included": false,
+  "files": [
+    "00_START_HERE/README.md",
+    "01_MASTER_CONTEXT/KODEX_TYPE_SYSTEM_MASTER_CONTEXT.md",
+    "02_FONT_STRATEGY/EXTERNAL_FONT_OPTIONS.md",
+    "02_FONT_STRATEGY/TYPE_STACK.md",
+    "03_SIGIL_ENGINE/assets/kdx-symbols.svg",
+    "03_SIGIL_ENGINE/astro/KdxSigilText.astro",
+    "03_SIGIL_ENGINE/scripts/glyph-map.ts",
+    "03_SIGIL_ENGINE/scripts/kdx-sigil-renderer.js",
+    "03_SIGIL_ENGINE/styles/kdx-type-system.css",
+    "04_PRESETS/12-expanded-presets.json",
+    "04_PRESETS/4-mood-presets.json",
+    "04_PRESETS/8-core-presets.json",
+    "05_AGENT_PROMPTS/GLYPH_CONSTRUCTION_PROMPT.md",
+    "05_AGENT_PROMPTS/MASTER_TYPE_IMPLEMENTATION_PROMPT.md",
+    "06_DEMO/index.html",
+    "07_INTEGRATION/astro-lockup-example.astro",
+    "07_INTEGRATION/quiet-frame-type-map.md",
+    "08_DATA/glyph-registry.json",
+    "08_DATA/type-lockup.schema.json",
+    "09_SOURCES/OPEN_FONT_SOURCES.md",
+    "10_QA/QA_CHECKLIST.md",
+    "KODEX_SIGIL_TYPE_PREVIEW.svg"
+  ]
+}

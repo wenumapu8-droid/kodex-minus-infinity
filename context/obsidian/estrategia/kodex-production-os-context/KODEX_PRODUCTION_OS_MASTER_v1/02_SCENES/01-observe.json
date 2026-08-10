@@ -1,0 +1,28 @@
+{
+  "id": "observe",
+  "index": 1,
+  "title": "PROLOGUE / OBSERVE",
+  "route": "/kodex/#observe",
+  "verb": "OBSERVE",
+  "accent": "#8B70FF",
+  "heroModule": "observe-core",
+  "fallback": "observe-crt-fallback.svg",
+  "states": [
+    "idle",
+    "aware",
+    "locked",
+    "observing"
+  ],
+  "primaryAction": "BEGIN OBSERVATION",
+  "completionEvent": "OBSERVATION_COMPLETE",
+  "memoryWrites": [
+    "visited.observe",
+    "signals.observerLock",
+    "metrics.focusPeak"
+  ],
+  "performance": {
+    "full": 5,
+    "balanced": 3,
+    "lowPower": 1
+  }
+}

@@ -1,0 +1,1375 @@
+[
+  {
+    "id": "observe-core",
+    "index": 1,
+    "title": "OBSERVE CORE",
+    "renderer": "orbital",
+    "scene": "01 PROLOGUE",
+    "tags": [
+      "hero",
+      "observer",
+      "stateful"
+    ],
+    "code": "KDX-FX-001",
+    "description": "Observe Core — módulo generativo KODEX para 01 PROLOGUE.",
+    "params": {
+      "rings": 5,
+      "nodes": 8,
+      "radius": 0.28,
+      "twist": 0.35
+    }
+  },
+  {
+    "id": "signal-gate",
+    "index": 2,
+    "title": "SIGNAL GATE",
+    "renderer": "portal",
+    "scene": "00 THRESHOLD",
+    "tags": [
+      "hero",
+      "portal",
+      "transition"
+    ],
+    "code": "KDX-FX-002",
+    "description": "Signal Gate — módulo generativo KODEX para 00 THRESHOLD.",
+    "params": {
+      "rings": 7,
+      "segments": 24,
+      "open": 0.72,
+      "depth": 0.8
+    }
+  },
+  {
+    "id": "orbit-lock",
+    "index": 3,
+    "title": "ORBIT LOCK",
+    "renderer": "orbital",
+    "scene": "01 PROLOGUE",
+    "tags": [
+      "lock",
+      "verification",
+      "hero"
+    ],
+    "code": "KDX-FX-003",
+    "description": "Orbit Lock — módulo generativo KODEX para 01 PROLOGUE.",
+    "params": {
+      "rings": 5,
+      "nodes": 8,
+      "radius": 0.28,
+      "twist": 0.35
+    }
+  },
+  {
+    "id": "archive-bloom",
+    "index": 4,
+    "title": "ARCHIVE BLOOM",
+    "renderer": "pattern",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "growth",
+      "memory",
+      "hero"
+    ],
+    "code": "KDX-FX-004",
+    "description": "Archive Bloom — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "cells": 18,
+      "symmetry": 6,
+      "pulse": 0.6
+    }
+  },
+  {
+    "id": "relic-crosshair",
+    "index": 5,
+    "title": "RELIC CROSSHAIR",
+    "renderer": "telemetry",
+    "scene": "01 PROLOGUE",
+    "tags": [
+      "target",
+      "scan",
+      "micrographic"
+    ],
+    "code": "KDX-FX-005",
+    "description": "Relic Crosshair — módulo generativo KODEX para 01 PROLOGUE.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "memory-engine",
+    "index": 6,
+    "title": "MEMORY ENGINE",
+    "renderer": "network",
+    "scene": "04 MACHINE",
+    "tags": [
+      "hero",
+      "machine",
+      "memory"
+    ],
+    "code": "KDX-FX-006",
+    "description": "Memory Engine — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "nodes": 22,
+      "links": 38,
+      "branch": 0.7
+    }
+  },
+  {
+    "id": "void-embryo",
+    "index": 7,
+    "title": "VOID EMBRYO",
+    "renderer": "organism",
+    "scene": "00 THRESHOLD",
+    "tags": [
+      "seed",
+      "origin",
+      "hero"
+    ],
+    "code": "KDX-FX-007",
+    "description": "Void Embryo — módulo generativo KODEX para 00 THRESHOLD.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "constellation-node",
+    "index": 8,
+    "title": "CONSTELLATION NODE",
+    "renderer": "network",
+    "scene": "05 COSMOLOGY",
+    "tags": [
+      "map",
+      "navigation",
+      "nodes"
+    ],
+    "code": "KDX-FX-008",
+    "description": "Constellation Node — módulo generativo KODEX para 05 COSMOLOGY.",
+    "params": {
+      "nodes": 22,
+      "links": 38,
+      "branch": 0.7
+    }
+  },
+  {
+    "id": "checksum-strip",
+    "index": 9,
+    "title": "CHECKSUM STRIP",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "verification",
+      "footer",
+      "status"
+    ],
+    "code": "KDX-FX-009",
+    "description": "Checksum Strip — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "waveform-spine",
+    "index": 10,
+    "title": "WAVEFORM SPINE",
+    "renderer": "telemetry",
+    "scene": "04 MACHINE",
+    "tags": [
+      "audio",
+      "signal",
+      "spine"
+    ],
+    "code": "KDX-FX-010",
+    "description": "Waveform Spine — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "barcode-pulse",
+    "index": 11,
+    "title": "BARCODE PULSE",
+    "renderer": "telemetry",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "barcode",
+      "identity",
+      "pulse"
+    ],
+    "code": "KDX-FX-011",
+    "description": "Barcode Pulse — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "radar-sweep",
+    "index": 12,
+    "title": "RADAR SWEEP",
+    "renderer": "telemetry",
+    "scene": "01 PROLOGUE",
+    "tags": [
+      "scan",
+      "radar",
+      "aware"
+    ],
+    "code": "KDX-FX-012",
+    "description": "Radar Sweep — módulo generativo KODEX para 01 PROLOGUE.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "scan-bar",
+    "index": 13,
+    "title": "SCAN BAR",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "scan",
+      "reveal",
+      "transition"
+    ],
+    "code": "KDX-FX-013",
+    "description": "Scan Bar — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "telemetry-bars",
+    "index": 14,
+    "title": "TELEMETRY BARS",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "metrics",
+      "bars",
+      "status"
+    ],
+    "code": "KDX-FX-014",
+    "description": "Telemetry Bars — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "node-ring",
+    "index": 15,
+    "title": "NODE RING",
+    "renderer": "orbital",
+    "scene": "GLOBAL",
+    "tags": [
+      "nodes",
+      "loading",
+      "orbit"
+    ],
+    "code": "KDX-FX-015",
+    "description": "Node Ring — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "rings": 5,
+      "nodes": 8,
+      "radius": 0.28,
+      "twist": 0.35
+    }
+  },
+  {
+    "id": "grid-phantom",
+    "index": 16,
+    "title": "GRID PHANTOM",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "background",
+      "grid",
+      "breath"
+    ],
+    "code": "KDX-FX-016",
+    "description": "Grid Phantom — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "glyph-stack",
+    "index": 17,
+    "title": "GLYPH STACK",
+    "renderer": "typography",
+    "scene": "GLOBAL",
+    "tags": [
+      "glyphs",
+      "rail",
+      "system"
+    ],
+    "code": "KDX-FX-017",
+    "description": "Glyph Stack — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "microtype-rail",
+    "index": 18,
+    "title": "MICROTYPE RAIL",
+    "renderer": "typography",
+    "scene": "GLOBAL",
+    "tags": [
+      "microcopy",
+      "rail",
+      "metadata"
+    ],
+    "code": "KDX-FX-018",
+    "description": "Microtype Rail — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "moth-oracle",
+    "index": 19,
+    "title": "MOTH ORACLE",
+    "renderer": "organism",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "insect",
+      "oracle",
+      "hero"
+    ],
+    "code": "KDX-FX-019",
+    "description": "Moth Oracle — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "insect-choir",
+    "index": 20,
+    "title": "INSECT CHOIR",
+    "renderer": "organism",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "insect",
+      "swarm",
+      "ambient"
+    ],
+    "code": "KDX-FX-020",
+    "description": "Insect Choir — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "serpent-helix",
+    "index": 21,
+    "title": "SERPENT HELIX",
+    "renderer": "organism",
+    "scene": "02 DESCENT",
+    "tags": [
+      "serpent",
+      "helix",
+      "descent"
+    ],
+    "code": "KDX-FX-021",
+    "description": "Serpent Helix — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "root-lattice",
+    "index": 22,
+    "title": "ROOT LATTICE",
+    "renderer": "network",
+    "scene": "06 RETURN",
+    "tags": [
+      "roots",
+      "memory",
+      "network"
+    ],
+    "code": "KDX-FX-022",
+    "description": "Root Lattice — módulo generativo KODEX para 06 RETURN.",
+    "params": {
+      "nodes": 22,
+      "links": 38,
+      "branch": 0.7
+    }
+  },
+  {
+    "id": "spore-cloud",
+    "index": 23,
+    "title": "SPORE CLOUD",
+    "renderer": "particles",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "spores",
+      "ambient",
+      "transition"
+    ],
+    "code": "KDX-FX-023",
+    "description": "Spore Cloud — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "count": 180,
+      "spread": 0.75,
+      "drift": 0.5
+    }
+  },
+  {
+    "id": "eye-cluster",
+    "index": 24,
+    "title": "EYE CLUSTER",
+    "renderer": "organism",
+    "scene": "01 PROLOGUE",
+    "tags": [
+      "eyes",
+      "surveillance",
+      "ambient"
+    ],
+    "code": "KDX-FX-024",
+    "description": "Eye Cluster — módulo generativo KODEX para 01 PROLOGUE.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "fossil-bloom",
+    "index": 25,
+    "title": "FOSSIL BLOOM",
+    "renderer": "organism",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "fossil",
+      "relic",
+      "growth"
+    ],
+    "code": "KDX-FX-025",
+    "description": "Fossil Bloom — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "scarab-map",
+    "index": 26,
+    "title": "SCARAB MAP",
+    "renderer": "organism",
+    "scene": "05 COSMOLOGY",
+    "tags": [
+      "scarab",
+      "cartography",
+      "guardian"
+    ],
+    "code": "KDX-FX-026",
+    "description": "Scarab Map — módulo generativo KODEX para 05 COSMOLOGY.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "feather-array",
+    "index": 27,
+    "title": "FEATHER ARRAY",
+    "renderer": "organism",
+    "scene": "06 RETURN",
+    "tags": [
+      "feather",
+      "air",
+      "breath"
+    ],
+    "code": "KDX-FX-027",
+    "description": "Feather Array — módulo generativo KODEX para 06 RETURN.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "antler-signal",
+    "index": 28,
+    "title": "ANTLER SIGNAL",
+    "renderer": "network",
+    "scene": "05 COSMOLOGY",
+    "tags": [
+      "antenna",
+      "branching",
+      "signal"
+    ],
+    "code": "KDX-FX-028",
+    "description": "Antler Signal — módulo generativo KODEX para 05 COSMOLOGY.",
+    "params": {
+      "nodes": 22,
+      "links": 38,
+      "branch": 0.7
+    }
+  },
+  {
+    "id": "acid-cellular",
+    "index": 29,
+    "title": "ACID CELLULAR",
+    "renderer": "field",
+    "scene": "02 DESCENT",
+    "tags": [
+      "acid",
+      "cellular",
+      "anomaly"
+    ],
+    "code": "KDX-FX-029",
+    "description": "Acid Cellular — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "resolution": 34,
+      "contours": 8,
+      "warp": 0.7
+    }
+  },
+  {
+    "id": "glitch-mycelium",
+    "index": 30,
+    "title": "GLITCH MYCELIUM",
+    "renderer": "network",
+    "scene": "04 MACHINE",
+    "tags": [
+      "mycelium",
+      "glitch",
+      "growth"
+    ],
+    "code": "KDX-FX-030",
+    "description": "Glitch Mycelium — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "nodes": 22,
+      "links": 38,
+      "branch": 0.7
+    }
+  },
+  {
+    "id": "noise-puddle",
+    "index": 31,
+    "title": "NOISE PUDDLE",
+    "renderer": "field",
+    "scene": "02 DESCENT",
+    "tags": [
+      "noise",
+      "liquid",
+      "texture"
+    ],
+    "code": "KDX-FX-031",
+    "description": "Noise Puddle — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "resolution": 34,
+      "contours": 8,
+      "warp": 0.7
+    }
+  },
+  {
+    "id": "fracture-corridor",
+    "index": 32,
+    "title": "FRACTURE CORRIDOR",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "corridor",
+      "fracture",
+      "transition"
+    ],
+    "code": "KDX-FX-032",
+    "description": "Fracture Corridor — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "melt-map",
+    "index": 33,
+    "title": "MELT MAP",
+    "renderer": "field",
+    "scene": "02 DESCENT",
+    "tags": [
+      "topography",
+      "melt",
+      "distortion"
+    ],
+    "code": "KDX-FX-033",
+    "description": "Melt Map — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "resolution": 34,
+      "contours": 8,
+      "warp": 0.7
+    }
+  },
+  {
+    "id": "burnt-halo",
+    "index": 34,
+    "title": "BURNT HALO",
+    "renderer": "orbital",
+    "scene": "02 DESCENT",
+    "tags": [
+      "halo",
+      "burn",
+      "ritual"
+    ],
+    "code": "KDX-FX-034",
+    "description": "Burnt Halo — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "rings": 5,
+      "nodes": 8,
+      "radius": 0.28,
+      "twist": 0.35
+    }
+  },
+  {
+    "id": "viral-bloom",
+    "index": 35,
+    "title": "VIRAL BLOOM",
+    "renderer": "field",
+    "scene": "04 MACHINE",
+    "tags": [
+      "viral",
+      "growth",
+      "anomaly"
+    ],
+    "code": "KDX-FX-035",
+    "description": "Viral Bloom — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "resolution": 34,
+      "contours": 8,
+      "warp": 0.7
+    }
+  },
+  {
+    "id": "static-skin",
+    "index": 36,
+    "title": "STATIC SKIN",
+    "renderer": "anomaly",
+    "scene": "GLOBAL",
+    "tags": [
+      "crt",
+      "skin",
+      "texture"
+    ],
+    "code": "KDX-FX-036",
+    "description": "Static Skin — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bands": 16,
+      "tear": 0.5,
+      "grain": 0.8
+    }
+  },
+  {
+    "id": "quiet-frame",
+    "index": 37,
+    "title": "QUIET FRAME",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "interlude",
+      "breath",
+      "editorial"
+    ],
+    "code": "KDX-FX-037",
+    "description": "Quiet Frame — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "monolith-page",
+    "index": 38,
+    "title": "MONOLITH PAGE",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "interlude",
+      "monolith",
+      "editorial"
+    ],
+    "code": "KDX-FX-038",
+    "description": "Monolith Page — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "mountain-relief",
+    "index": 39,
+    "title": "MOUNTAIN RELIEF",
+    "renderer": "field",
+    "scene": "GLOBAL",
+    "tags": [
+      "terrain",
+      "relief",
+      "quiet"
+    ],
+    "code": "KDX-FX-039",
+    "description": "Mountain Relief — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "resolution": 34,
+      "contours": 8,
+      "warp": 0.7
+    }
+  },
+  {
+    "id": "split-image-panel",
+    "index": 40,
+    "title": "SPLIT IMAGE PANEL",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "image",
+      "panel",
+      "editorial"
+    ],
+    "code": "KDX-FX-040",
+    "description": "Split Image Panel — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "white-noise-relic",
+    "index": 41,
+    "title": "WHITE NOISE RELIC",
+    "renderer": "anomaly",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "relic",
+      "noise",
+      "memory"
+    ],
+    "code": "KDX-FX-041",
+    "description": "White Noise Relic — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "bands": 16,
+      "tear": 0.5,
+      "grain": 0.8
+    }
+  },
+  {
+    "id": "vertical-code-page",
+    "index": 42,
+    "title": "VERTICAL CODE PAGE",
+    "renderer": "typography",
+    "scene": "GLOBAL",
+    "tags": [
+      "vertical",
+      "code",
+      "interlude"
+    ],
+    "code": "KDX-FX-042",
+    "description": "Vertical Code Page — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "threshold-card",
+    "index": 43,
+    "title": "THRESHOLD CARD",
+    "renderer": "quiet",
+    "scene": "00 THRESHOLD",
+    "tags": [
+      "card",
+      "entry",
+      "quiet"
+    ],
+    "code": "KDX-FX-043",
+    "description": "Threshold Card — módulo generativo KODEX para 00 THRESHOLD.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "mono-photo-rail",
+    "index": 44,
+    "title": "MONO PHOTO + RAIL",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "photo",
+      "rail",
+      "editorial"
+    ],
+    "code": "KDX-FX-044",
+    "description": "Mono Photo + Rail — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "ripple-floor",
+    "index": 45,
+    "title": "RIPPLE FLOOR",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "floor",
+      "ripple",
+      "perspective"
+    ],
+    "code": "KDX-FX-045",
+    "description": "Ripple Floor — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "split-corridor",
+    "index": 46,
+    "title": "SPLIT CORRIDOR",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "corridor",
+      "choice",
+      "perspective"
+    ],
+    "code": "KDX-FX-046",
+    "description": "Split Corridor — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "double-face-form",
+    "index": 47,
+    "title": "DOUBLE-FACE FORM",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "duality",
+      "form",
+      "perspective"
+    ],
+    "code": "KDX-FX-047",
+    "description": "Double-Face Form — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "wrinkled-reality",
+    "index": 48,
+    "title": "WRINKLED REALITY",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "warp",
+      "surface",
+      "distortion"
+    ],
+    "code": "KDX-FX-048",
+    "description": "Wrinkled Reality — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "hollow-cube",
+    "index": 49,
+    "title": "HOLLOW CUBE",
+    "renderer": "architecture",
+    "scene": "04 MACHINE",
+    "tags": [
+      "cube",
+      "sanctuary",
+      "geometry"
+    ],
+    "code": "KDX-FX-049",
+    "description": "Hollow Cube — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "stair-void",
+    "index": 50,
+    "title": "STAIR VOID",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "stair",
+      "void",
+      "initiation"
+    ],
+    "code": "KDX-FX-050",
+    "description": "Stair Void — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "perspective-cage",
+    "index": 51,
+    "title": "PERSPECTIVE CAGE",
+    "renderer": "architecture",
+    "scene": "02 DESCENT",
+    "tags": [
+      "cage",
+      "grid",
+      "perspective"
+    ],
+    "code": "KDX-FX-051",
+    "description": "Perspective Cage — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "chamber-grid",
+    "index": 52,
+    "title": "CHAMBER GRID",
+    "renderer": "architecture",
+    "scene": "04 MACHINE",
+    "tags": [
+      "chamber",
+      "grid",
+      "machine"
+    ],
+    "code": "KDX-FX-052",
+    "description": "Chamber Grid — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "depth": 9,
+      "vanishing": 2,
+      "warp": 0.35
+    }
+  },
+  {
+    "id": "linguistic-evolution",
+    "index": 53,
+    "title": "LINGUISTIC EVOLUTION",
+    "renderer": "typography",
+    "scene": "04 MACHINE",
+    "tags": [
+      "letters",
+      "language",
+      "mutation"
+    ],
+    "code": "KDX-FX-053",
+    "description": "Linguistic Evolution — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "ascii-veil",
+    "index": 54,
+    "title": "ASCII VEIL",
+    "renderer": "typography",
+    "scene": "GLOBAL",
+    "tags": [
+      "ascii",
+      "veil",
+      "transition"
+    ],
+    "code": "KDX-FX-054",
+    "description": "Ascii Veil — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "code-cascade",
+    "index": 55,
+    "title": "CODE CASCADE",
+    "renderer": "typography",
+    "scene": "GLOBAL",
+    "tags": [
+      "code",
+      "cascade",
+      "ambient"
+    ],
+    "code": "KDX-FX-055",
+    "description": "Code Cascade — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "glyph-storm",
+    "index": 56,
+    "title": "GLYPH STORM",
+    "renderer": "particles",
+    "scene": "04 MACHINE",
+    "tags": [
+      "glyphs",
+      "storm",
+      "anomaly"
+    ],
+    "code": "KDX-FX-056",
+    "description": "Glyph Storm — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "count": 180,
+      "spread": 0.75,
+      "drift": 0.5
+    }
+  },
+  {
+    "id": "modular-sigil-wordmark",
+    "index": 57,
+    "title": "MODULAR SIGIL WORDMARK",
+    "renderer": "typography",
+    "scene": "GLOBAL",
+    "tags": [
+      "sigil",
+      "wordmark",
+      "identity"
+    ],
+    "code": "KDX-FX-057",
+    "description": "Modular Sigil Wordmark — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "character-halo",
+    "index": 58,
+    "title": "CHARACTER HALO",
+    "renderer": "typography",
+    "scene": "05 COSMOLOGY",
+    "tags": [
+      "letters",
+      "halo",
+      "orbit"
+    ],
+    "code": "KDX-FX-058",
+    "description": "Character Halo — módulo generativo KODEX para 05 COSMOLOGY.",
+    "params": {
+      "columns": 18,
+      "rows": 12,
+      "mutation": 0.5
+    }
+  },
+  {
+    "id": "deep-pulse",
+    "index": 59,
+    "title": "DEEP PULSE",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "audio",
+      "deep",
+      "pulse"
+    ],
+    "code": "KDX-FX-059",
+    "description": "Deep Pulse — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "chill-drift",
+    "index": 60,
+    "title": "CHILL DRIFT",
+    "renderer": "particles",
+    "scene": "GLOBAL",
+    "tags": [
+      "ambient",
+      "chill",
+      "drift"
+    ],
+    "code": "KDX-FX-060",
+    "description": "Chill Drift — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "count": 180,
+      "spread": 0.75,
+      "drift": 0.5
+    }
+  },
+  {
+    "id": "acid-flicker",
+    "index": 61,
+    "title": "ACID FLICKER",
+    "renderer": "anomaly",
+    "scene": "02 DESCENT",
+    "tags": [
+      "acid",
+      "flicker",
+      "glitch"
+    ],
+    "code": "KDX-FX-061",
+    "description": "Acid Flicker — módulo generativo KODEX para 02 DESCENT.",
+    "params": {
+      "bands": 16,
+      "tear": 0.5,
+      "grain": 0.8
+    }
+  },
+  {
+    "id": "drone-field",
+    "index": 62,
+    "title": "DRONE FIELD",
+    "renderer": "field",
+    "scene": "GLOBAL",
+    "tags": [
+      "ambient",
+      "drone",
+      "field"
+    ],
+    "code": "KDX-FX-062",
+    "description": "Drone Field — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "resolution": 34,
+      "contours": 8,
+      "warp": 0.7
+    }
+  },
+  {
+    "id": "ritual-beat-grid",
+    "index": 63,
+    "title": "RITUAL BEAT GRID",
+    "renderer": "pattern",
+    "scene": "04 MACHINE",
+    "tags": [
+      "beat",
+      "grid",
+      "ritual"
+    ],
+    "code": "KDX-FX-063",
+    "description": "Ritual Beat Grid — módulo generativo KODEX para 04 MACHINE.",
+    "params": {
+      "cells": 18,
+      "symmetry": 6,
+      "pulse": 0.6
+    }
+  },
+  {
+    "id": "breath-loop",
+    "index": 64,
+    "title": "BREATH LOOP",
+    "renderer": "organism",
+    "scene": "06 RETURN",
+    "tags": [
+      "breath",
+      "loop",
+      "life"
+    ],
+    "code": "KDX-FX-064",
+    "description": "Breath Loop — módulo generativo KODEX para 06 RETURN.",
+    "params": {
+      "segments": 42,
+      "symmetry": 2,
+      "breath": 0.7
+    }
+  },
+  {
+    "id": "scene-dots",
+    "index": 65,
+    "title": "SCENE DOTS",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "navigation",
+      "progress",
+      "dots"
+    ],
+    "code": "KDX-FX-065",
+    "description": "Scene Dots — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "protocol-tabs",
+    "index": 66,
+    "title": "PROTOCOL TABS",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "navigation",
+      "tabs",
+      "protocol"
+    ],
+    "code": "KDX-FX-066",
+    "description": "Protocol Tabs — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "case-panel",
+    "index": 67,
+    "title": "CASE PANEL",
+    "renderer": "quiet",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "dossier",
+      "panel",
+      "metadata"
+    ],
+    "code": "KDX-FX-067",
+    "description": "Case Panel — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "signal-footer",
+    "index": 68,
+    "title": "SIGNAL FOOTER",
+    "renderer": "telemetry",
+    "scene": "GLOBAL",
+    "tags": [
+      "footer",
+      "signal",
+      "status"
+    ],
+    "code": "KDX-FX-068",
+    "description": "Signal Footer — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "bars": 28,
+      "channels": 3,
+      "sweep": 0.7
+    }
+  },
+  {
+    "id": "index-constellation",
+    "index": 69,
+    "title": "INDEX CONSTELLATION",
+    "renderer": "network",
+    "scene": "GLOBAL",
+    "tags": [
+      "index",
+      "map",
+      "navigation"
+    ],
+    "code": "KDX-FX-069",
+    "description": "Index Constellation — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "nodes": 22,
+      "links": 38,
+      "branch": 0.7
+    }
+  },
+  {
+    "id": "floating-note",
+    "index": 70,
+    "title": "FLOATING NOTE",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "note",
+      "overlay",
+      "editorial"
+    ],
+    "code": "KDX-FX-070",
+    "description": "Floating Note — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "archive-card",
+    "index": 71,
+    "title": "ARCHIVE CARD",
+    "renderer": "quiet",
+    "scene": "03 ARCHIVE",
+    "tags": [
+      "card",
+      "record",
+      "archive"
+    ],
+    "code": "KDX-FX-071",
+    "description": "Archive Card — módulo generativo KODEX para 03 ARCHIVE.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  },
+  {
+    "id": "quiet-breaker",
+    "index": 72,
+    "title": "QUIET BREAKER",
+    "renderer": "quiet",
+    "scene": "GLOBAL",
+    "tags": [
+      "separator",
+      "breath",
+      "quiet"
+    ],
+    "code": "KDX-FX-072",
+    "description": "Quiet Breaker — módulo generativo KODEX para GLOBAL.",
+    "params": {
+      "mass": 0.28,
+      "rail": 1,
+      "geometry": 1
+    }
+  }
+]

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+<symbol id="kdx-cardinal" viewBox="0 0 100 100"><path d="M50 5V95M5 50H95M50 5l-6 14h12zM95 50l-14-6v12zM50 95l-6-14h12zM5 50l14-6v12z" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+<symbol id="kdx-observer" viewBox="0 0 100 100"><path d="M8 50Q50 12 92 50Q50 88 8 50Z" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="12" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="3" fill="currentColor"/></symbol>
+<symbol id="kdx-threshold" viewBox="0 0 100 100"><circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="150 76"/><path d="M50 10V90" stroke="currentColor" stroke-width="3"/></symbol>
+<symbol id="kdx-memory" viewBox="0 0 100 100"><path d="M14 50C25 25 40 25 50 50C60 75 75 75 86 50C75 25 60 25 50 50C40 75 25 75 14 50Z" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+<symbol id="kdx-archive" viewBox="0 0 100 100"><path d="M18 18H70V30H82V82H30V70H18Z" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+<symbol id="kdx-seven-star" viewBox="0 0 100 100"><path d="M50 6L58 37L85 20L66 46L96 50L66 56L82 83L58 64L50 96L42 64L18 83L34 56L4 50L34 46L15 20L42 37Z" fill="none" stroke="currentColor" stroke-width="2.5"/></symbol>
+</svg>

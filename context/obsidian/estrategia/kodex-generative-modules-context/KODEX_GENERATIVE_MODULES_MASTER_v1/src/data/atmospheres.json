@@ -1,0 +1,90 @@
+{
+  "deep": {
+    "bg": "#03050a",
+    "fg": "#e8e5df",
+    "accent": "#43d9ff",
+    "accent2": "#5045a8",
+    "speed": 0.58,
+    "density": 0.75,
+    "glow": 0.28,
+    "noise": 0.06,
+    "line": 1.0
+  },
+  "chill-out": {
+    "bg": "#07080b",
+    "fg": "#e6e3dc",
+    "accent": "#8bd9e8",
+    "accent2": "#a78be8",
+    "speed": 0.34,
+    "density": 0.48,
+    "glow": 0.18,
+    "noise": 0.035,
+    "line": 0.85
+  },
+  "acid": {
+    "bg": "#020403",
+    "fg": "#f3f4ee",
+    "accent": "#a7ff00",
+    "accent2": "#ff00c8",
+    "speed": 1.22,
+    "density": 1.2,
+    "glow": 0.44,
+    "noise": 0.13,
+    "line": 1.2
+  },
+  "ritual": {
+    "bg": "#050403",
+    "fg": "#eee7d8",
+    "accent": "#c49a52",
+    "accent2": "#6c421f",
+    "speed": 0.46,
+    "density": 0.78,
+    "glow": 0.24,
+    "noise": 0.055,
+    "line": 1.05
+  },
+  "specimen": {
+    "bg": "#030705",
+    "fg": "#e7ece7",
+    "accent": "#86ff68",
+    "accent2": "#39cbd8",
+    "speed": 0.7,
+    "density": 0.9,
+    "glow": 0.3,
+    "noise": 0.07,
+    "line": 0.95
+  },
+  "archive": {
+    "bg": "#060606",
+    "fg": "#dedbd2",
+    "accent": "#9cbf75",
+    "accent2": "#6d6d68",
+    "speed": 0.4,
+    "density": 0.62,
+    "glow": 0.15,
+    "noise": 0.045,
+    "line": 0.9
+  },
+  "cosmology": {
+    "bg": "#05030b",
+    "fg": "#eee9f4",
+    "accent": "#9f77ff",
+    "accent2": "#ff2dbd",
+    "speed": 0.56,
+    "density": 0.84,
+    "glow": 0.38,
+    "noise": 0.05,
+    "line": 1.0
+  },
+  "descent": {
+    "bg": "#080302",
+    "fg": "#eee2d7",
+    "accent": "#ff5a1f",
+    "accent2": "#8a1616",
+    "speed": 0.86,
+    "density": 1.0,
+    "glow": 0.42,
+    "noise": 0.1,
+    "line": 1.15
+  }
+}

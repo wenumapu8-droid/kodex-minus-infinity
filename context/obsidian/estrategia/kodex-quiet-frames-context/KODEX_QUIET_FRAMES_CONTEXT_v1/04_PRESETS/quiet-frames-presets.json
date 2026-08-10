@@ -1,0 +1,66 @@
+{
+  "archive-fragment": {
+    "variant": "image",
+    "geometry": "steps",
+    "align": "left",
+    "ratio": "1:1",
+    "accent": "none",
+    "use": "Between dense chapters or before Archive."
+  },
+  "signal-residue": {
+    "variant": "image",
+    "geometry": "bars",
+    "align": "center",
+    "ratio": "16:9",
+    "accent": "cyan",
+    "use": "After a high-energy scene."
+  },
+  "body-index": {
+    "variant": "material",
+    "geometry": "brackets",
+    "align": "right",
+    "ratio": "4:5",
+    "accent": "violet",
+    "use": "Bridge toward Wültufe or anatomy."
+  },
+  "terrain-memory": {
+    "variant": "material",
+    "geometry": "open-frame",
+    "align": "left",
+    "ratio": "3:4",
+    "accent": "bronze",
+    "use": "Bridge between cosmology and matter."
+  },
+  "threshold-sheet": {
+    "variant": "threshold",
+    "geometry": "axis",
+    "align": "center",
+    "ratio": "2:3",
+    "accent": "none",
+    "use": "Before entering a major node."
+  },
+  "constellation-plate": {
+    "variant": "constellation",
+    "geometry": "brackets",
+    "align": "center",
+    "ratio": "1:1",
+    "accent": "violet",
+    "use": "Coordinates, memory and relation."
+  },
+  "field-note": {
+    "variant": "field-note",
+    "geometry": "open-frame",
+    "align": "left",
+    "ratio": "16:9",
+    "accent": "none",
+    "use": "Very short conceptual pause."
+  },
+  "symbol-breath": {
+    "variant": "symbol",
+    "geometry": "axis",
+    "align": "center",
+    "ratio": "1:1",
+    "accent": "bronze",
+    "use": "Display one canonical KODEX symbol."
+  }
+}

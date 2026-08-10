@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 32" width="1200" height="32" role="img" aria-label="Wenu Mapu cardinal cross divider">
+  <defs>
+    <pattern id="cardinal-cross" x="0" y="0" width="80" height="32" patternUnits="userSpaceOnUse">
+      <g stroke="#F2EDE4" stroke-width="1" fill="none" stroke-linecap="square">
+        <line x1="40" y1="6" x2="40" y2="26"/>
+        <line x1="30" y1="16" x2="50" y2="16"/>
+        <circle cx="40" cy="16" r="2.5" stroke-width="0.8"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="1200" height="32" fill="url(#cardinal-cross)"/>
+</svg>

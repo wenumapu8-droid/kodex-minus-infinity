@@ -1,0 +1,26 @@
+{
+  "id": "threshold",
+  "index": 0,
+  "title": "THRESHOLD",
+  "route": "/kodex/#threshold",
+  "verb": "ENTER",
+  "accent": "#FF3833",
+  "heroModule": "signal-gate",
+  "fallback": "threshold-crt-fallback.svg",
+  "states": [
+    "latent",
+    "stabilizing",
+    "granted"
+  ],
+  "primaryAction": "ENTER THE FIELD",
+  "completionEvent": "THRESHOLD_GRANTED",
+  "memoryWrites": [
+    "visited.threshold",
+    "session.entryTimestamp"
+  ],
+  "performance": {
+    "full": 4,
+    "balanced": 2,
+    "lowPower": 1
+  }
+}

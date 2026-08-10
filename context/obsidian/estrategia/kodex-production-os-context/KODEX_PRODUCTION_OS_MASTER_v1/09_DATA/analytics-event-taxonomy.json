@@ -1,0 +1,78 @@
+{
+  "events": [
+    {
+      "name": "kodex_enter",
+      "required": [
+        "profile",
+        "source"
+      ]
+    },
+    {
+      "name": "scene_view",
+      "required": [
+        "scene",
+        "profile"
+      ]
+    },
+    {
+      "name": "scene_complete",
+      "required": [
+        "scene",
+        "durationMs"
+      ]
+    },
+    {
+      "name": "state_change",
+      "required": [
+        "scene",
+        "state"
+      ]
+    },
+    {
+      "name": "archive_open",
+      "required": [
+        "recordId"
+      ]
+    },
+    {
+      "name": "artifact_collect",
+      "required": [
+        "artifactId"
+      ]
+    },
+    {
+      "name": "commission_open",
+      "required": [
+        "scene"
+      ]
+    },
+    {
+      "name": "license_open",
+      "required": [
+        "artifactId"
+      ]
+    },
+    {
+      "name": "webgl_fallback",
+      "required": [
+        "scene",
+        "reason"
+      ]
+    },
+    {
+      "name": "performance_degrade",
+      "required": [
+        "scene",
+        "fps",
+        "profile"
+      ]
+    },
+    {
+      "name": "journey_complete",
+      "required": [
+        "sessionSeed",
+        "durationMs"
+      ]
+    }
+  ]
+}

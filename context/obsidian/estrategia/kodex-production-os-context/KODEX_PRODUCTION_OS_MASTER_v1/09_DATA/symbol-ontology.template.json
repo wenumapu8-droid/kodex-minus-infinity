@@ -1,0 +1,22 @@
+{
+  "id": "observer-eye",
+  "family": "ritual-system",
+  "meaning": "Relationship between observer and archive",
+  "originClass": "KODEX-ORIGINAL",
+  "geometry": "two ocular arcs, central nucleus and cardinal axis",
+  "states": [
+    "latent",
+    "detecting",
+    "locked",
+    "recording"
+  ],
+  "motionVerb": "observe",
+  "audioCue": "ocular_ping",
+  "allowedScenes": [
+    "observe",
+    "archive",
+    "cosmology"
+  ],
+  "culturalReview": "not-required",
+  "status": "draft"
+}

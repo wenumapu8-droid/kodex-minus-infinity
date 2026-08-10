@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 32" width="1200" height="32" role="img" aria-label="Wenu Mapu stepped triangles divider">
+  <defs>
+    <pattern id="stepped-triangles" x="0" y="0" width="48" height="32" patternUnits="userSpaceOnUse">
+      <g stroke="#F2EDE4" stroke-width="1" fill="none">
+        <polyline points="0,24 8,24 8,18 16,18 16,12 24,12 24,18 32,18 32,24 40,24 40,18 48,18"/>
+        <line x1="0" y1="28" x2="48" y2="28" stroke-width="0.5" opacity="0.6"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="1200" height="32" fill="url(#stepped-triangles)"/>
+</svg>

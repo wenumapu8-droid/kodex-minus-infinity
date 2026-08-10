@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#020306" />
+  <title>KODEX-∞ — Signal Vortex</title>
+  <style>
+    :root{color-scheme:dark;--ink:#f4f0e8;--line:rgba(255,255,255,.16);--red:#ff3154;--cyan:#35dfff}
+    *{box-sizing:border-box}
+    html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#020306;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;color:var(--ink)}
+    canvas{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;background:#020306}
+    .hud{position:fixed;inset:0;pointer-events:none;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;justify-content:space-between;transition:opacity .4s ease}
+    .hud.hidden{opacity:0}
+    .top,.bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+    .brand{font-size:clamp(12px,2.8vw,18px);letter-spacing:.12em;font-weight:700;text-shadow:0 0 20px rgba(255,255,255,.22)}
+    .meta{font-size:10px;letter-spacing:.16em;line-height:1.45;text-align:right;color:rgba(244,240,232,.68)}
+    .tag{font-size:10px;letter-spacing:.16em;color:rgba(244,240,232,.72)}
+    .controls{pointer-events:auto;position:fixed;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:8px;border:1px solid var(--line);background:rgba(2,3,6,.62);backdrop-filter:blur(12px);border-radius:999px;box-shadow:0 0 40px rgba(0,0,0,.45);transition:opacity .4s ease,transform .4s ease;max-width:calc(100vw - 24px)}
+    .controls.hidden{opacity:0;transform:translate(-50%,18px);pointer-events:none}
+    button{appearance:none;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.04);color:var(--ink);border-radius:999px;height:38px;padding:0 13px;font:600 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+    button:active{transform:scale(.97);background:rgba(255,255,255,.11)}
+    .range{display:flex;align-items:center;gap:8px;padding:0 8px}
+    .range span{font-size:9px;letter-spacing:.12em;color:rgba(255,255,255,.58)}
+    input[type=range]{width:min(24vw,130px);accent-color:var(--cyan)}
+    .status{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.7);pointer-events:none}
+    @media (max-width:640px){.range span{display:none}.controls{gap:5px;padding:6px}button{height:36px;padding:0 10px}.meta{display:none}}
+    @media (prefers-reduced-motion:reduce){.controls::before{content:"REDUCED MOTION";font-size:9px;color:#ff8aa0;padding-left:8px}}
+  </style>
+</head>
+<body>
+  <canvas id="gl" aria-label="Animación generativa KODEX de circuitos luminosos y vórtices"></canvas>
+  <div class="hud" id="hud">
+    <div class="top">
+      <div class="brand">KODEX-∞ / SIGNAL MYCELIUM</div>
+      <div class="meta">LIVE FIELD 07<br>CYAN / AMBER / WHITE<br>WEBGL2 MULTIPASS</div>
+    </div>
+    <div class="bottom">
+      <div class="tag">THE PATTERN DOES NOT STORE. IT PROPAGATES.</div>
+      <div class="meta" id="fps">INITIALIZING</div>
+    </div>
+  </div>
+  <div class="controls" id="controls">
+    <button id="pause">Pause</button>
+    <button id="mutate">Mutate</button>
+    <div class="range"><span>Speed</span><input id="speed" type="range" min="0.15" max="2.2" step="0.01" value="0.82" aria-label="Velocidad"></div>
+    <div class="range"><span>Energy</span><input id="energy" type="range" min="0.35" max="1.8" step="0.01" value="1.05" aria-label="Energía"></div>
+    <button id="full">Full</button>
+  </div>
+  <div class="status" id="status">COMPILING SIGNAL…</div>
+  <script src="src/app.js"></script>
+</body>
+</html>

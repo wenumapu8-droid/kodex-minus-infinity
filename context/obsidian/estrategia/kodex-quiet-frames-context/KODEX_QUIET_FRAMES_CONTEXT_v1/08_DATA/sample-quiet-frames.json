@@ -1,0 +1,22 @@
+[
+  {
+    "id": "qf-archive-fragment-01",
+    "preset": "archive-fragment",
+    "variant": "image",
+    "image": "/assets/kodex/interludes/archive-fragment-01.webp",
+    "alt": "Monochrome scan of an unresolved field",
+    "archiveId": "KDX://AR-118",
+    "label": "FIELD MEMORY / FRAGMENT 01",
+    "status": "STATUS / PARTIAL",
+    "node": "NODE / 03",
+    "origin": "ORIGIN / UNKNOWN",
+    "accent": "none",
+    "geometry": "steps",
+    "align": "left",
+    "ratio": "1:1",
+    "motion": "mask-reveal",
+    "sceneBefore": "01 PROLOGUE",
+    "sceneAfter": "02 DESCENT",
+    "narrativeFunction": "Lower visual intensity before descent."
+  }
+]

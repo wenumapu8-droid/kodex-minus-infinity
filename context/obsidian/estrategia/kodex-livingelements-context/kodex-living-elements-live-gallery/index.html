@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KODEX−∞ Living Elements</title>
+<style>
+*{box-sizing:border-box} :root{color-scheme:dark;--bg:#050505;--panel:#090a0c;--line:#2a2d31;--txt:#f5f2ea;--muted:#858990;--red:#ff1744}
+html,body{margin:0;background:var(--bg);color:var(--txt);font-family:Consolas,"SFMono-Regular",monospace}
+body{background:radial-gradient(circle at 50% -10%,#2a0610 0,transparent 35%),#050505}
+.app{width:min(1800px,100%);margin:auto;padding:14px}.top{display:flex;justify-content:space-between;align-items:flex-end;border:1px solid var(--line);padding:18px;min-height:116px}
+.eyebrow,.status,.controls,.head,footer,.strip{font-size:10px;letter-spacing:.12em;text-transform:uppercase}.eyebrow{color:var(--red);margin:0 0 10px}
+h1{font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(48px,7vw,110px);line-height:.78;letter-spacing:-.04em;margin:0}.status{color:var(--muted);display:flex;gap:8px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 14px var(--red)}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(160px,1fr)) repeat(3,auto);gap:7px;padding:10px 0 14px}.controls label,.controls button{min-height:46px;border:1px solid var(--line);background:#08090b}
+.controls label{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;padding:0 10px;color:var(--muted)}.controls button{color:var(--txt);padding:0 15px;cursor:pointer}.controls button:hover{background:var(--red);color:#050505}.controls input{width:100%;accent-color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.card{border:1px solid var(--line);background:var(--panel);min-height:420px;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}.wide{grid-column:1/-1;min-height:500px}
+.head,footer{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:0 11px;border-bottom:1px solid var(--line)}.head div{display:flex;gap:9px}.head span{color:var(--red)}.head small,footer{color:var(--muted);font-size:9px}
+.card canvas{width:100%;height:100%;min-height:330px;background:#020203;display:block}footer{border-top:1px solid var(--line);border-bottom:0;justify-content:flex-start}.strip{margin-top:9px;border:1px solid var(--line);min-height:44px;padding:0 11px;display:flex;align-items:center;justify-content:space-between;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.wide{grid-column:auto}}
+@media(max-width:560px){.app{padding:7px}.status{display:none}.controls{grid-template-columns:1fr}.card{min-height:390px}.strip span:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+<main class="app">
+<header class="top"><div><p class="eyebrow">KODEX−∞ / LIVE ORGANISM LAB</p><h1>ELEMENTOS VIVOS</h1></div><div class="status"><i class="dot"></i><span id="status">SIGNAL LIVE</span></div></header>
+<section class="controls">
+<label><span>VELOCIDAD</span><input id="speed" type="range" min="0" max="2.5" value="1" step=".01"><output id="speedO">1.00</output></label>
+<label><span>INTENSIDAD</span><input id="intensity" type="range" min=".2" max="2" value="1" step=".01"><output id="intensityO">1.00</output></label>
+<label><span>CURSOR</span><input id="pointer" type="range" min="0" max="2" value="1" step=".01"><output id="pointerO">1.00</output></label>
+<button id="pause">PAUSE</button><button id="mutate">MUTATE</button><button id="full">FULLSCREEN</button>
+</section>
+<section class="grid">
+<article class="card" data-type="portal"><div class="head"><div><span>01</span><b>PORTAL RING</b></div><small>ALIGN / OPEN</small></div><canvas></canvas><footer>Grave → apertura · cursor → centro</footer></article>
+<article class="card" data-type="mandala"><div class="head"><div><span>02</span><b>MANDALA ORGANISM</b></div><small>REPLICATE / BREATHE</small></div><canvas></canvas><footer>Anillos opuestos y respiración por fase</footer></article>
+<article class="card" data-type="band"><div class="head"><div><span>03</span><b>SIGNAL BAND</b></div><small>TRANSMIT / GLITCH</small></div><canvas></canvas><footer>Teselas migratorias sobre una ruta diagonal</footer></article>
+<article class="card" data-type="sphere"><div class="head"><div><span>04</span><b>SIGNAL SPHERE</b></div><small>ORBIT / EMIT</small></div><canvas></canvas><footer>Campo pseudo-3D de glifos</footer></article>
+<article class="card" data-type="tunnel"><div class="head"><div><span>05</span><b>JAGUAR TUNNEL</b></div><small>DESCEND / PASS</small></div><canvas></canvas><footer>Capas en profundidad y guardianes</footer></article>
+<article class="card" data-type="compass"><div class="head"><div><span>06</span><b>CARDINAL COMPASS</b></div><small>ORIENT / RETURN</small></div><canvas></canvas><footer>Ejes narrativos y pérdida de simetría</footer></article>
+<article class="card wide" data-type="tiles"><div class="head"><div><span>07</span><b>TILE INFECTION FIELD</b></div><small>SEED / CONTAGION</small></div><canvas></canvas><footer>El patrón se propaga desde un nodo semilla</footer></article>
+</section>
+<aside class="strip"><span>KDX−LIVE−07</span><span>ORIGINAL PROCEDURAL PROTOTYPES</span><span>NO EXTERNAL ASSETS</span></aside>
+</main>
+<script>
+const TAU=Math.PI*2,C={speed:1,intensity:1,pointer:1,paused:false},P={x:.5,y:.5};let seed=Math.random()*1000;
+function resize(c){const d=Math.min(devicePixelRatio||1,1.5),w=Math.max(2,Math.floor(c.clientWidth*d)),h=Math.max(2,Math.floor(c.clientHeight*d));if(c.width!==w||c.height!==h){c.width=w;c.height=h}return{w,h,d,cx:w/2,cy:h/2,s:Math.min(w,h)}}
+function clear(x,w,h,a=.3){x.fillStyle=`rgba(2,2,3,${a})`;x.fillRect(0,0,w,h)}
+function stroke(x,col,l=1,b=10){x.strokeStyle=col;x.lineWidth=l;x.shadowColor=col;x.shadowBlur=b}
+function glyph(x,X,Y,r,rot,col,v=0){x.save();x.translate(X,Y);x.rotate(rot);stroke(x,col,Math.max(1,r*.055),r*.45);x.beginPath();const n=v%2?6:8;for(let i=0;i<n*2;i++){let a=i/(n*2)*TAU,rr=i%2?r:r*(.34+.06*(v%3)),px=Math.cos(a)*rr,py=Math.sin(a)*rr;i?x.lineTo(px,py):x.moveTo(px,py)}x.closePath();x.stroke();x.strokeRect(-r*.13,-r*.13,r*.26,r*.26);x.restore()}
+function portal(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.25);x.save();x.translate(m.cx+(P.x-.5)*m.w*.08*C.pointer,m.cy+(P.y-.5)*m.h*.08*C.pointer);for(let q=0;q<7;q++){let ratio=(q+1)/7,r=m.s*(.07+ratio*.36),n=10+q*4,dir=q%2? -1:1,pulse=1+Math.sin(t*1.2+q*.7+seed)*.035*C.intensity;for(let i=0;i<n;i++){let a=i/n*TAU+t*.08*dir+q*.22;glyph(x,Math.cos(a)*r*pulse,Math.sin(a)*r*pulse,m.s*(.012+ratio*.008),a+Math.PI/2,q%3===0?'#ff1744':'#e9ece8',q)}}stroke(x,'#ff1744',1.4*m.d,16*m.d);x.beginPath();x.arc(0,0,m.s*(.08+.012*Math.sin(t*1.8)),0,TAU);x.stroke();x.beginPath();x.moveTo(-m.s*.44,0);x.lineTo(m.s*.44,0);x.moveTo(0,-m.s*.44);x.lineTo(0,m.s*.44);x.stroke();x.restore()}
+function mandala(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.3);x.save();x.translate(m.cx,m.cy);for(let l=0;l<6;l++){let r=m.s*(.07+l*.055),dir=l%2? -1:1,b=1+Math.sin(t*(.7+l*.08)+l)*.055*C.intensity,n=12+l*2;for(let i=0;i<n;i++){let a=i/n*TAU+t*.06*dir,w=Math.sin(a*3+t)*m.s*.006;glyph(x,Math.cos(a)*(r*b+w),Math.sin(a)*(r*b+w),m.s*(.016+l*.0015),a*dir,l%2?'#9b5cff':'#f5f2ea',l+1)}}stroke(x,'#ff4fa3',1.4*m.d,18*m.d);x.beginPath();x.ellipse((P.x-.5)*m.s*.2*C.pointer,(P.y-.5)*m.s*.2*C.pointer,m.s*.34,m.s*.19,t*.05,0,TAU);x.stroke();x.restore()}
+function band(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.35);x.save();x.translate(m.cx,m.cy);x.rotate(-.56+(P.x-.5)*.1*C.pointer);let L=Math.hypot(m.w,m.h)*1.4,n=72;for(let lane=-2;lane<=2;lane++)for(let i=0;i<n;i++){let f=(i/n+t*.08+seed*.001)%1,X=-L/2+f*L,Y=lane*m.s*.045+Math.sin(i*.8+t*2)*m.s*.004,g=Math.sin(i*12.989+Math.floor(t*4))>.94?1.8:1;glyph(x,X,Y,m.s*.012*g,i*.5+lane,lane===0?'#b9ff3b':'#f5f2ea',i+lane)}stroke(x,'#b9ff3b',m.d,10*m.d);x.strokeRect(-L/2,-m.s*.14,L,m.s*.28);x.restore()}
+function sphere(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.28);let R=m.s*.31,yaw=t*.18+(P.x-.5)*.8*C.pointer,pitch=(P.y-.5)*.6*C.pointer,pts=[];for(let i=0;i<430;i++){let Y=1-i/429*2,rr=Math.sqrt(Math.max(0,1-Y*Y)),th=i*2.399963+seed,X=Math.cos(th)*rr,Z=Math.sin(th)*rr,cy=Math.cos(yaw),sy=Math.sin(yaw),RX=X*cy-Z*sy,RZ=X*sy+Z*cy;X=RX;Z=RZ;let cp=Math.cos(pitch),sp=Math.sin(pitch),RY=Y*cp-Z*sp,RZ2=Y*sp+Z*cp;pts.push({x:X,y:RY,z:RZ2,i})}pts.sort((a,b)=>a.z-b.z);x.save();x.translate(m.cx,m.cy);for(const p of pts){let d=(p.z+1)/2,sz=m.s*(.004+d*.008)*(1+Math.sin(t*2+p.i*.17)*.25*C.intensity),col=p.i%7===0?'#ff7a00':p.i%3===0?'#00e7ff':'#30ff65';glyph(x,p.x*R,p.y*R,sz,p.i*.3+t*.2,col,p.i)}stroke(x,'#8d5cff',1.2*m.d,14*m.d);x.beginPath();x.arc(0,0,R,0,TAU);x.stroke();x.restore()}
+function tunnel(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.24);let vx=m.cx+(P.x-.5)*m.w*.14*C.pointer,vy=m.cy+(P.y-.5)*m.h*.12*C.pointer;x.save();x.translate(vx,vy);for(let i=21;i>=0;i--){let z=(i/22+t*.08)%1,sc=.05+z*1.05,w=m.w*.52*sc,h=m.h*.42*sc;stroke(x,i%4===0?'#ff1744':'rgba(245,242,234,.6)',Math.max(.6,1.4*sc*m.d),8*sc*m.d);x.strokeRect(-w/2,-h/2,w,h);if(i%3===0){glyph(x,-w*.44,0,m.s*.018*sc,seed+t*.1,'#ff1744',i);glyph(x,w*.44,0,m.s*.018*sc,-seed-t*.1,'#ff1744',i+1)}}stroke(x,'#f5f2ea',m.d,10*m.d);for(let i=0;i<12;i++){let a=i/12*TAU;x.beginPath();x.moveTo(0,0);x.lineTo(Math.cos(a)*m.w,Math.sin(a)*m.h);x.stroke()}x.restore()}
+function compass(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.32);let a0=Math.atan2(P.y-.5,P.x-.5),lock=Math.min(1,Math.hypot(P.x-.5,P.y-.5)*2);x.save();x.translate(m.cx,m.cy);x.rotate(a0*.22*C.pointer);for(let i=0;i<8;i++){let a=i/8*TAU,L=m.s*(.16+(i%2)*.13),dr=Math.sin(t*.7+i)*.25*(1-lock)*.08;x.save();x.rotate(a+dr);stroke(x,i%2?'#ff1744':'#f5f2ea',1.4*m.d,13*m.d);x.beginPath();x.moveTo(0,0);x.lineTo(-m.s*.032,-L*.42);x.lineTo(0,-L);x.lineTo(m.s*.032,-L*.42);x.closePath();x.stroke();x.restore()}for(let r=1;r<=4;r++){stroke(x,r%2?'#ff1744':'rgba(245,242,234,.7)',m.d,8*m.d);x.beginPath();x.arc(0,0,m.s*r*.065,0,TAU);x.stroke()}glyph(x,0,0,m.s*.045,t*.14,'#f5f2ea',2);x.restore()}
+function tiles(c,t){let x=c.getContext('2d'),m=resize(c);clear(x,m.w,m.h,.38);let cell=Math.max(28*m.d,m.s*.055),cols=Math.ceil(m.w/cell)+1,rows=Math.ceil(m.h/cell)+1,sx=((seed%1)*.45+P.x*.55)*m.w,sy=(((seed*.731)%1)*.45+P.y*.55)*m.h;for(let yy=0;yy<rows;yy++)for(let xx=0;xx<cols;xx++){let X=xx*cell+cell/2,Y=yy*cell+cell/2,dist=Math.hypot(X-sx,Y-sy),wave=Math.sin(dist*.018-t*2.2),inf=Math.max(0,Math.min(1,1-dist/(m.s*.75))),act=inf*.7+(wave+1)*.15,rot=((xx+yy)%4)*Math.PI/2+t*.05*inf,size=cell*(.14+act*.1),col=act>.58?'#b9ff3b':act>.36?'#8d5cff':'rgba(245,242,234,.32)';glyph(x,X,Y,size,rot,col,xx+yy*cols)}stroke(x,'#ff1744',1.2*m.d,16*m.d);x.beginPath();x.arc(sx,sy,m.s*(.025+.01*Math.sin(t*2)),0,TAU);x.stroke()}
+const draw={portal,mandala,band,sphere,tunnel,compass,tiles},cards=[...document.querySelectorAll('.card')].map(a=>({type:a.dataset.type,c:a.querySelector('canvas')}));
+for(const o of cards){o.c.addEventListener('pointermove',e=>{let r=o.c.getBoundingClientRect();P.x=(e.clientX-r.left)/r.width;P.y=(e.clientY-r.top)/r.height})}
+function bind(id,key){let i=document.querySelector('#'+id),o=document.querySelector('#'+id+'O');function u(){C[key]=+i.value;o.textContent=C[key].toFixed(2)}i.oninput=u;u()}bind('speed','speed');bind('intensity','intensity');bind('pointer','pointer');
+document.querySelector('#pause').onclick=e=>{C.paused=!C.paused;e.target.textContent=C.paused?'RESUME':'PAUSE';document.querySelector('#status').textContent=C.paused?'SIGNAL FROZEN':'SIGNAL LIVE'}
+document.querySelector('#mutate').onclick=()=>seed=Math.random()*1000;document.querySelector('#full').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+let start=performance.now(),T=0;function frame(n){if(!C.paused)T=(n-start)*.001*C.speed;P.x+=(.5-P.x)*.002;P.y+=(.5-P.y)*.002;for(const o of cards)draw[o.type](o.c,T);requestAnimationFrame(frame)}requestAnimationFrame(frame);
+</script>
+</body>
+</html>

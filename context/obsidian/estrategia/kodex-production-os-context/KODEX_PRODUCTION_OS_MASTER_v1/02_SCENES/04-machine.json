@@ -1,0 +1,28 @@
+{
+  "id": "machine",
+  "index": 4,
+  "title": "MACHINE",
+  "route": "/kodex/#machine",
+  "verb": "GENERATE",
+  "accent": "#00D8FF",
+  "heroModule": "memory-engine",
+  "fallback": "machine-static.svg",
+  "states": [
+    "idle",
+    "primed",
+    "generating",
+    "resolved"
+  ],
+  "primaryAction": "RUN PROTOCOL",
+  "completionEvent": "MACHINE_RESOLVED",
+  "memoryWrites": [
+    "visited.machine",
+    "generated.seed",
+    "generated.artifactId"
+  ],
+  "performance": {
+    "full": 5,
+    "balanced": 3,
+    "lowPower": 1
+  }
+}

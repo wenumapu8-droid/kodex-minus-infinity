@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KODEX−∞ Impossible Forms Vol. 1</title><link rel="stylesheet" href="./src/styles.css"></head>
+<body><main>
+<header><div><div class="eyebrow">KODEX−∞ / PROCEDURAL ASSET PACK / VOL. 1</div><h1>IMPOSSIBLE FORMS</h1></div><div class="status">12 SIGNALS / LIVE</div></header>
+<section class="controls"><label>GLOBAL SPEED <input id="speed" type="range" min=".25" max="2" value="1" step=".05"><output>1.00</output></label><button id="pause">PAUSE ALL</button><button id="fullscreen">FULLSCREEN</button></section>
+<section id="grid" class="grid"></section></main>
+<script type="module">
+const presets = [{"id": "transmutation-cube", "title": "Transmutation Cube", "subtitle": "12 edges unravel into living metallic strands", "accent": "#E9E0D2", "family": "architectural"}, {"id": "mobius-weave", "title": "Möbius Weave", "subtitle": "A one-sided ribbon rebuilt as braided filaments", "accent": "#00E8F0", "family": "topological"}, {"id": "torus-knot-reactor", "title": "Torus Knot Reactor", "subtitle": "Nested knot frequencies orbit a luminous core", "accent": "#FF1EAA", "family": "topological"}, {"id": "hypercube-threads", "title": "Hypercube Threads", "subtitle": "A rotating 4D tesseract projected through signal fibers", "accent": "#FF1744", "family": "mathematical"}, {"id": "chrysalis-spiral", "title": "Chrysalis Spiral", "subtitle": "Organic ribs curl around a changing central spine", "accent": "#DCCEFF", "family": "organic"}, {"id": "serpent-lattice", "title": "Serpent Lattice", "subtitle": "Two living tubes exchange structure along a double helix", "accent": "#B9FF3B", "family": "organic"}, {"id": "orbital-cocoon", "title": "Orbital Cocoon", "subtitle": "Warped latitudes and longitudes breathe as one shell", "accent": "#FF7A00", "family": "cosmological"}, {"id": "fracture-crown", "title": "Fracture Crown", "subtitle": "Crystalline blades split, fold and recover symmetry", "accent": "#F5F2EA", "family": "ritual"}, {"id": "resonance-spine", "title": "Resonance Spine", "subtitle": "Vertebrae travel through an impossible articulated body", "accent": "#00E8F0", "family": "organic"}, {"id": "impossible-flower", "title": "Impossible Flower", "subtitle": "Twisted petals rotate through themselves without collision", "accent": "#FF1EAA", "family": "ritual"}, {"id": "archive-vortex", "title": "Archive Vortex", "subtitle": "Nested polygonal gates descend into a memory tunnel", "accent": "#FF1744", "family": "architectural"}, {"id": "mirror-organism", "title": "Mirror Organism", "subtitle": "Bilateral knot-lobes mutate while preserving a hidden axis", "accent": "#B9FF3B", "family": "organic"}];
+const grid=document.querySelector("#grid"),videos=[];
+presets.forEach((p,i)=>{
+ const a=document.createElement("article");a.className="card";a.style.setProperty("--accent",p.accent);
+ a.innerHTML=`<a class="head" href="./standalone/${p.id}.html"><div><span>${String(i+1).padStart(2,"0")}</span> <b>${p.title.toUpperCase()}</b></div><small>${p.family}</small></a><video autoplay muted loop playsinline preload="metadata" src="../preview/mp4/${p.id}.mp4"></video><footer>${p.subtitle}</footer>`;
+ grid.append(a);videos.push(a.querySelector("video"));
+});
+const speed=document.querySelector("#speed"),out=speed.parentElement.querySelector("output");
+speed.oninput=()=>{videos.forEach(v=>v.playbackRate=+speed.value);out.value=(+speed.value).toFixed(2)};
+let paused=false;document.querySelector("#pause").onclick=e=>{paused=!paused;videos.forEach(v=>paused?v.pause():v.play());e.target.textContent=paused?"RESUME ALL":"PAUSE ALL"};
+document.querySelector("#fullscreen").onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+</script></body></html>

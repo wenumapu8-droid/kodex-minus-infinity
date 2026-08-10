@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 32" width="1200" height="32" role="img" aria-label="Wenu Mapu zigzag with diamonds divider">
+  <defs>
+    <pattern id="zigzag-diamonds" x="0" y="0" width="60" height="32" patternUnits="userSpaceOnUse">
+      <g stroke="#F2EDE4" stroke-width="1" fill="none" stroke-linejoin="miter">
+        <polyline points="0,16 15,6 30,16 45,6 60,16"/>
+        <polygon points="15,20 18,16 15,12 12,16"/>
+        <polygon points="45,20 48,16 45,12 42,16"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="1200" height="32" fill="url(#zigzag-diamonds)"/>
+</svg>

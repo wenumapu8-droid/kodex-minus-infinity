@@ -1,0 +1,9 @@
+html,body{height:100%;margin:0;background:#050507;color:#ece9e2;font-family:ui-monospace,monospace}
+body{display:grid;grid-template-rows:auto 1fr;overflow:hidden}
+header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px;border-bottom:1px solid #282a34;background:#090a0d}
+select,button{background:#0d0e13;color:#ece9e2;border:1px solid #383b48;padding:8px 10px;font:inherit}
+button{cursor:pointer}
+#metrics{margin-left:auto;color:#8c91a2;font-size:12px}
+#stage{position:relative;min-height:0}
+canvas{display:block;width:100%;height:100%}
+@media(max-width:720px){header strong{width:100%}#metrics{width:100%;margin-left:0}}

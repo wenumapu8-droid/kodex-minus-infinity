@@ -1,0 +1,54 @@
+---
+interface Props {
+  module?: string;
+  atmosphere?: 'deep' | 'chill-out' | 'acid' | 'ritual' | 'specimen' | 'archive' | 'cosmology' | 'descent';
+  quality?: 'full' | 'balanced' | 'low-power';
+  class?: string;
+  ariaLabel?: string;
+}
+const {
+  module = 'observe-core',
+  atmosphere = 'deep',
+  quality = 'balanced',
+  class: className = '',
+  ariaLabel = 'KODEX generative visual',
+} = Astro.props;
+const id = `kdx-module-${crypto.randomUUID()}`;
+---
+<div
+  id={id}
+  class={`kdx-module-host ${className}`}
+  data-kdx-module={module}
+  data-kdx-atmosphere={atmosphere}
+  data-kdx-quality={quality}
+>
+  <canvas class="kdx-module-canvas" role="img" aria-label={ariaLabel}></canvas>
+</div>
+
+<script>
+  import { mountKodexModule } from '/assets/kodex/modules/engine.js';
+
+  document.querySelectorAll<HTMLElement>('[data-kdx-module]:not([data-kdx-mounted])').forEach((host) => {
+    host.dataset.kdxMounted = '1';
+    const canvas = host.querySelector<HTMLCanvasElement>('canvas');
+    if (!canvas) return;
+
+    const controller = mountKodexModule({
+      canvas,
+      module: host.dataset.kdxModule,
+      atmosphere: host.dataset.kdxAtmosphere,
+      quality: host.dataset.kdxQuality,
+    });
+
+    (host as HTMLElement & { __kdxModule?: unknown }).__kdxModule = controller;
+  });
+
+  document.addEventListener('astro:before-swap', () => {
+    document.querySelectorAll<HTMLElement>('[data-kdx-module]').forEach((host) => {
+      const controller = (host as HTMLElement & {
+        __kdxModule?: { destroy?: () => void };
+      }).__kdxModule;
+      controller?.destroy?.();
+    });
+  }, { once: true });
+</script>

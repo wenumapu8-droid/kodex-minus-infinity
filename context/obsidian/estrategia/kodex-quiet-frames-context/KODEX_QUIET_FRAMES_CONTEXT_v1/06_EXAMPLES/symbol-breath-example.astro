@@ -1,0 +1,26 @@
+---
+import KodexQuietFrame from '../03_COMPONENTS/astro/KodexQuietFrame.astro';
+import '../03_COMPONENTS/styles/kodex-quiet-frames.css';
+
+const symbol = `
+<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="200" r="122" stroke="currentColor" stroke-width="2"/>
+  <path d="M84 200H316M200 84V316" stroke="currentColor" stroke-width="2"/>
+  <circle cx="200" cy="200" r="22" fill="currentColor"/>
+</svg>`;
+---
+
+<KodexQuietFrame
+  variant="symbol"
+  symbol={symbol}
+  alt="KODEX observer glyph"
+  archiveId="KDX://GL-001"
+  label="OBSERVER / LATENT"
+  status="STATUS / QUIET"
+  node="NODE / 01"
+  origin="ORIGIN / KODEX"
+  accent="bronze"
+  geometry="axis"
+  align="center"
+  ratio="1:1"
+/>

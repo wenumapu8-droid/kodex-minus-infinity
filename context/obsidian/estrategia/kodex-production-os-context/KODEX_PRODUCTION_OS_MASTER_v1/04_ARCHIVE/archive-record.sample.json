@@ -1,0 +1,21 @@
+{
+  "id": "KDX-OBJ-00471",
+  "title": "Atacama Meteorite Relic",
+  "recordType": "OBJECT",
+  "status": "CARRIED",
+  "origin": "Atacama / documented supplier",
+  "maker": "Ocin",
+  "material": "Meteorite and implant-grade titanium",
+  "edition": "1/1",
+  "ownerPrivateId": "PRIVATE-CARRIER-ID",
+  "public": true,
+  "media": [
+    "/assets/archive/KDX-OBJ-00471/hero.webp"
+  ],
+  "relatedRecords": [
+    "KDX-CON-00118"
+  ],
+  "careProtocol": "/care/meteorite-relic",
+  "createdAt": "2026-08-01T00:00:00Z",
+  "updatedAt": "2026-08-01T00:00:00Z"
+}

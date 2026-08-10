@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 32" width="1200" height="32" role="img" aria-label="Wenu Mapu abstract weave divider">
+  <defs>
+    <pattern id="abstract-weave" x="0" y="0" width="40" height="32" patternUnits="userSpaceOnUse">
+      <g stroke="#F2EDE4" stroke-width="0.9" fill="none">
+        <line x1="0" y1="16" x2="40" y2="16" stroke-width="0.5" opacity="0.5"/>
+        <path d="M 0 16 Q 10 6 20 16 Q 30 26 40 16" stroke-width="1"/>
+        <rect x="18" y="14" width="4" height="4" fill="#F2EDE4" stroke="none"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="1200" height="32" fill="url(#abstract-weave)"/>
+</svg>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KODEX Production OS Lab</title>
+<link rel="stylesheet" href="./08_LAB/lab.css">
+</head>
+<body>
+<header>
+  <h1>KODEX−∞ / PRODUCTION OS</h1>
+  <p>Scenes · state · provenance · archive · QA · release</p>
+</header>
+<main>
+  <section class="summary">
+    <div class="stat"><b id="sceneCount">—</b>SCENES</div>
+    <div class="stat"><b id="viewportCount">—</b>VIEWPORTS</div>
+    <div class="stat"><b id="profileCount">—</b>PROFILES</div>
+    <div class="stat"><b id="testCount">—</b>VISUAL CASES</div>
+  </section>
+  <section class="panel">
+    <h2>SCENE MANIFESTS</h2>
+    <div class="grid" id="sceneGrid"></div>
+  </section>
+  <section class="panel">
+    <h2>PERFORMANCE PROFILES</h2>
+    <table>
+      <thead><tr><th>PROFILE</th><th>FPS</th><th>DPR</th><th>PASSES</th><th>STATUS</th></tr></thead>
+      <tbody id="budgetRows"></tbody>
+    </table>
+  </section>
+</main>
+<script type="module" src="./08_LAB/lab.js"></script>
+</body>
+</html>

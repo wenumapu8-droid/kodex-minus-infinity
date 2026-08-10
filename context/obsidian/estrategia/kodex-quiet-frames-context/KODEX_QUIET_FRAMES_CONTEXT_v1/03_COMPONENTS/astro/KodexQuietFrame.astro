@@ -1,0 +1,82 @@
+---
+export interface Props {
+  id?: string;
+  variant?: 'image' | 'symbol' | 'material' | 'field-note' | 'threshold' | 'constellation';
+  image?: string;
+  alt?: string;
+  symbol?: string;
+  archiveId?: string;
+  label?: string;
+  status?: string;
+  node?: string;
+  origin?: string;
+  accent?: 'none' | 'cyan' | 'violet' | 'bronze';
+  geometry?: 'steps' | 'brackets' | 'axis' | 'bars' | 'open-frame';
+  align?: 'left' | 'center' | 'right';
+  ratio?: '1:1' | '4:5' | '3:4' | '16:9' | '2:3';
+  class?: string;
+}
+
+const {
+  id = `kdx-qf-${crypto.randomUUID()}`,
+  variant = 'image',
+  image,
+  alt = '',
+  symbol,
+  archiveId = 'KDX://AR-000',
+  label = 'FIELD MEMORY / FRAGMENT',
+  status = 'LATENT',
+  node = 'NODE / 00',
+  origin = 'ORIGIN / UNKNOWN',
+  accent = 'none',
+  geometry = 'steps',
+  align = 'left',
+  ratio = '1:1',
+  class: className = '',
+} = Astro.props;
+
+const ratioClass = ratio.replace(':', '-');
+---
+<section
+  id={id}
+  class={`kdx-qf kdx-qf--${variant} kdx-qf--${align} kdx-qf--accent-${accent} ${className}`}
+  data-kdx-quiet-frame
+>
+  <div class="kdx-qf__noise" aria-hidden="true"></div>
+  <div class="kdx-qf__axis" aria-hidden="true"></div>
+
+  <div class={`kdx-qf__chamber kdx-qf__ratio-${ratioClass}`}>
+    {image && (
+      <img
+        src={image}
+        alt={alt}
+        class="kdx-qf__image"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+
+    {symbol && !image && (
+      <div class="kdx-qf__symbol" aria-label={alt || label}>
+        <Fragment set:html={symbol} />
+      </div>
+    )}
+
+    <div class={`kdx-qf__geometry kdx-qf__geometry--${geometry}`} aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="kdx-qf__meta">
+    <span class="kdx-qf__id">{archiveId}</span>
+    <span class="kdx-qf__label">{label}</span>
+  </div>
+
+  <aside class="kdx-qf__rail" aria-label="Archive metadata">
+    <span>{status}</span>
+    <span>{node}</span>
+    <span>{origin}</span>
+  </aside>
+
+  <slot />
+</section>

@@ -1,0 +1,28 @@
+{
+  "id": "cosmology",
+  "index": 5,
+  "title": "COSMOLOGY",
+  "route": "/kodex/#cosmology",
+  "verb": "CONNECT",
+  "accent": "#FF00C8",
+  "heroModule": "index-constellation",
+  "fallback": "cosmology-static.svg",
+  "states": [
+    "isolated",
+    "mapping",
+    "linked",
+    "aligned"
+  ],
+  "primaryAction": "MAP THE FIELD",
+  "completionEvent": "COSMOLOGY_ALIGNED",
+  "memoryWrites": [
+    "visited.cosmology",
+    "cosmology.linkedNodes",
+    "cosmology.primaryAxis"
+  ],
+  "performance": {
+    "full": 5,
+    "balanced": 3,
+    "lowPower": 1
+  }
+}

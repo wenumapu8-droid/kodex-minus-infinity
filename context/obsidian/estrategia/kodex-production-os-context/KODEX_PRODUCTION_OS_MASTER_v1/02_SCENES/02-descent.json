@@ -1,0 +1,28 @@
+{
+  "id": "descent",
+  "index": 2,
+  "title": "DESCENT",
+  "route": "/kodex/#descent",
+  "verb": "DESCEND",
+  "accent": "#FF6A00",
+  "heroModule": "fracture-corridor",
+  "fallback": "descent-static.svg",
+  "states": [
+    "surface",
+    "falling",
+    "fractured",
+    "below"
+  ],
+  "primaryAction": "DESCEND FURTHER",
+  "completionEvent": "DESCENT_COMPLETE",
+  "memoryWrites": [
+    "visited.descent",
+    "session.depthPeak",
+    "signals.anomalySeen"
+  ],
+  "performance": {
+    "full": 5,
+    "balanced": 3,
+    "lowPower": 1
+  }
+}

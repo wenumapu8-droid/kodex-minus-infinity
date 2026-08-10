@@ -1,0 +1,134 @@
+{
+  "archive-fragment": {
+    "typeStyle": "ritual",
+    "fontDisplay": "Oxanium",
+    "fontInterface": "IBM Plex Mono",
+    "geometry": "steps",
+    "tracking": "0.18em",
+    "accent": "none",
+    "motion": "mask-reveal",
+    "tempo": "72 BPM"
+  },
+  "signal-residue": {
+    "typeStyle": "signal",
+    "fontDisplay": "Chakra Petch",
+    "fontInterface": "Geist Mono",
+    "geometry": "bars",
+    "tracking": "0.24em",
+    "accent": "cyan",
+    "motion": "scan",
+    "tempo": "82 BPM"
+  },
+  "body-index": {
+    "typeStyle": "outline",
+    "fontDisplay": "Geist",
+    "fontInterface": "IBM Plex Mono",
+    "geometry": "brackets",
+    "tracking": "0.16em",
+    "accent": "violet",
+    "motion": "fade",
+    "tempo": "66 BPM"
+  },
+  "terrain-memory": {
+    "typeStyle": "ritual",
+    "fontDisplay": "Oxanium",
+    "fontInterface": "IBM Plex Mono",
+    "geometry": "open-frame",
+    "tracking": "0.20em",
+    "accent": "bronze",
+    "motion": "drift",
+    "tempo": "60 BPM"
+  },
+  "threshold-sheet": {
+    "typeStyle": "block",
+    "fontDisplay": "Orbitron",
+    "fontInterface": "Geist Mono",
+    "geometry": "axis",
+    "tracking": "0.30em",
+    "accent": "none",
+    "motion": "reveal",
+    "tempo": "78 BPM"
+  },
+  "constellation-plate": {
+    "typeStyle": "outline",
+    "fontDisplay": "Oxanium",
+    "fontInterface": "Geist Mono",
+    "geometry": "brackets",
+    "tracking": "0.20em",
+    "accent": "violet",
+    "motion": "pulse",
+    "tempo": "70 BPM"
+  },
+  "field-note": {
+    "typeStyle": "signal",
+    "fontDisplay": "Chakra Petch",
+    "fontInterface": "IBM Plex Mono",
+    "geometry": "open-frame",
+    "tracking": "0.22em",
+    "accent": "none",
+    "motion": "micro-flicker",
+    "tempo": "64 BPM"
+  },
+  "symbol-breath": {
+    "typeStyle": "ritual",
+    "fontDisplay": "KDX Sigil Grid",
+    "fontInterface": "Geist Mono",
+    "geometry": "axis",
+    "tracking": "0.12em",
+    "accent": "bronze",
+    "motion": "breathe",
+    "tempo": "56 BPM"
+  },
+  "indie-deep": {
+    "typeStyle": "outline",
+    "fontDisplay": "Geist",
+    "fontInterface": "IBM Plex Mono",
+    "image": "grainy film still, grayscale with warm bronze contamination",
+    "geometry": "open-frame",
+    "tracking": "0.14em",
+    "accent": "bronze",
+    "motion": "slow drift + film gate weave",
+    "tempo": "86 BPM",
+    "density": "medium-low",
+    "use": "Human, intimate, nocturnal transition; less sci-fi and more authored editorial."
+  },
+  "chill-out": {
+    "typeStyle": "signal",
+    "fontDisplay": "Chakra Petch",
+    "fontInterface": "Geist Mono",
+    "image": "soft monochrome landscape or blurred material field",
+    "geometry": "bars",
+    "tracking": "0.26em",
+    "accent": "cyan",
+    "motion": "long dissolve + horizontal scan",
+    "tempo": "68 BPM",
+    "density": "very low",
+    "use": "Longest breathing frame after intense WebGL or before Return."
+  },
+  "dark-ambient": {
+    "typeStyle": "ritual",
+    "fontDisplay": "Oxanium",
+    "fontInterface": "IBM Plex Mono",
+    "image": "void, smoke, stone or low-frequency terrain",
+    "geometry": "axis",
+    "tracking": "0.22em",
+    "accent": "violet",
+    "motion": "black-level breathing + rare ghost frame",
+    "tempo": "48 BPM",
+    "density": "low",
+    "use": "Descent, cosmology, unknown source and archive anomalies."
+  },
+  "ritual-dub": {
+    "typeStyle": "block",
+    "fontDisplay": "Orbitron",
+    "fontInterface": "Geist Mono",
+    "image": "high-contrast object fragment with deep black negative space",
+    "geometry": "steps",
+    "tracking": "0.28em",
+    "accent": "acid-muted",
+    "motion": "delayed echo, duplicated code rail, subtle frame offset",
+    "tempo": "74 BPM",
+    "density": "medium",
+    "use": "Material, relic, transmission and rhythmic chapter separator."
+  }
+}

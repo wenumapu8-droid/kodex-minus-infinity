@@ -1,0 +1,35 @@
+[
+  {
+    "id": "kdx-master-seal",
+    "type": "svg",
+    "path": "/assets/kodex/seals/kdx-master-seal.svg",
+    "license": "PROPRIETARY-BRAND-ASSET",
+    "origin": "KODEX-ORIGINAL",
+    "creator": "Ocin / Wenu Mapu",
+    "sourceUrl": null,
+    "allowedScenes": [
+      "threshold",
+      "return"
+    ],
+    "commercialUse": true,
+    "redistributable": false,
+    "attribution": null,
+    "notes": "Canonical master seal. Do not alter geometry."
+  },
+  {
+    "id": "kdx-observe-core",
+    "type": "shader",
+    "path": "/src/kodex/shaders/observe-core.frag.glsl",
+    "license": "MIT-CODE / PROPRIETARY-ART-DIRECTION",
+    "origin": "KODEX-ORIGINAL",
+    "creator": "KODEX",
+    "sourceUrl": null,
+    "allowedScenes": [
+      "observe"
+    ],
+    "commercialUse": true,
+    "redistributable": false,
+    "attribution": null,
+    "notes": "Hero phenomenon for OBSERVE."
+  }
+]

@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#020306" />
+  <title>KODEX-∞ — Signal Vortex</title>
+  <style>
+    :root{color-scheme:dark;--ink:#f4f0e8;--line:rgba(255,255,255,.16);--red:#ff3154;--cyan:#35dfff}
+    *{box-sizing:border-box}
+    html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#020306;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;color:var(--ink)}
+    canvas{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;background:#020306}
+    .hud{position:fixed;inset:0;pointer-events:none;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;justify-content:space-between;transition:opacity .4s ease}
+    .hud.hidden{opacity:0}
+    .top,.bottom{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+    .brand{font-size:clamp(12px,2.8vw,18px);letter-spacing:.12em;font-weight:700;text-shadow:0 0 20px rgba(255,255,255,.22)}
+    .meta{font-size:10px;letter-spacing:.16em;line-height:1.45;text-align:right;color:rgba(244,240,232,.68)}
+    .tag{font-size:10px;letter-spacing:.16em;color:rgba(244,240,232,.72)}
+    .controls{pointer-events:auto;position:fixed;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:8px;border:1px solid var(--line);background:rgba(2,3,6,.62);backdrop-filter:blur(12px);border-radius:999px;box-shadow:0 0 40px rgba(0,0,0,.45);transition:opacity .4s ease,transform .4s ease;max-width:calc(100vw - 24px)}
+    .controls.hidden{opacity:0;transform:translate(-50%,18px);pointer-events:none}
+    button{appearance:none;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.04);color:var(--ink);border-radius:999px;height:38px;padding:0 13px;font:600 10px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+    button:active{transform:scale(.97);background:rgba(255,255,255,.11)}
+    .range{display:flex;align-items:center;gap:8px;padding:0 8px}
+    .range span{font-size:9px;letter-spacing:.12em;color:rgba(255,255,255,.58)}
+    input[type=range]{width:min(24vw,130px);accent-color:var(--cyan)}
+    .status{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.7);pointer-events:none}
+    @media (max-width:640px){.range span{display:none}.controls{gap:5px;padding:6px}button{height:36px;padding:0 10px}.meta{display:none}}
+    @media (prefers-reduced-motion:reduce){.controls::before{content:"REDUCED MOTION";font-size:9px;color:#ff8aa0;padding-left:8px}}
+  </style>
+</head>
+<body>
+  <canvas id="gl" aria-label="Animación generativa KODEX de circuitos luminosos y vórtices"></canvas>
+  <div class="hud" id="hud">
+    <div class="top">
+      <div class="brand">KODEX-∞ / SIGNAL MYCELIUM</div>
+      <div class="meta">LIVE FIELD 07<br>CYAN / AMBER / WHITE<br>WEBGL2 MULTIPASS</div>
+    </div>
+    <div class="bottom">
+      <div class="tag">THE PATTERN DOES NOT STORE. IT PROPAGATES.</div>
+      <div class="meta" id="fps">INITIALIZING</div>
+    </div>
+  </div>
+  <div class="controls" id="controls">
+    <button id="pause">Pause</button>
+    <button id="mutate">Mutate</button>
+    <div class="range"><span>Speed</span><input id="speed" type="range" min="0.15" max="2.2" step="0.01" value="0.82" aria-label="Velocidad"></div>
+    <div class="range"><span>Energy</span><input id="energy" type="range" min="0.35" max="1.8" step="0.01" value="1.05" aria-label="Energía"></div>
+    <button id="full">Full</button>
+  </div>
+  <div class="status" id="status">COMPILING SIGNAL…</div>
+  <script>
+(() => {
+  'use strict';
+
+  const canvas = document.getElementById('gl');
+  const statusEl = document.getElementById('status');
+  const fpsEl = document.getElementById('fps');
+  const hud = document.getElementById('hud');
+  const controls = document.getElementById('controls');
+  const pauseBtn = document.getElementById('pause');
+  const mutateBtn = document.getElementById('mutate');
+  const fullBtn = document.getElementById('full');
+  const speedInput = document.getElementById('speed');
+  const energyInput = document.getElementById('energy');
+
+  const gl = canvas.getContext('webgl2', {
+    alpha: false,
+    antialias: false,
+    depth: false,
+    stencil: false,
+    powerPreference: 'high-performance',
+    preserveDrawingBuffer: false
+  });
+
+  if (!gl) {
+    statusEl.textContent = 'WEBGL2 NO DISPONIBLE';
+    return;
+  }
+
+  const VERT = `#version 300 es
+  precision highp float;
+  out vec2 v_uv;
+  void main(){
+    vec2 p = vec2((gl_VertexID << 1) & 2, gl_VertexID & 2);
+    v_uv = p * 0.5;
+    gl_Position = vec4(p - 1.0, 0.0, 1.0);
+  }`;
+
+  const SOURCE = `#version 300 es
+  precision highp float;
+  in vec2 v_uv;
+  out vec4 outColor;
+  uniform vec2 u_resolution;
+  uniform float u_time;
+  uniform float u_seed;
+  uniform float u_energy;
+  uniform vec2 u_pointer;
+
+  #define PI 3.141592653589793
+
+  float hash11(float p){ p=fract(p*.1031); p*=p+33.33; p*=p+p; return fract(p); }
+  float hash21(vec2 p){
+    vec3 p3=fract(vec3(p.xyx)*vec3(.1031,.1030,.0973));
+    p3+=dot(p3,p3.yzx+33.33);
+    return fract((p3.x+p3.y)*p3.z);
+  }
+  vec2 hash22(vec2 p){
+    float n=hash21(p);
+    return vec2(n,hash21(p+n+17.17));
+  }
+  mat2 rot(float a){float c=cos(a),s=sin(a);return mat2(c,-s,s,c);}
+  float sdSegment(vec2 p,vec2 a,vec2 b){vec2 pa=p-a,ba=b-a;float h=clamp(dot(pa,ba)/dot(ba,ba),0.,1.);return length(pa-ba*h);}
+  float sat(float x){return clamp(x,0.,1.);}
+
+  float valueNoise(vec2 p){
+    vec2 i=floor(p),f=fract(p); f=f*f*(3.-2.*f);
+    return mix(mix(hash21(i),hash21(i+vec2(1,0)),f.x),mix(hash21(i+vec2(0,1)),hash21(i+1.),f.x),f.y);
+  }
+  float fbm(vec2 p){
+    float s=0.,a=.5;
+    for(int i=0;i<5;i++){s+=a*valueNoise(p);p=rot(.63)*p*2.03+13.7;a*=.5;}
+    return s;
+  }
+
+  vec2 vortex(vec2 p, vec2 c, float strength, float radius, float phase){
+    vec2 d=p-c;
+    float rr=dot(d,d);
+    float a=strength*exp(-rr*radius)*(0.72+0.28*sin(phase+length(d)*8.));
+    return c+rot(a)*d;
+  }
+
+  vec2 fieldWarp(vec2 p,float t){
+    float s=u_seed;
+    vec2 m=(u_pointer-.5)*vec2(u_resolution.x/u_resolution.y,1.0)*.55;
+    p=vortex(p,vec2(-.42,.18)+m*.18, .72*sin(t*.21+s),2.1,t*.8+s);
+    p=vortex(p,vec2(.38,.25)-m*.12,-.68*cos(t*.17+s*1.7),2.4,t*.7+s*2.);
+    p=vortex(p,vec2(.04,-.38)+m*.08,.83*sin(t*.13+s*2.4),1.85,t*.6-s);
+    p=vortex(p,m*.22,.42*sin(t*.31+s*.7),1.35,t+s);
+    float n=fbm(p*1.7+t*.018);
+    p += .035*vec2(cos(n*9.+t*.08),sin(n*8.-t*.07));
+    return p;
+  }
+
+  float circuitLayer(vec2 p,float scale,float width,float t,float salt){
+    vec2 q=p*scale;
+    vec2 id=floor(q);
+    vec2 f=fract(q)-.5;
+    float rnd=hash21(id+salt+floor(u_seed*31.));
+    float orient=step(.5,rnd);
+    vec2 dir=mix(vec2(1,0),vec2(0,1),orient);
+    vec2 ort=vec2(-dir.y,dir.x);
+    float offset=(hash21(id+salt+2.3)-.5)*.52;
+    float len=mix(.18,.72,hash21(id+salt+7.1));
+    vec2 a=ort*offset-dir*len;
+    vec2 b=ort*offset+dir*len;
+    float d=sdSegment(f,a,b);
+
+    float elbowChance=step(.58,hash21(id+salt+13.));
+    vec2 e=b;
+    vec2 c=e+ort*(hash21(id+salt+21.)-.5)*.8;
+    float de=sdSegment(f,e,c);
+    d=min(d,mix(9.,de,elbowChance));
+
+    float line=exp(-d*d/(width*width));
+    float endpoint=min(length(f-a),length(f-b));
+    float node=exp(-endpoint*endpoint/(width*width*5.5));
+    float pulse=.55+.45*sin(t*(1.1+hash21(id+4.))*1.4+rnd*19.);
+    float gate=step(.16,hash21(id+salt+3.7));
+    return (line*.78+node*1.7)*pulse*gate;
+  }
+
+  float voronoiEdge(vec2 p,float scale,float salt){
+    vec2 q=p*scale;
+    vec2 id=floor(q),f=fract(q);
+    float m1=10.,m2=10.;
+    for(int y=-1;y<=1;y++){
+      for(int x=-1;x<=1;x++){
+        vec2 g=vec2(x,y);
+        vec2 o=hash22(id+g+salt);
+        vec2 r=g+o-f;
+        float d=dot(r,r);
+        if(d<m1){m2=m1;m1=d;}else if(d<m2){m2=d;}
+      }
+    }
+    float edge=sqrt(m2)-sqrt(m1);
+    return exp(-edge*edge*180.);
+  }
+
+  float arcField(vec2 p,vec2 c,float t,float phase){
+    vec2 d=p-c;
+    float r=length(d)+1e-4;
+    float a=atan(d.y,d.x);
+    float spiral=a*3.5+log(r)*5.7+t*.34+phase;
+    float bands=pow(.5+.5*cos(spiral),18.);
+    float shell=exp(-pow(abs(fract(r*3.1-phase*.07)-.5)*7.,2.));
+    return bands*shell*exp(-r*.62);
+  }
+
+  vec3 palette(float k,float hot){
+    vec3 cyan=vec3(.03,.67,1.35);
+    vec3 amber=vec3(1.25,.42,.08);
+    vec3 violet=vec3(.26,.08,.72);
+    vec3 c=mix(cyan,amber,sat(k));
+    c+=violet*(1.-hot)*.18;
+    return c;
+  }
+
+  void main(){
+    vec2 uv=v_uv;
+    vec2 p=(uv-.5)*vec2(u_resolution.x/u_resolution.y,1.0)*2.0;
+    float t=u_time;
+    vec2 w=fieldWarp(p,t);
+
+    float c1=circuitLayer(w,7.2,.045,t,3.1);
+    float c2=circuitLayer(rot(.31)*w,12.5,.035,t*1.17,17.4);
+    float c3=circuitLayer(rot(-.22)*w,22.0,.026,t*.83,31.7);
+    float edges=voronoiEdge(w+fbm(w*2.8)*.025,8.0,11.);
+
+    float arcs=0.;
+    arcs+=arcField(w,vec2(-.42,.18),t,1.2);
+    arcs+=arcField(w,vec2(.38,.25),-t*.83,3.7);
+    arcs+=arcField(w,vec2(.04,-.38),t*.71,5.4);
+
+    vec2 sparkGrid=floor((w+1.7)*34.);
+    vec2 sf=fract((w+1.7)*34.)-.5;
+    float sr=hash21(sparkGrid+floor(t*.35)+u_seed*9.);
+    float spark=exp(-dot(sf,sf)*180.)*step(.985,sr)*(1.2+.8*sin(t*8.+sr*30.));
+
+    float filament=c1*.74+c2*.58+c3*.42+edges*.16+arcs*.56+spark*2.2;
+    float neb=fbm(w*2.1+t*.012)*fbm(rot(.9)*w*3.2-t*.016);
+    float voidMask=.55+.45*smoothstep(.08,.9,length(w));
+    filament*=voidMask;
+
+    float chroma=hash21(floor(w*9.)+u_seed*5.);
+    float hot=sat(filament*1.25);
+    vec3 col=palette(chroma,hot)*filament;
+    col+=vec3(.12,.18,.31)*neb*.08;
+    col+=vec3(1.5,1.25,.95)*pow(sat(filament*.72),3.2);
+    col*=u_energy;
+
+    float vign=1.-smoothstep(.45,1.45,length(p*.67));
+    col*=mix(.44,1.,vign);
+    outColor=vec4(max(col,0.),1.);
+  }`;
+
+  const FEEDBACK = `#version 300 es
+  precision highp float;
+  in vec2 v_uv;
+  out vec4 outColor;
+  uniform sampler2D u_source;
+  uniform sampler2D u_previous;
+  uniform vec2 u_resolution;
+  uniform float u_time;
+  uniform float u_decay;
+  uniform float u_seed;
+  mat2 rot(float a){float c=cos(a),s=sin(a);return mat2(c,-s,s,c);}
+  void main(){
+    vec2 p=v_uv-.5;
+    float a=.0012*sin(u_time*.23+u_seed);
+    vec2 q=rot(a)*(p*1.0016)+.5;
+    vec3 src=texture(u_source,v_uv).rgb;
+    vec3 prev=texture(u_previous,q).rgb;
+    float l=dot(src,vec3(.299,.587,.114));
+    vec3 memory=prev*u_decay*(1.-clamp(l*.08,0.,.12));
+    vec3 col=max(src,memory);
+    col+=src*.28;
+    col=min(col,vec3(8.));
+    outColor=vec4(col,1.);
+  }`;
+
+  const DISPLAY = `#version 300 es
+  precision highp float;
+  in vec2 v_uv;
+  out vec4 outColor;
+  uniform sampler2D u_texture;
+  uniform vec2 u_resolution;
+  uniform float u_time;
+  uniform float u_energy;
+  float hash21(vec2 p){vec3 p3=fract(vec3(p.xyx)*vec3(.1031,.1030,.0973));p3+=dot(p3,p3.yzx+33.33);return fract((p3.x+p3.y)*p3.z);}
+  void main(){
+    vec2 px=1./u_resolution;
+    vec2 uv=v_uv;
+    vec3 core=texture(u_texture,uv).rgb;
+    vec3 bloom=vec3(0.);
+    bloom+=texture(u_texture,uv+px*vec2(2.,0.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(-2.,0.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(0.,2.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(0.,-2.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(4.,4.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(-4.,4.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(4.,-4.)).rgb;
+    bloom+=texture(u_texture,uv+px*vec2(-4.,-4.)).rgb;
+    bloom*=.095;
+
+    float ca=1.4/u_resolution.x;
+    vec3 chroma=vec3(texture(u_texture,uv+vec2(ca,0)).r,core.g,texture(u_texture,uv-vec2(ca,0)).b);
+    vec3 col=mix(core,chroma,.27)+bloom*.72;
+    col=1.-exp(-col*(.82+u_energy*.24));
+    col=pow(max(col,0.),vec3(.84));
+    float scan=.965+.035*sin(gl_FragCoord.y*3.14159);
+    float grain=(hash21(gl_FragCoord.xy+u_time*91.7)-.5)*.035;
+    col=col*scan+grain;
+    float v=1.-smoothstep(.45,.9,length(uv-.5));
+    col*=mix(.68,1.,v);
+    outColor=vec4(col,1.);
+  }`;
+
+  function compile(type, source) {
+    const sh = gl.createShader(type);
+    gl.shaderSource(sh, source);
+    gl.compileShader(sh);
+    if (!gl.getShaderParameter(sh, gl.COMPILE_STATUS)) {
+      const msg = gl.getShaderInfoLog(sh);
+      gl.deleteShader(sh);
+      throw new Error(msg);
+    }
+    return sh;
+  }
+
+  function program(fragment) {
+    const p = gl.createProgram();
+    gl.attachShader(p, compile(gl.VERTEX_SHADER, VERT));
+    gl.attachShader(p, compile(gl.FRAGMENT_SHADER, fragment));
+    gl.linkProgram(p);
+    if (!gl.getProgramParameter(p, gl.LINK_STATUS)) {
+      throw new Error(gl.getProgramInfoLog(p));
+    }
+    return p;
+  }
+
+  function locs(p, names) {
+    const out = {};
+    names.forEach(n => out[n] = gl.getUniformLocation(p, n));
+    return out;
+  }
+
+  let sourceProgram, feedbackProgram, displayProgram;
+  try {
+    sourceProgram = program(SOURCE);
+    feedbackProgram = program(FEEDBACK);
+    displayProgram = program(DISPLAY);
+  } catch (err) {
+    console.error(err);
+    statusEl.textContent = 'SHADER ERROR — ABRE CONSOLA';
+    return;
+  }
+
+  const U_SOURCE = locs(sourceProgram,['u_resolution','u_time','u_seed','u_energy','u_pointer']);
+  const U_FEEDBACK = locs(feedbackProgram,['u_source','u_previous','u_resolution','u_time','u_decay','u_seed']);
+  const U_DISPLAY = locs(displayProgram,['u_texture','u_resolution','u_time','u_energy']);
+
+  const vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+
+  let width = 1, height = 1;
+  let sourceTex, sourceFbo;
+  let pingTex = [], pingFbo = [];
+  let ping = 0;
+
+  function makeTexture(w,h) {
+    const tex=gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D,tex);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA8,w,h,0,gl.RGBA,gl.UNSIGNED_BYTE,null);
+    return tex;
+  }
+  function makeFbo(tex){
+    const f=gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER,f);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,tex,0);
+    return f;
+  }
+  function destroyTargets(){
+    [sourceTex,...pingTex].forEach(t=>t&&gl.deleteTexture(t));
+    [sourceFbo,...pingFbo].forEach(f=>f&&gl.deleteFramebuffer(f));
+  }
+  function resize(){
+    const dpr=Math.min(window.devicePixelRatio||1,1.55);
+    const quality=(innerWidth<700?0.72:0.82);
+    const w=Math.max(2,Math.floor(innerWidth*dpr*quality));
+    const h=Math.max(2,Math.floor(innerHeight*dpr*quality));
+    if(w===width&&h===height)return;
+    width=w;height=h;
+    canvas.width=w;canvas.height=h;
+    destroyTargets();
+    sourceTex=makeTexture(w,h);sourceFbo=makeFbo(sourceTex);
+    pingTex=[makeTexture(w,h),makeTexture(w,h)];
+    pingFbo=[makeFbo(pingTex[0]),makeFbo(pingTex[1])];
+    gl.bindFramebuffer(gl.FRAMEBUFFER,pingFbo[0]);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,pingFbo[1]);gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,null);
+  }
+
+  let seed=Math.random()*1000;
+  let pointer=[.5,.5];
+  let targetPointer=[.5,.5];
+  let paused=false;
+  let simTime=0;
+  let last=performance.now();
+  let frameCount=0, fpsStamp=last;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced) speedInput.value='0.28';
+
+  function setPointer(clientX,clientY){
+    targetPointer[0]=clientX/innerWidth;
+    targetPointer[1]=1-clientY/innerHeight;
+  }
+  canvas.addEventListener('pointermove',e=>setPointer(e.clientX,e.clientY),{passive:true});
+  canvas.addEventListener('pointerdown',e=>{setPointer(e.clientX,e.clientY);showUI();},{passive:true});
+
+  let hideTimer;
+  function showUI(){
+    hud.classList.remove('hidden');controls.classList.remove('hidden');
+    clearTimeout(hideTimer);
+    hideTimer=setTimeout(()=>{hud.classList.add('hidden');controls.classList.add('hidden');},5000);
+  }
+  document.addEventListener('click',showUI,{passive:true});
+  showUI();
+
+  pauseBtn.addEventListener('click',()=>{
+    paused=!paused; pauseBtn.textContent=paused?'Play':'Pause';
+  });
+  mutateBtn.addEventListener('click',()=>{
+    seed=Math.random()*1000;
+    gl.bindFramebuffer(gl.FRAMEBUFFER,pingFbo[0]);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,pingFbo[1]);gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,null);
+  });
+  fullBtn.addEventListener('click',async()=>{
+    try{
+      if(!document.fullscreenElement) await document.documentElement.requestFullscreen();
+      else await document.exitFullscreen();
+    }catch(_){ }
+  });
+  window.addEventListener('resize',resize,{passive:true});
+
+  function textureUnit(unit, tex, uniform){
+    gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,tex);gl.uniform1i(uniform,unit);
+  }
+  function draw(){gl.drawArrays(gl.TRIANGLES,0,3);}
+
+  function render(now){
+    resize();
+    let dt=Math.min(.05,(now-last)/1000);last=now;
+    const speed=parseFloat(speedInput.value);
+    const energy=parseFloat(energyInput.value);
+    if(!paused)simTime+=dt*speed;
+    pointer[0]+=(targetPointer[0]-pointer[0])*.055;
+    pointer[1]+=(targetPointer[1]-pointer[1])*.055;
+
+    gl.viewport(0,0,width,height);
+    gl.disable(gl.BLEND);
+
+    gl.bindFramebuffer(gl.FRAMEBUFFER,sourceFbo);
+    gl.useProgram(sourceProgram);
+    gl.uniform2f(U_SOURCE.u_resolution,width,height);
+    gl.uniform1f(U_SOURCE.u_time,simTime);
+    gl.uniform1f(U_SOURCE.u_seed,seed);
+    gl.uniform1f(U_SOURCE.u_energy,energy);
+    gl.uniform2f(U_SOURCE.u_pointer,pointer[0],pointer[1]);
+    draw();
+
+    const next=1-ping;
+    gl.bindFramebuffer(gl.FRAMEBUFFER,pingFbo[next]);
+    gl.useProgram(feedbackProgram);
+    textureUnit(0,sourceTex,U_FEEDBACK.u_source);
+    textureUnit(1,pingTex[ping],U_FEEDBACK.u_previous);
+    gl.uniform2f(U_FEEDBACK.u_resolution,width,height);
+    gl.uniform1f(U_FEEDBACK.u_time,simTime);
+    gl.uniform1f(U_FEEDBACK.u_decay,paused?.995:.966);
+    gl.uniform1f(U_FEEDBACK.u_seed,seed);
+    draw();
+    ping=next;
+
+    gl.bindFramebuffer(gl.FRAMEBUFFER,null);
+    gl.useProgram(displayProgram);
+    textureUnit(0,pingTex[ping],U_DISPLAY.u_texture);
+    gl.uniform2f(U_DISPLAY.u_resolution,width,height);
+    gl.uniform1f(U_DISPLAY.u_time,simTime);
+    gl.uniform1f(U_DISPLAY.u_energy,energy);
+    draw();
+
+    frameCount++;
+    if(now-fpsStamp>1000){
+      fpsEl.textContent=`${frameCount} FPS / ${width}×${height}`;
+      frameCount=0;fpsStamp=now;
+    }
+    if(statusEl.textContent){statusEl.textContent='';}
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);
+})();
+
+</script>
+</body>
+</html>

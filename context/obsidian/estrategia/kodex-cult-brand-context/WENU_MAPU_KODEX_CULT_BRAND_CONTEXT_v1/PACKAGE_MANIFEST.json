@@ -1,0 +1,21 @@
+{
+  "package": "WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1",
+  "version": "1.0",
+  "created": "2026-08-01",
+  "purpose": "Context engineering package for brand, KODEX, content, community and cultural governance.",
+  "files": [
+    "00_START_HERE/README.md",
+    "01_MASTER_CONTEXT/WENU_MAPU_KODEX_MASTER_CONTEXT.md",
+    "02_BRAND_OS/CULT_BRAND_OPERATING_SYSTEM.md",
+    "03_KODEX/KODEX_AS_MEMORY_INFRASTRUCTURE.md",
+    "04_CONTENT/CONTENT_ENGINE.md",
+    "05_COMMUNITY/FIRST_CIRCLE_SYSTEM.md",
+    "06_CULTURAL_PROTOCOL/WENU_MAPU_CULTURAL_PROTOCOL.md",
+    "07_ROADMAP/90_DAY_IMPLEMENTATION_PLAN.md",
+    "07_ROADMAP/METRICS_FRAMEWORK.md",
+    "08_AGENT_PROMPTS/CHAPTER_BUILDER_PROMPT.md",
+    "08_AGENT_PROMPTS/MASTER_AGENT_PROMPT.md",
+    "09_DATA/wenu_mapu_kodex_context.json",
+    "10_SOURCES/SOURCE_INDEX.md"
+  ]
+}

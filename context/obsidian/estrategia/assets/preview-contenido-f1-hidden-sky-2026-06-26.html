@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="nocturne">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wenu Mapu — Preview F1 + The Hidden Sky · Propuesta 2026-06-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --obsidian:#0a0a0a; --charcoal:#121212; --ash:#1a1a1a;
+  --bone:#f0ede8; --sand:#9a948a; --silver:#b8b4aa;
+  --bronze:#6a4a28; --ember:#c9a84c; --product-panel:#e7e1d4;
+  --nebula-violet:#3a2a6b; --nebula-indigo:#1d1a4a; --nebula-magenta:#6b2d6b; --nebula-plum:#241733;
+  --cosmic-glow:rgba(140,90,200,.22); --cosmic-glow-mag:rgba(150,60,130,.18);
+  --cosmic-ember:rgba(201,168,76,.12); --cosmic-star:rgba(240,237,232,.9);
+  --signal-blue:#3a6ea5; --signal-electric:rgba(78,140,210,.35);
+  --line:#1a1a1a; --line-soft:#2A2520;
+  --font-display:'Instrument Serif',Georgia,serif;
+  --font-ritual:'Cormorant Garamond',Georgia,serif;
+  --font-sans:'Instrument Sans',-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --scrim-strong:rgba(8,7,6,.72); --scrim-mid:rgba(8,7,6,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--obsidian);color:var(--bone);font-family:var(--font-sans);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;letter-spacing:.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+.eyebrow{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ember)}
+.mono{font-family:var(--font-mono)}
+.ritual{font-family:var(--font-ritual);font-style:italic}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.05;letter-spacing:.005em}
+hr{border:0;border-top:1px solid var(--line-soft);margin:0}
+a{color:var(--ember)}
+
+/* ── doc header ── */
+.dochead{padding:clamp(3rem,9vw,7rem) 0 2.5rem;border-bottom:1px solid var(--line-soft);
+  background:radial-gradient(120% 90% at 78% 8%,rgba(58,42,107,.20),transparent 60%),
+             radial-gradient(80% 70% at 12% 30%,rgba(107,45,107,.10),transparent 55%)}
+.dochead h1{font-size:clamp(2.6rem,7vw,5.2rem)}
+.dochead .sub{font-family:var(--font-ritual);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.7rem);color:var(--silver);margin-top:.6rem}
+.dochead .meta{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;color:var(--sand);font-size:.8rem}
+.dochead .meta b{color:var(--bone);font-weight:500}
+
+/* ── system strip ── */
+.system{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;padding:2.5rem 0;border-bottom:1px solid var(--line-soft)}
+.swatches{display:flex;gap:0;border:1px solid var(--line-soft)}
+.sw{flex:1;height:64px;display:flex;align-items:flex-end;padding:6px;font-family:var(--font-mono);font-size:.54rem;color:var(--bone);text-shadow:0 1px 3px #000}
+.card-lab{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin-bottom:.6rem}
+
+/* ── section scaffolding ── */
+.part{padding:clamp(2.5rem,6vw,5rem) 0 0}
+.part-banner{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--obsidian);
+  background:var(--ember);display:inline-block;padding:.5rem 1rem;margin-bottom:1.4rem}
+.part h2{font-size:clamp(2rem,4.5vw,3.2rem)}
+.part>.wrap>.intro{color:var(--silver);max-width:720px;margin-top:.8rem;font-size:1.02rem}
+
+.piece{padding:clamp(2.2rem,5vw,3.6rem) 0;border-top:1px solid var(--line-soft)}
+.piece-no{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.2em;color:var(--ember)}
+.piece h3{font-size:clamp(1.5rem,3vw,2.1rem);margin:.3rem 0 1.2rem}
+.piece-grid{display:grid;grid-template-columns:1fr;gap:1.8rem}
+@media(min-width:880px){.piece-grid{grid-template-columns:1.25fr .85fr;align-items:start}}
+.spec{font-size:.92rem}
+.spec dt{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ember);margin-top:1rem}
+.spec dd{color:var(--silver);margin-top:.2rem}
+.spec dd b{color:var(--bone);font-weight:500}
+.copychip{border-left:2px solid var(--bronze);padding:.4rem 0 .4rem 1rem;margin:.5rem 0;font-family:var(--font-ritual);font-style:italic;font-size:1.12rem;color:var(--bone)}
+
+/* ── preview surfaces ── */
+.frame{border:1px solid var(--line-soft);background:var(--charcoal);overflow:hidden;position:relative}
+.frame-cap{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);padding:.5rem .7rem;border-top:1px solid var(--line-soft);background:#0d0d0c}
+.cosmos-bg{background:
+  radial-gradient(120% 80% at 75% 18%,rgba(58,42,107,.28),transparent 58%),
+  radial-gradient(90% 70% at 18% 82%,rgba(107,45,107,.16),transparent 55%),
+  radial-gradient(60% 50% at 50% 50%,rgba(201,168,76,.05),transparent 70%),
+  #070707}
+.stars{position:absolute;inset:0;background-image:
+  radial-gradient(1px 1px at 20% 30%,var(--cosmic-star),transparent),
+  radial-gradient(1px 1px at 70% 20%,rgba(240,237,232,.6),transparent),
+  radial-gradient(1px 1px at 40% 70%,rgba(240,237,232,.5),transparent),
+  radial-gradient(1px 1px at 85% 60%,var(--cosmic-star),transparent),
+  radial-gradient(1px 1px at 60% 85%,rgba(240,237,232,.45),transparent),
+  radial-gradient(1px 1px at 12% 60%,rgba(240,237,232,.5),transparent),
+  radial-gradient(1px 1px at 90% 35%,rgba(240,237,232,.4),transparent);pointer-events:none}
+.photo-slot{background:repeating-linear-gradient(135deg,#171614 0 12px,#13110f 12px 24px);
+  border:1px dashed #3a332a;display:flex;align-items:center;justify-content:center;text-align:center;
+  color:#6b6256;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.08em;padding:1rem;line-height:1.5}
+.panel-slot{background:var(--product-panel);color:#8a7f68}
+.tag{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.58rem;
+  letter-spacing:.16em;text-transform:uppercase;padding:.3rem .6rem;border:1px solid;border-radius:0}
+
+/* ── HERO mock ── */
+.hero{position:relative;min-height:420px;display:flex;align-items:center}
+.hero .inner{position:relative;z-index:2;padding:clamp(1.6rem,4vw,3rem)}
+.hero .eyebrow{margin-bottom:1rem}
+.hero h4{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.6rem);line-height:1.02;max-width:14ch}
+.hero .lede{font-family:var(--font-ritual);font-style:italic;color:var(--silver);font-size:1.15rem;margin-top:1rem;max-width:42ch}
+.hero .cta{display:inline-block;margin-top:1.6rem;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--bone);border-bottom:1px solid var(--ember);padding-bottom:.3rem}
+.hero-mark{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:340px;opacity:.5;z-index:1}
+@media(max-width:700px){.hero-mark{opacity:.22;right:-90px}}
+
+/* ── banner mock (masthead) ── */
+.masthead{position:relative;min-height:200px;display:flex;align-items:flex-end}
+.masthead .veil{position:absolute;inset:0;background:linear-gradient(90deg,var(--scrim-strong),transparent 70%)}
+.masthead .mh-in{position:relative;z-index:2;padding:1.4rem}
+.masthead .eyebrow{margin-bottom:.5rem}
+.masthead h4{font-family:var(--font-display);font-size:clamp(1.5rem,3.4vw,2.4rem)}
+.masthead .mh-sub{color:var(--silver);font-size:.9rem;margin-top:.3rem;font-family:var(--font-ritual);font-style:italic}
+.masthead .enter{margin-top:.8rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ember)}
+
+/* ── IG grid ── */
+.iggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.igpost{aspect-ratio:1;position:relative;overflow:hidden;border:1px solid var(--line-soft);display:flex;flex-direction:column;justify-content:space-between;padding:.7rem}
+.igpost .k{font-family:var(--font-mono);font-size:.5rem;letter-spacing:.12em;color:var(--ember);text-transform:uppercase}
+.igpost .t{font-family:var(--font-display);font-size:1.05rem;line-height:1.05}
+.igpost .b{font-family:var(--font-mono);font-size:.46rem;color:var(--sand);letter-spacing:.06em}
+.igpost.dark{background:var(--cosmos-bg);}
+.ig-mark{position:absolute;right:-18px;bottom:-18px;width:84px;opacity:.3}
+
+/* ── stories ── */
+.stories{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media(min-width:680px){.stories{grid-template-columns:repeat(6,1fr)}}
+.story{aspect-ratio:9/16;border:1px solid var(--line-soft);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:.6rem .55rem}
+.story .top{font-family:var(--font-mono);font-size:.44rem;letter-spacing:.1em;color:var(--ember);text-transform:uppercase}
+.story .mid{font-family:var(--font-display);font-size:.95rem;line-height:1.04}
+.story .bot{font-family:var(--font-mono);font-size:.4rem;color:var(--sand);letter-spacing:.05em}
+
+/* ── newsletter ── */
+.nl{border:1px solid var(--line-soft);padding:1.4rem;background:var(--charcoal)}
+.nl .eyebrow{margin-bottom:.6rem}
+.nl h4{font-family:var(--font-display);font-size:1.5rem}
+.nl .field{display:flex;gap:0;margin-top:1rem;border:1px solid var(--bronze)}
+.nl input{flex:1;background:transparent;border:0;color:var(--bone);padding:.7rem .8rem;font-family:var(--font-sans);font-size:.85rem}
+.nl button{background:var(--ember);color:var(--obsidian);border:0;padding:.7rem 1.1rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase}
+
+/* ── tags system ── */
+.tagboard{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}
+.tag--oneofone{color:var(--ember);border-color:var(--ember)}
+.tag--limited{color:var(--bone);border-color:var(--bronze)}
+.tag--cycle{color:var(--silver);border-color:var(--silver)}
+.tag--piercing{color:#cdbcc8;border-color:#6b2d6b}
+.tag--commission{color:var(--bone);border-color:var(--line-soft);background:#15130f}
+.tag--archive{color:var(--sand);border-color:var(--line-soft);font-style:normal}
+
+/* ── ethics matrix ── */
+.ematrix{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.2rem}
+@media(min-width:760px){.ematrix{grid-template-columns:repeat(3,1fr)}}
+.elevel{border:1px solid var(--line-soft);padding:1.1rem;background:var(--charcoal)}
+.elevel .n{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase}
+.elevel.l1{border-top:3px solid #7E8F7C}.elevel.l1 .n{color:#7E8F7C}
+.elevel.l2{border-top:3px solid var(--bronze)}.elevel.l2 .n{color:var(--bronze)}
+.elevel.l3{border-top:3px solid var(--signal-blue)}.elevel.l3 .n{color:var(--signal-blue)}
+.elevel h5{font-family:var(--font-display);font-size:1.25rem;margin:.4rem 0 .5rem}
+.elevel p{font-size:.85rem;color:var(--silver)}
+.elevel .tags{margin-top:.7rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.etag{font-family:var(--font-mono);font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .45rem;border:1px solid var(--line-soft);color:var(--sand)}
+
+/* ── easter egg cards ── */
+.egg{padding:clamp(2rem,4.5vw,3rem) 0;border-top:1px solid var(--line-soft)}
+.egg-grid{display:grid;grid-template-columns:1fr;gap:1.6rem}
+@media(min-width:880px){.egg-grid{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.egg-no{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.2em;color:var(--signal-blue)}
+.egg h3{font-size:clamp(1.4rem,2.8vw,2rem);margin:.3rem 0 .4rem}
+.egg .lvl{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;padding:.25rem .5rem;border:1px solid var(--signal-blue);color:var(--signal-blue);display:inline-block;margin-bottom:.9rem}
+.egg .lvl.fk{border-color:var(--bronze);color:var(--bronze)}
+.signal-surface{position:relative;min-height:240px;background:
+  radial-gradient(80% 70% at 50% 40%,rgba(29,26,74,.5),transparent 60%),
+  radial-gradient(40% 40% at 30% 70%,rgba(78,140,210,.10),transparent),#060608;
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.coord{position:absolute;font-family:var(--font-mono);font-size:.5rem;color:rgba(184,180,170,.5);letter-spacing:.08em}
+.modal-mock{border:1px solid var(--signal-electric);background:rgba(6,6,8,.86);padding:1.4rem;max-width:330px;text-align:center;position:relative;z-index:3}
+.modal-mock .sig{font-family:var(--font-mono);font-size:.52rem;letter-spacing:.16em;color:var(--signal-blue);text-transform:uppercase}
+.modal-mock .big{font-family:var(--font-display);font-size:1.5rem;margin:.6rem 0;line-height:1.05}
+.modal-mock .cta{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ember);border:1px solid var(--bronze);padding:.5rem .9rem;display:inline-block;margin-top:.6rem}
+.seven{position:absolute;inset:0}
+.seven b{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--cosmic-star);box-shadow:0 0 6px 1px rgba(78,140,210,.6)}
+.foot-note{font-size:.78rem;color:var(--sand);margin-top:.8rem}
+
+/* footer */
+.docfoot{padding:4rem 0 6rem;border-top:1px solid var(--line-soft);margin-top:3rem;text-align:center;color:var(--sand);font-size:.8rem}
+.docfoot .mark{width:80px;opacity:.6;margin:0 auto 1.2rem}
+.warn{border:1px solid var(--bronze);background:rgba(106,74,40,.08);padding:1rem 1.2rem;margin-top:1.4rem;font-size:.86rem;color:var(--silver)}
+.warn b{color:var(--ember)}
+</style>
+</head>
+<body>
+
+<!-- ════════════ DOC HEADER ════════════ -->
+<header class="dochead">
+  <div class="wrap">
+    <div class="eyebrow">Propuesta · No publicar · 2026-06-26</div>
+    <h1>Contenido Visual F1<br>& The Hidden Sky</h1>
+    <p class="sub">Un archivo secreto dentro de una casa de joyería ritual contemporánea.</p>
+    <div class="meta">
+      <span><b>Marca</b> Wenu Mapu — Land of the Sky</span>
+      <span><b>Sistema</b> dark-first · obsidiana / hueso / ámbar / bronce</span>
+      <span><b>Estado</b> propuesta para revisión de Ocin</span>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════ SISTEMA ════════════ -->
+<section class="wrap system">
+  <div>
+    <div class="card-lab">Paleta canónica (tokens.css)</div>
+    <div class="swatches">
+      <div class="sw" style="background:#0a0a0a">obsidian</div>
+      <div class="sw" style="background:#121212">charcoal</div>
+      <div class="sw" style="background:#6a4a28">bronze</div>
+      <div class="sw" style="background:#c9a84c;color:#0a0a0a;text-shadow:none">ember</div>
+      <div class="sw" style="background:#f0ede8;color:#0a0a0a;text-shadow:none">bone</div>
+    </div>
+    <div class="card-lab" style="margin-top:1rem">Atmósfera cósmica (sólo fondos)</div>
+    <div class="swatches">
+      <div class="sw" style="background:#241733">plum</div>
+      <div class="sw" style="background:#1d1a4a">indigo</div>
+      <div class="sw" style="background:#3a2a6b">violet</div>
+      <div class="sw" style="background:#6b2d6b">magenta</div>
+      <div class="sw" style="background:#3a6ea5">signal·blue</div>
+    </div>
+  </div>
+  <div>
+    <div class="card-lab">Tipografías canónicas</div>
+    <div style="font-family:var(--font-display);font-size:1.9rem;line-height:1.1">Instrument Serif <span style="color:var(--sand);font-size:.9rem;font-family:var(--font-sans)">— display / wordmark</span></div>
+    <div style="font-family:var(--font-ritual);font-style:italic;font-size:1.5rem;color:var(--silver)">Cormorant Garamond — ritual / manifiesto</div>
+    <div style="font-family:var(--font-sans);font-size:1rem;margin-top:.3rem">Instrument Sans — body / e-commerce UI</div>
+    <div style="font-family:var(--font-mono);font-size:.85rem;color:var(--ember);letter-spacing:.06em;margin-top:.3rem">JetBrains Mono — signal · coordenadas · archive</div>
+  </div>
+  <div>
+    <div class="card-lab">Símbolos ORIGINALES — preservar, no rediseñar</div>
+    <div style="display:flex;gap:1rem;align-items:center;margin-top:.4rem">
+      <svg viewBox="0 0 512 512" width="78" height="78" aria-label="WM mark">
+        <circle cx="256" cy="256" r="204" fill="none" stroke="#8A6A43" stroke-width="10"/>
+        <circle cx="256" cy="256" r="156" fill="none" stroke="#2A2520" stroke-width="2"/>
+        <path d="M256 78 300 158 256 238 212 158Z" fill="none" stroke="#C4935A" stroke-width="8" stroke-linejoin="round"/>
+        <path d="M256 274 300 354 256 434 212 354Z" fill="none" stroke="#C4935A" stroke-width="8" stroke-linejoin="round"/>
+        <path d="M78 256 158 212 238 256 158 300Z" fill="none" stroke="#C4935A" stroke-width="8" stroke-linejoin="round"/>
+        <path d="M274 256 354 212 434 256 354 300Z" fill="none" stroke="#C4935A" stroke-width="8" stroke-linejoin="round"/>
+        <path d="M180 180H332V332H180Z" fill="none" stroke="#A8A39A" stroke-width="4" opacity=".8"/>
+        <path d="M212 212H300V300H212Z" fill="none" stroke="#D6C1A3" stroke-width="4" opacity=".7"/>
+        <circle cx="256" cy="256" r="18" fill="#F2EDE4"/><circle cx="256" cy="256" r="7" fill="#080706"/>
+      </svg>
+      <svg viewBox="0 0 48 48" width="50" height="50" style="color:var(--ember)" aria-label="Antü">
+        <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round">
+          <polygon points="24,8 27,18 35,15 31,23 39,24 31,25 35,33 27,30 24,40 21,30 13,33 17,25 9,24 17,23 13,15 21,18"/>
+        </g>
+      </svg>
+      <div style="font-family:var(--font-mono);font-size:.56rem;color:var(--sand);line-height:1.7">WM mark<br>(4 direcciones)<br>· Antü 8-puntas ·<br>cardinal sigil</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ PARTE A ════════════ -->
+<div class="part">
+  <div class="wrap">
+    <span class="part-banner">Parte A — Fase 1 · Contenido visual</span>
+    <h2>Diez piezas base</h2>
+    <p class="intro">Cada pieza reusa los tokens, las tipografías y los símbolos originales del sitio. El cosmos es <em>atmósfera</em> (nebulosa apagada en el fondo), nunca cliché. Donde el contenido es de producto se usa <b>foto real</b> — aquí marcada como ranura de foto, nunca render falso.</p>
+  </div>
+
+  <!-- 1 HERO -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZA 01</div>
+    <h3>Hero visual — Homepage</h3>
+    <div class="piece-grid">
+      <div>
+        <div class="frame">
+          <div class="hero cosmos-bg">
+            <div class="stars"></div>
+            <svg class="hero-mark" viewBox="0 0 512 512" aria-hidden="true">
+              <circle cx="256" cy="256" r="204" fill="none" stroke="#8A6A43" stroke-width="6" opacity=".7"/>
+              <path d="M256 78 300 158 256 238 212 158Z" fill="none" stroke="#C4935A" stroke-width="5"/>
+              <path d="M256 274 300 354 256 434 212 354Z" fill="none" stroke="#C4935A" stroke-width="5"/>
+              <path d="M78 256 158 212 238 256 158 300Z" fill="none" stroke="#C4935A" stroke-width="5"/>
+              <path d="M274 256 354 212 434 256 354 300Z" fill="none" stroke="#C4935A" stroke-width="5"/>
+              <circle cx="256" cy="256" r="14" fill="#F2EDE4"/>
+            </svg>
+            <div class="inner">
+              <div class="eyebrow">Wenu Mapu — Land of the Sky</div>
+              <h4>Ritual adornment for the sacred body.</h4>
+              <p class="lede">Different hands, different lands — the same sky.</p>
+              <span class="cta">Enter the catalog →</span>
+            </div>
+          </div>
+          <div class="frame-cap">Preview — hero a pantalla completa, una idea por pantalla (norte-diseno)</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Objetivo</dt><dd>Primera respiración del sitio: portal entre la tierra y el cosmos. <b>Una sola frase honesta, un solo CTA.</b></dd>
+          <dt>Layout</dt><dd>Texto a la izquierda; símbolo WM original grande, tenue, sangrando al borde derecho. Nebulosa apagada + estrellas pequeñas detrás. Sin eyebrows apilados.</dd>
+          <dt>Copy</dt><dd><b>Title:</b> "Ritual adornment for the sacred body." · <b>Lede:</b> "Different hands, different lands — the same sky." · <b>CTA:</b> Enter the catalog</dd>
+          <dt>Paleta</dt><dd>Obsidiana base · hueso texto · ámbar acento (CTA + eyebrow) · nebulosa sólo atmósfera.</dd>
+          <dt>Uso</dt><dd>Home /. El símbolo NO se rediseña: es el mark existente reusado como sello atmosférico.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2-5 BANNERS -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZAS 02–05</div>
+    <h3>Cuatro banners de servicio</h3>
+    <p class="spec" style="color:var(--silver);max-width:680px">Un solo molde de masthead repetido (disciplina de orden) con velo lateral para legibilidad. Mismo ritmo, distinto contenido: el cosmos cambia de densidad, nunca de gramática.</p>
+    <div class="piece-grid" style="grid-template-columns:1fr;margin-top:1.2rem">
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem">
+
+        <div class="frame">
+          <div class="masthead cosmos-bg">
+            <div class="stars"></div><div class="veil"></div>
+            <div class="mh-in">
+              <div class="eyebrow">Current Cycle · We Tripantu</div>
+              <h4>The Celestial Cycle is open.</h4>
+              <div class="mh-sub">Meteorite, cosmos, the year's first light — for 48 hours.</div>
+              <div class="enter">Enter the cycle →</div>
+            </div>
+          </div>
+          <div class="frame-cap">02 · Banner "Current Cycle" — atado al calendario cósmico (tema Nocturno / código wetripantu)</div>
+        </div>
+
+        <div class="frame">
+          <div class="masthead" style="background:linear-gradient(120deg,#1a140d,#0a0a0a)">
+            <div class="veil"></div>
+            <div class="mh-in">
+              <div class="eyebrow">Stone Commissions</div>
+              <h4>Forge your own ritual stone.</h4>
+              <div class="mh-sub">Form · metal · stone — a one-of-one shaped to you. Reply in 48h.</div>
+              <div class="enter">Begin a commission →</div>
+            </div>
+          </div>
+          <div class="frame-cap">03 · Banner "Stone Commissions" — tono taller/forja, ámbar mínimo, sin cosmos saturado</div>
+        </div>
+
+        <div class="frame">
+          <div class="masthead" style="background:radial-gradient(70% 120% at 20% 40%,rgba(107,45,107,.22),transparent),#0a0a0a">
+            <div class="veil"></div>
+            <div class="mh-in">
+              <div class="eyebrow">Piercing · By appointment</div>
+              <h4>The body, marked with care.</h4>
+              <div class="mh-sub">Private fittings & piercing by a certified piercer. Truckee, CA.</div>
+              <div class="enter">Request an appointment →</div>
+            </div>
+          </div>
+          <div class="frame-cap">04 · Banner "Piercing Appointments" — capa de confianza (credencial BBP/APP real)</div>
+        </div>
+
+        <div class="frame">
+          <div class="masthead" style="background:linear-gradient(120deg,#0d0f10,#0a0a0a)">
+            <div class="veil"></div>
+            <div class="mh-in">
+              <div class="eyebrow">Aftercare · Cuidado posterior</div>
+              <h4>Cada cuerpo es un territorio sagrado.</h4>
+              <div class="mh-sub">Adornarlo requiere conciencia y cuidado. EN + ES guide.</div>
+              <div class="enter">Read the guide →</div>
+            </div>
+          </div>
+          <div class="frame-cap">05 · Banner "Aftercare" — bilingüe, sereno, casi clínico; ámbar como hilo, no protagonista</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 IG POSTS -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZA 06</div>
+    <h3>Seis posts base — Instagram feed</h3>
+    <div class="frame" style="padding:1rem;background:#0d0d0c">
+      <div class="iggrid">
+        <div class="igpost cosmos-bg"><div class="stars"></div><div class="k">Object · 01</div><div class="t">Stone that<br>fell from<br>the sky.</div><div class="b">ATACAMA · METEORITE</div></div>
+        <div class="igpost" style="background:var(--product-panel);color:#5a5040"><div class="k" style="color:#8a6a2a">Piece</div><div class="t" style="color:#1a160f">[ FOTO REAL ]<br>Ritual Ring<br>Nº3</div><div class="b" style="color:#8a7f68">STERLING + METEORITE</div></div>
+        <div class="igpost" style="background:linear-gradient(135deg,#1a140d,#0a0a0a)"><div class="k">Process</div><div class="t">The hand<br>against<br>the forge.</div><div class="b">[ FOTO TALLER ]</div></div>
+        <div class="igpost cosmos-bg"><div class="stars"></div><div class="k" style="color:var(--signal-blue)">Signal · 01</div><div class="t">The seven<br>are<br>watching.</div><div class="b" style="color:var(--silver)">— hidden sky</div><svg class="ig-mark" viewBox="0 0 48 48" style="color:var(--ember)"><g fill="none" stroke="currentColor" stroke-width="1.1"><polygon points="24,8 27,18 35,15 31,23 39,24 31,25 35,33 27,30 24,40 21,30 13,33 17,25 9,24 17,23 13,15 21,18"/></g></svg></div>
+        <div class="igpost" style="background:var(--product-panel);color:#5a5040"><div class="k" style="color:#8a6a2a">Piece</div><div class="t" style="color:#1a160f">[ FOTO REAL ]<br>Walnut<br>Hangers</div><div class="b" style="color:#8a7f68">ORGANIC · WOOD</div></div>
+        <div class="igpost" style="background:linear-gradient(120deg,#0d0f12,#0a0a0a)"><div class="k">Words</div><div class="t ritual" style="font-style:italic">Born from<br>the Earth,<br>guided by<br>the Cosmos.</div><div class="b">MANIFESTO</div></div>
+      </div>
+      <div class="frame-cap" style="border:0;padding:.7rem 0 0">Cuadrícula 3×3 coherente: objeto · pieza(foto real) · proceso · señal(1 de cada 8–12) · pieza · palabra</div>
+    </div>
+    <div style="margin-top:1rem">
+      <span class="copychip">Captions tono dark, preciso, cósmico — palabras OK del brand book; nunca "beautiful / magical / unique".</span>
+    </div>
+  </section>
+
+  <!-- 7 STORIES -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZA 07</div>
+    <h3>Seis plantillas de Story</h3>
+    <div class="frame" style="padding:1rem;background:#0d0d0c">
+      <div class="stories">
+        <div class="story cosmos-bg"><div class="stars"></div><div class="top">New drop</div><div class="mid">A cycle<br>opens.</div><div class="bot">SWIPE UP →</div></div>
+        <div class="story" style="background:var(--product-panel)"><div class="top" style="color:#8a6a2a">Piece</div><div class="mid" style="color:#1a160f">[ FOTO<br>REAL ]</div><div class="bot" style="color:#8a7f68">$ · TAP</div></div>
+        <div class="story" style="background:linear-gradient(160deg,#1a140d,#0a0a0a)"><div class="top">Process</div><div class="mid">In the<br>forge.</div><div class="bot">[ VIDEO ]</div></div>
+        <div class="story signal-surface" style="min-height:0;padding:.6rem .55rem;align-items:stretch;display:flex;flex-direction:column;justify-content:space-between"><div class="top" style="color:var(--signal-blue)">Signal</div><div class="mid mono" style="font-size:.6rem;color:var(--silver)">-33.45 S<br>-70.66 W</div><div class="bot" style="color:var(--signal-blue)">UNKNOWN</div></div>
+        <div class="story" style="background:#0c0c0b"><div class="top">Quote</div><div class="mid ritual" style="font-style:italic;font-size:.85rem">Sacred<br>territory.</div><div class="bot">— WM</div></div>
+        <div class="story" style="background:linear-gradient(120deg,#0d0f12,#0a0a0a)"><div class="top">Care</div><div class="mid">Aftercare<br>in 5.</div><div class="bot">EN · ES</div></div>
+      </div>
+      <div class="frame-cap" style="border:0;padding:.7rem 0 0">9:16 · drop · pieza(foto) · proceso · señal(coordenadas) · quote · care — sticker de código sólo en apertura de ofrenda</div>
+    </div>
+  </section>
+
+  <!-- 8 NEWSLETTER -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZA 08</div>
+    <h3>Tres banners de newsletter</h3>
+    <div class="piece-grid" style="grid-template-columns:1fr;gap:1rem">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem">
+        <div class="nl"><div class="eyebrow">The first circle</div><h4>Join the circle.</h4><p style="color:var(--silver);font-size:.85rem;margin-top:.4rem">New pieces, cycles & care — once a moon.</p><div class="field"><input placeholder="your email"><button>Join</button></div></div>
+        <div class="nl" style="background:var(--cosmos-bg);position:relative"><div class="stars"></div><div style="position:relative;z-index:2"><div class="eyebrow">Cycle ahead</div><h4>The cycle is turning.</h4><p style="color:var(--silver);font-size:.85rem;margin-top:.4rem">Be first when the offering opens.</p><div class="field"><input placeholder="your email"><button>Enter</button></div></div></div>
+        <div class="nl" style="border-color:var(--signal-blue)"><div class="eyebrow" style="color:var(--signal-blue)">Hidden · VIP</div><h4>Receive the last transmission.</h4><p style="color:var(--silver);font-size:.85rem;margin-top:.4rem">Early access · one-of-one · signals.</p><div class="field" style="border-color:var(--signal-blue)"><input placeholder="frequency / email"><button style="background:var(--signal-blue);color:var(--bone)">Tune in</button></div></div>
+      </div>
+    </div>
+    <div class="frame-cap" style="border:0;padding:.7rem 0 0">General · estacional · y el VIP oculto "Last Transmission" (Parte B, distinto del newsletter general)</div>
+  </section>
+
+  <!-- 9 ARCHIVE -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZA 09</div>
+    <h3>Sistema visual — "Archive"</h3>
+    <div class="piece-grid">
+      <div>
+        <div class="frame" style="background:#0c0c0b;padding:1.2rem">
+          <div style="font-family:var(--font-mono);font-size:.6rem;letter-spacing:.18em;color:var(--sand);text-transform:uppercase;margin-bottom:1rem">THE ARCHIVE · 2022—2026 · 38 entries</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+            <div class="photo-slot" style="aspect-ratio:1">ENTRY 019<br>SOLD</div>
+            <div class="photo-slot" style="aspect-ratio:1">ENTRY 003<br>ARCHIVED</div>
+            <div class="photo-slot" style="aspect-ratio:1">ENTRY 027<br>PAST CYCLE</div>
+          </div>
+          <div style="font-family:var(--font-mono);font-size:.54rem;color:var(--sand);margin-top:.9rem;letter-spacing:.06em;line-height:1.7">› grano fino · fichas catalogadas · fecha + nº de serie<br>› precio sostenido, jamás "oferta" — pasado con valor</div>
+        </div>
+        <div class="frame-cap" style="margin-top:-1px">Preview — grilla de archivo, estética de ficha/catálogo, no liquidación</div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Objetivo</dt><dd>Dar hogar a las piezas de ciclos pasados (vendidas o retiradas) <b>sin descontarlas</b>. Archivo = memoria con valor.</dd>
+          <dt>Layout</dt><dd>Grilla de fichas numeradas. Cada una: foto real, nº de serie, fecha, estado (SOLD / ARCHIVED / PAST CYCLE). Grano y mono.</dd>
+          <dt>Copy</dt><dd>"Nothing here is for sale at a discount. The archive is memory, not liquidation."</dd>
+          <dt>Paleta</dt><dd>Obsidiana + sand silenciado + grano. Ámbar sólo en el nº de serie.</dd>
+          <dt>Uso</dt><dd>/archive · es también la puerta de entrada del Obsidian Archive (Parte B, easter egg 05).</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 TAGS -->
+  <section class="wrap piece">
+    <div class="piece-no">PIEZA 10</div>
+    <h3>Sistema de TAGS visuales</h3>
+    <div class="tagboard">
+      <span class="tag tag--oneofone">◆ one of one</span>
+      <span class="tag tag--limited">limited object</span>
+      <span class="tag tag--cycle">current cycle</span>
+      <span class="tag tag--piercing">piercing</span>
+      <span class="tag tag--commission">custom commission</span>
+      <span class="tag tag--archive">archive</span>
+    </div>
+    <div style="margin-top:1.2rem;font-size:.88rem;color:var(--silver);max-width:720px">
+      Seis etiquetas, una sola gramática (mono, mayúsculas leves, borde de 1px, sin relleno salvo commission). El color codifica el estado: <b style="color:var(--ember)">ámbar = lo irrepetible</b>, bronce = limitado, plata = ciclo activo, violeta = piercing, archivo = silenciado. Reutilizan el badge ya existente del sitio (LIMITED / one of one), no inventan un sistema nuevo.
+    </div>
+  </section>
+</div>
+
+<!-- ════════════ PARTE B ════════════ -->
+<div class="part" style="background:
+  radial-gradient(100% 60% at 80% 0%,rgba(29,26,74,.35),transparent 55%),
+  radial-gradient(70% 50% at 10% 30%,rgba(78,140,210,.08),transparent);">
+  <div class="wrap">
+    <span class="part-banner" style="background:var(--signal-blue);color:var(--bone)">Parte B — Capa narrativa secreta</span>
+    <h2>The Hidden Sky / El Cielo Oculto<br>The Signal Archive</h2>
+    <p class="intro">Profundidad opcional, no navegación principal. Señales, archivos ocultos, micro-portales descubribles. <b>Nunca domina el e-commerce.</b> Se siente como un archivo secreto que late bajo la tienda.</p>
+  </div>
+
+  <!-- ETHICS MATRIX -->
+  <section class="wrap piece" style="border-top:1px solid var(--line-soft)">
+    <div class="piece-no" style="color:var(--signal-blue)">REGLA INNEGOCIABLE</div>
+    <h3>La matriz ética de 3 niveles</h3>
+    <p class="spec" style="color:var(--silver);max-width:740px">Nunca mezclar cosmovisión mapuche / pueblos originarios documentados con maestros ascendidos / OVNIs / Pléyades / civilizaciones alienígenas como si fueran la misma verdad. Tres niveles, siempre etiquetados:</p>
+    <div class="ematrix">
+      <div class="elevel l1">
+        <div class="n">Nivel 1</div>
+        <h5>Documented Culture</h5>
+        <p>Histórico, ancestral, astronómico. Con fuentes y respeto. Antü, wanglen, We Tripantu, platería mapuche, astronomía maya — <b>acreditado, jamás disfraz</b>.</p>
+        <div class="tags"><span class="etag">DOCUMENTED</span><span class="etag">ARCHIVE ENTRY</span></div>
+      </div>
+      <div class="elevel l2">
+        <div class="n">Nivel 2</div>
+        <h5>Folklore / Myth</h5>
+        <p>Luces malas, relatos de campo, tradición oral. <b>Señalado explícitamente como folclore</b>, nunca como hecho.</p>
+        <div class="tags"><span class="etag">FOLKLORE</span><span class="etag">UNCLASSIFIED</span></div>
+      </div>
+      <div class="elevel l3">
+        <div class="n">Nivel 3</div>
+        <h5>Wenu Mapu Fiction / Signals</h5>
+        <p>Especulativo, poético, esotérico: OVNIs, transmisiones, maestros silenciosos, Pléyades, entidades, códigos Lemuria/Atlantis. <b>Ficción visual declarada — nunca presentada como verdad factual.</b></p>
+        <div class="tags"><span class="etag" style="border-color:var(--signal-blue);color:var(--signal-blue)">SIGNAL</span><span class="etag" style="border-color:var(--signal-blue);color:var(--signal-blue)">TRANSMISSION</span><span class="etag" style="border-color:var(--signal-blue);color:var(--signal-blue)">WM FICTION</span><span class="etag">UNKNOWN ORIGIN</span></div>
+      </div>
+    </div>
+    <div class="warn"><b>Guardrail:</b> los códigos de "lengua alienígena" Lemuria/Atlantis viven SÓLO como elemento de ficción visual, siempre con tag <b>WENU MAPU FICTION</b>. Jamás como historia real. Ante la duda: menos afirmación, más reverencia.</div>
+  </section>
+
+  <!-- EGG 1 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 01</div>
+        <h3>Pleiades — Seven Signals</h3>
+        <span class="lvl">Nivel 3 · WM Fiction</span>
+        <div class="frame">
+          <div class="signal-surface">
+            <div class="seven">
+              <b style="left:22%;top:30%"></b><b style="left:30%;top:42%"></b><b style="left:40%;top:33%"></b>
+              <b style="left:48%;top:48%"></b><b style="left:58%;top:38%"></b><b style="left:66%;top:55%"></b><b style="left:74%;top:44%"></b>
+            </div>
+            <div class="modal-mock">
+              <div class="sig">Signal · seven found</div>
+              <div class="big">The Seven<br>Are Watching.</div>
+              <span class="cta">Open the archive</span>
+            </div>
+          </div>
+          <div class="frame-cap">7 estrellas ocultas en el sitio → al hallarlas las 7, abre un modal secreto</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Siete puntos de luz idénticos a las estrellas del fondo, repartidos por el sitio. Hallar las 7 desbloquea un modal.</dd>
+          <dt>Ubicación</dt><dd>Footer, archive, página de piedras, one-of-one, fondos de ciclo. Una por zona, nunca dos juntas.</dd>
+          <dt>Mecánica</dt><dd>Hover revela un leve glow azul-eléctrico; click registra la estrella (localStorage de sesión). 7/7 → modal.</dd>
+          <dt>Copy</dt><dd><b>"THE SEVEN ARE WATCHING."</b> + CTA al Signal Archive.</dd>
+          <dt>Visual</dt><dd>Pléyades como atmósfera; nada de "aliens". Azul muy bajo, estrella de hueso.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG 2 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 02</div>
+        <h3>The Wandering Light / Luz Mala</h3>
+        <span class="lvl fk">Nivel 2 · Folklore</span>
+        <div class="frame">
+          <div class="signal-surface" style="background:radial-gradient(40% 40% at 60% 50%,rgba(201,168,76,.18),transparent 60%),#060608">
+            <div style="position:absolute;left:60%;top:50%;width:10px;height:10px;border-radius:50%;background:var(--ember);box-shadow:0 0 24px 8px rgba(201,168,76,.4);filter:blur(.5px)"></div>
+            <div class="modal-mock" style="border-color:var(--bronze)">
+              <div class="sig" style="color:var(--bronze)">Folklore · field tale</div>
+              <div class="big">It appears<br>where the earth<br>remembers.</div>
+            </div>
+          </div>
+          <div class="frame-cap">Luz sutil que deriva en páginas de obsidiana / meteorito / archive</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Una luz ambarina tenue que aparece y se desplaza lentamente — la <em>luz mala</em> del campo, tratada como folclore, no como verdad.</dd>
+          <dt>Ubicación</dt><dd>Sólo páginas de materia terrestre: obsidiana, meteorito, archive.</dd>
+          <dt>Mecánica</dt><dd>Aparece tras inactividad; seguir el cursor un instante; al click muestra la línea y un micro-relato etiquetado FOLKLORE.</dd>
+          <dt>Copy</dt><dd><b>"It appears where the earth remembers."</b></dd>
+          <dt>Visual</dt><dd>Punto ámbar difuso, humo, sin figura. Etiqueta FOLKLORE siempre visible.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG 3 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 03</div>
+        <h3>The Visitors</h3>
+        <span class="lvl">Nivel 3 · WM Fiction</span>
+        <div class="frame">
+          <div class="signal-surface" style="justify-content:flex-start;align-items:stretch;flex-direction:column;padding:1rem">
+            <span class="coord" style="left:8%;top:12%">LAT -24.1°</span><span class="coord" style="right:10%;top:20%">LON -69.3°</span><span class="coord" style="left:14%;bottom:14%">ELEV 2400m</span>
+            <div style="font-family:var(--font-mono);color:var(--silver);font-size:.7rem;letter-spacing:.1em;margin-top:1rem">› UNCLASSIFIED OBJECT</div>
+            <div style="font-family:var(--font-display);font-size:1.6rem;margin-top:.3rem">ORIGIN UNKNOWN.</div>
+            <div class="photo-slot" style="margin-top:.8rem;height:80px;border-color:#33414a">[ FOTO REAL: objeto sin clasificar · metal · grano ]</div>
+          </div>
+          <div class="frame-cap">Archivo de objetos sin clasificar — mapas, coordenadas, metal, granulado</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Un sub-archivo de piezas presentadas como "objetos sin clasificar" recuperados — ficción de archivo en torno a piezas reales.</dd>
+          <dt>Ubicación</dt><dd>Capa dentro del Archive y del Signal Field.</dd>
+          <dt>Mecánica</dt><dd>Se entra desde un código/coordenada; cada objeto es una pieza real con ficha estilo expediente.</dd>
+          <dt>Copy</dt><dd><b>"UNCLASSIFIED OBJECT. ORIGIN UNKNOWN."</b></dd>
+          <dt>Visual</dt><dd>Cartografía, coordenadas mono, metal oxidado, grano. Etiqueta UNKNOWN ORIGIN / WM FICTION.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG 4 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 04</div>
+        <h3>The Ascended Archive</h3>
+        <span class="lvl">Nivel 3 · WM Fiction</span>
+        <div class="frame">
+          <div class="signal-surface">
+            <div class="modal-mock">
+              <div class="sig">Transmission 001 · Signal 004</div>
+              <div class="big ritual" style="font-style:italic">The body remembers<br>what language<br>forgets.</div>
+              <div style="font-family:var(--font-mono);font-size:.5rem;color:var(--sand);letter-spacing:.12em;margin-top:.6rem">THE QUIET TEACHERS · THE SILENT ONES<br>THE KEEPERS · THE OBSERVERS</div>
+            </div>
+          </div>
+          <div class="frame-cap">Figuras poéticas — sin religión real, sin nombres apropiados</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Un archivo de "transmisiones" de figuras poéticas inventadas (The Quiet Teachers, Silent Ones, Keepers, Observers). <b>Ficción explícita, sin doctrina real.</b></dd>
+          <dt>Ubicación</dt><dd>Nodo profundo del Signal Field; entries numeradas.</dd>
+          <dt>Mecánica</dt><dd>Cada entry es una pieza de texto breve (TRANSMISSION 001, SIGNAL 004) con tag WM FICTION.</dd>
+          <dt>Copy</dt><dd><b>"The body remembers what language forgets."</b></dd>
+          <dt>Visual</dt><dd>Tipografía ritual italic + mono de archivo. Cero iconografía de religión real o de pueblo originario.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG 5 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 05</div>
+        <h3>The Black Star</h3>
+        <span class="lvl">Nivel 3 · WM Fiction</span>
+        <div class="frame">
+          <div class="signal-surface" style="background:radial-gradient(50% 50% at 50% 45%,rgba(20,20,24,1),#000 70%)">
+            <div style="position:absolute;width:90px;height:90px;border-radius:50%;background:#050507;box-shadow:0 0 40px 6px rgba(78,140,210,.18),inset 0 0 30px rgba(0,0,0,.8)"></div>
+            <div class="modal-mock" style="background:transparent;border-color:var(--signal-electric)">
+              <div class="sig">Signal · active</div>
+              <div class="big">The Black Star<br>Is Active.</div>
+              <span class="cta">Enter the Obsidian Archive →</span>
+            </div>
+          </div>
+          <div class="frame-cap">Aparece en obsidiana / meteorito / plata oxidada</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Una estrella negra que "se activa" en páginas de materia oscura y abre la puerta al Obsidian Archive.</dd>
+          <dt>Ubicación</dt><dd>Páginas de obsidiana, meteorito, plata oxidada.</dd>
+          <dt>Mecánica</dt><dd>Un punto negro casi invisible que al hover pulsa azul; click → Obsidian Archive (la cara oscura del Archive, pieza 09).</dd>
+          <dt>Copy</dt><dd><b>"THE BLACK STAR IS ACTIVE."</b> · CTA <b>"ENTER THE OBSIDIAN ARCHIVE."</b></dd>
+          <dt>Visual</dt><dd>Negro sobre negro, halo azul mínimo. Sin saturación.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG 6 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 06</div>
+        <h3>Signal Field</h3>
+        <span class="lvl">Nivel 3 · WM Fiction</span>
+        <div class="frame">
+          <div class="signal-surface" style="min-height:300px">
+            <div class="stars"></div>
+            <svg viewBox="0 0 400 300" width="100%" height="300" style="position:absolute;inset:0">
+              <line x1="80" y1="90" x2="200" y2="150" stroke="rgba(78,140,210,.25)" stroke-width="1"/>
+              <line x1="200" y1="150" x2="320" y2="80" stroke="rgba(78,140,210,.25)" stroke-width="1"/>
+              <line x1="200" y1="150" x2="150" y2="240" stroke="rgba(78,140,210,.25)" stroke-width="1"/>
+              <line x1="200" y1="150" x2="300" y2="220" stroke="rgba(201,168,76,.2)" stroke-width="1"/>
+              <ellipse cx="200" cy="150" rx="140" ry="60" fill="none" stroke="rgba(184,180,170,.12)" stroke-width="1"/>
+              <circle cx="80" cy="90" r="4" fill="var(--ember)"/><circle cx="320" cy="80" r="3" fill="var(--cosmic-star)"/>
+              <circle cx="150" cy="240" r="3" fill="var(--signal-blue)"/><circle cx="300" cy="220" r="4" fill="var(--ember)"/>
+              <g transform="translate(184,134)" style="color:var(--ember)"><svg viewBox="0 0 48 48" width="32" height="32"><g fill="none" stroke="currentColor" stroke-width="1.1"><polygon points="24,8 27,18 35,15 31,23 39,24 31,25 35,33 27,30 24,40 21,30 13,33 17,25 9,24 17,23 13,15 21,18"/></g></svg></g>
+            </svg>
+            <div style="position:absolute;bottom:10px;left:12px;font-family:var(--font-mono);font-size:.5rem;color:var(--sand);letter-spacing:.1em">SIGNAL FIELD · click the points</div>
+          </div>
+          <div class="frame-cap">Campo estelar + símbolos WM originales + puntos de luz clickeables + líneas orbitales</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Página/módulo oculto: un mapa de exploración. Cada punto de luz enlaza a un producto, archivo o señal. <b>Mapa, no videojuego infantil.</b></dd>
+          <dt>Ubicación</dt><dd>Experience portal / hidden nav; se llega desde otros eggs.</dd>
+          <dt>Mecánica</dt><dd>Puntos clickeables sobre líneas orbitales; el símbolo WM original al centro. Cada nodo = enlace real.</dd>
+          <dt>Copy</dt><dd>Mínimo, mono: "SIGNAL FIELD" · coordenadas por nodo.</dd>
+          <dt>Visual</dt><dd>Cosmos oscuro, líneas orbitales tenues, ámbar + azul muy bajos, símbolos originales.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG 7 -->
+  <section class="wrap egg">
+    <div class="egg-grid">
+      <div>
+        <div class="egg-no">EASTER EGG 07</div>
+        <h3>Last Transmission</h3>
+        <span class="lvl">Nivel 3 · WM Fiction (VIP real)</span>
+        <div class="frame">
+          <div class="signal-surface">
+            <div class="modal-mock" style="border-color:var(--signal-blue)">
+              <div class="sig">VIP · hidden list</div>
+              <div class="big">Receive the<br>Last Transmission.</div>
+              <p style="font-family:var(--font-mono);font-size:.52rem;color:var(--sand);letter-spacing:.06em;line-height:1.7">EARLY ACCESS · ONE-OF-ONE · ARCHIVE<br>COMMISSIONS · DROPS · MONTHLY SIGNAL</p>
+              <div class="field" style="margin-top:.7rem;border:1px solid var(--signal-blue);display:flex"><input style="flex:1;background:transparent;border:0;color:var(--bone);padding:.5rem;font-size:.75rem" placeholder="frequency / email"><button style="background:var(--signal-blue);color:var(--bone);border:0;padding:.5rem .7rem;font-family:var(--font-mono);font-size:.5rem;letter-spacing:.14em">TUNE IN</button></div>
+            </div>
+          </div>
+          <div class="frame-cap">Lista VIP oculta — distinta del newsletter general</div>
+        </div>
+      </div>
+      <div>
+        <dl class="spec">
+          <dt>Concepto</dt><dd>Una lista secreta, aparte del newsletter público: acceso anticipado, one-of-one, archivo, comisiones, drops y una señal mensual.</dd>
+          <dt>Ubicación</dt><dd>Premio final del Hidden Sky (tras Pléyades 7/7, o link enterrado en el footer).</dd>
+          <dt>Mecánica</dt><dd>Formulario propio (segmento aparte en MailerLite). 1 "Signal from the Archive" al mes, máximo.</dd>
+          <dt>Copy</dt><dd><b>"RECEIVE THE LAST TRANSMISSION."</b></dd>
+          <dt>Visual</dt><dd>Azul señal, mono, sobrio. Es el único egg con conversión real (lista de correo).</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVEAL UX -->
+  <section class="wrap egg">
+    <div class="egg-no">EASTER EGG 07 · MECÁNICA DE REVEAL</div>
+    <h3>Descubrir → desbloquear → recibir señal</h3>
+    <p class="spec" style="color:var(--silver);max-width:740px;margin-bottom:.4rem">Mecánica tomada del popup de captura de Urban Body Jewelry — <b>sólo la mecánica</b>, no el estilo (ese es amarillo, gritado, genérico). Aquí: sobrio, oscuro, editorial. No es un cupón emergente; es <b>recibir una transmisión secreta</b>. Aparece <b>sólo tras un descubrimiento</b> (7 Pléyades / Black Star / nodo del Signal Field), nunca al cargar la página.</p>
+    <div style="display:grid;grid-template-columns:1fr;gap:10px;margin-top:1rem">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px">
+        <!-- step 1 -->
+        <div class="frame">
+          <div class="signal-surface" style="min-height:210px">
+            <div class="seven"><b style="left:24%;top:34%"></b><b style="left:34%;top:46%"></b><b style="left:44%;top:36%"></b><b style="left:52%;top:52%"></b><b style="left:62%;top:40%"></b><b style="left:70%;top:56%"></b><b style="left:78%;top:46%"></b></div>
+            <div style="position:relative;z-index:2;font-family:var(--font-mono);font-size:.56rem;letter-spacing:.16em;color:var(--signal-blue);text-transform:uppercase;text-align:center">7 / 7 found<br><span style="color:var(--sand);font-size:.5rem">…signal locking</span></div>
+          </div>
+          <div class="frame-cap">1 · Descubrimiento (no popup de entrada)</div>
+        </div>
+        <!-- step 2 -->
+        <div class="frame">
+          <div class="signal-surface" style="min-height:210px;background:rgba(8,7,6,.55)">
+            <div class="modal-mock" style="border-color:var(--signal-blue);max-width:280px">
+              <div class="sig">Signal · unlocked</div>
+              <div class="big" style="font-size:1.25rem">You found<br>the seven.</div>
+              <p style="font-family:var(--font-sans);font-size:.66rem;color:var(--silver);line-height:1.5">Few do. Receive the Last Transmission — once a moon.</p>
+              <div class="field" style="margin-top:.6rem;border:1px solid var(--signal-blue);display:flex"><input style="flex:1;background:transparent;border:0;color:var(--bone);padding:.45rem;font-size:.68rem" placeholder="frequency / email"><button style="background:var(--signal-blue);color:var(--bone);border:0;padding:.45rem .6rem;font-family:var(--font-mono);font-size:.46rem;letter-spacing:.14em">TUNE IN</button></div>
+              <div style="font-family:var(--font-mono);font-size:.42rem;color:var(--sand);letter-spacing:.08em;margin-top:.5rem">EARLY ACCESS · ONE-OF-ONE · ARCHIVE · MONTHLY SIGNAL</div>
+            </div>
+          </div>
+          <div class="frame-cap">2 · Reveal sobrio + micro-formulario (sin "% OFF")</div>
+        </div>
+        <!-- step 3 -->
+        <div class="frame">
+          <div class="signal-surface" style="min-height:210px">
+            <div class="stars"></div>
+            <div class="modal-mock" style="background:transparent;border-color:var(--signal-electric);max-width:260px">
+              <div class="sig" style="color:var(--ember)">Frequency · confirmed</div>
+              <div class="big" style="font-size:1.2rem">You are on<br>the frequency.</div>
+              <p class="ritual" style="font-style:italic;color:var(--silver);font-size:.85rem">The next signal arrives<br>with the coming moon.</p>
+            </div>
+          </div>
+          <div class="frame-cap">3 · Confirmación = recibir, no comprar</div>
+        </div>
+      </div>
+      <div class="warn" style="border-color:var(--signal-blue)"><b style="color:var(--signal-blue)">SÍ tomamos:</b> gating real · captura en el pico de curiosidad · una sola acción. &nbsp;<b style="color:var(--bronze)">NO:</b> color de alarma · "% OFF" · urgencia falsa · popup de entrada · copy de cupón. La conversión existe, disfrazada de pertenencia, no de oferta.</div>
+    </div>
+  </section>
+
+  <!-- DISTRIBUTION -->
+  <section class="wrap piece" style="border-top:1px solid var(--line-soft)">
+    <div class="piece-no" style="color:var(--signal-blue)">DISTRIBUCIÓN & DOSIS</div>
+    <h3>Cómo vive sin invadir</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem">
+      <div class="elevel" style="border-top:3px solid var(--ember)"><div class="n" style="color:var(--ember)">WEB</div><p style="font-size:.85rem;color:var(--silver);margin-top:.5rem">Footer, archive, experience portal, páginas de piedras, one-of-one, fondos de ciclo, hidden nav, hover states. Nunca en el flujo de compra.</p></div>
+      <div class="elevel" style="border-top:3px solid #6b2d6b"><div class="n" style="color:#cdbcc8">INSTAGRAM</div><p style="font-size:.85rem;color:var(--silver);margin-top:.5rem">1 post "Signal" cada 8–12. Stories con códigos / coordenadas / cielo. El feed NO se vuelve UFO.</p></div>
+      <div class="elevel" style="border-top:3px solid var(--signal-blue)"><div class="n" style="color:var(--signal-blue)">NEWSLETTER</div><p style="font-size:.85rem;color:var(--silver);margin-top:.5rem">1 "Signal from the Archive" al mes, máximo. Vive en la lista VIP, no en el general.</p></div>
+    </div>
+    <div class="warn" style="border-color:var(--signal-blue)"><b style="color:var(--signal-blue)">NO usar:</b> alienígenas verdes, platillos caricaturescos, ilustración conspiranoica, "ancient aliens" como historia, símbolos indígenas mezclados con ovnis, New Age genérico, galaxias saturadas, arcoíris cósmicos, claims de contacto extraterrestre como verdad.</div>
+  </section>
+</div>
+
+<footer class="docfoot">
+  <svg class="mark" viewBox="0 0 512 512" aria-hidden="true">
+    <circle cx="256" cy="256" r="204" fill="none" stroke="#8A6A43" stroke-width="10"/>
+    <path d="M256 78 300 158 256 238 212 158Z" fill="none" stroke="#C4935A" stroke-width="8"/>
+    <path d="M256 274 300 354 256 434 212 354Z" fill="none" stroke="#C4935A" stroke-width="8"/>
+    <path d="M78 256 158 212 238 256 158 300Z" fill="none" stroke="#C4935A" stroke-width="8"/>
+    <path d="M274 256 354 212 434 256 354 300Z" fill="none" stroke="#C4935A" stroke-width="8"/>
+    <circle cx="256" cy="256" r="18" fill="#F2EDE4"/><circle cx="256" cy="256" r="7" fill="#080706"/>
+  </svg>
+  <div class="ritual" style="font-size:1.1rem;color:var(--silver)">Different hands, different lands — the same sky.</div>
+  <div style="margin-top:1rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.14em">PROPUESTA · NO PUBLICAR · WENU MAPU · 2026-06-26</div>
+</footer>
+
+</body>
+</html>

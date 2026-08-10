@@ -1,0 +1,41 @@
+{
+  "commands": [
+    "ENTER THE FIELD",
+    "BEGIN OBSERVATION",
+    "DESCEND FURTHER",
+    "OPEN ARCHIVE",
+    "RUN PROTOCOL",
+    "MAP THE FIELD",
+    "RETURN WITH MEMORY"
+  ],
+  "statuses": [
+    "LATENT",
+    "AWARE",
+    "LOCKED",
+    "OBSERVING",
+    "VERIFIED",
+    "ARCHIVED",
+    "REMEMBERED"
+  ],
+  "nouns": [
+    "ARCHIVE",
+    "SIGNAL",
+    "NODE",
+    "PROTOCOL",
+    "MEMORY",
+    "SOURCE",
+    "SPECIMEN",
+    "CONSTELLATION"
+  ],
+  "whispers": [
+    "LO QUE OBSERVA TAMBIÉN ES OBSERVADO",
+    "LA MEMORIA NO PERMANECE QUIETA",
+    "NINGÚN RETORNO REPITE EL ORIGEN"
+  ],
+  "forbidden": [
+    "random Japanese characters",
+    "generic AI dashboard copy",
+    "unverified Mapudungun",
+    "meaningless scientific claims"
+  ]
+}

@@ -1,0 +1,17 @@
+:root{
+  --kdx-type-display: "Oxanium", "Chakra Petch", system-ui, sans-serif;
+  --kdx-type-interface: "Geist Mono", "IBM Plex Mono", ui-monospace, monospace;
+  --kdx-type-editorial: "Geist", system-ui, sans-serif;
+  --kdx-sigil-color:#e8e4dc;
+  --kdx-sigil-accent:#b18cff;
+}
+.kdx-sigil-text{display:block;width:100%;height:auto;color:var(--kdx-sigil-color);overflow:visible}
+.kdx-sigil-text polygon{transform-box:fill-box;transform-origin:center;transition:opacity .35s ease,transform .5s cubic-bezier(.2,.7,.2,1)}
+.kdx-sigil-text:hover polygon:nth-child(4n){opacity:.58;transform:translateY(-1px)}
+.kdx-display{font-family:var(--kdx-type-display);font-weight:600;text-transform:uppercase;letter-spacing:-.03em}
+.kdx-interface{font-family:var(--kdx-type-interface);text-transform:uppercase;letter-spacing:.18em}
+.kdx-editorial{font-family:var(--kdx-type-editorial)}
+.kdx-type-lockup{display:grid;gap:.7rem;align-items:start}
+.kdx-type-lockup__sigil{width:min(100%,720px)}
+.kdx-type-lockup__code{font:500 11px/1.4 var(--kdx-type-interface);letter-spacing:.22em;color:#8c8a85}
+@media(prefers-reduced-motion:reduce){.kdx-sigil-text polygon{transition:none!important}}
