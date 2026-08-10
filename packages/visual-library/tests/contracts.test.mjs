@@ -87,9 +87,21 @@ test("agent resource catalog is broad, searchable, and license-aware", async () 
 test("all supplied references map to reusable families and rights state", async () => {
   const data = JSON.parse(await readFile(new URL("../assets/reference-map.json", import.meta.url), "utf8"));
   assert.equal(data.references.length, 16);
-  assert.ok(data.references.every((item) => item.id && item.file && item.families.length && item.rights));
-  assert.ok(data.references.some((item) => item.rights === "creator-supplied"));
+  assert.ok(data.references.every((item) => item.id && item.file && item.title && item.summary && item.families.length && item.components.length && item.bestFor.length && item.avoid.length && item.rights && item.transform));
+  assert.ok(data.references.every((item) => item.file.startsWith("KDX-")));
+  assert.equal(new Set(data.references.map((item) => item.id)).size, data.references.length);
+  assert.ok(data.references.some((item) => item.rights === "creator-owned"));
   assert.ok(data.references.some((item) => item.rights === "reference-only"));
+});
+
+test("portfolio ingestion contract keeps private sources separate from production derivatives", async () => {
+  const data = JSON.parse(await readFile(new URL("../assets/portfolio-ingestion-contract.json", import.meta.url), "utf8"));
+  assert.ok(data.requiredFields.includes("visibility"));
+  assert.ok(data.visibility.includes("private-source"));
+  assert.ok(data.visibility.includes("public-asset"));
+  assert.ok(data.transformModes.includes("derive-pattern"));
+  assert.ok(data.gates["cultural-material"].includes("no-generic-tribal-tag"));
+  assert.equal(data.entryTemplate.visibility, "private-source");
 });
 
 test("capability router returns small stacks with explicit fallbacks", async () => {
