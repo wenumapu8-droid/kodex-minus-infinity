@@ -1,12 +1,12 @@
 export const families = [
-  { id: "telemetry", label: "Telemetry + HUD", primitives: ["signal-gauge", "metric-bars", "waveform", "radial-scanner"], capabilities: ["metrics", "status", "signal", "dashboard"] },
+  { id: "telemetry", label: "Telemetry + HUD", primitives: ["signal-gauge", "metric-bars", "waveform", "radial-scanner", "ring-gauge", "bar-meter", "step-graph"], capabilities: ["metrics", "status", "signal", "dashboard"] },
   { id: "flow", label: "Flows + journeys", primitives: ["journey-field", "sankey", "node-network"], capabilities: ["journey", "process", "network", "timeline"] },
   { id: "taxonomy", label: "Taxonomy + knowledge", primitives: ["radial-taxonomy", "tree", "sunburst", "chord"], capabilities: ["hierarchy", "categories", "relationships", "archive"] },
   { id: "field", label: "Fields + forces", primitives: ["toroidal-field", "vector-field", "particle-field", "vortex"], capabilities: ["energy", "cosmos", "magnetism", "convergence"] },
   { id: "symbol", label: "Glyphs + portals", primitives: ["glyph-ring", "sigil-builder", "pattern-field", "orbital-mark"], capabilities: ["symbol", "portal", "ritual", "identity"] },
   { id: "portrait", label: "Encoded portraits", primitives: ["data-portrait", "point-cloud", "ascii-raster", "halftone"], capabilities: ["portrait", "numbers", "memory", "observer"] },
   { id: "strata", label: "Layers + time", primitives: ["stratigraphy", "contours", "streamgraph", "topography"], capabilities: ["layers", "geology", "history", "transformation"] },
-  { id: "editorial", label: "Editorial collage", primitives: ["media-grid", "specimen-card", "quote-panel", "index-rail"], capabilities: ["collage", "story", "copy", "media"] },
+  { id: "editorial", label: "Editorial collage", primitives: ["media-grid", "specimen-card", "quote-panel", "index-rail", "micrografia"], capabilities: ["collage", "story", "copy", "media"] },
   { id: "object", label: "Objects + specimens", primitives: ["asset-slot", "model-viewer", "turntable", "xray-overlay"], capabilities: ["3d", "anatomy", "creature", "artifact"] },
   { id: "interface", label: "Interface + controls", primitives: ["spotlight-card", "morphic-nav", "liquid-panel", "bento-frame"], capabilities: ["navigation", "controls", "glass", "cards", "interface"] },
   { id: "motion", label: "Motion + interaction", primitives: ["route-reveal", "signal-traveler", "heart-pulse", "telemetry-stagger", "cursor-field", "drag-orbit", "scroll-sequence", "audio-reactive"], capabilities: ["hover", "drag", "scroll", "audio", "timeline", "stagger", "path"] }
