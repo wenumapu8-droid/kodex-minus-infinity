@@ -1,0 +1,178 @@
+schema_version: 1
+packet_id: KDX-OCIN-GENESIS-REVIEW-V0
+status: CREATOR_REVIEW_PENDING
+updated: 2026-08-13
+linear_issue: KOD-19
+source_registry:
+  name: OCÍN_MASTER_ART_REGISTRY — v0.4 ACTIVE
+  drive_id: 1k_2hy9-IfZKfFulzz_0djG2XY4KAlD8rGlKF7llqlt0
+  scope: private authorial publishing registry
+
+policy:
+  creator: Ocín / Nicolás Ortega
+  source_class: OCIN_AUTHORIAL_SOURCE
+  originals_immutable: true
+  current_allowed_use: INTERNAL_CURATION_ONLY
+  public_approval_required: true
+  public_status: REVIEW
+  rights_status: CREATOR_CONFIRMATION_REQUIRED
+  cultural_status: STANDARD_UNLESS_SPECIFIC_REVIEW_FLAGS_APPLY
+  expose_raw_drive_urls_publicly: false
+  notes:
+    - A-candidate is a curatorial state, not publication permission.
+    - Public routes must consume reviewed derivatives rather than private Drive source bytes.
+    - Titles below are proposed public titles from the authorial registry and remain subject to creator acceptance.
+    - No scientific, cultural, spiritual or historical meaning is inferred from geometry alone.
+
+selection_rule:
+  target_count: 10
+  required_scene_roles: [THRESHOLD, ARCHIVE, HEART, RETURN, ARTIFACT_ALTAR]
+  rationale: >-
+    Select a bounded authorial lineage set that can demonstrate common origin,
+    evidence/provenance, optional Heart depth and Return without importing the
+    complete portfolio warehouse.
+
+works:
+  - id: OCN-TOR-001
+    title_proposed: Seed Aperture — White Field
+    drive_id: 1zHWSdJ0UoHtLW_Oyj72XQQtCcX-Qi-UY
+    source_file: image3A30006_mirror3.jpg
+    source_family: 07_CAMPOS_TOROIDALES
+    md5: 4057caf28c422ae336b62c568fa49bae
+    relationship: NEW_INVERSE_PAIR_WITH_OCN-TOR-007
+    scene_roles: [THRESHOLD, RETURN]
+    interaction_roles: [ORIENT, ENTER, TRANSFORM]
+    corpus_role: COMMON_ORIGIN_APERTURE
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-MND-GRY-002
+    title_proposed: Grey Petal Aperture — Star Core
+    drive_id: 1wG4yYd4dpncRfO25XREUUxuEBtjPPqO8
+    source_file: image3A30213_mirror5.jpg
+    source_family: 05_SISTEMAS_MANDALA/Gris
+    md5: b34f43edcbedc2e5a4a3c178ce88c726
+    relationship: VARIANT_OF_OCN-MND-GRY-001
+    scene_roles: [HEART, THRESHOLD]
+    interaction_roles: [CONTEMPLATE, FOCUS, REVEAL]
+    corpus_role: CALM_HEART_APERTURE
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-SQR-001
+    title_proposed: Open Archive Frame
+    drive_id: 1fApkVD7HvwuXmpub6EAJChl9AWEusPqs
+    source_file: image3A30110_mirror.jpg
+    source_family: 03_GEOMETRIA_CUADRADA
+    md5: 7a501b1bc51ef228f1e338fe0fb09b51
+    relationship: NEW_BASE_OF_SQUARE_FRAME_SERIES
+    scene_roles: [ARCHIVE]
+    interaction_roles: [FRAME, INSPECT, REVEAL]
+    corpus_role: AUTHORIAL_EVIDENCE_CONTAINER
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-TRI-001
+    title_proposed: Axial Guardian — Open Lattice
+    drive_id: 12j8lSrBZmVMziVVGQoeW6Rhdq9fVBSot
+    source_file: image3A30212_mirror5.jpg
+    source_family: 04_GEOMETRIA_TRIANGULAR
+    md5: e4faf962c2e6d61ce4d715d30a7a3478
+    relationship: NEW_BASE_OF_TRIANGULAR_GUARDIAN_SERIES
+    scene_roles: [THRESHOLD]
+    interaction_roles: [ORIENT, GATE, NAVIGATE]
+    corpus_role: THRESHOLD_SENTINEL
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-FRC-001
+    title_proposed: Fractal Vessel — Crowned Basin
+    drive_id: 1yhCDtCoOK3pB3nxkmGeY5aQL3MeblTIr
+    source_file: image3A30211_mirror.jpg
+    source_family: 06_SISTEMAS_FRACTALES
+    md5: 584bf69ba43817838241c515a9e57253
+    relationship: NEW
+    scene_roles: [ARCHIVE]
+    interaction_roles: [INSPECT, TRACE, CONTEMPLATE]
+    corpus_role: RECURSIVE_ARCHIVE_SPECIMEN
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-CIR-001
+    title_proposed: Orbital Aperture — Twin Current
+    drive_id: 13jutXnFRQVnoXE1VO65LYeOgi9kC4jdh
+    source_file: image3A30212_mirror2.jpg
+    source_family: 02_GEOMETRIA_CIRCULAR
+    md5: 2ea7495d371586189833b69d221fd193
+    relationship: NEW
+    scene_roles: [THRESHOLD]
+    interaction_roles: [FOCUS, ORIENT, ENTER]
+    corpus_role: QUIET_FOCUS_GATE
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-MND-GRY-003
+    title_proposed: Quadrant Bloom — Open Eye
+    drive_id: 138AyDrechHJM55HRqz23F9Iy69nEWqU9
+    source_file: image3A30213_mirror8.jpg
+    source_family: 05_SISTEMAS_MANDALA/Gris
+    md5: c2fa8d639f46f58639f25433a847db08
+    relationship: VARIANT_OF_OCN-MND-GRY-001
+    scene_roles: [HEART]
+    interaction_roles: [OBSERVE, FOCUS, CONTEMPLATE]
+    corpus_role: HEART_OBSERVATION_FIELD
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-SQR-005
+    title_proposed: Concentric Memory Carpet — Light Field
+    drive_id: 12HskbMNm6lRGHgoUAQ43RbxF6idktRDO
+    source_file: PSX_20210320_220311.jpg
+    source_family: 03_GEOMETRIA_CUADRADA
+    md5: b0c9286cf3d092316c10469914a46667
+    relationship: POLARITY_VARIANT_OF_OCN-SQR-004
+    scene_roles: [RETURN, ARCHIVE]
+    interaction_roles: [RECONSTRUCT, COMPARE, RETURN]
+    corpus_role: MEMORY_RETURN_LIGHT_STATE
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-TOR-007
+    title_proposed: Seed Aperture — Negative Field
+    drive_id: 1eYUqdmDQOu3zZfvQuCx1g4OCD7mB1qHx
+    source_file: PSX_20210320_215550.jpg
+    source_family: 07_CAMPOS_TOROIDALES
+    md5: 1b71f0f4ec073dc6b4b114f5a31525fb
+    relationship: VISUAL_INVERSE_OF_OCN-TOR-001
+    scene_roles: [RETURN, THRESHOLD]
+    interaction_roles: [RETURN, INVERT, RECALL]
+    corpus_role: RETURN_GATE_AND_MEMORY_PAIR
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+  - id: OCN-TOR-004
+    title_proposed: Diamond Axis Bloom
+    drive_id: 1xrboTL7NeyEYO5QXxT1_hF1P-a_RlLce
+    source_file: image3A30212_mirror.jpg
+    source_family: 07_CAMPOS_TOROIDALES
+    md5: ae438685285df4c8b3046211defa3b39
+    relationship: NEW
+    scene_roles: [THRESHOLD]
+    interaction_roles: [ORIENT, TRACE, NAVIGATE]
+    corpus_role: AXIAL_ORIENTATION_GLYPH
+    visual_review: COMPLETE
+    creator_public_approval: PENDING
+
+acceptance_state:
+  selected_count: 10
+  stable_ids_recorded: true
+  drive_ids_recorded: true
+  checksums_available_for_all: true
+  public_titles_proposed: true
+  visual_review_complete: true
+  creator_authorship_review: PENDING
+  creator_public_use_approval: PENDING
+  book_items_approved: 0
+  book_target: 6
+  altar_final_source_approval: PENDING
+  corpus_lock_complete: false
