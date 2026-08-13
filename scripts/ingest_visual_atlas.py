@@ -325,8 +325,35 @@ def build(rows, research_rows):
             ensure_node(nid, "ROUTE" if "-MAP-" in nid.upper() else "NODE", nid)
             add_edge(img_id, "DEPICTS", nid)
 
-        url = row.get("SOURCE_URL", "")
-        if url:
+        # La columna SOURCE_URL no significa lo mismo en todas las familias.
+        # En las filas de especificación de nodo (KDX-NODE-*/KDX-MAP-*) NUNCA
+        # contiene una URL:
+        #   · SI empieza con "KDX-"  → es una arista del autor. SOURCE_URL es el
+        #     nodo destino y TITLE es la relación. Línea de arista, no de nodo.
+        #   · si no                   → es la DECLARACIÓN del nodo. SOURCE_URL
+        #     es el tipo/familia del nodo ("ENTITY / THRESHOLD", "SYSTEM ROUTE"…).
+        # En ningún caso produce una fuente, y en ambos casos el texto no es una
+        # URL de procedencia: no se inventa ni una fuente ni un origen.
+        url = ""
+        if is_node_spec:
+            node_spec_url = (row.get("SOURCE_URL") or "").strip()
+            if node_spec_url.startswith("KDX-"):
+                dst = node_spec_url
+                ensure_node(dst, "ROUTE" if "-MAP-" in dst.upper() else "NODE", dst)
+                add_edge(raw_id, (row.get("TITLE") or "RELATED").strip().upper(),
+                         dst,
+                         descriptor=(row.get("PRIMARY_CONCEPT") or "").strip() or None,
+                         validity=(row.get("SECONDARY_CONCEPTS") or "").strip().upper() or "UNSET")
+                stats["author_edges"] += 1
+            else:
+                # Declaración: el tipo declarado por el autor viaja en el registro.
+                if node_spec_url:
+                    nodes.setdefault(img_id, {}).setdefault("declaredType", node_spec_url)
+                stats["node_declarations"] += 1
+        else:
+            url = row.get("SOURCE_URL", "")
+
+        if url and not is_node_spec:
             sid = f"SRC-{slug(img_id)}"
             if url.startswith("conversation://"):
                 cls, privacy, rights = "CONVERSATION_EXPORT", "PRIVATE", "UNKNOWN"
@@ -349,12 +376,13 @@ def build(rows, research_rows):
             add_edge(img_id, "SOURCED_FROM", sid)
             stats[f"cultural_{cultural}"] += 1
         else:
-            stats["missing_source_url"] += 1
-            anomalies.append({
-                "type": "MISSING_PROVENANCE", "record": img_id,
-                "field": "SOURCE_URL", "value": "", "status": "NEEDS_SOURCE_FIX",
-                "note": "Sin procedencia no puede publicarse.",
-            })
+            if not is_node_spec:
+                stats["missing_source_url"] += 1
+                anomalies.append({
+                    "type": "MISSING_PROVENANCE", "record": img_id,
+                    "field": "SOURCE_URL", "value": "", "status": "NEEDS_SOURCE_FIX",
+                    "note": "Sin procedencia no puede publicarse.",
+                })
 
         if row.get("DUPLICATE_GROUP"):
             dup_groups[row["DUPLICATE_GROUP"]].append(img_id)
@@ -459,8 +487,17 @@ def run_checks(nodes, edges, sources, claims, visual_rows, research_rows):
         if n.get("coordinate") and n["coordinate"] not in {"A", "M", "Y"}
     ]
 
-    # Reconciliación de conteo de fuentes
-    expected = sum(1 for r in visual_rows if r.get("SOURCE_URL")) + \
+    # Reconciliación de conteo de fuentes. Las filas de especificación de nodo
+    # (KDX-NODE-*/KDX-MAP-*) no producen fuente: su SOURCE_URL es el tipo del
+    # nodo o el ID del nodo destino, nunca una URL. Solo generan fuente las
+    # filas de espécimen visual con URL y las filas de investigación con URL.
+    def produces_source(r):
+        img = (r.get("IMAGE_ID") or "")
+        if img.upper().startswith(("KDX-NODE-", "KDX-MAP-")):
+            return False
+        return bool(r.get("SOURCE_URL"))
+
+    expected = sum(1 for r in visual_rows if produces_source(r)) + \
         sum(1 for r in research_rows if r.get("SOURCE_URL"))
     results["source_count_expected"] = expected
     results["source_count_actual"] = len(sources)
@@ -557,6 +594,8 @@ def main():
         "",
         f"## Aristas: {len(edges)}",
         *[f"- `{r}`: {c}" for r, c in by_rel.most_common()],
+        f"- aristas del autor recuperadas: **{stats['author_edges']}**",
+        f"- declaraciones de nodo (KDX-NODE-*/KDX-MAP-*): **{stats['node_declarations']}**",
         "",
         f"## Claims: {len(claims)}",
         *[f"- sensibilidad `{k}`: {v}" for k, v in sens.most_common()],

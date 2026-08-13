@@ -1,0 +1,62 @@
+name: KODEX Quality Gates
+
+# Las reglas del canon dejan de depender de que alguien las recuerde.
+# Si un PR introduce una coordenada inventada, una clase de claim fuera del canon
+# o material cultural sin autorización, el build falla.
+
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - 'canon/**'
+      - '.github/workflows/kodex-quality-gates.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - 'canon/**'
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Epistemic and provenance gates
+        run: python3 scripts/kodex_quality_gates.py --data-dir data/atlas
+
+      - name: Derived artifacts are byte-identical to a fresh run
+        # Un derivado editado a mano deja de ser derivado. Si alguien toca
+        # data/atlas/ sin regenerar, el hash cambia y esto lo delata.
+        run: |
+          if [ -f data/atlas/checks.json ]; then
+            recorded=$(python3 -c "import json;print(json.load(open('data/atlas/checks.json'))['outputSha256'])")
+            actual=$(python3 - <<'PY'
+          import hashlib, pathlib
+          d = hashlib.sha256()
+          for name in sorted(['nodes.json','edges.json','sources.json','claims.json','anomalies.json']):
+              p = pathlib.Path('data/atlas') / name
+              if p.exists():
+                  d.update(p.read_bytes())
+          print(d.hexdigest())
+          PY
+          )
+            echo "registrado: $recorded"
+            echo "actual:     $actual"
+            if [ "$recorded" != "$actual" ]; then
+              echo "::error::data/atlas/ fue editado a mano o no se regeneró. Volver a correr el ingestor."
+              exit 1
+            fi
+          else
+            echo "sin checks.json — se omite la comparación de hash"
+          fi

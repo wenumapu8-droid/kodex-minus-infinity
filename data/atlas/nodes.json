@@ -7,7 +7,7 @@
   "doNotEditByHand": true,
   "coordinateAssignmentPolicy": "Only A/M/Y are canonical. B–L and N–X are derived in Bridge 2 (KODEX_ALPHABET_MATRIX), never inferred from initials.",
   "claimClassPolicy": "claimClass is never inferred. Unresolved records stay UNKNOWN per canon/KODEX_EPISTEMIC_STANDARD.md.",
-  "count": 600,
+  "count": 603,
   "nodes": [
     {
       "id": "KDX-BANK-RAW-014",
@@ -1726,6 +1726,11 @@
       "label": "KDX-NODE-FRAME-SYSTEM"
     },
     {
+      "id": "KDX-NODE-GAIA-SENTINEL",
+      "type": "NODE",
+      "label": "KDX-NODE-GAIA-SENTINEL"
+    },
+    {
       "id": "KDX-NODE-GENESIS",
       "type": "NODE",
       "label": "KDX-NODE-GENESIS"
@@ -1959,6 +1964,11 @@
       "id": "KDX-NODE-MORPHOGENESIS",
       "type": "NODE",
       "label": "KDX-NODE-MORPHOGENESIS"
+    },
+    {
+      "id": "KDX-NODE-MYCELIAL-ORACLE",
+      "type": "NODE",
+      "label": "KDX-NODE-MYCELIAL-ORACLE"
     },
     {
       "id": "KDX-NODE-MYCELIUM",
@@ -2364,6 +2374,11 @@
       "id": "KDX-NODE-STAR-COMPASS",
       "type": "NODE",
       "label": "KDX-NODE-STAR-COMPASS"
+    },
+    {
+      "id": "KDX-NODE-STAR-LATTICE",
+      "type": "NODE",
+      "label": "KDX-NODE-STAR-LATTICE"
     },
     {
       "id": "KDX-NODE-STERNAL-STAR",
@@ -4885,7 +4900,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SYSTEM MAP"
     },
     {
       "id": "SPEC-KDX-MAP-FLOW-001-02",
@@ -4925,7 +4941,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "RELAY / DISTRIBUTED MEMORY"
     },
     {
       "id": "SPEC-KDX-NODE-ALTAR-NETWORK-02",
@@ -4965,7 +4982,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "LINEAGE / CULTURAL MEMORY"
     },
     {
       "id": "SPEC-KDX-NODE-ANCESTRAL-SIGNAL-02",
@@ -5005,7 +5023,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "BESTIARY / CULTURAL"
     },
     {
       "id": "SPEC-KDX-NODE-ANIMAL-GUIDES-02",
@@ -5045,7 +5064,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SYSTEM ROUTE"
     },
     {
       "id": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-01",
@@ -5066,7 +5086,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "RETURN / REINTEGRATION"
     },
     {
       "id": "SPEC-KDX-NODE-ASTRAL-RETURN-GATE-02",
@@ -5106,7 +5127,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SYSTEM ROUTE"
     },
     {
       "id": "SPEC-KDX-NODE-ASTRAL-ROUTE-02",
@@ -5241,7 +5263,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "HEART / MEMORY"
     },
     {
       "id": "SPEC-KDX-NODE-CARDIAC-COSMOS-02",
@@ -5281,7 +5304,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "TEMPORAL / RECURSION"
     },
     {
       "id": "SPEC-KDX-NODE-CHRONO-SPIRAL-02",
@@ -5321,7 +5345,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "OBSERVER / ANATOMY"
     },
     {
       "id": "SPEC-KDX-NODE-CRANIAL-AXIS-02",
@@ -5361,7 +5386,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "MATH / NETWORK / CREATION"
     },
     {
       "id": "SPEC-KDX-NODE-CREATION-WEAVE-02",
@@ -5420,7 +5446,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "INTERACTIVE CORE / RITUAL INTERFACE"
     },
     {
       "id": "SPEC-KDX-NODE-DIGITAL-ALTAR-02",
@@ -5498,7 +5525,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "BODY / LIFE / LINEAGE"
     },
     {
       "id": "SPEC-KDX-NODE-DNA-ASCENT-02",
@@ -5538,7 +5566,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "DREAM / MAP"
     },
     {
       "id": "SPEC-KDX-NODE-DREAM-CARTOGRAPHY-02",
@@ -5597,7 +5626,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "THRESHOLD / DREAM"
     },
     {
       "id": "SPEC-KDX-NODE-DREAM-GATE-02",
@@ -5637,7 +5667,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "COLLECTIVE / PUBLIC MEMORY"
     },
     {
       "id": "SPEC-KDX-NODE-ECHO-COMMONS-02",
@@ -5696,7 +5727,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "DISSOLUTION / RETURN"
     },
     {
       "id": "SPEC-KDX-NODE-EGO-DISSOLUTION-02",
@@ -5736,7 +5768,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / AIR"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-01",
@@ -5757,7 +5790,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / THRESHOLD"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-CREPUSCULOS-02",
@@ -5797,7 +5831,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / FIRE"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-LITOFIDOS-01",
@@ -5818,7 +5853,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / GEOLOGY"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-LUMENAS-01",
@@ -5839,7 +5875,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / LIGHT / IMAGINAL"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-MICELIARES-01",
@@ -5860,7 +5897,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / FUNGI"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-MICELIARES-02",
@@ -5900,7 +5938,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / REGENERATION"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-NOMADAS-VERDES-02",
@@ -5940,7 +5979,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / POLLINATION"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-POLINIS-02",
@@ -5980,7 +6020,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / WATER"
     },
     {
       "id": "SPEC-KDX-NODE-ELEM-SILVANOS-01",
@@ -6001,7 +6042,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ELEMENTAL / FOREST"
     },
     {
       "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-01",
@@ -6022,7 +6064,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "BESTIARY / GAIA SYSTEM"
     },
     {
       "id": "SPEC-KDX-NODE-ELEMENTAL-ARCHIVE-02",
@@ -6233,7 +6276,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "GAIA / ECOLOGY / IMAGINAL"
     },
     {
       "id": "SPEC-KDX-NODE-ELEMENTAL-GARDEN-02",
@@ -6292,7 +6336,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "OBSERVER / METACOGNITION"
     },
     {
       "id": "SPEC-KDX-NODE-EYE-WITHIN-EYE-02",
@@ -6351,7 +6396,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "OBSERVER / PERCEPTION FIELD"
     },
     {
       "id": "SPEC-KDX-NODE-FIELD-OF-EYES-02",
@@ -6410,7 +6456,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "HEART / INTEGRATION"
     },
     {
       "id": "SPEC-KDX-NODE-HEART-CHAMBER-02",
@@ -6450,7 +6497,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SANCTUARY / ORIENTATION"
     },
     {
       "id": "SPEC-KDX-NODE-HEART-M-02",
@@ -6490,7 +6538,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "TRADITION / BODY / TIME"
     },
     {
       "id": "SPEC-KDX-NODE-KUNDALINI-PASSAGE-02",
@@ -6549,7 +6598,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SANCTUARY / ORGANIC ARCHITECTURE"
     },
     {
       "id": "SPEC-KDX-NODE-LIVING-TEMPLE-02",
@@ -6608,7 +6658,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "MATTER / BODY / IDENTITY"
     },
     {
       "id": "SPEC-KDX-NODE-MATTERS-CLAIM-02",
@@ -6648,7 +6699,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "BODY / FIELD"
     },
     {
       "id": "SPEC-KDX-NODE-MEDITATING-POLARITY-02",
@@ -6688,7 +6740,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SYSTEM / PERSISTENCE"
     },
     {
       "id": "SPEC-KDX-NODE-MEMORY-ENGINE-02",
@@ -6728,7 +6781,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "MEMORY / FLOW"
     },
     {
       "id": "SPEC-KDX-NODE-MEMORY-RIVER-02",
@@ -6768,7 +6822,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "MUTATION / RETURN"
     },
     {
       "id": "SPEC-KDX-NODE-METAMORPHIC-THRESHOLD-02",
@@ -6808,7 +6863,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "IDENTITY / OBSERVER"
     },
     {
       "id": "SPEC-KDX-NODE-MIND-PRISON-02",
@@ -6848,7 +6904,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "OBSERVER / REFLECTION"
     },
     {
       "id": "SPEC-KDX-NODE-MIRROR-ENGINE-02",
@@ -6888,7 +6945,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ARCHIVE / DEPTH"
     },
     {
       "id": "SPEC-KDX-NODE-OBSIDIAN-VAULT-02",
@@ -6928,7 +6986,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "ENTITY / THRESHOLD"
     },
     {
       "id": "SPEC-KDX-NODE-PORTAL-ORGANISM-02",
@@ -6987,7 +7046,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SYSTEM ROUTE / INNER TRANSFORMATION"
     },
     {
       "id": "SPEC-KDX-NODE-PRIME-DOSSIER-31-37-02",
@@ -7027,7 +7087,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SIGNAL / BODY"
     },
     {
       "id": "SPEC-KDX-NODE-PULSE-02",
@@ -7067,7 +7128,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "PROCESS"
     },
     {
       "id": "SPEC-KDX-NODE-SIGNAL-TEMPLE-01",
@@ -7088,7 +7150,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "LIVING ARCHITECTURE / SANCTUARY"
     },
     {
       "id": "SPEC-KDX-NODE-SIGNAL-TEMPLE-02",
@@ -7166,7 +7229,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "PROCESS / FIELD"
     },
     {
       "id": "SPEC-KDX-NODE-SIGNAL-VORTEX-02",
@@ -7225,7 +7289,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SOURCE / METAPHYSICAL CORE"
     },
     {
       "id": "SPEC-KDX-NODE-SOURCE-CHAMBER-02",
@@ -7265,7 +7330,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "BODY / SIGNAL"
     },
     {
       "id": "SPEC-KDX-NODE-STERNAL-STAR-02",
@@ -7305,7 +7371,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "SYSTEM ROUTE"
     },
     {
       "id": "SPEC-KDX-NODE-UNIVERSE-ROUTE-11-20-02",
@@ -7345,7 +7412,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "CYCLE / CULTURAL"
     },
     {
       "id": "SPEC-KDX-NODE-WE-TRIPANTU-02",
@@ -7385,7 +7453,8 @@
       "provenance": null,
       "atlasStatus": null,
       "nextAction": null,
-      "ingestStatus": "POPULATED"
+      "ingestStatus": "POPULATED",
+      "declaredType": "CULTURAL / COSMOLOGY"
     },
     {
       "id": "SPEC-KDX-NODE-WENU-MAPU-02",
