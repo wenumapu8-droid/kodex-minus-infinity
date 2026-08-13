@@ -12,7 +12,9 @@ sobre `data/atlas/`, 9/9 PASS, rama del PR #45) a **todo** archivo JSON del repo
 que declare `$schema` o que corresponda a algún schema de `schemas/`.
 
 Script reproducible: **`scripts/kodex_schema_sweep.py`** (Draft 2020-12 via
-`jsonschema`). Resultado: **14/16 PASS · 2 FAIL**.
+`jsonschema`). Resultado: **16/18 PASS · 2 FAIL** (los 2 FAIL son el GAP de
+cobertura de los registries, ver sección propia abajo; se cuentan como estado
+abierto, no como dato roto).
 
 ## Resultados
 
@@ -29,15 +31,28 @@ Script reproducible: **`scripts/kodex_schema_sweep.py`** (Draft 2020-12 via
 | `source.schema.json` | PASS |
 | `visual-passport.schema.json` | PASS |
 
-### Datos contra sus schemas (3/5 PASS)
+### Datos contra sus schemas (3/3 PASS)
 
 | Archivo | Schema | Resultado |
 |---|---|---|
 | `data/corpora/kodex-genesis-v0/claims.json` (7) | `claim.schema.json` | **PASS** — cada claim valida |
 | `data/bridges/bridge-1-v0/claims.json` (82) | `claim.schema.json` | **PASS** — cada claim valida |
 | `data/corpora/kodex-genesis-v0/sources.json` (7) | `source.schema.json` | **PASS** — cada source valida |
-| `data/module-registry.json` | `module.schema.json` | **FAIL** (ver abajo) |
-| `data/interaction-registry.json` | `interaction-passport.schema.json` | **FAIL** (ver abajo) |
+
+### Registries — GAP de cobertura (2 FAIL explícitos)
+
+`data/module-registry.json` (9 ítems) e `data/interaction-registry.json`
+(6 ítems) son **índices estructurales sin schema propio**. El script los
+clasifica con su propio chequeo (estructura interna coherente, sin ids
+duplicados: ambos **PASS**) y los marca **GAP** porque no existe schema de
+registry que los ubique. `module.schema.json` e
+`interaction-passport.schema.json` se validan como schemas (PASS), pero **no** se
+le aplican a los registries: describen el ítem *spec completo*, no el índice.
+
+Decisión abierta (Ocín): **(A)** crear `module-registry.schema.json` y
+`interaction-registry.schema.json`, o **(B)** declarar los registries como
+índices no-validables y excluirlos. El script ya está preparado para cualquiera
+de las dos (lista `REGISTRY_INDEXES`).
 
 ### JSON de packages con `$schema` (2/2 PASS)
 
@@ -53,36 +68,21 @@ Script reproducible: **`scripts/kodex_schema_sweep.py`** (Draft 2020-12 via
 
 ---
 
-## Los 2 FAIL: huecos de cobertura, no datos rotos
+## Resumen de los 2 FAIL
 
-`data/module-registry.json` y `data/interaction-registry.json` **no validan**
-contra `module.schema.json` / `interaction-passport.schema.json`. El motivo es
-un **desajuste de granularidad**, no un error en los datos:
+Ambos son los **registries** (sección de arriba): índices estructurales sin
+schema propio. El desajuste es de granularidad: `module.schema.json` describe
+un módulo completo (`questionTypes`, `semanticChannels`, `accessibilityModes`…)
+mientras cada entrada de `module-registry.json` es un inventario liviano
+(`id, status, path, purpose, renderers, performanceCost, firstVerticalSlice`);
+`interaction-passport.schema.json` describe un passport completo
+(`nodeId, target, triggers, stateChange, writesToMemory, laterConsequences…`)
+mientras `interaction-registry.json` guarda primitivas
+(`id, status, role, purpose, renderers, visualChannels, fallback`).
 
-- `module.schema.json` describe un **módulo completo** (requiere
-  `questionTypes`, `supportedClaimClasses`, `semanticChannels`,
-  `interactionRoles`, `accessibilityModes`, `version`…). Cada entrada de
-  `module-registry.json` es un **inventario liviano** (`id, status, path,
-  purpose, renderers, performanceCost, firstVerticalSlice`).
-- `interaction-passport.schema.json` describe un **passport de interacción**
-  completo (`nodeId, target, triggers, stateChange, writesToMemory,
-  laterConsequences, accessibility, fallback`…). Cada `primitives[]` del
-  registry es una **primitiva** (`id, status, role, purpose, renderers,
-  visualChannels, fallback`).
-
-Es decir: los schemas existentes cubren el ítem *spec completo*; los registries
-son *índices* de esos ítems y **no tienen schema propio**. El barrido los marca
-FAIL porque se les aplicó el schema equivocado (el único disponible).
-
-### Qué resolver (decisión de Ocín, no inventado acá)
-
-1. **Opción A:** crear `module-registry.schema.json` y
-   `interaction-registry.schema.json` que validen el wrapper + la forma del ítem
-   liviano (cobertura real del registry).
-2. **Opción B:** declarar que los registries son índices no-validables y excluir
-   ambos del barrido (mantener el sweep limpio).
-3. Los datos en sí no tienen anomalías detectables: los ítems son estructuralmente
-   consistentes entre sí.
+No son datos rotos: los ítems son internamente consistentes (sin ids
+duplicados, estructura uniforme). El gap es que **no existe schema que ubique
+el índice**. Decisión de Ocín en la sección de registries (A o B).
 
 ---
 

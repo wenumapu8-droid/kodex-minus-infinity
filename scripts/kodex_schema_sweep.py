@@ -4,6 +4,7 @@
 Extiende los quality gates de Bridge 1 (data/atlas) a todo el repo:
   - schemas/ -> deben ser JSON Schema válidos (Draft 2020-12)
   - JSON de datos -> deben validar contra su schema (colecciones: elemento por elemento)
+  - registries -> índices estructurales sin schema propio, marcados GAP de cobertura
   - JSON de packages que declaran $schema
   - integridad: todo .json del repo debe parsear
 
@@ -40,14 +41,11 @@ SCHEMAS = {
         ],
         "array": True,
     },
-    "module.schema.json": {
-        "files": ["data/module-registry.json"],
-        "array": False,
-    },
-    "interaction-passport.schema.json": {
-        "files": ["data/interaction-registry.json"],
-        "array": False,
-    },
+    # module.schema.json e interaction-passport.schema.json validan un ítem
+    # spec-completo, NO el registry: se validan como schemas (files vacíos) y
+    # los registries se clasifican por separado en REGISTRY_INDEXES.
+    "module.schema.json": {"files": [], "array": False},
+    "interaction-passport.schema.json": {"files": [], "array": False},
     "source.schema.json": {
         "files": ["data/corpora/kodex-genesis-v0/sources.json"],
         "array": True,
@@ -57,6 +55,14 @@ SCHEMAS = {
     "public-wall-entry.schema.json": {"files": [], "array": False},
     "visual-passport.schema.json": {"files": [], "array": False},
 }
+
+# Registries: índices estructurales SIN schema propio (véase REPORTE 2026-08-12).
+# No son datos rotos — son colecciones livianas que no tienen schema declarado.
+# Decisión abierta (Ocín): (A) crear schema de registry, o (B) declararlos no-validables.
+REGISTRY_INDEXES = [
+    "data/module-registry.json",
+    "data/interaction-registry.json",
+]
 
 PACKAGE_PAIRS = [
     (
@@ -113,7 +119,29 @@ def main():
             except Exception as e:
                 check(f"{t} -> {sp}", False, str(e)[:120])
 
-    # 3. JSON de packages con $schema declarado
+    # 3. Registries (índices sin schema) — coherencia estructural, marcados GAP
+    REGISTRY_KEY_MAP = {
+        "data/module-registry.json": ("modules", "id"),
+        "data/interaction-registry.json": ("primitives", "id"),
+    }
+    for rel, (coll_key, id_key) in REGISTRY_KEY_MAP.items():
+        tp = ROOT / rel
+        if not tp.exists():
+            check(f"registry {rel}", False, "no existe")
+            continue
+        try:
+            data = json.loads(tp.read_text(encoding="utf-8"))
+            coll = data.get(coll_key, [])
+            ids = [item.get(id_key) for item in coll if isinstance(item, dict)]
+            dupes = len(ids) != len(set(ids))
+            check(f"registry {rel} ({len(coll)} items)", not dupes,
+                  "ids duplicados" if dupes else "")
+            check(f"registry {rel} sin schema propio — GAP de cobertura (decisión A/B)",
+                  False, "lista en REGISTRY_INDEXES; no se le aplica esquema inexistente")
+        except Exception as e:
+            check(f"registry {rel}", False, str(e)[:120])
+
+    # 4. JSON de packages con $schema declarado
     for data_f, schema_f in PACKAGE_PAIRS:
         dp = ROOT / data_f
         sp = ROOT / schema_f
@@ -130,7 +158,7 @@ def main():
         except Exception as e:
             check(f"{data_f} -> {schema_f}", False, str(e)[:120])
 
-    # 4. Integridad: todo .json del repo parsea
+    # 5. Integridad: todo .json del repo parsea
     bad, total = [], 0
     for p in ROOT.rglob("*.json"):
         if any(part in SKIP_DIRS for part in p.parts):
