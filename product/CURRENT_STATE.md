@@ -1,7 +1,40 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-06`  
-Status: `CREATOR-APPROVED CANON / EMERGENT MULTI-PATH TOPOLOGY / M0 CURATION ACTIVE`
+Last updated: `2026-08-14`  
+Status: `CREATOR-APPROVED PRODUCT DIRECTION / VERIFIED FEATURE-BRANCH RUNTIME / CREATOR VISUAL ACCEPTANCE PENDING`
+
+## Operational reconciliation — 2026-08-14
+
+This section is the freshest implementation-state snapshot. The creator-approved product/corpus/topology material below remains useful canon context, but older branch/PR pointers later in this file are historical where they conflict with this section, active PR bodies, Drive canon, or current CI evidence.
+
+### Assembly OS / Deep Navigation
+
+- `wenumapu8-droid/wenu-frontend#62` is **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED**.
+- Current verified implementation head recorded by the active PR: `1bfc5e4bd0b2fca1d7529dbfffee7b44b6334f20`.
+- KODEX Core Runtime run 164 completed **SUCCESS** across Deep Navigation focus restoration/browser acceptance, P0.1–P0.10 Assembly OS contracts, seeded factory benchmark, integrity/build, universal PlateSpec rendering and rendered Golden Plate browser evidence.
+- The 12 Golden Plates are machine/browser-valid candidates, not aesthetically approved plates. `human_curator_acceptance` remains `NOT_RUN`.
+- Protected Ocín artwork bytes remain withheld where required; machine QA does not infer public approval or visual/no-crop evidence when source bytes are unavailable.
+
+### Current highest-leverage visual lane
+
+- `wenumapu8-droid/wenu-frontend#67` is **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED** and remains the existing HoloCore lineage; no parallel visual runtime is being introduced.
+- The existing `KDX-HOLO-BENCH-001 — TOROIDAL FIELD` scene has been admitted to the same HoloCore registry as query-addressable specimen `toroidal-field`.
+- Registry status for the toroid: `INTERNAL_BENCHMARK`; provenance: `KODEX_SYNTHETIC_PERCEPTUAL_BENCHMARK`; epistemic layer: `ART / COMP / SPEC`.
+- The toroid deliberately has **no invented canonical node mapping**. It is an authored perceptual metaphor, not a scientific field simulation.
+- Current #67 head: `e42615e833ebffe5f09a18c14fb08fe322a0517a`.
+- KODEX Core Runtime run 192 is **IN PROGRESS** for this exact head. Browser validity for the newly registered toroid must not be claimed until that run succeeds.
+- Creator visual acceptance remains the decisive gate. Machine correctness is necessary but cannot establish that the rendered object has reached finished-piece quality.
+
+### Current priority
+
+Do not add another Assembly OS schema, route engine, HoloCore runtime, or generic agent layer. The contract factory is already far ahead of perceptual acceptance. Advance the existing HoloCore/renderer lineage until one dominant-field specimen reaches creator-review quality, then use that accepted perceptual standard to constrain subsequent visual families.
+
+### Governance boundaries
+
+- No merge or deployment is authorized by this state update.
+- Deployment permission remains **NOT GRANTED**; required phrase remains `APROBAR DEPLOY`.
+- No permissions, public asset approvals, irreversible canon decisions, or protected Ocín source originals are changed by the current visual benchmark work.
+- Science, implementation, metaphor/speculation, browser evidence and creator acceptance remain separate states.
 
 ## Repository state
 
