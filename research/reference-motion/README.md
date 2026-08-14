@@ -64,7 +64,7 @@ It does **not** prove:
 - exact source resolution;
 - original interaction behavior.
 
-Those implementation fields must be marked `PROPOSED` until supported by stronger evidence such as direct capture, public documentation or technical inspection.
+Those implementation fields must be marked `PROPOSED`, `SYNTHETIC` or `INTERPRETATION` until supported by stronger evidence such as direct capture, public documentation or technical inspection.
 
 ## Blueprint responsibilities
 
@@ -75,11 +75,35 @@ Each blueprint separates four things:
 3. **Proposed KODEX implementation** — technical method chosen for KODEX.
 4. **Forbidden-copy boundary** — source-specific elements that must not be recreated.
 
-## Files
+## Current blueprint set
 
 - `REFERENCE_MOTION_BLUEPRINT.schema.json` — validation schema.
 - `KDX-MOTION-REF-001.yaml` — demoscene / low-resolution spatial reference.
 - `KDX-MOTION-REF-002.yaml` — CRT grid / early-computer editorial reference.
+- `KDX-MOTION-REF-003.yaml` — interference / optical portal reference study.
+- `KDX-MOTION-REF-004.yaml` — iridescent axolotl-like bioform reference.
+- `KDX-MOTION-REF-005.yaml` — human figure / toroidal field diagram reference, with explicit epistemic guardrails.
+- `KDX-MOTION-REF-006.yaml` — radial taxonomy / dense relation-graph reference.
+- `KDX-MOTION-REF-007.yaml` — stratigraphic layered-flow / temporal sedimentation reference.
+- `KDX-MOTION-REF-008.yaml` — sonic editorial / media-layer interface reference.
+
+## Drive classification used by this research lane
+
+Within `03_REF — VISUAL REFERENCES`, the motion-oriented research corpus is being separated into:
+
+```text
+00_INBOX — MOTION REFERENCES
+01_CLASSIFIED — MOTION FAMILIES
+  01_DEMOSCENE_CRT
+  02_BIOFORM_LIVING
+  03_FIELD_DIAGRAMS
+  04_INFORMATION_DIAGRAMS
+  05_EDITORIAL_SONIC
+  06_OPTICAL_INTERFERENCE
+02_BLUEPRINTS — MOTION
+```
+
+This organization is provenance/production support only. Folder placement does not upgrade an asset from `REFERENCE_ONLY` to KODEX-authored material.
 
 ## Initial runtime module vocabulary
 
@@ -96,17 +120,27 @@ WaveDistortion
 FeedbackBuffer
 SignalPulse
 PointerParallax
+MotionStateController
 ReducedMotionController
+OrbitField
 ```
 
-The purpose of the vocabulary is to prevent every agent from inventing a one-off effect.
+A blueprint may describe an additional candidate implementation primitive, but new runtime modules must still pass milestone and architecture review before entering production. The purpose of this vocabulary is to prevent every agent from inventing a one-off effect.
+
+## Epistemic safeguards introduced by the expanded set
+
+- A visualized human torus is treated as a symbolic/topological reference unless independent evidence supports a narrower physical claim.
+- A waveform, playback progress or audio-reactive visual may represent a real audio signal only when a real playback/input source exists.
+- Radial nodes, colors and densities cannot imply KODEX quantities unless mapped to admitted data.
+- Stratigraphic color bands require a declared layer/state variable before they can encode information.
+- Bioform animation cannot be used to imply sentience, sensing or biological measurement.
 
 ## Fidelity QA
 
 A future prototype should be evaluated on:
 
 - composition hierarchy;
-- raster character;
+- raster/material character;
 - temporal rhythm;
 - layer independence;
 - color behavior;
@@ -132,3 +166,15 @@ A blueprint may move from `RESEARCH` to `PROTOTYPE` only when:
 - the active milestone permits implementation.
 
 It may move to `IMPLEMENTED` or `TESTED` only with repository evidence.
+
+## Current next action
+
+Continue visual inspection of Drive reference families until the first `20` motion candidates have one of three outcomes:
+
+```text
+BLUEPRINT
+STATIC_REFERENCE_ONLY
+NO_ACTION
+```
+
+Then cluster the admitted blueprint set by reusable implementation primitives before proposing runtime code. Runtime implementation remains outside this research PR unless the M0 gate or orchestrator explicitly changes scope.
