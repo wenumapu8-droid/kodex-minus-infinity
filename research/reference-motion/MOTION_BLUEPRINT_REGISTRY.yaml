@@ -39,7 +39,7 @@ entries:
   - candidate_id: AUD-003
     blueprint_id: KDX-MOTION-REF-003
     title: Interference optical portal study
-    source: "conversation:56910.mp4 | gdrive:1XJUTuFhLCKenB4qlL52qrifOHNwSJppr5WAquD1IqN0"
+    source: "conversation:56910.mp4 | study:gdrive:1XJUTuFhLCKenB4qlL52qrifOHNwSJppr5WAquD1IqN0"
     source_class: DIRECT_CAPTURE_AND_STUDY
     disposition: BLUEPRINT
     primitive_families: [B]
