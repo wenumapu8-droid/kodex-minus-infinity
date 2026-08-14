@@ -1,6 +1,6 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-06`  
+Last updated: `2026-08-08`  
 Status: `CREATOR-APPROVED CANON / EMERGENT MULTI-PATH TOPOLOGY / M0 CURATION ACTIVE`
 
 ## Repository state
@@ -15,6 +15,31 @@ Status: `CREATOR-APPROVED CANON / EMERGENT MULTI-PATH TOPOLOGY / M0 CURATION ACT
 - Active implementation draft PR: `wenu-frontend#3`
 - Deployment permission: **NOT GRANTED**
 - Required deployment phrase: `APROBAR DEPLOY`
+
+## Integration line (feature/kodex-vertical-slice-v0)
+
+Merged PRs (2026-08-07/08):
+
+- `wenu-frontend#22` — KOD-28: JourneyState + EventTrace core (deterministic state kernel).
+- `wenu-frontend#28` — KOD-28 rework: payload allowlist + Heart semantics (creator gate).
+- `wenu-frontend#29` — Vertical Slice CI base fix (intentional empty product build).
+- `wenu-frontend#30` — Runtime safety: separate knowledge graph from exits.
+- `wenu-frontend#31` — Semantic interaction → JourneyState memory bridge.
+- `wenu-frontend#32` — KOD-47: Visible Assembly 01 end-to-end internal journey (noindex, Playwright QA gate).
+
+Runtime tests on the integration line: 50/50 passing (`journey-state`, `canonical-graph`, `edge-resolver`, `visible-assembly`).
+
+## Factory dispatch queue (KOD-44)
+
+`ops/factory/DISPATCH_QUEUE.yaml` tracks real station state:
+
+- `OPENCLAUDE_DEEPSEEK` — KOD-28 COMPLETED (rework merged).
+- `KOD-47_INTEGRATION` — KOD-47 COMPLETED (merged, QA green).
+- `GEMINI_ANTIGRAVITY` — KOD-38 FIELD OF EYES (visual WIP).
+- `HERMES_TELEGRAM` — KOD-36 RUNNING.
+- `CLAUDE_MAX_MACMINI` — KOD-42 read-only audit.
+- `CLAUDE_PRO_IMAC` — KOD-26 paused (capacity).
+- Deployment: **BLOCKED** (creator phrase `APROBAR DEPLOY` required).
 
 ## Creator-approved product direction
 
