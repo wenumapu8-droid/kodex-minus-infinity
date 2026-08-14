@@ -108,6 +108,36 @@ Siguiente gap real:
 
 Los PRs #65 y #66 fueron PRs temporales de CI y están cerrados; no tratarlos como líneas activas de producto.
 
+### Manifestation / Causal State Engine
+**Linear KOD-67 + wenu-frontend PR #71**  
+https://linear.app/kodex8/issue/KOD-67/implement-kodex-manifestation-causal-latency-state-engine  
+https://github.com/wenumapu8-droid/wenu-frontend/pull/71
+
+Implementa la secuencia de software:
+`POTENTIAL → SIGNAL → INTERFERENCE → TRANSFORMING → REALIZED → TRACE`.
+
+Truth boundary:
+- es un modelo de estado causal/computacional de KODEX, **no** una afirmación de que pensamiento modifique materia físicamente;
+- blockers son explícitos e inspeccionables;
+- no scoring psicológico, biométrico, espiritual ni de engagement;
+- reutiliza HoloCore, JourneyState y Assembly OS; no crea memoria/routing paralelo;
+- `REALIZED` usa HoloCore específico solo cuando existe un `HOLOCORE_NODE_MAP` explícito;
+- TRACE entra al bridge existente `kodex:organism-action → JourneyState`;
+- WorkOrder / StationResult / QA pueden alimentar POTENTIAL / INTERFERENCE / TRANSFORMING / REALIZED sin porcentajes inventados.
+
+Evidencia:
+- predecessor exact stack run #241: SUCCESS incluyendo lab desktop/mobile/reduced-motion + TRACE→JourneyState;
+- artifact #241 mostró una debilidad de evidencia: mobile podía capturarse durante `RESOLVING` con canvas negro;
+- el gate actual exige renderer estable + señal pintada real antes de PASS;
+- current observed head: `c6471e2d7d6ee90b2d69815579138bcb50a25e8a`;
+- KODEX Core Runtime run #252 está **IN PROGRESS** al momento de este snapshot; contracts/build están green, browser exact-head sigue `NEEDS_CONFIRMATION` hasta que cierre.
+
+Drive spec:
+`29_KODEX_MANIFESTATION_ENGINE — Causal State & Interference Resolution — Runtime Spec v0.1`
+https://docs.google.com/document/d/1dku8xY_caZQ7KLU8hKWx8Qke6BqJMO_I-ZaueIJYDUs/edit?usp=drivesdk
+
+No mapear silenciosamente los 12 IDs del micro-universo de Deep Navigation a HoloCore: hoy no tienen entradas explícitas en `HOLOCORE_NODE_MAP`; esa correspondencia es una decisión curatorial.
+
 ---
 
 ## 5. No rehacer
@@ -120,6 +150,7 @@ Los PRs #65 y #66 fueron PRs temporales de CI y están cerrados; no tratarlos co
 - No modificar arte original de Ocín para hacerlo encajar; usar composición y tratamiento no destructivo según contrato.
 - No asumir que un PR abierto ya forma parte de `main`.
 - No asumir que una rama histórica sigue siendo la base correcta: verificar antes de merge/deploy.
+- No crear un segundo Manifestation Engine, HoloCore, JourneyState, memory store o progress tracker si el contrato existente puede extenderse.
 - No desplegar sin autorización explícita `APROBAR DEPLOY`.
 
 ---
@@ -146,9 +177,19 @@ Lee:
 ### Holografía / HoloCore
 Lee:
 - handoff;
-- runtime PR #63;
+- runtime PR #63 / current HoloCore registry lineage;
 - `/kodex/lab/holocore/`;
 - evidencia/browser scripts asociados.
+
+### Manifestation / causal state / materialización
+Lee:
+- Linear KOD-67;
+- runtime PR #71;
+- Drive spec `29_KODEX_MANIFESTATION_ENGINE...`;
+- `src/lib/kodex/manifestation-engine.js`;
+- visual/JourneyState/Assembly adapters y tests directamente relacionados.
+
+No reinterpretar `manifestation` como física o metafísica establecida. En runtime significa transición explícita de un estado posible a un estado observable/verificado.
 
 ### Provenance / corpus
 Lee:
@@ -173,6 +214,7 @@ Según la superficie modificada:
 - browser QA;
 - desktop + mobile;
 - `prefers-reduced-motion`;
+- señal visual realmente pintada cuando el gate afirma output visual, no solo canvas/DOM presente;
 - teclado/touch cuando aplique;
 - deep-link/back-forward cuando aplique;
 - provenance/license gate cuando haya assets;
@@ -190,7 +232,7 @@ Usar como mapa de situación:
 
 `context/KODEX_CLAUDE_CODE_HANDOFF_2026-08-14.md`
 
-Contiene Drive index, PR index, surfaces reutilizables, bloqueos, conflictos documentales, prioridades y recetas de lectura.
+Contiene Drive index, PR index, surfaces reutilizables, bloqueos, conflictos documentales, prioridades y recetas de lectura. La copia persistente de Drive ya incluye el delta KOD-67; si esta copia repo queda detrás, sincronizar el archivo existente en vez de crear otro handoff paralelo.
 
 **Meta:** arrancar una tarea leyendo cientos o pocos miles de tokens, no reconstruyendo meses de conversación.
 
