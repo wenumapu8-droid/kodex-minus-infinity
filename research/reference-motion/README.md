@@ -75,7 +75,7 @@ Each blueprint separates four things:
 3. **Proposed KODEX implementation** — technical method chosen for KODEX.
 4. **Forbidden-copy boundary** — source-specific elements that must not be recreated.
 
-## Current blueprint set
+## Current materialized blueprint set
 
 - `REFERENCE_MOTION_BLUEPRINT.schema.json` — validation schema.
 - `KDX-MOTION-REF-001.yaml` — demoscene / low-resolution spatial reference.
@@ -86,10 +86,14 @@ Each blueprint separates four things:
 - `KDX-MOTION-REF-006.yaml` — radial taxonomy / dense relation-graph reference.
 - `KDX-MOTION-REF-007.yaml` — stratigraphic layered-flow / temporal sedimentation reference.
 - `KDX-MOTION-REF-008.yaml` — sonic editorial / media-layer interface reference.
+- `KDX-MOTION-REF-009.yaml` — numeric face / aggregate-fragment data portrait reference.
+- `MOTION_CANDIDATE_AUDIT_20.md` — first twenty candidate dispositions and primitive clustering.
+
+Three internal KODEX Motion Reference Cards are also judged worth preserving as future blueprint candidates, but they are **not** materialized as `KDX-MOTION-KDX-*` files until their source/authorship/generation lineage and executable equivalence are confirmed.
 
 ## Drive classification used by this research lane
 
-Within `03_REF — VISUAL REFERENCES`, the motion-oriented research corpus is being separated into:
+Within `03_REF — VISUAL REFERENCES`, the motion-oriented research corpus is separated into:
 
 ```text
 00_INBOX — MOTION REFERENCES
@@ -100,10 +104,13 @@ Within `03_REF — VISUAL REFERENCES`, the motion-oriented research corpus is be
   04_INFORMATION_DIAGRAMS
   05_EDITORIAL_SONIC
   06_OPTICAL_INTERFERENCE
+  07_CULTURAL_PROVENANCE_HOLD
 02_BLUEPRINTS — MOTION
 ```
 
 This organization is provenance/production support only. Folder placement does not upgrade an asset from `REFERENCE_ONLY` to KODEX-authored material.
+
+The Anubis/guardian reference is intentionally held in `07_CULTURAL_PROVENANCE_HOLD`; it is not admitted to the motion system pending cultural/source/rights review.
 
 ## Initial runtime module vocabulary
 
@@ -134,6 +141,19 @@ A blueprint may describe an additional candidate implementation primitive, but n
 - Radial nodes, colors and densities cannot imply KODEX quantities unless mapped to admitted data.
 - Stratigraphic color bands require a declared layer/state variable before they can encode information.
 - Bioform animation cannot be used to imply sentience, sensing or biological measurement.
+- Numeric/glyph portraits cannot imply biometric, identity or personal measurement data without a declared source and consent model.
+- Cultural/iconographic references do not enter motion production merely because their imagery is visually powerful.
+
+## First-20 audit result
+
+```text
+20 candidates audited
+12 BLUEPRINT
+3 STATIC_REFERENCE_ONLY
+5 NO_ACTION
+```
+
+Nine external/reference blueprints are materialized today. Three additional `BLUEPRINT` dispositions are internal KODEX Motion Reference Cards pending provenance confirmation.
 
 ## Fidelity QA
 
@@ -169,12 +189,14 @@ It may move to `IMPLEMENTED` or `TESTED` only with repository evidence.
 
 ## Current next action
 
-Continue visual inspection of Drive reference families until the first `20` motion candidates have one of three outcomes:
+The first-20 audit is complete. The next M0-safe step is to formalize the reusable primitive clusters **as research contracts, not runtime code**:
 
 ```text
-BLUEPRINT
-STATIC_REFERENCE_ONLY
-NO_ACTION
+A — RASTER / EARLY COMPUTER
+B — OPTICAL / FIELD STATE
+C — LIVING / PARAMETRIC FORM
+D — INFORMATION TRANSFORMATION
+E — EDITORIAL / MEDIA STATE
 ```
 
-Then cluster the admitted blueprint set by reusable implementation primitives before proposing runtime code. Runtime implementation remains outside this research PR unless the M0 gate or orchestrator explicitly changes scope.
+Each contract must state inputs, semantic role, forbidden use, reduced-motion behavior, performance assumptions and required prototype evidence. Runtime implementation remains outside this research PR unless the M0 gate or orchestrator explicitly changes scope.
