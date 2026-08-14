@@ -164,9 +164,9 @@ entries:
     disposition: BLUEPRINT
     primitive_families: [C]
     topology_affinity: [MACHINE, ARTIFACT]
-    provenance_status: NEEDS_CONFIRMATION
+    provenance_status: PARTIAL_INTERNAL_LINEAGE
     prototype_readiness: BLOCKED
-    blocker: CONFIRM_AUTHORSHIP_GENERATION_LINEAGE_AND_EXECUTABLE_EQUIVALENCE
+    blocker: EXACT_GENERATION_TOOL_SOURCE_REFERENCE_LINEAGE_AND_EXECUTABLE_EQUIVALENCE_UNVERIFIED
 
   - candidate_id: AUD-014
     blueprint_id: null
@@ -176,9 +176,9 @@ entries:
     disposition: BLUEPRINT
     primitive_families: [C]
     topology_affinity: [MACHINE, COSMOLOGY]
-    provenance_status: NEEDS_CONFIRMATION
+    provenance_status: PARTIAL_INTERNAL_LINEAGE
     prototype_readiness: BLOCKED
-    blocker: CONFIRM_AUTHORSHIP_GENERATION_LINEAGE_AND_EXECUTABLE_EQUIVALENCE
+    blocker: EXACT_GENERATION_TOOL_SOURCE_REFERENCE_LINEAGE_AND_EXECUTABLE_EQUIVALENCE_UNVERIFIED
 
   - candidate_id: AUD-015
     blueprint_id: null
@@ -188,9 +188,9 @@ entries:
     disposition: BLUEPRINT
     primitive_families: [C]
     topology_affinity: [MACHINE, COSMOLOGY]
-    provenance_status: NEEDS_CONFIRMATION
+    provenance_status: PARTIAL_INTERNAL_LINEAGE
     prototype_readiness: BLOCKED
-    blocker: CONFIRM_AUTHORSHIP_GENERATION_LINEAGE_AND_EXECUTABLE_EQUIVALENCE
+    blocker: EXACT_GENERATION_TOOL_SOURCE_REFERENCE_LINEAGE_AND_EXECUTABLE_EQUIVALENCE_UNVERIFIED
 
   - candidate_id: AUD-016
     blueprint_id: null
