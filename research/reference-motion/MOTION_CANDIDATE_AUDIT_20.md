@@ -29,9 +29,9 @@ A disposition is not a rights or canon upgrade. `BLUEPRINT` means "worth preserv
 | 10 | Graph Garmata editorial grid study | `gdrive:1FBDdg3_mKSmRPunafaFD7BMPOIJT7eHT` | external screenshot collection | `STATIC_REFERENCE_ONLY` | Strong poster/editorial hierarchy, but the asset is a grid of static works and supplies no trustworthy temporal behavior. |
 | 11 | Brass Hands visual-system study | `gdrive:1zMVpy7kdg1w-ytV1vsUA4jWL2dv81_DyQAqxnHuKCX4` | external reference study | `STATIC_REFERENCE_ONLY` | Already useful for macro-type, grid, rails and micro-data. Current study is page-architecture evidence, not a motion capture. Do not copy identity/layouts. |
 | 12 | Guardian / Anubis image | `gdrive:1Lax53EblAuvGW10mu15c4teUza6Giihv` | cultural/iconographic reference | `NO_ACTION` | Egyptian deity/iconography + unclear source/rights/transformation provenance. Moved to cultural-provenance hold. Do not animate/promote until reviewed. |
-| 13 | KODEX Motion Reference Card — Living Figure Loop | `gdrive:1RA7JtQF3XoGdpJa1IZNpej0ZD9ZtAmGn` | internal motion reference card | `BLUEPRINT` | Card explicitly specifies phase, torsion, expansion/contraction and seamless closure. Preserve as candidate behavior, but authorship/source status must be confirmed before calling it canonical KODEX code. |
-| 14 | KODEX Motion Reference Card — Parametric Helix Loop | `gdrive:1cya1GC4Auy31YYrhZHI07HTKan_fhiDa` | internal motion reference card | `BLUEPRINT` | Explicit phase/turns/radius/twist/mesh parameter grammar. Strong reusable parametric motion candidate; provenance and executable equivalence still need verification. |
-| 15 | KODEX Motion Reference Card — Torque Mesh Loop | `gdrive:1wHtONZJd8YbEFBw4J0nhzO0acvLRIQLI` | internal motion reference card | `BLUEPRINT` | Explicit radial modulation/twist/phase loop grammar. Treat printed pseudo-code as design specification until executable code is verified. |
+| 13 | KODEX Motion Reference Card — Living Figure Loop | `gdrive:1RA7JtQF3XoGdpJa1IZNpej0ZD9ZtAmGn` | internal motion reference card | `BLUEPRINT` | User generation request/name is verified from the 2026-08-05 project conversation and Drive ingest by the project account is verified. Card explicitly specifies phase, torsion, expansion/contraction and seamless closure. Exact generation tool/model, source-reference lineage and executable equivalence remain unverified. |
+| 14 | KODEX Motion Reference Card — Parametric Helix Loop | `gdrive:1cya1GC4Auy31YYrhZHI07HTKan_fhiDa` | internal motion reference card | `BLUEPRINT` | User generation request/name is verified from the 2026-08-05 project conversation and Drive ingest by the project account is verified. Explicit phase/turns/radius/twist/mesh grammar is useful, but exact generation tool/model, source-reference lineage and executable equivalence remain unverified. |
+| 15 | KODEX Motion Reference Card — Torque Mesh Loop | `gdrive:1wHtONZJd8YbEFBw4J0nhzO0acvLRIQLI` | internal motion reference card | `BLUEPRINT` | User generation request/name is verified from the 2026-08-05 project conversation and Drive ingest by the project account is verified. Printed pseudo-code is a design specification; exact generation tool/model, source-reference lineage and executable equivalence remain unverified. |
 | 16 | Rendah Mag — Experimental Editorial Interface — Issue 014 | `gdrive:1PQ2Maavo47I3oU8N2YCob2dZdDeJ2bNd` | external screenshot | `STATIC_REFERENCE_ONLY` | Strong limited-palette, distressed-image, microtype and negative-space grammar; screenshot alone gives no motion evidence. |
 | 17 | KodeLife — Compute Shader and Mandelbrot Workflow | `gdrive:1trOuc53HTmxxGYJYvtT76Swxt636p5Xt` | technical/tool reference | `NO_ACTION` | Keep as implementation/tool research. It demonstrates a shader workflow, not a KODEX visual behavior to imitate. |
 | 18 | TouchDesigner — Procedural Octopus System | `gdrive:1NIsgMZFz0QeevNzXjsOOcCMIMBu2msXH` | technical/tool reference | `NO_ACTION` | Tool/workflow reference. Extract technique only when a concrete KODEX node requires it; no motion blueprint from the screenshot itself. |
@@ -49,7 +49,18 @@ A disposition is not a rights or canon upgrade. `BLUEPRINT` means "worth preserv
 
 Nine external/reference blueprints are currently materialized as `KDX-MOTION-REF-001` through `KDX-MOTION-REF-009`.
 
-Candidates 13–15 are deliberately **not yet materialized as `KDX-MOTION-KDX-*` files**. Their cards already contain motion specifications, but the source/authorship/generation lineage and executable equivalence must be confirmed before they are promoted into a KODEX-owned implementation record.
+Candidates 13–15 are deliberately **not yet materialized as `KDX-MOTION-KDX-*` files**. Provenance is now partially resolved:
+
+```text
+CREATIVE_DIRECTION / GENERATION REQUEST: VERIFIED — user explicitly requested generation of motion-reference-card images on 2026-08-05 and named all three cards.
+DRIVE INGEST: VERIFIED — each raw PNG has one original revision uploaded/modified by the Wenu Mapu project account at 2026-08-05T00:57:22Z.
+ATLAS ADMISSION: VERIFIED — rows 98, 100 and 99 respectively classify the three cards as KODEX technical/generative references with explicit next implementation actions.
+EXACT GENERATION TOOL / MODEL: NEEDS_CONFIRMATION.
+SOURCE REFERENCE / PROMPT LINEAGE: NEEDS_CONFIRMATION beyond the recovered generation request.
+EXECUTABLE EQUIVALENCE: NOT_VERIFIED — no matching `torqueMesh`, `KDX-M-002`, “HÉLICE PARAMÉTRICA” or “FIGURA VIVA EN LOOP” implementation was found in the accessible KODEX repositories during this audit.
+```
+
+The cards therefore remain valid **internal design-specification blueprints** but are not yet evidence of existing canonical runtime code.
 
 ## Reusable primitive clusters emerging from the audit
 
