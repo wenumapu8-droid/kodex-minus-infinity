@@ -1,14 +1,16 @@
 # KODEX−∞ Reference Motion Research Validation v0
 
-Status: `RESEARCH VALIDATION / NO RUNTIME CLAIM`
+Status: `MECHANICALLY VALIDATED RESEARCH / NO RUNTIME CLAIM`
 Date: `2026-08-14`
 PR: `#55`
+Validation PR: `#57`
+Validation workflow: `KODEX Context Integrity` run `#195` / run id `31832055500`
 
-This validation distinguishes what has been directly verified from what still requires automated or prototype evidence.
+This validation distinguishes mechanically verified research structure from provenance, semantic and future prototype gates.
 
 ## Verified repository scope
 
-GitHub PR changed-file inspection shows that the current PR modifies only:
+GitHub PR changed-file inspection shows that PR #55 modifies only:
 
 ```text
 research/reference-motion/
@@ -24,11 +26,12 @@ Current research package contains:
 1  primitive-contract document
 1  canonical-applicability matrix
 1  README / protocol bridge
+1  validation record
 ```
 
-No runtime source file, canonical document, current-state document, route definition or deployment file is changed by this PR.
+No runtime source file, canonical document, current-state document, route definition or deployment file is changed by PR #55.
 
-Status: `VERIFIED` from PR changed-file list.
+Status: `VERIFIED`.
 
 ## Verified blueprint identity sequence
 
@@ -46,9 +49,9 @@ KDX-MOTION-REF-008
 KDX-MOTION-REF-009
 ```
 
-Status: `VERIFIED` from repository paths.
+Status: `MECHANICALLY VERIFIED` by `tests/test_reference_motion.py` in stacked PR #57.
 
-## Schema contract review
+## Schema contract validation
 
 The schema requires these top-level fields:
 
@@ -65,20 +68,18 @@ forbidden_copy
 validation
 ```
 
-The research blueprints were authored against this contract.
-
-However, **no automated YAML→JSON Schema validator has been executed in this PR**.
+All nine materialized YAML blueprints successfully parse and validate against `REFERENCE_MOTION_BLUEPRINT.schema.json` using JSON Schema draft 2020-12.
 
 Status:
 
 ```text
 AUTHORING_CONTRACT: PRESENT
-AUTOMATED_SCHEMA_VALIDATION: NOT_RUN
+YAML_PARSE: PASS
+JSON_SCHEMA_DRAFT_2020_12: PASS
+MATERIALIZED_BLUEPRINTS_VALIDATED: 9/9
 ```
 
-Do not label the blueprint corpus `schema-validated` until a mechanical validator runs successfully.
-
-## Registry consistency review
+## Registry consistency validation
 
 `MOTION_BLUEPRINT_REGISTRY.yaml` declares:
 
@@ -92,9 +93,60 @@ Do not label the blueprint corpus `schema-validated` until a mechanical validato
 0 runtime implementations
 ```
 
-The first-20 audit document uses the same disposition totals.
+Mechanical tests verify:
 
-Status: `MANUALLY_CROSS-CHECKED / AUTOMATED_PARSE_NOT_RUN`.
+- candidate IDs are unique;
+- materialized blueprint IDs are unique;
+- registry source values are unique;
+- materialized `source.asset_id` values are non-empty and unique;
+- registry materialized blueprint IDs exactly match the nine files;
+- registry `source` values match each materialized blueprint `source.asset_id`;
+- summary counts reconcile with parsed entries;
+- every materialized blueprint remains `NOT_IMPLEMENTED`.
+
+The validator initially exposed one real provenance-string inconsistency in `KDX-MOTION-REF-003`: the supporting Drive study lacked the `study:` qualifier in the registry. PR #55 corrected the registry to:
+
+```text
+conversation:56910.mp4 | study:gdrive:1XJUTuFhLCKenB4qlL52qrifOHNwSJppr5WAquD1IqN0
+```
+
+The corrected merge was then revalidated successfully.
+
+Status: `MECHANICALLY VERIFIED`.
+
+## Validation execution evidence
+
+Stacked validation PR #57 adds only mechanical test infrastructure and leaves PR #55's research-only scope intact.
+
+Final successful run:
+
+```text
+Workflow: KODEX Context Integrity
+Run: #195
+Merge ref: b03b2b4b63474d26fa0dd3ffa7ba8e2e5a02fec2
+Base research head: 79e57bec4a46e29347265e6aef20f470aeca09c8
+Python tests: 56 / 56 PASS
+Reference-motion tests: 9 / 9 PASS
+Canonical context validation: PASS
+Canonical context files checked: 29 required files + 12 JSON files
+```
+
+The reference-motion-specific tests cover:
+
+```text
+contiguous IDs 001–009
+filename ↔ blueprint ID equality
+YAML parseability
+JSON Schema validation
+unique materialized source IDs
+unique registry candidate / blueprint / source IDs
+registry ↔ materialized blueprint set equality
+registry source ↔ blueprint source.asset_id equality
+registry summary reconciliation
+NOT_IMPLEMENTED status preservation
+```
+
+Status: `PASS`.
 
 ## Provenance / epistemic blockers intentionally preserved
 
@@ -136,7 +188,7 @@ relation reveal
 media-state binding
 ```
 
-These are research vocabulary / proposed implementation primitives.
+These remain research vocabulary / proposed implementation primitives.
 
 Current implementation status is:
 
@@ -144,28 +196,25 @@ Current implementation status is:
 NOT_IMPLEMENTED
 ```
 
-No prototype, browser screenshot, mobile proof, reduced-motion proof, performance measurement or deployed result is claimed.
+Mechanical validation does not convert research vocabulary into runtime evidence.
 
-Status: `VERIFIED BY PR SCOPE`.
+Status: `VERIFIED`.
 
-## Missing validation before prototype admission
+## Remaining gates before prototype admission
 
-The research lane still needs, at minimum:
+The three prior mechanical blockers are now closed. Remaining gates are:
 
-1. automated YAML syntax validation;
-2. automated JSON Schema validation for all materialized blueprints;
-3. automated registry duplicate-ID/source-ID check;
-4. resolution of internal motion-card provenance;
-5. node/scene owner and semantic question for any selected prototype;
-6. explicit M0/orchestrator permission to begin runtime work;
-7. prototype evidence for desktop, mobile/touch, keyboard, reduced motion and fallback;
-8. measured performance evidence;
-9. rights/provenance review for any source media entering a proof;
-10. release review before any implementation status rises to `TESTED` or `DEPLOYED`.
+1. resolve provenance for the three internal KODEX motion cards before promotion;
+2. declare node/scene owner and semantic question for any selected prototype;
+3. obtain the applicable orchestration/scope clearance for runtime work;
+4. preserve rights/provenance review for any source media entering a proof;
+5. provide desktop, mobile/touch, keyboard, reduced-motion and fallback evidence for every implementation;
+6. measure performance rather than assuming it;
+7. complete human visual review before status rises to `TESTED` or any public/deployed claim.
 
 ## Stop condition
 
-This research package has reached the correct M0 boundary:
+This research package has reached the intended research boundary:
 
 ```text
 REFERENCE AUDIT
@@ -173,8 +222,8 @@ REFERENCE AUDIT
 → PRIMITIVE CONTRACTS
 → TOPOLOGY APPLICABILITY
 → MACHINE-READABLE REGISTRY
-→ RESEARCH VALIDATION
-→ STOP BEFORE RUNTIME IMPLEMENTATION
+→ MECHANICAL VALIDATION
+→ GATED HANDOFF TO AUTHORIZED PROTOTYPE LANES
 ```
 
-The next code-producing action requires explicit project scope/orchestration clearance; it must not be inferred from the existence of these specifications.
+The existence of a separate authorized lab prototype such as HoloCore does not retroactively mark these reference-motion blueprints as implemented.
