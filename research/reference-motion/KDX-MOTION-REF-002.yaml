@@ -1,0 +1,96 @@
+id: KDX-MOTION-REF-002
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:1Gd9SCi21aWX7utyDATEQZ1PRDwDzCYOF"
+  title: "CRT grid / early-computer editorial reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "black field with a large gray/green orthogonal grid region"
+    - "framed raster image window near the upper center"
+    - "large fluorescent display word centered in negative space"
+    - "secondary low-resolution logo/graphic region below"
+    - "strong separation between fixed grid structure and raster media zones"
+  surface:
+    - "low-resolution digital imagery"
+    - "green grid lines"
+    - "fluorescent pink/green display typography"
+    - "early-computer presentation / CRT character"
+  motion_evidence: []
+  unknowns:
+    - "original scroller behavior is unknown"
+    - "original scan behavior is unknown"
+    - "original palette animation is unknown"
+    - "original resolution and frame rate are unknown"
+    - "original interactive controls are unknown"
+abstracted_behavior:
+  layer_model:
+    - "black void"
+    - "fixed operational grid"
+    - "one or more isolated raster media windows"
+    - "macro typography"
+    - "optional local CRT surface"
+  temporal_rules:
+    - "keep structural grid and major typography locked"
+    - "confine most temporal behavior to the raster media regions"
+    - "allow only rare whole-frame disruption when it communicates a state transition"
+  interaction_rules:
+    - "inspection may increase local scan visibility without rewriting session memory"
+    - "opening/locking a record must be an explicit committed action"
+kodex_role:
+  scene_affinity:
+    - ARCHIVE
+    - MACHINE
+  semantic_purpose:
+    - "separate stable archive structure from changing media or signal content"
+    - "provide an editorial-computer grammar for specimen windows and system records"
+  memory_consequence: "If a raster window becomes a meaningful archive choice, the committed open/lock action may affect later trace or Return; decorative scan behavior must not."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - LowResBuffer
+    - PaletteCycle
+    - VisualFrameLimiter
+    - CRTSurface
+    - SignalPulse
+    - ReducedMotionController
+  raster:
+    internal_resolution: "320x200 or 320x240 candidate for raster windows only"
+    upscale: "nearest-neighbor"
+    visual_fps: "stepped cadence candidate; exact value to be tested"
+  motion:
+    - "optional palette cycle inside a KODEX-owned raster window"
+    - "optional stepped horizontal scroller for KODEX system copy"
+    - "slow local scan pass"
+    - "rare sync disturbance tied to anomaly/state change"
+  surface:
+    - "CRT treatment localized to media regions where possible"
+    - "limited phosphor bloom"
+    - "controlled raster noise"
+accessibility:
+  reduced_motion: "Use fixed raster frames and explicit state labels. Remove scrolling, palette cycling and scan translation."
+  keyboard: "All record/open/lock actions must be keyboard reachable with visible focus."
+  touch: "Tap targets must not depend on the precision of the original grid cell geometry."
+  non_visual_alternative: "Represent grid region titles, record names, state and provenance in semantic HTML / accessible overlays."
+forbidden_copy:
+  - "Oracle, IBM or other source logos/marks"
+  - "source wording"
+  - "exact source raster artwork"
+  - "exact window proportions and composition"
+  - "source-specific lettering"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "source/provenance link"
+    - "recording if scroller/palette behavior is implemented"
+  tests:
+    - "fixed grid remains legible while raster window moves"
+    - "no essential state is encoded by animation alone"
+    - "reduced-motion removes continuous/stepped motion"
+    - "source-specific logos and assets are absent"
+  implementation_status: "NOT_IMPLEMENTED"
