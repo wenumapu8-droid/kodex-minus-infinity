@@ -1,0 +1,263 @@
+registry_id: KDX-MOTION-REGISTRY-V0
+status: RESEARCH
+updated: "2026-08-14"
+runtime_status: NOT_IMPLEMENTED
+source_audit: MOTION_CANDIDATE_AUDIT_20.md
+
+primitive_families:
+  A: RASTER_EARLY_COMPUTER
+  B: OPTICAL_FIELD_STATE
+  C: LIVING_PARAMETRIC_FORM
+  D: INFORMATION_TRANSFORMATION
+  E: EDITORIAL_MEDIA_STATE
+
+entries:
+  - candidate_id: AUD-001
+    blueprint_id: KDX-MOTION-REF-001
+    title: Demoscene low-resolution spatial reference
+    source: gdrive:1ekZgQmvH53LoTMxOP9M6VfcvI2AQu6hb
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [A]
+    topology_affinity: [THRESHOLD, MACHINE, COSMOLOGY]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: ACTIVE_MILESTONE
+
+  - candidate_id: AUD-002
+    blueprint_id: KDX-MOTION-REF-002
+    title: CRT grid early-computer editorial reference
+    source: gdrive:1Gd9SCi21aWX7utyDATEQZ1PRDwDzCYOF
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [A, E]
+    topology_affinity: [MEMORY, MACHINE]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: ACTIVE_MILESTONE
+
+  - candidate_id: AUD-003
+    blueprint_id: KDX-MOTION-REF-003
+    title: Interference optical portal study
+    source: "conversation:56910.mp4 | gdrive:1XJUTuFhLCKenB4qlL52qrifOHNwSJppr5WAquD1IqN0"
+    source_class: DIRECT_CAPTURE_AND_STUDY
+    disposition: BLUEPRINT
+    primitive_families: [B]
+    topology_affinity: [THRESHOLD]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: ACTIVE_MILESTONE
+
+  - candidate_id: AUD-004
+    blueprint_id: KDX-MOTION-REF-004
+    title: Iridescent bioform living-material reference
+    source: gdrive:1J3ErtMJxe2996Gd3v-u4UQLXS4KGZYwM
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [C]
+    topology_affinity: [COSMOLOGY, ARTIFACT, MACHINE]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: SOURCE_MORPHOLOGY_MUST_NOT_BE_COPIED
+
+  - candidate_id: AUD-005
+    blueprint_id: KDX-MOTION-REF-005
+    title: Toroidal field diagram epistemic guard
+    source: gdrive:1tfEAsAYP3tF54_ugK8ppiR-dI_M52Vna
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [B]
+    topology_affinity: [COSMOLOGY, MACHINE]
+    provenance_status: REFERENCE_ONLY_UNVERIFIED_CLAIM_CONTEXT
+    prototype_readiness: GATED_M0
+    blocker: SYMBOLIC_ONLY_UNLESS_INDEPENDENT_EVIDENCE
+
+  - candidate_id: AUD-006
+    blueprint_id: KDX-MOTION-REF-006
+    title: Radial taxonomy relation reveal
+    source: gdrive:1bYJ6f8MKBdfjCAeLOfdvu3_ZZY0e1qFo
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [D]
+    topology_affinity: [MEMORY, MACHINE, COSMOLOGY]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: REQUIRES_ADMITTED_RELATION_DATA
+
+  - candidate_id: AUD-007
+    blueprint_id: KDX-MOTION-REF-007
+    title: Stratigraphic flow temporal sedimentation
+    source: gdrive:1JcT3_jUc1QS-DOqcL_0AhtTLqp1bYg_k
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [D]
+    topology_affinity: [MEMORY, COSMOLOGY, RETURN]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: REQUIRES_REAL_ORDER_OR_VERSION_STATE
+
+  - candidate_id: AUD-008
+    blueprint_id: KDX-MOTION-REF-008
+    title: Sonic editorial media layers
+    source: gdrive:14qKBqbIeHUBvCW7iTVzjMacXMLbRJBWv
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [E]
+    topology_affinity: [MEMORY, ARTIFACT, RETURN]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: REAL_MEDIA_AND_RIGHTS_REQUIRED
+
+  - candidate_id: AUD-009
+    blueprint_id: KDX-MOTION-REF-009
+    title: Numeric face aggregate-fragment data portrait
+    source: gdrive:11W5XY4cNiOBGzMZ9Xt8xPUBvonKK0khk
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: BLUEPRINT
+    primitive_families: [D]
+    topology_affinity: [MEMORY, MACHINE, RETURN]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: GATED_M0
+    blocker: NO_BIOMETRIC_OR_NUMERIC_CLAIM_WITHOUT_DATA
+
+  - candidate_id: AUD-010
+    blueprint_id: null
+    title: Graph Garmata editorial grid study
+    source: gdrive:1FBDdg3_mKSmRPunafaFD7BMPOIJT7eHT
+    source_class: EXTERNAL_SCREENSHOT_COLLECTION
+    disposition: STATIC_REFERENCE_ONLY
+    primitive_families: []
+    topology_affinity: [ARTIFACT, MEMORY]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: NOT_APPLICABLE
+    blocker: NO_TEMPORAL_EVIDENCE
+
+  - candidate_id: AUD-011
+    blueprint_id: null
+    title: Brass Hands visual system study
+    source: gdrive:1zMVpy7kdg1w-ytV1vsUA4jWL2dv81_DyQAqxnHuKCX4
+    source_class: EXTERNAL_REFERENCE_STUDY
+    disposition: STATIC_REFERENCE_ONLY
+    primitive_families: []
+    topology_affinity: [MACHINE, ARTIFACT]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: NOT_APPLICABLE
+    blocker: PAGE_ARCHITECTURE_REFERENCE_NOT_MOTION_EVIDENCE
+
+  - candidate_id: AUD-012
+    blueprint_id: null
+    title: Guardian Anubis iconographic reference
+    source: gdrive:1Lax53EblAuvGW10mu15c4teUza6Giihv
+    source_class: CULTURAL_ICONOGRAPHIC_REFERENCE
+    disposition: NO_ACTION
+    primitive_families: []
+    topology_affinity: []
+    provenance_status: CULTURAL_PROVENANCE_HOLD
+    prototype_readiness: BLOCKED
+    blocker: SOURCE_RIGHTS_CULTURAL_TRANSFORMATION_REVIEW_REQUIRED
+
+  - candidate_id: AUD-013
+    blueprint_id: null
+    title: KODEX Motion Reference Card Living Figure Loop
+    source: gdrive:1RA7JtQF3XoGdpJa1IZNpej0ZD9ZtAmGn
+    source_class: INTERNAL_MOTION_REFERENCE_CARD
+    disposition: BLUEPRINT
+    primitive_families: [C]
+    topology_affinity: [MACHINE, ARTIFACT]
+    provenance_status: NEEDS_CONFIRMATION
+    prototype_readiness: BLOCKED
+    blocker: CONFIRM_AUTHORSHIP_GENERATION_LINEAGE_AND_EXECUTABLE_EQUIVALENCE
+
+  - candidate_id: AUD-014
+    blueprint_id: null
+    title: KODEX Motion Reference Card Parametric Helix Loop
+    source: gdrive:1cya1GC4Auy31YYrhZHI07HTKan_fhiDa
+    source_class: INTERNAL_MOTION_REFERENCE_CARD
+    disposition: BLUEPRINT
+    primitive_families: [C]
+    topology_affinity: [MACHINE, COSMOLOGY]
+    provenance_status: NEEDS_CONFIRMATION
+    prototype_readiness: BLOCKED
+    blocker: CONFIRM_AUTHORSHIP_GENERATION_LINEAGE_AND_EXECUTABLE_EQUIVALENCE
+
+  - candidate_id: AUD-015
+    blueprint_id: null
+    title: KODEX Motion Reference Card Torque Mesh Loop
+    source: gdrive:1wHtONZJd8YbEFBw4J0nhzO0acvLRIQLI
+    source_class: INTERNAL_MOTION_REFERENCE_CARD
+    disposition: BLUEPRINT
+    primitive_families: [C]
+    topology_affinity: [MACHINE, COSMOLOGY]
+    provenance_status: NEEDS_CONFIRMATION
+    prototype_readiness: BLOCKED
+    blocker: CONFIRM_AUTHORSHIP_GENERATION_LINEAGE_AND_EXECUTABLE_EQUIVALENCE
+
+  - candidate_id: AUD-016
+    blueprint_id: null
+    title: Rendah Mag experimental editorial interface Issue 014
+    source: gdrive:1PQ2Maavo47I3oU8N2YCob2dZdDeJ2bNd
+    source_class: EXTERNAL_SCREENSHOT
+    disposition: STATIC_REFERENCE_ONLY
+    primitive_families: []
+    topology_affinity: [ARTIFACT, MEMORY]
+    provenance_status: REFERENCE_ONLY
+    prototype_readiness: NOT_APPLICABLE
+    blocker: NO_TEMPORAL_EVIDENCE
+
+  - candidate_id: AUD-017
+    blueprint_id: null
+    title: KodeLife compute shader and Mandelbrot workflow
+    source: gdrive:1trOuc53HTmxxGYJYvtT76Swxt636p5Xt
+    source_class: TECHNICAL_TOOL_REFERENCE
+    disposition: NO_ACTION
+    primitive_families: []
+    topology_affinity: [MACHINE]
+    provenance_status: TOOL_REFERENCE
+    prototype_readiness: NOT_APPLICABLE
+    blocker: USE_AS_TECHNICAL_RESEARCH_NOT_VISUAL_BLUEPRINT
+
+  - candidate_id: AUD-018
+    blueprint_id: null
+    title: TouchDesigner procedural octopus system
+    source: gdrive:1NIsgMZFz0QeevNzXjsOOcCMIMBu2msXH
+    source_class: TECHNICAL_TOOL_REFERENCE
+    disposition: NO_ACTION
+    primitive_families: []
+    topology_affinity: [MACHINE]
+    provenance_status: TOOL_REFERENCE
+    prototype_readiness: NOT_APPLICABLE
+    blocker: USE_AS_TECHNICAL_RESEARCH_NOT_VISUAL_BLUEPRINT
+
+  - candidate_id: AUD-019
+    blueprint_id: null
+    title: Motion.dev hover drag and layout transitions
+    source: gdrive:1GyeNt1A18wIkBoDMZys2VDlxnMA0X3cK
+    source_class: TECHNICAL_TOOL_REFERENCE
+    disposition: NO_ACTION
+    primitive_families: []
+    topology_affinity: [MACHINE]
+    provenance_status: TOOL_REFERENCE
+    prototype_readiness: NOT_APPLICABLE
+    blocker: EVALUATE_PER_INTERACTION_NEED
+
+  - candidate_id: AUD-020
+    blueprint_id: null
+    title: Kokonut UI animated component library
+    source: gdrive:14Hxn-kupfHqIsrI_UJFtHp9j-AJ1ENHA
+    source_class: TECHNICAL_TOOL_REFERENCE
+    disposition: NO_ACTION
+    primitive_families: []
+    topology_affinity: [MACHINE]
+    provenance_status: TOOL_REFERENCE
+    prototype_readiness: NOT_APPLICABLE
+    blocker: DO_NOT_IMPORT_GENERIC_ANIMATION_PATTERNS
+
+summary:
+  candidates_audited: 20
+  disposition_counts:
+    BLUEPRINT: 12
+    STATIC_REFERENCE_ONLY: 3
+    NO_ACTION: 5
+  materialized_reference_blueprints: 9
+  pending_internal_blueprint_candidates: 3
+  runtime_implemented: 0
