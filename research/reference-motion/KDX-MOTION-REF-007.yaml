@@ -1,0 +1,89 @@
+id: KDX-MOTION-REF-007
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:1JcT3_jUc1QS-DOqcL_0AhtTLqp1bYg_k"
+  title: "Stratigraphic layered-flow information-design reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "large white negative field with one narrow multicolored layered structure"
+    - "two connected vertical/curved layered sections meet around a central junction"
+    - "thin technical leader lines and handwritten-style annotations surround the form"
+    - "the colored layers bend continuously while preserving parallel ordering"
+  surface:
+    - "fine multicolor contour-like bands"
+    - "very thin gray/black technical linework"
+    - "high ratio of negative space to information"
+    - "drawing / scientific-plate character without confirmed scientific content"
+  motion_evidence: []
+  unknowns:
+    - "the screenshot does not establish what quantity or time sequence the colored layers encode"
+    - "no source animation is evidenced"
+    - "the original dataset, author and chart method require separate provenance"
+abstracted_behavior:
+  layer_model:
+    - "open white/neutral field"
+    - "ordered layered paths"
+    - "junction / cross-section anchor"
+    - "technical annotation leaders"
+    - "labels/provenance"
+  temporal_rules:
+    - "motion should express accumulation, sequence, erosion or comparison only when those states exist in the KODEX data"
+    - "preserve layer order during interpolation; adjacent strata must not cross unless the underlying state explicitly represents rupture"
+    - "prefer progressive reveal or bounded morphing over perpetual waving"
+  interaction_rules:
+    - "inspection may isolate one layer or time band and reveal its source/relationship"
+    - "a committed time/stratum selection may influence later archive context if the underlying graph defines that consequence"
+kodex_role:
+  scene_affinity:
+    - ARCHIVE
+    - COSMOLOGY
+    - RETURN
+  semantic_purpose:
+    - "provide a temporal-sedimentation grammar for memory, version history and accumulated traces"
+    - "make change over time spatially inspectable without relying on a conventional line chart"
+  memory_consequence: "If applied to session memory, selected strata may reappear as trace layers in Return; decorative path motion alone writes nothing."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - MotionStateController
+    - VisualFrameLimiter
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "SVG paths / Canvas paths preferred"
+    visual_fps: "native refresh for bounded reveals; no continuous animation required"
+  motion:
+    - "ordered layer reveal from an explicit temporal origin"
+    - "bounded path morph between documented states"
+    - "short rupture/discontinuity event only when the data contains an anomaly or contradiction"
+  surface:
+    - "thin line hierarchy"
+    - "large preserved negative space"
+    - "semantic color assigned from actual layer/state metadata"
+accessibility:
+  reduced_motion: "Show all layers statically with explicit sequence/legend; replace path morph with direct state changes."
+  keyboard: "Layers, junctions and annotations must be keyboard inspectable in a logical sequence."
+  touch: "Use expanded hit areas around thin paths and annotations."
+  non_visual_alternative: "Provide an ordered list/table of strata or versions with dates/state, relations and provenance."
+forbidden_copy:
+  - "source contour geometry and exact layered drawing"
+  - "source annotations and handwritten marks"
+  - "source dataset or implied scientific claim without provenance"
+  - "using multicolor bands without a defined variable/state mapping"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "source/provenance record"
+    - "recording if path reveal/morph is implemented"
+  tests:
+    - "layer order remains stable during motion"
+    - "colors correspond to declared data/state rather than decoration"
+    - "thin paths remain interactable on touch"
+    - "non-visual sequence communicates the same ordering"
+  implementation_status: "NOT_IMPLEMENTED"
