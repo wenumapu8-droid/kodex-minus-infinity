@@ -73,25 +73,42 @@ jobs:
               "torch": torch.__version__,
               "cuda_available": torch.cuda.is_available(),
               "mps_available": bool(getattr(torch.backends, "mps", None) and torch.backends.mps.is_available()),
+              "mps_high_watermark_ratio_for_prediction": "0.0",
+              "note": "Attempt 1 hit the default MPS high-watermark while moving SHARP to device; attempt 2 disables that allocator ceiling on this ephemeral research runner only.",
           }
           print(json.dumps(payload, indent=2))
           PY
 
       - name: Run SHARP prediction without renderer
+        env:
+          # Attempt 1 on this hosted MPS runner failed at the allocator ceiling before
+          # inference. Apple documents MPS as a supported prediction device. This
+          # workaround is deliberately scoped to this ephemeral research job only.
+          PYTORCH_MPS_HIGH_WATERMARK_RATIO: '0.0'
         run: |
+          set +e
           set -o pipefail
           START=$(python -c 'import time; print(time.time())')
           sharp predict \
             -i research-output/input/kod73_synthetic_probe.png \
             -o research-output/gaussians \
+            --device mps \
             --no-render \
             2>&1 | tee research-output/meta/sharp.log
+          STATUS=${PIPESTATUS[0]}
           END=$(python -c 'import time; print(time.time())')
-          python - "$START" "$END" <<'PY' | tee research-output/meta/timing.json
+          python - "$START" "$END" "$STATUS" <<'PY' | tee research-output/meta/timing.json
           import json, sys
           start, end = map(float, sys.argv[1:3])
-          print(json.dumps({"elapsed_seconds": end - start}, indent=2))
+          status = int(sys.argv[3])
+          print(json.dumps({
+              "elapsed_seconds": end - start,
+              "exit_code": status,
+              "device": "mps",
+              "mps_high_watermark_ratio": "0.0",
+          }, indent=2))
           PY
+          exit "$STATUS"
 
       - name: Validate PLY and write evidence
         run: |
