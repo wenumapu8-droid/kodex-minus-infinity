@@ -1,0 +1,152 @@
+name: KOD-73 SHARP Research Smoke
+
+on:
+  pull_request:
+    paths:
+      - 'research/KOD-73_SHARP_BENCHMARK.md'
+      - 'scripts/research/kod73_generate_probe.py'
+      - '.github/workflows/kod-73-sharp-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sharp-smoke:
+    name: Synthetic input → SHARP .ply
+    runs-on: macos-14
+    timeout-minutes: 35
+    env:
+      SHARP_REPO: https://github.com/apple/ml-sharp.git
+      SHARP_COMMIT: 1eaa046834b81852261262b41b0919f5c1efdd2e
+      SHARP_CHECKPOINT: sharp_2572gikvuh.pt
+
+    steps:
+      - name: Check out KODEX research branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Create evidence directories
+        run: mkdir -p research-output/input research-output/gaussians research-output/meta
+
+      - name: Install probe dependency
+        run: python -m pip install --upgrade pillow
+
+      - name: Generate rights-safe synthetic probe
+        run: |
+          python scripts/research/kod73_generate_probe.py \
+            --output research-output/input/kod73_synthetic_probe.png \
+            | tee research-output/meta/input.json
+
+      - name: Fetch pinned Apple SHARP source
+        run: |
+          git clone --no-checkout "$SHARP_REPO" /tmp/ml-sharp
+          git -C /tmp/ml-sharp checkout "$SHARP_COMMIT"
+          test "$(git -C /tmp/ml-sharp rev-parse HEAD)" = "$SHARP_COMMIT"
+          git -C /tmp/ml-sharp rev-parse HEAD | tee research-output/meta/sharp-commit.txt
+
+      - name: Record upstream model license
+        run: |
+          cp /tmp/ml-sharp/LICENSE_MODEL research-output/meta/LICENSE_MODEL
+          grep -n "Research Purposes" /tmp/ml-sharp/LICENSE_MODEL | head -n 5
+
+      - name: Install pinned SHARP environment
+        run: |
+          cd /tmp/ml-sharp
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          sharp --help >/dev/null
+
+      - name: Record host environment
+        run: |
+          python - <<'PY' | tee research-output/meta/environment.json
+          import json, platform, sys
+          import torch
+          payload = {
+              "os": platform.platform(),
+              "machine": platform.machine(),
+              "python": sys.version,
+              "torch": torch.__version__,
+              "cuda_available": torch.cuda.is_available(),
+              "mps_available": bool(getattr(torch.backends, "mps", None) and torch.backends.mps.is_available()),
+          }
+          print(json.dumps(payload, indent=2))
+          PY
+
+      - name: Run SHARP prediction without renderer
+        run: |
+          set -o pipefail
+          START=$(python -c 'import time; print(time.time())')
+          sharp predict \
+            -i research-output/input/kod73_synthetic_probe.png \
+            -o research-output/gaussians \
+            --no-render \
+            2>&1 | tee research-output/meta/sharp.log
+          END=$(python -c 'import time; print(time.time())')
+          python - "$START" "$END" <<'PY' | tee research-output/meta/timing.json
+          import json, sys
+          start, end = map(float, sys.argv[1:3])
+          print(json.dumps({"elapsed_seconds": end - start}, indent=2))
+          PY
+
+      - name: Validate PLY and write evidence
+        run: |
+          python - <<'PY' | tee research-output/meta/result.json
+          import hashlib, json
+          from pathlib import Path
+
+          input_path = Path('research-output/input/kod73_synthetic_probe.png')
+          plys = sorted(Path('research-output/gaussians').glob('*.ply'))
+          if len(plys) != 1:
+              raise SystemExit(f'Expected exactly one PLY, found {len(plys)}')
+
+          ply = plys[0]
+          head = ply.read_bytes()[:64]
+          if b'ply' not in head[:16].lower():
+              raise SystemExit('Output does not look like a PLY file')
+
+          def sha256(path: Path) -> str:
+              h = hashlib.sha256()
+              with path.open('rb') as f:
+                  for chunk in iter(lambda: f.read(1024 * 1024), b''):
+                      h.update(chunk)
+              return h.hexdigest()
+
+          result = {
+              "status": "PASS_MECHANICAL_PIPELINE",
+              "claim_class": "OBSERVED",
+              "input": {
+                  "name": input_path.name,
+                  "bytes": input_path.stat().st_size,
+                  "sha256": sha256(input_path),
+              },
+              "sharp": {
+                  "repo": "apple/ml-sharp",
+                  "commit": "1eaa046834b81852261262b41b0919f5c1efdd2e",
+                  "checkpoint": "sharp_2572gikvuh.pt",
+                  "license_status": "RESEARCH_ONLY",
+              },
+              "output": {
+                  "name": ply.name,
+                  "bytes": ply.stat().st_size,
+                  "sha256": sha256(ply),
+              },
+              "visual_fidelity": "NOT_ASSESSED",
+              "creator_acceptance": "NOT_ASSESSED",
+              "production_status": "BLOCKED",
+          }
+          print(json.dumps(result, indent=2))
+          PY
+
+      - name: Upload bounded research evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kod-73-sharp-smoke-evidence
+          path: research-output/
+          retention-days: 7
+          if-no-files-found: warn
