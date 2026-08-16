@@ -73,18 +73,17 @@ jobs:
               "torch": torch.__version__,
               "cuda_available": torch.cuda.is_available(),
               "mps_available": bool(getattr(torch.backends, "mps", None) and torch.backends.mps.is_available()),
-              "mps_high_watermark_ratio_for_prediction": "0.0",
-              "note": "Attempt 1 hit the default MPS high-watermark while moving SHARP to device; attempt 2 disables that allocator ceiling on this ephemeral research runner only.",
+              "prediction_device": "cpu",
+              "attempt_history": [
+                  "attempt_1: hosted MPS failed while moving the model to device at default allocator ceiling",
+                  "attempt_2: hosted MPS failed at the same model-transfer point with MPS high-watermark disabled",
+                  "attempt_3: CPU fallback on the same bounded hosted runner",
+              ],
           }
           print(json.dumps(payload, indent=2))
           PY
 
       - name: Run SHARP prediction without renderer
-        env:
-          # Attempt 1 on this hosted MPS runner failed at the allocator ceiling before
-          # inference. Apple documents MPS as a supported prediction device. This
-          # workaround is deliberately scoped to this ephemeral research job only.
-          PYTORCH_MPS_HIGH_WATERMARK_RATIO: '0.0'
         run: |
           set +e
           set -o pipefail
@@ -92,7 +91,7 @@ jobs:
           sharp predict \
             -i research-output/input/kod73_synthetic_probe.png \
             -o research-output/gaussians \
-            --device mps \
+            --device cpu \
             --no-render \
             2>&1 | tee research-output/meta/sharp.log
           STATUS=${PIPESTATUS[0]}
@@ -104,8 +103,7 @@ jobs:
           print(json.dumps({
               "elapsed_seconds": end - start,
               "exit_code": status,
-              "device": "mps",
-              "mps_high_watermark_ratio": "0.0",
+              "device": "cpu",
           }, indent=2))
           PY
           exit "$STATUS"
@@ -146,6 +144,7 @@ jobs:
                   "commit": "1eaa046834b81852261262b41b0919f5c1efdd2e",
                   "checkpoint": "sharp_2572gikvuh.pt",
                   "license_status": "RESEARCH_ONLY",
+                  "device": "cpu",
               },
               "output": {
                   "name": ply.name,
