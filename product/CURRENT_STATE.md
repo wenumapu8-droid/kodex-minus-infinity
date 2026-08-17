@@ -125,7 +125,7 @@ The next Assembly OS action is **creator/human readability review of the 24-capt
 
 ## Product-facing corridor / authorial transition state
 
-PR **#86** remains the live bounded transition-convergence lane.
+PR **#86** remains the verified bounded transition-convergence substrate.
 
 Exact head:
 
@@ -144,14 +144,14 @@ This mechanically closes the KOD-74 transition evidence blocker. It does **not**
 
 ## KOD-75 / PROLOGUE organism-differentiation frontier
 
-Prior proofs **#88** and **#89** are now **CLOSED / NOT MERGED**.
+Prior proofs **#88** and **#89** are **CLOSED / NOT MERGED**.
 
 - #88 Candidate A preserved `bw-02 / FERTILE VOID`, improved copy↔art coupling, but still read too strongly as a circular/woven-ring organism and remained `REFINE` at technical/curatorial-audit level.
 - #89 Candidate B0 was an intentionally disposable `arch-21.jpg` silhouette probe on top of exact #86 head. It was closed without merge and must not be treated as a production mapping.
 
-Therefore there is currently **no live KOD-75 implementation PR to advance by implication**. Any next organism-differentiation proof must start from the mechanically closed #86 lineage and reuse the existing CRT/router/state/memory systems. Do not resurrect #88/#89 wholesale and do not open a new renderer or route architecture merely to continue the visual experiment.
+There is still **no live PROLOGUE KOD-75 proof that can be treated as accepted implementation by implication**. Any next PROLOGUE organism-differentiation proof must start from the mechanically closed #86 lineage and reuse the existing CRT/router/state/memory systems. Do not resurrect #88/#89 wholesale and do not open a new renderer or route architecture merely to continue the visual experiment.
 
-MACHINE remains the second bounded authorial target only after a valid PROLOGUE candidate exists: computation / assembly / generative causality should replace ring-as-default while preserving existing product infrastructure.
+PR #90 is an active **KOD-76 MACHINE** proof on the same #86 substrate. It does not resolve or supersede the unresolved PROLOGUE KOD-75 creator decision.
 
 ## Other active architecture boundaries
 
@@ -177,18 +177,64 @@ Protected Ocín originals are immutable by default. Internal registration or act
 
 Science, verified evidence, implementation measurement, inference, metaphor, cultural interpretation and atmosphere remain explicitly separable. Unsupported telemetry must use truthful states such as `NOT MEASURED`, not decorative precision.
 
+## KOD-76 / PR #90 — MACHINE exact-head browser checkpoint
+
+Status: `IMPLEMENTED / EXACT-HEAD BROWSER VERIFIED / CREATOR ACCEPTANCE NOT_RUN`.
+
+PR #90 (`wenumapu8/kod-76-machine-causal-assembly-proof-01`) advances MACHINE on the existing #86 transition substrate rather than creating a parallel engine.
+
+Exact verified head:
+
+```text
+eb478b60a033a7f579a45f2dcaf151afc9625abc
+```
+
+All four required lanes completed `SUCCESS` on this same SHA:
+
+- Product Corridor — run `32057622056`;
+- AUTHORIAL_STATE — run `32057622011`;
+- AUTHORIAL_MOTION — run `32057622010`;
+- AUTHORIAL_TRANSITION — run `32057621986`.
+
+Product Corridor evidence artifact:
+
+```text
+id: 9297253243
+provider digest: sha256:3ef50e4f5935f70bf449a18779d99668df6c8ab7447b52ab4f8e7e35cd1be47e
+```
+
+MACHINE desktop, mobile and reduced-motion evidence all PASS:
+
+- bounded 100dvh/no horizontal overflow;
+- no first-party console or HTTP errors;
+- full-motion `READY`, `GENERATING` and `COMPLETE` expose distinct rendered fingerprints;
+- same-seed replay returns the exact READY fingerprint;
+- different assembly seed changes the rendered topology;
+- reduced-motion preserves semantic generation/completion while allowing the visual endpoint to remain static rather than depending on decorative intermediate animation.
+
+The earlier full-motion evidence race was repaired **in the existing Product Corridor harness only** by observing the `GENERATING` state before click completion and sampling the next rendered frame atomically. No MACHINE timing, topology contract, product state, router, renderer, memory model, ElementContract, PlateSpec or Assembly schema was added or forked to make CI pass.
+
+Agent-level visual inspection is deliberately separate from this browser verdict. The orthogonal lattice/traces/cells now create a materially different causal assembly layer during GENERATING, but a faint concentric/orbital scaffold remains underneath. Whether that residual ring language is acceptable is a **creator/human `KEEP | REFINE | REJECT` question**, not a mechanical failure and not a reason to create another architecture.
+
+PR #90 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED**. Browser verification does not imply creator acceptance, public release or canon promotion.
+
 ## Current critical path
 
 ```text
-VERIFIED CONTRACT / ROUTE / BROWSER BASELINE (#62)
+VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62)
 → REAL CREATOR/HUMAN REVIEW OF 24 GOLDEN CAPTURES
 → ONLY BOUNDED PRESENTATION REPAIRS SUPPORTED BY OBSERVED DEFECTS
 
-PARALLEL PRODUCT LANE:
-MECHANICALLY CLOSED AUTHORIAL TRANSITIONS (#86)
-→ NEW BOUNDED KOD-75 PROOF ONLY IF IT REUSES #86 SUBSTRATE
-→ PROLOGUE OBSERVATION/ACQUISITION IDENTITY
-→ MACHINE COMPUTATION/ASSEMBLY IDENTITY
+PRODUCT LANE:
+VERIFIED TRANSITION SUBSTRATE (#86)
+→ MACHINE EXACT-HEAD BROWSER VERIFIED (#90)
+→ CREATOR REVIEW OF MACHINE CAUSAL / ORGANISM IDENTITY
+→ BOUNDED REFINE ONLY IF OBSERVED/REQUESTED
+
+UNRESOLVED AUTHORIAL LANE:
+PROLOGUE KOD-75 HAS NO ACCEPTED LIVE PROOF
+→ NEXT PROLOGUE PROOF MUST REUSE #86 SUBSTRATE
+→ OBSERVATION / ACQUISITION IDENTITY WITHOUT RING-AS-DEFAULT
 → CREATOR KEEP | REFINE | REJECT
 
 NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
@@ -204,29 +250,10 @@ The immediate success condition is **not more architecture**. It is:
 2. complete actual human/creator readability review of the SHA-bound 24-image Golden packet;
 3. keep protected-art material review blocked while source bytes are withheld;
 4. keep #86 as the verified transition substrate while creator acceptance remains separate;
-5. treat closed #88/#89 as evidence, not active implementation authority;
-6. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
-7. make only the smallest renderer/material/composition changes justified by rendered evidence;
-8. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+5. treat closed #88/#89 as evidence, not active PROLOGUE implementation authority;
+6. treat #90 as exact-head browser-verified MACHINE evidence while creator visual acceptance remains `NOT_RUN`;
+7. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
+8. make only the smallest renderer/material/composition changes justified by rendered evidence;
+9. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
-## KOD-76 / PR #90 — MACHINE deterministic topology checkpoint
-
-Status: `IMPLEMENTED / EXACT-HEAD CI RUNNING / CREATOR ACCEPTANCE SEPARATE`.
-
-PR #90 (`wenumapu8/kod-76-machine-causal-assembly-proof-01`) advances the existing MACHINE proof rather than creating a parallel engine. Current exact candidate head:
-
-```text
-e104630fe0bc9aabcf61a817fc43e58c007739b1
-```
-
-Evidence on prior head `eee9bdf41fa8ebdf87676c72330864cade6227a4` localized the failure to MACHINE: THRESHOLD / PROLOGUE / DESCENT / ARCHIVE passed; desktop + mobile failed the full-motion intermediate assembly-frame proof while reduced-motion passed deterministic endpoint/replay. Artifact inspection also showed the old annular/network-vortex organism dominating the new causal lattice.
-
-Bounded same-branch corrections now present:
-
-- MACHINE-only legacy `network-vortex` / ASCII / inherited visual layers are demoted so the existing deterministic lattice canvas becomes the dominant organism; protected source bytes and mappings are unchanged.
-- The MACHINE browser fingerprint hashes sampled RGBA channels independently instead of XOR-collapsing each pixel, removing a false-alias path without relaxing same-seed replay or `READY ≠ GENERATING ≠ COMPLETE` requirements.
-- The existing Product Corridor workflow now executes `scripts/kodex-machine-topology-contract.mjs` and watches both that contract and `src/lib/kodex/machine-topology.js`; deterministic topology correctness is therefore part of the existing CI gate rather than an ad hoc side test.
-
-Product Corridor + AUTHORIAL_STATE + AUTHORIAL_MOTION + AUTHORIAL_TRANSITION are running on `e104630f...`. This candidate is not browser-validated until those exact-head lanes complete and the resulting MACHINE desktop/mobile/reduced-motion artifacts are inspected.
-
-No new workflow family, renderer, router, state store, memory model, ElementContract, PlateSpec or Assembly schema was introduced. No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion occurred.
+No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
