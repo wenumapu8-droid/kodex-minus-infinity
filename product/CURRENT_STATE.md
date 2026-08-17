@@ -179,28 +179,28 @@ Science, verified evidence, implementation measurement, inference, metaphor, cul
 
 ## KOD-76 / PR #90 — MACHINE exact-head browser checkpoint
 
-Status: `IMPLEMENTED / EXACT-HEAD BROWSER VERIFIED / CREATOR ACCEPTANCE NOT_RUN`.
+Status: `IMPLEMENTED / EXACT-HEAD BROWSER VERIFIED / RESIDUAL ORBIT DEFECT CLOSED AT AGENT-AUDIT LEVEL / CREATOR ACCEPTANCE NOT_RUN`.
 
 PR #90 (`wenumapu8/kod-76-machine-causal-assembly-proof-01`) advances MACHINE on the existing #86 transition substrate rather than creating a parallel engine.
 
 Exact verified head:
 
 ```text
-eb478b60a033a7f579a45f2dcaf151afc9625abc
+b76679719e37a43e79be412269c5a4ddec2c2ccc
 ```
 
 All four required lanes completed `SUCCESS` on this same SHA:
 
-- Product Corridor — run `32057622056`;
-- AUTHORIAL_STATE — run `32057622011`;
-- AUTHORIAL_MOTION — run `32057622010`;
-- AUTHORIAL_TRANSITION — run `32057621986`.
+- Product Corridor — run `32068723355`;
+- AUTHORIAL_STATE — run `32068723673`;
+- AUTHORIAL_MOTION — run `32068723358`;
+- AUTHORIAL_TRANSITION — run `32068724263`.
 
 Product Corridor evidence artifact:
 
 ```text
-id: 9297253243
-provider digest: sha256:3ef50e4f5935f70bf449a18779d99668df6c8ab7447b52ab4f8e7e35cd1be47e
+id: 9301194837
+provider digest: sha256:266672bb8caf4f0deb806bc0772f3abca47fcf8a9826756c4a8fce038f6ed9aa
 ```
 
 MACHINE desktop, mobile and reduced-motion evidence all PASS:
@@ -214,7 +214,9 @@ MACHINE desktop, mobile and reduced-motion evidence all PASS:
 
 The earlier full-motion evidence race was repaired **in the existing Product Corridor harness only** by observing the `GENERATING` state before click completion and sampling the next rendered frame atomically. No MACHINE timing, topology contract, product state, router, renderer, memory model, ElementContract, PlateSpec or Assembly schema was added or forked to make CI pass.
 
-Agent-level visual inspection is deliberately separate from this browser verdict. The orthogonal lattice/traces/cells now create a materially different causal assembly layer during GENERATING, but a faint concentric/orbital scaffold remains underneath. Whether that residual ring language is acceptable is a **creator/human `KEEP | REFINE | REJECT` question**, not a mechanical failure and not a reason to create another architecture.
+The previously verified `eb478b60…` artifact still exposed a faint inherited concentric/orbital scaffold. The current `b766797…` presentation-only delta neutralizes the residual generic art pseudo-overlay inside the existing MACHINE stylesheet. Direct inspection of the exact desktop and mobile `GENERATING` captures now shows the orthogonal causal lattice / routed traces / processor-memory cells as the dominant organism, with the previously recorded concentric scaffold no longer visible at agent-audit level.
+
+That closes the **specific observed residual-ring presentation defect**, not the creator decision. Human curator acceptance and creator visual acceptance remain `NOT_RUN`; further MACHINE styling is not justified unless creator review identifies another bounded defect.
 
 PR #90 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED**. Browser verification does not imply creator acceptance, public release or canon promotion.
 
@@ -227,9 +229,9 @@ VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62)
 
 PRODUCT LANE:
 VERIFIED TRANSITION SUBSTRATE (#86)
-→ MACHINE EXACT-HEAD BROWSER VERIFIED (#90)
-→ CREATOR REVIEW OF MACHINE CAUSAL / ORGANISM IDENTITY
-→ BOUNDED REFINE ONLY IF OBSERVED/REQUESTED
+→ MACHINE EXACT-HEAD BROWSER VERIFIED + RESIDUAL ORBIT DEFECT CLOSED (#90)
+→ CREATOR KEEP | REFINE | REJECT
+→ NO FURTHER MACHINE DELTA WITHOUT OBSERVED/REQUESTED NEED
 
 UNRESOLVED AUTHORIAL LANE:
 PROLOGUE KOD-75 HAS NO ACCEPTED LIVE PROOF
@@ -251,7 +253,7 @@ The immediate success condition is **not more architecture**. It is:
 3. keep protected-art material review blocked while source bytes are withheld;
 4. keep #86 as the verified transition substrate while creator acceptance remains separate;
 5. treat closed #88/#89 as evidence, not active PROLOGUE implementation authority;
-6. treat #90 as exact-head browser-verified MACHINE evidence while creator visual acceptance remains `NOT_RUN`;
+6. treat #90 `b766797…` as exact-head browser-verified MACHINE evidence with the specific residual orbital-scaffold defect closed at agent-audit level, while creator visual acceptance remains `NOT_RUN`;
 7. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
 8. make only the smallest renderer/material/composition changes justified by rendered evidence;
 9. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
