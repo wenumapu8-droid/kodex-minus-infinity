@@ -1,6 +1,6 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-17`  
+Last updated: `2026-08-18`  
 Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV TESTED CANDIDATE / SEVEN-ROOM PRODUCT CORRIDOR TESTED / CURATION ACTIVE`
 
 ## Authority boundary
@@ -122,7 +122,40 @@ Agent-level artifact diagnosis remains non-authoritative but useful:
 - GP-CON-03 FIELD materiality has browser-validated refinement at agent-audit level only;
 - protected ART source bytes remain `WITHHELD`, therefore artwork materiality and visual no-crop acceptance cannot be inferred from placeholders.
 
-The next Assembly OS action is **creator/human readability review of the exact-head 24-capture packet**, not another schema, assembler, route engine or renderer.
+### Exact-head Golden repetition audit — 2026-08-18
+
+Direct inspection of artifact `9304107303` exposed a second, distinct benchmark-quality defect after G04 closure: the 12 Golden cases resolve to only six primary composition IDs.
+
+Observed primary-element concentration:
+
+```text
+KDX_G01_ORBITAL_RELIC        4 / 12
+KDX_G07_ARCHIVE_DOSSIER      3 / 12
+KDX_G04_DENSE_ORBITAL_FIELD  2 / 12
+KDX_G02_SPECIMEN_DOSSIER     1 / 12
+KDX_G08_QUADRANT_TRANSMISSION 1 / 12
+KDX_G09_WIREFRAME_OPTICS     1 / 12
+```
+
+The concentration is visually apparent in both desktop and mobile: `SCI-BIOLOGY`, `TECH-NETWORK` and `CON-MIND` share a near-identical G07 Knowledge silhouette; the three protected ART activators share the same G01 shell. Protected source bytes remain `WITHHELD`, so the ART similarity does **not** establish an artwork-materiality failure, but it does weaken the Golden packet as a visual-diversity benchmark.
+
+The same exact-head seeded factory report measures:
+
+```text
+attempted_plates = 384
+valid_plates = 384
+invalid_rate = 0
+repetition_rate = 0.648438
+unique_visual_signatures = 56
+route_diversity_rate = 1
+human_curator_acceptance = NOT_RUN
+```
+
+This is an **observed curation/benchmark-diversity defect**, not a schema-validity regression, not a G04 materiality regression and not evidence for another assembler. The current assembler deterministically selects each plate composition independently from the surviving registered candidate set; no packet-level diversity contract currently exists.
+
+Do not invent a universal aesthetic threshold, hidden novelty optimizer, new element dialect or parallel assembler. If engineering proceeds before creator review, the next permitted #62 delta is bounded diagnostics/curation: expose primary-element concentration and same-silhouette groups in existing Golden/factory evidence, then test deterministic fixture/seed curation using existing registered IDs. Any broader selection-policy change remains a hypothesis until human/creator review.
+
+The Assembly OS frontier is therefore **creator/human readability review plus a bounded, evidence-backed repetition diagnostic**, not another schema, assembler, route engine or renderer.
 
 ## Product-facing corridor / authorial transition state
 
@@ -161,6 +194,7 @@ PR #90 is an active **KOD-76 MACHINE** proof on the same #86 substrate. It does 
 - PR #85 Gesture Timeline is a bounded extension of the #62 Deep Navigation lab and must continue to consume #62 route/history/memory authority rather than fork it.
 - PR #78 is no longer an isolated open HOLD branch: GitHub reports it **CLOSED / MERGED** at `211c6243857eee0b2f082abcf2e34fba9fca4052`. Its branch-local 18-field HoloCore dialect still does **not** supersede the verified #62 ElementContract vocabulary. Treat any resulting repository material as inventory/source observations until reconciled through the #62 schema and validators.
 - Existing volumetric, RGX, Manifestation×RGX, Crystal Receiver and visual-systems PRs remain specialized evidence/substrate lanes. A green lab/browser gate does not make any renderer, causal model or local-memory device the default KODEX architecture or visual canon.
+- PR #92 is a review/staging snapshot lane frozen from the already verified MACHINE head. It adds no product runtime architecture and contains no deploy step; actual staging publication remains blocked behind the explicit release phrase. It must not be used to bypass creator review or deployment authority.
 
 ## Corpus / provenance boundary
 
@@ -226,7 +260,8 @@ PR #90 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED**. Browser verificatio
 ```text
 VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ 3787194...)
 → REAL CREATOR/HUMAN REVIEW OF EXACT-HEAD 24 GOLDEN CAPTURES
-→ ONLY BOUNDED PRESENTATION REPAIRS SUPPORTED BY OBSERVED DEFECTS
+→ BOUNDED REPETITION DIAGNOSTIC / GOLDEN-SET CURATION USING EXISTING IDs
+→ ONLY BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
 
 PRODUCT LANE:
 VERIFIED TRANSITION SUBSTRATE (#86)
@@ -251,12 +286,13 @@ The immediate success condition is **not more architecture**. It is:
 
 1. keep #62 `3787194...` as the sole verified Assembly OS / Deep Navigation correctness baseline;
 2. complete actual human/creator readability review of the SHA-bound 24-image Golden packet;
-3. keep protected-art material review blocked while source bytes are withheld;
-4. keep #86 as the verified transition substrate while creator acceptance remains separate;
-5. treat closed #88/#89 as evidence, not active PROLOGUE implementation authority;
-6. treat #90 `b766797…` as exact-head browser-verified MACHINE evidence with the specific residual orbital-scaffold defect closed at agent-audit level, while creator visual acceptance remains `NOT_RUN`;
-7. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
-8. make only the smallest renderer/material/composition changes justified by rendered evidence;
-9. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+3. record and diagnose exact-head Golden repetition without converting a hypothesis metric into aesthetic canon;
+4. keep protected-art material review blocked while source bytes are withheld;
+5. keep #86 as the verified transition substrate while creator acceptance remains separate;
+6. treat closed #88/#89 as evidence, not active PROLOGUE implementation authority;
+7. treat #90 `b766797…` as exact-head browser-verified MACHINE evidence with the specific residual orbital-scaffold defect closed at agent-audit level, while creator visual acceptance remains `NOT_RUN`;
+8. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
+9. make only the smallest renderer/material/composition/fixture changes justified by rendered evidence;
+10. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
