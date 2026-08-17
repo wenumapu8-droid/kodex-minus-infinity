@@ -208,3 +208,25 @@ The immediate success condition is **not more architecture**. It is:
 6. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
 7. make only the smallest renderer/material/composition changes justified by rendered evidence;
 8. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+
+## KOD-76 / PR #90 — MACHINE deterministic topology checkpoint
+
+Status: `IMPLEMENTED / EXACT-HEAD CI RUNNING / CREATOR ACCEPTANCE SEPARATE`.
+
+PR #90 (`wenumapu8/kod-76-machine-causal-assembly-proof-01`) advances the existing MACHINE proof rather than creating a parallel engine. Current exact candidate head:
+
+```text
+e104630fe0bc9aabcf61a817fc43e58c007739b1
+```
+
+Evidence on prior head `eee9bdf41fa8ebdf87676c72330864cade6227a4` localized the failure to MACHINE: THRESHOLD / PROLOGUE / DESCENT / ARCHIVE passed; desktop + mobile failed the full-motion intermediate assembly-frame proof while reduced-motion passed deterministic endpoint/replay. Artifact inspection also showed the old annular/network-vortex organism dominating the new causal lattice.
+
+Bounded same-branch corrections now present:
+
+- MACHINE-only legacy `network-vortex` / ASCII / inherited visual layers are demoted so the existing deterministic lattice canvas becomes the dominant organism; protected source bytes and mappings are unchanged.
+- The MACHINE browser fingerprint hashes sampled RGBA channels independently instead of XOR-collapsing each pixel, removing a false-alias path without relaxing same-seed replay or `READY ≠ GENERATING ≠ COMPLETE` requirements.
+- The existing Product Corridor workflow now executes `scripts/kodex-machine-topology-contract.mjs` and watches both that contract and `src/lib/kodex/machine-topology.js`; deterministic topology correctness is therefore part of the existing CI gate rather than an ad hoc side test.
+
+Product Corridor + AUTHORIAL_STATE + AUTHORIAL_MOTION + AUTHORIAL_TRANSITION are running on `e104630f...`. This candidate is not browser-validated until those exact-head lanes complete and the resulting MACHINE desktop/mobile/reduced-motion artifacts are inspected.
+
+No new workflow family, renderer, router, state store, memory model, ElementContract, PlateSpec or Assembly schema was introduced. No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion occurred.
