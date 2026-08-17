@@ -1,249 +1,208 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-06`  
-Status: `CREATOR-APPROVED CANON / EMERGENT MULTI-PATH TOPOLOGY / M0 CURATION ACTIVE`
+Last updated: `2026-08-17`  
+Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV TESTED CANDIDATE / SEVEN-ROOM PRODUCT CORRIDOR TESTED / CURATION ACTIVE`
 
-## Repository state
+## Authority boundary
 
-- Canonical repository: `wenumapu8-droid/kodex-minus-infinity`
-- Default branch: `main`
-- Active canonical branch: `chore/canonical-bootstrap`
-- Active draft pull request: `#2`
-- Existing implementation repository: `wenumapu8-droid/wenu-frontend`
-- Verified advanced implementation branch: `feature/kodex-depth-engine`
-- Active implementation branch: `feature/kodex-vertical-slice-v0`
-- Active implementation draft PR: `wenu-frontend#3`
-- Deployment permission: **NOT GRANTED**
-- Required deployment phrase: `APROBAR DEPLOY`
+This file records **current implementation and verification state**. It does not create canon by implication.
 
-## Creator-approved product direction
+Authority remains:
 
-KODEX−∞ is a living visual language and computational metaphor of being alive.
+1. Truth Ledger / explicit creator approvals;
+2. canonical decisions in `docs/decisions/`;
+3. Drive canon/specs including `05_KODEX_AGENT_MANUAL`, `26_KODEX_CURATION_ASSEMBLY_PROTOCOL`, `27_KODEX_DEEP_NAVIGATION_ENGINE`, `28_KODEX_ASSEMBLY_OS`;
+4. verified code + exact-SHA CI/browser evidence;
+5. this Current State for operational orientation.
 
-Ocín's earlier visual codes, geometries, symbols, patterns and computational artifacts are preserved as an authored creative lineage whose complete meaning was not predetermined. KODEX records context, identifies recurring grammar and connects those works through memory, relation and consequence without imposing one final interpretation.
+Latest canonical topology decision remains `ADR-0010 — ALPHABETIC MULTIVERSE TOPOLOGY A–M–Y`, status `ACCEPTED BY CREATOR / IMPLEMENTATION PENDING`.
 
-```text
-WE ENTER WITHOUT KNOWING THE COMPLETE SYSTEM.
-OUR ACTIONS CREATE CONSEQUENCES.
-CHANCE AND OTHER SYSTEMS ALTER THE ROUTE.
-WE DO NOT CONTROL EVERY OUTCOME.
-WE REMAIN RESPONSIBLE FOR HOW WE PARTICIPATE.
-RETURN MAKES RELATIONS VISIBLE WITHOUT ENDING THE MYSTERY.
-```
+Implementation PASS, browser PASS, agent visual audit, human curator acceptance, creator acceptance, canon promotion and deployment are separate states.
 
-## Canonical topology
+## Repository / release state
 
-KODEX is not composed of two fixed paths.
+- Canonical repository: `wenumapu8-droid/kodex-minus-infinity`.
+- Existing implementation repository: `wenumapu8-droid/wenu-frontend`.
+- Deployment permission: **NOT GRANTED**.
+- Required deployment phrase remains: `APROBAR DEPLOY`.
+- No current evidence sync authorizes merge, deploy, permission change, public preview publication, public asset approval, protected-source mutation or irreversible canon promotion.
 
-It uses one common origin and an expanding field in which successive interactions compose a personal trajectory:
+## Canonical topology — unchanged
+
+KODEX is not a fixed seven-page journey and not a two-path chooser.
+
+The accepted conceptual coordinate system is the A–Y graph:
 
 ```text
-−∞
-→ THRESHOLD
-→ INTERACTION FIELD
-→ MULTIPLE EMERGENT TRAJECTORIES
-→ OPTIONAL HEART / 0 DEPTH
-→ ROUTE-DERIVED RETURN / +∞
-→ ARTIFACT / SOURCES / RE-ENTRY
+A = only canonical beginning
+M = HEART / 0, optional and potentially discoverable
+Y = only canonical completion of a finished journey
+B–X = interwoven concept coordinates with state-dependent relations
 ```
 
-A trajectory emerges from:
+Representative routes are QA fixtures, not the final architecture. The system may surprise but may not surface arbitrary routes: every edge requires a declared semantic, narrative, visual or causal relation. Passive pointer movement cannot make consequential identity claims or silently write personal meaning.
+
+The currently tested seven-room product corridor is therefore a **bounded product-facing implementation/evidence corridor**, not a replacement for A–Y canon.
+
+## Verified Assembly OS + Deep Navigation baseline
+
+Authoritative implementation lane: `wenu-frontend` PR **#62**, branch `feat/kodex-observer-scale-route-v1`.
+
+Exact verified head:
 
 ```text
-ACTIONS
-+ ENCOUNTERS
-+ TRACED RELATIONS
-+ CONSEQUENCES
-+ BOUNDED SERENDIPITY
+80dce7936d98d1ba6e6518cdd7b154ed694d576b
 ```
 
-The visitor does not select `PATH A` or `PATH B` once. Each meaningful interaction changes later possibilities, world affinity, spectral state, memory echoes, Heart resonance or Return composition.
+KODEX Core Runtime run **#296 / 32032238142**: `SUCCESS`.
 
-Initial semantic worlds:
-
-- `MEMORY WORLD`;
-- `MACHINE WORLD`;
-- `COSMOLOGY WORLD`;
-- `ARTIFACT WORLD`.
-
-Nodes may belong to more than one world. Cross-world movement requires a meaningful declared relation.
-
-`HEART / 0` is optional. Portal state:
+Evidence artifact:
 
 ```text
-LATENT → RESONANT → AVAILABLE
+id: 9289396870
+digest: sha256:16bf00302996a49a0ea8facf510407f650817238845cdef279b948bd9fab2cff
 ```
 
-Leaving Heart restores the exact prior world, node, focus and local route state.
+### Focus / browser P0
 
-## Functional spectrum
+Mechanically closed on the same SHA:
+
+- visible keyboard focus;
+- Browser Back/Forward restores node + focus;
+- mobile/touch preserves explicit user agency and no horizontal overflow;
+- reduced-motion preserves semantic activation, focus and history without decorative-motion dependence;
+- 100dvh/no-page-scroll obligations remain enforced where required;
+- measured direct/cached route performance remains within the declared hypothesis thresholds.
+
+### Assembly OS P0.1–P0.10
+
+The existing #62 lane already implements and validates the requested contract foundation. Do not recreate it in a parallel branch or dialect absent a demonstrated contract gap.
+
+1. **ElementContract** — one machine-readable schema plus **28 existing repo-native normalized elements**; HOLD records remain mechanically ineligible.
+2. **PlateSpec** — `KNOWLEDGE_PLATE`, `JUNCTION_PLATE`, `ACTIVATOR_PLATE`; ARTWORK/FIELD activators are discriminated; protected-art full-view/no-crop/no-recolor/no-distort invariants remain hard gates.
+3. **Deterministic assembler** — `node + plate_type + seed → PlateSpec`; registered IDs only; structured failures; existing Deep Navigation seed lineage reused.
+4. **Golden benchmark** — 12 deterministic plates, balanced 3× Science / Technology / Art / Consciousness.
+5. **Copy-role compiler** — source-linked roles only; no silent generated prose; EVIDENCE and TELEMETRY retain truth-sensitive gates.
+6. **Protected Ocín activation adapter** — originals immutable, source bytes not inferred, public approval not inferred, environment-only activation contract.
+7. **Assembly QA** — contract truth is separated from rendered/browser truth; unrendered output cannot be mislabeled browser-validated.
+8. **WorkOrder / StationResult** — SCRIPT / AGENT / HUMAN share the same correctness contract; worker identity grants no extra authority; release requires explicit human publisher authorization.
+9. **Macro chapter factory** — consumes validated PlateSpecs and delegates route eligibility to the existing Deep Route Engine; `runtime_auto_navigation=false`.
+10. **Seeded factory benchmark** — measures invalid rate, repetition, visual signatures, route diversity, runtime cost and explicit human-curator status; hypothesis metrics are not canon truth.
+
+Correctness remains registry/schema/constraint/validator driven. Generative agents are optional intelligence workers, not runtime or correctness dependencies.
+
+## Golden Plate current evidence
+
+Run #296 now contains the complete curator visibility packet:
 
 ```text
-OBSIDIAN
-→ RED
-→ ORANGE
-→ YELLOW
-→ GREEN
-→ CYAN / BLUE
-→ INDIGO
-→ VIOLET
-→ OPEN WHITE
+12 Golden cases
+× desktop 1440×900
+× mobile 390×844
+= 24 / 24 captures
++ SHA-bound review-manifest.json
 ```
 
-This is a functional and mythopoetic grammar, not a scientific hierarchy. It is not a mandatory rainbow sequence. Different trajectories activate, repeat, combine or bypass different spectral bands.
+This closes the prior evidence-visibility blocker. It does **not** close aesthetic acceptance.
 
-## First corpus decision
-
-`ADR-0005` selects **KODEX Genesis Archive** as the first vertical-slice corpus.
-
-Governing question:
-
-> How did Ocín's unresolved visual codes become KODEX: a living information system with memory, relation and consequence?
-
-Canonical records:
-
-- `docs/decisions/ADR-0005-KODEX-GENESIS-ARCHIVE-CORPUS.md`;
-- `docs/decisions/ADR-0009-MULTIVERSE-TOPOLOGY-OPTIONAL-HEART.md`;
-- `research/FIRST_CORPUS_SELECTION.md`;
-- `research/CORPUS_LOCK_V0_DRAFT.md`.
-
-## Active milestone
-
-`M0 — Canon + Inventory`  
-Target: `2026-08-17`
-
-Current progress:
+Current truth:
 
 ```text
-KODEX visual/code assets: 15 / 15 selected
-OCÍN works: 10 / 10 candidate slots selected
-BOOK items: 0 / 6 admitted
-Artifact Altar: 1 candidate packet defined
+human_curator_acceptance = NOT_RUN
+creator_visual_acceptance = NOT_RUN
 ```
 
-The KODEX subset is source-verified at repository/archive level. The ten Ocín files require creator visual, authorship, rights and cultural review before public admission.
+Agent-level artifact review is useful only as diagnosis:
 
-The Book subset remains blocked. The Drive root named `book` contains mixed and private material and cannot be bulk-ingested. A separate `Libro` folder currently contains only one generic Firefly-generated tribal reference, which is excluded from v0.
+- registered Knowledge structures now materialize as distinct G01/G02/G07 browser fingerprints instead of metadata-only variation;
+- some Junction plates remain visually sparse / under-dense and need qualitative review;
+- GP-CON-03 FIELD materiality has a browser-validated fractured-membrane treatment that closes the previously measured orbital-line-language defect at agent-audit level, not creator level;
+- protected ART source bytes remain `WITHHELD`, therefore artwork materiality and visual no-crop acceptance cannot be inferred from placeholders.
 
-## Artifact Altar candidate
+The next Assembly OS action is **creator/human readability review of the 24-capture packet**, not another schema or assembler.
 
-Working title:
+## Product-facing corridor state
+
+The existing corridor lineage has separately reached a mechanically/browser-complete seven-room technical composition gate in its draft lineage. This remains a bounded implementation surface, not A–Y canon.
+
+Authorial transition convergence then advanced on PR **#86**.
+
+Exact head:
 
 ```text
-GENESIS ALTAR / FROM MIRROR TO LIVING SYSTEM
+390b91fe263f172fea4cc2b0f94b8db2b59d1b55
 ```
 
-Primary visual candidate:
+On this same SHA the following are all `SUCCESS`:
+
+- Product Corridor;
+- AUTHORIAL_STATE;
+- AUTHORIAL_MOTION;
+- AUTHORIAL_TRANSITION.
+
+This mechanically closes the KOD-74 reduced-motion/source+target transition evidence blocker and releases KOD-75 organism-differentiation work. It does **not** imply creator `KEEP`, merge or deployment.
+
+## KOD-75 / PR #88 authorial frontier
+
+PR **#88** remains a draft one-file PROLOGUE presentation proof preserving protected Ocín source `bw-02 / FERTILE VOID` unchanged.
+
+Current evidence classification is `REFINE` at implementation/curatorial-audit level, not creator rejection:
+
+- copy and artwork coupling improved;
+- desktop still reads primarily as a dominant circular/woven-ring organism;
+- mobile still tends toward copy-above / ring-below separation;
+- therefore the core KOD-75 objective — observation/acquisition identity rather than another portal/ring — is not yet met.
+
+PR #88 was originally based on an older #86 head. Before any further authorial implementation, revalidate/rebase the bounded proof against the mechanically closed #86 lineage rather than creating another route/state/renderer branch.
+
+## Other active architecture boundaries
+
+- PR #64 Visual Assembly remains a proposal/governance lane on older lineage; it is not Assembly OS runtime authority.
+- PR #71 Manifestation is valid only as a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become a second routing, memory or progress system.
+- PR #78 HoloCore element-library branch remains **HOLD / EXTRACTION-ONLY** for Assembly OS purposes. Its useful inventory observations must be normalized into the #62 ElementContract vocabulary on a bounded #62-derived delta; its branch-local schema/taxonomy is not authority.
+- Existing volumetric, RGX and systems-convergence PRs remain specialized evidence/substrate lanes. A green browser gate does not make any renderer family default visual canon.
+
+## Corpus / provenance boundary
+
+The Genesis Archive remains the first selected corpus lineage. Candidate selection never equals public-use approval.
+
+Protected Ocín originals are immutable by default. Internal registration or activation mapping does not grant:
+
+- public export;
+- destructive crop;
+- recolor;
+- distortion;
+- style transfer;
+- source-byte use;
+- creator visual acceptance.
+
+Science, verified evidence, implementation measurement, inference, metaphor, cultural interpretation and atmosphere remain explicitly separable. Unsupported telemetry must use truthful states such as `NOT MEASURED`, not decorative precision.
+
+## Current critical path
 
 ```text
-image3A32302_mirror7.jpg
-Drive ID: 1L5_l8C3MoP1RquWoaaubSjhC5tIkcS0A
-Status: CREATOR REVIEW REQUIRED
+VERIFIED CONTRACT / ROUTE / BROWSER BASELINE (#62)
+→ REAL CREATOR/HUMAN REVIEW OF 24 GOLDEN CAPTURES
+→ ONLY BOUNDED PRESENTATION REPAIRS SUPPORTED BY OBSERVED DEFECTS
+
+PARALLEL PRODUCT LANE:
+MECHANICALLY CLOSED AUTHORIAL TRANSITIONS (#86)
+→ REVALIDATE + REFINE EXISTING KOD-75 / #88 PROLOGUE PROOF
+→ MACHINE ORGANISM DIFFERENTIATION ON THE SAME EXISTING SYSTEMS
+→ CREATOR KEEP | REFINE | REJECT
+
+NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
-
-Related systems:
-
-- OBSERVE Prototype;
-- Mirror Identity;
-- Helix Transparent;
-- SVG Vector Pack;
-- Visual Grammar System.
-
-Narrative question:
-
-> What remains constant when an image stops being a fixed surface and begins to remember how it is observed?
-
-## V0 route-space requirement
-
-The vertical slice remains finite, but it must prove a combinatorial multi-path system.
-
-Minimum proof:
-
-```text
-1 common origin
-6 consequential nodes minimum
-3 multi-exit moments minimum
-2 or more connected semantic worlds
-8 reproducible trajectory signatures minimum
-1 optional Heart reachable from multiple trajectories
-Return generated from the complete event trace
-```
-
-The eight signatures are a QA floor, not the conceptual limit of KODEX.
-
-Representative journeys may be used in tests, but they must not be implemented as the only valid routes.
-
-## Canonical invariants
-
-- every factual claim has provenance and truth class;
-- every meaningful decision creates a later consequence;
-- the trajectory is composed progressively through interaction;
-- passive pointer motion does not silently define the user's path;
-- session memory constructs Return and the path artifact;
-- bounded serendipity uses real relations rather than arbitrary randomness;
-- Heart remains optional and non-scoring;
-- Return works with or without Heart;
-- evidence, interpretation, speculation, myth and atmosphere remain distinguishable;
-- no fabricated metrics, biometrics, frequencies or production claims;
-- no generic AI imagery replaces Ocín's actual lineage;
-- mobile, keyboard, reduced motion, fallback and immediate exit are first-class requirements;
-- no deployment occurs without explicit approval.
-
-## Verified implementation evidence
-
-The existing implementation lineage includes:
-
-- fullscreen Astro KODEX entry and Threshold;
-- scene, entity and state registries;
-- JSON/TypeScript visual grammar;
-- threshold portal and multipass feedback;
-- OBSERVE and OBSERVE V2;
-- Spatial Engine v1/v2;
-- Split Corridor;
-- Ripple Floor;
-- Perspective Flip;
-- Wrinkled Reality;
-- Impossible Structure;
-- Mirror Identity;
-- Helix Transparent;
-- SVG, design-system, visual-grammar and typography packages;
-- reduced-motion, fallback, telemetry and visual QA modes.
-
-`wenu-frontend#3` currently contains a noindex semantic-interaction laboratory with normalized pointer/touch/keyboard input, committed states, accessible hotspots and motion modes. It is not yet the complete emergent-path journey.
-
-## Next critical actions
-
-1. Visually review the ten selected Ocín candidates.
-2. Confirm authorship, imported references, allowed transformations and public titles.
-3. Locate six actual creator-authored Book fragments or images outside private mixed folders.
-4. Complete the Genesis Altar node contract and interaction passport.
-5. Materialize checksums for approved raster originals.
-6. Close M0 only when rights, privacy, cultural status and source paths are recorded.
-7. Begin M1 with a graph resolver that supports state-dependent exits and trajectory signatures.
-
-## Critical path
-
-```text
-M0 CORPUS LOCK
-→ M1 GRAPH + EMERGENT INTERACTION RUNTIME
-→ M2 MULTI-PATH INTERACTION FIELD
-→ M3 VOICE / AUDIO / ARTIFACT
-→ M4 THE COMMONS
-→ M5 QA / COMPREHENSION / RELEASE DECISION
-```
-
-## Current risks
-
-- describing the product as two paths instead of a possibility field;
-- hard-coding representative QA routes as final architecture;
-- treating candidate selection as publication approval;
-- continuing concept expansion before Book and Ocín review;
-- publishing private Drive/Obsidian material;
-- importing reference imagery as authored work;
-- leaving cultural symbolism unreviewed;
-- using animation as proof of life without memory or causal response;
-- treating canonical documentation as completed implementation.
 
 ## Immediate definition of success
 
-M0 succeeds when the first corpus is finite, source-linked, rights-classified and sufficient to build one coherent interaction field capable of producing many personal trajectories without generating replacement material.
+KODEX advances when each new step reduces a measured gap while preserving one operational truth system.
+
+The immediate success condition is **not more architecture**. It is:
+
+1. keep #62 as the sole verified Assembly OS / Deep Navigation correctness baseline;
+2. complete actual human/creator readability review of the SHA-bound 24-image Golden packet;
+3. keep protected-art material review blocked while source bytes are withheld;
+4. consume the now-green #86 transition substrate in the existing KOD-75 / #88 lane instead of forking it;
+5. make only the smallest renderer/material/composition changes justified by rendered evidence;
+6. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
