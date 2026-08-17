@@ -51,16 +51,16 @@ Authoritative implementation lane: `wenu-frontend` PR **#62**, branch `feat/kode
 Exact verified head:
 
 ```text
-80dce7936d98d1ba6e6518cdd7b154ed694d576b
+3787194cab66ba6ce03e59cb2924e9daf6807af6
 ```
 
-KODEX Core Runtime run **#296 / 32032238142**: `SUCCESS`.
+KODEX Core Runtime run **#298 / 32077794921**: `SUCCESS`.
 
 Evidence artifact:
 
 ```text
-id: 9289396870
-provider digest: sha256:8a6d5a5111550a51a9f067fe7731ba762f3620dd494c6b9c58d45940702bae25
+id: 9304107303
+provider digest: sha256:cbdb1506e1b144b1792600f2697fe3d3bc050e5a7c259afa71c4fb0834dca7fe
 ```
 
 ### Focus / browser P0
@@ -95,7 +95,7 @@ Correctness remains registry/schema/constraint/validator driven. Generative agen
 
 ## Golden Plate evidence / current Assembly frontier
 
-Run #296 contains the complete curator visibility packet:
+Run #298 contains the current complete curator visibility packet:
 
 ```text
 12 Golden cases
@@ -117,11 +117,12 @@ creator_visual_acceptance = NOT_RUN
 Agent-level artifact diagnosis remains non-authoritative but useful:
 
 - registered Knowledge structures materialize as distinct G01/G02/G07 browser fingerprints rather than metadata-only variation;
-- some Junction plates remain sparse / under-dense and require qualitative review;
+- the previously recorded G04 Junction under-density defect is closed at exact-head browser/agent-audit level: `GP-SCI-03 / SCI-COSMOS` and `GP-TECH-03 / TECH-CITY` now keep `KDX_G04_DENSE_ORBITAL_FIELD` materially visible behind their explicit route slates, with bounded semantic-node orientation/origin differences on desktop and mobile;
+- the G04 repair is presentation-only and does not change ElementContract, PlateSpec, assembler, seed lineage, route eligibility, Journey memory or canon;
 - GP-CON-03 FIELD materiality has browser-validated refinement at agent-audit level only;
 - protected ART source bytes remain `WITHHELD`, therefore artwork materiality and visual no-crop acceptance cannot be inferred from placeholders.
 
-The next Assembly OS action is **creator/human readability review of the 24-capture packet**, not another schema, assembler, route engine or renderer.
+The next Assembly OS action is **creator/human readability review of the exact-head 24-capture packet**, not another schema, assembler, route engine or renderer.
 
 ## Product-facing corridor / authorial transition state
 
@@ -223,8 +224,8 @@ PR #90 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED**. Browser verificatio
 ## Current critical path
 
 ```text
-VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62)
-→ REAL CREATOR/HUMAN REVIEW OF 24 GOLDEN CAPTURES
+VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ 3787194...)
+→ REAL CREATOR/HUMAN REVIEW OF EXACT-HEAD 24 GOLDEN CAPTURES
 → ONLY BOUNDED PRESENTATION REPAIRS SUPPORTED BY OBSERVED DEFECTS
 
 PRODUCT LANE:
@@ -248,7 +249,7 @@ KODEX advances when each new step reduces a measured gap while preserving one op
 
 The immediate success condition is **not more architecture**. It is:
 
-1. keep #62 as the sole verified Assembly OS / Deep Navigation correctness baseline;
+1. keep #62 `3787194...` as the sole verified Assembly OS / Deep Navigation correctness baseline;
 2. complete actual human/creator readability review of the SHA-bound 24-image Golden packet;
 3. keep protected-art material review blocked while source bytes are withheld;
 4. keep #86 as the verified transition substrate while creator acceptance remains separate;
