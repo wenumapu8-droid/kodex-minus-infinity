@@ -40,9 +40,9 @@ Y = only canonical completion of a finished journey
 B–X = interwoven concept coordinates with state-dependent relations
 ```
 
-Representative routes are QA fixtures, not the final architecture. The system may surprise but may not surface arbitrary routes: every edge requires a declared semantic, narrative, visual or causal relation. Passive pointer movement cannot make consequential identity claims or silently write personal meaning.
+Representative routes are QA fixtures, not the final architecture. Every surfaced edge still requires a declared semantic, narrative, visual or causal relation. Passive pointer movement cannot make consequential identity claims or silently write personal meaning.
 
-The currently tested seven-room product corridor is therefore a **bounded product-facing implementation/evidence corridor**, not a replacement for A–Y canon.
+The currently tested seven-room product corridor is a **bounded product-facing implementation/evidence corridor**, not a replacement for A–Y canon.
 
 ## Verified Assembly OS + Deep Navigation baseline
 
@@ -60,7 +60,7 @@ Evidence artifact:
 
 ```text
 id: 9289396870
-digest: sha256:16bf00302996a49a0ea8facf510407f650817238845cdef279b948bd9fab2cff
+provider digest: sha256:8a6d5a5111550a51a9f067fe7731ba762f3620dd494c6b9c58d45940702bae25
 ```
 
 ### Focus / browser P0
@@ -72,11 +72,13 @@ Mechanically closed on the same SHA:
 - mobile/touch preserves explicit user agency and no horizontal overflow;
 - reduced-motion preserves semantic activation, focus and history without decorative-motion dependence;
 - 100dvh/no-page-scroll obligations remain enforced where required;
-- measured direct/cached route performance remains within the declared hypothesis thresholds.
+- measured direct/cached route performance remains within declared hypothesis thresholds.
+
+PR #62 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED** because P0 technical closure is not merge/release authorization.
 
 ### Assembly OS P0.1–P0.10
 
-The existing #62 lane already implements and validates the requested contract foundation. Do not recreate it in a parallel branch or dialect absent a demonstrated contract gap.
+The #62 lane already implements and validates the requested contract foundation. Do not recreate it in a parallel branch or dialect absent a demonstrated contract gap.
 
 1. **ElementContract** — one machine-readable schema plus **28 existing repo-native normalized elements**; HOLD records remain mechanically ineligible.
 2. **PlateSpec** — `KNOWLEDGE_PLATE`, `JUNCTION_PLATE`, `ACTIVATOR_PLATE`; ARTWORK/FIELD activators are discriminated; protected-art full-view/no-crop/no-recolor/no-distort invariants remain hard gates.
@@ -84,16 +86,16 @@ The existing #62 lane already implements and validates the requested contract fo
 4. **Golden benchmark** — 12 deterministic plates, balanced 3× Science / Technology / Art / Consciousness.
 5. **Copy-role compiler** — source-linked roles only; no silent generated prose; EVIDENCE and TELEMETRY retain truth-sensitive gates.
 6. **Protected Ocín activation adapter** — originals immutable, source bytes not inferred, public approval not inferred, environment-only activation contract.
-7. **Assembly QA** — contract truth is separated from rendered/browser truth; unrendered output cannot be mislabeled browser-validated.
+7. **Assembly QA** — contract truth separated from rendered/browser truth; unrendered output cannot be mislabeled browser-validated.
 8. **WorkOrder / StationResult** — SCRIPT / AGENT / HUMAN share the same correctness contract; worker identity grants no extra authority; release requires explicit human publisher authorization.
 9. **Macro chapter factory** — consumes validated PlateSpecs and delegates route eligibility to the existing Deep Route Engine; `runtime_auto_navigation=false`.
 10. **Seeded factory benchmark** — measures invalid rate, repetition, visual signatures, route diversity, runtime cost and explicit human-curator status; hypothesis metrics are not canon truth.
 
 Correctness remains registry/schema/constraint/validator driven. Generative agents are optional intelligence workers, not runtime or correctness dependencies.
 
-## Golden Plate current evidence
+## Golden Plate evidence / current Assembly frontier
 
-Run #296 now contains the complete curator visibility packet:
+Run #296 contains the complete curator visibility packet:
 
 ```text
 12 Golden cases
@@ -112,20 +114,18 @@ human_curator_acceptance = NOT_RUN
 creator_visual_acceptance = NOT_RUN
 ```
 
-Agent-level artifact review is useful only as diagnosis:
+Agent-level artifact diagnosis remains non-authoritative but useful:
 
-- registered Knowledge structures now materialize as distinct G01/G02/G07 browser fingerprints instead of metadata-only variation;
-- some Junction plates remain visually sparse / under-dense and need qualitative review;
-- GP-CON-03 FIELD materiality has a browser-validated fractured-membrane treatment that closes the previously measured orbital-line-language defect at agent-audit level, not creator level;
+- registered Knowledge structures materialize as distinct G01/G02/G07 browser fingerprints rather than metadata-only variation;
+- some Junction plates remain sparse / under-dense and require qualitative review;
+- GP-CON-03 FIELD materiality has browser-validated refinement at agent-audit level only;
 - protected ART source bytes remain `WITHHELD`, therefore artwork materiality and visual no-crop acceptance cannot be inferred from placeholders.
 
-The next Assembly OS action is **creator/human readability review of the 24-capture packet**, not another schema or assembler.
+The next Assembly OS action is **creator/human readability review of the 24-capture packet**, not another schema, assembler, route engine or renderer.
 
-## Product-facing corridor state
+## Product-facing corridor / authorial transition state
 
-The existing corridor lineage has separately reached a mechanically/browser-complete seven-room technical composition gate in its draft lineage. This remains a bounded implementation surface, not A–Y canon.
-
-Authorial transition convergence then advanced on PR **#86**.
+PR **#86** remains the live bounded transition-convergence lane.
 
 Exact head:
 
@@ -138,29 +138,28 @@ On this same SHA the following are all `SUCCESS`:
 - Product Corridor;
 - AUTHORIAL_STATE;
 - AUTHORIAL_MOTION;
-- AUTHORIAL_TRANSITION.
+- AUTHORIAL_TRANSITION, including reduced-motion source + target semantic validation.
 
-This mechanically closes the KOD-74 reduced-motion/source+target transition evidence blocker and releases KOD-75 organism-differentiation work. It does **not** imply creator `KEEP`, merge or deployment.
+This mechanically closes the KOD-74 transition evidence blocker. It does **not** imply creator `KEEP`, merge or deployment.
 
-## KOD-75 / PR #88 authorial frontier
+## KOD-75 / PROLOGUE organism-differentiation frontier
 
-PR **#88** remains a draft one-file PROLOGUE presentation proof preserving protected Ocín source `bw-02 / FERTILE VOID` unchanged.
+Prior proofs **#88** and **#89** are now **CLOSED / NOT MERGED**.
 
-Current evidence classification is `REFINE` at implementation/curatorial-audit level, not creator rejection:
+- #88 Candidate A preserved `bw-02 / FERTILE VOID`, improved copy↔art coupling, but still read too strongly as a circular/woven-ring organism and remained `REFINE` at technical/curatorial-audit level.
+- #89 Candidate B0 was an intentionally disposable `arch-21.jpg` silhouette probe on top of exact #86 head. It was closed without merge and must not be treated as a production mapping.
 
-- copy and artwork coupling improved;
-- desktop still reads primarily as a dominant circular/woven-ring organism;
-- mobile still tends toward copy-above / ring-below separation;
-- therefore the core KOD-75 objective — observation/acquisition identity rather than another portal/ring — is not yet met.
+Therefore there is currently **no live KOD-75 implementation PR to advance by implication**. Any next organism-differentiation proof must start from the mechanically closed #86 lineage and reuse the existing CRT/router/state/memory systems. Do not resurrect #88/#89 wholesale and do not open a new renderer or route architecture merely to continue the visual experiment.
 
-PR #88 was originally based on an older #86 head. Before any further authorial implementation, revalidate/rebase the bounded proof against the mechanically closed #86 lineage rather than creating another route/state/renderer branch.
+MACHINE remains the second bounded authorial target only after a valid PROLOGUE candidate exists: computation / assembly / generative causality should replace ring-as-default while preserving existing product infrastructure.
 
 ## Other active architecture boundaries
 
 - PR #64 Visual Assembly remains a proposal/governance lane on older lineage; it is not Assembly OS runtime authority.
-- PR #71 Manifestation is valid only as a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become a second routing, memory or progress system.
-- PR #78 HoloCore element-library branch remains **HOLD / EXTRACTION-ONLY** for Assembly OS purposes. Its useful inventory observations must be normalized into the #62 ElementContract vocabulary on a bounded #62-derived delta; its branch-local schema/taxonomy is not authority.
-- Existing volumetric, RGX and systems-convergence PRs remain specialized evidence/substrate lanes. A green browser gate does not make any renderer family default visual canon.
+- PR #71 Manifestation remains valid only as a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become a second routing, memory or progress system.
+- PR #85 Gesture Timeline is a bounded extension of the #62 Deep Navigation lab and must continue to consume #62 route/history/memory authority rather than fork it.
+- PR #78 is no longer an isolated open HOLD branch: GitHub reports it **CLOSED / MERGED** at `211c6243857eee0b2f082abcf2e34fba9fca4052`. Its branch-local 18-field HoloCore dialect still does **not** supersede the verified #62 ElementContract vocabulary. Treat any resulting repository material as inventory/source observations until reconciled through the #62 schema and validators.
+- Existing volumetric, RGX, Manifestation×RGX, Crystal Receiver and visual-systems PRs remain specialized evidence/substrate lanes. A green lab/browser gate does not make any renderer, causal model or local-memory device the default KODEX architecture or visual canon.
 
 ## Corpus / provenance boundary
 
@@ -187,8 +186,9 @@ VERIFIED CONTRACT / ROUTE / BROWSER BASELINE (#62)
 
 PARALLEL PRODUCT LANE:
 MECHANICALLY CLOSED AUTHORIAL TRANSITIONS (#86)
-→ REVALIDATE + REFINE EXISTING KOD-75 / #88 PROLOGUE PROOF
-→ MACHINE ORGANISM DIFFERENTIATION ON THE SAME EXISTING SYSTEMS
+→ NEW BOUNDED KOD-75 PROOF ONLY IF IT REUSES #86 SUBSTRATE
+→ PROLOGUE OBSERVATION/ACQUISITION IDENTITY
+→ MACHINE COMPUTATION/ASSEMBLY IDENTITY
 → CREATOR KEEP | REFINE | REJECT
 
 NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
@@ -203,6 +203,8 @@ The immediate success condition is **not more architecture**. It is:
 1. keep #62 as the sole verified Assembly OS / Deep Navigation correctness baseline;
 2. complete actual human/creator readability review of the SHA-bound 24-image Golden packet;
 3. keep protected-art material review blocked while source bytes are withheld;
-4. consume the now-green #86 transition substrate in the existing KOD-75 / #88 lane instead of forking it;
-5. make only the smallest renderer/material/composition changes justified by rendered evidence;
-6. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+4. keep #86 as the verified transition substrate while creator acceptance remains separate;
+5. treat closed #88/#89 as evidence, not active implementation authority;
+6. reconcile any useful material introduced by merged #78 through the existing #62 ElementContract vocabulary before allowing it into Assembly correctness;
+7. make only the smallest renderer/material/composition changes justified by rendered evidence;
+8. preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
