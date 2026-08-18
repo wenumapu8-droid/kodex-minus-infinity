@@ -198,7 +198,7 @@ The presentation-only residual concentric/orbital scaffold defect is closed at a
 
 - PR #64 Visual Assembly is proposal/governance, not Assembly OS runtime authority.
 - PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it.
+- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` is hosted exact-head tested by KODEX Core Runtime #295 / `31996002816` with evidence artifact `9276871039`, but it is **DIVERGED** from current verified #62: merge-base `ebbf682d1c10f47785d0188f15be86ad610965f2`, 2 commits ahead / 4 commits behind. Treat #85 as `HOSTED EXACT-HEAD TESTED CANDIDATE / LINEAGE RECONCILIATION REQUIRED`, not as current Assembly/Deep Navigation authority.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 - Other volumetric/RGX/Crystal Receiver/visual-system lanes remain specialized evidence/substrate work. A green lab gate does not make them default architecture or visual canon.
@@ -219,6 +219,12 @@ VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...)
 → REAL HUMAN / CREATOR REVIEW OF EXACT-HEAD 24 GOLDEN CAPTURES
 → IF REVIEW CONFIRMS BENCHMARK REPETITION: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING IDs ONLY
 → ONLY THEN CONSIDER BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
+
+GESTURE TIMELINE LANE:
+#85 @ 97ec8b6074317b89bfc1c88c9861c7ed0541d86a = HOSTED EXACT-HEAD TESTED
+→ DIVERGED FROM CURRENT #62 (MERGE-BASE ebbf682d..., 2 AHEAD / 4 BEHIND)
+→ LINEAGE RECONCILIATION REQUIRED BEFORE FURTHER IMPLEMENTATION
+→ RE-RUN SHA-BOUND EVIDENCE AFTER RECONCILIATION
 
 PRODUCT LANE:
 VERIFIED TRANSITION SUBSTRATE (#86)
@@ -250,8 +256,9 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
 8. Require #94 exact-head browser evidence after every presentation change; current head `a89a53f…` satisfies that gate.
 9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
-10. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
-11. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+10. Keep #85 as a tested Gesture Timeline candidate only; reconcile its lineage against current #62 before any further route/history/memory implementation and revalidate the reconciled exact head.
+11. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
+12. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-18 PROLOGUE #94 protected-source reconciliation checkpoint
 
@@ -318,5 +325,23 @@ CANON_PROMOTED = false
 Exact-head revalidation is complete. Exact Asset Ingest, Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION and AUTHORIAL_TRANSITION all pass on `a89a53f…`. The AUTHORIAL_STATE manifest is SHA-bound to the same head and reports 28/28 PASS across seven scenes × four profiles; PROLOGUE desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion are viewport-bounded with no page-level width/height overflow. Direct review of those four PROLOGUE captures confirms that the neutral backing restores complete-eye readability while L0 remains intact, contained and original-color. This closes the specific low-legibility backing defect at browser/agent-audit level only.
 
 Next valid gate: human / creator `KEEP | REFINE | REJECT` for PROLOGUE #94. Do not add another presentation delta unless a new rendered defect is observed or explicitly requested.
+
+## 2026-08-18 Gesture Timeline #85 hosted-evidence reconciliation checkpoint
+
+PR **#85**, branch `feat/kodex-gesture-timeline-v0`, is a bounded Gesture Timeline proof that must consume #62 route/history/memory authority rather than fork it.
+
+Exact candidate head:
+
+```text
+97ec8b6074317b89bfc1c88c9861c7ed0541d86a
+```
+
+KODEX Core Runtime run **#295 / 31996002816** completed `SUCCESS` on that exact SHA. Evidence artifact `9276871039`, digest `sha256:27890d9b5281f3ac5846b35b4d84b78ae1ff8467750326a9085b00097eca11cc`. The hosted validate job passed scene/runtime, JourneyState/graph/memory/Visible Assembly, Assembly OS contracts, seeded factory benchmark, integrity audit, Astro build, Chromium/browser evidence, Deep Navigation vertical slice and rendered Golden Plate benchmark.
+
+This upgrades #85 from the prior local-preview-only evidence claim to **HOSTED EXACT-HEAD TESTED CANDIDATE**. It does not make #85 current Deep Navigation authority.
+
+Exact compare against current verified #62 head `eaf2924707cb72289be8e347cdd2f0d95b8602a7` is **DIVERGED**. Merge-base is `ebbf682d1c10f47785d0188f15be86ad610965f2`; #85 has 2 commits not present in current #62 and is 4 commits behind #62. Therefore hosted green proves this exact #85 candidate only and does not establish compatibility with the current #62 baseline.
+
+Next valid gate: bounded lineage reconciliation against current #62 before any further Gesture Timeline implementation, followed by SHA-bound revalidation of the reconciled candidate. No rebase, merge, cherry-pick, history rewrite, route/history/memory semantic change, deployment or canon promotion was performed or authorized by this checkpoint.
 
 No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
