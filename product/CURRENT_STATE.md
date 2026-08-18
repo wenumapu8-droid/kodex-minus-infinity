@@ -375,3 +375,46 @@ Next valid gate: SHA-bound KODEX Core Runtime/browser evidence on `57921287…`.
 Truth boundary: `CONTENT RECONCILIATION ≠ ANCESTRY RECONCILIATION ≠ CI PASS ≠ BROWSER ACCEPTANCE ≠ HUMAN/CURATOR ACCEPTANCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
 
 No merge, deploy, permission change, protected-source mutation, public preview publication or canon promotion is authorized by this checkpoint.
+
+## 2026-08-18 #62 administrative close + #85 CI-trigger checkpoint
+
+This checkpoint supersedes earlier operational statements about the live PR state of #62 and the current #85 head where they conflict.
+
+`wenu-frontend#62` is now **CLOSED / NOT MERGED / NOT DEPLOYED**. Its exact verified head remains:
+
+```text
+eaf2924707cb72289be8e347cdd2f0d95b8602a7
+```
+
+KODEX Core Runtime #299 / `32086325540` remains `SUCCESS`, so #62's administrative closure does not revoke its role as the sole verified Assembly OS + Deep Navigation technical baseline. Closure does not imply merge, deploy, creator acceptance or canon promotion.
+
+Gesture Timeline PR #85 remains on the same bounded branch `feat/kodex-gesture-timeline-v0`. The prior tree-identical validation trigger `c66be0a3c17e6d229b34065f911e07583ab6d92f` scheduled no hosted workflow because it produced no qualifying changed-path delta and the existing `push` trigger was branch-restricted elsewhere. That was workflow non-scheduling, not CI failure.
+
+Current #85 head:
+
+```text
+47139acab8c01d0af1435ae7d66ce6af21495446
+```
+
+The only new semantic delta is CI tooling: `.github/workflows/kodex-core-runtime.yml` now declares `workflow_dispatch:` while preserving its existing validation job, path filters, permissions and runtime/browser gates. No Gesture Timeline behavior, route/history/memory semantics, ElementContract, PlateSpec, assembler, Golden selection policy, renderer, protected-artwork contract, scoring, permission or deployment surface changed.
+
+At this checkpoint GitHub records no completed SHA-bound KODEX Core Runtime/browser validation for `47139acab…`. Therefore the correct #85 state is:
+
+```text
+CI_TRIGGER_REPAIRED = true
+CONTENT_RECONCILED = true
+GIT_HISTORY_DIVERGED = true
+MERGEABLE = false
+EXACT_HEAD_REVALIDATION = PENDING
+BROWSER_ACCEPTANCE = NOT_CLAIMED
+CREATOR_ACCEPTANCE = NOT_RUN
+MERGED = false
+DEPLOYED = false
+CANON_PROMOTED = false
+```
+
+Do not extend #85 route/history/memory implementation until exact-head evidence exists. The next valid gate is SHA-bound Core Runtime/browser evidence on `47139acab8c01d0af1435ae7d66ce6af21495446`; if that evidence exposes a measured defect, repair only that defect on #85.
+
+Truth boundary: `PR CLOSED ≠ MERGED ≠ DEPLOYED ≠ CANON`; `CI TRIGGER AVAILABLE ≠ CI PASS ≠ BROWSER ACCEPTANCE ≠ HUMAN/CURATOR ACCEPTANCE ≠ CREATOR ACCEPTANCE`.
+
+No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
