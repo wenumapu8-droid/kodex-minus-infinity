@@ -232,11 +232,11 @@ SEMANTIC IR / GEOMETRIC TRANSDUCTION LANE:
 → DO NOT INFER CANON OR SCIENTIFIC TRUTH FROM IMPLEMENTATION / GEOMETRIC FORM
 
 SEMANTIC MEMORY LANE:
-#97 @ f89353d39c65f4e6ace5d86a57aca21f27479171 = RETURN BOUNDARY REPAIRED / JOURNEYSTATE AUTHORITY CONTENT-RECONCILED
+#97 @ 01b0959b629921221afccef04f967aa030e3bd3c = RETURN BOUNDARY REPAIRED / JOURNEYSTATE AUTHORITY CONTENT-RECONCILED / DETERMINISTIC RESTORE-REPLAY TEST CONTRACT ADDED
 → EXPLICIT CONCEPT/RELATION ADAPTER ONLY; NO PARALLEL STORAGE OR PASSIVE DWELL/CO-OCCURRENCE WRITES
 → ANCESTRY REMAINS DIVERGED; RETARGET-TO-#62 TEST PRODUCED 43-FILE NON-MERGEABLE MEGA-DIFF AND WAS REVERTED
-→ LOCAL RETURN/ADAPTER CONTRACT PASS; NO HOSTED EXACT-HEAD RUN
-→ PROVE JOURNEYSTATE/BRIDGE + MIGRATION/REPLAY DETERMINISM ON THIS SHA
+→ NEW RESTORE/REPLAY TEST IMPLEMENTED; EXACT-HEAD TEST EXECUTION NOT_RUN / NO HOSTED EXACT-HEAD RUN
+→ EXECUTE JOURNEYSTATE + BRIDGE + verify:kodex-memory ON THIS SHA
 → NO SALIENCE/ACTIVATION/DECAY OR OBSERVE V2 MEMORY EXPANSION BEFORE HOSTED/BROWSER GATE
 
 GESTURE TIMELINE LANE:
@@ -279,7 +279,7 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 10. Keep #85 bounded and blocked from further route/history/memory implementation until an already-authorized SHA-bound execution path validates `47139acab…`; do not mistake feature-branch `workflow_dispatch` for an available hosted default-branch dispatch.
 11. Keep #95 principles `NEEDS_CONFIRMATION` until legitimate conceptual/canonical source records are linked; Core Runtime PASS alone is insufficient authority.
 12. Keep #96 technically tested but non-canonical; geometry/evidence classes must remain traceable and cannot collapse scientific, historical-symbolic and KODEX-symbolic claims.
-13. Keep #97 on the same PR with RETURN narrow and JourneyState as the only semantic persistence authority; require exact-head JourneyState/bridge + migration/replay + hosted/browser evidence before any salience/activation/decay expansion.
+13. Keep #97 on the same PR with RETURN narrow and JourneyState as the only semantic persistence authority; execute the new deterministic restore/replay contract plus existing JourneyState/bridge and `verify:kodex-memory` on exact head `01b0959…`, then require hosted/browser evidence before any salience/activation/decay expansion.
 14. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
 15. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
@@ -524,7 +524,7 @@ That checkpoint is superseded by the reconciliation checkpoint below.
 
 ## 2026-08-19 Semantic Memory #97 authority reconciliation — current
 
-Current PR #97 exact head:
+Current PR #97 exact head at that checkpoint:
 
 ```text
 f89353d39c65f4e6ace5d86a57aca21f27479171
@@ -536,7 +536,7 @@ Current base remains:
 main @ 08daace1567752ec112f8b2ac1bdc0b84d6f8114
 ```
 
-The storage-authority collision is now closed at implementation/content level:
+The storage-authority collision is closed at implementation/content level:
 
 - `src/kodex/return/memory.js` is restored to verified #62 blob `a07ae4d3ed89b3679ed6f2015ea883bd203916b1` and again remains a narrow RETURN specimen store;
 - only `view`, `effect` and `cycle` evidence is accepted by that store; `signal`, `dwell` and `concept` writes do not persist there;
@@ -549,7 +549,7 @@ The storage-authority collision is now closed at implementation/content level:
 
 A reversible PR-base retarget to the verified #62 branch was tested after blob normalization. GitHub expanded #97 to 43 changed files and reported the PR non-mergeable because the histories are substantially diverged. The base was immediately restored to `main`. This proves ancestry reconciliation cannot be treated as a cheap PR-metadata fix and must not be forced through a mega-merge/rebase.
 
-Current truth:
+Truth at that checkpoint:
 
 ```text
 RETURN_AUTHORITY_COLLISION = CLOSED_AT_IMPLEMENTATION_BOUNDARY
@@ -565,5 +565,48 @@ CANON_PROMOTED = false
 ```
 
 No salience/activation/decay, hidden engagement scoring, inferred personality/identity/spirituality, or further OBSERVE V2 semantic-memory expansion is authorized before exact-head JourneyState/bridge tests, migration/replay determinism and hosted/browser evidence are green. Content reconciliation does not equal ancestry reconciliation; local PASS does not equal hosted CI/browser acceptance; implementation does not create canon.
+
+No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion occurred in this checkpoint.
+
+## 2026-08-19 Semantic Memory #97 deterministic restore/replay contract — current
+
+This checkpoint supersedes the Semantic Memory lane/head above where they conflict.
+
+Current PR #97 exact head:
+
+```text
+01b0959b629921221afccef04f967aa030e3bd3c
+```
+
+The only new delta from the reconciled runtime content is a contract-test addition in `src/lib/kodex/runtime/journey-memory-bridge.test.ts`. Runtime semantics, persistence authority and RETURN remain unchanged.
+
+The test starts from an already-persisted JourneyState snapshot, restores the same snapshot into two independent stores, then replays the same explicit concept/relation sequence through the existing organism-action bridge. It requires:
+
+- identical final JourneyState across both replays;
+- byte-identical serialized JourneyState persistence across both replays;
+- duplicate semantic event identities not to double-write after restore;
+- committed actions to remain exactly `remember`, `concept:CX-003:MEMORY`, `relation:CX-003:CX-001`.
+
+This is the migration/replay contract KODEX needs **without introducing a migration store**. RETURN is not used as semantic migration authority. No salience, decay, dwell, engagement scoring, hidden inference, route/history semantics, ElementContract, PlateSpec, assembler, artwork or deployment surface changed.
+
+Current truth:
+
+```text
+PR_97_CURRENT_HEAD = 01b0959b629921221afccef04f967aa030e3bd3c
+RETURN_AUTHORITY_COLLISION = CLOSED_AT_IMPLEMENTATION_BOUNDARY
+JOURNEYSTATE_AUTHORITY_CONTENT = RECONCILED
+EXPLICIT_SEMANTIC_ADAPTER = IMPLEMENTED_NO_STORAGE_NO_SCORING
+DETERMINISTIC_RESTORE_REPLAY_TEST_CONTRACT = IMPLEMENTED
+EXACT_HEAD_TEST_EXECUTION = NOT_RUN
+HOSTED_EXACT_HEAD_CI_BROWSER = NOT_RUN
+ANCESTRY = DIVERGED
+MERGED = false
+DEPLOYED = false
+CANON_PROMOTED = false
+```
+
+Next valid gate: execute existing JourneyState + journey-memory-bridge contracts and `verify:kodex-memory` on exact head `01b0959…` through an already-authorized lane. If and only if that exact head passes, obtain browser/Core Runtime evidence before considering any further Semantic Memory behavior. Do not alter product semantics merely to manufacture CI scheduling.
+
+Truth boundary: `TEST CONTRACT IMPLEMENTED ≠ TEST EXECUTED ≠ LOCAL PASS ≠ HOSTED CI PASS ≠ BROWSER ACCEPTANCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
 
 No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion occurred in this checkpoint.
