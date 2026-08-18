@@ -201,7 +201,7 @@ The presentation-only residual concentric/orbital scaffold defect is closed at a
 - PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `47139acab8c01d0af1435ae7d66ce6af21495446` has current-#62 content surfaces reconciled, while Git ancestry remains diverged/non-mergeable and exact-head Core Runtime/browser revalidation remains pending. `workflow_dispatch` exists only on the feature branch and therefore does not provide a hosted manual-dispatch path from the default branch. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / HOSTED EXACT-HEAD VALIDATION BLOCKED BY TRIGGER TOPOLOGY`, not as Assembly/Deep Navigation authority.
 - PR #95 Semantic IR is a bounded pre-Assembly adapter over the existing Assembly OS. Exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`; `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance does not establish conceptual/canonical provenance. Treat #95 as `TECHNICALLY TESTED PRE-ASSEMBLY CANDIDATE / CONCEPTUAL PROVENANCE NEEDS_CONFIRMATION`, not as canon authority.
 - PR #96 Geometric Transduction is a bounded child of #95. Exact head `da475dce6688fdbe0511a6d71efeab734f40908e` completed Core Runtime #306 / `32169696848` with `SUCCESS`. Its geometry data remains Semantic Trace only and does not create a new Assembly OS input dialect. The three principle fixtures remain `NEEDS_CONFIRMATION`; technical compatibility does not canonize geometry-symbolic meaning.
-- PR #97 Semantic Memory v2 is currently based on `main`, not on the verified #62 route/history/memory substrate. Exact head `9986351a1c795295e3672e35c7c2f557cb461e1d` has no hosted exact-head workflow run. Its current use of `src/kodex/return/memory.js` conflicts with the #62 contract that keeps that file a minimal RETURN specimen store and explicitly excludes dwell/timestamps/activity scoring. Treat #97 as `BOUNDED EXPERIMENT / BASELINE-MEMORY AUTHORITY COLLISION / RECONCILIATION REQUIRED`, not as a new memory authority.
+- PR #97 Semantic Memory v2 was initially based on `main` and collided with the verified #62 RETURN-specimen memory boundary. The latest checkpoint at the end of this file supersedes that collision state: the RETURN boundary is repaired and JourneyState authority is content-reconciled, while ancestry and hosted exact-head validation remain separate blockers.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 - Other volumetric/RGX/Crystal Receiver/visual-system lanes remain specialized evidence/substrate work. A green lab gate does not make them default architecture or visual canon.
@@ -232,13 +232,12 @@ SEMANTIC IR / GEOMETRIC TRANSDUCTION LANE:
 → DO NOT INFER CANON OR SCIENTIFIC TRUTH FROM IMPLEMENTATION / GEOMETRIC FORM
 
 SEMANTIC MEMORY LANE:
-#97 @ 9986351a1c795295e3672e35c7c2f557cb461e1d = BASED ON MAIN / NO EXACT-HEAD HOSTED RUN
-→ CURRENT IMPLEMENTATION COLLIDES WITH #62 RETURN-SPECIMEN MEMORY BOUNDARY
-→ RECONCILE THE SAME PR ONTO CURRENT JOURNEYSTATE / GRAPH / MEMORY AUTHORITY
-→ PRESERVE NARROW RETURN SPECIMEN ADAPTER
-→ TREAT DWELL/TIME WEIGHTING AS VERSIONED HYPOTHESIS, NOT ENGAGEMENT SCORE OR CANON
-→ THEN RUN MIGRATION + DETERMINISM + EXACT-HEAD CORE RUNTIME/BROWSER EVIDENCE
-→ NO OBSERVE V2 MEMORY EXPANSION BEFORE THAT GATE
+#97 @ f89353d39c65f4e6ace5d86a57aca21f27479171 = RETURN BOUNDARY REPAIRED / JOURNEYSTATE AUTHORITY CONTENT-RECONCILED
+→ EXPLICIT CONCEPT/RELATION ADAPTER ONLY; NO PARALLEL STORAGE OR PASSIVE DWELL/CO-OCCURRENCE WRITES
+→ ANCESTRY REMAINS DIVERGED; RETARGET-TO-#62 TEST PRODUCED 43-FILE NON-MERGEABLE MEGA-DIFF AND WAS REVERTED
+→ LOCAL RETURN/ADAPTER CONTRACT PASS; NO HOSTED EXACT-HEAD RUN
+→ PROVE JOURNEYSTATE/BRIDGE + MIGRATION/REPLAY DETERMINISM ON THIS SHA
+→ NO SALIENCE/ACTIVATION/DECAY OR OBSERVE V2 MEMORY EXPANSION BEFORE HOSTED/BROWSER GATE
 
 GESTURE TIMELINE LANE:
 #85 @ 47139acab8c01d0af1435ae7d66ce6af21495446 = CURRENT-#62 CONTENT RECONCILED
@@ -280,7 +279,7 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 10. Keep #85 bounded and blocked from further route/history/memory implementation until an already-authorized SHA-bound execution path validates `47139acab…`; do not mistake feature-branch `workflow_dispatch` for an available hosted default-branch dispatch.
 11. Keep #95 principles `NEEDS_CONFIRMATION` until legitimate conceptual/canonical source records are linked; Core Runtime PASS alone is insufficient authority.
 12. Keep #96 technically tested but non-canonical; geometry/evidence classes must remain traceable and cannot collapse scientific, historical-symbolic and KODEX-symbolic claims.
-13. Reconcile #97 inside the same PR with the existing JourneyState/graph/memory authority before any semantic-memory expansion; preserve the narrow RETURN specimen-store boundary.
+13. Keep #97 on the same PR with RETURN narrow and JourneyState as the only semantic persistence authority; require exact-head JourneyState/bridge + migration/replay + hosted/browser evidence before any salience/activation/decay expansion.
 14. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
 15. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
@@ -505,7 +504,7 @@ The three demonstration principles remain `NEEDS_CONFIRMATION`. Formal mathemati
 
 ## 2026-08-19 Semantic Memory #97 authority collision
 
-PR #97 current head:
+PR #97 prior head:
 
 ```text
 9986351a1c795295e3672e35c7c2f557cb461e1d
@@ -517,12 +516,54 @@ Base:
 main @ 08daace1567752ec112f8b2ac1bdc0b84d6f8114
 ```
 
-GitHub currently records no exact-head hosted workflow run for this SHA.
+At that checkpoint GitHub recorded no exact-head hosted workflow run for the SHA.
 
-The current implementation evolves `src/kodex/return/memory.js` into a semantic graph with activation/salience/recurrence, association windows, temporal decay, timestamps and dwell-derived events. That conflicts with the verified #62 baseline contract for the same file, which explicitly declares it a **minimal RETURN specimen store, not the canonical journey model**, and intentionally excludes dwell, timestamps and activity scores.
+The implementation then evolved `src/kodex/return/memory.js` into a semantic graph with activation/salience/recurrence, association windows, temporal decay, timestamps and dwell-derived events. That conflicted with the verified #62 baseline contract for the same file, which explicitly declares it a **minimal RETURN specimen store, not the canonical journey model**, and intentionally excludes dwell, timestamps and activity scores.
 
-This is an authority/lineage collision, not a rejection of semantic memory as a direction. The legitimate next move is to advance **the same #97 PR** by reconciling it onto the verified #62/current JourneyState/graph/memory substrate, preserving the narrow RETURN specimen adapter, and locating semantic concept/association state inside the existing authoritative memory layer or a bounded adapter owned by that layer.
+That checkpoint is superseded by the reconciliation checkpoint below.
 
-Any dwell/time weighting must remain a versioned implementation hypothesis, never hidden engagement scoring or canon truth. Passive pointer movement may not make consequential personal-meaning or identity claims. After reconciliation, require migration compatibility, deterministic trace tests and exact-head Core Runtime/browser evidence before further OBSERVE V2 semantic-memory wiring.
+## 2026-08-19 Semantic Memory #97 authority reconciliation — current
 
-No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion is authorized by these checkpoints.
+Current PR #97 exact head:
+
+```text
+f89353d39c65f4e6ace5d86a57aca21f27479171
+```
+
+Current base remains:
+
+```text
+main @ 08daace1567752ec112f8b2ac1bdc0b84d6f8114
+```
+
+The storage-authority collision is now closed at implementation/content level:
+
+- `src/kodex/return/memory.js` is restored to verified #62 blob `a07ae4d3ed89b3679ed6f2015ea883bd203916b1` and again remains a narrow RETURN specimen store;
+- only `view`, `effect` and `cycle` evidence is accepted by that store; `signal`, `dwell` and `concept` writes do not persist there;
+- the verified #62 `interaction-events.ts` and `journey-memory-bridge.ts` blobs are present in #97;
+- the verified #62 JourneyState kernel plus its JourneyState and memory-bridge contract-test blobs are normalized directly to the #62 blobs;
+- `src/kodex/memory/concepts.js` remains a pure candidate vocabulary/transformation layer rather than a persistence authority;
+- `semantic-memory-journey-adapter.js` is stateless and emits existing organism-action records only for explicit concept/relation commits;
+- passive semantic observation/co-occurrence produces no persisted JourneyState action;
+- the RETURN/adapter isolated contract executes `PASS` locally.
+
+A reversible PR-base retarget to the verified #62 branch was tested after blob normalization. GitHub expanded #97 to 43 changed files and reported the PR non-mergeable because the histories are substantially diverged. The base was immediately restored to `main`. This proves ancestry reconciliation cannot be treated as a cheap PR-metadata fix and must not be forced through a mega-merge/rebase.
+
+Current truth:
+
+```text
+RETURN_AUTHORITY_COLLISION = CLOSED_AT_IMPLEMENTATION_BOUNDARY
+JOURNEYSTATE_AUTHORITY_CONTENT = RECONCILED
+EXPLICIT_SEMANTIC_ADAPTER = IMPLEMENTED_NO_STORAGE_NO_SCORING
+PASSIVE_DWELL_OR_COOCCURRENCE_PERSISTENCE = DISALLOWED
+ANCESTRY = DIVERGED
+LOCAL_RETURN_ADAPTER_CONTRACT = PASS
+HOSTED_EXACT_HEAD_CI_BROWSER = NOT_RUN
+MERGED = false
+DEPLOYED = false
+CANON_PROMOTED = false
+```
+
+No salience/activation/decay, hidden engagement scoring, inferred personality/identity/spirituality, or further OBSERVE V2 semantic-memory expansion is authorized before exact-head JourneyState/bridge tests, migration/replay determinism and hosted/browser evidence are green. Content reconciliation does not equal ancestry reconciliation; local PASS does not equal hosted CI/browser acceptance; implementation does not create canon.
+
+No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion occurred in this checkpoint.
