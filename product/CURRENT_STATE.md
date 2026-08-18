@@ -134,7 +134,7 @@ PR #86 remains the verified bounded transition-convergence substrate. PR #90 MAC
 - PR #85 Gesture Timeline remains content-reconciled but history-diverged; its current head `47139acab8c01d0af1435ae7d66ce6af21495446` has no authorized hosted exact-head validation path yet. Do not extend route/history/memory until SHA-bound evidence exists.
 - PR #95 Semantic IR exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`. `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance is not conceptual/canonical provenance.
 - PR #96 Geometric Transduction exact head `da475dce6688fdbe0511a6d71efeab734f40908e` completed Core Runtime #306 / `32169696848` with `SUCCESS`. Geometry remains Semantic Trace only; technical compatibility does not canonize geometric-symbolic meaning.
-- PR #97 Semantic Memory v2 current head `caf0306d5d57c9d6481ab647ffa63b4f6c56bea8` keeps RETURN narrow, JourneyState as persistence authority and the semantic adapter stateless/explicit-commit only. A branch-local evidence workflow exists, but the available GitHub evidence interface still exposes no exact-head workflow run. Treat it as `EVIDENCE LANE IMPLEMENTED / EXACT-HEAD EXECUTION RESULT NOT OBSERVED`, not CI/browser PASS.
+- PR #97 Semantic Memory v2 current head `adb460204fb5bb236e9f1ebdfac2d038fd1d09d6` keeps RETURN narrow, JourneyState as persistence authority and the semantic adapter stateless/explicit-commit only. `KODEX Semantic Memory Evidence` #3 / `32198754926` is exact-head `SUCCESS` for JourneyState, deterministic restore/replay, the RETURN authority verifier and Astro build. This is contract/build CI evidence only; broader Core Runtime/browser evidence remains `NOT_RUN`.
 - PR #98 Natural Law Kernel current head `fc3545d5ff67452a5838ce9161f4e308825cf2a5` completed KODEX Core Runtime #307 / `32190413923` with `SUCCESS`. It remains a source-scoped, trace-only design-transduction layer and creates no route, memory, Assembly or canon authority.
 - PR #99 Geometric Memory Signature current head `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` completed KODEX Core Runtime #310 / `32191947398` with `SUCCESS`. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`, is SHA-bound to the same head. Browser evidence passes desktop, 390×844, 412×915 and reduced-motion with deterministic bounded topologies, visited-only nodes/edges and zero horizontal overflow. It is a derived read-only manifestation, not a second memory or route system. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` remains `NOT_RUN`.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
@@ -166,9 +166,10 @@ SEMANTIC / NATURAL-LAW TRACE LANE:
 → DO NOT WIRE INTO RETURN BEFORE THAT REVIEW
 
 SEMANTIC MEMORY LANE:
-#97 @ caf0306d... = RETURN NARROW / JOURNEYSTATE AUTHORITY RECONCILED / STATELESS EXPLICIT-COMMIT ADAPTER / BRANCH-LOCAL EVIDENCE LANE PRESENT
-→ EXACT-HEAD EXECUTION RESULT NOT OBSERVED
-→ NO SALIENCE / ACTIVATION / DECAY / PASSIVE DWELL WRITES / OBSERVE V2 EXPANSION BEFORE SHA-BOUND EVIDENCE
+#97 @ adb460204... = RETURN NARROW / JOURNEYSTATE AUTHORITY RECONCILED / STATELESS EXPLICIT-COMMIT ADAPTER
+→ SEMANTIC MEMORY EVIDENCE #3 / 32198754926 = EXACT-HEAD CONTRACT+BUILD CI SUCCESS
+→ BROADER CORE RUNTIME / BROWSER EVIDENCE NOT_RUN
+→ NO SALIENCE / ACTIVATION / DECAY / PASSIVE DWELL WRITES / OBSERVE V2 EXPANSION BEFORE BROWSER EVIDENCE
 
 GESTURE TIMELINE:
 #85 @ 47139acab... = CONTENT-RECONCILED / HISTORY-DIVERGED / HOSTED EXACT-HEAD VALIDATION BLOCKED BY TRIGGER TOPOLOGY
@@ -187,7 +188,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 2. Complete actual human/creator readability review of the SHA-bound Golden packet before any Golden seed curation.
 3. Keep protected-art material review blocked while source bytes are withheld.
 4. Preserve #95/#96/#98 as bounded pre-Assembly/trace layers; technical PASS never establishes scientific, symbolic or canonical truth.
-5. Keep #97 bounded until exact-head test execution is actually observed; do not add a second memory system or passive semantic inference.
+5. Keep #97 bounded after exact-head contract/build PASS until broader Core Runtime/browser evidence exists; do not add a second memory system, passive semantic inference, salience, activation or decay before that gate.
 6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
 7. If #99 is `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
 8. Make only the smallest changes justified by measured/browser/creator evidence.
@@ -199,9 +200,15 @@ This checkpoint supersedes earlier operational truth where it conflicts.
 
 ### PR #97 — Semantic Memory evidence lane
 
-Current exact head: `caf0306d5d57c9d6481ab647ffa63b4f6c56bea8`.
+Current exact head: `adb460204fb5bb236e9f1ebdfac2d038fd1d09d6`.
 
-RETURN remains the verified narrow specimen store. JourneyState remains semantic persistence authority. The semantic-memory adapter remains stateless and accepts explicit concept/relation commits only; passive dwell/co-occurrence writes remain disallowed. The branch-local evidence workflow is present, but no exact-head workflow run is observable through the available GitHub evidence interface. No CI/browser PASS is inferred.
+RETURN remains the verified narrow specimen store. JourneyState remains semantic persistence authority. The semantic-memory adapter remains stateless and accepts explicit concept/relation commits only; passive dwell/co-occurrence writes remain disallowed.
+
+The branch-local evidence workflow preserves its existing `push` trigger and now also exposes a `pull_request` trigger over the same scoped Semantic Memory / JourneyState paths. Workflow permissions remain `contents: read`; validation steps are unchanged. This change is evidence tooling only.
+
+`KODEX Semantic Memory Evidence` #3 / run `32198754926`: `SUCCESS` on the exact head above. The run passed JourneyState + deterministic restore/replay contracts, the Semantic Memory / RETURN authority verifier and Astro build.
+
+This is `EXACT-HEAD CONTRACT/BUILD CI PASS / BROWSER NOT_RUN`. No browser acceptance, creator acceptance, merge, deploy or canon status is inferred.
 
 ### PR #98 — Natural Law Kernel
 
