@@ -129,6 +129,26 @@ Head `eaf2924707…` now makes that concentration inspectable inside the **exist
 
 This is an **observability delta only**. It does not change assembler selection, ElementContract, PlateSpec, scoring weights, seed lineage, renderer architecture, Deep Route Engine, memory, runtime state, protected-art contracts or Ocín originals. It creates no novelty target and does not turn repetition into an automatic aesthetic failure.
 
+### Exact-head #299 agent visual audit
+
+The complete 24/24 packet has now been inspected directly at agent-audit level rather than inferred from counters alone.
+
+- `SCI-BIOLOGY`, `TECH-NETWORK` and `CON-MIND` visibly converge at macro-silhouette level around the same G07 archive/dossier family. This confirms the concentration diagnostic is perceptually meaningful, but it is still a review signal rather than a creator-approved aesthetic failure threshold.
+- The three protected ART cases visibly share a similar G01 shell. Because their source bytes remain `WITHHELD`, this is shell/layout evidence only. It does **not** establish artwork-materiality failure, visual no-crop failure, crop permission, source-byte use approval or creator rejection.
+- The prior G04 Junction under-density repair remains visually closed: `SCI-COSMOS` and `TECH-CITY` retain a visible registered field instead of collapsing to sparse route-only surfaces.
+
+Truth state remains:
+
+```text
+agent_visual_audit = OBSERVED
+human_curator_acceptance = NOT_RUN
+creator_visual_acceptance = NOT_RUN
+aesthetic_threshold_status = NONE
+protected_art_materiality_review = BLOCKED_WHILE_SOURCE_BYTES_WITHHELD
+```
+
+No fixture/seed curation is authorized by this agent audit alone. Surface the exact packet for human/creator readability review first. Only if that review confirms the G07 concentration is materially harmful should #62 receive bounded deterministic Golden fixture/seed curation using existing registered IDs and existing validators. Runtime selection policy must remain unchanged unless later production evidence demonstrates a separate selection-policy defect.
+
 Do not invent a universal aesthetic threshold, hidden novelty optimizer, new element dialect or parallel assembler. Deterministic Golden fixture/seed curation using **existing registered IDs only** is permitted only if actual human/creator review confirms that benchmark repetition is a problem worth repairing. Any broader production selection-policy change remains a hypothesis until evidence supports it.
 
 The Assembly OS frontier is therefore **human/creator readability review**, not another schema, assembler, route engine or renderer.
@@ -184,6 +204,7 @@ Science, verified evidence, implementation measurement, inference, metaphor, cul
 
 ```text
 VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...)
+→ EXACT-HEAD 24/24 PACKET AGENT-AUDITED; G07 REPETITION VISIBLY CONFIRMED AS REVIEW SIGNAL
 → REAL HUMAN / CREATOR REVIEW OF EXACT-HEAD 24 GOLDEN CAPTURES
 → IF REVIEW CONFIRMS BENCHMARK REPETITION: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING IDs ONLY
 → ONLY THEN CONSIDER BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
@@ -207,8 +228,8 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 
 1. Keep #62 `eaf2924707...` as the sole verified Assembly OS / Deep Navigation correctness baseline.
 2. Complete actual human/creator readability review of the SHA-bound 24-image Golden packet.
-3. Use the new concentration/same-silhouette diagnostics as evidence, not aesthetic canon.
-4. Curate Golden fixtures/seeds with existing registered IDs only if review confirms the benchmark needs broader representation.
+3. Use the concentration/same-silhouette diagnostics and direct agent audit as evidence, not aesthetic canon.
+4. Curate Golden fixtures/seeds with existing registered IDs only if human/creator review confirms the benchmark needs broader representation.
 5. Keep protected-art material review blocked while source bytes are withheld.
 6. Keep #86 as the verified transition substrate and #90 as verified MACHINE evidence while creator acceptance remains separate.
 7. Treat closed #88/#89 as evidence, not active PROLOGUE implementation authority.
