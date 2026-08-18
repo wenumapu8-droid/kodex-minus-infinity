@@ -74,7 +74,7 @@ Mechanically closed on the same SHA:
 - 100dvh/no-page-scroll obligations remain enforced where required;
 - measured direct/cached route performance remains within declared hypothesis thresholds.
 
-PR #62 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED** because P0 technical closure is not merge/release authorization.
+PR #62 is **CLOSED / NOT MERGED / NOT DEPLOYED**. Its administrative closure does not revoke the verified technical baseline and does not imply merge/release authorization.
 
 ### Assembly OS P0.1–P0.10
 
@@ -198,7 +198,8 @@ The presentation-only residual concentric/orbital scaffold defect is closed at a
 
 - PR #64 Visual Assembly is proposal/governance, not Assembly OS runtime authority.
 - PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `57921287a5df989c322950e8009e58f3b600d81d` has reconciled the five non-overlapping current-#62 benchmark/evidence/materiality surfaces in place while preserving the three bounded Gesture Timeline changes. Git ancestry remains diverged and the draft is currently non-mergeable; no exact-head workflow status is yet recorded for the new head. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / EXACT-HEAD REVALIDATION PENDING`, not as Assembly/Deep Navigation authority.
+- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `47139acab8c01d0af1435ae7d66ce6af21495446` has current-#62 content surfaces reconciled and a CI `workflow_dispatch` trigger available, while Git ancestry remains diverged/non-mergeable and exact-head Core Runtime/browser revalidation remains pending. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / CI TRIGGER REPAIRED / EXACT-HEAD REVALIDATION PENDING`, not as Assembly/Deep Navigation authority.
+- PR #95 Semantic IR is a bounded pre-Assembly adapter over the existing Assembly OS. Exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`; `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance does not establish conceptual/canonical provenance. Treat #95 as `TECHNICALLY TESTED PRE-ASSEMBLY CANDIDATE / CONCEPTUAL PROVENANCE NEEDS_CONFIRMATION`, not as canon authority.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 - Other volumetric/RGX/Crystal Receiver/visual-system lanes remain specialized evidence/substrate work. A green lab gate does not make them default architecture or visual canon.
@@ -214,14 +215,22 @@ Science, verified evidence, implementation measurement, inference, metaphor, cul
 ## Current critical path
 
 ```text
-VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...)
+VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...; CLOSED / NOT MERGED)
 → EXACT-HEAD 24/24 PACKET AGENT-AUDITED; G07 REPETITION VISIBLY CONFIRMED AS REVIEW SIGNAL
 → REAL HUMAN / CREATOR REVIEW OF EXACT-HEAD 24 GOLDEN CAPTURES
 → IF REVIEW CONFIRMS BENCHMARK REPETITION: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING IDs ONLY
 → ONLY THEN CONSIDER BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
 
+SEMANTIC IR LANE:
+#95 @ 59b2d082845c42617dd5adea06c4107191d56fd3 = CORE RUNTIME #305 SUCCESS
+→ TECHNICALLY TESTED PRE-ASSEMBLY CANDIDATE
+→ IMPERMANENCE / INTERDEPENDENCE / OBSERVER REMAIN NEEDS_CONFIRMATION
+→ LINK LEGITIMATE EXISTING CANON/CORPUS SOURCE IDS IF FOUND
+→ IF NO AUTHORITATIVE RECORD EXISTS, PRESERVE NEEDS_CONFIRMATION
+→ DO NOT INFER CANON FROM IMPLEMENTATION OR CREATE A PARALLEL PROVENANCE SYSTEM
+
 GESTURE TIMELINE LANE:
-#85 @ 57921287a5df989c322950e8009e58f3b600d81d = CURRENT-#62 CONTENT RECONCILED
+#85 @ 47139acab8c01d0af1435ae7d66ce6af21495446 = CURRENT-#62 CONTENT RECONCILED + CI TRIGGER REPAIRED
 → GIT HISTORY REMAINS DIVERGED / CURRENTLY NON-MERGEABLE
 → EXACT-HEAD CI/BROWSER REVALIDATION PENDING
 → NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION UNTIL THAT GATE EXISTS
@@ -247,7 +256,7 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 
 ## Immediate definition of success
 
-1. Keep #62 `eaf2924707...` as the sole verified Assembly OS / Deep Navigation correctness baseline.
+1. Keep #62 `eaf2924707...` as the sole verified Assembly OS / Deep Navigation correctness baseline even though the PR is administratively closed/not merged.
 2. Complete actual human/creator readability review of the SHA-bound 24-image Golden packet.
 3. Use the concentration/same-silhouette diagnostics and direct agent audit as evidence, not aesthetic canon.
 4. Curate Golden fixtures/seeds with existing registered IDs only if human/creator review confirms the benchmark needs broader representation.
@@ -256,9 +265,10 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
 8. Require #94 exact-head browser evidence after every presentation change; current head `a89a53f…` satisfies that gate.
 9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
-10. Keep #85 as a bounded Gesture Timeline candidate only; its current #62 non-overlapping content surfaces are reconciled, but require SHA-bound exact-head CI/browser revalidation before any further route/history/memory implementation and do not treat content alignment as merge/history readiness.
-11. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
-12. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+10. Keep #85 as a bounded Gesture Timeline candidate only; current #62 content surfaces and the CI trigger are reconciled, but require SHA-bound exact-head CI/browser revalidation before any further route/history/memory implementation.
+11. Keep #95 principles `NEEDS_CONFIRMATION` until legitimate conceptual/canonical source records are linked; Core Runtime PASS alone is insufficient authority.
+12. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
+13. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-18 PROLOGUE #94 protected-source reconciliation checkpoint
 
@@ -416,5 +426,41 @@ CANON_PROMOTED = false
 Do not extend #85 route/history/memory implementation until exact-head evidence exists. The next valid gate is SHA-bound Core Runtime/browser evidence on `47139acab8c01d0af1435ae7d66ce6af21495446`; if that evidence exposes a measured defect, repair only that defect on #85.
 
 Truth boundary: `PR CLOSED ≠ MERGED ≠ DEPLOYED ≠ CANON`; `CI TRIGGER AVAILABLE ≠ CI PASS ≠ BROWSER ACCEPTANCE ≠ HUMAN/CURATOR ACCEPTANCE ≠ CREATOR ACCEPTANCE`.
+
+No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
+
+## 2026-08-18 Semantic IR #95 exact-head validation checkpoint
+
+PR #95 exact head:
+
+```text
+59b2d082845c42617dd5adea06c4107191d56fd3
+```
+
+KODEX Core Runtime #305 / `32157103501`: `SUCCESS`.
+
+This closes the exact-head technical validation blocker for the epistemic-status repair. The Semantic IR remains a bounded pre-Assembly adapter over the existing Assembly OS:
+
+```text
+QUESTION / PRINCIPLE → SEMANTIC IR → existing Assembly OS → existing PlateSpec → existing renderer
+```
+
+The three demonstration principles remain explicitly non-canonical pending real conceptual provenance:
+
+```text
+IMPERMANENCE = NEEDS_CONFIRMATION
+INTERDEPENDENCE = NEEDS_CONFIRMATION
+OBSERVER = NEEDS_CONFIRMATION
+```
+
+The same `NEEDS_CONFIRMATION` state is preserved at top-level status, epistemic status and manifestation payload status. Exact-head Core Runtime PASS proves implementation compatibility; it does not create conceptual/canonical provenance and does not authorize `CANON_CANDIDATE` promotion.
+
+Drive search after the successful run did not locate an independent authoritative canon/corpus record for `IMPERMANENCE` or `INTERDEPENDENCE`; returned hits resolved back to the Assembly OS/implementation trail. Therefore no source IDs were fabricated and no provenance registry was created.
+
+Truth boundary:
+
+`IMPLEMENTATION PROVENANCE ≠ CONCEPTUAL PROVENANCE`; `GREEN CI ≠ CANON AUTHORITY`; `NEEDS_CONFIRMATION ≠ REJECTED`; `TECHNICALLY TESTED ≠ CREATOR ACCEPTED ≠ MERGED ≠ DEPLOYED ≠ CANON`.
+
+Next valid action: search/link legitimate existing canon or corpus source IDs for these principles if such records exist. If no authoritative record exists, preserve `NEEDS_CONFIRMATION`. Do not infer canon from fixture implementation and do not create parallel provenance architecture.
 
 No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
