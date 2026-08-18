@@ -86,7 +86,7 @@ The #62 lane already implements and validates the requested contract foundation.
 4. **Golden benchmark** — 12 deterministic plates, balanced 3× Science / Technology / Art / Consciousness.
 5. **Copy-role compiler** — source-linked roles only; no silent generated prose; EVIDENCE and TELEMETRY retain truth-sensitive gates.
 6. **Protected Ocín activation adapter** — originals immutable, source bytes not inferred, public approval not inferred, environment-only activation contract.
-7. **Assembly QA** — contract truth separated from rendered/browser truth; unrendered output cannot be mislabeled browser-validated.
+7. **Assembly QA** — contract truth separated from rendered/browser truth; unrendered valid specs remain PARTIAL rather than claiming browser validation.
 8. **WorkOrder / StationResult** — SCRIPT / AGENT / HUMAN share the same correctness contract; worker identity grants no extra authority; release requires explicit human publisher authorization.
 9. **Macro chapter factory** — consumes validated PlateSpecs and delegates route eligibility to the existing Deep Route Engine; `runtime_auto_navigation=false`.
 10. **Seeded factory benchmark** — measures invalid rate, repetition, visual signatures, route diversity, runtime cost and explicit human-curator status; hypothesis metrics are not canon truth.
@@ -231,9 +231,9 @@ PROLOGUE #88 REFINE + #89 SOURCE HYPOTHESIS REJECTED
 → #93 HISTORICAL TOOLCHAIN-FAILED CANDIDATE
 → #94 SOURCE-INTEGRITY REPAIR VERIFIED @ 760cea56950af5898b58175fea827e77bb2f522a
 → DIRECT ARTIFACT AUDIT FOUND LOW-LEGIBILITY BACKING DEFECT
-→ ACTIVE #94 BACKING-PLANE REPAIR @ a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
-→ EXACT-HEAD CORRIDOR / STATE / MOTION / TRANSITION REVALIDATION
-→ DIRECT DESKTOP / MOBILE / REDUCED VISUAL AUDIT
+→ #94 BACKING-PLANE REPAIR EXACT-HEAD VERIFIED @ a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
+→ EXACT ASSET INGEST + CORRIDOR + STATE + MOTION + TRANSITION PASS
+→ DIRECT DESKTOP / MOBILE / REDUCED AUDIT CLOSES LOW-LEGIBILITY DEFECT AT AGENT-AUDIT LEVEL
 → HUMAN / CREATOR KEEP | REFINE | REJECT
 
 NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
@@ -248,7 +248,7 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 5. Keep protected-art material review blocked while source bytes are withheld.
 6. Keep #86 as the verified transition substrate and #90 as verified MACHINE evidence while creator acceptance remains separate.
 7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
-8. Revalidate #94 exact-head after every presentation change before promoting the new head to browser-verified.
+8. Require #94 exact-head browser evidence after every presentation change; current head `a89a53f…` satisfies that gate.
 9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
 10. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
 11. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
@@ -285,7 +285,7 @@ Exact-head `760cea56950af5898b58175fea827e77bb2f522a` completed all five require
 
 AUTHORIAL_STATE artifact `9314310039` (`sha256:6d37bc148f375599b18943885011ea8103e5834dfffa22b1e6ab87a942e1de61`) was inspected directly across desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion. The protected source was complete and unmodified, but its dark linework was too close to the black art receptacle to carry the intended macro-silhouette. This is a **presentation/background defect**, not source-integrity failure and not permission to filter or recolor L0.
 
-The smallest same-PR repair is now implemented at:
+The smallest same-PR repair is implemented at:
 
 ```text
 a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
@@ -301,7 +301,13 @@ PREVIOUS_HEAD_MECHANICAL_BROWSER_GATES = PASS
 PREVIOUS_HEAD_DIRECT_VISUAL_AUDIT = REFINE_LOW_LEGIBILITY
 PR_94_CURRENT_HEAD = a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
 IMPLEMENTED_PRESENTATION_REPAIR = true
-CURRENT_HEAD_EXACT_BROWSER_REVALIDATED = false
+CURRENT_HEAD_EXACT_BROWSER_REVALIDATED = true
+CURRENT_HEAD_EXACT_ASSET_INGEST = PASS_RUN_32113658844_ATTEMPT_2
+CURRENT_HEAD_CORRIDOR_STATE_MOTION_TRANSITION = PASS
+CURRENT_HEAD_AUTHORIAL_STATE_ARTIFACT = 9315992069
+CURRENT_HEAD_AUTHORIAL_STATE_ARTIFACT_DIGEST = sha256:b54a1cb73ba41258b319ee69243ead0ed9b7eeb6b256563b5aa5d21812e0af34
+CURRENT_HEAD_AUTHORIAL_STATE_CAPTURE_COUNT = 28/28_PASS
+CURRENT_HEAD_DIRECT_VISUAL_AUDIT = SPECIFIC_LOW_LEGIBILITY_DEFECT_CLOSED
 HUMAN_CURATOR_ACCEPTANCE = NOT_RUN
 CREATOR_VISUAL_ACCEPTANCE = NOT_RUN
 MERGED = false
@@ -309,6 +315,8 @@ DEPLOYED = false
 CANON_PROMOTED = false
 ```
 
-Next valid gate: run the existing exact-head ingest/corridor/state/motion/transition evidence on `a89a53f…`, then inspect the resulting PROLOGUE desktop/mobile/reduced captures. Keep the neutral backing only if it restores complete-eye readability without introducing a new hierarchy, contrast, overflow, focus or motion defect.
+Exact-head revalidation is complete. Exact Asset Ingest, Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION and AUTHORIAL_TRANSITION all pass on `a89a53f…`. The AUTHORIAL_STATE manifest is SHA-bound to the same head and reports 28/28 PASS across seven scenes × four profiles; PROLOGUE desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion are viewport-bounded with no page-level width/height overflow. Direct review of those four PROLOGUE captures confirms that the neutral backing restores complete-eye readability while L0 remains intact, contained and original-color. This closes the specific low-legibility backing defect at browser/agent-audit level only.
+
+Next valid gate: human / creator `KEEP | REFINE | REJECT` for PROLOGUE #94. Do not add another presentation delta unless a new rendered defect is observed or explicitly requested.
 
 No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
