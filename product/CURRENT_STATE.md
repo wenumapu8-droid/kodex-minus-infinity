@@ -119,92 +119,26 @@ The prior G04 Junction under-density defect remains closed at browser/agent-audi
 
 The prior exact-head packet audit found only six primary composition IDs across 12 Golden cases, including repeated G01, G07 and G04 shells. The seeded report also observed non-zero repetition while contract validity remained clean. Those observations are curation/benchmark-diversity evidence, not schema failure and not creator rejection.
 
-Head `eaf2924707…` now makes that concentration inspectable inside the **existing** factory benchmark:
+Head `eaf2924707…` makes that concentration inspectable inside the existing factory benchmark through `primary_element_concentration[]` and `same_silhouette_groups[]`, while `aesthetic_threshold_status = NONE` remains explicit. No runtime selection or scoring policy is changed by that diagnostic.
 
-- `primary_element_concentration[]` records registered primary ID, count/share, case IDs and node IDs;
-- `same_silhouette_groups[]` records repeated deterministic structural visual signatures;
-- `status = OBSERVED_DIAGNOSTIC`;
-- `aesthetic_threshold_status = NONE`;
-- deterministic metrics include the diagnostic, preserving same-seed reproducibility.
+The Assembly OS frontier remains **human/creator readability review**, not another schema, assembler, route engine or renderer.
 
-This is an **observability delta only**. It does not change assembler selection, ElementContract, PlateSpec, scoring weights, seed lineage, renderer architecture, Deep Route Engine, memory, runtime state, protected-art contracts or Ocín originals. It creates no novelty target and does not turn repetition into an automatic aesthetic failure.
+## Product-facing corridor / authorial state
 
-### Exact-head #299 agent visual audit
-
-The complete 24/24 packet has now been inspected directly at agent-audit level rather than inferred from counters alone.
-
-- `SCI-BIOLOGY`, `TECH-NETWORK` and `CON-MIND` visibly converge at macro-silhouette level around the same G07 archive/dossier family. This confirms the concentration diagnostic is perceptually meaningful, but it is still a review signal rather than a creator-approved aesthetic failure threshold.
-- The three protected ART cases visibly share a similar G01 shell. Because their source bytes remain `WITHHELD`, this is shell/layout evidence only. It does **not** establish artwork-materiality failure, visual no-crop failure, crop permission, source-byte use approval or creator rejection.
-- The prior G04 Junction under-density repair remains visually closed: `SCI-COSMOS` and `TECH-CITY` retain a visible registered field instead of collapsing to sparse route-only surfaces.
-
-Truth state remains:
-
-```text
-agent_visual_audit = OBSERVED
-human_curator_acceptance = NOT_RUN
-creator_visual_acceptance = NOT_RUN
-aesthetic_threshold_status = NONE
-protected_art_materiality_review = BLOCKED_WHILE_SOURCE_BYTES_WITHHELD
-```
-
-No fixture/seed curation is authorized by this agent audit alone. Surface the exact packet for human/creator readability review first. Only if that review confirms the G07 concentration is materially harmful should #62 receive bounded deterministic Golden fixture/seed curation using existing registered IDs and existing validators. Runtime selection policy must remain unchanged unless later production evidence demonstrates a separate selection-policy defect.
-
-Do not invent a universal aesthetic threshold, hidden novelty optimizer, new element dialect or parallel assembler. Deterministic Golden fixture/seed curation using **existing registered IDs only** is permitted only if actual human/creator review confirms that benchmark repetition is a problem worth repairing. Any broader production selection-policy change remains a hypothesis until evidence supports it.
-
-The Assembly OS frontier is therefore **human/creator readability review**, not another schema, assembler, route engine or renderer.
-
-## Product-facing corridor / authorial transition state
-
-PR **#86** remains the verified bounded transition-convergence substrate at:
-
-```text
-390b91fe263f172fea4cc2b0f94b8db2b59d1b55
-```
-
-Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION and AUTHORIAL_TRANSITION are all `SUCCESS` on that SHA. This mechanically closes the KOD-74 transition evidence blocker. It does **not** imply creator `KEEP`, merge or deployment.
-
-## KOD-75 / PROLOGUE frontier — historical #93 checkpoint
-
-Prior proofs **#88** and **#89** are **CLOSED / NOT MERGED** and remain historical evidence, not implementation authority.
-
-Their useful evidence remains bounded:
-
-- #88 = `REFINE` at implementation/curatorial-audit level: coupling improved, but the dominant circular/woven-ring read persisted, particularly on mobile;
-- #89 = source hypothesis rejected: `arch-21` remained macroscopically circular and did not justify a real CRT remap.
-
-PR **#93**, branch `feat/kodex-prologue-acquisition-field-v1`, was the next bounded proof on the #86 lineage at:
-
-```text
-2b5834ed97a8613972a482fd7bc7fabbdeb9c63b
-```
-
-Its four referenced workflow runs later resolved `FAILURE` because the evidence toolchain they depended on was unavailable/decommissioned. This is **tooling failure, not measured PROLOGUE product rejection**. #93 is retained as historical evidence and is superseded operationally by the newer #94 protected-source lane described in the latest checkpoint below.
-
-## KOD-76 / PR #90 — MACHINE
-
-Status: `IMPLEMENTED / EXACT-HEAD BROWSER VERIFIED / SPECIFIC RESIDUAL ORBIT DEFECT CLOSED AT AGENT-AUDIT LEVEL / CREATOR ACCEPTANCE NOT_RUN`.
-
-Verified head:
-
-```text
-b76679719e37a43e79be412269c5a4ddec2c2ccc
-```
-
-All four required lanes are `SUCCESS`: Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION and AUTHORIAL_TRANSITION. MACHINE desktop/mobile/reduced-motion evidence passes bounded 100dvh, no horizontal overflow, state distinction, deterministic replay and reduced-motion semantic completion.
-
-The presentation-only residual concentric/orbital scaffold defect is closed at agent-audit level. Further MACHINE styling is not justified without a newly observed or creator-requested defect. PR #90 remains **OPEN / DRAFT / NOT MERGED / NOT DEPLOYED**.
+PR #86 remains the verified bounded transition-convergence substrate. PR #90 MACHINE remains exact-head browser verified at `b76679719e37a43e79be412269c5a4ddec2c2ccc`; creator acceptance is still `NOT_RUN`. PR #94 PROLOGUE remains exact-head browser verified at `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e`; the specific low-legibility backing defect is closed at agent-audit level while human/creator `KEEP | REFINE | REJECT` remains pending.
 
 ## Other architecture boundaries
 
 - PR #64 Visual Assembly is proposal/governance, not Assembly OS runtime authority.
 - PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `47139acab8c01d0af1435ae7d66ce6af21495446` has current-#62 content surfaces reconciled, while Git ancestry remains diverged/non-mergeable and exact-head Core Runtime/browser revalidation remains pending. `workflow_dispatch` exists only on the feature branch and therefore does not provide a hosted manual-dispatch path from the default branch. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / HOSTED EXACT-HEAD VALIDATION BLOCKED BY TRIGGER TOPOLOGY`, not as Assembly/Deep Navigation authority.
-- PR #95 Semantic IR is a bounded pre-Assembly adapter over the existing Assembly OS. Exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`; `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance does not establish conceptual/canonical provenance. Treat #95 as `TECHNICALLY TESTED PRE-ASSEMBLY CANDIDATE / CONCEPTUAL PROVENANCE NEEDS_CONFIRMATION`, not as canon authority.
-- PR #96 Geometric Transduction is a bounded child of #95. Exact head `da475dce6688fdbe0511a6d71efeab734f40908e` completed Core Runtime #306 / `32169696848` with `SUCCESS`. Its geometry data remains Semantic Trace only and does not create a new Assembly OS input dialect. The three principle fixtures remain `NEEDS_CONFIRMATION`; technical compatibility does not canonize geometry-symbolic meaning.
-- PR #97 Semantic Memory v2 was initially based on `main` and collided with the verified #62 RETURN-specimen memory boundary. The latest checkpoint at the end of this file supersedes that collision state: the RETURN boundary is repaired and JourneyState authority is content-reconciled, while ancestry and hosted exact-head validation remain separate blockers.
+- PR #85 Gesture Timeline remains content-reconciled but history-diverged; its current head `47139acab8c01d0af1435ae7d66ce6af21495446` has no authorized hosted exact-head validation path yet. Do not extend route/history/memory until SHA-bound evidence exists.
+- PR #95 Semantic IR exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`. `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance is not conceptual/canonical provenance.
+- PR #96 Geometric Transduction exact head `da475dce6688fdbe0511a6d71efeab734f40908e` completed Core Runtime #306 / `32169696848` with `SUCCESS`. Geometry remains Semantic Trace only; technical compatibility does not canonize geometric-symbolic meaning.
+- PR #97 Semantic Memory v2 current head `caf0306d5d57c9d6481ab647ffa63b4f6c56bea8` keeps RETURN narrow, JourneyState as persistence authority and the semantic adapter stateless/explicit-commit only. A branch-local evidence workflow exists, but the available GitHub evidence interface still exposes no exact-head workflow run. Treat it as `EVIDENCE LANE IMPLEMENTED / EXACT-HEAD EXECUTION RESULT NOT OBSERVED`, not CI/browser PASS.
+- PR #98 Natural Law Kernel current head `fc3545d5ff67452a5838ce9161f4e308825cf2a5` completed KODEX Core Runtime #307 / `32190413923` with `SUCCESS`. It remains a source-scoped, trace-only design-transduction layer and creates no route, memory, Assembly or canon authority.
+- PR #99 Geometric Memory Signature current head `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` completed KODEX Core Runtime #310 / `32191947398` with `SUCCESS`. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`, is SHA-bound to the same head. Browser evidence passes desktop, 390×844, 412×915 and reduced-motion with deterministic bounded topologies, visited-only nodes/edges and zero horizontal overflow. It is a derived read-only manifestation, not a second memory or route system. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` remains `NOT_RUN`.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
-- Other volumetric/RGX/Crystal Receiver/visual-system lanes remain specialized evidence/substrate work. A green lab gate does not make them default architecture or visual canon.
 
 ## Corpus / provenance boundary
 
@@ -217,396 +151,83 @@ Science, verified evidence, implementation measurement, inference, metaphor, cul
 ## Current critical path
 
 ```text
-VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...; CLOSED / NOT MERGED)
-→ EXACT-HEAD 24/24 PACKET AGENT-AUDITED; G07 REPETITION VISIBLY CONFIRMED AS REVIEW SIGNAL
-→ REAL HUMAN / CREATOR REVIEW OF EXACT-HEAD 24 GOLDEN CAPTURES
-→ IF REVIEW CONFIRMS BENCHMARK REPETITION: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING IDs ONLY
-→ ONLY THEN CONSIDER BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
+ASSEMBLY OS / DEEP NAVIGATION:
+#62 @ eaf2924707... = VERIFIED BASELINE / CLOSED / NOT MERGED
+→ GOLDEN 24/24 AGENT-AUDITED
+→ HUMAN / CREATOR REVIEW
+→ IF REVIEW CONFIRMS G07 REPETITION: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING REGISTERED IDs ONLY
 
-SEMANTIC IR / GEOMETRIC TRANSDUCTION LANE:
-#95 @ 59b2d082845c42617dd5adea06c4107191d56fd3 = CORE RUNTIME #305 SUCCESS
-→ #96 @ da475dce6688fdbe0511a6d71efeab734f40908e = CORE RUNTIME #306 SUCCESS
-→ BOTH REMAIN BOUNDED PRE-ASSEMBLY / TRACE-LAYER CANDIDATES
-→ IMPERMANENCE / INTERDEPENDENCE / OBSERVER REMAIN NEEDS_CONFIRMATION
-→ LINK LEGITIMATE EXISTING CANON/CORPUS SOURCE IDS IF FOUND
-→ DO NOT INFER CANON OR SCIENTIFIC TRUTH FROM IMPLEMENTATION / GEOMETRIC FORM
+SEMANTIC / NATURAL-LAW TRACE LANE:
+#95 @ 59b2d082... = CORE RUNTIME #305 SUCCESS
+→ #96 @ da475dce... = CORE RUNTIME #306 SUCCESS
+→ #98 @ fc3545d5... = CORE RUNTIME #307 SUCCESS / TRACE-ONLY NATURAL LAW
+→ #99 @ abddd680... = CORE RUNTIME #310 SUCCESS / SHA-BOUND BROWSER EVIDENCE
+→ CREATOR VERDICT ON GEOMETRIC MEMORY SIGNATURE: MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING
+→ DO NOT WIRE INTO RETURN BEFORE THAT REVIEW
 
 SEMANTIC MEMORY LANE:
-#97 @ 01b0959b629921221afccef04f967aa030e3bd3c = RETURN BOUNDARY REPAIRED / JOURNEYSTATE AUTHORITY CONTENT-RECONCILED / DETERMINISTIC RESTORE-REPLAY TEST CONTRACT ADDED
-→ EXPLICIT CONCEPT/RELATION ADAPTER ONLY; NO PARALLEL STORAGE OR PASSIVE DWELL/CO-OCCURRENCE WRITES
-→ ANCESTRY REMAINS DIVERGED; RETARGET-TO-#62 TEST PRODUCED 43-FILE NON-MERGEABLE MEGA-DIFF AND WAS REVERTED
-→ NEW RESTORE/REPLAY TEST IMPLEMENTED; EXACT-HEAD TEST EXECUTION NOT_RUN / NO HOSTED EXACT-HEAD RUN
-→ EXECUTE JOURNEYSTATE + BRIDGE + verify:kodex-memory ON THIS SHA
-→ NO SALIENCE/ACTIVATION/DECAY OR OBSERVE V2 MEMORY EXPANSION BEFORE HOSTED/BROWSER GATE
+#97 @ caf0306d... = RETURN NARROW / JOURNEYSTATE AUTHORITY RECONCILED / STATELESS EXPLICIT-COMMIT ADAPTER / BRANCH-LOCAL EVIDENCE LANE PRESENT
+→ EXACT-HEAD EXECUTION RESULT NOT OBSERVED
+→ NO SALIENCE / ACTIVATION / DECAY / PASSIVE DWELL WRITES / OBSERVE V2 EXPANSION BEFORE SHA-BOUND EVIDENCE
 
-GESTURE TIMELINE LANE:
-#85 @ 47139acab8c01d0af1435ae7d66ce6af21495446 = CURRENT-#62 CONTENT RECONCILED
-→ GIT HISTORY REMAINS DIVERGED / CURRENTLY NON-MERGEABLE
-→ HOSTED EXACT-HEAD VALIDATION BLOCKED BY CURRENT TRIGGER TOPOLOGY
-→ FEATURE-BRANCH workflow_dispatch DOES NOT CREATE DEFAULT-BRANCH MANUAL DISPATCH AUTHORITY
-→ NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION UNTIL SHA-BOUND EVIDENCE EXISTS
+GESTURE TIMELINE:
+#85 @ 47139acab... = CONTENT-RECONCILED / HISTORY-DIVERGED / HOSTED EXACT-HEAD VALIDATION BLOCKED BY TRIGGER TOPOLOGY
+→ NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION BEFORE SHA-BOUND EVIDENCE
 
-PRODUCT LANE:
-VERIFIED TRANSITION SUBSTRATE (#86)
-→ MACHINE EXACT-HEAD BROWSER VERIFIED (#90)
-→ CREATOR KEEP | REFINE | REJECT
-→ NO FURTHER MACHINE DELTA WITHOUT OBSERVED/REQUESTED NEED
+PRODUCT / AUTHORIAL:
+#90 MACHINE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
+#94 PROLOGUE = EXACT-HEAD BROWSER VERIFIED / SPECIFIC LEGIBILITY DEFECT CLOSED / CREATOR REVIEW PENDING
 
-AUTHORIAL LANE:
-PROLOGUE #88 REFINE + #89 SOURCE HYPOTHESIS REJECTED
-→ #93 HISTORICAL TOOLCHAIN-FAILED CANDIDATE
-→ #94 SOURCE-INTEGRITY REPAIR VERIFIED @ 760cea56950af5898b58175fea827e77bb2f522a
-→ DIRECT ARTIFACT AUDIT FOUND LOW-LEGIBILITY BACKING DEFECT
-→ #94 BACKING-PLANE REPAIR EXACT-HEAD VERIFIED @ a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
-→ EXACT ASSET INGEST + CORRIDOR + STATE + MOTION + TRANSITION PASS
-→ DIRECT DESKTOP / MOBILE / REDUCED AUDIT CLOSES LOW-LEGIBILITY DEFECT AT AGENT-AUDIT LEVEL
-→ HUMAN / CREATOR KEEP | REFINE | REJECT
-
-NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
+NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
 
 ## Immediate definition of success
 
-1. Keep #62 `eaf2924707...` as the sole verified Assembly OS / Deep Navigation correctness baseline even though the PR is administratively closed/not merged.
-2. Complete actual human/creator readability review of the SHA-bound 24-image Golden packet.
-3. Use the concentration/same-silhouette diagnostics and direct agent audit as evidence, not aesthetic canon.
-4. Curate Golden fixtures/seeds with existing registered IDs only if human/creator review confirms the benchmark needs broader representation.
-5. Keep protected-art material review blocked while source bytes are withheld.
-6. Keep #86 as the verified transition substrate and #90 as verified MACHINE evidence while creator acceptance remains separate.
-7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
-8. Require #94 exact-head browser evidence after every presentation change; current head `a89a53f…` satisfies that gate.
-9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
-10. Keep #85 bounded and blocked from further route/history/memory implementation until an already-authorized SHA-bound execution path validates `47139acab…`; do not mistake feature-branch `workflow_dispatch` for an available hosted default-branch dispatch.
-11. Keep #95 principles `NEEDS_CONFIRMATION` until legitimate conceptual/canonical source records are linked; Core Runtime PASS alone is insufficient authority.
-12. Keep #96 technically tested but non-canonical; geometry/evidence classes must remain traceable and cannot collapse scientific, historical-symbolic and KODEX-symbolic claims.
-13. Keep #97 on the same PR with RETURN narrow and JourneyState as the only semantic persistence authority; execute the new deterministic restore/replay contract plus existing JourneyState/bridge and `verify:kodex-memory` on exact head `01b0959…`, then require hosted/browser evidence before any salience/activation/decay expansion.
-14. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
-15. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+1. Keep #62 `eaf2924707...` as the sole verified Assembly OS / Deep Navigation correctness baseline.
+2. Complete actual human/creator readability review of the SHA-bound Golden packet before any Golden seed curation.
+3. Keep protected-art material review blocked while source bytes are withheld.
+4. Preserve #95/#96/#98 as bounded pre-Assembly/trace layers; technical PASS never establishes scientific, symbolic or canonical truth.
+5. Keep #97 bounded until exact-head test execution is actually observed; do not add a second memory system or passive semantic inference.
+6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
+7. If #99 is `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
+8. Make only the smallest changes justified by measured/browser/creator evidence.
+9. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
-## 2026-08-18 PROLOGUE #94 protected-source reconciliation checkpoint
+## 2026-08-19 Natural Law / Geometric Memory exact-head reconciliation checkpoint
 
-This checkpoint is historical where superseded by the later post-verification visibility checkpoint below.
+This checkpoint supersedes earlier operational truth where it conflicts.
 
-Live active-PR reconciliation found **PR #94 — `feat/kodex): PROLOGUE C0 observation-field evidence with protected PNG source`** as the newest bounded PROLOGUE lane. Its initial head `a5d5c69415ffcbf03472dc1e6af09c7fe259f2d7` used the exact protected Drive source `ojo_final-03-03.png` and produced five mechanically green lanes: Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION, AUTHORIAL_TRANSITION and PROLOGUE Visual Acceptance.
+### PR #97 — Semantic Memory evidence lane
 
-That green state was **not sufficient for artwork-integrity acceptance**. Code audit found that initial L0 directly applied invert/brightness/contrast/drop-shadow filtering plus source-layer transform/opacity animation while the PR simultaneously claimed no recolor. That contradicts the protected-original contract and is therefore a hard provenance/artwork-integrity defect independent of browser success.
+Current exact head: `caf0306d5d57c9d6481ab647ffa63b4f6c56bea8`.
 
-The repair was made on the **same PR #94 branch**, not in parallel architecture. Integrity-repair head:
+RETURN remains the verified narrow specimen store. JourneyState remains semantic persistence authority. The semantic-memory adapter remains stateless and accepts explicit concept/relation commits only; passive dwell/co-occurrence writes remain disallowed. The branch-local evidence workflow is present, but no exact-head workflow run is observable through the available GitHub evidence interface. No CI/browser PASS is inferred.
 
-```text
-760cea56950af5898b58175fea827e77bb2f522a
-```
+### PR #98 — Natural Law Kernel
 
-Only `src/styles/kodex-prologue-c0.css` changed for the final integrity correction. Protected L0 renders the complete byte-identical source with `background-size: contain`, original color values, `filter:none`, `opacity:1`, and no source-layer CSS transform or animation. The responsive observation/scan field remains a separate L1 `::after` layer and may animate; reduced-motion disables that response animation. Source bytes, route/state/Journey memory, Assembly OS contracts, assembler, seeds, scoring and Deep Route Engine remain unchanged.
+Exact head: `fc3545d5ff67452a5838ce9161f4e308825cf2a5`.
 
-The repaired `760cea…` head later completed the exact-head mechanical/browser lanes successfully. Direct artifact inspection then exposed a separate presentation defect: the eye remained nearly illegible because its predominantly dark linework was rendered on a black backing plane. The source itself remained correct and intact.
+KODEX Core Runtime #307 / `32190413923`: `SUCCESS`.
 
-## 2026-08-18 PROLOGUE #94 post-verification visibility checkpoint
+The Natural Law layer remains source-scoped and trace-only. Formal models, empirical evidence, historical-symbolic interpretation, KODEX symbolism and metaphor remain distinct. No universal sacred-geometry or analogous scientific claim is promoted by this PASS.
 
-This checkpoint supersedes earlier #94 operational truth where they conflict.
+### PR #99 — Geometric Memory Signature
 
-Exact-head `760cea56950af5898b58175fea827e77bb2f522a` completed all five required mechanical lanes on the same SHA:
+Exact head: `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa`.
 
-- Exact Asset Ingest `32108997535` — `SUCCESS`;
-- AUTHORIAL_STATE `32108997534` — `SUCCESS`;
-- AUTHORIAL_MOTION `32108997522` — `SUCCESS`;
-- AUTHORIAL_TRANSITION `32108997533` — `SUCCESS`;
-- Product Corridor `32108997562` — `SUCCESS`.
+KODEX Core Runtime #310 / `32191947398`: `SUCCESS`.
 
-AUTHORIAL_STATE artifact `9314310039` (`sha256:6d37bc148f375599b18943885011ea8103e5834dfffa22b1e6ab87a942e1de61`) was inspected directly across desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion. The protected source was complete and unmodified, but its dark linework was too close to the black art receptacle to carry the intended macro-silhouette. This is a **presentation/background defect**, not source-integrity failure and not permission to filter or recolor L0.
-
-The smallest same-PR repair is implemented at:
+Evidence artifact:
 
 ```text
-a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
+id: 9344588189
+provider digest: sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2
 ```
 
-Only `src/styles/kodex-prologue-c0.css` changed. The protected L0 rules remain unchanged: byte-identical source, `contain`, `filter:none`, `opacity:1`, no source transform and no source animation. The art receptacle supplies a neutral illuminated backing plane behind the transparent/dark-linework PNG; L1 scan behavior remains a separate environmental response layer. No source pixels, rights, provenance, route/state, Journey memory, Assembly OS contracts, assembler, seeds, scoring or Deep Route Engine changed.
+The SHA-bound browser report passes desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion. The bounded presets deterministically resolve to SEED_POINT, SPIRAL_DESCENT, CONSTELLATION, ORBIT_LOOP and HYBRID_WEAVE; rendered node count equals known visited-node count; observed edges only are shown; horizontal overflow is zero. The direct artifact audit confirms route-derived metrics and Natural Law provenance are visibly separated from the SVG manifestation.
 
-Truth state:
+This is `TECHNICALLY/BROWSER VERIFIED / CREATOR VERDICT NOT_RUN`. Do not wire #99 into RETURN or expand its topology vocabulary before human/creator review. The next semantic gate is exactly `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
 
-```text
-PR_94_VERIFIED_PREVIOUS_HEAD = 760cea56950af5898b58175fea827e77bb2f522a
-PREVIOUS_HEAD_MECHANICAL_BROWSER_GATES = PASS
-PREVIOUS_HEAD_DIRECT_VISUAL_AUDIT = REFINE_LOW_LEGIBILITY
-PR_94_CURRENT_HEAD = a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
-IMPLEMENTED_PRESENTATION_REPAIR = true
-CURRENT_HEAD_EXACT_BROWSER_REVALIDATED = true
-CURRENT_HEAD_EXACT_ASSET_INGEST = PASS_RUN_32113658844_ATTEMPT_2
-CURRENT_HEAD_CORRIDOR_STATE_MOTION_TRANSITION = PASS
-CURRENT_HEAD_AUTHORIAL_STATE_ARTIFACT = 9315992069
-CURRENT_HEAD_AUTHORIAL_STATE_ARTIFACT_DIGEST = sha256:b54a1cb73ba41258b319ee69243ead0ed9b7eeb6b256563b5aa5d21812e0af34
-CURRENT_HEAD_AUTHORIAL_STATE_CAPTURE_COUNT = 28/28_PASS
-CURRENT_HEAD_DIRECT_VISUAL_AUDIT = SPECIFIC_LOW_LEGIBILITY_DEFECT_CLOSED
-HUMAN_CURATOR_ACCEPTANCE = NOT_RUN
-CREATOR_VISUAL_ACCEPTANCE = NOT_RUN
-MERGED = false
-DEPLOYED = false
-CANON_PROMOTED = false
-```
+Truth boundary: `CORE RUNTIME PASS ≠ CREATOR MEANING ≠ CANON ≠ MERGE ≠ DEPLOY`.
 
-Exact-head revalidation is complete. Exact Asset Ingest, Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION and AUTHORIAL_TRANSITION all pass on `a89a53f…`. The AUTHORIAL_STATE manifest is SHA-bound to the same head and reports 28/28 PASS across seven scenes × four profiles; PROLOGUE desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion are viewport-bounded with no page-level width/height overflow. Direct review of those four PROLOGUE captures confirms that the neutral backing restores complete-eye readability while L0 remains intact, contained and original-color. This closes the specific low-legibility backing defect at browser/agent-audit level only.
-
-Next valid gate: human / creator `KEEP | REFINE | REJECT` for PROLOGUE #94. Do not add another presentation delta unless a new rendered defect is observed or explicitly requested.
-
-## 2026-08-18 Gesture Timeline #85 hosted-evidence reconciliation checkpoint
-
-PR **#85**, branch `feat/kodex-gesture-timeline-v0`, is a bounded Gesture Timeline proof that must consume #62 route/history/memory authority rather than fork it.
-
-Exact candidate head:
-
-```text
-97ec8b6074317b89bfc1c88c9861c7ed0541d86a
-```
-
-KODEX Core Runtime run **#295 / 31996002816** completed `SUCCESS` on that exact SHA. Evidence artifact `9276871039`, digest `sha256:27890d9b5281f3ac5846b35b4d84b78ae1ff8467750326a9085b00097eca11cc`. The hosted validate job passed scene/runtime, JourneyState/graph/memory/Visible Assembly, Assembly OS contracts, seeded factory benchmark, integrity audit, Astro build, Chromium/browser evidence, Deep Navigation vertical slice and rendered Golden Plate benchmark.
-
-This upgrades #85 from the prior local-preview-only evidence claim to **HOSTED EXACT-HEAD TESTED CANDIDATE**. It does not make #85 current Deep Navigation authority.
-
-Exact compare against current verified #62 head `eaf2924707cb72289be8e347cdd2f0d95b8602a7` is **DIVERGED**. Merge-base is `ebbf682d1c10f47785d0188f15be86ad610965f2`; #85 has 2 commits not present in current #62 and is 4 commits behind #62. Therefore hosted green proves this exact #85 candidate only and does not establish compatibility with the current #62 baseline.
-
-Next valid gate: bounded lineage reconciliation against current #62 before any further Gesture Timeline implementation, followed by SHA-bound revalidation of the reconciled candidate. No rebase, merge, cherry-pick, history rewrite, route/history/memory semantic change, deployment or canon promotion was performed or authorized by this checkpoint.
-
-No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
-
-## 2026-08-18 Gesture Timeline #85 current-base content reconciliation checkpoint
-
-This checkpoint supersedes the prior #85 operational state where they conflict.
-
-Current candidate head:
-
-```text
-57921287a5df989c322950e8009e58f3b600d81d
-```
-
-The prior collision audit established that #85's bounded Gesture Timeline changes touch only `scripts/kodex-gesture-timeline.test.mjs`, `src/lib/kodex/gesture-timeline.js`, and `src/pages/kodex/lab/deep-navigation.astro`, while the four newer commits on the verified #62 lineage touch separate benchmark/evidence/materiality surfaces. Those five current-#62 surfaces have now been reconciled into the existing #85 branch in place:
-
-- `.github/workflows/kodex-core-runtime.yml`;
-- `scripts/kodex-factory-benchmark.test.mjs`;
-- `src/lib/kodex/grammar/factory-benchmark.js`;
-- `src/pages/kodex/lab/golden-plates/[case_id].astro`;
-- `src/styles/kodex-golden-junction-materiality.css`.
-
-This carries forward the current Golden curator evidence capture, concentration/same-silhouette observability and G04 Junction presentation repair without creating a second schema, assembler, route engine, memory system or selection policy. The three Gesture Timeline files remain the only route-facing candidate delta.
-
-No force update, rebase, merge or history rewrite was performed. Git ancestry still reports the branch as diverged from current #62 and GitHub currently reports PR #85 as non-mergeable. Content alignment therefore does not imply integration/history readiness.
-
-At this checkpoint, GitHub records no workflow run and no combined status for exact head `57921287…`. The new head is therefore **IMPLEMENTED / CONTENT-RECONCILED / EXACT-HEAD REVALIDATION PENDING**, not browser verified. #62 `eaf2924707…` remains the sole Assembly OS / Deep Navigation correctness authority.
-
-Next valid gate: SHA-bound KODEX Core Runtime/browser evidence on `57921287…`. Do not extend Gesture Timeline route/history/memory behavior until that gate exists. If the run exposes an actual semantic or browser regression, repair only that defect in #85; do not fork the #62 contracts.
-
-Truth boundary: `CONTENT RECONCILIATION ≠ ANCESTRY RECONCILIATION ≠ CI PASS ≠ BROWSER ACCEPTANCE ≠ HUMAN/CURATOR ACCEPTANCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
-
-No merge, deploy, permission change, protected-source mutation, public preview publication or canon promotion is authorized by this checkpoint.
-
-## 2026-08-18 #62 administrative close + #85 CI-trigger checkpoint
-
-This checkpoint is historical where superseded by the 2026-08-19 trigger-topology correction below.
-
-`wenu-frontend#62` is now **CLOSED / NOT MERGED / NOT DEPLOYED**. Its exact verified head remains:
-
-```text
-eaf2924707cb72289be8e347cdd2f0d95b8602a7
-```
-
-KODEX Core Runtime #299 / `32086325540` remains `SUCCESS`, so #62's administrative closure does not revoke its role as the sole verified Assembly OS + Deep Navigation technical baseline. Closure does not imply merge, deploy, creator acceptance or canon promotion.
-
-Gesture Timeline PR #85 remains on the same bounded branch `feat/kodex-gesture-timeline-v0`. The prior tree-identical validation trigger `c66be0a3c17e6d229b34065f911e07583ab6d92f` scheduled no hosted workflow because it produced no qualifying changed-path delta and the existing `push` trigger was branch-restricted elsewhere. That was workflow non-scheduling, not CI failure.
-
-Current #85 head:
-
-```text
-47139acab8c01d0af1435ae7d66ce6af21495446
-```
-
-The only new semantic delta is CI tooling: `.github/workflows/kodex-core-runtime.yml` now declares `workflow_dispatch:` while preserving its existing validation job, path filters, permissions and runtime/browser gates. No Gesture Timeline behavior, route/history/memory semantics, ElementContract, PlateSpec, assembler, Golden selection policy, renderer, protected-artwork contract, scoring, permission or deployment surface changed.
-
-At this historical checkpoint GitHub recorded no completed SHA-bound KODEX Core Runtime/browser validation for `47139acab…`. The later trigger-topology audit establishes that feature-branch `workflow_dispatch` alone does not supply an available hosted manual-dispatch lane when the workflow is absent from the repository default branch.
-
-No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
-
-## 2026-08-18 Semantic IR #95 exact-head validation checkpoint
-
-PR #95 exact head:
-
-```text
-59b2d082845c42617dd5adea06c4107191d56fd3
-```
-
-KODEX Core Runtime #305 / `32157103501`: `SUCCESS`.
-
-This closes the exact-head technical validation blocker for the epistemic-status repair. The Semantic IR remains a bounded pre-Assembly adapter over the existing Assembly OS:
-
-```text
-QUESTION / PRINCIPLE → SEMANTIC IR → existing Assembly OS → existing PlateSpec → existing renderer
-```
-
-The three demonstration principles remain explicitly non-canonical pending real conceptual provenance:
-
-```text
-IMPERMANENCE = NEEDS_CONFIRMATION
-INTERDEPENDENCE = NEEDS_CONFIRMATION
-OBSERVER = NEEDS_CONFIRMATION
-```
-
-The same `NEEDS_CONFIRMATION` state is preserved at top-level status, epistemic status and manifestation payload status. Exact-head Core Runtime PASS proves implementation compatibility; it does not create conceptual/canonical provenance and does not authorize `CANON_CANDIDATE` promotion.
-
-Drive search after the successful run did not locate an independent authoritative canon/corpus record for `IMPERMANENCE` or `INTERDEPENDENCE`; returned hits resolved back to the Assembly OS/implementation trail. Therefore no source IDs were fabricated and no provenance registry was created.
-
-Truth boundary:
-
-`IMPLEMENTATION PROVENANCE ≠ CONCEPTUAL PROVENANCE`; `GREEN CI ≠ CANON AUTHORITY`; `NEEDS_CONFIRMATION ≠ REJECTED`; `TECHNICALLY TESTED ≠ CREATOR ACCEPTED ≠ MERGED ≠ DEPLOYED ≠ CANON`.
-
-Next valid action: search/link legitimate existing canon or corpus source IDs for these principles if such records exist. If no authoritative record exists, preserve `NEEDS_CONFIRMATION`. Do not infer canon from fixture implementation and do not create parallel provenance architecture.
-
-No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
-
-## 2026-08-19 Gesture Timeline #85 trigger-topology correction
-
-Current head remains:
-
-```text
-47139acab8c01d0af1435ae7d66ce6af21495446
-```
-
-The feature branch contains `workflow_dispatch:` in the Core Runtime workflow, but that declaration is not an available hosted manual-dispatch path by itself because the workflow is absent from the repository default branch. A reversible close/reopen scheduling test on the same exact head produced no workflow run. This is **workflow non-scheduling**, not CI failure, browser rejection or product failure.
-
-Current #85 state:
-
-```text
-CONTENT_RECONCILED = true
-GIT_HISTORY_DIVERGED = true
-HOSTED_EXACT_HEAD_VALIDATION = BLOCKED_BY_TRIGGER_TOPOLOGY
-CI_FAILURE = false
-BROWSER_REJECTION = false
-MERGED = false
-DEPLOYED = false
-CANON_PROMOTED = false
-```
-
-Do not mutate Gesture Timeline product semantics merely to manufacture an Actions run, do not place or merge CI topology into default without explicit authority, and do not extend route/history/memory until a SHA-bound authorized execution lane validates the current head.
-
-## 2026-08-19 Geometric Transduction #96 exact-head verification
-
-PR #96 remains a bounded child of the verified Semantic IR #95 lineage.
-
-Exact head:
-
-```text
-da475dce6688fdbe0511a6d71efeab734f40908e
-```
-
-KODEX Core Runtime #306 / `32169696848`: `SUCCESS`.
-
-The verified delta adds a 12-primitive geometric-transduction registry, governed geometry metadata and compatibility validation while keeping geometry in Semantic Trace rather than changing the Assembly OS input dialect. It does not create a renderer, route engine, memory system, ElementContract dialect, PlateSpec dialect or canon authority.
-
-The three demonstration principles remain `NEEDS_CONFIRMATION`. Formal mathematical geometry, empirical physical phenomena, historical/symbolic interpretation, KODEX symbolism and speculation remain distinct truth categories. Technical PASS does not establish creator semantic fidelity or canonical meaning.
-
-## 2026-08-19 Semantic Memory #97 authority collision
-
-PR #97 prior head:
-
-```text
-9986351a1c795295e3672e35c7c2f557cb461e1d
-```
-
-Base:
-
-```text
-main @ 08daace1567752ec112f8b2ac1bdc0b84d6f8114
-```
-
-At that checkpoint GitHub recorded no exact-head hosted workflow run for the SHA.
-
-The implementation then evolved `src/kodex/return/memory.js` into a semantic graph with activation/salience/recurrence, association windows, temporal decay, timestamps and dwell-derived events. That conflicted with the verified #62 baseline contract for the same file, which explicitly declares it a **minimal RETURN specimen store, not the canonical journey model**, and intentionally excludes dwell, timestamps and activity scores.
-
-That checkpoint is superseded by the reconciliation checkpoint below.
-
-## 2026-08-19 Semantic Memory #97 authority reconciliation — current
-
-Current PR #97 exact head at that checkpoint:
-
-```text
-f89353d39c65f4e6ace5d86a57aca21f27479171
-```
-
-Current base remains:
-
-```text
-main @ 08daace1567752ec112f8b2ac1bdc0b84d6f8114
-```
-
-The storage-authority collision is closed at implementation/content level:
-
-- `src/kodex/return/memory.js` is restored to verified #62 blob `a07ae4d3ed89b3679ed6f2015ea883bd203916b1` and again remains a narrow RETURN specimen store;
-- only `view`, `effect` and `cycle` evidence is accepted by that store; `signal`, `dwell` and `concept` writes do not persist there;
-- the verified #62 `interaction-events.ts` and `journey-memory-bridge.ts` blobs are present in #97;
-- the verified #62 JourneyState kernel plus its JourneyState and memory-bridge contract-test blobs are normalized directly to the #62 blobs;
-- `src/kodex/memory/concepts.js` remains a pure candidate vocabulary/transformation layer rather than a persistence authority;
-- `semantic-memory-journey-adapter.js` is stateless and emits existing organism-action records only for explicit concept/relation commits;
-- passive semantic observation/co-occurrence produces no persisted JourneyState action;
-- the RETURN/adapter isolated contract executes `PASS` locally.
-
-A reversible PR-base retarget to the verified #62 branch was tested after blob normalization. GitHub expanded #97 to 43 changed files and reported the PR non-mergeable because the histories are substantially diverged. The base was immediately restored to `main`. This proves ancestry reconciliation cannot be treated as a cheap PR-metadata fix and must not be forced through a mega-merge/rebase.
-
-Truth at that checkpoint:
-
-```text
-RETURN_AUTHORITY_COLLISION = CLOSED_AT_IMPLEMENTATION_BOUNDARY
-JOURNEYSTATE_AUTHORITY_CONTENT = RECONCILED
-EXPLICIT_SEMANTIC_ADAPTER = IMPLEMENTED_NO_STORAGE_NO_SCORING
-PASSIVE_DWELL_OR_COOCCURRENCE_PERSISTENCE = DISALLOWED
-ANCESTRY = DIVERGED
-LOCAL_RETURN_ADAPTER_CONTRACT = PASS
-HOSTED_EXACT_HEAD_CI_BROWSER = NOT_RUN
-MERGED = false
-DEPLOYED = false
-CANON_PROMOTED = false
-```
-
-No salience/activation/decay, hidden engagement scoring, inferred personality/identity/spirituality, or further OBSERVE V2 semantic-memory expansion is authorized before exact-head JourneyState/bridge tests, migration/replay determinism and hosted/browser evidence are green. Content reconciliation does not equal ancestry reconciliation; local PASS does not equal hosted CI/browser acceptance; implementation does not create canon.
-
-No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion occurred in this checkpoint.
-
-## 2026-08-19 Semantic Memory #97 deterministic restore/replay contract — current
-
-This checkpoint supersedes the Semantic Memory lane/head above where they conflict.
-
-Current PR #97 exact head:
-
-```text
-01b0959b629921221afccef04f967aa030e3bd3c
-```
-
-The only new delta from the reconciled runtime content is a contract-test addition in `src/lib/kodex/runtime/journey-memory-bridge.test.ts`. Runtime semantics, persistence authority and RETURN remain unchanged.
-
-The test starts from an already-persisted JourneyState snapshot, restores the same snapshot into two independent stores, then replays the same explicit concept/relation sequence through the existing organism-action bridge. It requires:
-
-- identical final JourneyState across both replays;
-- byte-identical serialized JourneyState persistence across both replays;
-- duplicate semantic event identities not to double-write after restore;
-- committed actions to remain exactly `remember`, `concept:CX-003:MEMORY`, `relation:CX-003:CX-001`.
-
-This is the migration/replay contract KODEX needs **without introducing a migration store**. RETURN is not used as semantic migration authority. No salience, decay, dwell, engagement scoring, hidden inference, route/history semantics, ElementContract, PlateSpec, assembler, artwork or deployment surface changed.
-
-Current truth:
-
-```text
-PR_97_CURRENT_HEAD = 01b0959b629921221afccef04f967aa030e3bd3c
-RETURN_AUTHORITY_COLLISION = CLOSED_AT_IMPLEMENTATION_BOUNDARY
-JOURNEYSTATE_AUTHORITY_CONTENT = RECONCILED
-EXPLICIT_SEMANTIC_ADAPTER = IMPLEMENTED_NO_STORAGE_NO_SCORING
-DETERMINISTIC_RESTORE_REPLAY_TEST_CONTRACT = IMPLEMENTED
-EXACT_HEAD_TEST_EXECUTION = NOT_RUN
-HOSTED_EXACT_HEAD_CI_BROWSER = NOT_RUN
-ANCESTRY = DIVERGED
-MERGED = false
-DEPLOYED = false
-CANON_PROMOTED = false
-```
-
-Next valid gate: execute existing JourneyState + journey-memory-bridge contracts and `verify:kodex-memory` on exact head `01b0959…` through an already-authorized lane. If and only if that exact head passes, obtain browser/Core Runtime evidence before considering any further Semantic Memory behavior. Do not alter product semantics merely to manufacture CI scheduling.
-
-Truth boundary: `TEST CONTRACT IMPLEMENTED ≠ TEST EXECUTED ≠ LOCAL PASS ≠ HOSTED CI PASS ≠ BROWSER ACCEPTANCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
-
-No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion occurred in this checkpoint.
+No merge, deploy, permission change, protected Ocín original mutation, public-preview publication or irreversible canon promotion occurred in this reconciliation.
