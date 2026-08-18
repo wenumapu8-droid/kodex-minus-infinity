@@ -1,6 +1,6 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-18`  
+Last updated: `2026-08-19`  
 Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV TESTED CANDIDATE / SEVEN-ROOM PRODUCT CORRIDOR TESTED / CURATION ACTIVE`
 
 ## Authority boundary
@@ -198,8 +198,10 @@ The presentation-only residual concentric/orbital scaffold defect is closed at a
 
 - PR #64 Visual Assembly is proposal/governance, not Assembly OS runtime authority.
 - PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `47139acab8c01d0af1435ae7d66ce6af21495446` has current-#62 content surfaces reconciled and a CI `workflow_dispatch` trigger available, while Git ancestry remains diverged/non-mergeable and exact-head Core Runtime/browser revalidation remains pending. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / CI TRIGGER REPAIRED / EXACT-HEAD REVALIDATION PENDING`, not as Assembly/Deep Navigation authority.
+- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `47139acab8c01d0af1435ae7d66ce6af21495446` has current-#62 content surfaces reconciled, while Git ancestry remains diverged/non-mergeable and exact-head Core Runtime/browser revalidation remains pending. `workflow_dispatch` exists only on the feature branch and therefore does not provide a hosted manual-dispatch path from the default branch. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / HOSTED EXACT-HEAD VALIDATION BLOCKED BY TRIGGER TOPOLOGY`, not as Assembly/Deep Navigation authority.
 - PR #95 Semantic IR is a bounded pre-Assembly adapter over the existing Assembly OS. Exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`; `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance does not establish conceptual/canonical provenance. Treat #95 as `TECHNICALLY TESTED PRE-ASSEMBLY CANDIDATE / CONCEPTUAL PROVENANCE NEEDS_CONFIRMATION`, not as canon authority.
+- PR #96 Geometric Transduction is a bounded child of #95. Exact head `da475dce6688fdbe0511a6d71efeab734f40908e` completed Core Runtime #306 / `32169696848` with `SUCCESS`. Its geometry data remains Semantic Trace only and does not create a new Assembly OS input dialect. The three principle fixtures remain `NEEDS_CONFIRMATION`; technical compatibility does not canonize geometry-symbolic meaning.
+- PR #97 Semantic Memory v2 is currently based on `main`, not on the verified #62 route/history/memory substrate. Exact head `9986351a1c795295e3672e35c7c2f557cb461e1d` has no hosted exact-head workflow run. Its current use of `src/kodex/return/memory.js` conflicts with the #62 contract that keeps that file a minimal RETURN specimen store and explicitly excludes dwell/timestamps/activity scoring. Treat #97 as `BOUNDED EXPERIMENT / BASELINE-MEMORY AUTHORITY COLLISION / RECONCILIATION REQUIRED`, not as a new memory authority.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 - Other volumetric/RGX/Crystal Receiver/visual-system lanes remain specialized evidence/substrate work. A green lab gate does not make them default architecture or visual canon.
@@ -221,19 +223,29 @@ VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...; CLOS
 → IF REVIEW CONFIRMS BENCHMARK REPETITION: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING IDs ONLY
 → ONLY THEN CONSIDER BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
 
-SEMANTIC IR LANE:
+SEMANTIC IR / GEOMETRIC TRANSDUCTION LANE:
 #95 @ 59b2d082845c42617dd5adea06c4107191d56fd3 = CORE RUNTIME #305 SUCCESS
-→ TECHNICALLY TESTED PRE-ASSEMBLY CANDIDATE
+→ #96 @ da475dce6688fdbe0511a6d71efeab734f40908e = CORE RUNTIME #306 SUCCESS
+→ BOTH REMAIN BOUNDED PRE-ASSEMBLY / TRACE-LAYER CANDIDATES
 → IMPERMANENCE / INTERDEPENDENCE / OBSERVER REMAIN NEEDS_CONFIRMATION
 → LINK LEGITIMATE EXISTING CANON/CORPUS SOURCE IDS IF FOUND
-→ IF NO AUTHORITATIVE RECORD EXISTS, PRESERVE NEEDS_CONFIRMATION
-→ DO NOT INFER CANON FROM IMPLEMENTATION OR CREATE A PARALLEL PROVENANCE SYSTEM
+→ DO NOT INFER CANON OR SCIENTIFIC TRUTH FROM IMPLEMENTATION / GEOMETRIC FORM
+
+SEMANTIC MEMORY LANE:
+#97 @ 9986351a1c795295e3672e35c7c2f557cb461e1d = BASED ON MAIN / NO EXACT-HEAD HOSTED RUN
+→ CURRENT IMPLEMENTATION COLLIDES WITH #62 RETURN-SPECIMEN MEMORY BOUNDARY
+→ RECONCILE THE SAME PR ONTO CURRENT JOURNEYSTATE / GRAPH / MEMORY AUTHORITY
+→ PRESERVE NARROW RETURN SPECIMEN ADAPTER
+→ TREAT DWELL/TIME WEIGHTING AS VERSIONED HYPOTHESIS, NOT ENGAGEMENT SCORE OR CANON
+→ THEN RUN MIGRATION + DETERMINISM + EXACT-HEAD CORE RUNTIME/BROWSER EVIDENCE
+→ NO OBSERVE V2 MEMORY EXPANSION BEFORE THAT GATE
 
 GESTURE TIMELINE LANE:
-#85 @ 47139acab8c01d0af1435ae7d66ce6af21495446 = CURRENT-#62 CONTENT RECONCILED + CI TRIGGER REPAIRED
+#85 @ 47139acab8c01d0af1435ae7d66ce6af21495446 = CURRENT-#62 CONTENT RECONCILED
 → GIT HISTORY REMAINS DIVERGED / CURRENTLY NON-MERGEABLE
-→ EXACT-HEAD CI/BROWSER REVALIDATION PENDING
-→ NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION UNTIL THAT GATE EXISTS
+→ HOSTED EXACT-HEAD VALIDATION BLOCKED BY CURRENT TRIGGER TOPOLOGY
+→ FEATURE-BRANCH workflow_dispatch DOES NOT CREATE DEFAULT-BRANCH MANUAL DISPATCH AUTHORITY
+→ NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION UNTIL SHA-BOUND EVIDENCE EXISTS
 
 PRODUCT LANE:
 VERIFIED TRANSITION SUBSTRATE (#86)
@@ -265,16 +277,18 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
 8. Require #94 exact-head browser evidence after every presentation change; current head `a89a53f…` satisfies that gate.
 9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
-10. Keep #85 as a bounded Gesture Timeline candidate only; current #62 content surfaces and the CI trigger are reconciled, but require SHA-bound exact-head CI/browser revalidation before any further route/history/memory implementation.
+10. Keep #85 bounded and blocked from further route/history/memory implementation until an already-authorized SHA-bound execution path validates `47139acab…`; do not mistake feature-branch `workflow_dispatch` for an available hosted default-branch dispatch.
 11. Keep #95 principles `NEEDS_CONFIRMATION` until legitimate conceptual/canonical source records are linked; Core Runtime PASS alone is insufficient authority.
-12. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
-13. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+12. Keep #96 technically tested but non-canonical; geometry/evidence classes must remain traceable and cannot collapse scientific, historical-symbolic and KODEX-symbolic claims.
+13. Reconcile #97 inside the same PR with the existing JourneyState/graph/memory authority before any semantic-memory expansion; preserve the narrow RETURN specimen-store boundary.
+14. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
+15. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-18 PROLOGUE #94 protected-source reconciliation checkpoint
 
 This checkpoint is historical where superseded by the later post-verification visibility checkpoint below.
 
-Live active-PR reconciliation found **PR #94 — `feat(kodex): PROLOGUE C0 observation-field evidence with protected PNG source`** as the newest bounded PROLOGUE lane. Its initial head `a5d5c69415ffcbf03472dc1e6af09c7fe259f2d7` used the exact protected Drive source `ojo_final-03-03.png` and produced five mechanically green lanes: Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION, AUTHORIAL_TRANSITION and PROLOGUE Visual Acceptance.
+Live active-PR reconciliation found **PR #94 — `feat/kodex): PROLOGUE C0 observation-field evidence with protected PNG source`** as the newest bounded PROLOGUE lane. Its initial head `a5d5c69415ffcbf03472dc1e6af09c7fe259f2d7` used the exact protected Drive source `ojo_final-03-03.png` and produced five mechanically green lanes: Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION, AUTHORIAL_TRANSITION and PROLOGUE Visual Acceptance.
 
 That green state was **not sufficient for artwork-integrity acceptance**. Code audit found that initial L0 directly applied invert/brightness/contrast/drop-shadow filtering plus source-layer transform/opacity animation while the PR simultaneously claimed no recolor. That contradicts the protected-original contract and is therefore a hard provenance/artwork-integrity defect independent of browser success.
 
@@ -388,7 +402,7 @@ No merge, deploy, permission change, protected-source mutation, public preview p
 
 ## 2026-08-18 #62 administrative close + #85 CI-trigger checkpoint
 
-This checkpoint supersedes earlier operational statements about the live PR state of #62 and the current #85 head where they conflict.
+This checkpoint is historical where superseded by the 2026-08-19 trigger-topology correction below.
 
 `wenu-frontend#62` is now **CLOSED / NOT MERGED / NOT DEPLOYED**. Its exact verified head remains:
 
@@ -408,24 +422,7 @@ Current #85 head:
 
 The only new semantic delta is CI tooling: `.github/workflows/kodex-core-runtime.yml` now declares `workflow_dispatch:` while preserving its existing validation job, path filters, permissions and runtime/browser gates. No Gesture Timeline behavior, route/history/memory semantics, ElementContract, PlateSpec, assembler, Golden selection policy, renderer, protected-artwork contract, scoring, permission or deployment surface changed.
 
-At this checkpoint GitHub records no completed SHA-bound KODEX Core Runtime/browser validation for `47139acab…`. Therefore the correct #85 state is:
-
-```text
-CI_TRIGGER_REPAIRED = true
-CONTENT_RECONCILED = true
-GIT_HISTORY_DIVERGED = true
-MERGEABLE = false
-EXACT_HEAD_REVALIDATION = PENDING
-BROWSER_ACCEPTANCE = NOT_CLAIMED
-CREATOR_ACCEPTANCE = NOT_RUN
-MERGED = false
-DEPLOYED = false
-CANON_PROMOTED = false
-```
-
-Do not extend #85 route/history/memory implementation until exact-head evidence exists. The next valid gate is SHA-bound Core Runtime/browser evidence on `47139acab8c01d0af1435ae7d66ce6af21495446`; if that evidence exposes a measured defect, repair only that defect on #85.
-
-Truth boundary: `PR CLOSED ≠ MERGED ≠ DEPLOYED ≠ CANON`; `CI TRIGGER AVAILABLE ≠ CI PASS ≠ BROWSER ACCEPTANCE ≠ HUMAN/CURATOR ACCEPTANCE ≠ CREATOR ACCEPTANCE`.
+At this historical checkpoint GitHub recorded no completed SHA-bound KODEX Core Runtime/browser validation for `47139acab…`. The later trigger-topology audit establishes that feature-branch `workflow_dispatch` alone does not supply an available hosted manual-dispatch lane when the workflow is absent from the repository default branch.
 
 No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
 
@@ -464,3 +461,68 @@ Truth boundary:
 Next valid action: search/link legitimate existing canon or corpus source IDs for these principles if such records exist. If no authoritative record exists, preserve `NEEDS_CONFIRMATION`. Do not infer canon from fixture implementation and do not create parallel provenance architecture.
 
 No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon decision occurred in this checkpoint.
+
+## 2026-08-19 Gesture Timeline #85 trigger-topology correction
+
+Current head remains:
+
+```text
+47139acab8c01d0af1435ae7d66ce6af21495446
+```
+
+The feature branch contains `workflow_dispatch:` in the Core Runtime workflow, but that declaration is not an available hosted manual-dispatch path by itself because the workflow is absent from the repository default branch. A reversible close/reopen scheduling test on the same exact head produced no workflow run. This is **workflow non-scheduling**, not CI failure, browser rejection or product failure.
+
+Current #85 state:
+
+```text
+CONTENT_RECONCILED = true
+GIT_HISTORY_DIVERGED = true
+HOSTED_EXACT_HEAD_VALIDATION = BLOCKED_BY_TRIGGER_TOPOLOGY
+CI_FAILURE = false
+BROWSER_REJECTION = false
+MERGED = false
+DEPLOYED = false
+CANON_PROMOTED = false
+```
+
+Do not mutate Gesture Timeline product semantics merely to manufacture an Actions run, do not place or merge CI topology into default without explicit authority, and do not extend route/history/memory until a SHA-bound authorized execution lane validates the current head.
+
+## 2026-08-19 Geometric Transduction #96 exact-head verification
+
+PR #96 remains a bounded child of the verified Semantic IR #95 lineage.
+
+Exact head:
+
+```text
+da475dce6688fdbe0511a6d71efeab734f40908e
+```
+
+KODEX Core Runtime #306 / `32169696848`: `SUCCESS`.
+
+The verified delta adds a 12-primitive geometric-transduction registry, governed geometry metadata and compatibility validation while keeping geometry in Semantic Trace rather than changing the Assembly OS input dialect. It does not create a renderer, route engine, memory system, ElementContract dialect, PlateSpec dialect or canon authority.
+
+The three demonstration principles remain `NEEDS_CONFIRMATION`. Formal mathematical geometry, empirical physical phenomena, historical/symbolic interpretation, KODEX symbolism and speculation remain distinct truth categories. Technical PASS does not establish creator semantic fidelity or canonical meaning.
+
+## 2026-08-19 Semantic Memory #97 authority collision
+
+PR #97 current head:
+
+```text
+9986351a1c795295e3672e35c7c2f557cb461e1d
+```
+
+Base:
+
+```text
+main @ 08daace1567752ec112f8b2ac1bdc0b84d6f8114
+```
+
+GitHub currently records no exact-head hosted workflow run for this SHA.
+
+The current implementation evolves `src/kodex/return/memory.js` into a semantic graph with activation/salience/recurrence, association windows, temporal decay, timestamps and dwell-derived events. That conflicts with the verified #62 baseline contract for the same file, which explicitly declares it a **minimal RETURN specimen store, not the canonical journey model**, and intentionally excludes dwell, timestamps and activity scores.
+
+This is an authority/lineage collision, not a rejection of semantic memory as a direction. The legitimate next move is to advance **the same #97 PR** by reconciling it onto the verified #62/current JourneyState/graph/memory substrate, preserving the narrow RETURN specimen adapter, and locating semantic concept/association state inside the existing authoritative memory layer or a bounded adapter owned by that layer.
+
+Any dwell/time weighting must remain a versioned implementation hypothesis, never hidden engagement scoring or canon truth. Passive pointer movement may not make consequential personal-meaning or identity claims. After reconciliation, require migration compatibility, deterministic trace tests and exact-head Core Runtime/browser evidence before further OBSERVE V2 semantic-memory wiring.
+
+No merge, deploy, permission change, protected Ocín original mutation, public preview publication or irreversible canon promotion is authorized by these checkpoints.
