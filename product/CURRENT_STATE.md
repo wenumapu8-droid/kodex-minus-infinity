@@ -167,7 +167,43 @@ Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION and AUTHORIAL_TRANSITION are
 
 Prior proofs **#88** and **#89** are **CLOSED / NOT MERGED** and remain historical evidence, not implementation authority.
 
-There is still no accepted live PROLOGUE KOD-75 proof. Any next organism-differentiation proof must start from the mechanically closed #86 lineage and reuse existing CRT/router/state/memory systems. The target remains OBSERVATION / ACQUISITION identity without ring-as-default. Do not open another renderer or route architecture to continue the visual experiment.
+Their useful evidence remains bounded:
+
+- #88 = `REFINE` at implementation/curatorial-audit level: coupling improved, but the dominant circular/woven-ring read persisted, particularly on mobile;
+- #89 = source hypothesis rejected: `arch-21` remained macroscopically circular and did not justify a real CRT remap.
+
+A new bounded successor proof now exists as **PR #93**, branch `feat/kodex-prologue-acquisition-field-v1`, based directly on the mechanically closed #86 lineage.
+
+Current exact candidate head:
+
+```text
+2b5834ed97a8613972a482fd7bc7fabbdeb9c63b
+```
+
+Status at this checkpoint:
+
+```text
+IMPLEMENTED_CANDIDATE = true
+EXACT_HEAD_BROWSER_VERIFIED = false
+AGENT_VISUAL_AUDIT = NOT_RUN
+HUMAN_CURATOR_ACCEPTANCE = NOT_RUN
+CREATOR_VISUAL_ACCEPTANCE = NOT_RUN
+MERGED = false
+DEPLOYED = false
+```
+
+The candidate changes only `src/styles/kodex-prologue-product.css`. It keeps protected `bw-02 / FERTILE VOID` and the existing `observe` CRT/sourceSelector path unchanged. The bounded presentation hypothesis is to make one rectilinear OBSERVATION / ACQUISITION volume plus one scan sweep the macro spatial read, while keeping the authored source contained inside its existing square field. Mobile uses the same coupled field and reduced-motion freezes the scan cue instead of depending on decorative motion.
+
+No new renderer, shader, route engine, state machine, Journey memory, ElementContract, PlateSpec, assembler, source mapping or protected-original mutation is introduced.
+
+At the time of this Current State update, exact-head runs are in progress:
+
+- Product Corridor `32104657004`;
+- AUTHORIAL_STATE `32104657003`;
+- AUTHORIAL_MOTION `32104657022`;
+- AUTHORIAL_TRANSITION `32104657007`.
+
+Do not promote PR #93 beyond `IMPLEMENTED CANDIDATE / VERIFICATION IN PROGRESS` until those exact-head gates and fresh rendered evidence close. If mechanical evidence passes, compare fresh desktop 1440×900, mobile 390×844 / 412×915 and reduced-motion captures against #86 and #88. The authorial result remains `KEEP | REFINE | REJECT`.
 
 ## KOD-76 / PR #90 — MACHINE
 
@@ -215,10 +251,11 @@ VERIFIED TRANSITION SUBSTRATE (#86)
 → CREATOR KEEP | REFINE | REJECT
 → NO FURTHER MACHINE DELTA WITHOUT OBSERVED/REQUESTED NEED
 
-UNRESOLVED AUTHORIAL LANE:
-PROLOGUE KOD-75 HAS NO ACCEPTED LIVE PROOF
-→ NEXT PROLOGUE PROOF MUST REUSE #86 SUBSTRATE
-→ OBSERVATION / ACQUISITION IDENTITY WITHOUT RING-AS-DEFAULT
+AUTHORIAL LANE:
+PROLOGUE #88 REFINE + #89 SOURCE HYPOTHESIS REJECTED
+→ ACTIVE BOUNDED PROOF #93 @ 2b5834ed97... ON VERIFIED #86 SUBSTRATE
+→ EXACT-HEAD CORRIDOR / STATE / MOTION / TRANSITION VERIFICATION
+→ DIRECT DESKTOP / MOBILE / REDUCED VISUAL AUDIT AGAINST #86 + #88
 → CREATOR KEEP | REFINE | REJECT
 
 NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
@@ -232,8 +269,9 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 4. Curate Golden fixtures/seeds with existing registered IDs only if human/creator review confirms the benchmark needs broader representation.
 5. Keep protected-art material review blocked while source bytes are withheld.
 6. Keep #86 as the verified transition substrate and #90 as verified MACHINE evidence while creator acceptance remains separate.
-7. Treat closed #88/#89 as evidence, not active PROLOGUE implementation authority.
-8. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
-9. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+7. Treat closed #88/#89 as evidence and PR #93 as the only active bounded KOD-75 PROLOGUE proof.
+8. Require exact-head browser evidence before changing #93 from implemented candidate to browser-verified candidate.
+9. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
+10. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
