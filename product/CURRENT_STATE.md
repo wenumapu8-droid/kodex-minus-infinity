@@ -198,7 +198,7 @@ The presentation-only residual concentric/orbital scaffold defect is closed at a
 
 - PR #64 Visual Assembly is proposal/governance, not Assembly OS runtime authority.
 - PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` is hosted exact-head tested by KODEX Core Runtime #295 / `31996002816` with evidence artifact `9276871039`, but it is **DIVERGED** from current verified #62: merge-base `ebbf682d1c10f47785d0188f15be86ad610965f2`, 2 commits ahead / 4 commits behind. Treat #85 as `HOSTED EXACT-HEAD TESTED CANDIDATE / LINEAGE RECONCILIATION REQUIRED`, not as current Assembly/Deep Navigation authority.
+- PR #85 Gesture Timeline must consume #62 route/history/memory authority rather than fork it. Its previous exact head `97ec8b6074317b89bfc1c88c9861c7ed0541d86a` remains hosted exact-head tested by KODEX Core Runtime #295 / `31996002816`; current head `57921287a5df989c322950e8009e58f3b600d81d` has reconciled the five non-overlapping current-#62 benchmark/evidence/materiality surfaces in place while preserving the three bounded Gesture Timeline changes. Git ancestry remains diverged and the draft is currently non-mergeable; no exact-head workflow status is yet recorded for the new head. Treat #85 as `CONTENT-RECONCILED CANDIDATE / HISTORY DIVERGED / EXACT-HEAD REVALIDATION PENDING`, not as Assembly/Deep Navigation authority.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 - Other volumetric/RGX/Crystal Receiver/visual-system lanes remain specialized evidence/substrate work. A green lab gate does not make them default architecture or visual canon.
@@ -221,10 +221,10 @@ VERIFIED ASSEMBLY CONTRACT / ROUTE / BROWSER BASELINE (#62 @ eaf2924707...)
 → ONLY THEN CONSIDER BOUNDED PRESENTATION OR SELECTION REPAIRS SUPPORTED BY OBSERVED DEFECTS
 
 GESTURE TIMELINE LANE:
-#85 @ 97ec8b6074317b89bfc1c88c9861c7ed0541d86a = HOSTED EXACT-HEAD TESTED
-→ DIVERGED FROM CURRENT #62 (MERGE-BASE ebbf682d..., 2 AHEAD / 4 BEHIND)
-→ LINEAGE RECONCILIATION REQUIRED BEFORE FURTHER IMPLEMENTATION
-→ RE-RUN SHA-BOUND EVIDENCE AFTER RECONCILIATION
+#85 @ 57921287a5df989c322950e8009e58f3b600d81d = CURRENT-#62 CONTENT RECONCILED
+→ GIT HISTORY REMAINS DIVERGED / CURRENTLY NON-MERGEABLE
+→ EXACT-HEAD CI/BROWSER REVALIDATION PENDING
+→ NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION UNTIL THAT GATE EXISTS
 
 PRODUCT LANE:
 VERIFIED TRANSITION SUBSTRATE (#86)
@@ -256,7 +256,7 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
 8. Require #94 exact-head browser evidence after every presentation change; current head `a89a53f…` satisfies that gate.
 9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
-10. Keep #85 as a tested Gesture Timeline candidate only; reconcile its lineage against current #62 before any further route/history/memory implementation and revalidate the reconciled exact head.
+10. Keep #85 as a bounded Gesture Timeline candidate only; its current #62 non-overlapping content surfaces are reconciled, but require SHA-bound exact-head CI/browser revalidation before any further route/history/memory implementation and do not treat content alignment as merge/history readiness.
 11. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
 12. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
@@ -345,3 +345,33 @@ Exact compare against current verified #62 head `eaf2924707cb72289be8e347cdd2f0d
 Next valid gate: bounded lineage reconciliation against current #62 before any further Gesture Timeline implementation, followed by SHA-bound revalidation of the reconciled candidate. No rebase, merge, cherry-pick, history rewrite, route/history/memory semantic change, deployment or canon promotion was performed or authorized by this checkpoint.
 
 No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
+
+## 2026-08-18 Gesture Timeline #85 current-base content reconciliation checkpoint
+
+This checkpoint supersedes the prior #85 operational state where they conflict.
+
+Current candidate head:
+
+```text
+57921287a5df989c322950e8009e58f3b600d81d
+```
+
+The prior collision audit established that #85's bounded Gesture Timeline changes touch only `scripts/kodex-gesture-timeline.test.mjs`, `src/lib/kodex/gesture-timeline.js`, and `src/pages/kodex/lab/deep-navigation.astro`, while the four newer commits on the verified #62 lineage touch separate benchmark/evidence/materiality surfaces. Those five current-#62 surfaces have now been reconciled into the existing #85 branch in place:
+
+- `.github/workflows/kodex-core-runtime.yml`;
+- `scripts/kodex-factory-benchmark.test.mjs`;
+- `src/lib/kodex/grammar/factory-benchmark.js`;
+- `src/pages/kodex/lab/golden-plates/[case_id].astro`;
+- `src/styles/kodex-golden-junction-materiality.css`.
+
+This carries forward the current Golden curator evidence capture, concentration/same-silhouette observability and G04 Junction presentation repair without creating a second schema, assembler, route engine, memory system or selection policy. The three Gesture Timeline files remain the only route-facing candidate delta.
+
+No force update, rebase, merge or history rewrite was performed. Git ancestry still reports the branch as diverged from current #62 and GitHub currently reports PR #85 as non-mergeable. Content alignment therefore does not imply integration/history readiness.
+
+At this checkpoint, GitHub records no workflow run and no combined status for exact head `57921287…`. The new head is therefore **IMPLEMENTED / CONTENT-RECONCILED / EXACT-HEAD REVALIDATION PENDING**, not browser verified. #62 `eaf2924707…` remains the sole Assembly OS / Deep Navigation correctness authority.
+
+Next valid gate: SHA-bound KODEX Core Runtime/browser evidence on `57921287…`. Do not extend Gesture Timeline route/history/memory behavior until that gate exists. If the run exposes an actual semantic or browser regression, repair only that defect in #85; do not fork the #62 contracts.
+
+Truth boundary: `CONTENT RECONCILIATION ≠ ANCESTRY RECONCILIATION ≠ CI PASS ≠ BROWSER ACCEPTANCE ≠ HUMAN/CURATOR ACCEPTANCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+
+No merge, deploy, permission change, protected-source mutation, public preview publication or canon promotion is authorized by this checkpoint.
