@@ -229,8 +229,10 @@ VERIFIED TRANSITION SUBSTRATE (#86)
 AUTHORIAL LANE:
 PROLOGUE #88 REFINE + #89 SOURCE HYPOTHESIS REJECTED
 → #93 HISTORICAL TOOLCHAIN-FAILED CANDIDATE
-→ ACTIVE #94 PROTECTED-SOURCE INTEGRITY REPAIR @ 760cea56950af5898b58175fea827e77bb2f522a
-→ EXACT-HEAD CORRIDOR / STATE / MOTION / TRANSITION / PROLOGUE VISUAL ACCEPTANCE REVALIDATION
+→ #94 SOURCE-INTEGRITY REPAIR VERIFIED @ 760cea56950af5898b58175fea827e77bb2f522a
+→ DIRECT ARTIFACT AUDIT FOUND LOW-LEGIBILITY BACKING DEFECT
+→ ACTIVE #94 BACKING-PLANE REPAIR @ a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
+→ EXACT-HEAD CORRIDOR / STATE / MOTION / TRANSITION REVALIDATION
 → DIRECT DESKTOP / MOBILE / REDUCED VISUAL AUDIT
 → HUMAN / CREATOR KEEP | REFINE | REJECT
 
@@ -246,33 +248,60 @@ NO MERGE / DEPLOY / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 5. Keep protected-art material review blocked while source bytes are withheld.
 6. Keep #86 as the verified transition substrate and #90 as verified MACHINE evidence while creator acceptance remains separate.
 7. Treat #88/#89/#93 as historical KOD-75 evidence; use #94 as the sole active bounded PROLOGUE lane.
-8. Require exact-head browser evidence on #94 current head before changing it from implemented integrity repair to browser-verified candidate.
+8. Revalidate #94 exact-head after every presentation change before promoting the new head to browser-verified.
 9. Require protected L0 to remain complete, contained, original-color and free of source-layer filter/transform/animation; response motion belongs outside L0.
 10. Make only the smallest renderer/material/composition/fixture changes justified by rendered evidence.
 11. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-18 PROLOGUE #94 protected-source reconciliation checkpoint
 
-This checkpoint supersedes any earlier KOD-75 operational wording above where the two conflict.
+This checkpoint is historical where superseded by the later post-verification visibility checkpoint below.
 
 Live active-PR reconciliation found **PR #94 — `feat(kodex): PROLOGUE C0 observation-field evidence with protected PNG source`** as the newest bounded PROLOGUE lane. Its initial head `a5d5c69415ffcbf03472dc1e6af09c7fe259f2d7` used the exact protected Drive source `ojo_final-03-03.png` and produced five mechanically green lanes: Product Corridor, AUTHORIAL_STATE, AUTHORIAL_MOTION, AUTHORIAL_TRANSITION and PROLOGUE Visual Acceptance.
 
 That green state was **not sufficient for artwork-integrity acceptance**. Code audit found that initial L0 directly applied invert/brightness/contrast/drop-shadow filtering plus source-layer transform/opacity animation while the PR simultaneously claimed no recolor. That contradicts the protected-original contract and is therefore a hard provenance/artwork-integrity defect independent of browser success.
 
-The repair was made on the **same PR #94 branch**, not in parallel architecture. Current candidate head:
+The repair was made on the **same PR #94 branch**, not in parallel architecture. Integrity-repair head:
 
 ```text
 760cea56950af5898b58175fea827e77bb2f522a
 ```
 
-Only `src/styles/kodex-prologue-c0.css` changed for the final integrity correction. Protected L0 now renders the complete byte-identical source with `background-size: contain`, original color values, `filter:none`, `opacity:1`, and no source-layer CSS transform or animation. The responsive observation/scan field remains a separate L1 `::after` layer and may animate; reduced-motion disables that response animation. Source bytes, route/state/Journey memory, Assembly OS contracts, assembler, seeds, scoring and Deep Route Engine remain unchanged.
+Only `src/styles/kodex-prologue-c0.css` changed for the final integrity correction. Protected L0 renders the complete byte-identical source with `background-size: contain`, original color values, `filter:none`, `opacity:1`, and no source-layer CSS transform or animation. The responsive observation/scan field remains a separate L1 `::after` layer and may animate; reduced-motion disables that response animation. Source bytes, route/state/Journey memory, Assembly OS contracts, assembler, seeds, scoring and Deep Route Engine remain unchanged.
 
-Truth state at this checkpoint:
+The repaired `760cea…` head later completed the exact-head mechanical/browser lanes successfully. Direct artifact inspection then exposed a separate presentation defect: the eye remained nearly illegible because its predominantly dark linework was rendered on a black backing plane. The source itself remained correct and intact.
+
+## 2026-08-18 PROLOGUE #94 post-verification visibility checkpoint
+
+This checkpoint supersedes earlier #94 operational truth where they conflict.
+
+Exact-head `760cea56950af5898b58175fea827e77bb2f522a` completed all five required mechanical lanes on the same SHA:
+
+- Exact Asset Ingest `32108997535` — `SUCCESS`;
+- AUTHORIAL_STATE `32108997534` — `SUCCESS`;
+- AUTHORIAL_MOTION `32108997522` — `SUCCESS`;
+- AUTHORIAL_TRANSITION `32108997533` — `SUCCESS`;
+- Product Corridor `32108997562` — `SUCCESS`.
+
+AUTHORIAL_STATE artifact `9314310039` (`sha256:6d37bc148f375599b18943885011ea8103e5834dfffa22b1e6ab87a942e1de61`) was inspected directly across desktop 1440×900, mobile 390×844, mobile 412×915 and reduced-motion. The protected source was complete and unmodified, but its dark linework was too close to the black art receptacle to carry the intended macro-silhouette. This is a **presentation/background defect**, not source-integrity failure and not permission to filter or recolor L0.
+
+The smallest same-PR repair is now implemented at:
 
 ```text
-PR_94_CURRENT_HEAD = 760cea56950af5898b58175fea827e77bb2f522a
-IMPLEMENTED_INTEGRITY_REPAIR = true
-EXACT_HEAD_BROWSER_REVALIDATED = false
+a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
+```
+
+Only `src/styles/kodex-prologue-c0.css` changed. The protected L0 rules remain unchanged: byte-identical source, `contain`, `filter:none`, `opacity:1`, no source transform and no source animation. The art receptacle supplies a neutral illuminated backing plane behind the transparent/dark-linework PNG; L1 scan behavior remains a separate environmental response layer. No source pixels, rights, provenance, route/state, Journey memory, Assembly OS contracts, assembler, seeds, scoring or Deep Route Engine changed.
+
+Truth state:
+
+```text
+PR_94_VERIFIED_PREVIOUS_HEAD = 760cea56950af5898b58175fea827e77bb2f522a
+PREVIOUS_HEAD_MECHANICAL_BROWSER_GATES = PASS
+PREVIOUS_HEAD_DIRECT_VISUAL_AUDIT = REFINE_LOW_LEGIBILITY
+PR_94_CURRENT_HEAD = a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e
+IMPLEMENTED_PRESENTATION_REPAIR = true
+CURRENT_HEAD_EXACT_BROWSER_REVALIDATED = false
 HUMAN_CURATOR_ACCEPTANCE = NOT_RUN
 CREATOR_VISUAL_ACCEPTANCE = NOT_RUN
 MERGED = false
@@ -280,6 +309,6 @@ DEPLOYED = false
 CANON_PROMOTED = false
 ```
 
-The five green runs on `a5d5c694…` remain historical mechanical evidence only and must not be attached to `760cea…`. The next valid gate is exact-head revalidation on the current #94 head, followed by direct desktop/mobile/reduced-motion inspection for complete source containment, original-color integrity, observation/acquisition readability, 100dvh/overflow, keyboard/focus and motion semantics.
+Next valid gate: run the existing exact-head ingest/corridor/state/motion/transition evidence on `a89a53f…`, then inspect the resulting PROLOGUE desktop/mobile/reduced captures. Keep the neutral backing only if it restores complete-eye readability without introducing a new hierarchy, contrast, overflow, focus or motion defect.
 
 No merge, deploy, permission change, public preview publication, protected Ocín original mutation or irreversible canon promotion is implied by this operational update.
