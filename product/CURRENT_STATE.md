@@ -84,10 +84,14 @@ G04 Junction under-density is closed at browser/agent-audit level. G01/G07/G04 r
 
 ## Product-facing corridor / authorial state
 
-- PR #86 = verified bounded transition-convergence substrate.
+- PR #77 = `CLOSED / NOT MERGED / HISTORICAL PRODUCT-CORRIDOR SUBSTRATE`; head `54bdb112…` remains provenance only.
+- PR #86 = `CLOSED / NOT MERGED / HISTORICAL TRANSITION SUBSTRATE`; exact verified head `390b91fe…` is consumed downstream by #90.
+- Proven lineage: `#77 54bdb112… → #86 390b91fe… → #90 b766797… → #94 a89a53f…`.
 - PR #90 MACHINE @ `b76679719e37a43e79be412269c5a4ddec2c2ccc` = exact-head browser verified / creator acceptance `NOT_RUN`.
 - PR #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / specific low-legibility defect closed / human+creator `KEEP | REFINE | REJECT` pending.
 - PR #92 = review/staging snapshot only; no deployment authority.
+
+Closing #77/#86 is workflow-topology hygiene only. Their commits and prior browser/CI evidence remain historical provenance; closure does not merge or deploy them and does not convert their evidence into creator acceptance.
 
 ## Semantic / geometric / natural-law chain
 
@@ -165,8 +169,10 @@ CURRENT-LINEAGE TECHNICAL HOST:
 → NO authority expansion from technical PASS
 
 PRODUCT / AUTHORIAL:
-#90 MACHINE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
-#94 PROLOGUE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
+#77 = CLOSED / HISTORICAL SUBSTRATE / NOT MERGED
+#86 = CLOSED / HISTORICAL TRANSITION SUBSTRATE / NOT MERGED
+→ #90 MACHINE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
+→ #94 PROLOGUE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
 
 NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
@@ -176,12 +182,13 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 1. Keep #62 as the sole verified Assembly OS / Deep Navigation correctness baseline.
 2. Complete actual human/creator review of Golden 24 before any seed/fixture curation.
 3. Keep protected-art material review blocked while source bytes are withheld.
-4. Keep #95/#96/#98 closed as historical/source evidence; do not reactivate them as parallel implementation lanes.
-5. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
-6. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
-7. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
-8. Make only the smallest changes justified by measured/browser/creator evidence.
-9. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
+4. Keep #77/#86 closed as historical authorial substrates; do not reactivate them as parallel implementation lanes.
+5. Keep #95/#96/#98 closed as historical/source evidence; do not reactivate them as parallel implementation lanes.
+6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
+7. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
+8. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
+9. Make only the smallest changes justified by measured/browser/creator evidence.
+10. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-19 historical-source lane reconciliation checkpoint
 
@@ -197,3 +204,19 @@ Drive `28_KODEX_ASSEMBLY_OS` §114 records the same operational cleanup.
 ```
 
 Truth boundary: `HISTORICAL SOURCE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TESTING ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+
+## 2026-08-19 authorial-substrate lane close checkpoint
+
+Drive `28_KODEX_ASSEMBLY_OS` §115 records the same workflow-topology cleanup.
+
+```text
+#77 = CLOSED / NOT MERGED / HISTORICAL PRODUCT-CORRIDOR SUBSTRATE
+#86 = CLOSED / NOT MERGED / HISTORICAL TRANSITION SUBSTRATE
+#90 = OPEN / DRAFT / MACHINE CREATOR-REVIEW SURFACE
+#94 = OPEN / DRAFT / PROLOGUE CREATOR-REVIEW SURFACE
+#62 = CLOSED / NOT MERGED / verified Assembly baseline unchanged
+```
+
+Proven lineage: `#77 54bdb112… → #86 390b91fe… → #90 b766797… → #94 a89a53f…`.
+
+Truth boundary: `HISTORICAL SUBSTRATE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ BROWSER EVIDENCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
