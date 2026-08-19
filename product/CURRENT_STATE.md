@@ -36,13 +36,11 @@ Y = only canonical completion of a finished journey
 B–X = interwoven concept coordinates with state-dependent relations
 ```
 
-Representative routes are QA fixtures, not final architecture. Every surfaced edge requires a declared semantic, narrative, visual or causal relation. Passive pointer movement cannot make consequential identity claims or silently write personal meaning.
-
-The tested seven-room product corridor is a **bounded product-facing implementation/evidence corridor**, not a replacement for A–Y canon.
+Representative routes are QA fixtures, not final architecture. Passive pointer movement cannot make consequential identity claims or silently write personal meaning. The tested seven-room corridor is bounded product/evidence implementation, not a replacement for A–Y canon.
 
 ## Verified Assembly OS + Deep Navigation baseline
 
-Authority: `wenumapu8-droid/wenu-frontend#62`, branch `feat/kodex-observer-scale-route-v1`.
+Authority: `wenumapu8-droid/wenu-frontend#62`.
 
 ```text
 PR state: CLOSED / NOT MERGED / NOT DEPLOYED
@@ -52,50 +50,37 @@ evidence artifact: 9306874883
 digest: sha256:752fad12a1fbaad94acffc7a9a1d782defd2fd290b4f55236acc42e0d9149ff4
 ```
 
-### Focus / browser P0
-
-Mechanically closed on that exact SHA:
-
-- visible keyboard focus;
-- Browser Back/Forward restores node + focus;
-- mobile/touch preserves explicit user agency and no horizontal overflow;
-- reduced-motion preserves semantic activation, focus and history without decorative-motion dependence;
-- 100dvh/no-page-scroll obligations remain enforced where required;
-- measured direct/cached route performance remains within declared hypothesis thresholds.
-
-Administrative closure of #62 does not revoke this technical baseline and does not imply merge/release authorization.
+Focus/browser P0 is mechanically closed on that SHA: visible keyboard focus; Back/Forward node+focus restoration; mobile/touch user agency; no horizontal overflow; reduced-motion semantic equivalence; 100dvh/no-page-scroll obligations where required; performance evidence within declared hypothesis thresholds.
 
 ### Assembly OS P0.1–P0.10 — implemented + verified
 
 Do not recreate these contracts in a parallel branch or dialect absent a demonstrated contract gap.
 
-1. **ElementContract** — one machine-readable schema plus **28 existing repo-native normalized elements**; HOLD records mechanically ineligible.
-2. **PlateSpec** — `KNOWLEDGE_PLATE`, `JUNCTION_PLATE`, `ACTIVATOR_PLATE`; protected-art full-view/no-crop/no-recolor/no-distort invariants remain hard gates.
-3. **Deterministic assembler** — `node + plate_type + seed → PlateSpec`; registered IDs only; structured failures; existing Deep Navigation seed lineage reused.
-4. **Golden benchmark** — 12 deterministic plates balanced 3× Science / Technology / Art / Consciousness.
-5. **Copy-role compiler** — source-linked roles only; no silent generated prose; EVIDENCE and TELEMETRY retain truth-sensitive gates.
-6. **Protected Ocín activation adapter** — originals immutable, source bytes/public approval not inferred, environment-only activation contract.
-7. **Assembly QA** — contract truth separated from rendered/browser truth; unrendered valid specs remain PARTIAL.
-8. **WorkOrder / StationResult** — SCRIPT / AGENT / HUMAN share the same correctness contract; worker identity grants no extra authority.
-9. **Macro chapter factory** — consumes validated PlateSpecs and delegates route eligibility to existing Deep Route Engine; `runtime_auto_navigation=false`.
-10. **Seeded factory benchmark** — invalid rate, repetition, visual signatures, route diversity, runtime cost and explicit human-curator status; hypothesis metrics are not canon truth.
+1. **ElementContract** — one machine-readable schema + 28 existing normalized repo-native elements.
+2. **PlateSpec** — `KNOWLEDGE_PLATE`, `JUNCTION_PLATE`, `ACTIVATOR_PLATE` with protected-art invariants.
+3. **Deterministic assembler** — `node + plate_type + seed → PlateSpec`; registered IDs only; structured failures.
+4. **Golden benchmark** — 12 deterministic plates balanced across Science / Technology / Art / Consciousness.
+5. **Copy-role compiler** — source-linked roles only; no silent generated prose for truth-sensitive copy.
+6. **Protected Ocín activation adapter** — originals immutable; environment-only activation contract.
+7. **Assembly QA** — contract truth separated from rendered/browser truth.
+8. **WorkOrder / StationResult** — SCRIPT / AGENT / HUMAN share one correctness contract.
+9. **Macro chapter factory** — consumes validated PlateSpecs and delegates eligibility to existing Deep Route Engine; `runtime_auto_navigation=false`.
+10. **Seeded factory benchmark** — invalid rate, repetition, visual signatures, route diversity, runtime cost and explicit human-curator status.
 
 Correctness remains registry/schema/constraint/validator driven. Generative agents are optional intelligence workers, not runtime or correctness dependencies.
 
-## Golden Plate evidence / Assembly frontier
+## Golden Plate frontier
 
-Run #299 contains the SHA-bound review packet:
+Run #299 contains 24/24 SHA-bound captures: 12 Golden cases × desktop 1440×900 × mobile 390×844.
 
 ```text
-12 Golden cases × desktop 1440×900 × mobile 390×844 = 24 / 24 captures
 human_curator_acceptance = NOT_RUN
 creator_visual_acceptance = NOT_RUN
 protected_art_source_bytes = WITHHELD
+aesthetic_threshold_status = NONE
 ```
 
-The G04 Junction under-density defect is closed at browser/agent-audit level. Concentration/repetition observability exists through `primary_element_concentration[]` and `same_silhouette_groups[]`; `aesthetic_threshold_status = NONE` remains explicit.
-
-Observed G01/G07/G04 repetition is curation evidence, not schema failure and not creator rejection. Golden fixture/seed curation remains blocked until human/creator review confirms a `REFINE` decision. Any such curation must use existing registered IDs and validators only.
+G04 Junction under-density is closed at browser/agent-audit level. G01/G07/G04 repetition is curation evidence, not schema failure and not creator rejection. Golden fixture/seed curation remains blocked until human/creator review explicitly yields `REFINE`; any curation must use existing registered IDs and validators only.
 
 ## Product-facing corridor / authorial state
 
@@ -104,34 +89,30 @@ Observed G01/G07/G04 repetition is curation evidence, not schema failure and not
 - PR #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / specific low-legibility defect closed / human+creator `KEEP | REFINE | REJECT` pending.
 - PR #92 = review/staging snapshot only; no deployment authority.
 
-## Semantic / trace / memory boundaries
+## Semantic / geometric / natural-law chain
 
-- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 / `32157103501` SUCCESS. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMATION`; implementation provenance is not conceptual/canonical provenance.
-- PR #96 Geometric Transduction @ `da475dce6688fdbe0511a6d71efeab734f40908e` → Core Runtime #306 / `32169696848` SUCCESS. Geometry remains Semantic Trace only.
-- PR #98 Natural Law Kernel @ `fc3545d5ff67452a5838ce9161f4e308825cf2a5` → Core Runtime #307 / `32190413923` SUCCESS. Natural-law records remain source-scoped/trace-only and create no route, memory, Assembly or canon authority.
-- PR #99 Geometric Memory Signature @ `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` → Core Runtime #310 / `32191947398` SUCCESS. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`; desktop/mobile/reduced-motion browser evidence passes with visited-only nodes/edges and zero horizontal overflow. It remains a derived read-only manifestation. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` = `NOT_RUN`.
+Historical source lanes are now intentionally closed without merge to prevent parallel implementation authority while preserving provenance and test history.
 
-### Semantic Memory — historical lane closed; current host verified
+- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 / `32157103501` SUCCESS → `CLOSED / HISTORICAL SOURCE / NOT MERGED`. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMATION`; implementation provenance is not conceptual/canonical provenance.
+- PR #96 Geometric Transduction @ `da475dce6688fdbe0511a6d71efeab734f40908e` → Core Runtime #306 / `32169696848` SUCCESS → `CLOSED / HISTORICAL SOURCE / NOT MERGED`. Geometry remains Semantic Trace only.
+- PR #98 Natural Law Kernel @ `fc3545d5ff67452a5838ce9161f4e308825cf2a5` → Core Runtime #307 / `32190413923` SUCCESS → `CLOSED / HISTORICAL SOURCE / NOT MERGED`. Natural-law records remain source-scoped/trace-only and create no route, memory, Assembly or canon authority.
+- PR #99 Geometric Memory Signature @ `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` → Core Runtime #310 / `32191947398` SUCCESS; artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2` → `OPEN / DRAFT / NOT MERGED`. Browser evidence passes desktop/mobile/reduced-motion with visited-only nodes/edges and zero horizontal overflow. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` = `NOT_RUN`.
 
-Historical source lane `wenumapu8-droid/wenu-frontend#97` is now:
+Closing #95/#96/#98 is workflow-topology hygiene only. It does not erase source history, change their prior test evidence, authorize #99 semantics, or promote anything to canon.
 
-```text
-CLOSED / HISTORICAL SOURCE LANE / NOT MERGED / NOT DEPLOYED / NOT CANON
-historical exact head: adb460204fb5bb236e9f1ebdfac2d038fd1d09d6
-Semantic Memory Evidence #3 / 32198754926 = SUCCESS (contract/build scope)
-```
+## Semantic Memory — current-lineage host verified
 
-#97 remains useful as implementation history only. Its lineage-diverged branch is **not** current implementation authority and must not be reactivated or used to create a parallel memory/browser lane.
+Historical source PR #97 is `CLOSED / HISTORICAL SOURCE / NOT MERGED / NOT DEPLOYED / NOT CANON`. Its contract/build evidence remains historical provenance only.
 
-The bounded valid Semantic Memory delta is reconciled into current-lineage PR #101 and exact-head browser tested there:
+The bounded valid delta lives in current-lineage PR #101:
 
 ```text
-current host: wenumapu8-droid/wenu-frontend#101
+PR #101 state: OPEN / DRAFT / MERGEABLE / NOT MERGED
 exact head: 79fc8fcd530149a0755362a801ccb36a6ff042c4
 KODEX Core Runtime: #326 / 32240313849 = SUCCESS
 ```
 
-Verified semantic-memory authority remains deliberately narrow:
+Verified authority remains narrow:
 
 - JourneyState = persistence authority;
 - RETURN = narrow specimen store, not a second journey-memory model;
@@ -140,27 +121,26 @@ Verified semantic-memory authority remains deliberately narrow:
 - passive observation/dwell/co-occurrence cannot write personal meaning;
 - salience, activation, decay, dwell weighting, passive inference, hidden engagement scoring, semantic-clock authority and parallel storage are **NOT AUTHORIZED**.
 
-### Gesture Timeline — historical lane closed; current host verified
+## Gesture Timeline — current-lineage host verified
 
-PR #85 is `CLOSED / NOT MERGED / HISTORICAL SOURCE LANE`. Its bounded presentation-only delta is reconciled into #101 @ `79fc8fcd…`; Core Runtime #326 passes existing Deep Navigation browser evidence.
+PR #85 is `CLOSED / HISTORICAL SOURCE / NOT MERGED`. Its bounded presentation-only delta is reconciled into #101 @ `79fc8fcd…`; Core Runtime #326 passes Deep Navigation gesture browser acceptance.
 
-Verified behavior: `DORMANT → AWARE → OPEN` reveals already-eligible routes; keyboard/touch/reduced-motion have semantic equivalents; no gesture changes URL node, browser history or JourneyState/memory before explicit route choice.
+`DORMANT → AWARE → OPEN` may reveal already-eligible routes only. Keyboard/touch/reduced-motion have semantic equivalents. Gesture cannot change URL node, browser history or JourneyState/memory before explicit route choice. No route scoring, auto-navigation, passive consequential memory, engagement scoring or identity inference is authorized.
 
-No route scoring, auto-navigation, passive consequential memory, hidden engagement scoring or identity inference is authorized.
-
-### Manifestation Recipe / provenance
+## Manifestation / provenance
 
 PR #101 remains fail-closed on provenance: arbitrary/unbound `provenance_refs[]` are rejected and existing geometry, Natural Law, protected-source identity and reused renderer capability authorities are required where applicable.
 
 Protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`. Provenance never grants crop, recolor, distortion, source-byte use, public export, creator acceptance, merge, deploy or canon status.
 
-## Other architecture boundaries
+## Research-only grammar
 
-- PR #64 Visual Assembly = proposal/governance, not Assembly OS runtime authority.
-- PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- Merged PR #78 does not supersede #62 ElementContract vocabulary; useful inventory/source material must normalize through #62 contracts before entering Assembly correctness.
-- Protected Ocín originals are immutable by default. Internal registration or activation mapping does not grant public use or destructive transformation.
-- Science, verified evidence, implementation measurement, inference, metaphor, cultural interpretation and atmosphere remain explicitly separable. Unsupported telemetry must use truthful states such as `NOT MEASURED`.
+PR #100 @ `fd98f3e7717f09c6f12f248d2d74198a6cd7e012` remains `OPEN / DRAFT / RESEARCH / DOCUMENTATION / NOT MERGED`.
+
+- PROLOGUE grammar = `observation/acquisition field + layered reveal; non-radial by default`.
+- proposed `GeometryContract` = `RESEARCH_PROFILE / NON_AUTHORITATIVE`.
+- any future implementation must normalize into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary and validators.
+- no parallel machine-readable correctness dialect beside ElementContract, PlateSpec, Semantic IR or existing trace validators is authorized absent a demonstrated contract gap.
 
 ## Current critical path
 
@@ -169,25 +149,20 @@ ASSEMBLY OS / DEEP NAVIGATION:
 #62 @ eaf2924707... = VERIFIED BASELINE / CLOSED / NOT MERGED
 → GOLDEN 24/24 AGENT-AUDITED
 → HUMAN / CREATOR REVIEW
-→ IF G07 REPETITION = REFINE: DETERMINISTIC GOLDEN FIXTURE/SEED CURATION USING EXISTING REGISTERED IDs ONLY
+→ ONLY IF REFINE: deterministic Golden fixture/seed curation using existing registered IDs + validators
 
-SEMANTIC / NATURAL-LAW TRACE:
-#95 = CORE RUNTIME #305 SUCCESS
-→ #96 = CORE RUNTIME #306 SUCCESS
-→ #98 = CORE RUNTIME #307 SUCCESS / TRACE-ONLY
-→ #99 = CORE RUNTIME #310 SUCCESS / SHA-BOUND BROWSER VERIFIED
-→ #101 = CORE RUNTIME #326 SUCCESS / PROVENANCE FAIL-CLOSED / BOUNDED SEMANTIC MEMORY + GESTURE CURRENT-LINEAGE BROWSER COMPATIBLE
-→ CREATOR VERDICT ON GEOMETRIC MEMORY / MANIFESTATION MEANING BEFORE RETURN OR PROTECTED-SOURCE EXPANSION
+SEMANTIC / GEOMETRIC CHAIN:
+#95 = CLOSED / HISTORICAL / prior #305 SUCCESS
+#96 = CLOSED / HISTORICAL / prior #306 SUCCESS
+#98 = CLOSED / HISTORICAL / prior #307 SUCCESS
+→ #99 = OPEN / DRAFT / #310 SUCCESS / SHA-BOUND BROWSER VERIFIED
+→ CREATOR VERDICT `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`
+→ NO RETURN INTEGRATION BEFORE THAT VERDICT
 
-SEMANTIC MEMORY:
-#97 = CLOSED / HISTORICAL / NOT MERGED
-→ VALID BOUNDED DELTA LIVES IN #101 @ 79fc8fcd...
-→ NO SALIENCE / ACTIVATION / DECAY / PASSIVE DWELL OR CO-OCCURRENCE WRITES / HIDDEN ENGAGEMENT SCORING WITHOUT NEW EXPLICIT CONTRACT + EVIDENCE + AUTHORITY GATE
-
-GESTURE:
-#85 = CLOSED / HISTORICAL / NOT MERGED
-→ VALID BOUNDED DELTA LIVES IN #101 @ 79fc8fcd...
-→ CORE RUNTIME #326 + DEEP NAV GESTURE BROWSER ACCEPTANCE = PASS
+CURRENT-LINEAGE TECHNICAL HOST:
+#101 @ 79fc8fcd... = OPEN / DRAFT / CORE RUNTIME #326 SUCCESS
+→ bounded Semantic Memory + Gesture + provenance contracts browser compatible
+→ NO authority expansion from technical PASS
 
 PRODUCT / AUTHORIAL:
 #90 MACHINE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
@@ -198,40 +173,27 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## Immediate definition of success
 
-1. Keep #62 `eaf2924707...` as the sole verified Assembly OS / Deep Navigation correctness baseline.
-2. Complete actual human/creator readability review of the SHA-bound Golden packet before any Golden seed curation.
+1. Keep #62 as the sole verified Assembly OS / Deep Navigation correctness baseline.
+2. Complete actual human/creator review of Golden 24 before any seed/fixture curation.
 3. Keep protected-art material review blocked while source bytes are withheld.
-4. Preserve #95/#96/#98 as bounded pre-Assembly/trace layers; technical PASS never establishes scientific, symbolic or canonical truth.
-5. Keep Semantic Memory bounded in current host #101; #97 is historical only. JourneyState remains persistence authority, RETURN remains narrow, and no salience, activation, decay, passive semantic inference or hidden engagement scoring is authorized by technical PASS.
-6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
-7. Treat #101 as technically/browser compatible for current provenance + bounded Semantic Memory + Gesture Timeline contracts only; do not infer protected-source authorization, creator meaning, canon, merge or deploy from Core Runtime #326.
-8. Keep #85 and #97 closed as historical/source evidence; do not reactivate or fork their bounded systems while #101 remains the verified current-lineage host.
-9. If #99/#101 receive `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
-10. Make only the smallest changes justified by measured/browser/creator evidence.
-11. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+4. Keep #95/#96/#98 closed as historical/source evidence; do not reactivate them as parallel implementation lanes.
+5. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
+6. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
+7. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
+8. Make only the smallest changes justified by measured/browser/creator evidence.
+9. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
-## 2026-08-19 semantic-memory lane reconciliation checkpoint
+## 2026-08-19 historical-source lane reconciliation checkpoint
 
-This checkpoint supersedes earlier Current State wording where #97 appeared as an active implementation lane.
+Drive `28_KODEX_ASSEMBLY_OS` §114 records the same operational cleanup.
 
-- `wenu-frontend#97` is `CLOSED / HISTORICAL SOURCE LANE / NOT MERGED / NOT DEPLOYED / NOT CANON`.
-- Historical #97 head `adb460204…` + Semantic Memory Evidence #3 / `32198754926` remain valid contract/build provenance only.
-- The bounded valid delta is current-lineage verified in #101 @ `79fc8fcd…`, Core Runtime #326 / `32240313849` SUCCESS.
-- Closing #97 removes a parallel divergent implementation lane; it does not merge its commits and does not expand semantic authority.
-- Drive `28_KODEX_ASSEMBLY_OS` §111 records the same closeout.
+```text
+#95 = CLOSED / NOT MERGED / HISTORICAL SOURCE
+#96 = CLOSED / NOT MERGED / HISTORICAL SOURCE
+#98 = CLOSED / NOT MERGED / HISTORICAL SOURCE
+#99 = OPEN / DRAFT / creator semantic verdict pending
+#101 = OPEN / DRAFT / current-lineage technical host
+#62 = CLOSED / NOT MERGED / verified Assembly baseline unchanged
+```
 
 Truth boundary: `HISTORICAL SOURCE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TESTING ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
-
-## 2026-08-19 generative-grammar research reconciliation checkpoint
-
-PR `wenu-frontend#100` remains **RESEARCH / DOCUMENTATION**, not runtime or canon authority. The architecture/documentation mismatch found in review is now closed on exact PR head `fd98f3e7717f09c6f12f248d2d74198a6cd7e012` (`OPEN / DRAFT / MERGEABLE / NOT MERGED`).
-
-Normalized boundaries:
-
-- PROLOGUE candidate grammar is now `observation/acquisition field + layered reveal; non-radial by default`, matching the direction already demonstrated by exact-head browser-verified PR #94; orbit/concentric geometry is explicitly subordinate/conditional rather than the default macro-silhouette.
-- the proposed `GeometryContract` is explicitly `RESEARCH_PROFILE / NON_AUTHORITATIVE`; if implemented it must normalize into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary and validators.
-- #100 explicitly prohibits a parallel machine-readable correctness dialect beside ElementContract, PlateSpec, Semantic IR or existing Natural Law/trace validators absent a demonstrated contract gap.
-
-No runtime, Assembly, routing, memory, artwork, merge, deploy, permission or canon state changed. Drive `28_KODEX_ASSEMBLY_OS` §112 records discovery and §113 records exact-head documentation reconciliation close.
-
-Truth boundary: `RESEARCH PROFILE ≠ MACHINE-READABLE CORRECTNESS CONTRACT ≠ IMPLEMENTATION ≠ BROWSER VERIFICATION ≠ CREATOR ACCEPTANCE ≠ CANON`.
