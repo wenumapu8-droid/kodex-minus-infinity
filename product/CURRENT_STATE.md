@@ -146,6 +146,21 @@ PR #100 @ `fd98f3e7717f09c6f12f248d2d74198a6cd7e012` remains `OPEN / DRAFT / RES
 - any future implementation must normalize into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary and validators.
 - no parallel machine-readable correctness dialect beside ElementContract, PlateSpec, Semantic IR or existing trace validators is authorized absent a demonstrated contract gap.
 
+## HoloCore lineage / review surface
+
+Live stacked lineage is:
+
+```text
+#63 prototype → #67 chrome/cage → #69 renderer adapter → #70 routes/WebGL materiality
+```
+
+- PR #63 = `CLOSED / NOT MERGED / HISTORICAL HOLOCORE PROTOTYPE SUBSTRATE`.
+- PR #67 = `CLOSED / NOT MERGED / HISTORICAL HOLOCORE CHROME/CAGE SUBSTRATE`.
+- PR #69 = `CLOSED / NOT MERGED / HISTORICAL HOLOCORE RENDERER-ADAPTER SUBSTRATE`.
+- PR #70 @ `0676c9e8a4d39c3b8949548598f9c021c87e3e3c` = `OPEN / DRAFT / MERGEABLE / NOT MERGED`; KODEX Core Runtime #278 / `31860800425` = SUCCESS; artifact `9240563358`; creator visual acceptance = `PENDING`.
+
+#70 is the downstream HoloCore review surface only. It does not replace #62 as Assembly OS / Deep Navigation authority and does not acquire merge, deploy or canon authority from prior CI/browser evidence. Do not reactivate #63/#67/#69 as parallel HoloCore runtime/renderer lanes unless evidence proves an unabsorbed contract.
+
 ## Current critical path
 
 ```text
@@ -174,6 +189,10 @@ PRODUCT / AUTHORIAL:
 → #90 MACHINE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
 → #94 PROLOGUE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
 
+HOLOCORE:
+#63/#67/#69 = CLOSED / HISTORICAL SUBSTRATES / NOT MERGED
+→ #70 @ 0676c9e8... = OPEN / DRAFT / #278 SUCCESS / CREATOR VISUAL REVIEW PENDING
+
 NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
 
@@ -187,8 +206,9 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
 7. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
 8. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
-9. Make only the smallest changes justified by measured/browser/creator evidence.
-10. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
+9. Keep #63/#67/#69 closed as historical HoloCore substrates; continue HoloCore review only in #70 unless a demonstrably unabsorbed contract appears.
+10. Make only the smallest changes justified by measured/browser/creator evidence.
+11. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-19 historical-source lane reconciliation checkpoint
 
@@ -233,5 +253,19 @@ Drive `28_KODEX_ASSEMBLY_OS` §116 records the same workflow-topology reconcilia
 ```
 
 #60 commits and prior evidence remain provenance only. Do not reactivate #60 as a parallel scene-runtime, route, memory or correctness authority.
+
+Truth boundary: `HISTORICAL SUBSTRATE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TESTING ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+
+## 2026-08-19 HoloCore substrate lane close checkpoint
+
+Drive `28_KODEX_ASSEMBLY_OS` §117 records the same workflow-topology reconciliation.
+
+```text
+#63 = CLOSED / NOT MERGED / HISTORICAL HOLOCORE PROTOTYPE SUBSTRATE
+#67 = CLOSED / NOT MERGED / HISTORICAL HOLOCORE CHROME/CAGE SUBSTRATE
+#69 = CLOSED / NOT MERGED / HISTORICAL HOLOCORE RENDERER-ADAPTER SUBSTRATE
+#70 @ 0676c9e8... = OPEN / DRAFT / #278 SUCCESS / CURRENT HOLOCORE REVIEW SURFACE
+#62 @ eaf2924707... = VERIFIED ASSEMBLY OS + DEEP NAVIGATION AUTHORITY
+```
 
 Truth boundary: `HISTORICAL SUBSTRATE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TESTING ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
