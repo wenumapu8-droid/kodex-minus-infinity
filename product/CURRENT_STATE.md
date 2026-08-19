@@ -106,7 +106,7 @@ Observed G01/G07/G04 repetition is curation evidence, not schema failure and not
 
 ## Semantic / trace / memory boundaries
 
-- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 / `32157103501` SUCCESS. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMIRMATION`; implementation provenance is not conceptual/canonical provenance.
+- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 / `32157103501` SUCCESS. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMATION`; implementation provenance is not conceptual/canonical provenance.
 - PR #96 Geometric Transduction @ `da475dce6688fdbe0511a6d71efeab734f40908e` → Core Runtime #306 / `32169696848` SUCCESS. Geometry remains Semantic Trace only.
 - PR #98 Natural Law Kernel @ `fc3545d5ff67452a5838ce9161f4e308825cf2a5` → Core Runtime #307 / `32190413923` SUCCESS. Natural-law records remain source-scoped/trace-only and create no route, memory, Assembly or canon authority.
 - PR #99 Geometric Memory Signature @ `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` → Core Runtime #310 / `32191947398` SUCCESS. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`; desktop/mobile/reduced-motion browser evidence passes with visited-only nodes/edges and zero horizontal overflow. It remains a derived read-only manifestation. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` = `NOT_RUN`.
