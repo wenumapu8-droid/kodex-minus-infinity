@@ -131,13 +131,13 @@ PR #86 remains the verified bounded transition-convergence substrate. PR #90 MAC
 
 - PR #64 Visual Assembly is proposal/governance, not Assembly OS runtime authority.
 - PR #71 Manifestation may remain only a thin causal view over existing HoloCore / JourneyState / Assembly WorkOrder truth; it must not become another routing, memory or progress system.
-- PR #85 Gesture Timeline remains content-reconciled but history-diverged; its current head `47139acab8c01d0af1435ae7d66ce6af21495446` has no authorized hosted exact-head validation path yet. Do not extend route/history/memory until SHA-bound evidence exists.
+- PR #85 Gesture Timeline is now **CLOSED / NOT MERGED / HISTORICAL SOURCE LANE**. Its bounded delta has been reconciled into current-lineage PR #101 and exact-head Core Runtime/browser verified there on `79fc8fcd530149a0755362a801ccb36a6ff042c4` via Core Runtime #326 / `32240313849` SUCCESS. Do not reactivate #85 or create another Gesture browser/runtime lane absent a measured defect.
 - PR #95 Semantic IR exact head `59b2d082845c42617dd5adea06c4107191d56fd3` completed Core Runtime #305 / `32157103501` with `SUCCESS`. `IMPERMANENCE`, `INTERDEPENDENCE`, and `OBSERVER` remain `NEEDS_CONFIRMATION` because implementation provenance is not conceptual/canonical provenance.
 - PR #96 Geometric Transduction exact head `da475dce6688fdbe0511a6d71efeab734f40908e` completed Core Runtime #306 / `32169696848` with `SUCCESS`. Geometry remains Semantic Trace only; technical compatibility does not canonize geometric-symbolic meaning.
 - PR #97 Semantic Memory v2 current head `adb460204fb5bb236e9f1ebdfac2d038fd1d09d6` keeps RETURN narrow, JourneyState as persistence authority and the semantic adapter stateless/explicit-commit only. `KODEX Semantic Memory Evidence` #3 / `32198754926` is exact-head `SUCCESS` for JourneyState, deterministic restore/replay, the RETURN authority verifier and Astro build. This is contract/build CI evidence only; broader Core Runtime/browser evidence on #97 itself remains blocked-not-run by the large lineage divergence documented below. Its bounded semantic-memory delta has now also been reconciled into current-lineage PR #101 and browser-verified there; that compatibility does not erase #97 lineage history or expand semantic authority.
 - PR #98 Natural Law Kernel current head `fc3545d5ff67452a5838ce9161f4e308825cf2a5` completed KODEX Core Runtime #307 / `32190413923` with `SUCCESS`. It remains a source-scoped, trace-only design-transduction layer and creates no route, memory, Assembly or canon authority.
 - PR #99 Geometric Memory Signature current head `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` completed KODEX Core Runtime #310 / `32191947398` with `SUCCESS`. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`, is SHA-bound to the same head. Browser evidence passes desktop, 390×844, 412×915 and reduced-motion with deterministic bounded topologies, visited-only nodes/edges and zero horizontal overflow. It is a derived read-only manifestation, not a second memory or route system. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` remains `NOT_RUN`.
-- PR #101 current exact head `5d7c9a77fe3dfd994ee67f445fdec434f5e305c4` completed KODEX Core Runtime #321 / run `32230022471` with `SUCCESS` on exact-head rerun. The first attempt was cancelled while stalled in Chromium installation after pre-browser tests + Astro build passed; the exact same SHA rerun completed end-to-end, classifying the earlier cancellation as `TRANSIENT_CHROMIUM_INSTALL_INFRA / NOT_PRODUCT_FAILURE`. Provenance remains fail-closed and the bounded Semantic Memory delta is now current-lineage Core Runtime/browser compatible. Protected source pixels remain withheld and creator acceptance remains `NOT_RUN`.
+- PR #101 current exact head `79fc8fcd530149a0755362a801ccb36a6ff042c4` completed KODEX Core Runtime #326 / run `32240313849` with `SUCCESS`. Provenance remains fail-closed; the bounded Semantic Memory delta remains current-lineage Core Runtime/browser compatible; and the reconciled Gesture Timeline delta now passes existing Deep Navigation browser evidence for keyboard/touch/reduced-motion reveal while preserving explicit user agency. Protected source pixels remain withheld and creator acceptance remains `NOT_RUN`.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 
@@ -163,20 +163,22 @@ SEMANTIC / NATURAL-LAW TRACE LANE:
 → #96 @ da475dce... = CORE RUNTIME #306 SUCCESS
 → #98 @ fc3545d5... = CORE RUNTIME #307 SUCCESS / TRACE-ONLY NATURAL LAW
 → #99 @ abddd680... = CORE RUNTIME #310 SUCCESS / SHA-BOUND BROWSER EVIDENCE
-→ #101 @ 5d7c9a77... = CORE RUNTIME #321 EXACT-HEAD RERUN SUCCESS / PROVENANCE FAIL-CLOSED / BOUNDED SEMANTIC MEMORY CURRENT-LINEAGE BROWSER COMPATIBLE
+→ #101 @ 79fc8fcd... = CORE RUNTIME #326 SUCCESS / PROVENANCE FAIL-CLOSED / BOUNDED SEMANTIC MEMORY + GESTURE CURRENT-LINEAGE BROWSER COMPATIBLE
 → CREATOR VERDICT ON GEOMETRIC MEMORY / MANIFESTATION MEANING BEFORE RETURN OR PROTECTED-SOURCE EXPANSION
 
 SEMANTIC MEMORY LANE:
 #97 @ adb460204... = RETURN NARROW / JOURNEYSTATE AUTHORITY RECONCILED / STATELESS EXPLICIT-COMMIT ADAPTER
 → SEMANTIC MEMORY EVIDENCE #3 / 32198754926 = EXACT-HEAD CONTRACT+BUILD CI SUCCESS
-→ BOUNDED DELTA RECONCILED INTO CURRENT-LINEAGE #101 @ 5d7c9a77...
-→ CORE RUNTIME #321 / 32230022471 EXACT-SHA RERUN = SUCCESS
+→ BOUNDED DELTA RECONCILED INTO CURRENT-LINEAGE #101
 → CURRENT-LINEAGE CORE RUNTIME/BROWSER COMPATIBLE
 → NO SALIENCE / ACTIVATION / DECAY / PASSIVE DWELL OR CO-OCCURRENCE WRITES / HIDDEN ENGAGEMENT SCORING WITHOUT A NEW EXPLICIT CONTRACT + EVIDENCE + AUTHORITY GATE
 
 GESTURE TIMELINE:
-#85 @ 47139acab... = CONTENT-RECONCILED / HISTORY-DIVERGED / HOSTED EXACT-HEAD VALIDATION BLOCKED BY TRIGGER TOPOLOGY
-→ NO FURTHER ROUTE/HISTORY/MEMORY IMPLEMENTATION BEFORE SHA-BOUND EVIDENCE
+#85 = CLOSED / NOT MERGED / HISTORICAL SOURCE LANE
+→ BOUNDED DELTA RECONCILED INTO #101 @ 79fc8fcd...
+→ CORE RUNTIME #326 / 32240313849 = SUCCESS
+→ DEEP NAV GESTURE BROWSER ACCEPTANCE = PASS
+→ NO ROUTE SCORING / AUTO-NAVIGATION / PASSIVE CONSEQUENTIAL MEMORY / ENGAGEMENT SCORING
 
 PRODUCT / AUTHORIAL:
 #90 MACHINE = EXACT-HEAD BROWSER VERIFIED / CREATOR REVIEW PENDING
@@ -191,12 +193,13 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 2. Complete actual human/creator readability review of the SHA-bound Golden packet before any Golden seed curation.
 3. Keep protected-art material review blocked while source bytes are withheld.
 4. Preserve #95/#96/#98 as bounded pre-Assembly/trace layers; technical PASS never establishes scientific, symbolic or canonical truth.
-5. Keep #97/#101 Semantic Memory bounded after current-lineage Core Runtime/browser compatibility: JourneyState remains persistence authority, RETURN remains narrow, and no salience, activation, decay, passive semantic inference or hidden engagement scoring is authorized by #321.
+5. Keep #97/#101 Semantic Memory bounded after current-lineage Core Runtime/browser compatibility: JourneyState remains persistence authority, RETURN remains narrow, and no salience, activation, decay, passive semantic inference or hidden engagement scoring is authorized by technical PASS.
 6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
-7. Treat #101 as technically/browser compatible for its current provenance + bounded Semantic Memory contracts only; do not infer protected-source authorization, creator meaning, canon, merge or deploy from Core Runtime #321.
-8. If #99/#101 receive `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
-9. Make only the smallest changes justified by measured/browser/creator evidence.
-10. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+7. Treat #101 as technically/browser compatible for its current provenance + bounded Semantic Memory + Gesture Timeline contracts only; do not infer protected-source authorization, creator meaning, canon, merge or deploy from Core Runtime #326.
+8. Keep #85 closed as historical/source evidence; do not reactivate or fork Gesture Timeline while #101 remains the verified current-lineage host.
+9. If #99/#101 receive `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
+10. Make only the smallest changes justified by measured/browser/creator evidence.
+11. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-19 Natural Law / Geometric Memory exact-head reconciliation checkpoint
 
@@ -303,3 +306,21 @@ The validated Semantic Memory authority remains deliberately narrow:
 Current truth: `CURRENT-LINEAGE CORE RUNTIME/BROWSER COMPATIBLE / CREATOR ACCEPTANCE NOT_RUN / NOT MERGED / NOT DEPLOYED / NOT CANON`.
 
 The #62 Assembly OS / Deep Navigation baseline remains unchanged and is not superseded by this compatibility result.
+
+## 2026-08-19 Gesture Timeline current-lineage Core Runtime/browser close
+
+This checkpoint supersedes earlier operational wording that treated #85 as an active blocked Gesture Timeline implementation lane.
+
+Historical/source lane: `wenumapu8-droid/wenu-frontend#85`  
+Historical head: `47139acab8c01d0af1435ae7d66ce6af21495446`  
+Current state: `CLOSED / NOT MERGED`.
+
+Current verified host lane: `wenumapu8-droid/wenu-frontend#101`  
+Exact head: `79fc8fcd530149a0755362a801ccb36a6ff042c4`  
+KODEX Core Runtime: `#326 / 32240313849 = SUCCESS`.
+
+The bounded Gesture Timeline delta is now validated inside the existing current browser lineage and existing Deep Navigation evidence harness. The verified behavior remains presentation-only: DORMANT→AWARE→OPEN reveals already-eligible routes, keyboard/touch/reduced-motion have semantic equivalents, and no gesture may change the URL node, browser-history length or JourneyState/memory before an explicit route choice.
+
+This closes the technical Gesture Timeline compatibility blocker. It does not authorize route scoring, auto-navigation, passive consequential memory, hidden engagement scoring, identity inference, creator acceptance, merge, deploy or canon promotion.
+
+The #62 Assembly OS / Deep Navigation baseline remains unchanged and is not superseded by #101 compatibility evidence.
