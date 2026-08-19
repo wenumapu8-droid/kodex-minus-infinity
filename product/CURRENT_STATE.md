@@ -117,37 +117,43 @@ Core Runtime #329 was red only because the evidence harness passed a URL object 
 #330 = EXACT-HEAD CORE RUNTIME + INTERLUDE BROWSER PASS
 ```
 
-### Current candidate — rendered download integrity gate
+### Current candidate — fail-closed rendered download integrity repair
 
 A residual-obligation audit against historical PR #68 found a current-lineage correctness gap that had not been absorbed:
 
-- `src/pages/kodex/works.astro` constructs wallpaper download hrefs unconditionally.
-- `src/pages/kodex/vol/[slug].astro` constructs desktop/mobile wallpaper hrefs unconditionally.
-- Historical #68 contains a bounded repair for those same two construction sites: verify the tracked wallpaper exists, expose the R2 URL only for an existing asset, and conditionally render `DESCARGAR` controls.
-- #68's historical count of broken references is evidence from that branch and is **not** treated as a current measurement until rerun in current lineage.
+- `src/pages/kodex/works.astro` rendered wallpaper download hrefs unconditionally.
+- `src/pages/kodex/vol/[slug].astro` rendered desktop/mobile wallpaper hrefs unconditionally.
+- Historical #68 contains a bounded existence-check repair for those same two construction sites.
+- #68's historical broken-reference count remains historical evidence and is **not** treated as a current measurement.
+
+Core Runtime #332 / `32301270795` failed after the fail-closed download-integrity gate was added on `ce841d39471dead2d24772b20e53b5fc77fb3fb1`. Live-code inspection plus #68 patch comparison justified the bounded product repair.
 
 The current candidate is:
 
 ```text
-candidate head: ce841d39471dead2d24772b20e53b5fc77fb3fb1
-KODEX Core Runtime: #332 / 32301270795 = QUEUED at checkpoint time
-candidate state: QA GATE IMPLEMENTED / EXACT-HEAD RESULT PENDING
+candidate head: bc8a8ef7d8948dc9051dd85fdef698e9872a5506
+KODEX Core Runtime: #334 / 32306631591 = IN_PROGRESS at checkpoint time
+candidate state: PRODUCT REPAIR IMPLEMENTED / EXACT-HEAD RESULT PENDING
 ```
 
 Implemented delta only:
 
-- `scripts/kodex-download-integrity.mjs` scans built `/kodex/works/` and `/kodex/vol/**` download hrefs after Astro build;
-- local and R2-shaped wallpaper URLs normalize to the same tracked source identity;
-- a rendered download link fails if the corresponding source asset is absent from `public/kodex-content/free/wallpapers`;
-- the gate runs inside the **existing** `KODEX Core Runtime`; no second workflow/browser architecture was created.
+- `scripts/kodex-download-integrity.mjs` remains the existing post-build validator;
+- `works.astro` builds a source filename set from `public/kodex-content/free/wallpapers` and renders `DESCARGAR` only when the matching desktop wallpaper source exists;
+- `vol/[slug].astro` applies the same fail-closed source-existence rule independently to desktop and mobile downloads;
+- qualifying controls retain the existing R2 delivery URL;
+- missing wallpaper files are not generated or inferred;
+- no unrelated #68 coverage/lamina/restoration changes were ported;
+- no second workflow, registry, router, renderer, memory system or Assembly dialect was created.
 
 Truth boundary:
 
 ```text
-ce841d... QA IMPLEMENTED ≠ CI PASS ≠ PRODUCT REPAIR ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON
+tracked source existence ≠ remote R2 availability ≠ deploy verification
+bc8a8ef... IMPLEMENTED ≠ CI PASS ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON
 ```
 
-If #332 fails specifically at this new gate while earlier stack/build checks pass, the permitted next product delta is the bounded #68-derived existence/conditional-render repair in `works.astro` + `vol/[slug].astro` inside #101. If the gate passes, historical #68 counts must not be assumed current and no product patch is justified from those counts alone.
+The last fully verified current-lineage product head remains `2e6a165...` until #334 completes successfully. If #334 fails, the next delta must address only the measured failing step; do not broaden the #68 port.
 
 ### Semantic Memory — bounded authority only
 
@@ -225,7 +231,7 @@ PR #68 remains `OPEN / DRAFT / PARTIALLY SUPERSEDED`; it is not current runtime 
 Current residual classification:
 
 - historical interlude bootstrap obligation = absorbed and browser verified in #101 / #330;
-- download integrity in `works.astro` + `vol/[slug].astro` = **current-lineage gap observed; QA gate candidate now running in #101**;
+- download integrity in `works.astro` + `vol/[slug].astro` = **bounded repair ported into current #101 candidate `bc8a8ef...`; exact-head #334 pending**;
 - `scripts/lamina/compare.mjs` exists downstream, but #68's coverage-first additions (`cobertura`, `tinta_ref`, `tinta_actual`) and `KDX_REFDIR` support are not absorbed;
 - `perfil.mjs`, `comparar-region.mjs`, `kodex-snapshot.sh` and lamina loop documentation are absent downstream and remain tooling obligations to evaluate separately;
 - these residuals do not authorize another Assembly OS, route engine, memory model, renderer or canon layer.
@@ -244,10 +250,11 @@ ASSEMBLY OS / DEEP NAVIGATION:
 CURRENT-LINEAGE TECHNICAL HOST:
 #101 last verified @ 2e6a165e... = CORE RUNTIME #330 SUCCESS
 → INTERLUDE CORRIDOR 6/6 BROWSER PASS
-→ current candidate ce841d... = DOWNLOAD INTEGRITY QA GATE IMPLEMENTED
-→ Core Runtime #332 = RESULT PENDING
-→ IF GATE RED: bounded works.astro + vol/[slug].astro repair only
-→ IF GATE GREEN: do not infer historical #68 broken-link counts as current
+→ #332 on ce841d... = DOWNLOAD-INTEGRITY GATE RED
+→ bounded #68-derived repair ported only to works.astro + vol/[slug].astro
+→ current candidate bc8a8ef... = CORE RUNTIME #334 IN_PROGRESS
+→ IF #334 GREEN: promote exact-head download-integrity close
+→ IF #334 RED: repair only measured failing step; do not broaden #68 port
 
 SEMANTIC / GEOMETRIC CHAIN:
 #95/#96/#98 = CLOSED / HISTORICAL
@@ -266,7 +273,7 @@ HOLOCORE:
 
 PARTIAL LEGACY AUDIT:
 #68 = OPEN / DRAFT / PARTIALLY SUPERSEDED
-→ current user-facing residual = download integrity
+→ download-existence obligation = PORTED BOUNDEDLY TO #101 / #334 PENDING
 → separate tooling residual = lamina coverage/profile/snapshot/loop surfaces
 
 NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
@@ -279,7 +286,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 3. Keep protected-art material review blocked while source bytes are withheld.
 4. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
 5. Preserve #330 as the last exact verified current-lineage product head until a later exact SHA passes its declared gates.
-6. Resolve the download-integrity candidate through Core Runtime #332 before applying the historical #68 repair; historical metrics are not current measurements by default.
+6. Resolve current candidate `bc8a8ef...` through Core Runtime #334; if it passes, close tracked-source download integrity without inferring remote R2 availability from the local registry check.
 7. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
 8. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
 9. Keep historical substrate/source lanes closed and provenance-preserving; do not reactivate them as parallel authority absent a demonstrably unabsorbed contract.
@@ -289,7 +296,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout. §121 records the #68 residual obligation audit. §122 records the current-lineage rendered download-integrity QA candidate.
+Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout. §121 records the #68 residual obligation audit. §122 records the rendered download-integrity QA candidate. §123 records the bounded current-lineage download-existence repair and its exact-head revalidation state.
 
 ```text
 LAST VERIFIED CURRENT-LINEAGE PRODUCT
@@ -298,11 +305,17 @@ Core Runtime #330 / 32289574063 = SUCCESS
 artifact 9379838325
 interlude corridor = 6/6 PASS
 
-CURRENT CANDIDATE
+MEASURED RED
 #101 @ ce841d39471dead2d24772b20e53b5fc77fb3fb1
-Core Runtime #332 / 32301270795 = QUEUED at checkpoint time
-rendered download-integrity validator = IMPLEMENTED
-product repair = NOT YET APPLIED
+Core Runtime #332 / 32301270795 = FAILURE
+download-integrity gate = RED
+bounded product repair subsequently justified
+
+CURRENT CANDIDATE
+#101 @ bc8a8ef7d8948dc9051dd85fdef698e9872a5506
+Core Runtime #334 / 32306631591 = IN_PROGRESS at checkpoint time
+works + volume download existence guards = IMPLEMENTED
+remote R2 availability = NOT INFERRED / SEPARATE DEPLOYMENT-NETWORK CONCERN
 ```
 
-Truth boundary: `QA IMPLEMENTED ≠ CI PASS ≠ PRODUCT REPAIR ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+Truth boundary: `IMPLEMENTED ≠ CI PASS ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
