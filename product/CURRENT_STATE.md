@@ -106,7 +106,7 @@ Observed G01/G07/G04 repetition is curation evidence, not schema failure and not
 
 ## Semantic / trace / memory boundaries
 
-- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 / `32157103501` SUCCESS. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMATION`; implementation provenance is not conceptual/canonical provenance.
+- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 / `32157103501` SUCCESS. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMIRMATION`; implementation provenance is not conceptual/canonical provenance.
 - PR #96 Geometric Transduction @ `da475dce6688fdbe0511a6d71efeab734f40908e` → Core Runtime #306 / `32169696848` SUCCESS. Geometry remains Semantic Trace only.
 - PR #98 Natural Law Kernel @ `fc3545d5ff67452a5838ce9161f4e308825cf2a5` → Core Runtime #307 / `32190413923` SUCCESS. Natural-law records remain source-scoped/trace-only and create no route, memory, Assembly or canon authority.
 - PR #99 Geometric Memory Signature @ `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` → Core Runtime #310 / `32191947398` SUCCESS. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`; desktop/mobile/reduced-motion browser evidence passes with visited-only nodes/edges and zero horizontal overflow. It remains a derived read-only manifestation. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` = `NOT_RUN`.
@@ -221,3 +221,16 @@ This checkpoint supersedes earlier Current State wording where #97 appeared as a
 - Drive `28_KODEX_ASSEMBLY_OS` §111 records the same closeout.
 
 Truth boundary: `HISTORICAL SOURCE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TESTING ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+
+## 2026-08-19 generative-grammar research reconciliation checkpoint
+
+PR `wenu-frontend#100` is **RESEARCH / DOCUMENTATION**, not runtime or canon authority. Architecture review found two bounded issues that must be normalized inside that existing PR before its document can be used as an implementation guide:
+
+- its candidate PROLOGUE map currently treats `nested + orbit + concentric` as dominant grammar, conflicting with exact-head browser-verified PR #94 where PROLOGUE deliberately resolves as a horizontal `OBSERVATION / ATTENTION / SIGNAL ACQUISITION` field and the ring-as-default defect is closed;
+- its proposed `GeometryContract` is only a `RESEARCH_PROFILE / NON_AUTHORITATIVE` sketch and must map into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary rather than becoming a parallel machine-readable contract dialect.
+
+Required normalization: PROLOGUE defaults to `observation/acquisition field + layered reveal`, non-radial by default; orbit/concentric may be conditional/subordinate only when justified by scene evidence.
+
+A blocking architecture/canon review was posted on #100. No runtime, Assembly, routing, memory, artwork, merge, deploy, permission or canon state changed. Drive `28_KODEX_ASSEMBLY_OS` §112 records the same boundary.
+
+Truth boundary: `RESEARCH PROFILE ≠ MACHINE-READABLE CORRECTNESS CONTRACT ≠ IMPLEMENTATION ≠ BROWSER VERIFICATION ≠ CREATOR ACCEPTANCE ≠ CANON`.
