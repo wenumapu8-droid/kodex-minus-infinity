@@ -220,3 +220,18 @@ Drive `28_KODEX_ASSEMBLY_OS` §115 records the same workflow-topology cleanup.
 Proven lineage: `#77 54bdb112… → #86 390b91fe… → #90 b766797… → #94 a89a53f…`.
 
 Truth boundary: `HISTORICAL SUBSTRATE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ BROWSER EVIDENCE ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+
+## 2026-08-19 scene-registry substrate lane close checkpoint
+
+Drive `28_KODEX_ASSEMBLY_OS` §116 records the same workflow-topology reconciliation.
+
+```text
+#60 = CLOSED / NOT MERGED / HISTORICAL SCENE-RUNTIME SUBSTRATE
+#60 head branch = feat/kodex-scene-registry-runtime-v1
+#62 base branch = feat/kodex-scene-registry-runtime-v1
+#62 @ eaf2924707... = VERIFIED ASSEMBLY OS + DEEP NAVIGATION AUTHORITY
+```
+
+#60 commits and prior evidence remain provenance only. Do not reactivate #60 as a parallel scene-runtime, route, memory or correctness authority.
+
+Truth boundary: `HISTORICAL SUBSTRATE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TESTING ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
