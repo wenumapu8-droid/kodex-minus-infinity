@@ -84,11 +84,13 @@ G04 Junction under-density is closed at browser/agent-audit level. G01/G07/G04 r
 
 ## Current-lineage technical host — PR #101
 
-PR #101 is the current-lineage host for bounded Semantic Memory, Gesture Timeline, Manifestation/provenance and current corridor evidence.
+PR #101 is the current-lineage host for bounded Semantic Memory, Gesture Timeline, Manifestation/provenance, current corridor evidence and bounded current-lineage QA repairs.
+
+### Last fully verified product head
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED
-exact head: 2e6a165e6b69f31e40659672d97ca6d27db9a93a
+last exact verified head: 2e6a165e6b69f31e40659672d97ca6d27db9a93a
 KODEX Core Runtime: #330 / 32289574063 = SUCCESS
 evidence artifact: 9379838325
 ```
@@ -108,14 +110,44 @@ The exact-head interlude corridor report is **6/6 PASS**:
 
 All six cases report `horizontalOverflow = 0` and no first-party page errors.
 
-Core Runtime #329 was red only because the evidence harness passed a URL object to `page.goto()` instead of a serialized URL string. The repair to `.toString()` was evidence-only. Therefore:
+Core Runtime #329 was red only because the evidence harness passed a URL object to `page.goto()` instead of a serialized URL string. The repair to `.toString()` was evidence-only.
 
 ```text
 #329 = HARNESS_URL_TYPE_BUG / NOT_PRODUCT_FAILURE
 #330 = EXACT-HEAD CORE RUNTIME + INTERLUDE BROWSER PASS
 ```
 
-This restores/verifies current-lineage interlude navigation without introducing another router, JourneyState authority, memory store, runtime, workflow family or browser architecture.
+### Current candidate — rendered download integrity gate
+
+A residual-obligation audit against historical PR #68 found a current-lineage correctness gap that had not been absorbed:
+
+- `src/pages/kodex/works.astro` constructs wallpaper download hrefs unconditionally.
+- `src/pages/kodex/vol/[slug].astro` constructs desktop/mobile wallpaper hrefs unconditionally.
+- Historical #68 contains a bounded repair for those same two construction sites: verify the tracked wallpaper exists, expose the R2 URL only for an existing asset, and conditionally render `DESCARGAR` controls.
+- #68's historical count of broken references is evidence from that branch and is **not** treated as a current measurement until rerun in current lineage.
+
+The current candidate is:
+
+```text
+candidate head: ce841d39471dead2d24772b20e53b5fc77fb3fb1
+KODEX Core Runtime: #332 / 32301270795 = QUEUED at checkpoint time
+candidate state: QA GATE IMPLEMENTED / EXACT-HEAD RESULT PENDING
+```
+
+Implemented delta only:
+
+- `scripts/kodex-download-integrity.mjs` scans built `/kodex/works/` and `/kodex/vol/**` download hrefs after Astro build;
+- local and R2-shaped wallpaper URLs normalize to the same tracked source identity;
+- a rendered download link fails if the corresponding source asset is absent from `public/kodex-content/free/wallpapers`;
+- the gate runs inside the **existing** `KODEX Core Runtime`; no second workflow/browser architecture was created.
+
+Truth boundary:
+
+```text
+ce841d... QA IMPLEMENTED ≠ CI PASS ≠ PRODUCT REPAIR ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON
+```
+
+If #332 fails specifically at this new gate while earlier stack/build checks pass, the permitted next product delta is the bounded #68-derived existence/conditional-render repair in `works.astro` + `vol/[slug].astro` inside #101. If the gate passes, historical #68 counts must not be assumed current and no product patch is justified from those counts alone.
 
 ### Semantic Memory — bounded authority only
 
@@ -186,12 +218,19 @@ Current downstream surface:
 
 #70 does not replace #62 as Assembly OS / Deep Navigation authority.
 
-## Other historical / partially superseded surfaces
+## PR #68 — partial legacy/restoration audit
 
-- PR #60 = `CLOSED / NOT MERGED / HISTORICAL SCENE-RUNTIME SUBSTRATE`; its head branch was the base branch later extended by #62.
-- PR #68 = `OPEN / DRAFT / PARTIALLY SUPERSEDED`; it retains unique coverage/download/plate-tooling obligations and is not current runtime authority. Its historical interlude finding has now been restored and browser-verified in current lineage #101.
+PR #68 remains `OPEN / DRAFT / PARTIALLY SUPERSEDED`; it is not current runtime authority and must not be wholesale merged/retargeted into #101.
 
-Do not close partially superseded lanes solely by age or similarity. Close only when all unique obligations are demonstrably absorbed or explicitly retired with authority.
+Current residual classification:
+
+- historical interlude bootstrap obligation = absorbed and browser verified in #101 / #330;
+- download integrity in `works.astro` + `vol/[slug].astro` = **current-lineage gap observed; QA gate candidate now running in #101**;
+- `scripts/lamina/compare.mjs` exists downstream, but #68's coverage-first additions (`cobertura`, `tinta_ref`, `tinta_actual`) and `KDX_REFDIR` support are not absorbed;
+- `perfil.mjs`, `comparar-region.mjs`, `kodex-snapshot.sh` and lamina loop documentation are absent downstream and remain tooling obligations to evaluate separately;
+- these residuals do not authorize another Assembly OS, route engine, memory model, renderer or canon layer.
+
+Do not close #68 until every unique obligation is either demonstrably absorbed into the current lineage or explicitly retired with authority.
 
 ## Current critical path
 
@@ -203,10 +242,12 @@ ASSEMBLY OS / DEEP NAVIGATION:
 → ONLY IF REFINE: deterministic Golden fixture/seed curation using existing registered IDs + validators
 
 CURRENT-LINEAGE TECHNICAL HOST:
-#101 @ 2e6a165e... = OPEN / DRAFT / CORE RUNTIME #330 SUCCESS
+#101 last verified @ 2e6a165e... = CORE RUNTIME #330 SUCCESS
 → INTERLUDE CORRIDOR 6/6 BROWSER PASS
-→ bounded Semantic Memory + Gesture + provenance remain browser compatible
-→ NO authority expansion from technical PASS
+→ current candidate ce841d... = DOWNLOAD INTEGRITY QA GATE IMPLEMENTED
+→ Core Runtime #332 = RESULT PENDING
+→ IF GATE RED: bounded works.astro + vol/[slug].astro repair only
+→ IF GATE GREEN: do not infer historical #68 broken-link counts as current
 
 SEMANTIC / GEOMETRIC CHAIN:
 #95/#96/#98 = CLOSED / HISTORICAL
@@ -225,7 +266,8 @@ HOLOCORE:
 
 PARTIAL LEGACY AUDIT:
 #68 = OPEN / DRAFT / PARTIALLY SUPERSEDED
-→ audit remaining unique coverage/download/plate-tooling obligations only
+→ current user-facing residual = download integrity
+→ separate tooling residual = lamina coverage/profile/snapshot/loop surfaces
 
 NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
@@ -236,26 +278,31 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 2. Complete actual human/creator review of Golden 24 before any seed/fixture curation.
 3. Keep protected-art material review blocked while source bytes are withheld.
 4. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
-5. Treat current-lineage interlude corridor navigation as browser verified on #101 @ `2e6a165e…` / #330; do not create another route/browser architecture for it.
-6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
-7. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
-8. Keep historical substrate/source lanes closed and provenance-preserving; do not reactivate them as parallel authority absent a demonstrably unabsorbed contract.
-9. Continue #68 audit only against obligations demonstrably not absorbed by current lineage.
-10. Make only the smallest changes justified by measured/browser/creator evidence.
-11. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
+5. Preserve #330 as the last exact verified current-lineage product head until a later exact SHA passes its declared gates.
+6. Resolve the download-integrity candidate through Core Runtime #332 before applying the historical #68 repair; historical metrics are not current measurements by default.
+7. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
+8. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
+9. Keep historical substrate/source lanes closed and provenance-preserving; do not reactivate them as parallel authority absent a demonstrably unabsorbed contract.
+10. Continue #68 audit only against obligations demonstrably not absorbed by current lineage; never wholesale-port the branch.
+11. Make only the smallest changes justified by measured/browser/creator evidence.
+12. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
-## 2026-08-20 interlude corridor exact-head close checkpoint
+## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` §120 records the same state transition.
+Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout. §121 records the #68 residual obligation audit. §122 records the current-lineage rendered download-integrity QA candidate.
 
 ```text
+LAST VERIFIED CURRENT-LINEAGE PRODUCT
 #101 @ 2e6a165e6b69f31e40659672d97ca6d27db9a93a
 Core Runtime #330 / 32289574063 = SUCCESS
 artifact 9379838325
 interlude corridor = 6/6 PASS
-horizontal overflow = 0
-first-party page errors = 0
-#329 red = HARNESS_URL_TYPE_BUG / NOT_PRODUCT_FAILURE
+
+CURRENT CANDIDATE
+#101 @ ce841d39471dead2d24772b20e53b5fc77fb3fb1
+Core Runtime #332 / 32301270795 = QUEUED at checkpoint time
+rendered download-integrity validator = IMPLEMENTED
+product repair = NOT YET APPLIED
 ```
 
-Truth boundary: `BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+Truth boundary: `QA IMPLEMENTED ≠ CI PASS ≠ PRODUCT REPAIR ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
