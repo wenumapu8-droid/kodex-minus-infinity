@@ -224,13 +224,14 @@ Truth boundary: `HISTORICAL SOURCE ≠ CURRENT IMPLEMENTATION AUTHORITY ≠ TEST
 
 ## 2026-08-19 generative-grammar research reconciliation checkpoint
 
-PR `wenu-frontend#100` is **RESEARCH / DOCUMENTATION**, not runtime or canon authority. Architecture review found two bounded issues that must be normalized inside that existing PR before its document can be used as an implementation guide:
+PR `wenu-frontend#100` remains **RESEARCH / DOCUMENTATION**, not runtime or canon authority. The architecture/documentation mismatch found in review is now closed on exact PR head `fd98f3e7717f09c6f12f248d2d74198a6cd7e012` (`OPEN / DRAFT / MERGEABLE / NOT MERGED`).
 
-- its candidate PROLOGUE map currently treats `nested + orbit + concentric` as dominant grammar, conflicting with exact-head browser-verified PR #94 where PROLOGUE deliberately resolves as a horizontal `OBSERVATION / ATTENTION / SIGNAL ACQUISITION` field and the ring-as-default defect is closed;
-- its proposed `GeometryContract` is only a `RESEARCH_PROFILE / NON_AUTHORITATIVE` sketch and must map into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary rather than becoming a parallel machine-readable contract dialect.
+Normalized boundaries:
 
-Required normalization: PROLOGUE defaults to `observation/acquisition field + layered reveal`, non-radial by default; orbit/concentric may be conditional/subordinate only when justified by scene evidence.
+- PROLOGUE candidate grammar is now `observation/acquisition field + layered reveal; non-radial by default`, matching the direction already demonstrated by exact-head browser-verified PR #94; orbit/concentric geometry is explicitly subordinate/conditional rather than the default macro-silhouette.
+- the proposed `GeometryContract` is explicitly `RESEARCH_PROFILE / NON_AUTHORITATIVE`; if implemented it must normalize into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary and validators.
+- #100 explicitly prohibits a parallel machine-readable correctness dialect beside ElementContract, PlateSpec, Semantic IR or existing Natural Law/trace validators absent a demonstrated contract gap.
 
-A blocking architecture/canon review was posted on #100. No runtime, Assembly, routing, memory, artwork, merge, deploy, permission or canon state changed. Drive `28_KODEX_ASSEMBLY_OS` §112 records the same boundary.
+No runtime, Assembly, routing, memory, artwork, merge, deploy, permission or canon state changed. Drive `28_KODEX_ASSEMBLY_OS` §112 records discovery and §113 records exact-head documentation reconciliation close.
 
 Truth boundary: `RESEARCH PROFILE ≠ MACHINE-READABLE CORRECTNESS CONTRACT ≠ IMPLEMENTATION ≠ BROWSER VERIFICATION ≠ CREATOR ACCEPTANCE ≠ CANON`.
