@@ -137,6 +137,7 @@ PR #86 remains the verified bounded transition-convergence substrate. PR #90 MAC
 - PR #97 Semantic Memory v2 current head `adb460204fb5bb236e9f1ebdfac2d038fd1d09d6` keeps RETURN narrow, JourneyState as persistence authority and the semantic adapter stateless/explicit-commit only. `KODEX Semantic Memory Evidence` #3 / `32198754926` is exact-head `SUCCESS` for JourneyState, deterministic restore/replay, the RETURN authority verifier and Astro build. This is contract/build CI evidence only; broader Core Runtime/browser evidence remains `NOT_RUN`.
 - PR #98 Natural Law Kernel current head `fc3545d5ff67452a5838ce9161f4e308825cf2a5` completed KODEX Core Runtime #307 / `32190413923` with `SUCCESS`. It remains a source-scoped, trace-only design-transduction layer and creates no route, memory, Assembly or canon authority.
 - PR #99 Geometric Memory Signature current head `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` completed KODEX Core Runtime #310 / `32191947398` with `SUCCESS`. Artifact `9344588189`, digest `sha256:9a47de1768b7b345e874e688e161248fe2a225515095add371e3f4d4dfd2fca2`, is SHA-bound to the same head. Browser evidence passes desktop, 390×844, 412×915 and reduced-motion with deterministic bounded topologies, visited-only nodes/edges and zero horizontal overflow. It is a derived read-only manifestation, not a second memory or route system. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` remains `NOT_RUN`.
+- PR #101 Manifestation Recipe exact head `7ea6e9312d32c6f892ff3841e0caf98b055dd55c` completed KODEX Core Runtime #314 / `32206353242` with `SUCCESS`. Provenance now fails closed against the existing authorities implied by registered geometry, Natural Law patterns, protected Ocín source identity and the reused `RADIAL_SYMMETRY → mirror` runtime capability. No second provenance registry, renderer, route engine, memory store or canon authority is created. Protected source pixels remain withheld and creator acceptance remains `NOT_RUN`.
 - Merged PR #78 does not supersede the verified #62 ElementContract vocabulary; useful inventory/source material must be normalized through #62 contracts before entering Assembly correctness.
 - PR #92 is a review/staging snapshot lane only; it contains no deployment authority and must not bypass creator review.
 
@@ -162,8 +163,8 @@ SEMANTIC / NATURAL-LAW TRACE LANE:
 → #96 @ da475dce... = CORE RUNTIME #306 SUCCESS
 → #98 @ fc3545d5... = CORE RUNTIME #307 SUCCESS / TRACE-ONLY NATURAL LAW
 → #99 @ abddd680... = CORE RUNTIME #310 SUCCESS / SHA-BOUND BROWSER EVIDENCE
-→ CREATOR VERDICT ON GEOMETRIC MEMORY SIGNATURE: MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING
-→ DO NOT WIRE INTO RETURN BEFORE THAT REVIEW
+→ #101 @ 7ea6e931... = CORE RUNTIME #314 SUCCESS / PROVENANCE FAIL-CLOSED VERIFIED
+→ CREATOR VERDICT ON GEOMETRIC MEMORY / MANIFESTATION MEANING BEFORE RETURN OR PROTECTED-SOURCE EXPANSION
 
 SEMANTIC MEMORY LANE:
 #97 @ adb460204... = RETURN NARROW / JOURNEYSTATE AUTHORITY RECONCILED / STATELESS EXPLICIT-COMMIT ADAPTER
@@ -190,9 +191,10 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 4. Preserve #95/#96/#98 as bounded pre-Assembly/trace layers; technical PASS never establishes scientific, symbolic or canonical truth.
 5. Keep #97 bounded after exact-head contract/build PASS until broader Core Runtime/browser evidence exists; do not add a second memory system, passive semantic inference, salience, activation or decay before that gate.
 6. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
-7. If #99 is `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
-8. Make only the smallest changes justified by measured/browser/creator evidence.
-9. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
+7. Treat #101 as technically verified for its current provenance contract only; do not infer protected-source authorization, creator meaning, canon, merge or deploy from Core Runtime #314.
+8. If #99/#101 receive `MEANING_CARRIED`, the next bounded candidate may expose the same derived read-only signature inside RETURN while Memory Constellation remains authoritative. If `DECORATIVE_ONLY`, revise mapping before RETURN. If `MISLEADING`, remove the behavioral adapter while preserving the trace-only parent layer.
+9. Make only the smallest changes justified by measured/browser/creator evidence.
+10. Preserve user agency, exact provenance, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-19 Natural Law / Geometric Memory exact-head reconciliation checkpoint
 
@@ -238,3 +240,15 @@ This is `TECHNICALLY/BROWSER VERIFIED / CREATOR VERDICT NOT_RUN`. Do not wire #9
 Truth boundary: `CORE RUNTIME PASS ≠ CREATOR MEANING ≠ CANON ≠ MERGE ≠ DEPLOY`.
 
 No merge, deploy, permission change, protected Ocín original mutation, public-preview publication or irreversible canon promotion occurred in this reconciliation.
+
+## 2026-08-19 Manifestation Recipe provenance exact-head checkpoint
+
+PR #101 current exact head: `7ea6e9312d32c6f892ff3841e0caf98b055dd55c`.
+
+KODEX Core Runtime #314 / run `32206353242`: `SUCCESS`.
+
+The compiler now rejects arbitrary/unbound `provenance_refs[]` and requires the existing authority references implied by its registered geometry, Natural Law pattern records, protected Ocín source identity and reused `RADIAL_SYMMETRY → mirror` capability. This is a fail-closed validation repair over existing registries; it does not create another provenance registry or authority layer.
+
+Protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`. Presence of provenance never grants source-byte use, crop, recolor, distortion, public export, creator acceptance, merge, deploy or canon status.
+
+Current truth: `PROVENANCE CONTRACT EXACT-HEAD VERIFIED / CORE RUNTIME SUCCESS / CREATOR ACCEPTANCE NOT_RUN / NOT MERGED / NOT DEPLOYED / NOT CANON`.
