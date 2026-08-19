@@ -1,11 +1,11 @@
 # KODEX−∞ CURRENT STATE
 
 Last updated: `2026-08-20`  
-Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV VERIFIED BASELINE / CURRENT-LINEAGE CORRIDOR BROWSER VERIFIED / CURATION ACTIVE`
+Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV VERIFIED BASELINE / CURRENT-LINEAGE EXACT-HEAD BROWSER VERIFIED / CURATION ACTIVE`
 
 ## Authority boundary
 
-This file records **current implementation and verification state**. It does not create canon by implication.
+This file records current implementation and verification state. It does not create canon by implication.
 
 Authority remains, in order:
 
@@ -50,22 +50,18 @@ evidence artifact: 9306874883
 digest: sha256:752fad12a1fbaad94acffc7a9a1d782defd2fd290b4f55236acc42e0d9149ff4
 ```
 
-Focus/browser P0 is mechanically closed on that SHA: visible keyboard focus; Back/Forward node+focus restoration; mobile/touch user agency; no horizontal overflow; reduced-motion semantic equivalence; 100dvh/no-page-scroll obligations where required; performance evidence within declared hypothesis thresholds.
+Focus/browser P0 is mechanically closed. Assembly OS P0.1–P0.10 are implemented + verified and must not be recreated in a parallel dialect absent a demonstrated contract gap:
 
-### Assembly OS P0.1–P0.10 — implemented + verified
-
-Do not recreate these contracts in a parallel branch or dialect absent a demonstrated contract gap.
-
-1. **ElementContract** — one machine-readable schema + 28 existing normalized repo-native elements.
-2. **PlateSpec** — `KNOWLEDGE_PLATE`, `JUNCTION_PLATE`, `ACTIVATOR_PLATE` with protected-art invariants.
-3. **Deterministic assembler** — `node + plate_type + seed → PlateSpec`; registered IDs only; structured failures.
-4. **Golden benchmark** — 12 deterministic plates balanced across Science / Technology / Art / Consciousness.
-5. **Copy-role compiler** — source-linked roles only; no silent generated prose for truth-sensitive copy.
-6. **Protected Ocín activation adapter** — originals immutable; environment-only activation contract.
-7. **Assembly QA** — contract truth separated from rendered/browser truth.
-8. **WorkOrder / StationResult** — SCRIPT / AGENT / HUMAN share one correctness contract.
-9. **Macro chapter factory** — consumes validated PlateSpecs and delegates eligibility to existing Deep Route Engine; `runtime_auto_navigation=false`.
-10. **Seeded factory benchmark** — invalid rate, repetition, visual signatures, route diversity, runtime cost and explicit human-curator status.
+1. ElementContract — one machine-readable schema + 28 normalized repo-native elements.
+2. PlateSpec — KNOWLEDGE_PLATE / JUNCTION_PLATE / ACTIVATOR_PLATE with protected-art invariants.
+3. Deterministic assembler — node + plate_type + seed → PlateSpec using registered IDs only.
+4. Golden benchmark — 12 deterministic cases across Science / Technology / Art / Consciousness.
+5. Source-linked copy-role compiler.
+6. Protected Ocín activation adapter with immutable originals.
+7. Assembly QA separating contract truth from browser/rendered truth.
+8. WorkOrder / StationResult interchangeability contract.
+9. Macro chapter factory delegating route eligibility to existing Deep Route Engine.
+10. Seeded factory benchmark for invalidity, repetition, visual signatures, route diversity, runtime cost and curator status.
 
 Correctness remains registry/schema/constraint/validator driven. Generative agents are optional intelligence workers, not runtime or correctness dependencies.
 
@@ -80,147 +76,118 @@ protected_art_source_bytes = WITHHELD
 aesthetic_threshold_status = NONE
 ```
 
-G04 Junction under-density is closed at browser/agent-audit level. G01/G07/G04 repetition is curation evidence, not schema failure and not creator rejection. Golden fixture/seed curation remains blocked until human/creator review explicitly yields `REFINE`; any curation must use existing registered IDs and validators only.
+G04 Junction under-density is closed at browser/agent-audit level. G01/G07/G04 repetition remains curation evidence, not schema failure or creator rejection. Golden fixture/seed curation remains blocked until human/creator review explicitly yields `REFINE`; any curation must use existing registered IDs and validators only.
 
 ## Current-lineage technical host — PR #101
 
-PR #101 is the current-lineage host for bounded Semantic Memory, Gesture Timeline, Manifestation/provenance, current corridor evidence and bounded current-lineage QA repairs.
+PR #101 is the bounded current-lineage host for Semantic Memory, Gesture Timeline, Manifestation/provenance, corridor evidence and current-lineage QA repairs.
 
-### Last fully verified product head
+### Current exact verified product head
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED
-last exact verified head: 2e6a165e6b69f31e40659672d97ca6d27db9a93a
-KODEX Core Runtime: #330 / 32289574063 = SUCCESS
-evidence artifact: 9379838325
+exact verified head: bc8a8ef7d8948dc9051dd85fdef698e9872a5506
+KODEX Core Runtime: #334 / 32306631591 = SUCCESS
+evidence artifact: 9385043889
+digest: sha256:016ff584c136c14c278583d0c135164c03b0c9cb80d23f6d2851ac23538e3f9f
 ```
+
+The same SHA passes the full current-lineage matrix: core runtime, JourneyState + bounded Semantic Memory, Assembly OS + bounded Gesture Timeline, seeded factory benchmark, integrity audit, Astro build, rendered download integrity, Chromium/browser evidence, product interlude corridor, Deep Navigation + gesture reveal, Geometric Memory, Manifestation Recipe, rendered Golden benchmark, curator capture and evidence upload.
 
 ### Interlude corridor — exact-head browser verified
 
-Drive `28_KODEX_ASSEMBLY_OS` §120 records the same closeout.
+The interlude corridor remains 6/6 PASS for `archive-machine → /kodex/folio/iv/` and `cosmology-return → /kodex/folio/vi/` across desktop keyboard, 390×844 touch and reduced-motion, with no horizontal document overflow or first-party page errors.
 
-The exact-head interlude corridor report is **6/6 PASS**:
+Core Runtime #329 was red only because the evidence harness passed a URL object to `page.goto()` instead of a serialized string. #330 closed that harness defect. #334 re-passed the corridor on the new exact head.
 
-1. `archive-machine` / desktop / keyboard → `/kodex/folio/iv/`
-2. `archive-machine` / mobile 390×844 / touch → `/kodex/folio/iv/`
-3. `archive-machine` / reduced-motion / keyboard → `/kodex/folio/iv/`
-4. `cosmology-return` / desktop / keyboard → `/kodex/folio/vi/`
-5. `cosmology-return` / mobile 390×844 / touch → `/kodex/folio/vi/`
-6. `cosmology-return` / reduced-motion / keyboard → `/kodex/folio/vi/`
+### Download integrity — exact-head closed
 
-All six cases report `horizontalOverflow = 0` and no first-party page errors.
+A residual-obligation audit against historical PR #68 found a real current-lineage gap: `/kodex/works/` and `/kodex/vol/[slug]/` rendered wallpaper download controls unconditionally.
 
-Core Runtime #329 was red only because the evidence harness passed a URL object to `page.goto()` instead of a serialized URL string. The repair to `.toString()` was evidence-only.
+Core Runtime #332 / `32301270795` failed specifically at the new fail-closed rendered-download gate on `ce841d39471dead2d24772b20e53b5fc77fb3fb1`, after earlier runtime/Assembly/build checks passed. Historical #68 contained the bounded existence-check repair for those two construction sites.
 
-```text
-#329 = HARNESS_URL_TYPE_BUG / NOT_PRODUCT_FAILURE
-#330 = EXACT-HEAD CORE RUNTIME + INTERLUDE BROWSER PASS
-```
+The repair was ported only into current lineage:
 
-### Current candidate — fail-closed rendered download integrity repair
-
-A residual-obligation audit against historical PR #68 found a current-lineage correctness gap that had not been absorbed:
-
-- `src/pages/kodex/works.astro` rendered wallpaper download hrefs unconditionally.
-- `src/pages/kodex/vol/[slug].astro` rendered desktop/mobile wallpaper hrefs unconditionally.
-- Historical #68 contains a bounded existence-check repair for those same two construction sites.
-- #68's historical broken-reference count remains historical evidence and is **not** treated as a current measurement.
-
-Core Runtime #332 / `32301270795` failed after the fail-closed download-integrity gate was added on `ce841d39471dead2d24772b20e53b5fc77fb3fb1`. Live-code inspection plus #68 patch comparison justified the bounded product repair.
-
-The current candidate is:
-
-```text
-candidate head: bc8a8ef7d8948dc9051dd85fdef698e9872a5506
-KODEX Core Runtime: #334 / 32306631591 = IN_PROGRESS at checkpoint time
-candidate state: PRODUCT REPAIR IMPLEMENTED / EXACT-HEAD RESULT PENDING
-```
-
-Implemented delta only:
-
-- `scripts/kodex-download-integrity.mjs` remains the existing post-build validator;
-- `works.astro` builds a source filename set from `public/kodex-content/free/wallpapers` and renders `DESCARGAR` only when the matching desktop wallpaper source exists;
-- `vol/[slug].astro` applies the same fail-closed source-existence rule independently to desktop and mobile downloads;
+- source filenames are read from `public/kodex-content/free/wallpapers`;
+- `/kodex/works/` renders `DESCARGAR` only when the matching desktop wallpaper source exists;
+- `/kodex/vol/[slug]/` independently guards desktop and mobile downloads;
 - qualifying controls retain the existing R2 delivery URL;
 - missing wallpaper files are not generated or inferred;
 - no unrelated #68 coverage/lamina/restoration changes were ported;
-- no second workflow, registry, router, renderer, memory system or Assembly dialect was created.
+- no second registry, workflow, router, renderer, memory system or Assembly dialect was created.
+
+Core Runtime #334 proves the download-integrity gate PASS and the complete downstream browser/Deep Navigation/Golden matrix PASS on the same SHA.
 
 Truth boundary:
 
 ```text
-tracked source existence ≠ remote R2 availability ≠ deploy verification
-bc8a8ef... IMPLEMENTED ≠ CI PASS ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON
+tracked local source existence ≠ remote R2 object availability ≠ deployed-site availability
+exact-head CI/browser PASS ≠ creator acceptance ≠ merge ≠ deploy ≠ canon
 ```
 
-The last fully verified current-lineage product head remains `2e6a165...` until #334 completes successfully. If #334 fails, the next delta must address only the measured failing step; do not broaden the #68 port.
+Remote R2 delivery remains a separate deployment/network concern and is not inferred from this local source-registration validator.
 
 ### Semantic Memory — bounded authority only
 
-Historical source PR #97 is `CLOSED / HISTORICAL SOURCE / NOT MERGED / NOT DEPLOYED / NOT CANON`. Its valid bounded delta is reconciled into #101 and remains narrow:
+Historical source PR #97 is `CLOSED / HISTORICAL SOURCE / NOT MERGED / NOT DEPLOYED / NOT CANON`. Its valid bounded delta is reconciled into #101:
 
 - JourneyState = persistence authority;
-- RETURN = narrow specimen store, not a second journey-memory model;
+- RETURN = narrow specimen store;
 - semantic adapter = stateless + explicit-commit only;
 - deterministic/idempotent replay preserved;
 - passive observation/dwell/co-occurrence cannot write personal meaning;
-- salience, activation, decay, dwell weighting, passive inference, hidden engagement scoring, semantic-clock authority and parallel storage are **NOT AUTHORIZED**.
+- salience, activation, decay, dwell weighting, passive inference, hidden engagement scoring, semantic-clock authority and parallel storage are NOT AUTHORIZED.
 
 ### Gesture Timeline — bounded presentation only
 
 Historical source PR #85 is `CLOSED / HISTORICAL SOURCE / NOT MERGED`. Its bounded delta is reconciled into #101 and browser verified in current lineage.
 
-`DORMANT → AWARE → OPEN` may reveal already-eligible routes only. Keyboard/touch/reduced-motion have semantic equivalents. Gesture cannot change URL node, browser history or JourneyState/memory before explicit route choice. No route scoring, auto-navigation, passive consequential memory, engagement scoring or identity inference is authorized.
+`DORMANT → AWARE → OPEN` may reveal already-eligible routes only. Gesture cannot change URL node, browser history or JourneyState/memory before explicit route choice. No route scoring, auto-navigation, passive consequential memory, engagement scoring or identity inference is authorized.
 
 ### Manifestation / provenance
 
-PR #101 remains fail-closed on provenance: arbitrary/unbound `provenance_refs[]` are rejected and existing geometry, Natural Law, protected-source identity and reused renderer capability authorities are required where applicable.
-
-Protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`. Provenance never grants crop, recolor, distortion, source-byte use, public export, creator acceptance, merge, deploy or canon status.
+PR #101 remains fail-closed on provenance. Protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`. Provenance never grants crop, recolor, distortion, source-byte use, public export, creator acceptance, merge, deploy or canon status.
 
 ## Product-facing authorial surfaces
 
-Historical substrates stay closed and remain provenance only:
+Historical substrates stay closed and provenance-only:
 
-- PR #77 = `CLOSED / NOT MERGED / HISTORICAL PRODUCT-CORRIDOR SUBSTRATE`.
-- PR #86 = `CLOSED / NOT MERGED / HISTORICAL TRANSITION SUBSTRATE`.
-- Proven lineage: `#77 54bdb112… → #86 390b91fe… → #90 b766797… → #94 a89a53f…`.
+- PR #77 = CLOSED / NOT MERGED / HISTORICAL PRODUCT-CORRIDOR SUBSTRATE.
+- PR #86 = CLOSED / NOT MERGED / HISTORICAL TRANSITION SUBSTRATE.
+- lineage: `#77 54bdb112… → #86 390b91fe… → #90 b766797… → #94 a89a53f…`.
 
-Current authorial review surfaces:
+Current review surfaces:
 
-- PR #90 MACHINE @ `b76679719e37a43e79be412269c5a4ddec2c2ccc` = exact-head browser verified / creator acceptance `NOT_RUN`.
-- PR #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / specific low-legibility defect closed / human+creator `KEEP | REFINE | REJECT` pending.
+- PR #90 MACHINE @ `b76679719e37a43e79be412269c5a4ddec2c2ccc` = exact-head browser verified / creator acceptance NOT_RUN.
+- PR #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / low-legibility defect closed / creator KEEP | REFINE | REJECT pending.
 - PR #92 = review/staging snapshot only; no deployment authority.
 
 ## Semantic / geometric / natural-law chain
 
-Historical source lanes are intentionally closed without merge to prevent parallel implementation authority while preserving provenance and test history.
-
-- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → Core Runtime #305 SUCCESS → `CLOSED / HISTORICAL SOURCE / NOT MERGED`. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain `NEEDS_CONFIRMATION`.
-- PR #96 Geometric Transduction @ `da475dce6688fdbe0511a6d71efeab734f40908e` → Core Runtime #306 SUCCESS → `CLOSED / HISTORICAL SOURCE / NOT MERGED`. Geometry remains Semantic Trace only.
-- PR #98 Natural Law Kernel @ `fc3545d5ff67452a5838ce9161f4e308825cf2a5` → Core Runtime #307 SUCCESS → `CLOSED / HISTORICAL SOURCE / NOT MERGED`. Natural-law records remain source-scoped/trace-only.
-- PR #99 Geometric Memory Signature @ `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` → Core Runtime #310 SUCCESS; artifact `9344588189` → `OPEN / DRAFT / NOT MERGED`. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` = `NOT_RUN`. No RETURN integration before that verdict.
+- PR #95 Semantic IR @ `59b2d082845c42617dd5adea06c4107191d56fd3` → #305 SUCCESS → CLOSED / HISTORICAL SOURCE / NOT MERGED. `IMPERMANENCE`, `INTERDEPENDENCE`, `OBSERVER` remain NEEDS_CONFIRMATION.
+- PR #96 Geometric Transduction @ `da475dce6688fdbe0511a6d71efeab734f40908e` → #306 SUCCESS → CLOSED / HISTORICAL SOURCE / NOT MERGED.
+- PR #98 Natural Law Kernel @ `fc3545d5ff67452a5838ce9161f4e308825cf2a5` → #307 SUCCESS → CLOSED / HISTORICAL SOURCE / NOT MERGED.
+- PR #99 Geometric Memory Signature @ `abddd6809e4eba020e8e2cbf24cb97cc0ab509aa` → #310 SUCCESS; artifact `9344588189` → OPEN / DRAFT / NOT MERGED. Creator verdict `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING` = NOT_RUN. No RETURN integration before that verdict.
 
 ## Research-only grammar
 
 PR #100 @ `fd98f3e7717f09c6f12f248d2d74198a6cd7e012` remains `OPEN / DRAFT / RESEARCH / DOCUMENTATION / NOT MERGED`.
 
-- PROLOGUE grammar = `observation/acquisition field + layered reveal; non-radial by default`.
-- proposed `GeometryContract` = `RESEARCH_PROFILE / NON_AUTHORITATIVE`.
-- any future implementation must normalize into existing Geometric Transduction / Semantic Trace / Natural Law vocabulary and validators.
-- no parallel correctness dialect beside existing contracts is authorized absent a demonstrated gap.
+- PROLOGUE grammar = observation/acquisition field + layered reveal; non-radial by default.
+- proposed GeometryContract = RESEARCH_PROFILE / NON_AUTHORITATIVE.
+- any future implementation must normalize into existing vocabulary/validators rather than create a parallel correctness dialect.
 
 ## HoloCore lineage / review surface
 
 Historical substrate lanes:
 
-- PR #63 = `CLOSED / NOT MERGED / HISTORICAL HOLOCORE PROTOTYPE SUBSTRATE`.
-- PR #67 = `CLOSED / NOT MERGED / HISTORICAL HOLOCORE CHROME/CAGE SUBSTRATE`.
-- PR #69 = `CLOSED / NOT MERGED / HISTORICAL HOLOCORE RENDERER-ADAPTER SUBSTRATE`.
+- PR #63 = CLOSED / NOT MERGED / HISTORICAL HOLOCORE PROTOTYPE SUBSTRATE.
+- PR #67 = CLOSED / NOT MERGED / HISTORICAL HOLOCORE CHROME/CAGE SUBSTRATE.
+- PR #69 = CLOSED / NOT MERGED / HISTORICAL HOLOCORE RENDERER-ADAPTER SUBSTRATE.
 
 Current downstream surface:
 
-- PR #70 @ `0676c9e8a4d39c3b8949548598f9c021c87e3e3c` = `OPEN / DRAFT / NOT MERGED`; Core Runtime #278 = SUCCESS; artifact `9240563358`; creator visual acceptance = `PENDING`.
+- PR #70 @ `0676c9e8a4d39c3b8949548598f9c021c87e3e3c` = OPEN / DRAFT / NOT MERGED; Core Runtime #278 SUCCESS; artifact `9240563358`; creator visual acceptance PENDING.
 
 #70 does not replace #62 as Assembly OS / Deep Navigation authority.
 
@@ -230,13 +197,13 @@ PR #68 remains `OPEN / DRAFT / PARTIALLY SUPERSEDED`; it is not current runtime 
 
 Current residual classification:
 
-- historical interlude bootstrap obligation = absorbed and browser verified in #101 / #330;
-- download integrity in `works.astro` + `vol/[slug].astro` = **bounded repair ported into current #101 candidate `bc8a8ef...`; exact-head #334 pending**;
-- `scripts/lamina/compare.mjs` exists downstream, but #68's coverage-first additions (`cobertura`, `tinta_ref`, `tinta_actual`) and `KDX_REFDIR` support are not absorbed;
-- `perfil.mjs`, `comparar-region.mjs`, `kodex-snapshot.sh` and lamina loop documentation are absent downstream and remain tooling obligations to evaluate separately;
+- interlude bootstrap obligation = absorbed + browser verified in current lineage;
+- download-existence obligation in `works.astro` + `vol/[slug].astro` = **ABSORBED + EXACT-HEAD VERIFIED in #101 / #334**;
+- `scripts/lamina/compare.mjs` exists downstream, but #68 coverage-first additions (`cobertura`, `tinta_ref`, `tinta_actual`) and `KDX_REFDIR` support are not yet proven absorbed;
+- `perfil.mjs`, `comparar-region.mjs`, `kodex-snapshot.sh` and lamina loop documentation remain tooling obligations to evaluate separately;
 - these residuals do not authorize another Assembly OS, route engine, memory model, renderer or canon layer.
 
-Do not close #68 until every unique obligation is either demonstrably absorbed into the current lineage or explicitly retired with authority.
+Do not close #68 until every unique obligation is either demonstrably absorbed into current lineage or explicitly retired with authority.
 
 ## Current critical path
 
@@ -248,18 +215,15 @@ ASSEMBLY OS / DEEP NAVIGATION:
 → ONLY IF REFINE: deterministic Golden fixture/seed curation using existing registered IDs + validators
 
 CURRENT-LINEAGE TECHNICAL HOST:
-#101 last verified @ 2e6a165e... = CORE RUNTIME #330 SUCCESS
-→ INTERLUDE CORRIDOR 6/6 BROWSER PASS
-→ #332 on ce841d... = DOWNLOAD-INTEGRITY GATE RED
-→ bounded #68-derived repair ported only to works.astro + vol/[slug].astro
-→ current candidate bc8a8ef... = CORE RUNTIME #334 IN_PROGRESS
-→ IF #334 GREEN: promote exact-head download-integrity close
-→ IF #334 RED: repair only measured failing step; do not broaden #68 port
+#101 @ bc8a8ef7... = CORE RUNTIME #334 SUCCESS / EXACT-HEAD BROWSER VERIFIED
+→ DOWNLOAD-INTEGRITY OBLIGATION = CLOSED
+→ tracked source existence only; remote R2/deploy verification remains separate and unauthorized
+→ next technical audit: #68 residual lamina coverage/profile/snapshot tooling, obligation by obligation
 
 SEMANTIC / GEOMETRIC CHAIN:
 #95/#96/#98 = CLOSED / HISTORICAL
 → #99 = OPEN / DRAFT / #310 SUCCESS / SHA-BOUND BROWSER VERIFIED
-→ CREATOR VERDICT `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`
+→ CREATOR VERDICT MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING
 → NO RETURN INTEGRATION BEFORE THAT VERDICT
 
 PRODUCT / AUTHORIAL:
@@ -273,8 +237,8 @@ HOLOCORE:
 
 PARTIAL LEGACY AUDIT:
 #68 = OPEN / DRAFT / PARTIALLY SUPERSEDED
-→ download-existence obligation = PORTED BOUNDEDLY TO #101 / #334 PENDING
-→ separate tooling residual = lamina coverage/profile/snapshot/loop surfaces
+→ interlude + download-existence obligations = ABSORBED / VERIFIED
+→ remaining audit = lamina coverage/profile/snapshot/loop tooling only
 
 NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
@@ -282,40 +246,36 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as the sole verified Assembly OS / Deep Navigation correctness baseline.
-2. Complete actual human/creator review of Golden 24 before any seed/fixture curation.
+2. Complete human/creator review of Golden 24 before seed/fixture curation.
 3. Keep protected-art material review blocked while source bytes are withheld.
 4. Keep bounded Semantic Memory + Gesture in #101 only; JourneyState remains persistence authority and explicit user choice remains the consequential write/navigation gate.
-5. Preserve #330 as the last exact verified current-lineage product head until a later exact SHA passes its declared gates.
-6. Resolve current candidate `bc8a8ef...` through Core Runtime #334; if it passes, close tracked-source download integrity without inferring remote R2 availability from the local registry check.
-7. Treat #99 as technically/browser verified but semantically unaccepted until creator review answers `MEANING_CARRIED | DECORATIVE_ONLY | MISLEADING`.
-8. Treat #100 as research/documentation only until a demonstrated gap justifies a bounded implementation normalized through existing contracts.
-9. Keep historical substrate/source lanes closed and provenance-preserving; do not reactivate them as parallel authority absent a demonstrably unabsorbed contract.
-10. Continue #68 audit only against obligations demonstrably not absorbed by current lineage; never wholesale-port the branch.
+5. Treat `bc8a8ef...` / Core Runtime #334 as the current exact verified current-lineage product head.
+6. Keep download integrity fail-closed and do not infer remote R2/deploy availability from local source registration.
+7. Treat #99 as technically/browser verified but semantically unaccepted until creator review.
+8. Treat #100 as research/documentation only until a demonstrated gap justifies bounded implementation through existing contracts.
+9. Keep historical substrate/source lanes closed and provenance-preserving.
+10. Continue #68 only as an obligation audit of its remaining lamina coverage/profile/snapshot tooling; never wholesale-port the branch.
 11. Make only the smallest changes justified by measured/browser/creator evidence.
 12. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout. §121 records the #68 residual obligation audit. §122 records the rendered download-integrity QA candidate. §123 records the bounded current-lineage download-existence repair and its exact-head revalidation state.
+Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout; §121 the #68 residual audit; §122 the download-integrity QA candidate; §123 the bounded repair; §124 the exact-head download-integrity close.
 
 ```text
-LAST VERIFIED CURRENT-LINEAGE PRODUCT
-#101 @ 2e6a165e6b69f31e40659672d97ca6d27db9a93a
-Core Runtime #330 / 32289574063 = SUCCESS
-artifact 9379838325
-interlude corridor = 6/6 PASS
+CURRENT VERIFIED CURRENT-LINEAGE PRODUCT
+#101 @ bc8a8ef7d8948dc9051dd85fdef698e9872a5506
+Core Runtime #334 / 32306631591 = SUCCESS
+artifact 9385043889
+digest sha256:016ff584c136c14c278583d0c135164c03b0c9cb80d23f6d2851ac23538e3f9f
+rendered download integrity = PASS
+browser + interlude + deep navigation + gesture + geometric memory + manifestation + Golden = PASS
 
-MEASURED RED
+HISTORICAL MEASURED RED
 #101 @ ce841d39471dead2d24772b20e53b5fc77fb3fb1
 Core Runtime #332 / 32301270795 = FAILURE
 download-integrity gate = RED
-bounded product repair subsequently justified
-
-CURRENT CANDIDATE
-#101 @ bc8a8ef7d8948dc9051dd85fdef698e9872a5506
-Core Runtime #334 / 32306631591 = IN_PROGRESS at checkpoint time
-works + volume download existence guards = IMPLEMENTED
-remote R2 availability = NOT INFERRED / SEPARATE DEPLOYMENT-NETWORK CONCERN
+bounded product repair subsequently closed on bc8a8ef... / #334
 ```
 
-Truth boundary: `IMPLEMENTED ≠ CI PASS ≠ BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
