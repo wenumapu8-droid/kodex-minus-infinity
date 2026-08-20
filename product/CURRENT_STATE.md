@@ -81,12 +81,13 @@ G04 under-density is closed at browser/agent-audit level. G01/G07/G04 repetition
 ## Current-lineage technical host — PR #101
 
 ```text
-PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED
-exact verified head: e3a4a398acf4ade784c2fe15e5e79685812106db
-KODEX Core Runtime: #354 / 32350888339 = SUCCESS
+PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED / NOT CANON
+exact verified head: d2920d5285c1d08b12d0bd6cdaa2e30f0e15feae
+KODEX Core Runtime: #358 / 32361402452 = SUCCESS
+creator_acceptance = NOT_RUN
 ```
 
-This is the current exact verified current-lineage **product** head. The exact-head Core Runtime completed successfully on this SHA. It preserves the previously verified current-lineage stack and additionally absorbs the bounded system-axis label overlap fix from historical PR #84 (`white-space: normal` + `max-width: 48px`) without creating new component/runtime architecture.
+This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and additionally absorbs the bounded Crystal Receiver device/presentation value from historical PR #83 without reviving that lab's parallel memory/scoring model.
 
 Current bounded authorities:
 
@@ -97,39 +98,40 @@ Current bounded authorities:
 - `RECEIVED` stores raw observation only.
 - `INTERPRETED` requires an explicit interpretation payload.
 - `CORRELATED` requires explicit relation references; correlation is not verification.
-- `VERIFIED` is outside the Receiver adapter authority and fails closed to `NEEDS_CONFIRMATION` pending external source/evidence authority.
-- Receiver `SOURCE` defaults to `UNKNOWN`; capture/replay is deterministic.
+- `VERIFIED` is outside Receiver authority and fails closed to `NEEDS_CONFIRMATION` pending external source/evidence authority.
+- Receiver `SOURCE` defaults to `UNKNOWN`; current device capture is ephemeral.
+- Crystal Receiver current-lineage lab: `/kodex/lab/crystal-receiver/`.
+- Crystal Receiver exact-head evidence covers desktop 1440×900, mobile 390×844 and 412×915, reduced-motion, 100dvh/no-page-scroll, keyboard/touch, localStorage non-mutation, URL non-mutation and `VERIFIED → NEEDS_CONFIRMATION`.
 - passive observation/dwell/co-occurrence cannot write personal meaning.
 - Gesture `DORMANT → AWARE → OPEN` may reveal already-eligible routes only; no pre-choice URL/history/memory mutation.
 - salience, activation, decay, dwell weighting, passive semantic inference, hidden engagement scoring, route scoring, visitor readiness/coherence scoring, branch scoring and auto-navigation are **NOT AUTHORIZED**.
 - download controls render only for registered local wallpaper source filenames; local registration does not prove remote R2/deployed availability.
 - lamina `cobertura / tinta_ref / tinta_actual` is `OBSERVED_DIAGNOSTIC`; `aesthetic_threshold_status = NONE`; it does not alter correctness score or emit creator verdicts.
+- Manifestation Recipe provenance remains fail-closed against existing authorities.
+- system-axis label overlap repair from historical #84 remains absorbed.
 - protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`.
 
-Historical source lanes #85 / #97 / #68 / #84 are CLOSED; their bounded reusable deltas are reconciled or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
+Historical source lanes #85 / #97 / #68 / #84 / #82 / #83 are CLOSED; their bounded reusable deltas are reconciled or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
 
-## Receiver labs — PR #82 / #83
-
-These were divergent sibling labs from an older lineage:
+## Receiver lineage — closed historical labs
 
 ```text
 #82 @ 2a92ce5c89a76c05cd5915d1f4594f2d1a531343
 state = CLOSED / NOT MERGED / HISTORICAL RECEIVER EXPERIMENT / NOT CANON
 
 #83 @ 097631515a6fd80b792f9179a171f7485ef87aa9
-state = OPEN / DRAFT / LAB-ONLY / PARALLEL-MEMORY COLLISION IDENTIFIED / NOT CANON
+state = CLOSED / NOT MERGED / HISTORICAL SOURCE LANE / NOT CANON
 ```
 
-The reusable epistemic ladder is absorbed and exact-head verified inside the current-lineage #101 host. #82 is closed because its remaining PHASE SHIFT / REALITY BRANCHING surfaces are mechanically coupled to rejected local memory, readiness/coherence and branch-scoring authority. #83 remains open/draft only because its distinct capture/device presentation surface is not proven fully superseded.
+The useful Receiver correctness/device behavior is now absorbed and exact-head verified inside current-lineage #101 @ `d2920d5285…/#358`.
 
 Authority correction remains:
 
-- #82/#83 localStorage, recurrence/coherence/readiness/branch scoring and local device memories are lab instrumentation only, not JourneyState, routing, identity or canon authority.
+- #82/#83 localStorage, recurrence/coherence/readiness/branch scoring and local device memories are historical lab instrumentation only, not JourneyState, routing, identity or canon authority.
 - prior claims that `CRYSTAL STATE / PHASE SHIFT / REALITY BRANCH` are canonical KODEX states remain withdrawn; status = `LAB_VOCABULARY / NEEDS_CONFIRMATION`.
 - device states may describe interface/runtime presentation only; they do not define visitor identity, spiritual attainment, canonical journey state or route eligibility.
 - passive telemetry may not rank a visitor, infer consequential identity/meaning, auto-navigate, silently select routes or write journey memory.
-
-Any future #83 reuse must port only a bounded presentation/device delta into a current-lineage host; do not revive either lab as a parallel runtime/memory/scoring engine.
+- do not reactivate #82 or #83 as parallel runtime/memory/scoring engines.
 
 ## Reference Instruments — PR #112
 
@@ -145,7 +147,7 @@ Technical gates closed:
 - Semantic Relation Wheel mobile is contained in `100dvh`; dedicated browser evidence covers desktop, 390×844, 412×915, keyboard/touch and reduced-motion.
 - branch-local reference data is `INGESTION_MIRROR_NON_AUTHORITATIVE`.
 - Drive `KODEX−∞ SOURCE REGISTRY v1` remains the sole SOURCE_ID authority.
-- authority validator fails closed if a branch-local reference attempts to self-assign source/canonical authority.
+- authority validator fails closed if branch-local reference data attempts to self-assign source/canonical authority.
 
 Unreconciled references remain blocked, not invented: `REF-VIS-001`, `REF-UX-001`, `REF-UX-003` all have `source_id = null / UNRECONCILED_FAIL_CLOSED`.
 
@@ -181,16 +183,10 @@ ASSEMBLY / DEEP NAV:
 → ONLY IF REFINE: deterministic fixture/seed curation with existing IDs + validators
 
 CURRENT PRODUCT HOST:
-#101 @ e3a4a398... / #354 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
-→ system-axis overlap fix absorbed from #84; #84 CLOSED / HISTORICAL
+#101 @ d2920d5285... / #358 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+→ bounded Crystal Receiver device/presentation absorbed
+→ Receiver #83 CLOSED / HISTORICAL / NOT MERGED
 → no scoring/passive semantic writes/parallel memory authority
-
-RECEIVER LABS:
-#82 = CLOSED / HISTORICAL
-#83 = OPEN DRAFT LAB-ONLY / epistemic obligation superseded
-→ unique device presentation remains research only
-→ port only a bounded presentation delta if a measured need appears
-→ do not revive parallel local memory/scoring authority
 
 REFERENCE INSTRUMENTS:
 #112 @ 539cc3a... / #350 SUCCESS = TECHNICALLY VERIFIED LAB/CANDIDATE
@@ -217,12 +213,12 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as sole Assembly OS / Deep Navigation correctness baseline.
-2. Keep #101 `e3a4a398... / #354` as current exact verified product head until a later current-lineage product SHA is fully verified.
+2. Keep #101 `d2920d5285... / #358` as current exact verified product head until a later current-lineage product SHA is fully verified.
 3. Complete Golden 24 human/creator review before seed/fixture curation.
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
-6. Treat Receiver epistemic capture as verified current-lineage correctness, not canon or visitor scoring authority.
-7. Keep #82 closed as historical and #83 lab-only until its unique device presentation is either boundedly ported or proven superseded; never reuse parallel memory/scoring authority.
+6. Treat Receiver epistemic capture + bounded Crystal Receiver device presentation as verified current-lineage implementation, not canon or visitor scoring authority.
+7. Keep #82/#83 closed as historical source lanes; never reuse parallel memory/scoring authority.
 8. Treat #112 as technically verified lab/reference-instrument candidate; keep unreconciled SOURCE_ID records fail-closed.
 9. Treat #99 as technically verified but semantically unaccepted until creator review.
 10. Keep historical source/substrate lanes provenance-preserving and closed where supersession is proven.
@@ -231,6 +227,6 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoint: §134 system-axis label overlap exact-head close (`#101 @ e3a4a398... / #354 SUCCESS`; #84 CLOSED / NOT MERGED / HISTORICAL SOURCE).
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoint: §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`; #83 CLOSED / NOT MERGED / HISTORICAL SOURCE).
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
