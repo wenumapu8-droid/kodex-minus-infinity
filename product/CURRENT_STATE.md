@@ -190,19 +190,22 @@ Current downstream surface:
 
 #70 does not replace #62 as Assembly OS / Deep Navigation authority.
 
-## PR #68 — partial legacy/restoration audit
+## PR #68 — historical legacy/restoration lane
 
-#68 remains `OPEN / DRAFT / PARTIALLY SUPERSEDED`; it is not current runtime authority and must not be wholesale merged/retargeted into #101.
+#68 is now `CLOSED / HISTORICAL SOURCE / NOT MERGED / NOT DEPLOYED / NOT CANON`. It is not current runtime authority and must not be wholesale merged/retargeted into #101.
 
-Current residual classification:
+Final residual classification:
 
 - interlude bootstrap = ABSORBED + browser verified;
 - download-existence = ABSORBED + exact-head verified;
 - reusable lamina coverage + `KDX_REFDIR` = ABSORBED + exact-head verified in #101 / #337;
 - `perfil.mjs` + `comparar-region.mjs` = AUDITED / NOT PORTED / specialized restoration heuristics without current measured need;
-- `kodex-snapshot.sh` + lamina-loop documentation = residual tooling obligations still to evaluate separately.
+- `kodex-snapshot.sh` = HISTORICAL / NOT PORTED / deferred unless an explicitly authorized staging-packaging need appears; it is not a correctness contract;
+- `scripts/lamina/loop/` = RETIRED / NOT PORTED; autonomous work selection and accept/revert based on historical coverage thresholds conflicts with `aesthetic_threshold_status = NONE` and the human/creator curation gate.
 
-Do not close #68 until every unique obligation is demonstrably absorbed or explicitly retired with authority.
+Unresolved historical content obligations remain unresolved: `t00`, the `t02` series, and `kodex-content/free/` migration/restoration. Closing #68 does not mark them complete, approved, deployed, or canonical. They require explicit future content WorkOrders if authorized.
+
+No branch should reactivate #68 as a parallel runtime, Assembly, route, memory, or autonomous curation lane.
 
 ## Current critical path
 
@@ -217,8 +220,7 @@ CURRENT-LINEAGE TECHNICAL HOST:
 #101 @ e9d69ab... = CORE RUNTIME #337 SUCCESS / EXACT-HEAD BROWSER VERIFIED
 → DOWNLOAD-INTEGRITY = CLOSED
 → LAMINA COVERAGE DIAGNOSTIC = VERIFIED / NO AESTHETIC THRESHOLD
-→ #68 perfil/comparar-region = AUDITED / NOT PORTED
-→ remaining #68 audit = snapshot/lamina-loop obligations only
+→ #68 legacy tooling audit = CLOSED / NO FURTHER PORT REQUIRED
 
 SEMANTIC / GEOMETRIC CHAIN:
 #95/#96/#98 = CLOSED / HISTORICAL
@@ -235,11 +237,13 @@ HOLOCORE:
 #63/#67/#69 = CLOSED / HISTORICAL SUBSTRATES / NOT MERGED
 → #70 = OPEN / DRAFT / #278 SUCCESS / CREATOR VISUAL REVIEW PENDING
 
-PARTIAL LEGACY AUDIT:
-#68 = OPEN / DRAFT / PARTIALLY SUPERSEDED
-→ interlude + download + reusable coverage obligations = ABSORBED / VERIFIED
-→ perfil/comparar-region = AUDITED / NOT PORTED
-→ snapshot/lamina-loop = STILL TO AUDIT
+LEGACY RESTORATION:
+#68 = CLOSED / HISTORICAL SOURCE / NOT MERGED
+→ reusable runtime/QA obligations = ABSORBED / VERIFIED
+→ specialized restoration heuristics = AUDITED / NOT PORTED
+→ snapshot helper = HISTORICAL / DEFERRED
+→ autonomous lamina loop = RETIRED / NOT PORTED
+→ t00/t02/free-content obligations = UNRESOLVED HISTORICAL CONTENT BACKLOG, not correctness closure
 
 NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOTION WITHOUT EXPLICIT AUTHORITY
 ```
@@ -253,17 +257,17 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 5. Treat `e9d69ab...` / Core Runtime #337 as the current exact verified current-lineage product head.
 6. Keep download integrity fail-closed; do not infer remote R2/deploy availability from local source registration.
 7. Keep coverage diagnostic-only with `aesthetic_threshold_status = NONE`; do not convert it into creator judgment or correctness score.
-8. Do not port #68 `perfil.mjs` / `comparar-region.mjs` without a measured restoration defect.
-9. Treat #99 as technically/browser verified but semantically unaccepted until creator review.
-10. Treat #100 as research/documentation only until a demonstrated gap justifies bounded implementation through existing contracts.
-11. Keep historical substrate/source lanes closed and provenance-preserving.
-12. Continue #68 only as an obligation audit of snapshot/lamina-loop tooling; never wholesale-port the branch.
+8. Do not port #68 `perfil.mjs`, `comparar-region.mjs`, snapshot helper or lamina-loop absent a new measured/authorized need; #68 is historical and closed.
+9. Keep unresolved `t00` / `t02` / free-content restoration explicitly unresolved rather than treating #68 closure as content completion.
+10. Treat #99 as technically/browser verified but semantically unaccepted until creator review.
+11. Treat #100 as research/documentation only until a demonstrated gap justifies bounded implementation through existing contracts.
+12. Keep historical substrate/source lanes closed and provenance-preserving.
 13. Make only the smallest changes justified by measured/browser/creator evidence.
 14. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout; §121–§124 the #68/download-integrity audit and close; §125 the bounded coverage port; §126 the exact-head coverage close + residual profile audit.
+Drive `28_KODEX_ASSEMBLY_OS` §120 records the interlude corridor closeout; §121–§124 the #68/download-integrity audit and close; §125 the bounded coverage port; §126 the exact-head coverage close + residual profile audit; §127 records the final #68 residual tooling audit and historical lane close.
 
 ```text
 CURRENT VERIFIED CURRENT-LINEAGE PRODUCT
