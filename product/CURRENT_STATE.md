@@ -111,7 +111,7 @@ Current bounded authorities:
 - system-axis label overlap repair from historical #84 remains absorbed.
 - protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`.
 
-Historical source lanes #85 / #97 / #68 / #84 / #82 / #83 are CLOSED; their bounded reusable deltas are reconciled or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
+Historical source lanes #85 / #97 / #68 / #84 / #82 / #83 / #92 are CLOSED; their bounded reusable deltas are reconciled, superseded or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
 
 ## Receiver lineage — closed historical labs
 
@@ -157,7 +157,7 @@ Unreconciled references remain blocked, not invented: `REF-VIS-001`, `REF-UX-001
 
 - #90 MACHINE @ `b76679719e37a43e79be412269c5a4ddec2c2ccc` = exact-head browser verified / creator acceptance NOT_RUN.
 - #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / creator `KEEP | REFINE | REJECT` pending.
-- #92 = review/staging snapshot only; no deployment authority.
+- #92 = CLOSED / NOT MERGED / HISTORICAL REVIEW SNAPSHOT; frozen MACHINE evidence remains provenance only, not current staging/review authority.
 - #77 / #86 = CLOSED historical substrates.
 
 ## Semantic / geometric / natural-law chain
@@ -218,7 +218,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
 6. Treat Receiver epistemic capture + bounded Crystal Receiver device presentation as verified current-lineage implementation, not canon or visitor scoring authority.
-7. Keep #82/#83 closed as historical source lanes; never reuse parallel memory/scoring authority.
+7. Keep #82/#83/#92 closed as historical source/review lanes; never reuse them as parallel memory/scoring/staging authority.
 8. Treat #112 as technically verified lab/reference-instrument candidate; keep unreconciled SOURCE_ID records fail-closed.
 9. Treat #99 as technically verified but semantically unaccepted until creator review.
 10. Keep historical source/substrate lanes provenance-preserving and closed where supersession is proven.
@@ -227,6 +227,6 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoint: §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`; #83 CLOSED / NOT MERGED / HISTORICAL SOURCE).
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints: §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`; #83 CLOSED / NOT MERGED / HISTORICAL SOURCE) and §137 Live Review Snapshot #92 historical lane close.
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
