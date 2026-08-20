@@ -1,6 +1,6 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-20`  
+Last updated: `2026-08-21`  
 Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV VERIFIED BASELINE / CURRENT-LINEAGE EXACT-HEAD BROWSER VERIFIED / CURATION ACTIVE`
 
 ## Authority boundary
@@ -111,7 +111,7 @@ Current bounded authorities:
 - system-axis label overlap repair from historical #84 remains absorbed.
 - protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`.
 
-Historical source lanes #3 / #85 / #97 / #68 / #84 / #82 / #83 / #92 are CLOSED; their bounded reusable deltas are reconciled, superseded or explicitly retired/audited. PR #3 is the historical Interaction V0 source only: normalized input + semantic interaction contracts are present downstream, while its old proximity/ring lab is not a current runtime authority. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
+Historical source lanes #3 / #56 / #85 / #97 / #68 / #84 / #82 / #83 / #92 are CLOSED; their bounded reusable deltas are reconciled, superseded or explicitly retired/audited. PR #56 is historical agent-context/research provenance only: its proposed repo-local authority/current-state bootstrap must not become a second truth surface alongside Drive canon, Decision Log and this file. PR #3 is the historical Interaction V0 source only: normalized input + semantic interaction contracts are present downstream, while its old proximity/ring lab is not a current runtime authority. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
 
 ## Security configuration blocker — current lineage
 
@@ -201,6 +201,7 @@ ASSEMBLY / DEEP NAV:
 CURRENT PRODUCT HOST:
 #101 @ d2920d5285... / #358 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
 → bounded Crystal Receiver device/presentation absorbed
+→ historical agent-context #56 CLOSED / NOT MERGED; do not reactivate as parallel authority/current-state layer
 → historical Interaction V0 #3 CLOSED / NOT MERGED; do not reactivate as parallel runtime
 → Receiver #83 CLOSED / HISTORICAL / NOT MERGED
 → security hygiene blocker: tracked .claude/settings.json remains; explicit approval required before tracking/permission cleanup
@@ -236,7 +237,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
 6. Treat Receiver epistemic capture + bounded Crystal Receiver device presentation as verified current-lineage implementation, not canon or visitor scoring authority.
-7. Keep #3/#82/#83/#92 closed as historical source/review lanes; never reuse them as parallel interaction/memory/scoring/staging authority.
+7. Keep #3/#56/#82/#83/#92 closed as historical source/review lanes; never reuse them as parallel interaction/authority/memory/scoring/staging surfaces.
 8. Treat #112 as technically verified lab/reference-instrument candidate; keep unreconciled SOURCE_ID records fail-closed.
 9. Treat #99 as technically verified but semantically unaccepted until creator review.
 10. Keep historical source/substrate lanes provenance-preserving and closed where supersession is proven.
@@ -244,8 +245,8 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 12. Make only the smallest changes justified by measured/browser/creator evidence.
 13. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
-## 2026-08-20 checkpoints
+## 2026-08-21 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`), §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, and the current-lineage security settings tracking blocker recorded on 2026-08-20.
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`), §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, §141 Legacy Agent-Context PR #56 historical lane close, and the current-lineage security settings tracking blocker.
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
