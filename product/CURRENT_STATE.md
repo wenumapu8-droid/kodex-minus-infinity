@@ -15,7 +15,7 @@ Authority remains, in order:
 4. verified code + exact-SHA CI/browser evidence;
 5. this Current State.
 
-Implementation PASS, browser PASS, agent audit, human curator acceptance, creator acceptance, canon promotion, merge and deployment are separate states.
+Implementation PASS, browser PASS, agent audit, human curator acceptance, creator acceptance, canon promotion, merge and deployment remain separate states.
 
 ## Repository / release state
 
@@ -82,27 +82,56 @@ G04 under-density is closed at browser/agent-audit level. G01/G07/G04 repetition
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED
-exact verified head: e9d69ab09f724bf30a667ddeed2041e96b1c1305
-KODEX Core Runtime: #337 / 32311162612 = SUCCESS
-evidence artifact: 9386569341
-digest: sha256:488d5a333ac5988a296f9b53291bebe30d73cb42cd9f609289d6b5c08e5da2a1
+exact verified head: 19560eac8de2b941227ac881f3286b4654e8f033
+KODEX Core Runtime: #353 / 32337703889 = SUCCESS
+evidence artifact: 9395302736
+digest: sha256:a7ca5aa4b3d926b2186ed890566924a85a31100fd1f498e3e691be1eaad2d1c2
 ```
 
-This is the current exact verified current-lineage **product** head. It passes runtime, bounded Semantic Memory, bounded Gesture Timeline, Assembly OS, seeded benchmark, integrity audit, Astro, rendered download integrity, browser evidence, interlude corridor, Deep Navigation, Geometric Memory, Manifestation Recipe and Golden evidence.
+This is the current exact verified current-lineage **product** head. The full Core Runtime matrix passed on this SHA, including runtime, JourneyState + bounded Semantic Memory, Assembly OS + bounded Gesture Timeline + Receiver epistemic contract, seeded benchmark, integrity audit, Astro build, rendered download integrity, Chromium/browser evidence, interlude corridor, Deep Navigation, Geometric Memory, Manifestation Recipe and Golden evidence.
 
 Current bounded authorities:
 
 - JourneyState = journey persistence authority.
 - RETURN = narrow specimen store.
 - Semantic Memory adapter = stateless + explicit-commit only; deterministic/idempotent replay.
+- Receiver epistemic adapter = stateless capture classification only; no journey-memory authority.
+- `RECEIVED` stores raw observation only.
+- `INTERPRETED` requires an explicit interpretation payload.
+- `CORRELATED` requires explicit relation references; correlation is not verification.
+- `VERIFIED` is outside the Receiver adapter authority and fails closed to `NEEDS_CONFIRMATION` pending external source/evidence authority.
+- Receiver `SOURCE` defaults to `UNKNOWN`; capture/replay is deterministic.
 - passive observation/dwell/co-occurrence cannot write personal meaning.
 - Gesture `DORMANT → AWARE → OPEN` may reveal already-eligible routes only; no pre-choice URL/history/memory mutation.
-- salience, activation, decay, dwell weighting, passive semantic inference, hidden engagement scoring, route scoring and auto-navigation are **NOT AUTHORIZED**.
+- salience, activation, decay, dwell weighting, passive semantic inference, hidden engagement scoring, route scoring, visitor readiness/coherence scoring, branch scoring and auto-navigation are **NOT AUTHORIZED**.
 - download controls render only for registered local wallpaper source filenames; local registration does not prove remote R2/deployed availability.
 - lamina `cobertura / tinta_ref / tinta_actual` is `OBSERVED_DIAGNOSTIC`; `aesthetic_threshold_status = NONE`; it does not alter correctness score or emit creator verdicts.
 - protected Ocín source pixels remain `WITHHELD_BY_PROTECTED_SOURCE_CONTRACT`.
 
-Historical source lanes #85 / #97 / #68 are CLOSED; their bounded reusable deltas are already reconciled or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
+Historical source lanes #85 / #97 / #68 are CLOSED; their bounded reusable deltas are reconciled or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
+
+## Receiver labs — PR #82 / #83
+
+These remain divergent sibling labs from an older lineage:
+
+```text
+#82 @ 2a92ce5c89a76c05cd5915d1f4594f2d1a531343
+state = OPEN / DRAFT / LAB-ONLY / AUTHORITY COLLISION IDENTIFIED / NOT CANON
+
+#83 @ 097631515a6fd80b792f9179a171f7485ef87aa9
+state = OPEN / DRAFT / LAB-ONLY / PARALLEL-MEMORY COLLISION IDENTIFIED / NOT CANON
+```
+
+The reusable epistemic ladder is now absorbed and exact-head verified inside #101 @ `19560eac.../#353`.
+
+Authority correction remains:
+
+- #82/#83 localStorage, recurrence/coherence/readiness/branch scoring and local device memories are lab instrumentation only, not JourneyState, routing, identity or canon authority.
+- prior claims that `CRYSTAL STATE / PHASE SHIFT / REALITY BRANCH` are canonical KODEX states remain withdrawn; status = `LAB_VOCABULARY / NEEDS_CONFIRMATION`.
+- device states may describe interface/runtime presentation only; they do not define visitor identity, spiritual attainment, canonical journey state or route eligibility.
+- passive telemetry may not rank a visitor, infer consequential identity/meaning, auto-navigate, silently select routes or write journey memory.
+
+Audit after #353: the epistemic correctness obligation is superseded, but #82/#83 still contain unique visual/device prototype surfaces. They are therefore **not proven fully superseded** and remain open/draft historical labs rather than being closed by assumption. Any future reuse must port only a bounded presentation/device delta into a current-lineage host; do not revive either lab as a parallel runtime/memory engine.
 
 ## Reference Instruments — PR #112
 
@@ -113,46 +142,16 @@ KODEX Core Runtime: #350 / 32329670129 = SUCCESS
 creator_acceptance = NOT_RUN
 ```
 
-Technical gates closed at this head:
+Technical gates closed:
 
-- Semantic Relation Wheel mobile is contained in `100dvh` with no page-scroll contract regression; dedicated browser evidence covers desktop, 390×844, 412×915, keyboard/touch and reduced-motion.
-- branch-local reference data is explicitly `INGESTION_MIRROR_NON_AUTHORITATIVE`.
+- Semantic Relation Wheel mobile is contained in `100dvh`; dedicated browser evidence covers desktop, 390×844, 412×915, keyboard/touch and reduced-motion.
+- branch-local reference data is `INGESTION_MIRROR_NON_AUTHORITATIVE`.
 - Drive `KODEX−∞ SOURCE REGISTRY v1` remains the sole SOURCE_ID authority.
-- authority validator fails closed if a branch-local reference attempts to self-assign canonical/source authority.
+- authority validator fails closed if a branch-local reference attempts to self-assign source/canonical authority.
 
-Currently unreconciled references remain blocked, not invented:
+Unreconciled references remain blocked, not invented: `REF-VIS-001`, `REF-UX-001`, `REF-UX-003` all have `source_id = null / UNRECONCILED_FAIL_CLOSED`.
 
-```text
-REF-VIS-001 — Space Type Generator / Morisawa → source_id = null
-REF-UX-001  — Cyberspace.online                → source_id = null
-REF-UX-003  — Feelings Wheel / Atherio         → source_id = null
-reconciliation_status = UNRECONCILED_FAIL_CLOSED
-```
-
-#112 does **not** authorize extraction of Command Shell into `KodexChrome`, production wiring of Relation Wheel into ARCHIVE/COSMOLOGY, title-operator rollout, merge, deploy or canon promotion. Those require source reconciliation where applicable and creator review.
-
-## Receiver labs — PR #82 / #83 authority gate
-
-These are divergent sibling experiments from an older main lineage; neither is demonstrated to fully supersede the other.
-
-```text
-#82 @ 2a92ce5c89a76c05cd5915d1f4594f2d1a531343
-state = OPEN / DRAFT / LAB-ONLY / AUTHORITY COLLISION IDENTIFIED / NOT CANON
-
-#83 @ 097631515a6fd80b792f9179a171f7485ef87aa9
-state = OPEN / DRAFT / LAB-ONLY / PARALLEL-MEMORY COLLISION IDENTIFIED / NOT CANON
-```
-
-Authority correction:
-
-- #82 local Receiver/phase/branch persistence and readiness/branch scoring are **lab instrumentation only**, not JourneyState, routing, identity or canon authority.
-- #83 local Receiver persistence is **lab/device memory only**, not a second journey store.
-- the prior #82 statement that `CRYSTAL STATE / PHASE SHIFT / REALITY BRANCH` are canonical KODEX computational/artistic states is **withdrawn as unsupported**; current status = `LAB_VOCABULARY / NEEDS_CONFIRMATION`.
-- #83 `DORMANT / AWARE / RECORDING / COHERENT / CRYSTAL` are device/lab presentation states only; they do not define visitor identity, spiritual attainment, canonical journey state or route eligibility.
-- coherence, recurrence, density, spin, readiness, branch scores, dwell, pointer or passive signals may be observable telemetry only. They may not rank a visitor, infer consequential personal meaning/identity, auto-navigate, silently select routes or write journey memory from passive behavior.
-- `RECEIVED` vs `INTERPRETED` epistemic separation remains potentially reusable and must fail closed on truth promotion.
-
-Future Receiver work may proceed only by selecting the **smallest bounded reusable device/instrument delta** and reconciling it into a current-lineage host while preserving JourneyState + explicit user choice. Do not revive #82 or #83 as a parallel runtime/memory engine.
+#112 does not authorize production extraction/wiring, merge, deploy or canon promotion before source reconciliation where applicable and creator review.
 
 ## Product / authorial review surfaces
 
@@ -184,21 +183,21 @@ ASSEMBLY / DEEP NAV:
 → ONLY IF REFINE: deterministic fixture/seed curation with existing IDs + validators
 
 CURRENT PRODUCT HOST:
-#101 @ e9d69ab... / #337 SUCCESS = EXACT-HEAD BROWSER VERIFIED
-→ no new correctness gap currently identified
+#101 @ 19560eac... / #353 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+→ Receiver epistemic capture now verified current-lineage
+→ no scoring/passive semantic writes/parallel memory authority
+
+RECEIVER LABS:
+#82 / #83 = OPEN DRAFT LAB-ONLY / epistemic obligation superseded
+→ unique visual/device prototype surfaces remain historical research only
+→ port only a bounded presentation delta if a measured need appears
+→ do not revive parallel local memory/scoring authority
 
 REFERENCE INSTRUMENTS:
 #112 @ 539cc3a... / #350 SUCCESS = TECHNICALLY VERIFIED LAB/CANDIDATE
 → source reconciliation where SOURCE_ID is absent
 → creator review
 → no production extraction/wiring before those gates
-
-RECEIVER:
-#82 / #83 = DIVERGENT LAB SIBLINGS / AUTHORITY COLLISION IDENTIFIED
-→ identify smallest reusable device/instrument delta
-→ reconcile into current lineage
-→ preserve JourneyState + explicit user choice
-→ NO scoring/passive semantic writes/parallel memory authority
 
 SEMANTIC / GEOMETRIC:
 #99 = TECHNICALLY/BROWSER VERIFIED
@@ -219,21 +218,20 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as sole Assembly OS / Deep Navigation correctness baseline.
-2. Complete Golden 24 human/creator review before seed/fixture curation.
-3. Keep protected-art material review blocked while source bytes are withheld.
-4. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
-5. Keep #101 `e9d69ab... / #337` as current exact verified **product** head until a later current-lineage product SHA is fully verified.
-6. Treat #112 `539cc3a... / #350` as a technically verified lab/reference-instrument candidate, not product/canon authority.
-7. Keep #112 unreconciled reference records fail-closed; do not invent SOURCE_ID.
-8. Keep #82/#83 lab-only until a bounded current-lineage Receiver delta is selected; no parallel memory, visitor scoring or passive semantic authority.
+2. Keep #101 `19560eac... / #353` as current exact verified product head until a later current-lineage product SHA is fully verified.
+3. Complete Golden 24 human/creator review before seed/fixture curation.
+4. Keep protected-art material review blocked while source bytes are withheld.
+5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
+6. Treat Receiver epistemic capture as verified current-lineage correctness, not canon or visitor scoring authority.
+7. Keep #82/#83 lab-only because their visual/device surfaces are not proven fully superseded; never reuse their parallel memory/scoring authority.
+8. Treat #112 as technically verified lab/reference-instrument candidate; keep unreconciled SOURCE_ID records fail-closed.
 9. Treat #99 as technically verified but semantically unaccepted until creator review.
-10. Keep #100 research/documentation only absent a demonstrated contract gap.
-11. Keep historical source/substrate lanes closed and provenance-preserving.
-12. Make only the smallest changes justified by measured/browser/creator evidence.
-13. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
+10. Keep historical source/substrate lanes provenance-preserving and closed where supersession is proven.
+11. Make only the smallest changes justified by measured/browser/creator evidence.
+12. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include the Assembly/Deep Navigation closes, #101 current-lineage QA closes, #112 authority + viewport reconciliation, and §130 Receiver authority reconciliation.
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoint: §132 Receiver epistemic capture exact-head close (`#101 @ 19560eac... / #353 SUCCESS`).
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
