@@ -113,6 +113,22 @@ Current bounded authorities:
 
 Historical source lanes #85 / #97 / #68 / #84 / #82 / #83 / #92 are CLOSED; their bounded reusable deltas are reconciled, superseded or explicitly retired/audited. Unresolved `t00` / `t02` / `kodex-content/free/` restoration remains content backlog, not correctness closure.
 
+## Security configuration blocker — current lineage
+
+Current host #101 already ignores `.claude/`, but a repository-tracked `.claude/settings.json` still exists on the host lineage. Ignore rules do not remove an already-versioned local/session settings file.
+
+```text
+security_hygiene_blocker = OPEN
+assembly_failure = false
+product_browser_failure = false
+permission_tracking_mutation_authorized = false
+merge_deploy_advance = BLOCKED_BY_POLICY
+```
+
+Historical PR #57 contains the intended untracking operation, but also unrelated manifest-QA changes. It remains a source lane for the security repair and must not be merged wholesale.
+
+Smallest future repair requires explicit approval because it changes repository tracking/permission configuration: remove only the tracked repository copy of `.claude/settings.json` on the current host lineage, preserve local settings as ignored/untracked, do not port unrelated #57 QA, then rerun exact-head evidence. Local permission values/secrets must not be copied into canon or operational docs.
+
 ## Receiver lineage — closed historical labs
 
 ```text
@@ -186,6 +202,7 @@ CURRENT PRODUCT HOST:
 #101 @ d2920d5285... / #358 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
 → bounded Crystal Receiver device/presentation absorbed
 → Receiver #83 CLOSED / HISTORICAL / NOT MERGED
+→ security hygiene blocker: tracked .claude/settings.json remains; explicit approval required before tracking/permission cleanup
 → no scoring/passive semantic writes/parallel memory authority
 
 REFERENCE INSTRUMENTS:
@@ -222,11 +239,12 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 8. Treat #112 as technically verified lab/reference-instrument candidate; keep unreconciled SOURCE_ID records fail-closed.
 9. Treat #99 as technically verified but semantically unaccepted until creator review.
 10. Keep historical source/substrate lanes provenance-preserving and closed where supersession is proven.
-11. Make only the smallest changes justified by measured/browser/creator evidence.
-12. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
+11. Resolve the tracked `.claude/settings.json` security-hygiene blocker only after explicit permission/tracking-change approval; do not merge #57 wholesale.
+12. Make only the smallest changes justified by measured/browser/creator evidence.
+13. Preserve user agency, exact provenance, Ocín artwork integrity, epistemic boundaries and explicit release authorization.
 
 ## 2026-08-20 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints: §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`; #83 CLOSED / NOT MERGED / HISTORICAL SOURCE) and §137 Live Review Snapshot #92 historical lane close.
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`), §137 Live Review Snapshot #92 historical lane close, and the current-lineage security settings tracking blocker recorded on 2026-08-20.
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
