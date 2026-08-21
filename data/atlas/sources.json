@@ -1,0 +1,1189 @@
+{
+  "system": "KODEX−∞",
+  "artifact": "derived-from-visual-atlas-master",
+  "bridge": "KOD-19 / Bridge 1",
+  "sourceOfTruth": "https://docs.google.com/spreadsheets/d/1RLhA2xmApx1YDfHIeWjIqlYz17OHkuxFbfUXejzcS_4",
+  "regenerable": true,
+  "doNotEditByHand": true,
+  "coordinateAssignmentPolicy": "Only A/M/Y are canonical. B–L and N–X are derived in Bridge 2 (KODEX_ALPHABET_MATRIX), never inferred from initials.",
+  "claimClassPolicy": "claimClass is never inferred. Unresolved records stay UNKNOWN per canon/KODEX_EPISTEMIC_STANDARD.md.",
+  "count": 90,
+  "sources": [
+    {
+      "id": "SRC-KDX-DUP-DIAGNOSTICS-018-A",
+      "title": "1786031969249.png",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1DogdHMutzcB9Q4dlUgV_SU6JU5EyAzIB/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-DUP-DIAGNOSTICS-018-A."
+      ]
+    },
+    {
+      "id": "SRC-KDX-DUP-MACHINE-011-A",
+      "title": "1786031974820.png",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1lojSbGNY9WJYaoERyxexDEJobNLblM3g/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-DUP-MACHINE-011-A."
+      ]
+    },
+    {
+      "id": "SRC-KDX-DUP-SYNTHESIS-019-A",
+      "title": "1786031928170.png",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1dboluJ6fM2-krz04CsxcYyU_N5Sgu-MF/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-DUP-SYNTHESIS-019-A."
+      ]
+    },
+    {
+      "id": "SRC-KDX-GLYPH-TILE-F07",
+      "title": "Glyph Tile System / Family F07",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/115LUByUC1FI_Fbq9yuEa7K5RppA51qRa/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-GLYPH-TILE-F07."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-001",
+      "title": "Tríptico Wenu Mapu / Animales de Poder / We Tripantu",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1EIz1KZvpPbPPf-TUR-wWJiOUsrefPwM_/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-002",
+      "title": "Portal Organism",
+      "sourceClass": "CONVERSATION_EXPORT",
+      "location": "conversation://55516.png",
+      "rightsStatus": "UNKNOWN",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-002."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-003",
+      "title": "Heart / Node M",
+      "sourceClass": "CONVERSATION_EXPORT",
+      "location": "conversation://55984.png",
+      "rightsStatus": "UNKNOWN",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-003."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-004",
+      "title": "Flow Map / Arquitectura de experiencia",
+      "sourceClass": "CONVERSATION_EXPORT",
+      "location": "conversation://55979.png",
+      "rightsStatus": "UNKNOWN",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-004."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-005",
+      "title": "Hypercoil / Möbius Lattice",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1iItUh4a4nQpdwEUu4-xqYJ63e_h4qC8t/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-005."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-006",
+      "title": "Null Knot / Relic Engine",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1oDUjZGjIL46L4tdsov62xvO-MjPLhN01/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-006."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-007",
+      "title": "Spectral Frame / Perspective Engine",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1E32A7P2KEwc463BEH0kFXkZQDffGKtQ0/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-007."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-008",
+      "title": "Anatomical Torus / Body Field",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1aC6EZ-5D-fS__kK1Dp6tMQYyciW8nBnV/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-008."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-013",
+      "title": "Meditating Polarity Torus",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1IOWmNd0YMyYrDO_tUk3E4RHHi7lnHa-n/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-013."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-014",
+      "title": "Sternal Star / Respiratory Constellation",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1SDg4WnLbEZhLenSz7i81FwfnkY8fAEIX/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-014."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-015",
+      "title": "Cranial Axis / Thought Fountain",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/120MomOJ5wPVD9gxu2kYetOXfbRYTE5Cm/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-015."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-016",
+      "title": "Cardiac Cosmos / Memory Crown",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1JY4j7D9PTlvbFu7d4y-vJwOLGVP-5zzD/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-016."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-029",
+      "title": "Iridescent Spider / Pattern Weaver",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1lpru9fMRSFw8hDtBcO4BmDhAPapc-hzw/view?usp=drivesdk",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-029."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-030",
+      "title": "Snowy Owl / Silent Observer",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1a8G5pNMPcD1YdYVLNvQ-JKEQET4MAAcf/view?usp=drivesdk",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-030."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-031",
+      "title": "Crystal Seahorse / Spiral Incubator",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1TovVlNBgSq6bSvsoKN5FhCIzGlbnzeCn/view?usp=drivesdk",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-031."
+      ]
+    },
+    {
+      "id": "SRC-KDX-IMG-032",
+      "title": "Pale Axolotl / Threshold Regenerator",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1c83Yhrlwb4mwOCH1PTvkx8G3PHSAZr-1/view?usp=drivesdk",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-IMG-032."
+      ]
+    },
+    {
+      "id": "SRC-KDX-MOTION-KODELIFE-002",
+      "title": "kodex_kodelife_detail_v2.gif",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1AQuesyJJ9yU4z0CXsp5mCEOYJGu-2bo3/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-MOTION-KODELIFE-002."
+      ]
+    },
+    {
+      "id": "SRC-KDX-MOTION-LIVING-001",
+      "title": "kodex_living_elements_preview.gif",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1lYHgkPtpCj7jtwdVJ3T2QoOmZbqhmltA/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-MOTION-LIVING-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-MOTION-STRANDS-003",
+      "title": "kodex_parametric_strands_real.gif",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1bvQ7HCERe6p0v2XjxKXdeblO-lq_W6eR/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-MOTION-STRANDS-003."
+      ]
+    },
+    {
+      "id": "SRC-KDX-ORIGIN-SKETCH-001",
+      "title": "Original Flow Map Sketch / Inicio −∞ → Fin +∞",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1Otz08_PntJeCHPOqnWlTKrwRopg0tvQI/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-ORIGIN-SKETCH-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-PATTERN-DIAGONAL-006",
+      "title": "Diagonal Code Band / Issue 06",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1VGdvaixk_dznMdYp_u3hYcC2jBldUm67/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-PATTERN-DIAGONAL-006."
+      ]
+    },
+    {
+      "id": "SRC-KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "title": "Archive Signal / Poster 01",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1D4AUA8Wzd8FTSeI3YVtwuud3wyCLCPhH/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-POSTER-ARCHIVE-SIGNAL-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-REF-RENDAH-014",
+      "title": "Rendah Mag 014 / High-Contrast Editorial Reference",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1PQ2Maavo47I3oU8N2YCob2dZdDeJ2bNd/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-REF-RENDAH-014."
+      ]
+    },
+    {
+      "id": "SRC-KDX-REF-SIGNAL-FIELD-014",
+      "title": "Signal Field / Rendah Mag Issue 014",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1bfREXyXF2BpKKG6uP6A6lsz9skeG2nTU/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-REF-SIGNAL-FIELD-014."
+      ]
+    },
+    {
+      "id": "SRC-KDX-ROOT-INDEX-001",
+      "title": "KODEX_NEXT_10_CONTACT_SHEET.png",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1pAAVS2J3h5Abyq1ZzX8qY0jOTAexmfOj/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-ROOT-INDEX-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-ROOT-RAW-001",
+      "title": "file_0000000019a081f889374bc6e3300884.png",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1NIwtNwn1lpk3teG7cOPyp6KxOZWR6ttE/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-ROOT-RAW-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-ALPHABET-004",
+      "title": "ALPHABET — Relation Field",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1tZUKF9hB9UZ1Qr2uKndLEzxj1UDTStAU/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-ALPHABET-004."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-ANATOMICAL-STAR-007",
+      "title": "ANATOMICAL STAR — The Body as Map",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1uTGBOW3YyYEj4tieeIjtNCGRylh3aF78/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-ANATOMICAL-STAR-007."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-ANOMALY-008",
+      "title": "ANOMALY — Mutation",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1qyMXjXoPiLWdoIKIc5k98UkD4jBimg1y/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-ANOMALY-008."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-ARCHIVE-015",
+      "title": "Archive Engine / Living Memory Tree",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1qCtRiyGgfQOM6WcE0do5AvFr9UZzDO0J/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-ARCHIVE-015."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-COMMONS-010",
+      "title": "THE COMMONS — Collective Trace",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1DZvVJ77JgzurHxRaMwLki3bq7OJNZloY/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-COMMONS-010."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-COSMOLOGY-012",
+      "title": "Cosmology Core / Primordial Navigation Chart",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/12WWKQ3ZAr3DOzafM0sSnXyghsi0kzeWL/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-COSMOLOGY-012."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-DIAGNOSTICS-018",
+      "title": "Simulation Output / World Diagnostics",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1SZadSzXCEpJxCc7dMp1aCfxBd7QN2GJZ/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-DIAGNOSTICS-018."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-GENESIS-005",
+      "title": "GENESIS — Visual Lineage",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1c5Jb9gnzFTSGwppBKJoQmeQDQ6WqKein/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-GENESIS-005."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-HEART-000",
+      "title": "HEART / 0 — Orientation Chamber",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1K6ZnN-guD7dZaj8OI99uy0VQirPl2AgI/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-HEART-000."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-LIVING-013",
+      "title": "Living Elements / Organic Node",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1A8NtomrB96F9uPfjBufpwSHydAXbV7po/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-LIVING-013."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-MACHINE-011",
+      "title": "Quantum Fabricator / Reality Engine",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1Ld7vOgLznhNK7vkVXckSIYWp-RyIbG9f/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-MACHINE-011."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-MEMORY-006",
+      "title": "MEMORY — Temporal Archaeology",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1hzU8PYB9sAV5ZYL5QvtS4w9ZRYj1w3sd/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-MEMORY-006."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-OBSERVER-007",
+      "title": "OBSERVER — Mirror Chamber",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/198nAS-W91agLJuObyFTcYpujzSbqVhJ4/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-OBSERVER-007."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-ORIGIN-001",
+      "title": "ORIGIN FIELD — Before Language, Before Form",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1GwlMbJafuj7Rc3M79pHUgAeZxXUQcyrx/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-ORIGIN-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-RELIC-020",
+      "title": "Relic Dossier / Ritual Head KX-8",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/13wWcQPuAk2_GvBLoIatJZFWnDHNudXSU/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-RELIC-020."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-RETURN-003",
+      "title": "RETURN — Open White",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/15C8iPldTkMqYUQSHLJt9VnZ3JYJqstUb/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-RETURN-003."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-RITUAL-017",
+      "title": "Ritual Device / Containment Chamber",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1MAuIZuYC1fLa3AsOTBKSn6kCY9MqGJgk/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-RITUAL-017."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-SIGNAL-014",
+      "title": "Signal Vortex / Translation Field",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1x6mbxdeuV7-l4Y3vxnXNDHzy-NxvbkZH/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-SIGNAL-014."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-SOURCE-009",
+      "title": "SOURCE — Truth Chamber",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/19diUa5mjxqWD56PWmALdzxPmsXrE2nKn/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-SOURCE-009."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-SYNTHESIS-019",
+      "title": "Synthesis Chamber / Module Integration Protocol",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1dTHwINI5j9vw8FkNFGiuv9c44JtCvbIe/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-SYNTHESIS-019."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SCREEN-THRESHOLD-002",
+      "title": "THRESHOLD — The First Consequence",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1zqJnqhYm0fYSb8QJjiuXZY9H7UR0lhoa/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SCREEN-THRESHOLD-002."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SEAL-STAR-COMPASS-001",
+      "title": "Star Compass Seal",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1NdIX8rPD_jnHbrqh6anPPpIWpSRYUKAs/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SEAL-STAR-COMPASS-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYS-COSMO-ORBIT-001",
+      "title": "Cosmology / Orbit Map System",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/16w3Gv0CTJOd1W1ZoqquXp4Jhi0cJc8R4/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYS-COSMO-ORBIT-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYS-MASTER-BOARD-010",
+      "title": "Master System Board / Pattern Interlock",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1LO2Zh2NeWTd3hDJmRmo_emjclUsM-g0s/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYS-MASTER-BOARD-010."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYS-RITUAL-POSTER-001",
+      "title": "Ritual Device / Poster System",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/18dK1JgSAqf9ypGvJYHGYtB2IJzfOY1-D/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYS-RITUAL-POSTER-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYS-VISUAL-GUIDE-001",
+      "title": "Visual-System Reference / Master Emblem Usage",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1rzdhYIYhuD6UtDntUrX9_aVKj7YsOvX_/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYS-VISUAL-GUIDE-001."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-COSMOLOGY-NODE-MAP-003",
+      "title": "Cosmology Node Map / Ritual Navigation Chart",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1dN4g4azpC5OK_3a2Y49qfiDrRs0KtM61/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-COSMOLOGY-NODE-MAP-003."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-GLYPH-BOARD-0002",
+      "title": "Glyph System / System Board KS-0002",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/148q5TRJ4ms9IFoGBBDDBkfy1D-XsybUM/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-GLYPH-BOARD-0002."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-MANDALA-INDEX-008",
+      "title": "Mandala Index / Ritual Mandala System",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/18xxDq4NvFx4ffldq6HIqiWyYZ92e5aBb/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-MANDALA-INDEX-008."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-PORTAL-RING-002",
+      "title": "Portal Ring / Ancestral Interface Archive",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1k72x3IYU61kOGc8SE2bzJm9qyMr3yUID/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-PORTAL-RING-002."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-PROCESSION-FIELD-005",
+      "title": "Procession Field / Jaguar Tunnel",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1Z90wAoP--iRUD-c2NcB2l9y9Ri4bZTlU/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-PROCESSION-FIELD-005."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-RITUAL-DEVICE-001B",
+      "title": "Ritual Device / Archive Signal Vol.001",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/1LhQ93yItQrIMddDMbggeV8k5bD-MR0Bt/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-RITUAL-DEVICE-001B."
+      ]
+    },
+    {
+      "id": "SRC-KDX-SYSTEM-SIGNAL-SPHERE-004",
+      "title": "Signal Sphere / Coherent Pattern Modulation Field",
+      "sourceClass": "IMAGE",
+      "location": "https://drive.google.com/file/d/10i_CqXyiYZJxIV-6wVRlHFNt5Ninskz3/view",
+      "rightsStatus": "CLEAR",
+      "privacyStatus": "PRIVATE",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila KDX-SYSTEM-SIGNAL-SPHERE-004."
+      ]
+    },
+    {
+      "id": "SRC-NODE-ID",
+      "title": "NAME",
+      "sourceClass": "OTHER",
+      "location": "TYPE",
+      "rightsStatus": "UNKNOWN",
+      "privacyStatus": "RESTRICTED",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila NODE_ID."
+      ]
+    },
+    {
+      "id": "SRC-R-001",
+      "title": "Alan Turing scientific papers / The Chemical Basis of Morphogenesis",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.turing.org.uk/sources/biblio3.html",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not say every natural pattern is a Turing pattern or that the model proves a universal life code."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: bibliographic / primary-paper index.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-002",
+      "title": "PubMed — The Genetic Odyssey of Axolotl Regeneration",
+      "sourceClass": "DOCUMENT",
+      "location": "https://pubmed.ncbi.nlm.nih.gov/39723527/",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not imply humans can currently regenerate limbs by activating an axolotl-like pathway."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: peer-reviewed review.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-003",
+      "title": "Nature Communications — Photonic crystals cause active colour change in chameleons",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.nature.com/articles/ncomms7368",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not reduce chameleon colour change to camouflage only."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: peer-reviewed research.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-004",
+      "title": "Smithsonian Institution — Bat Facts",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.si.edu/spotlight/bats/batfacts",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not describe echolocation as mystical extrasensory perception."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: museum/science reference.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-005",
+      "title": "Museo Chileno de Arte Precolombino — El kultrún mapuche",
+      "sourceClass": "DOCUMENT",
+      "location": "https://museo.precolombino.cl/el-kultrun-mapuche/",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not turn the kultrún into generic 'sacred geometry' or claim one fixed universal design."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: museum / curatorial.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-006",
+      "title": "Washoe Tribe — THPO Accomplishments and Projects",
+      "sourceClass": "DOCUMENT",
+      "location": "https://washoetribe.us/departmentaboutpage/1333-Page-accomplishments-and-projects",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not extract sacred sites, ceremonies or motifs for decorative use without permission/context."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: official tribal source.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-007",
+      "title": "British Museum — Goddess Kali icon",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.britishmuseum.org/collection/object/A_2022-3005-1",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not flatten Kali into a generic 'death goddess' or divorce imagery from living Hindu worship."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: museum / community-consulted.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-008",
+      "title": "The Met — Ganesha: Lord of New Beginnings",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.metmuseum.org/es/exhibitions/ganesha",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not treat a worshipped deity as a fictional KODEX character or 'guardian NPC'."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: museum / art history.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-009",
+      "title": "British Museum — Sekhmet",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.britishmuseum.org/collection/term/BIOG55713",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not present synthetic jewelry/costume details as archaeological evidence."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: museum / Egyptology.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-010",
+      "title": "The Met — Feathered serpent pendant / Face Ornaments",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.metmuseum.org/art/collection/search/812477",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not use Quetzalcoatl, Kukulkan and Teotihuacan feathered-serpent imagery as interchangeable names/symbols."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: museum / art history.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-011",
+      "title": "C. G. Jung — Archetypes of the Collective Unconscious",
+      "sourceClass": "DOCUMENT",
+      "location": "https://carljung.ru/Library/EngArchColUn.htm",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not say archetypes are scientifically proven inherited images or universal biological memories."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: primary theoretical text mirror.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-012",
+      "title": "International Association for Analytical Psychology — Synchronicity: An Acausal Connecting Principle",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.iaap.org/wp-content/uploads/2021/04/Synchronicity.pdf",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not describe synchronicity as a demonstrated physical force or proof that repeated numbers are messages from the universe."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: professional analytical-psychology review.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-013",
+      "title": "Wolfram MathWorld — Poincaré Hyperbolic Disk",
+      "sourceClass": "DOCUMENT",
+      "location": "https://mathworld.wolfram.com/PoincareHyperbolicDisk.html",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not say the disk proves the universe is hyperbolic or that its boundary is literally cosmic memory."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: mathematics reference.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-014",
+      "title": "Princeton — Introduction to the AdS/CFT correspondence",
+      "sourceClass": "DOCUMENT",
+      "location": "https://collaborate.princeton.edu/en/publications/introduction-to-the-adscft-correspondence/",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not claim AdS/CFT demonstrates our universe is a simulation/hologram."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: peer-reviewed theoretical physics review.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-015",
+      "title": "NASA Science — Black holes / Hawking radiation explainer",
+      "sourceClass": "DOCUMENT",
+      "location": "https://science.nasa.gov/science-research/astrophysics/shedding-light-on-black-holes/",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not present any proposed resolution of the black-hole information paradox as settled."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: space-agency science explainer.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-016",
+      "title": "C. E. Shannon — A Mathematical Theory of Communication",
+      "sourceClass": "DOCUMENT",
+      "location": "https://onlinelibrary.wiley.com/doi/10.1002/j.1538-7305.1948.tb01338.x",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not equate Shannon entropy directly with thermodynamic entropy, consciousness or semantic meaning without qualification."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: primary scientific paper.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-017",
+      "title": "NASA Science — UAP FAQs / Independent Study",
+      "sourceClass": "DOCUMENT",
+      "location": "https://science.nasa.gov/uap/faqs/",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not claim current UAP evidence proves extraterrestrial craft, non-human intelligence or government-confirmed alien visitation."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: space-agency scientific source.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-018",
+      "title": "NHGRI — Deoxyribonucleic Acid Fact Sheet",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not claim sound frequencies, symbols or intention directly 'activate DNA' without specific biological evidence."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: US genomics institute reference.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-019",
+      "title": "FAO — Permaculture for agroecology: design, movement, practice and worldview",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.fao.org/agroecology/in-action/detail/permaculture-for-agroecology-design-movement-practice-and-worldview-a-review/en",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not portray permaculture as a universally validated agricultural formula or substitute all ecological evidence with movement principles."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: FAO index of peer-reviewed review.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-020",
+      "title": "ORACC — Ancient Mesopotamian Gods and Goddesses: Anunna",
+      "sourceClass": "DOCUMENT",
+      "location": "https://oracc.museum.upenn.edu/amgg/listofdeities/anunna/index.html",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not claim ancient Mesopotamian texts identify the Anunnaki as extraterrestrials, genetic engineers or visitors from another planet."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: academic Assyriology resource.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-021",
+      "title": "NIST Chemistry WebBook — Water",
+      "sourceClass": "DOCUMENT",
+      "location": "https://webbook.nist.gov/cgi/cbook.cgi?Name=H2O",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not claim ordinary water molecules form a stable eight-pointed sacred-star architecture or store human intention as established science."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: US standards chemistry database.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-022",
+      "title": "Nature Ecology & Evolution — Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks",
+      "sourceClass": "DOCUMENT",
+      "location": "https://www.nature.com/articles/s41559-023-01986-1",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not present 'wood wide web', mother-tree resource allocation or conscious fungal communication as settled facts."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: peer-reviewed perspective/evidence audit.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-023",
+      "title": "PubMed — Effects of psychedelics on neurogenesis and broader neuroplasticity: a systematic review",
+      "sourceClass": "DOCUMENT",
+      "location": "https://pubmed.ncbi.nlm.nih.gov/39701927/",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "AUTHORIZATION_REQUIRED",
+      "limitations": [
+        "Do not claim psychedelics universally raise consciousness, reveal objective external entities, permanently heal disease, or validate spiritual cosmologies."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: peer-reviewed systematic review.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-R-024",
+      "title": "ORACC — Ancient Mesopotamian Gods and Goddesses: Namma",
+      "sourceClass": "DOCUMENT",
+      "location": "https://oracc.museum.upenn.edu/amgg/listofdeities/namma/index.html",
+      "rightsStatus": "REFERENCE_ONLY",
+      "privacyStatus": "PUBLIC",
+      "culturalStatus": "REVIEW_REQUIRED",
+      "limitations": [
+        "Do not treat Namma's cosmic-water symbolism as a scientific account of molecular water or merge it with later Tiamat traditions without period/context."
+      ],
+      "notes": [
+        "Tipo de fuente declarado: academic Assyriology resource.",
+        "Derivado del Visual Atlas Master, familia R-*."
+      ]
+    },
+    {
+      "id": "SRC-RESEARCH-ID",
+      "title": "TOPIC",
+      "sourceClass": "OTHER",
+      "location": "SUPPORTED_CLAIM",
+      "rightsStatus": "UNKNOWN",
+      "privacyStatus": "RESTRICTED",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila RESEARCH_ID."
+      ]
+    },
+    {
+      "id": "SRC-SOURCE-NODE",
+      "title": "RELATION",
+      "sourceClass": "OTHER",
+      "location": "TARGET_NODE",
+      "rightsStatus": "UNKNOWN",
+      "privacyStatus": "RESTRICTED",
+      "culturalStatus": "STANDARD",
+      "notes": [
+        "Derivado del Visual Atlas Master, fila SOURCE_NODE."
+      ]
+    }
+  ]
+}
