@@ -82,12 +82,14 @@ G04 under-density is closed at browser/agent-audit level. G01/G07/G04 repetition
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED / NOT CANON
-exact verified head: d2920d5285c1d08b12d0bd6cdaa2e30f0e15feae
-KODEX Core Runtime: #358 / 32361402452 = SUCCESS
+exact verified head: d4e636218559d5d66c8525e761c27ab6c42800b0
+KODEX Core Runtime: #359 / 32451370923 = SUCCESS
+evidence artifact: 9435849800
+digest: sha256:6a207bd8601fe6428f9022df639308eeefa4f5f808b0fa2f07ccf6023c21b1d7
 creator_acceptance = NOT_RUN
 ```
 
-This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and additionally absorbs the bounded Crystal Receiver device/presentation value from historical PR #83 without reviving that lab's parallel memory/scoring model.
+This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and additionally absorbs the bounded Crystal Receiver device/presentation value from historical PR #83 without reviving that lab's parallel memory/scoring model. Core Runtime #359 completed the existing runtime, Assembly OS, seeded factory benchmark, integrity audit, Astro build, browser evidence, interlude corridor, Deep Navigation + gesture reveal, geometric memory lab, Manifestation Recipe lab, Crystal Receiver lab and Golden benchmark/review-set capture on this exact SHA.
 
 Current bounded authorities:
 
@@ -139,7 +141,7 @@ state = CLOSED / NOT MERGED / HISTORICAL RECEIVER EXPERIMENT / NOT CANON
 state = CLOSED / NOT MERGED / HISTORICAL SOURCE LANE / NOT CANON
 ```
 
-The useful Receiver correctness/device behavior is now absorbed and exact-head verified inside current-lineage #101 @ `d2920d5285…/#358`.
+The useful Receiver correctness/device behavior is now absorbed and exact-head verified inside current-lineage #101 @ `d4e636218559d5d66c8525e761c27ab6c42800b0 / #359`.
 
 Authority correction remains:
 
@@ -199,7 +201,8 @@ ASSEMBLY / DEEP NAV:
 → ONLY IF REFINE: deterministic fixture/seed curation with existing IDs + validators
 
 CURRENT PRODUCT HOST:
-#101 @ d2920d5285... / #358 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+#101 @ d4e636218559... / #359 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+→ current-lineage evidence artifact 9435849800 / sha256:6a207bd8601fe6428f9022df639308eeefa4f5f808b0fa2f07ccf6023c21b1d7
 → bounded Crystal Receiver device/presentation absorbed
 → historical agent-context #56 CLOSED / NOT MERGED; do not reactivate as parallel authority/current-state layer
 → historical Interaction V0 #3 CLOSED / NOT MERGED; do not reactivate as parallel runtime
@@ -233,7 +236,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as sole Assembly OS / Deep Navigation correctness baseline.
-2. Keep #101 `d2920d5285... / #358` as current exact verified product head until a later current-lineage product SHA is fully verified.
+2. Keep #101 `d4e636218559... / #359` as current exact verified product head until a later current-lineage product SHA is fully verified.
 3. Complete Golden 24 human/creator review before seed/fixture curation.
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
@@ -248,6 +251,6 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-21 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include §136 Crystal Receiver #83 current-lineage exact-head close (`#101 @ d2920d5285... / #358 SUCCESS`), §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, §141 Legacy Agent-Context PR #56 historical lane close, §142 Threshold WebGL Recovery #46 historical substrate close, and the current-lineage security settings tracking blocker.
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include the current-lineage #101 advance to `d4e636218559d5d66c8525e761c27ab6c42800b0 / #359 SUCCESS`, §136 Crystal Receiver #83 current-lineage close, §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, §141 Legacy Agent-Context PR #56 historical lane close, §142 Threshold WebGL Recovery #46 historical substrate close, and the current-lineage security settings tracking blocker.
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
