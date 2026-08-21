@@ -1,0 +1,88 @@
+id: KDX-MOTION-REF-005
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:1tfEAsAYP3tF54_ugK8ppiR-dI_M52Vna"
+  title: "Human figure / toroidal field diagram reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "black-and-white centered seated human figure"
+    - "large toroidal wireframe-like field surrounds and intersects the figure"
+    - "vertical central axis passes through the body and narrows at the upper/lower torus openings"
+    - "plus and minus symbols sit above and below the field"
+    - "high bilateral symmetry and diagrammatic hierarchy"
+  surface:
+    - "dense black linework on white"
+    - "engraving / technical-illustration character"
+    - "wireframe field density supplies most of the visual complexity"
+  motion_evidence: []
+  unknowns:
+    - "the screenshot provides no scientific provenance for the depicted field"
+    - "the diagram does not establish a measured human biofield, electromagnetic field or energetic polarity"
+    - "original author, intended claim and motion behavior are unresolved in this record"
+abstracted_behavior:
+  layer_model:
+    - "neutral field"
+    - "central body/axis proxy"
+    - "toroidal relation lines"
+    - "polarity/state annotations"
+    - "optional provenance label"
+  temporal_rules:
+    - "if animated, trace relation lines around a KODEX-owned abstract axis rather than making a human body emit a measured field"
+    - "motion should communicate circulation/cycle or maintained relation only"
+    - "avoid escalating speed or brightness as a pseudo-measure of spiritual/biological intensity"
+  interaction_rules:
+    - "inspection may isolate upper/lower loops or reveal topology labels"
+    - "state changes must remain explicitly symbolic or computational unless real measured data exists"
+kodex_role:
+  scene_affinity:
+    - COSMOLOGY
+    - MACHINE
+  semantic_purpose:
+    - "provide a reference for cyclic field topology and maintained relation"
+    - "demonstrate how symbolic diagrams can enter KODEX without being promoted to scientific evidence"
+  memory_consequence: "A canonical use may record which relation/topology the visitor inspected; it must not infer bodily energy, consciousness or health from interaction."
+proposed_implementation:
+  claim_class: INTERPRETATION
+  modules:
+    - OrbitField
+    - MotionStateController
+    - SignalPulse
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "SVG/vector line field preferred"
+    visual_fps: "native refresh; low angular velocity candidate"
+  motion:
+    - "slow line-trace circulation around an abstract vertical axis"
+    - "selective loop emphasis on inspection"
+    - "one discrete relation pulse when a valid semantic edge is selected"
+  surface:
+    - "black/white or source-independent semantic color"
+    - "line density controlled for mobile legibility"
+accessibility:
+  reduced_motion: "Show a static toroidal topology with labeled relation directions; no circulating trace."
+  keyboard: "Loop/axis inspection and relation selection must be keyboard reachable."
+  touch: "Use large semantic targets for upper loop, lower loop and axis rather than fine wireframe hit areas."
+  non_visual_alternative: "Describe the topology as a symbolic/abstract relation model and explicitly state that no measured human field is being shown."
+forbidden_copy:
+  - "source human figure and exact field drawing"
+  - "exact plus/minus placement and composition"
+  - "claims that the diagram represents verified human energy or consciousness"
+  - "use of the reference as scientific evidence without an independent source"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "epistemic label visible in the prototype"
+    - "source/provenance record"
+  tests:
+    - "no pseudo-metric or measured-body claim appears"
+    - "line density remains readable on mobile"
+    - "reduced-motion preserves the topology"
+    - "symbolic status is available non-visually"
+  implementation_status: "NOT_IMPLEMENTED"
