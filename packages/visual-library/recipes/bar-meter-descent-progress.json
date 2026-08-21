@@ -1,0 +1,21 @@
+{
+  "$schema": "../schemas/recipe.schema.json",
+  "id": "descent-progress",
+  "primitive": "bar-meter",
+  "palette": "solar",
+  "content": {
+    "title": "DESCENT PROGRESS",
+    "eyebrow": "KODEX−∞ / PLATE KIT 003",
+    "footer": "SYMBOLIC PLATE MARKING · NOT A SYSTEM MEASUREMENT"
+  },
+  "data": {
+    "width": 179,
+    "height": 7,
+    "value": 62,
+    "seed": 3,
+    "step": 3,
+    "bordered": true,
+    "simbolico": true
+  },
+  "assetId": null
+}

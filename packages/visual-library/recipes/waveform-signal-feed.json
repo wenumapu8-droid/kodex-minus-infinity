@@ -1,0 +1,21 @@
+{
+  "$schema": "../schemas/recipe.schema.json",
+  "id": "signal-feed",
+  "primitive": "waveform",
+  "palette": "violet",
+  "content": {
+    "title": "SIGNAL FEED",
+    "eyebrow": "KODEX−∞ / PLATE KIT 001",
+    "footer": "COMB NEEDLES ARE NOT SYMMETRIC ABOUT THE AXIS"
+  },
+  "data": {
+    "width": 320,
+    "height": 34,
+    "variant": "comb",
+    "seed": 12,
+    "inertia": 0.2,
+    "weight": 0.8,
+    "margin": 1
+  },
+  "assetId": null
+}

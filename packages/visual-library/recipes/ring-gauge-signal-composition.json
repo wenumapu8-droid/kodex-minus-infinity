@@ -1,0 +1,24 @@
+{
+  "$schema": "../schemas/recipe.schema.json",
+  "id": "signal-composition",
+  "primitive": "ring-gauge",
+  "palette": "gaia",
+  "content": {
+    "title": "SIGNAL COMPOSITION",
+    "eyebrow": "KODEX−∞ / PLATE KIT 004",
+    "footer": "SYMBOLIC PLATE MARKING · NOT A SYSTEM MEASUREMENT"
+  },
+  "data": {
+    "d": 44,
+    "thickness": 9,
+    "gap": 4,
+    "from": -90,
+    "simbolico": true,
+    "segments": [
+      { "value": 46, "color": "var(--kx-signal)" },
+      { "value": 31, "color": "var(--kx-signal-hot)" },
+      { "value": 23, "color": "var(--kx-muted)" }
+    ]
+  },
+  "assetId": null
+}
