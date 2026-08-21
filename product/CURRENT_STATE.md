@@ -82,14 +82,14 @@ G04 under-density is closed at browser/agent-audit level. G01/G07/G04 repetition
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED / NOT CANON
-exact verified head: d4e636218559d5d66c8525e761c27ab6c42800b0
-KODEX Core Runtime: #359 / 32451370923 = SUCCESS
-evidence artifact: 9435849800
-digest: sha256:6a207bd8601fe6428f9022df639308eeefa4f5f808b0fa2f07ccf6023c21b1d7
-creator_acceptance = NOT_RUN
+exact verified head: 19d5be17798c09bc0725c8dc6b24fa1f6ce79abd
+KODEX Core Runtime: #360 / 32500444724 = SUCCESS
+evidence artifact: 9453405999
+digest: sha256:121c7b793c6c5b0e6f0fa7c11bbe21a3c7b8e9e6fad3e67ea8bc1ee1b66f8bc5
+creator_acceptance = REFINE / NOT KEEP
 ```
 
-This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and additionally absorbs the bounded Crystal Receiver device/presentation value from historical PR #83 without reviving that lab's parallel memory/scoring model. Core Runtime #359 completed the existing runtime, Assembly OS, seeded factory benchmark, integrity audit, Astro build, browser evidence, interlude corridor, Deep Navigation + gesture reveal, geometric memory lab, Manifestation Recipe lab, Crystal Receiver lab and Golden benchmark/review-set capture on this exact SHA.
+This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and additionally absorbs the bounded Crystal Receiver device/presentation value from historical PR #83 without reviving that lab's parallel memory/scoring model. Core Runtime #360 completed the existing runtime, Assembly OS, seeded factory benchmark, integrity audit, Astro build, browser evidence, interlude corridor, Deep Navigation + gesture reveal, geometric memory lab, Manifestation Recipe lab, Crystal Receiver lab and Golden benchmark/review-set capture on this exact SHA. The current creator direction remains `REFINE GLOBAL`: technical/browser PASS does not imply visual KEEP.
 
 Current bounded authorities:
 
@@ -141,7 +141,7 @@ state = CLOSED / NOT MERGED / HISTORICAL RECEIVER EXPERIMENT / NOT CANON
 state = CLOSED / NOT MERGED / HISTORICAL SOURCE LANE / NOT CANON
 ```
 
-The useful Receiver correctness/device behavior is now absorbed and exact-head verified inside current-lineage #101 @ `d4e636218559d5d66c8525e761c27ab6c42800b0 / #359`.
+The useful Receiver correctness/device behavior is now absorbed and exact-head verified inside current-lineage #101 @ `19d5be17798c09bc0725c8dc6b24fa1f6ce79abd / #360`.
 
 Authority correction remains:
 
@@ -174,7 +174,7 @@ Unreconciled references remain blocked, not invented: `REF-VIS-001`, `REF-UX-001
 ## Product / authorial review surfaces
 
 - #90 MACHINE @ `b76679719e37a43e79be412269c5a4ddec2c2ccc` = exact-head browser verified / creator acceptance NOT_RUN.
-- #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / creator `KEEP | REFINE | REJECT` pending.
+- #94 PROLOGUE @ `a89a53f4cbb3d54f237e82203f65c1fdb82a4b0e` = exact-head browser verified / creator `REFINE` direction applies; no visual KEEP declared.
 - #92 = CLOSED / NOT MERGED / HISTORICAL REVIEW SNAPSHOT; frozen MACHINE evidence remains provenance only, not current staging/review authority.
 - #77 / #86 = CLOSED historical substrates.
 
@@ -198,11 +198,14 @@ Unreconciled references remain blocked, not invented: `REF-VIS-001`, `REF-UX-001
 ASSEMBLY / DEEP NAV:
 #62 = VERIFIED BASELINE / CLOSED / NOT MERGED
 → Golden 24 human/creator review
-→ ONLY IF REFINE: deterministic fixture/seed curation with existing IDs + validators
+→ creator `REFINE GLOBAL` permits only evidence-justified deterministic fixture/seed curation with existing IDs + validators; no new factory architecture
 
 CURRENT PRODUCT HOST:
-#101 @ d4e636218559... / #359 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
-→ current-lineage evidence artifact 9435849800 / sha256:6a207bd8601fe6428f9022df639308eeefa4f5f808b0fa2f07ccf6023c21b1d7
+#101 @ 19d5be17798... / #360 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+→ current-lineage evidence artifact 9453405999 / sha256:121c7b793c6c5b0e6f0fa7c11bbe21a3c7b8e9e6fad3e67ea8bc1ee1b66f8bc5
+→ creator visual state = REFINE / NOT KEEP
+→ product frontier = THRESHOLD → PORTAL → PROLOGUE → first depth of DESCENT
+→ HIDE THE SYSTEM → SHOW THE UNIVERSE
 → bounded Crystal Receiver device/presentation absorbed
 → historical agent-context #56 CLOSED / NOT MERGED; do not reactivate as parallel authority/current-state layer
 → historical Interaction V0 #3 CLOSED / NOT MERGED; do not reactivate as parallel runtime
@@ -224,7 +227,7 @@ SEMANTIC / GEOMETRIC:
 
 AUTHORIAL:
 #90 MACHINE / #94 PROLOGUE = BROWSER VERIFIED
-→ creator visual review
+→ creator visual direction = REFINE GLOBAL / no KEEP
 
 HOLOCORE:
 #70 = TECHNICALLY VERIFIED
@@ -236,8 +239,8 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as sole Assembly OS / Deep Navigation correctness baseline.
-2. Keep #101 `d4e636218559... / #359` as current exact verified product head until a later current-lineage product SHA is fully verified.
-3. Complete Golden 24 human/creator review before seed/fixture curation.
+2. Keep #101 `19d5be17798... / #360` as current exact verified product head until a later current-lineage product SHA is fully verified.
+3. Use `REFINE GLOBAL` only for reversible, evidence-justified presentation/curation deltas; do not infer KEEP or irreversible canon acceptance.
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
 6. Treat Receiver epistemic capture + bounded Crystal Receiver device presentation as verified current-lineage implementation, not canon or visitor scoring authority.
@@ -251,6 +254,8 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-21 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include the current-lineage #101 advance to `d4e636218559d5d66c8525e761c27ab6c42800b0 / #359 SUCCESS`, §136 Crystal Receiver #83 current-lineage close, §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, §141 Legacy Agent-Context PR #56 historical lane close, §142 Threshold WebGL Recovery #46 historical substrate close, and the current-lineage security settings tracking blocker.
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include the current-lineage #101 advance to `19d5be17798c09bc0725c8dc6b24fa1f6ce79abd / #360 SUCCESS`, evidence artifact `9453405999` with digest `sha256:121c7b793c6c5b0e6f0fa7c11bbe21a3c7b8e9e6fad3e67ea8bc1ee1b66f8bc5`, §136 Crystal Receiver #83 current-lineage close, §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, §141 Legacy Agent-Context PR #56 historical lane close, §142 Threshold WebGL Recovery #46 historical substrate close, and the current-lineage security settings tracking blocker.
+
+Creator experience checkpoint remains `REFINE GLOBAL / HIDE THE SYSTEM → SHOW THE UNIVERSE`; the current technical PASS is not a visual KEEP. The next bounded product gate is the continuous THRESHOLD → PORTAL → PROLOGUE → first-depth-of-DESCENT experience on the existing #101 lineage.
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
