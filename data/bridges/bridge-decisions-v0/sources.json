@@ -1,0 +1,21 @@
+[
+  {
+    "id": "SRC-KODEX-DECISIONES-2026-08-14",
+    "title": "KODEX-DECISIONES.md — decisiones del creador",
+    "creator": "Nicolás Ortega / Ocín",
+    "sourceClass": "DOCUMENT",
+    "location": "repo:kodex-work/KODEX-DECISIONES.md (mirrored KODEX-DECISIONES-2026-08-14.md)",
+    "checksum": null,
+    "repository": "wenumapu8-droid/wenu-frontend",
+    "branch": "wip/kimi-u10-commons-cabecera",
+    "path": "KODEX-DECISIONES.md",
+    "rightsStatus": "CLEAR",
+    "privacyStatus": "PUBLIC",
+    "culturalStatus": "STANDARD",
+    "attribution": "Nicolás Ortega / Ocín",
+    "notes": [
+      "epistemic: CANONICAL for RESOLVED sections, NEEDS_CONFIRMATION for CONFLICT/PENDING",
+      "truth ledger separates VERIFIED (measured) from CANONICAL (declared) — this whole file is the CANONICAL log"
+    ]
+  }
+]
