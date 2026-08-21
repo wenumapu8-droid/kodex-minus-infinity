@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-10T00:00:00Z",
+  "purpose": "Single agent entrypoint for locating KODEX collage sources across GitHub, Drive, Linear and the legacy iMac Context Vault without copying private or rights-unclear originals.",
+  "statusVocabulary": {
+    "indexed": "Searchable by semantic metadata and connected to a receiver recipe.",
+    "inventoried": "Existence and location verified; semantic or rights review still required.",
+    "blocked-external": "Cannot be read from this environment; a canonical handoff is required.",
+    "reference-only": "May guide decomposition but may not be redistributed as a production asset."
+  },
+  "agentStart": [
+    "Read docs/COLLAGE-ASSEMBLY-ENTRYPOINT.md.",
+    "Resolve a scene job through assets/capability-router.json.",
+    "Query semantic sources before opening images.",
+    "Use only records whose rights, visibility and transform allow the intended output.",
+    "Record every derivative and fallback; never overwrite an original."
+  ],
+  "sources": [
+    {
+      "id": "github.visual-library",
+      "system": "github",
+      "status": "indexed",
+      "url": "https://github.com/wenumapu8-droid/kodex-minus-infinity/tree/main/packages/visual-library",
+      "contains": ["92 audited resources", "18 capability routes", "recipes", "rights gates", "16-reference semantic map"],
+      "agentUse": "Decision layer, implementation recipes, audited tooling and provenance policy."
+    },
+    {
+      "id": "github.portfolio-contract",
+      "system": "github",
+      "status": "indexed",
+      "url": "https://github.com/wenumapu8-droid/kodex-minus-infinity/pull/44",
+      "contains": ["portfolio ingestion contract", "semantic reference identifiers", "private-source to reviewed-derivative workflow"],
+      "agentUse": "Merge before treating semantic portfolio records as canonical main-branch behavior."
+    },
+    {
+      "id": "drive.visual-atlas",
+      "system": "google-drive",
+      "status": "indexed",
+      "url": "https://drive.google.com/drive/folders/13UljxgAOEtW2-ox3QVyxMEWt94TgvUel",
+      "contains": ["00_GUIDES", "01_CANON_AUTORIAL", "02_RADAR_TECNICO", "03_REFERENCIAS_EXTERNAS"],
+      "agentUse": "Human-viewable source and reference layer. External screenshots remain reference-only."
+    },
+    {
+      "id": "drive.ocin-portfolio",
+      "system": "google-drive",
+      "status": "inventoried",
+      "url": "https://drive.google.com/drive/folders/1v2ujUFmOjhVrGkC7ylsj-SDEAsz2fS1x",
+      "contains": ["11 semantic family folders", "00_KODEX_INTEGRATION", "loose legacy files requiring batch classification"],
+      "agentUse": "Creator-owned source layer. Default visibility is private-source; do not bulk publish."
+    },
+    {
+      "id": "linear.production-map",
+      "system": "linear",
+      "status": "indexed",
+      "url": "https://linear.app/kodex8/document/kodex-production-map-v0-4166c499a769",
+      "contains": ["work packets", "ownership", "dependencies", "acceptance gates"],
+      "agentUse": "Execution truth; use issue status rather than invented completion percentages."
+    },
+    {
+      "id": "imac.obsidian-vault",
+      "system": "legacy-imac",
+      "status": "blocked-external",
+      "linearIssue": "KOD-37",
+      "contains": ["legacy workspaces", "local-only shaders", "components", "specifications", "implementation evidence"],
+      "agentUse": "Consume only Context Vault handoffs produced by the iMac. Never request credentials or direct disk access."
+    }
+  ],
+  "portfolioFamilies": [
+    {"id":"ocin.resources.graphics","title":"Recursos gráficos","driveFolderId":"1G4qG3Q5nNmqMWwhomb0zzG_E3uuWKRJK","verifiedDirectItems":7,"status":"inventoried","receivers":["media-grid","texture-slot"]},
+    {"id":"ocin.format.banner","title":"Formato banner","driveFolderId":"1wwtBCECLVRlhdBHeT1ZVvG-JjKmfzS11","verifiedDirectItems":15,"status":"inventoried","receivers":["editorial-collage","chapter-header"]},
+    {"id":"ocin.geometry.circular","title":"Geometría circular","driveFolderId":"1G0r1AO8SednzuRoKjFZfGpw6qMOBKC0L","verifiedDirectItems":1,"status":"inventoried","receivers":["glyph-ring","radial-scanner"]},
+    {"id":"ocin.geometry.square","title":"Geometría cuadrada","driveFolderId":"1TlckwLjcFxeOPV767rA3AYO7uOob3Uj1","verifiedDirectItems":5,"status":"inventoried","receivers":["pattern-field","specimen-card"]},
+    {"id":"ocin.geometry.triangular","title":"Geometría triangular","driveFolderId":"1SOZRiaduVSmc00Qi8xCUdjRVdh9mtvrR","verifiedDirectItems":3,"status":"inventoried","receivers":["core-glyph","portal-frame"]},
+    {"id":"ocin.system.mandala","title":"Sistemas mandala","driveFolderId":"1WsgkrbU-Dsk4o1mX4DXkDzNCYSczqfjf","verifiedDirectItems":0,"nestedFamilies":4,"status":"inventoried","receivers":["glyph-ring","pattern-field"]},
+    {"id":"ocin.system.fractal","title":"Sistemas fractales","driveFolderId":"1QqquEulUI1nVDgzeuN0ZOvVcUnHMRmBK","verifiedDirectItems":3,"status":"inventoried","receivers":["flow-field","living-contours"]},
+    {"id":"ocin.field.toroidal","title":"Campos toroidales","driveFolderId":"1v48Fj7wbbf9_OPmimqWEyyuLEBLAZy9W","verifiedDirectItems":7,"status":"inventoried","receivers":["toroidal-field","portal-fallback"]},
+    {"id":"ocin.form.molecular","title":"Formas moleculares","driveFolderId":"1ZWAoRhLA8boGiAB7DuYET8Rxa9lxRmkQ","verifiedDirectItems":27,"status":"inventoried","receivers":["specimen-material","shader-texture"]},
+    {"id":"ocin.pattern.repeat","title":"Patrones repetitivos","driveFolderId":"1ZD6UBGyjs6bk3tVdQgbfjHFOJEDb5pxA","verifiedDirectItems":3,"status":"inventoried","receivers":["pattern-field","interface-skin"]},
+    {"id":"ocin.art.psychedelic","title":"Arte psicodélico","driveFolderId":"1nUEYL81e3iqHRVHwIw-MLL1YIb5E1XT6","verifiedDirectItems":5,"status":"inventoried","receivers":["scene-palette","motion-grammar","creator-poster"]}
+  ],
+  "linearCrosswalk": [
+    {"issue":"KOD-10","role":"Curate minimum verified asset corpus","state":"Backlog"},
+    {"issue":"KOD-26","role":"Ingest Atlas and research corpus into canonical graph","state":"Verify in Linear before changing canon"},
+    {"issue":"KOD-34","role":"Context Vault bridge protocol","state":"Done"},
+    {"issue":"KOD-37","role":"Run legacy iMac snapshot and handoff","state":"Todo","blocking":"iMac-only material"},
+    {"issue":"KOD-47","role":"Visible end-to-end assembly","state":"Done"},
+    {"issue":"KOD-54","role":"Measurable scene construction registry","state":"In Progress"}
+  ],
+  "assemblyPriority": [
+    "Merge PR #44 after review so semantic identifiers are canonical.",
+    "Run KOD-37 on the iMac and attach one context_vault_handoff per relevant workspace.",
+    "Complete KOD-10 using the semantic records, selecting the minimum public-safe corpus rather than the whole portfolio.",
+    "Feed approved records into KOD-26 canonical graph ingestion.",
+    "Expose receiver coverage and blockers through KOD-54 without synthetic percentages.",
+    "Assemble collage scenes from existing recipes before adding new runtimes."
+  ]
+}

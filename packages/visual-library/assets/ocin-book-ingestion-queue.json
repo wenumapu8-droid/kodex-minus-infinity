@@ -1,0 +1,3527 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-10T00:00:00Z",
+  "collection": "PORTFOLIO_OCIN_DIGITAL",
+  "purpose": "Deterministic item-level queue for converting OCIN / BOOK from inventoried folders into agent-searchable KODEX sources without moving, overwriting or publishing originals.",
+  "truth": {
+    "totalUsableAssets": 116,
+    "pendingVisualAnalysis": 116,
+    "indexedAssets": 0,
+    "excludedCount": 1,
+    "completionRule": "Do not declare complete until pendingVisualAnalysis is 0 and every item has rights, semantic identity, relation classification and receiver recipe."
+  },
+  "classification": [
+    "NEW",
+    "VARIANT",
+    "DUPLICATE"
+  ],
+  "epistemicVocabulary": [
+    "VERIFIED",
+    "CANONICAL",
+    "INFERRED",
+    "SPECULATIVE",
+    "NEEDS_CONFIRMATION",
+    "DEPRECATED"
+  ],
+  "safeguards": [
+    "Original Drive IDs are immutable references.",
+    "Duplicates remain registered as DUPLICATE_ASSET; do not delete physical files.",
+    "Creator ownership never implies automatic publication.",
+    "Cultural material requires community, source, context and authorization status.",
+    "Scientific claims must remain separate from metaphor.",
+    "A=THRESHOLD, M=HEART/0 optional, Y=RETURN/+∞; do not invent other letter meanings."
+  ],
+  "batchOrder": [
+    {
+      "family": "ocin.field.toroidal",
+      "driveFolderId": "1v48Fj7wbbf9_OPmimqWEyyuLEBLAZy9W",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ]
+    },
+    {
+      "family": "ocin.system.fractal",
+      "driveFolderId": "1QqquEulUI1nVDgzeuN0ZOvVcUnHMRmBK",
+      "receivers": [
+        "flow-field",
+        "living-contours"
+      ]
+    },
+    {
+      "family": "ocin.geometry.triangular",
+      "driveFolderId": "1SOZRiaduVSmc00Qi8xCUdjRVdh9mtvrR",
+      "receivers": [
+        "core-glyph",
+        "portal-frame"
+      ]
+    },
+    {
+      "family": "ocin.geometry.circular",
+      "driveFolderId": "1G0r1AO8SednzuRoKjFZfGpw6qMOBKC0L",
+      "receivers": [
+        "glyph-ring",
+        "radial-scanner"
+      ]
+    },
+    {
+      "family": "ocin.system.mandala.bw",
+      "driveFolderId": "1SXVsYlI92h1kCiRB9kR6VqfASabyWmU5",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ]
+    },
+    {
+      "family": "ocin.system.mandala.gray",
+      "driveFolderId": "1-ljtJMGlmkHKmhVKD5Orw2nQTPDg1LjL",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ]
+    },
+    {
+      "family": "ocin.system.mandala.negative",
+      "driveFolderId": "1lluFFnhxWGkRCom1WHTZycBO-Qmk6q3r",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ]
+    },
+    {
+      "family": "ocin.system.mandala.red",
+      "driveFolderId": "1ozVbnHkHZDlKOMlCJdlo9-lbr6zmpeXG",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ]
+    },
+    {
+      "family": "ocin.form.molecular",
+      "driveFolderId": "1ZWAoRhLA8boGiAB7DuYET8Rxa9lxRmkQ",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ]
+    },
+    {
+      "family": "ocin.pattern.repeat",
+      "driveFolderId": "1ZD6UBGyjs6bk3tVdQgbfjHFOJEDb5pxA",
+      "receivers": [
+        "pattern-field",
+        "interface-skin"
+      ]
+    },
+    {
+      "family": "ocin.format.banner",
+      "driveFolderId": "1wwtBCECLVRlhdBHeT1ZVvG-JjKmfzS11",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ]
+    },
+    {
+      "family": "ocin.resources.graphics",
+      "driveFolderId": "1G4qG3Q5nNmqMWwhomb0zzG_E3uuWKRJK",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ]
+    },
+    {
+      "family": "ocin.geometry.square",
+      "driveFolderId": "1TlckwLjcFxeOPV767rA3AYO7uOob3Uj1",
+      "receivers": [
+        "pattern-field",
+        "specimen-card"
+      ]
+    },
+    {
+      "family": "ocin.art.psychedelic",
+      "driveFolderId": "1nUEYL81e3iqHRVHwIw-MLL1YIb5E1XT6",
+      "receivers": [
+        "scene-palette",
+        "motion-grammar",
+        "creator-poster"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "driveFileId": "1Qmo4Q3X1EzxbMXZ7BLOR6g-Y-dBdrs2_",
+      "sourceName": "Música - Acceso directo.lnk",
+      "reason": "non-portable shortcut or folder"
+    }
+  ],
+  "entries": [
+    {
+      "id": "drive.1csEpt4TfisUuax_OVa5gGEfCMdJIxoIK",
+      "driveFileId": "1csEpt4TfisUuax_OVa5gGEfCMdJIxoIK",
+      "sourceName": "image3A30005_mirror.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1138379,
+      "driveUrl": "https://drive.google.com/file/d/1csEpt4TfisUuax_OVa5gGEfCMdJIxoIK/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1aJD90LbUBStyBucctHzpfhsmDGg-yuQp",
+      "driveFileId": "1aJD90LbUBStyBucctHzpfhsmDGg-yuQp",
+      "sourceName": "image3A30005_mirror2.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1608688,
+      "driveUrl": "https://drive.google.com/file/d/1aJD90LbUBStyBucctHzpfhsmDGg-yuQp/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1zHWSdJ0UoHtLW_Oyj72XQQtCcX-Qi-UY",
+      "driveFileId": "1zHWSdJ0UoHtLW_Oyj72XQQtCcX-Qi-UY",
+      "sourceName": "image3A30006_mirror3.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 550503,
+      "driveUrl": "https://drive.google.com/file/d/1zHWSdJ0UoHtLW_Oyj72XQQtCcX-Qi-UY/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1cnRb5Lfx2drD7z3YshEdyd1v6Mll0g6G",
+      "driveFileId": "1cnRb5Lfx2drD7z3YshEdyd1v6Mll0g6G",
+      "sourceName": "image3A30006_mirror4.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1478126,
+      "driveUrl": "https://drive.google.com/file/d/1cnRb5Lfx2drD7z3YshEdyd1v6Mll0g6G/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1DPsrHLLtpo7OEA9rchq9CUdwbvxUsJYu",
+      "driveFileId": "1DPsrHLLtpo7OEA9rchq9CUdwbvxUsJYu",
+      "sourceName": "image3A30006_mirror5.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2028069,
+      "driveUrl": "https://drive.google.com/file/d/1DPsrHLLtpo7OEA9rchq9CUdwbvxUsJYu/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1xrboTL7NeyEYO5QXxT1_hF1P-a_RlLce",
+      "driveFileId": "1xrboTL7NeyEYO5QXxT1_hF1P-a_RlLce",
+      "sourceName": "image3A30212_mirror.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 320368,
+      "driveUrl": "https://drive.google.com/file/d/1xrboTL7NeyEYO5QXxT1_hF1P-a_RlLce/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1eYUqdmDQOu3zZfvQuCx1g4OCD7mB1qHx",
+      "driveFileId": "1eYUqdmDQOu3zZfvQuCx1g4OCD7mB1qHx",
+      "sourceName": "PSX_20210320_215550.jpg",
+      "family": "ocin.field.toroidal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 898837,
+      "driveUrl": "https://drive.google.com/file/d/1eYUqdmDQOu3zZfvQuCx1g4OCD7mB1qHx/view?usp=drivesdk",
+      "receivers": [
+        "toroidal-field",
+        "portal-fallback"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 0
+    },
+    {
+      "id": "drive.1KK_wka6ukvE7TlUPwxe94c27YFtE9hY5",
+      "driveFileId": "1KK_wka6ukvE7TlUPwxe94c27YFtE9hY5",
+      "sourceName": "image3A30006_mirror.jpg",
+      "family": "ocin.system.fractal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 531172,
+      "driveUrl": "https://drive.google.com/file/d/1KK_wka6ukvE7TlUPwxe94c27YFtE9hY5/view?usp=drivesdk",
+      "receivers": [
+        "flow-field",
+        "living-contours"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "drive.1zAeyvWCkNleePJPxXfPmqke8iwjTLSMI",
+      "driveFileId": "1zAeyvWCkNleePJPxXfPmqke8iwjTLSMI",
+      "sourceName": "image3A30006_mirror2.jpg",
+      "family": "ocin.system.fractal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2436288,
+      "driveUrl": "https://drive.google.com/file/d/1zAeyvWCkNleePJPxXfPmqke8iwjTLSMI/view?usp=drivesdk",
+      "receivers": [
+        "flow-field",
+        "living-contours"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "drive.1yhCDtCoOK3pB3nxkmGeY5aQL3MeblTIr",
+      "driveFileId": "1yhCDtCoOK3pB3nxkmGeY5aQL3MeblTIr",
+      "sourceName": "image3A30211_mirror.jpg",
+      "family": "ocin.system.fractal",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 730188,
+      "driveUrl": "https://drive.google.com/file/d/1yhCDtCoOK3pB3nxkmGeY5aQL3MeblTIr/view?usp=drivesdk",
+      "receivers": [
+        "flow-field",
+        "living-contours"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "drive.1CgDsFjFGnSOV0kiCc7SxiPiwynbnPAja",
+      "driveFileId": "1CgDsFjFGnSOV0kiCc7SxiPiwynbnPAja",
+      "sourceName": "image3A30212_mirror4.jpg",
+      "family": "ocin.geometry.triangular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 126026,
+      "driveUrl": "https://drive.google.com/file/d/1CgDsFjFGnSOV0kiCc7SxiPiwynbnPAja/view?usp=drivesdk",
+      "receivers": [
+        "core-glyph",
+        "portal-frame"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "drive.12j8lSrBZmVMziVVGQoeW6Rhdq9fVBSot",
+      "driveFileId": "12j8lSrBZmVMziVVGQoeW6Rhdq9fVBSot",
+      "sourceName": "image3A30212_mirror5.jpg",
+      "family": "ocin.geometry.triangular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 195121,
+      "driveUrl": "https://drive.google.com/file/d/12j8lSrBZmVMziVVGQoeW6Rhdq9fVBSot/view?usp=drivesdk",
+      "receivers": [
+        "core-glyph",
+        "portal-frame"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "drive.1l68o9MujsENyebsrRnE3AWYrdwoz5Fnw",
+      "driveFileId": "1l68o9MujsENyebsrRnE3AWYrdwoz5Fnw",
+      "sourceName": "image3A30212_mirror6.jpg",
+      "family": "ocin.geometry.triangular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 197067,
+      "driveUrl": "https://drive.google.com/file/d/1l68o9MujsENyebsrRnE3AWYrdwoz5Fnw/view?usp=drivesdk",
+      "receivers": [
+        "core-glyph",
+        "portal-frame"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "drive.13jutXnFRQVnoXE1VO65LYeOgi9kC4jdh",
+      "driveFileId": "13jutXnFRQVnoXE1VO65LYeOgi9kC4jdh",
+      "sourceName": "image3A30212_mirror2.jpg",
+      "family": "ocin.geometry.circular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 415685,
+      "driveUrl": "https://drive.google.com/file/d/13jutXnFRQVnoXE1VO65LYeOgi9kC4jdh/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "radial-scanner"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "drive.1AlOha1itd01tDs3riBEaKNS_PjQ19N8G",
+      "driveFileId": "1AlOha1itd01tDs3riBEaKNS_PjQ19N8G",
+      "sourceName": "image3A30110_mirror2.ai",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "editable-source",
+      "mime": "application/postscript",
+      "sizeBytes": 241693,
+      "driveUrl": "https://drive.google.com/file/d/1AlOha1itd01tDs3riBEaKNS_PjQ19N8G/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1j6jPOSmjDZmuG-Z3P2IiJL5UiMbOcTVg",
+      "driveFileId": "1j6jPOSmjDZmuG-Z3P2IiJL5UiMbOcTVg",
+      "sourceName": "image3A30110_mirror2.bak",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "backup-source",
+      "mime": "application/octet-stream",
+      "sizeBytes": 93589,
+      "driveUrl": "https://drive.google.com/file/d/1j6jPOSmjDZmuG-Z3P2IiJL5UiMbOcTVg/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1725c87zIKmmxPQuFpeDxF0dVsbGVl8sB",
+      "driveFileId": "1725c87zIKmmxPQuFpeDxF0dVsbGVl8sB",
+      "sourceName": "image3A30110_mirror2.dwg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "editable-source",
+      "mime": "image/vnd.dwg",
+      "sizeBytes": 107993,
+      "driveUrl": "https://drive.google.com/file/d/1725c87zIKmmxPQuFpeDxF0dVsbGVl8sB/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1llO72vvXMzd50jcEqD04Lyp6gL4-sUTO",
+      "driveFileId": "1llO72vvXMzd50jcEqD04Lyp6gL4-sUTO",
+      "sourceName": "image3A30110_mirror2.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 139573,
+      "driveUrl": "https://drive.google.com/file/d/1llO72vvXMzd50jcEqD04Lyp6gL4-sUTO/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.130PAWUVjo_E98xOPvV_Uk_okwz5k_jtX",
+      "driveFileId": "130PAWUVjo_E98xOPvV_Uk_okwz5k_jtX",
+      "sourceName": "image3A30110_mirror4.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 197460,
+      "driveUrl": "https://drive.google.com/file/d/130PAWUVjo_E98xOPvV_Uk_okwz5k_jtX/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1vlbQ2IeleKEv-FlMELMtvGQ1l6VkGj-T",
+      "driveFileId": "1vlbQ2IeleKEv-FlMELMtvGQ1l6VkGj-T",
+      "sourceName": "image3A30110_mirror4.png",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/png",
+      "sizeBytes": 364496,
+      "driveUrl": "https://drive.google.com/file/d/1vlbQ2IeleKEv-FlMELMtvGQ1l6VkGj-T/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1bpdW0DNhJ1CNypGNaLrAwvJbA7UVtCXB",
+      "driveFileId": "1bpdW0DNhJ1CNypGNaLrAwvJbA7UVtCXB",
+      "sourceName": "image3A30110_mirror4b.png",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/png",
+      "sizeBytes": 396259,
+      "driveUrl": "https://drive.google.com/file/d/1bpdW0DNhJ1CNypGNaLrAwvJbA7UVtCXB/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1v5rx4R-DNHuYhZrUMsSXAX1zeD58eIqG",
+      "driveFileId": "1v5rx4R-DNHuYhZrUMsSXAX1zeD58eIqG",
+      "sourceName": "image3A30211_mirror4.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1748991,
+      "driveUrl": "https://drive.google.com/file/d/1v5rx4R-DNHuYhZrUMsSXAX1zeD58eIqG/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1UkdkVOOn0oJfjanCDcgq4m2wYZaNZanm",
+      "driveFileId": "1UkdkVOOn0oJfjanCDcgq4m2wYZaNZanm",
+      "sourceName": "image3A30212_mirror14.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 192678,
+      "driveUrl": "https://drive.google.com/file/d/1UkdkVOOn0oJfjanCDcgq4m2wYZaNZanm/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.19Rw7CAhx8JZ2Pf3H3rRTxVJUBZARgwLR",
+      "driveFileId": "19Rw7CAhx8JZ2Pf3H3rRTxVJUBZARgwLR",
+      "sourceName": "image3A30213_mirror.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 374985,
+      "driveUrl": "https://drive.google.com/file/d/19Rw7CAhx8JZ2Pf3H3rRTxVJUBZARgwLR/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1r5o48h6auMWC7NvWuXr5yiW7IY_2n07C",
+      "driveFileId": "1r5o48h6auMWC7NvWuXr5yiW7IY_2n07C",
+      "sourceName": "image3A30213_mirror17.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 157977,
+      "driveUrl": "https://drive.google.com/file/d/1r5o48h6auMWC7NvWuXr5yiW7IY_2n07C/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1jHj4eFkgIoUtRmHDWiyqYflJbHT_yCaR",
+      "driveFileId": "1jHj4eFkgIoUtRmHDWiyqYflJbHT_yCaR",
+      "sourceName": "image3A30213_mirror18.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 260979,
+      "driveUrl": "https://drive.google.com/file/d/1jHj4eFkgIoUtRmHDWiyqYflJbHT_yCaR/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1s73FwXzoD0obJ0785o3cHBKhKFQ-INor",
+      "driveFileId": "1s73FwXzoD0obJ0785o3cHBKhKFQ-INor",
+      "sourceName": "image3A30213_mirror19.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 387522,
+      "driveUrl": "https://drive.google.com/file/d/1s73FwXzoD0obJ0785o3cHBKhKFQ-INor/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1L_d7Hvdur22LiD0ExdfDxb79JGcJw0aC",
+      "driveFileId": "1L_d7Hvdur22LiD0ExdfDxb79JGcJw0aC",
+      "sourceName": "image3A30213_mirror20.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 386941,
+      "driveUrl": "https://drive.google.com/file/d/1L_d7Hvdur22LiD0ExdfDxb79JGcJw0aC/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1r1ME9Kd3QcGkDNXeI1rqwV0yFtSljSSY",
+      "driveFileId": "1r1ME9Kd3QcGkDNXeI1rqwV0yFtSljSSY",
+      "sourceName": "image3A30213_mirror21.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 248067,
+      "driveUrl": "https://drive.google.com/file/d/1r1ME9Kd3QcGkDNXeI1rqwV0yFtSljSSY/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1HzNHXQOapOEG3XT4T5aw3TG1mLVsbNyN",
+      "driveFileId": "1HzNHXQOapOEG3XT4T5aw3TG1mLVsbNyN",
+      "sourceName": "image3A30213_mirror22.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 113127,
+      "driveUrl": "https://drive.google.com/file/d/1HzNHXQOapOEG3XT4T5aw3TG1mLVsbNyN/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1neya6HisgqXTNax4tDK_Qo-tnBmyLB-n",
+      "driveFileId": "1neya6HisgqXTNax4tDK_Qo-tnBmyLB-n",
+      "sourceName": "image3A30213_mirror23.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 196612,
+      "driveUrl": "https://drive.google.com/file/d/1neya6HisgqXTNax4tDK_Qo-tnBmyLB-n/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1OxMaNtQ2V5zaHCvyZVfXYyeMyjHmB2iz",
+      "driveFileId": "1OxMaNtQ2V5zaHCvyZVfXYyeMyjHmB2iz",
+      "sourceName": "image3A30215_mirror.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 234014,
+      "driveUrl": "https://drive.google.com/file/d/1OxMaNtQ2V5zaHCvyZVfXYyeMyjHmB2iz/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1H59Hz5iddpjRXWNtqRbNL6ED6xAuGzY4",
+      "driveFileId": "1H59Hz5iddpjRXWNtqRbNL6ED6xAuGzY4",
+      "sourceName": "image3A30218_mirror.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 323735,
+      "driveUrl": "https://drive.google.com/file/d/1H59Hz5iddpjRXWNtqRbNL6ED6xAuGzY4/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.10wlPNJ6LWM6x3jBQmbss7jd3PPfMUKhg",
+      "driveFileId": "10wlPNJ6LWM6x3jBQmbss7jd3PPfMUKhg",
+      "sourceName": "image3A30218_mirror2.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 463051,
+      "driveUrl": "https://drive.google.com/file/d/10wlPNJ6LWM6x3jBQmbss7jd3PPfMUKhg/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.16PbgpkMhqOREMh2dmyX16Ci1sNsC3Gyi",
+      "driveFileId": "16PbgpkMhqOREMh2dmyX16Ci1sNsC3Gyi",
+      "sourceName": "image3A30218_mirror3.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 562063,
+      "driveUrl": "https://drive.google.com/file/d/16PbgpkMhqOREMh2dmyX16Ci1sNsC3Gyi/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1QxXyJ9Gke12UwWaERlzR9fg5ZLS4zATe",
+      "driveFileId": "1QxXyJ9Gke12UwWaERlzR9fg5ZLS4zATe",
+      "sourceName": "image3A30218_mirror4.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 709916,
+      "driveUrl": "https://drive.google.com/file/d/1QxXyJ9Gke12UwWaERlzR9fg5ZLS4zATe/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1n_eSAQKPRuQxEYydgpnuSkVuJAuRfNqT",
+      "driveFileId": "1n_eSAQKPRuQxEYydgpnuSkVuJAuRfNqT",
+      "sourceName": "image3A30218_mirror9.jpg",
+      "family": "ocin.system.mandala.bw",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 520700,
+      "driveUrl": "https://drive.google.com/file/d/1n_eSAQKPRuQxEYydgpnuSkVuJAuRfNqT/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1bXi6iBGmBnrfATVMK1BWYLCEPCeOwo1L",
+      "driveFileId": "1bXi6iBGmBnrfATVMK1BWYLCEPCeOwo1L",
+      "sourceName": "image3A30213_mirror4.jpg",
+      "family": "ocin.system.mandala.gray",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 204794,
+      "driveUrl": "https://drive.google.com/file/d/1bXi6iBGmBnrfATVMK1BWYLCEPCeOwo1L/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1wG4yYd4dpncRfO25XREUUxuEBtjPPqO8",
+      "driveFileId": "1wG4yYd4dpncRfO25XREUUxuEBtjPPqO8",
+      "sourceName": "image3A30213_mirror5.jpg",
+      "family": "ocin.system.mandala.gray",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 296273,
+      "driveUrl": "https://drive.google.com/file/d/1wG4yYd4dpncRfO25XREUUxuEBtjPPqO8/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1Kpth81VhUMHbMy7mk5jFeBAw7iH2P7Kl",
+      "driveFileId": "1Kpth81VhUMHbMy7mk5jFeBAw7iH2P7Kl",
+      "sourceName": "image3A30213_mirror6.jpg",
+      "family": "ocin.system.mandala.gray",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 341039,
+      "driveUrl": "https://drive.google.com/file/d/1Kpth81VhUMHbMy7mk5jFeBAw7iH2P7Kl/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1OzGg9IAK_gxY5tSt6zTBFmYe_CSRk6dg",
+      "driveFileId": "1OzGg9IAK_gxY5tSt6zTBFmYe_CSRk6dg",
+      "sourceName": "image3A30213_mirror7.jpg",
+      "family": "ocin.system.mandala.gray",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 510700,
+      "driveUrl": "https://drive.google.com/file/d/1OzGg9IAK_gxY5tSt6zTBFmYe_CSRk6dg/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.138AyDrechHJM55HRqz23F9Iy69nEWqU9",
+      "driveFileId": "138AyDrechHJM55HRqz23F9Iy69nEWqU9",
+      "sourceName": "image3A30213_mirror8.jpg",
+      "family": "ocin.system.mandala.gray",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 481878,
+      "driveUrl": "https://drive.google.com/file/d/138AyDrechHJM55HRqz23F9Iy69nEWqU9/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1ezCM-FZVIJ1q1TFiraI1O89iAj07QheT",
+      "driveFileId": "1ezCM-FZVIJ1q1TFiraI1O89iAj07QheT",
+      "sourceName": "image3A30213_mirror9.jpg",
+      "family": "ocin.system.mandala.gray",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 512139,
+      "driveUrl": "https://drive.google.com/file/d/1ezCM-FZVIJ1q1TFiraI1O89iAj07QheT/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1gt_19sKWxnK1FObYwb1GbGssSe4AGkZ-",
+      "driveFileId": "1gt_19sKWxnK1FObYwb1GbGssSe4AGkZ-",
+      "sourceName": "PSX_20210320_220513.jpg",
+      "family": "ocin.system.mandala.negative",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 467930,
+      "driveUrl": "https://drive.google.com/file/d/1gt_19sKWxnK1FObYwb1GbGssSe4AGkZ-/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1mghslxdr6OEp8V8GP6Lf8OYROGf9-pke",
+      "driveFileId": "1mghslxdr6OEp8V8GP6Lf8OYROGf9-pke",
+      "sourceName": "image3A30214_mirror.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 355758,
+      "driveUrl": "https://drive.google.com/file/d/1mghslxdr6OEp8V8GP6Lf8OYROGf9-pke/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1lEOGUBiLg5Befn3XaPSLh-GzUwe77cFt",
+      "driveFileId": "1lEOGUBiLg5Befn3XaPSLh-GzUwe77cFt",
+      "sourceName": "image3A30214_mirror10.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 228992,
+      "driveUrl": "https://drive.google.com/file/d/1lEOGUBiLg5Befn3XaPSLh-GzUwe77cFt/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1VUD7nBTp_iIUQX-7plpdCRjBsf-lUXF7",
+      "driveFileId": "1VUD7nBTp_iIUQX-7plpdCRjBsf-lUXF7",
+      "sourceName": "image3A30214_mirror11.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 62101,
+      "driveUrl": "https://drive.google.com/file/d/1VUD7nBTp_iIUQX-7plpdCRjBsf-lUXF7/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1yrEHe94QOYp53pfAfgKKw91Ov45WQbv-",
+      "driveFileId": "1yrEHe94QOYp53pfAfgKKw91Ov45WQbv-",
+      "sourceName": "image3A30214_mirror2.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 228708,
+      "driveUrl": "https://drive.google.com/file/d/1yrEHe94QOYp53pfAfgKKw91Ov45WQbv-/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1W7CC8_XqlN31GNNU5R14YFWGegGj29Wc",
+      "driveFileId": "1W7CC8_XqlN31GNNU5R14YFWGegGj29Wc",
+      "sourceName": "image3A30214_mirror3.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1701045,
+      "driveUrl": "https://drive.google.com/file/d/1W7CC8_XqlN31GNNU5R14YFWGegGj29Wc/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1t5LueQ9wn96ufqGY6Yiuffs7sJvRY0aq",
+      "driveFileId": "1t5LueQ9wn96ufqGY6Yiuffs7sJvRY0aq",
+      "sourceName": "image3A30214_mirror4.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 711371,
+      "driveUrl": "https://drive.google.com/file/d/1t5LueQ9wn96ufqGY6Yiuffs7sJvRY0aq/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1CKcOGr6og0XvdjQ1Ok-XOeY4p4NXP7_n",
+      "driveFileId": "1CKcOGr6og0XvdjQ1Ok-XOeY4p4NXP7_n",
+      "sourceName": "image3A30214_mirror5.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 158508,
+      "driveUrl": "https://drive.google.com/file/d/1CKcOGr6og0XvdjQ1Ok-XOeY4p4NXP7_n/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1stzmhtldbUXCx5gpts4qaGEYZVbFaR9j",
+      "driveFileId": "1stzmhtldbUXCx5gpts4qaGEYZVbFaR9j",
+      "sourceName": "image3A30214_mirror6.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 366597,
+      "driveUrl": "https://drive.google.com/file/d/1stzmhtldbUXCx5gpts4qaGEYZVbFaR9j/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.156EQE9VKHoG8L6QRIxtGnkHjQys5YbSD",
+      "driveFileId": "156EQE9VKHoG8L6QRIxtGnkHjQys5YbSD",
+      "sourceName": "image3A30214_mirror7.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 307750,
+      "driveUrl": "https://drive.google.com/file/d/156EQE9VKHoG8L6QRIxtGnkHjQys5YbSD/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1f1DvvTJndhOhocIdNRzaqmrpeNaDiXOZ",
+      "driveFileId": "1f1DvvTJndhOhocIdNRzaqmrpeNaDiXOZ",
+      "sourceName": "image3A30214_mirror8.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 555458,
+      "driveUrl": "https://drive.google.com/file/d/1f1DvvTJndhOhocIdNRzaqmrpeNaDiXOZ/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.1ZA9ZjK_MyaTSXFk3PSfGbrjG1UFfuq28",
+      "driveFileId": "1ZA9ZjK_MyaTSXFk3PSfGbrjG1UFfuq28",
+      "sourceName": "image3A30214_mirror9.jpg",
+      "family": "ocin.system.mandala.red",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 310960,
+      "driveUrl": "https://drive.google.com/file/d/1ZA9ZjK_MyaTSXFk3PSfGbrjG1UFfuq28/view?usp=drivesdk",
+      "receivers": [
+        "glyph-ring",
+        "pattern-field"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "drive.11wvq3IHYThJX9n705BUsTGRvp0VFpiiu",
+      "driveFileId": "11wvq3IHYThJX9n705BUsTGRvp0VFpiiu",
+      "sourceName": "image3A29999_mirror3.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2851306,
+      "driveUrl": "https://drive.google.com/file/d/11wvq3IHYThJX9n705BUsTGRvp0VFpiiu/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1Mv6oWWErwEenB0hIB7Zl6WeKUTlBGOye",
+      "driveFileId": "1Mv6oWWErwEenB0hIB7Zl6WeKUTlBGOye",
+      "sourceName": "image3A30005_mirror10.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2439751,
+      "driveUrl": "https://drive.google.com/file/d/1Mv6oWWErwEenB0hIB7Zl6WeKUTlBGOye/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1opczBmV_jsYI9haOA3xBbhFRXOYAeMTi",
+      "driveFileId": "1opczBmV_jsYI9haOA3xBbhFRXOYAeMTi",
+      "sourceName": "image3A30005_mirror11.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2109415,
+      "driveUrl": "https://drive.google.com/file/d/1opczBmV_jsYI9haOA3xBbhFRXOYAeMTi/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1a-LQysheR293fU7JrNLGKVG6MKwshDEW",
+      "driveFileId": "1a-LQysheR293fU7JrNLGKVG6MKwshDEW",
+      "sourceName": "image3A30005_mirror9.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1892041,
+      "driveUrl": "https://drive.google.com/file/d/1a-LQysheR293fU7JrNLGKVG6MKwshDEW/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1rZrvsa-rRZhKAQ-zTQW9SJHSaB-zNswN",
+      "driveFileId": "1rZrvsa-rRZhKAQ-zTQW9SJHSaB-zNswN",
+      "sourceName": "image3A30006_mirror23.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1183980,
+      "driveUrl": "https://drive.google.com/file/d/1rZrvsa-rRZhKAQ-zTQW9SJHSaB-zNswN/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1MaINZpKcq5-0fx2lL0IGTsepOCC4zOSW",
+      "driveFileId": "1MaINZpKcq5-0fx2lL0IGTsepOCC4zOSW",
+      "sourceName": "image3A30006_mirror25.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1282795,
+      "driveUrl": "https://drive.google.com/file/d/1MaINZpKcq5-0fx2lL0IGTsepOCC4zOSW/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1TpWjcCTBayOl2Dpq5cGc0-B4D9fi7eeA",
+      "driveFileId": "1TpWjcCTBayOl2Dpq5cGc0-B4D9fi7eeA",
+      "sourceName": "image3A30075_mirror.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1361236,
+      "driveUrl": "https://drive.google.com/file/d/1TpWjcCTBayOl2Dpq5cGc0-B4D9fi7eeA/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1B1EwPQgkyRpm_NXzRHbJ3tz5LLM-EaZB",
+      "driveFileId": "1B1EwPQgkyRpm_NXzRHbJ3tz5LLM-EaZB",
+      "sourceName": "image3A30075_mirror2.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1926774,
+      "driveUrl": "https://drive.google.com/file/d/1B1EwPQgkyRpm_NXzRHbJ3tz5LLM-EaZB/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1HGNPlz-tBdKTfc322OC4WNL4YWnjj9ze",
+      "driveFileId": "1HGNPlz-tBdKTfc322OC4WNL4YWnjj9ze",
+      "sourceName": "image3A30075_mirror3.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2208382,
+      "driveUrl": "https://drive.google.com/file/d/1HGNPlz-tBdKTfc322OC4WNL4YWnjj9ze/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1IV7ErZWEz6YPBf0T-XCshKzk1qCj-J5Q",
+      "driveFileId": "1IV7ErZWEz6YPBf0T-XCshKzk1qCj-J5Q",
+      "sourceName": "image3A30075_mirror4.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 859387,
+      "driveUrl": "https://drive.google.com/file/d/1IV7ErZWEz6YPBf0T-XCshKzk1qCj-J5Q/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.18We1W-bUev8dx6hbpFPticzRrcVJE8-j",
+      "driveFileId": "18We1W-bUev8dx6hbpFPticzRrcVJE8-j",
+      "sourceName": "image3A30212_mirror10.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1566795,
+      "driveUrl": "https://drive.google.com/file/d/18We1W-bUev8dx6hbpFPticzRrcVJE8-j/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1Zne3kdOjM0ymPZRHuAdwpqwowHxVxs_6",
+      "driveFileId": "1Zne3kdOjM0ymPZRHuAdwpqwowHxVxs_6",
+      "sourceName": "image3A30212_mirror11.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1796441,
+      "driveUrl": "https://drive.google.com/file/d/1Zne3kdOjM0ymPZRHuAdwpqwowHxVxs_6/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.18lVpEoFSsDmzvGLTM2qNEZgfOdT7SJdM",
+      "driveFileId": "18lVpEoFSsDmzvGLTM2qNEZgfOdT7SJdM",
+      "sourceName": "image3A30212_mirror12.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1902066,
+      "driveUrl": "https://drive.google.com/file/d/18lVpEoFSsDmzvGLTM2qNEZgfOdT7SJdM/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1KBw5j8Uc0nDqLSkNZ9K5ka6pbvEoMz46",
+      "driveFileId": "1KBw5j8Uc0nDqLSkNZ9K5ka6pbvEoMz46",
+      "sourceName": "image3A30212_mirror13.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1452710,
+      "driveUrl": "https://drive.google.com/file/d/1KBw5j8Uc0nDqLSkNZ9K5ka6pbvEoMz46/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1BemjB5OGjflCwNFYHT9rV8uhgjYQ2vqK",
+      "driveFileId": "1BemjB5OGjflCwNFYHT9rV8uhgjYQ2vqK",
+      "sourceName": "image3A30212_mirror7.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2223194,
+      "driveUrl": "https://drive.google.com/file/d/1BemjB5OGjflCwNFYHT9rV8uhgjYQ2vqK/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.11-3LgWXytBdyr-XtAIArMXpmXsgUCoaf",
+      "driveFileId": "11-3LgWXytBdyr-XtAIArMXpmXsgUCoaf",
+      "sourceName": "image3A30212_mirror8.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1065235,
+      "driveUrl": "https://drive.google.com/file/d/11-3LgWXytBdyr-XtAIArMXpmXsgUCoaf/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1FL2gpNYFXLQ9J0qan0QV3eH5epRQ0Uqf",
+      "driveFileId": "1FL2gpNYFXLQ9J0qan0QV3eH5epRQ0Uqf",
+      "sourceName": "image3A30212_mirror9.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1644712,
+      "driveUrl": "https://drive.google.com/file/d/1FL2gpNYFXLQ9J0qan0QV3eH5epRQ0Uqf/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1iwk6K1De9LjZw2vjDVEkfoNQv_aQqHAW",
+      "driveFileId": "1iwk6K1De9LjZw2vjDVEkfoNQv_aQqHAW",
+      "sourceName": "image3A30213_mirror12.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 815855,
+      "driveUrl": "https://drive.google.com/file/d/1iwk6K1De9LjZw2vjDVEkfoNQv_aQqHAW/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1jpr3I2CXAc4r-N7IpucVEblScZ6CfZfM",
+      "driveFileId": "1jpr3I2CXAc4r-N7IpucVEblScZ6CfZfM",
+      "sourceName": "image3A30213_mirror13.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 967965,
+      "driveUrl": "https://drive.google.com/file/d/1jpr3I2CXAc4r-N7IpucVEblScZ6CfZfM/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.14pSnFa0VwzfCxmctKYHH4SrICDn2ndaX",
+      "driveFileId": "14pSnFa0VwzfCxmctKYHH4SrICDn2ndaX",
+      "sourceName": "image3A30213_mirror14.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1249922,
+      "driveUrl": "https://drive.google.com/file/d/14pSnFa0VwzfCxmctKYHH4SrICDn2ndaX/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.16VvumYIXTgAeKzRp3OSOzRXdQn30IU1A",
+      "driveFileId": "16VvumYIXTgAeKzRp3OSOzRXdQn30IU1A",
+      "sourceName": "image3A30213_mirror15.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 850566,
+      "driveUrl": "https://drive.google.com/file/d/16VvumYIXTgAeKzRp3OSOzRXdQn30IU1A/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1aG3Kp7wHo8PfP1twF7JT3411ivRHQwTj",
+      "driveFileId": "1aG3Kp7wHo8PfP1twF7JT3411ivRHQwTj",
+      "sourceName": "image3A30213_mirror16.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 623553,
+      "driveUrl": "https://drive.google.com/file/d/1aG3Kp7wHo8PfP1twF7JT3411ivRHQwTj/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1s1UCCoVeLkN-uIa1Rc-igmYihhhqyubi",
+      "driveFileId": "1s1UCCoVeLkN-uIa1Rc-igmYihhhqyubi",
+      "sourceName": "image3A30218_mirror5.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2077502,
+      "driveUrl": "https://drive.google.com/file/d/1s1UCCoVeLkN-uIa1Rc-igmYihhhqyubi/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1HmgxPtudgPao00lhiFK1hrHTLYLjUCTD",
+      "driveFileId": "1HmgxPtudgPao00lhiFK1hrHTLYLjUCTD",
+      "sourceName": "image3A30218_mirror6.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1716212,
+      "driveUrl": "https://drive.google.com/file/d/1HmgxPtudgPao00lhiFK1hrHTLYLjUCTD/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1Yqs9TPqjbjTBCgdkJmD6vG10Z70Vydeh",
+      "driveFileId": "1Yqs9TPqjbjTBCgdkJmD6vG10Z70Vydeh",
+      "sourceName": "image3A30218_mirror7.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1041450,
+      "driveUrl": "https://drive.google.com/file/d/1Yqs9TPqjbjTBCgdkJmD6vG10Z70Vydeh/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.15n3oXoOXCpRVFEUDw8vLx7-swRQpDT35",
+      "driveFileId": "15n3oXoOXCpRVFEUDw8vLx7-swRQpDT35",
+      "sourceName": "image3A30218_mirror8.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1498130,
+      "driveUrl": "https://drive.google.com/file/d/15n3oXoOXCpRVFEUDw8vLx7-swRQpDT35/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1hGUEUpApi4WeAOTw1i0R0E4zOsvXCySo",
+      "driveFileId": "1hGUEUpApi4WeAOTw1i0R0E4zOsvXCySo",
+      "sourceName": "PSX_20210320_002032.jpg",
+      "family": "ocin.form.molecular",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2079464,
+      "driveUrl": "https://drive.google.com/file/d/1hGUEUpApi4WeAOTw1i0R0E4zOsvXCySo/view?usp=drivesdk",
+      "receivers": [
+        "specimen-material",
+        "shader-texture"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "drive.1CJcCRjZnzmOnoNosWQLB-v1595Nt5jq_",
+      "driveFileId": "1CJcCRjZnzmOnoNosWQLB-v1595Nt5jq_",
+      "sourceName": "image3A30212_mirror3.jpg",
+      "family": "ocin.pattern.repeat",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1013851,
+      "driveUrl": "https://drive.google.com/file/d/1CJcCRjZnzmOnoNosWQLB-v1595Nt5jq_/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "interface-skin"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "drive.1f9eqvIww8GakHAJmqU90NuZcSr0g26Hp",
+      "driveFileId": "1f9eqvIww8GakHAJmqU90NuZcSr0g26Hp",
+      "sourceName": "image3A30213_mirror2.jpg",
+      "family": "ocin.pattern.repeat",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 913658,
+      "driveUrl": "https://drive.google.com/file/d/1f9eqvIww8GakHAJmqU90NuZcSr0g26Hp/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "interface-skin"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "drive.1ZwH3RFY0cxVgeuxKH7Vv6iL90uNg5pJ3",
+      "driveFileId": "1ZwH3RFY0cxVgeuxKH7Vv6iL90uNg5pJ3",
+      "sourceName": "image3A30213_mirror3.jpg",
+      "family": "ocin.pattern.repeat",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1158062,
+      "driveUrl": "https://drive.google.com/file/d/1ZwH3RFY0cxVgeuxKH7Vv6iL90uNg5pJ3/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "interface-skin"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "drive.1fkOOEdOGoHyiaRQ-linQ1E6_TUM7WlAJ",
+      "driveFileId": "1fkOOEdOGoHyiaRQ-linQ1E6_TUM7WlAJ",
+      "sourceName": "image3A30005_mirror8.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 873587,
+      "driveUrl": "https://drive.google.com/file/d/1fkOOEdOGoHyiaRQ-linQ1E6_TUM7WlAJ/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1c6wfLU2wlK0jOE6O0HuTQNJ9AL-Cu6fO",
+      "driveFileId": "1c6wfLU2wlK0jOE6O0HuTQNJ9AL-Cu6fO",
+      "sourceName": "image3A30075_mirror5.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 628466,
+      "driveUrl": "https://drive.google.com/file/d/1c6wfLU2wlK0jOE6O0HuTQNJ9AL-Cu6fO/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1Lq5quHbDc6aK9-k4lD5HoRzeuD1twoSI",
+      "driveFileId": "1Lq5quHbDc6aK9-k4lD5HoRzeuD1twoSI",
+      "sourceName": "image3A30075_mirror6.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 892473,
+      "driveUrl": "https://drive.google.com/file/d/1Lq5quHbDc6aK9-k4lD5HoRzeuD1twoSI/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1gT16dGdTBoXyJ0LgrVTc8XjPtS4K6mYd",
+      "driveFileId": "1gT16dGdTBoXyJ0LgrVTc8XjPtS4K6mYd",
+      "sourceName": "image3A30110_mirror5.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 184222,
+      "driveUrl": "https://drive.google.com/file/d/1gT16dGdTBoXyJ0LgrVTc8XjPtS4K6mYd/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1emExQt08LzGep0kQnloKOL8ecKRwFPV7",
+      "driveFileId": "1emExQt08LzGep0kQnloKOL8ecKRwFPV7",
+      "sourceName": "image3A30110_mirror6.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 108317,
+      "driveUrl": "https://drive.google.com/file/d/1emExQt08LzGep0kQnloKOL8ecKRwFPV7/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1oQAfoMh-1bHY7KfxPLoJ9JiCeQ2jj5wo",
+      "driveFileId": "1oQAfoMh-1bHY7KfxPLoJ9JiCeQ2jj5wo",
+      "sourceName": "image3A30110_mirror7.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 133377,
+      "driveUrl": "https://drive.google.com/file/d/1oQAfoMh-1bHY7KfxPLoJ9JiCeQ2jj5wo/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1P96P6AmZVDlTsPNWUoW72PBsR4nxfnLs",
+      "driveFileId": "1P96P6AmZVDlTsPNWUoW72PBsR4nxfnLs",
+      "sourceName": "image3A30110_mirror8.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 116401,
+      "driveUrl": "https://drive.google.com/file/d/1P96P6AmZVDlTsPNWUoW72PBsR4nxfnLs/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1wHbswHIWdTz_Eu3kh1aF4rkv1gg6tTJ6",
+      "driveFileId": "1wHbswHIWdTz_Eu3kh1aF4rkv1gg6tTJ6",
+      "sourceName": "image3A30110_mirror9.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 154139,
+      "driveUrl": "https://drive.google.com/file/d/1wHbswHIWdTz_Eu3kh1aF4rkv1gg6tTJ6/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1MSSx0Ba7DSONQ5RcXSAHXhq1cRk-IsNk",
+      "driveFileId": "1MSSx0Ba7DSONQ5RcXSAHXhq1cRk-IsNk",
+      "sourceName": "image3A30211_mirror2.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1175565,
+      "driveUrl": "https://drive.google.com/file/d/1MSSx0Ba7DSONQ5RcXSAHXhq1cRk-IsNk/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1GWuXNtlURdz5UGhal-V9kBYo1N0cQmNE",
+      "driveFileId": "1GWuXNtlURdz5UGhal-V9kBYo1N0cQmNE",
+      "sourceName": "image3A30211_mirror3.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1600810,
+      "driveUrl": "https://drive.google.com/file/d/1GWuXNtlURdz5UGhal-V9kBYo1N0cQmNE/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1RZZ-bQxCMa-fKMQb3ZSL7orKpPsOgu6G",
+      "driveFileId": "1RZZ-bQxCMa-fKMQb3ZSL7orKpPsOgu6G",
+      "sourceName": "image3A30211_mirror5.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1441970,
+      "driveUrl": "https://drive.google.com/file/d/1RZZ-bQxCMa-fKMQb3ZSL7orKpPsOgu6G/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1cQaSti2GkzRUuzzdXLUSQ-Y3FahssK0f",
+      "driveFileId": "1cQaSti2GkzRUuzzdXLUSQ-Y3FahssK0f",
+      "sourceName": "image3A30211_mirror9.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1622104,
+      "driveUrl": "https://drive.google.com/file/d/1cQaSti2GkzRUuzzdXLUSQ-Y3FahssK0f/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1PK8bzufXORLjN87BjkoJgKMi1bp87dEz",
+      "driveFileId": "1PK8bzufXORLjN87BjkoJgKMi1bp87dEz",
+      "sourceName": "PSX_20210320_014518.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1741643,
+      "driveUrl": "https://drive.google.com/file/d/1PK8bzufXORLjN87BjkoJgKMi1bp87dEz/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1gzTvM38nVszEEGabRUEAJro1rvutonRt",
+      "driveFileId": "1gzTvM38nVszEEGabRUEAJro1rvutonRt",
+      "sourceName": "PSX_20210320_193120.jpg",
+      "family": "ocin.format.banner",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2122023,
+      "driveUrl": "https://drive.google.com/file/d/1gzTvM38nVszEEGabRUEAJro1rvutonRt/view?usp=drivesdk",
+      "receivers": [
+        "editorial-collage",
+        "chapter-header"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "drive.1FWUSRlkoC6Uls2kmvuyP9J4SxcqTJ8zG",
+      "driveFileId": "1FWUSRlkoC6Uls2kmvuyP9J4SxcqTJ8zG",
+      "sourceName": "InShot_20210320_020051645.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1173897,
+      "driveUrl": "https://drive.google.com/file/d/1FWUSRlkoC6Uls2kmvuyP9J4SxcqTJ8zG/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1FbsVFXewQtbFJnapvMoL0C13TAvANp_1",
+      "driveFileId": "1FbsVFXewQtbFJnapvMoL0C13TAvANp_1",
+      "sourceName": "InShot_20210320_020134473.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2485354,
+      "driveUrl": "https://drive.google.com/file/d/1FbsVFXewQtbFJnapvMoL0C13TAvANp_1/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1FaWNGjFsPWJ5Xl4NGQf9RJZdEMbH41UF",
+      "driveFileId": "1FaWNGjFsPWJ5Xl4NGQf9RJZdEMbH41UF",
+      "sourceName": "InShot_20210320_020155173.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1179490,
+      "driveUrl": "https://drive.google.com/file/d/1FaWNGjFsPWJ5Xl4NGQf9RJZdEMbH41UF/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1F9Xg7xvs5nrcFRO8p60NtuBTWeURLoRK",
+      "driveFileId": "1F9Xg7xvs5nrcFRO8p60NtuBTWeURLoRK",
+      "sourceName": "InShot_20210328_181342371.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 356037,
+      "driveUrl": "https://drive.google.com/file/d/1F9Xg7xvs5nrcFRO8p60NtuBTWeURLoRK/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1Fli7zW1sz_goZxJPw6Bw4hk5v_mAivhz",
+      "driveFileId": "1Fli7zW1sz_goZxJPw6Bw4hk5v_mAivhz",
+      "sourceName": "PSX_20210322_121906.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 496126,
+      "driveUrl": "https://drive.google.com/file/d/1Fli7zW1sz_goZxJPw6Bw4hk5v_mAivhz/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1Fk_-WANjmmRsghTKX5AymQJobYBAs1Dl",
+      "driveFileId": "1Fk_-WANjmmRsghTKX5AymQJobYBAs1Dl",
+      "sourceName": "PSX_20210322_121921.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 410793,
+      "driveUrl": "https://drive.google.com/file/d/1Fk_-WANjmmRsghTKX5AymQJobYBAs1Dl/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1FcgAko-qdBBZ-B6DCcrP-Ir-hfbMVgby",
+      "driveFileId": "1FcgAko-qdBBZ-B6DCcrP-Ir-hfbMVgby",
+      "sourceName": "PSX_20210326_162520.jpg",
+      "family": "ocin.resources.graphics",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 701884,
+      "driveUrl": "https://drive.google.com/file/d/1FcgAko-qdBBZ-B6DCcrP-Ir-hfbMVgby/view?usp=drivesdk",
+      "receivers": [
+        "media-grid",
+        "texture-slot"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "drive.1fApkVD7HvwuXmpub6EAJChl9AWEusPqs",
+      "driveFileId": "1fApkVD7HvwuXmpub6EAJChl9AWEusPqs",
+      "sourceName": "image3A30110_mirror.jpg",
+      "family": "ocin.geometry.square",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 190709,
+      "driveUrl": "https://drive.google.com/file/d/1fApkVD7HvwuXmpub6EAJChl9AWEusPqs/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "specimen-card"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "drive.1QBelLS1Gjd_TlMW5BSDqGpDozgJqO9ZC",
+      "driveFileId": "1QBelLS1Gjd_TlMW5BSDqGpDozgJqO9ZC",
+      "sourceName": "image3A30211_mirror6.jpg",
+      "family": "ocin.geometry.square",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 173389,
+      "driveUrl": "https://drive.google.com/file/d/1QBelLS1Gjd_TlMW5BSDqGpDozgJqO9ZC/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "specimen-card"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "drive.1ixSziblxN8_WqqBrCfrj5lIiFhAnsjMj",
+      "driveFileId": "1ixSziblxN8_WqqBrCfrj5lIiFhAnsjMj",
+      "sourceName": "image3A30211_mirror7.jpg",
+      "family": "ocin.geometry.square",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 251930,
+      "driveUrl": "https://drive.google.com/file/d/1ixSziblxN8_WqqBrCfrj5lIiFhAnsjMj/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "specimen-card"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "drive.14cx78xMPhrgu-W8dElO3fUTXLQOi5rw1",
+      "driveFileId": "14cx78xMPhrgu-W8dElO3fUTXLQOi5rw1",
+      "sourceName": "image3A30211_mirror8.jpg",
+      "family": "ocin.geometry.square",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 538055,
+      "driveUrl": "https://drive.google.com/file/d/14cx78xMPhrgu-W8dElO3fUTXLQOi5rw1/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "specimen-card"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "drive.12HskbMNm6lRGHgoUAQ43RbxF6idktRDO",
+      "driveFileId": "12HskbMNm6lRGHgoUAQ43RbxF6idktRDO",
+      "sourceName": "PSX_20210320_220311.jpg",
+      "family": "ocin.geometry.square",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 947935,
+      "driveUrl": "https://drive.google.com/file/d/12HskbMNm6lRGHgoUAQ43RbxF6idktRDO/view?usp=drivesdk",
+      "receivers": [
+        "pattern-field",
+        "specimen-card"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "drive.1TioSLfJPMdZ8Z-fK8xCG3BiyFeudfVkp",
+      "driveFileId": "1TioSLfJPMdZ8Z-fK8xCG3BiyFeudfVkp",
+      "sourceName": "image3A30006_mirror13.jpg",
+      "family": "ocin.art.psychedelic",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1319999,
+      "driveUrl": "https://drive.google.com/file/d/1TioSLfJPMdZ8Z-fK8xCG3BiyFeudfVkp/view?usp=drivesdk",
+      "receivers": [
+        "scene-palette",
+        "motion-grammar",
+        "creator-poster"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "drive.1N8SZ3WWYRrpRKaGbkVsu_Puzu-UOfSDN",
+      "driveFileId": "1N8SZ3WWYRrpRKaGbkVsu_Puzu-UOfSDN",
+      "sourceName": "image3A30006_mirror32.jpg",
+      "family": "ocin.art.psychedelic",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 2321524,
+      "driveUrl": "https://drive.google.com/file/d/1N8SZ3WWYRrpRKaGbkVsu_Puzu-UOfSDN/view?usp=drivesdk",
+      "receivers": [
+        "scene-palette",
+        "motion-grammar",
+        "creator-poster"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "drive.1iVXRpD8L9-4GwESDCjLJuMCtaQ3GG58c",
+      "driveFileId": "1iVXRpD8L9-4GwESDCjLJuMCtaQ3GG58c",
+      "sourceName": "image3A30006_mirror33.jpg",
+      "family": "ocin.art.psychedelic",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1557557,
+      "driveUrl": "https://drive.google.com/file/d/1iVXRpD8L9-4GwESDCjLJuMCtaQ3GG58c/view?usp=drivesdk",
+      "receivers": [
+        "scene-palette",
+        "motion-grammar",
+        "creator-poster"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "drive.1Hzydvn5i5hPdQrm4etyeccdtz7LTDT-w",
+      "driveFileId": "1Hzydvn5i5hPdQrm4etyeccdtz7LTDT-w",
+      "sourceName": "image3A30006_mirror6.jpg",
+      "family": "ocin.art.psychedelic",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1020453,
+      "driveUrl": "https://drive.google.com/file/d/1Hzydvn5i5hPdQrm4etyeccdtz7LTDT-w/view?usp=drivesdk",
+      "receivers": [
+        "scene-palette",
+        "motion-grammar",
+        "creator-poster"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "drive.19tXekhjWvVNKv1L9MJAOExETMAkVnad8",
+      "driveFileId": "19tXekhjWvVNKv1L9MJAOExETMAkVnad8",
+      "sourceName": "image3A30075_mirror7.jpg",
+      "family": "ocin.art.psychedelic",
+      "sourceKind": "rendered-work",
+      "mime": "image/jpeg",
+      "sizeBytes": 1296019,
+      "driveUrl": "https://drive.google.com/file/d/19tXekhjWvVNKv1L9MJAOExETMAkVnad8/view?usp=drivesdk",
+      "receivers": [
+        "scene-palette",
+        "motion-grammar",
+        "creator-poster"
+      ],
+      "status": "PENDING_VISUAL_ANALYSIS",
+      "inspection": null,
+      "relation": "UNRESOLVED",
+      "rights": "creator-owned-needs-item-confirmation",
+      "visibility": "private-source",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "requiredNext": [
+        "inspect visually",
+        "assign semantic title and KDX-ASSET ID",
+        "classify NEW/VARIANT/DUPLICATE",
+        "confirm rights/privacy/cultural status",
+        "assign scene and interaction role",
+        "record allowed transforms and fallback"
+      ],
+      "priority": 10
+    }
+  ]
+}

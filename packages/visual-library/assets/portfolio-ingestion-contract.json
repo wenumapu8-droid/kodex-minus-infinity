@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "collection": "PORTFOLIO_OCIN_DIGITAL",
+  "purpose": "Turn OCIN / BOOK into a searchable authored-source layer for KODEX without publishing private originals by default.",
+  "requiredFields": ["id","title","sourceName","sourceClass","visualSummary","motifs","families","bestFor","rights","visibility","transform"],
+  "sourceClasses": ["authored-work","process","study","texture","pattern","photography","project-output","external-reference"],
+  "visibility": ["private-source","team-preview","public-catalog","public-asset"],
+  "transformModes": ["direct-use","crop","recolor","animate","trace-to-svg","derive-pattern","derive-material","derive-layout","reference-only"],
+  "gates": {
+    "public-asset": ["creator-owned-or-licensed","attribution-complete","web-optimized","alt-text","content-safety-reviewed"],
+    "cultural-material": ["community-and-source-identified","context-note","authorization-status","no-generic-tribal-tag"],
+    "scientific-claim": ["claim-type-labeled","source-citation","metaphor-separated-from-evidence"]
+  },
+  "agentQueryExamples": [
+    "Find an Ocín-authored toroidal pattern suitable for a lightweight portal fallback",
+    "Find a triangular composition that can become a parameterized SVG glyph",
+    "Find a psychedelic work whose palette can inform a scene without copying its full composition",
+    "Find a molecular texture licensed for public use as a shader displacement map"
+  ],
+  "entryTemplate": {
+    "id": "ocin.work.slug",
+    "title": "Human-readable title",
+    "sourceName": "Original filename",
+    "sourceClass": "authored-work",
+    "visualSummary": "What is visible, in literal language",
+    "motifs": [],
+    "families": [],
+    "bestFor": [],
+    "rights": "creator-owned",
+    "visibility": "private-source",
+    "transform": [],
+    "palette": [],
+    "orientation": "square",
+    "technical": {"mime":"","width":0,"height":0},
+    "culturalContext": null,
+    "scientificStatus": null,
+    "derivedAssets": []
+  }
+}
