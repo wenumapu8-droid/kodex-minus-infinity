@@ -82,14 +82,14 @@ G04 under-density is closed at browser/agent-audit level. G01/G07/G04 repetition
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED / NOT CANON
-exact verified head: 19d5be17798c09bc0725c8dc6b24fa1f6ce79abd
-KODEX Core Runtime: #360 / 32500444724 = SUCCESS
-evidence artifact: 9453405999
-digest: sha256:121c7b793c6c5b0e6f0fa7c11bbe21a3c7b8e9e6fad3e67ea8bc1ee1b66f8bc5
+exact verified head: 4b1318f6a91d8ff3139da68d677418630d5ac3d9
+KODEX Core Runtime: #374 / 32525652113 = SUCCESS
+evidence artifact: 9462183968
+digest: sha256:1f786c91cb0807fdb7f614b19016c986c6b7e318f05b88715e583016187bb232
 creator_acceptance = REFINE / NOT KEEP
 ```
 
-This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and additionally absorbs the bounded Crystal Receiver device/presentation value from historical PR #83 without reviving that lab's parallel memory/scoring model. Core Runtime #360 completed the existing runtime, Assembly OS, seeded factory benchmark, integrity audit, Astro build, browser evidence, interlude corridor, Deep Navigation + gesture reveal, geometric memory lab, Manifestation Recipe lab, Crystal Receiver lab and Golden benchmark/review-set capture on this exact SHA. The current creator direction remains `REFINE GLOBAL`: technical/browser PASS does not imply visual KEEP.
+This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and absorbs the bounded experience-convergence presentation layer without creating a parallel route, memory, state, renderer or correctness authority. Core Runtime #374 completed the existing runtime, JourneyState/graph/memory/Visible Assembly suite, Assembly OS contracts, seeded factory benchmark, integrity audit, Astro build, browser evidence, interlude corridor, Deep Navigation + gesture reveal, geometric-memory lab, Manifestation Recipe lab, Crystal Receiver lab and Golden benchmark/review-set capture on this exact SHA. The current creator direction remains `REFINE GLOBAL`: technical/browser PASS does not imply visual KEEP.
 
 Current bounded authorities:
 
@@ -141,7 +141,7 @@ state = CLOSED / NOT MERGED / HISTORICAL RECEIVER EXPERIMENT / NOT CANON
 state = CLOSED / NOT MERGED / HISTORICAL SOURCE LANE / NOT CANON
 ```
 
-The useful Receiver correctness/device behavior is now absorbed and exact-head verified inside current-lineage #101 @ `19d5be17798c09bc0725c8dc6b24fa1f6ce79abd / #360`.
+The useful Receiver correctness/device behavior is absorbed and exact-head verified inside current-lineage #101 @ `4b1318f6a91d8ff3139da68d677418630d5ac3d9 / #374`.
 
 Authority correction remains:
 
@@ -201,8 +201,9 @@ ASSEMBLY / DEEP NAV:
 → creator `REFINE GLOBAL` permits only evidence-justified deterministic fixture/seed curation with existing IDs + validators; no new factory architecture
 
 CURRENT PRODUCT HOST:
-#101 @ 19d5be17798... / #360 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
-→ current-lineage evidence artifact 9453405999 / sha256:121c7b793c6c5b0e6f0fa7c11bbe21a3c7b8e9e6fad3e67ea8bc1ee1b66f8bc5
+#101 @ 4b1318f6a91d... / #374 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+→ current-lineage evidence artifact 9462183968 / sha256:1f786c91cb0807fdb7f614b19016c986c6b7e318f05b88715e583016187bb232
+→ experience-convergence presentation layer = MECHANICALLY/BROWSER VERIFIED
 → creator visual state = REFINE / NOT KEEP
 → product frontier = THRESHOLD → PORTAL → PROLOGUE → first depth of DESCENT
 → HIDE THE SYSTEM → SHOW THE UNIVERSE
@@ -239,7 +240,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as sole Assembly OS / Deep Navigation correctness baseline.
-2. Keep #101 `19d5be17798... / #360` as current exact verified product head until a later current-lineage product SHA is fully verified.
+2. Keep #101 `4b1318f6a91d... / #374` as current exact verified product head until a later current-lineage product SHA is fully verified.
 3. Use `REFINE GLOBAL` only for reversible, evidence-justified presentation/curation deltas; do not infer KEEP or irreversible canon acceptance.
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
@@ -254,8 +255,8 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-21 checkpoints
 
-Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoints include the current-lineage #101 advance to `19d5be17798c09bc0725c8dc6b24fa1f6ce79abd / #360 SUCCESS`, evidence artifact `9453405999` with digest `sha256:121c7b793c6c5b0e6f0fa7c11bbe21a3c7b8e9e6fad3e67ea8bc1ee1b66f8bc5`, §136 Crystal Receiver #83 current-lineage close, §137 Live Review Snapshot #92 historical lane close, §140 Interaction Runtime V0 #3 historical lane close, §141 Legacy Agent-Context PR #56 historical lane close, §142 Threshold WebGL Recovery #46 historical substrate close, and the current-lineage security settings tracking blocker.
+Drive `28_KODEX_ASSEMBLY_OS` preserves the granular implementation/evidence ledger. Current relevant checkpoint: current-lineage #101 exact-head advance to `4b1318f6a91d8ff3139da68d677418630d5ac3d9 / #374 SUCCESS`, evidence artifact `9462183968` with digest `sha256:1f786c91cb0807fdb7f614b19016c986c6b7e318f05b88715e583016187bb232`. The bounded experience-convergence presentation layer is now mechanically/browser verified on this exact SHA. Earlier historical reconciliation checkpoints remain in Drive, including Crystal Receiver #83 close, Live Review Snapshot #92 close, Interaction Runtime V0 #3 close, Legacy Agent-Context PR #56 close, Threshold WebGL Recovery #46 historical substrate close, and the current-lineage security settings tracking blocker.
 
-Creator experience checkpoint remains `REFINE GLOBAL / HIDE THE SYSTEM → SHOW THE UNIVERSE`; the current technical PASS is not a visual KEEP. The next bounded product gate is the continuous THRESHOLD → PORTAL → PROLOGUE → first-depth-of-DESCENT experience on the existing #101 lineage.
+Creator experience checkpoint remains `REFINE GLOBAL / HIDE THE SYSTEM → SHOW THE UNIVERSE`; the current technical PASS is not a visual KEEP. The next bounded product gate remains the continuous THRESHOLD → PORTAL → PROLOGUE → first-depth-of-DESCENT experience on the existing #101 lineage, now focused on temporal/material quality rather than first-view dashboard suppression correctness.
 
 Truth boundary: `CI/BROWSER PASS ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
