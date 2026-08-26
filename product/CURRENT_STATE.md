@@ -82,12 +82,14 @@ G04 under-density is closed at browser/agent-audit level. G01/G07/G04 repetition
 
 ```text
 PR state: OPEN / DRAFT / NOT MERGED / NOT DEPLOYED / NOT CANON
-exact verified head: 479ad647ca12335f681fab8be773b6b770c01c16
-KODEX Core Runtime: #420 / 32829233247 = SUCCESS
+exact verified head: 471b42359372d476118a9beb2a0ed05683e745f2
+KODEX Core Runtime: #426 / 32920891445 = SUCCESS
+evidence artifact: 9589943789
+digest: sha256:26ef7025565d88a6f69bff920fb83be1d6d8c0290030ff6afd201c449cc413da
 creator_acceptance = REFINE / NOT KEEP
 ```
 
-This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and advances only the existing ARCHIVE presentation lineage: desktop prioritizes chamber/field/specimen dominance and mobile translates the same governed scene progressively as `FIELD/SPECIMEN → IDENTITY/RECORD → RELATIONS`. The earlier first-view dossier competition remains closed while `OPEN SPECIMEN` and the complete drawer remain intact. No graph, route, JourneyState, memory, artwork/provenance, Assembly OS, renderer, router or canon authority changed. Core Runtime #420 is SUCCESS on this exact SHA. The creator direction remains `REFINE GLOBAL`: technical/browser PASS does not imply visual KEEP.
+This is the current exact verified current-lineage **product** head. It preserves the previously verified stack and advances only the existing ARCHIVE presentation lineage. Since the #420 macro-hierarchy refine, the same branch has added scene-local amber authority, restored fullscreen art-layer geometry, suppressed inherited generic acid-green field/CRT treatments and removed the final legacy acid-green art halo. The current #426 evidence is technically/browser green on the exact SHA. This closes the specific legacy-green contamination defects at implementation/agent-audit level; it does **not** imply curator or creator visual acceptance. No graph, route, JourneyState, memory, artwork/provenance, Assembly OS, renderer, router or canon authority changed.
 
 Current bounded authorities:
 
@@ -199,10 +201,9 @@ ASSEMBLY / DEEP NAV:
 → creator `REFINE GLOBAL` permits only evidence-justified deterministic fixture/seed curation with existing IDs + validators; no new factory architecture
 
 CURRENT PRODUCT HOST:
-#101 @ 479ad647ca12335f681fab8be773b6b770c01c16 / #420 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
-→ ARCHIVE governed-reference macro-hierarchy refine = MECHANICALLY/BROWSER VERIFIED
-→ desktop = chamber/field/specimen dominant
-→ mobile = FIELD/SPECIMEN → IDENTITY/RECORD → RELATIONS
+#101 @ 471b42359372d476118a9beb2a0ed05683e745f2 / #426 SUCCESS = EXACT-HEAD CORE RUNTIME/BROWSER VERIFIED
+→ ARCHIVE legacy-green contamination = CLOSED at implementation/agent-audit level
+→ desktop/mobile/reduced-motion governed-reference fidelity review = NOT_RUN
 → curator review = NOT_RUN
 → creator acceptance = NOT_RUN / global direction remains REFINE
 → HIDE THE SYSTEM → SHOW THE UNIVERSE
@@ -235,7 +236,7 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 ## Immediate definition of success
 
 1. Keep #62 as sole Assembly OS / Deep Navigation correctness baseline.
-2. Keep #101 `479ad647ca12335f681fab8be773b6b770c01c16 / #420` as current exact verified product head until a later current-lineage product SHA is fully verified.
+2. Keep #101 `471b42359372d476118a9beb2a0ed05683e745f2 / #426` as current exact verified product head until a later current-lineage product SHA is fully verified.
 3. Use `REFINE GLOBAL` only for reversible, evidence-justified presentation/curation deltas; do not infer KEEP or irreversible canon acceptance.
 4. Keep protected-art material review blocked while source bytes are withheld.
 5. Keep JourneyState as journey persistence authority and explicit user choice as consequential write/navigation gate.
@@ -250,8 +251,10 @@ NO MERGE / DEPLOY / PERMISSION CHANGE / PROTECTED-SOURCE MUTATION / CANON PROMOT
 
 ## 2026-08-25 checkpoint
 
-Drive `00E_KODEX_CURRENT_PRODUCT_AUTHORITY` and live GitHub PR #101 now agree on `479ad647ca12335f681fab8be773b6b770c01c16 / Core Runtime #420 / run 32829233247 = SUCCESS` as the current exact verified product/browser baseline. The bounded ARCHIVE macro-hierarchy refine is mechanically/browser verified on this exact SHA; curator review and creator acceptance remain NOT_RUN. `wenu-frontend#62` remains the closed P0.1–P0.10 Assembly OS / Deep Navigation baseline and is not a reconstruction target.
+Drive `00E_KODEX_CURRENT_PRODUCT_AUTHORITY`, live GitHub PR #101 and this Current State now agree on `471b42359372d476118a9beb2a0ed05683e745f2 / Core Runtime #426 / run 32920891445 = SUCCESS` as the current exact verified product/browser baseline. Evidence artifact `9589943789`, digest `sha256:26ef7025565d88a6f69bff920fb83be1d6d8c0290030ff6afd201c449cc413da`. `wenu-frontend#62` remains the closed P0.1–P0.10 Assembly OS / Deep Navigation baseline and is not a reconstruction target.
 
-Creator experience direction remains `REFINE GLOBAL / HIDE THE SYSTEM → SHOW THE UNIVERSE`. The next bounded product gate is reference-first visual review of ARCHIVE against the governed Drive references + 08E across desktop/mobile/temporal/reduced-motion; only a demonstrated fidelity defect authorizes another `KodexMuseo` presentation delta. Shared HUD reduction follows only where the same reference comparison proves competition.
+The bounded ARCHIVE lineage is now technically/browser verified after removal of the final inherited acid-green art halo and restoration of the intended fullscreen art geometry. This closes specific measured implementation defects only. Curator review and creator acceptance remain `NOT_RUN`; ARCHIVE remains `REFINE_TO_REFERENCE`, not `KEEP`.
+
+Creator experience direction remains `REFINE GLOBAL / HIDE THE SYSTEM → SHOW THE UNIVERSE`. The next bounded product gate is direct reference-first visual review of #426 against the governed Drive references + 08E across desktop/mobile/temporal/reduced-motion. Only a demonstrated fidelity defect authorizes another presentation delta on the existing ARCHIVE implementation. Shared HUD reduction follows only where the same reference comparison proves competition.
 
 Truth boundary: `CI/BROWSER PASS ≠ CURATOR REVIEW ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
