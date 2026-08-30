@@ -1,0 +1,1389 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "source": "KODEX_PRODUCTION_OS_MASTER_v1_MAIN_SYSTEMS",
+        "target": [
+          "KODEX_PRODUCTION_OS_MASTER_v1_SCENE_LIFECYCLE_CONTRACT",
+          "KODEX_PRODUCTION_OS_MASTER_v1_WORLD_STATE",
+          "KODEX_PRODUCTION_OS_MASTER_v1_PROVENANCE_LEDGER"
+        ],
+        "relation": "group",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+        "source_location": null,
+        "weight": 1.0
+      },
+      {
+        "nodes": [
+          "estrategia_kodex_generative_modules_master_v1_readme",
+          "estrategia_kodex_generative_modules_master_v1_master_model_prompt"
+        ],
+        "relation": "system_component",
+        "confidence": "explicit"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Provenance Ledger",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/03_ASSETS/LICENSE_POLICY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1_PROVENANCE_LEDGER",
+      "community": 13,
+      "norm_label": "provenance ledger"
+    },
+    {
+      "label": "KODEX Production OS Master v1",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1",
+      "community": 2,
+      "norm_label": "kodex production os master v1"
+    },
+    {
+      "label": "Release Checklist",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/06_RELEASE/RELEASE_CHECKLIST.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1_QA_RELEASE_CHECKLIST",
+      "community": 2,
+      "norm_label": "release checklist"
+    },
+    {
+      "label": "QA Reviewer Prompt",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/07_AGENT_PROMPTS/QA_REVIEWER_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1_QA_REVIEWER_PROMPT",
+      "community": 2,
+      "norm_label": "qa reviewer prompt"
+    },
+    {
+      "label": "Scene Builder Prompt",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/07_AGENT_PROMPTS/SCENE_BUILDER_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1_SCENE_BUILDER_PROMPT",
+      "community": 2,
+      "norm_label": "scene builder prompt"
+    },
+    {
+      "label": "Scene Lifecycle Contract",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1_SCENE_LIFECYCLE_CONTRACT",
+      "community": 2,
+      "norm_label": "scene lifecycle contract"
+    },
+    {
+      "label": "World State",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": null,
+      "id": "KODEX_PRODUCTION_OS_MASTER_v1_WORLD_STATE",
+      "community": 2,
+      "norm_label": "world state"
+    },
+    {
+      "label": "CHAPTER BUILDER PROMPT",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-cult-brand-context/WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1/08_AGENT_PROMPTS/CHAPTER_BUILDER_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2023-10-05T12:34:56Z",
+      "id": "estrategia_kodex_cult_brand_context_08_agent_prompts_chapter_builder_prompt",
+      "community": 3,
+      "norm_label": "chapter builder prompt"
+    },
+    {
+      "label": "MASTER AGENT PROMPT",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-cult-brand-context/WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1/08_AGENT_PROMPTS/MASTER_AGENT_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2023-10-05T12:34:56Z",
+      "id": "estrategia_kodex_cult_brand_context_08_agent_prompts_master_agent_prompt",
+      "community": 3,
+      "norm_label": "master agent prompt"
+    },
+    {
+      "label": "SOURCE INDEX",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-cult-brand-context/WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1/08_AGENT_PROMPTS/SOURCE_INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2023-10-05T12:34:56Z",
+      "id": "estrategia_kodex_cult_brand_context_08_agent_prompts_source_index",
+      "community": 3,
+      "norm_label": "source index"
+    },
+    {
+      "label": "MASTER MODEL PROMPT",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-generative-modules-context/KODEX_GENERATIVE_MODULES_MASTER_v1/docs/MASTER_MODEL_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2023-10-05T12:34:56Z",
+      "id": "estrategia_kodex_generative_modules_master_v1_master_model_prompt",
+      "community": 3,
+      "norm_label": "master model prompt"
+    },
+    {
+      "label": "KODEX GENERATIVE MODULES README",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-generative-modules-context/KODEX_GENERATIVE_MODULES_MASTER_v1/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2023-10-05T12:34:56Z",
+      "id": "estrategia_kodex_generative_modules_master_v1_readme",
+      "community": 3,
+      "norm_label": "kodex generative modules readme"
+    },
+    {
+      "label": "KODEX IMPOSSIBLE FORMS README",
+      "file_type": "document",
+      "source_file": "estrategia/kodex-impossible-forms-context/KODEX_Impossible_Forms_Vol1/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2023-10-05T12:34:56Z",
+      "id": "estrategia_kodex_impossible_forms_vol1_readme",
+      "community": 3,
+      "norm_label": "kodex impossible forms readme"
+    },
+    {
+      "label": "Daily Report 2026-08-02",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "community": 0,
+      "norm_label": "daily report 2026-08-02"
+    },
+    {
+      "label": "Daily Report 2026-08-03",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "community": 0,
+      "norm_label": "daily report 2026-08-03"
+    },
+    {
+      "label": "Daily Report 2026-08-04",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "community": 0,
+      "norm_label": "daily report 2026-08-04"
+    },
+    {
+      "label": "Daily Report 2026-08-05",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "community": 0,
+      "norm_label": "daily report 2026-08-05"
+    },
+    {
+      "label": "Close or postpone review queue items",
+      "type": "action",
+      "file_type": "concept",
+      "id": "Close-or-postpone-review-queue-items",
+      "community": 0,
+      "norm_label": "close or postpone review queue items"
+    },
+    {
+      "label": "Complete hero image, price, and category",
+      "type": "action",
+      "file_type": "concept",
+      "id": "Complete-hero-image-price-category",
+      "community": 0,
+      "norm_label": "complete hero image, price, and category"
+    },
+    {
+      "label": "KODEX \u2212\u221e \u00b7 DISCO SOLAR Pack",
+      "type": "product",
+      "file_type": "concept",
+      "id": "KODEX-\u221e-DISCO-SOLAR-Pack",
+      "community": 0,
+      "norm_label": "kodex \u2212\u221e \u00b7 disco solar pack"
+    },
+    {
+      "label": "KODEX \u2212\u221e \u00b7 Museum-Grade Print (placeholder)",
+      "type": "product",
+      "file_type": "concept",
+      "id": "KODEX-\u221e-Museum-Grade-Print-(placeholder)",
+      "community": 0,
+      "norm_label": "kodex \u2212\u221e \u00b7 museum-grade print (placeholder)"
+    },
+    {
+      "label": "KODEX \u2212\u221e \u00b7 On-chain Editions",
+      "type": "product",
+      "file_type": "concept",
+      "id": "KODEX-\u221e-On-chain-Editions",
+      "community": 0,
+      "norm_label": "kodex \u2212\u221e \u00b7 on-chain editions"
+    },
+    {
+      "label": "KODEX \u2212\u221e \u00b7 THE ARCHIVE (52 plates)",
+      "type": "product",
+      "file_type": "concept",
+      "id": "KODEX-\u221e-THE-ARCHIVE-(52-plates)",
+      "community": 0,
+      "norm_label": "kodex \u2212\u221e \u00b7 the archive (52 plates)"
+    },
+    {
+      "label": "KODEX \u2212\u221e \u00b7 TRIBE SPACE Pack",
+      "type": "product",
+      "file_type": "concept",
+      "id": "KODEX-\u221e-TRIBE-SPACE-Pack",
+      "community": 0,
+      "norm_label": "kodex \u2212\u221e \u00b7 tribe space pack"
+    },
+    {
+      "label": "No audit findings",
+      "type": "metric",
+      "file_type": "concept",
+      "id": "No-audit-findings",
+      "community": 0,
+      "norm_label": "no audit findings"
+    },
+    {
+      "label": "No image issues",
+      "type": "metric",
+      "file_type": "concept",
+      "id": "No-image-issues",
+      "community": 0,
+      "norm_label": "no image issues"
+    },
+    {
+      "label": "No price issues",
+      "type": "metric",
+      "file_type": "concept",
+      "id": "No-price-issues",
+      "community": 0,
+      "norm_label": "no price issues"
+    },
+    {
+      "label": "No stock issues",
+      "type": "metric",
+      "file_type": "concept",
+      "id": "No-stock-issues",
+      "community": 0,
+      "norm_label": "no stock issues"
+    },
+    {
+      "label": "Publishable products: 51",
+      "type": "metric",
+      "file_type": "concept",
+      "id": "Publishable-products-51",
+      "community": 0,
+      "norm_label": "publishable products: 51"
+    },
+    {
+      "label": "Resolve blocked products",
+      "type": "action",
+      "file_type": "concept",
+      "id": "Resolve-blocked-products",
+      "community": 0,
+      "norm_label": "resolve blocked products"
+    },
+    {
+      "label": "Review insights with impact on sales",
+      "type": "action",
+      "file_type": "concept",
+      "id": "Review-insights-impact-sales",
+      "community": 0,
+      "norm_label": "review insights with impact on sales"
+    },
+    {
+      "label": "Total products: 51",
+      "type": "metric",
+      "file_type": "concept",
+      "id": "Total-products-51",
+      "community": 0,
+      "norm_label": "total products: 51"
+    },
+    {
+      "label": "Action",
+      "type": "task",
+      "file_type": "concept",
+      "id": "Cerrar o posponer expl\u00edcitamente cada item de la review queue trabajado hoy",
+      "community": 1,
+      "norm_label": "action"
+    },
+    {
+      "label": "Action",
+      "type": "task",
+      "file_type": "concept",
+      "id": "Completar hero image, precio y categor\u00eda en los 10 items de mayor prioridad",
+      "community": 1,
+      "norm_label": "action"
+    },
+    {
+      "label": "Product",
+      "type": "item",
+      "file_type": "concept",
+      "id": "KODEX \u2212\u221e \u00b7 DISCO SOLAR Pack",
+      "community": 1,
+      "norm_label": "product"
+    },
+    {
+      "label": "Product",
+      "type": "item",
+      "file_type": "concept",
+      "id": "KODEX \u2212\u221e \u00b7 Museum-Grade Print (placeholder)",
+      "community": 1,
+      "norm_label": "product"
+    },
+    {
+      "label": "Product",
+      "type": "item",
+      "file_type": "concept",
+      "id": "KODEX \u2212\u221e \u00b7 On-chain Editions",
+      "community": 1,
+      "norm_label": "product"
+    },
+    {
+      "label": "Product",
+      "type": "item",
+      "file_type": "concept",
+      "id": "KODEX \u2212\u221e \u00b7 THE ARCHIVE (52 plates)",
+      "community": 1,
+      "norm_label": "product"
+    },
+    {
+      "label": "Product",
+      "type": "item",
+      "file_type": "concept",
+      "id": "KODEX \u2212\u221e \u00b7 TRIBE SPACE Pack",
+      "community": 1,
+      "norm_label": "product"
+    },
+    {
+      "label": "Action",
+      "type": "task",
+      "file_type": "concept",
+      "id": "Resolver primero productos publicables bloqueados solo por una variable",
+      "community": 1,
+      "norm_label": "action"
+    },
+    {
+      "label": "Action",
+      "type": "task",
+      "file_type": "concept",
+      "id": "Revisar insights abiertos con impacto directo en ventas o indexaci\u00f3n",
+      "community": 1,
+      "norm_label": "action"
+    },
+    {
+      "type": "component",
+      "description": "Minimalist visual break between dense scenes",
+      "label": "Interludio Page",
+      "file_type": "concept",
+      "id": "INTERLUDIO_PAGE",
+      "community": 10,
+      "norm_label": "interludio page"
+    },
+    {
+      "type": "component",
+      "description": "5x7 modular grid system for glyph construction",
+      "label": "KDX Sigil Grid",
+      "file_type": "concept",
+      "id": "KDX_SIGIL_GRID",
+      "community": 11,
+      "norm_label": "kdx sigil grid"
+    },
+    {
+      "type": "system",
+      "description": "Core framework for vector-based sigil typography with 5x7 grid architecture",
+      "label": "KODEX Modular Sigil Type System",
+      "file_type": "concept",
+      "id": "KODEX_MODULAR_SIGIL_SYSTEM",
+      "community": 12,
+      "norm_label": "kodex modular sigil type system"
+    },
+    {
+      "type": "font",
+      "description": "Readability-focused display font for sigil text",
+      "label": "Oxanium",
+      "file_type": "concept",
+      "id": "OXANIUM_FONT",
+      "community": 14,
+      "norm_label": "oxanium"
+    },
+    {
+      "type": "project",
+      "description": "WebGL2 multipass visualization system",
+      "label": "KODEX-\u221e Signal Vortex",
+      "file_type": "concept",
+      "id": "SIGNAL_VORTEX_PROJECT",
+      "community": 15,
+      "norm_label": "kodex-\u221e signal vortex"
+    },
+    {
+      "type": "content",
+      "properties": {
+        "constraints": [
+          "focal_image_or_symbol",
+          "single_geometry_family",
+          "single_accent",
+          "microcopy_limit"
+        ]
+      },
+      "file_type": "concept",
+      "id": "content_generation_prompt",
+      "community": 4,
+      "norm_label": ""
+    },
+    {
+      "type": "requirement",
+      "properties": {
+        "presets": [
+          "archive_fragment",
+          "signal_residue",
+          "body_index",
+          "terrain_memory",
+          "threshold_sheet",
+          "constellation_plate",
+          "field_note",
+          "symbol_breath"
+        ]
+      },
+      "file_type": "concept",
+      "id": "implementation_prompt",
+      "community": 4,
+      "norm_label": ""
+    },
+    {
+      "type": "design",
+      "properties": {
+        "elements": [
+          "background_field",
+          "image_chamber",
+          "geometric_intervention",
+          "code_rail",
+          "microcaption",
+          "ghost_axis",
+          "subtle_motion",
+          "exit_command"
+        ]
+      },
+      "file_type": "concept",
+      "id": "quiet_frame_design",
+      "community": 4,
+      "norm_label": ""
+    },
+    {
+      "type": "system",
+      "properties": {
+        "components": [
+          "kodex_quiet_frame_component",
+          "quiet_frames_css",
+          "quiet_frames_ts",
+          "quiet_frames_lib"
+        ]
+      },
+      "file_type": "concept",
+      "id": "quiet_frames_subsystem",
+      "community": 4,
+      "norm_label": ""
+    },
+    {
+      "type": "concept",
+      "properties": {
+        "criteria": [
+          "production_ready_checklist_1",
+          "production_ready_checklist_2",
+          "production_ready_checklist_3",
+          "production_ready_checklist_4",
+          "production_ready_checklist_5",
+          "production_ready_checklist_6",
+          "production_ready_checklist_7",
+          "production_ready_checklist_8",
+          "production_ready_checklist_9",
+          "production_ready_checklist_10",
+          "production_ready_checklist_11",
+          "production_ready_checklist_12"
+        ]
+      },
+      "file_type": "concept",
+      "id": "definition_of_done",
+      "community": 5,
+      "norm_label": ""
+    },
+    {
+      "type": "process",
+      "properties": {
+        "phases": [
+          "lab_phase",
+          "development_phase",
+          "testing_phase",
+          "deployment_phase",
+          "expansion_phase"
+        ]
+      },
+      "file_type": "concept",
+      "id": "rollout_plan",
+      "community": 5,
+      "norm_label": ""
+    },
+    {
+      "label": "Daily Report 2026-08-06",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-06-growth-engine",
+      "community": 6,
+      "norm_label": "daily report 2026-08-06"
+    },
+    {
+      "label": "Daily Report 2026-08-07",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-07-growth-engine",
+      "community": 7,
+      "norm_label": "daily report 2026-08-07"
+    },
+    {
+      "label": "Daily Report",
+      "type": "document",
+      "file_type": "concept",
+      "id": "20-Operaciones/daily/2026-08-08-growth-engine.md",
+      "community": 8,
+      "norm_label": "daily report"
+    },
+    {
+      "type": "font",
+      "description": "Monospaced interface font for technical content",
+      "label": "Geist Mono",
+      "file_type": "concept",
+      "id": "GEIST_MONO_FONT",
+      "community": 9,
+      "norm_label": "geist mono"
+    }
+  ],
+  "links": [
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "Close-or-postpone-review-queue-items",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "Complete-hero-image-price-category",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "Resolve-blocked-products",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "Review-insights-impact-sales",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "Close-or-postpone-review-queue-items",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "Complete-hero-image-price-category",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "Resolve-blocked-products",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "Review-insights-impact-sales",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "Close-or-postpone-review-queue-items",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "Complete-hero-image-price-category",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "Resolve-blocked-products",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "Review-insights-impact-sales",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "Close-or-postpone-review-queue-items",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "Complete-hero-image-price-category",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "Resolve-blocked-products",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_action",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "Review-insights-impact-sales",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "No-audit-findings",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "No-image-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "No-price-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "No-stock-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "Publishable-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "Total-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "No-audit-findings",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "No-image-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "No-price-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "No-stock-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "Publishable-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "Total-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "No-audit-findings",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "No-image-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "No-price-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "No-stock-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "Publishable-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "Total-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "No-audit-findings",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "No-image-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "No-price-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "No-stock-issues",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "Publishable-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "confidence": "EXTRACTED",
+      "relation": "has_metric",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "Total-products-51",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "KODEX_PRODUCTION_OS_MASTER_v1",
+      "target": "KODEX_PRODUCTION_OS_MASTER_v1_QA_RELEASE_CHECKLIST"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "KODEX_PRODUCTION_OS_MASTER_v1",
+      "target": "KODEX_PRODUCTION_OS_MASTER_v1_SCENE_LIFECYCLE_CONTRACT"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "KODEX_PRODUCTION_OS_MASTER_v1",
+      "target": "KODEX_PRODUCTION_OS_MASTER_v1_WORLD_STATE"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/07_AGENT_PROMPTS/QA_REVIEWER_PROMPT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "KODEX_PRODUCTION_OS_MASTER_v1_QA_REVIEWER_PROMPT",
+      "target": "KODEX_PRODUCTION_OS_MASTER_v1_QA_RELEASE_CHECKLIST"
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "KODEX-\u221e-DISCO-SOLAR-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "KODEX-\u221e-Museum-Grade-Print-(placeholder)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "KODEX-\u221e-On-chain-Editions",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "KODEX-\u221e-THE-ARCHIVE-(52-plates)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-02-growth-engine",
+      "target": "KODEX-\u221e-TRIBE-SPACE-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "KODEX-\u221e-DISCO-SOLAR-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "KODEX-\u221e-Museum-Grade-Print-(placeholder)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "KODEX-\u221e-On-chain-Editions",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "KODEX-\u221e-THE-ARCHIVE-(52-plates)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-03-growth-engine",
+      "target": "KODEX-\u221e-TRIBE-SPACE-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "KODEX-\u221e-DISCO-SOLAR-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "KODEX-\u221e-Museum-Grade-Print-(placeholder)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "KODEX-\u221e-On-chain-Editions",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "KODEX-\u221e-THE-ARCHIVE-(52-plates)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-04-growth-engine",
+      "target": "KODEX-\u221e-TRIBE-SPACE-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "KODEX-\u221e-DISCO-SOLAR-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "KODEX-\u221e-Museum-Grade-Print-(placeholder)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "KODEX-\u221e-On-chain-Editions",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "KODEX-\u221e-THE-ARCHIVE-(52-plates)",
+      "confidence_score": 0.5
+    },
+    {
+      "confidence": "INFERRED",
+      "relation": "has_priority",
+      "source_file": "",
+      "source": "20-Operaciones/daily/2026-08-05-growth-engine",
+      "target": "KODEX-\u221e-TRIBE-SPACE-Pack",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/07_AGENT_PROMPTS/QA_REVIEWER_PROMPT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "KODEX_PRODUCTION_OS_MASTER_v1_QA_REVIEWER_PROMPT",
+      "target": "KODEX_PRODUCTION_OS_MASTER_v1_SCENE_BUILDER_PROMPT"
+    },
+    {
+      "relation": "cites",
+      "confidence": "explicit",
+      "source_file": "estrategia/kodex-cult-brand-context/WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1/08_AGENT_PROMPTS/SOURCE_INDEX.md",
+      "source": "estrategia_kodex_cult_brand_context_08_agent_prompts_source_index",
+      "target": "estrategia_kodex_cult_brand_context_08_agent_prompts_chapter_builder_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "explicit",
+      "source_file": "estrategia/kodex-cult-brand-context/WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1/08_AGENT_PROMPTS/MASTER_AGENT_PROMPT.md",
+      "source": "estrategia_kodex_cult_brand_context_08_agent_prompts_master_agent_prompt",
+      "target": "estrategia_kodex_cult_brand_context_08_agent_prompts_chapter_builder_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "explicit",
+      "source_file": "estrategia/kodex-cult-brand-context/WENU_MAPU_KODEX_CULT_BRAND_CONTEXT_v1/08_AGENT_PROMPTS/SOURCE_INDEX.md",
+      "source": "estrategia_kodex_cult_brand_context_08_agent_prompts_source_index",
+      "target": "estrategia_kodex_generative_modules_master_v1_readme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "explicit",
+      "source_file": "estrategia/kodex-generative-modules-context/KODEX_GENERATIVE_MODULES_MASTER_v1/README.md",
+      "source": "estrategia_kodex_generative_modules_master_v1_readme",
+      "target": "estrategia_kodex_generative_modules_master_v1_master_model_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "explicit",
+      "source_file": "estrategia/kodex-impossible-forms-context/KODEX_Impossible_Forms_Vol1/README.md",
+      "source": "estrategia_kodex_impossible_forms_vol1_readme",
+      "target": "estrategia_kodex_generative_modules_master_v1_readme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "composition",
+      "source_file": "",
+      "source": "quiet_frames_subsystem",
+      "target": "quiet_frame_design",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "dependency",
+      "source_file": "",
+      "source": "implementation_prompt",
+      "target": "content_generation_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "reference",
+      "source_file": "",
+      "source": "rollout_plan",
+      "target": "definition_of_done",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "requirement",
+      "source_file": "",
+      "source": "quiet_frame_design",
+      "target": "implementation_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Cerrar o posponer expl\u00edcitamente cada item de la review queue trabajado hoy",
+      "target": "KODEX \u2212\u221e \u00b7 DISCO SOLAR Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Cerrar o posponer expl\u00edcitamente cada item de la review queue trabajado hoy",
+      "target": "KODEX \u2212\u221e \u00b7 Museum-Grade Print (placeholder)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Cerrar o posponer expl\u00edcitamente cada item de la review queue trabajado hoy",
+      "target": "KODEX \u2212\u221e \u00b7 On-chain Editions",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Cerrar o posponer expl\u00edcitamente cada item de la review queue trabajado hoy",
+      "target": "KODEX \u2212\u221e \u00b7 THE ARCHIVE (52 plates)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Cerrar o posponer expl\u00edcitamente cada item de la review queue trabajado hoy",
+      "target": "KODEX \u2212\u221e \u00b7 TRIBE SPACE Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Completar hero image, precio y categor\u00eda en los 10 items de mayor prioridad",
+      "target": "KODEX \u2212\u221e \u00b7 DISCO SOLAR Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Completar hero image, precio y categor\u00eda en los 10 items de mayor prioridad",
+      "target": "KODEX \u2212\u221e \u00b7 Museum-Grade Print (placeholder)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Completar hero image, precio y categor\u00eda en los 10 items de mayor prioridad",
+      "target": "KODEX \u2212\u221e \u00b7 On-chain Editions",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Completar hero image, precio y categor\u00eda en los 10 items de mayor prioridad",
+      "target": "KODEX \u2212\u221e \u00b7 THE ARCHIVE (52 plates)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Completar hero image, precio y categor\u00eda en los 10 items de mayor prioridad",
+      "target": "KODEX \u2212\u221e \u00b7 TRIBE SPACE Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Resolver primero productos publicables bloqueados solo por una variable",
+      "target": "KODEX \u2212\u221e \u00b7 DISCO SOLAR Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Resolver primero productos publicables bloqueados solo por una variable",
+      "target": "KODEX \u2212\u221e \u00b7 Museum-Grade Print (placeholder)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Resolver primero productos publicables bloqueados solo por una variable",
+      "target": "KODEX \u2212\u221e \u00b7 On-chain Editions",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Resolver primero productos publicables bloqueados solo por una variable",
+      "target": "KODEX \u2212\u221e \u00b7 THE ARCHIVE (52 plates)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Resolver primero productos publicables bloqueados solo por una variable",
+      "target": "KODEX \u2212\u221e \u00b7 TRIBE SPACE Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Revisar insights abiertos con impacto directo en ventas o indexaci\u00f3n",
+      "target": "KODEX \u2212\u221e \u00b7 DISCO SOLAR Pack",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Revisar insights abiertos con impacto directo en ventas o indexaci\u00f3n",
+      "target": "KODEX \u2212\u221e \u00b7 Museum-Grade Print (placeholder)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Revisar insights abiertos con impacto directo en ventas o indexaci\u00f3n",
+      "target": "KODEX \u2212\u221e \u00b7 On-chain Editions",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Revisar insights abiertos con impacto directo en ventas o indexaci\u00f3n",
+      "target": "KODEX \u2212\u221e \u00b7 THE ARCHIVE (52 plates)",
+      "confidence_score": 1.0
+    },
+    {
+      "type": "EXTRACTED",
+      "relation": "task_target",
+      "source_file": "",
+      "source": "Revisar insights abiertos con impacto directo en ventas o indexaci\u00f3n",
+      "target": "KODEX \u2212\u221e \u00b7 TRIBE SPACE Pack",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "source": "KODEX_PRODUCTION_OS_MASTER_v1_MAIN_SYSTEMS",
+      "target": [
+        "KODEX_PRODUCTION_OS_MASTER_v1_SCENE_LIFECYCLE_CONTRACT",
+        "KODEX_PRODUCTION_OS_MASTER_v1_WORLD_STATE",
+        "KODEX_PRODUCTION_OS_MASTER_v1_PROVENANCE_LEDGER"
+      ],
+      "relation": "group",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "estrategia/kodex-production-os-context/KODEX_PRODUCTION_OS_MASTER_v1/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "nodes": [
+        "estrategia_kodex_generative_modules_master_v1_readme",
+        "estrategia_kodex_generative_modules_master_v1_master_model_prompt"
+      ],
+      "relation": "system_component",
+      "confidence": "explicit"
+    }
+  ]
+}
