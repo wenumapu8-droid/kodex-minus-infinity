@@ -1,14 +1,41 @@
-version: 1
+version: 2
 system: KODEX−∞
+purpose: "Bound one falsifiable production frontier to current authority, explicit ownership and exact evidence."
 
 work_packet:
   id: WP-0000
   title: ""
   owner_role: ""
   status: PROPOSED
+  modality: ""
+  complexity: "C0"
+  lane: ""
+  product_facing: false
+  scene_id: ""
   problem: ""
   user_value: ""
   product_consequence: ""
+
+  authority_snapshot:
+    checked_at: ""
+    current_authority_source: ""
+    implementation_repository: "wenumapu8-droid/wenu-frontend"
+    branch: ""
+    starting_sha: ""
+    local_worktree_reconciled: false
+    public_runtime_checked: false
+    reference_classification: "" # KEEP | REFINE_TO_REFERENCE | MISSING | N/A
+    governed_reference: ""
+    wireframe_authority: ""
+
+  lease:
+    owner: ""
+    owned_files: []
+    owned_surfaces: []
+    acquired_at: ""
+    expires_at: ""
+    conflict_policy: SERIALIZE_ON_OVERLAP
+    released: false
 
   repositories:
     canonical: wenumapu8-droid/kodex-minus-infinity
@@ -19,10 +46,10 @@ work_packet:
     - START_HERE.md
     - SKILL.md
     - AGENTS.md
-    - context/MASTER_CONTEXT.md
-    - context/PROTOTYPE_AND_CODE_INVENTORY.md
-    - architecture/KODEX_ALGORITHM.md
     - product/CURRENT_STATE.md
+    - ops/CURRENT_CRITICAL_PATH.md
+    - ops/factory/FACTORY_OS.md
+    - ops/factory/DISPATCH_QUEUE.yaml
 
   affected_nodes: []
   affected_modules: []
@@ -72,29 +99,77 @@ work_packet:
       - 412x915
       - desktop
 
+  evidence_contract:
+    exact_sha_required: true
+    ci_required: true
+    browser_required: false
+    desktop_required: false
+    mobile_390_required: false
+    mobile_412_required: false
+    reduced_motion_required: false
+    temporal_interaction_required: false
+    performance_required: false
+    provenance_required: false
+    curator_review_required: false
+    creator_acceptance_required: false
+    required_items: []
+
+  status_vector:
+    implemented: NOT_RUN
+    ci_pass: NOT_RUN
+    browser_verified: NOT_RUN
+    curator_reviewed: NOT_RUN
+    creator_accepted: NOT_RUN
+    release_candidate: NOT_RUN
+    merged: NOT_RUN
+    deployed: NOT_RUN
+    observed: NOT_RUN
+
+  promotion_rule:
+    exact_sha_binding: true
+    no_inferred_promotion: true
+    rule: "A state advances only when its required evidence is attached to the exact candidate SHA or explicit human authority."
+
   acceptance_criteria: []
   tests_required: []
   screenshots_required: []
 
   risks: []
   unresolved: []
-  stop_conditions: []
+  stop_conditions:
+    - "authority snapshot is stale or missing"
+    - "product-facing work has not reconciled Mini-local truth"
+    - "file/surface lease collides with an active packet"
+    - "required provenance/rights/cultural gate is unresolved"
 
   deployment:
     requested: false
-    status: BLOCKED
+    creator_gate_observed: false
+    execution_status: BLOCKED
     approval_phrase: APROBAR DEPLOY
+    note: "Creator authorization does not bypass exact-SHA release reconciliation or the authorized Mini deployment environment."
 
 handoff:
   status: NOT_STARTED
+  work_packet_id: ""
+  starting_authority: ""
+  starting_sha: ""
+  ending_sha: ""
   files_read: []
   files_created: []
   files_modified: []
   files_migrated: []
-  provenance_added: []
-  decisions_proposed: []
+  visible_change: ""
   tests_run: []
   tests_not_run: []
+  browser_evidence: []
+  performance_evidence: []
+  provenance_added: []
+  epistemic_impact: ""
+  status_promotion: []
+  decisions_proposed: []
   known_limitations: []
-  next_actions: []
+  blockers: []
+  next_highest_leverage_action: ""
   next_owner: ""
+  lease_released: false
