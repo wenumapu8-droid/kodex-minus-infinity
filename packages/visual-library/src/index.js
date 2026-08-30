@@ -1,9 +1,11 @@
+export * from "./rng.js";
 export * from "./primitives.js";
 export * from "./recipes/journey-field.js";
 export * from "./catalog.js";
 export * from "./resolver.js";
 export * from "./motion.js";
 export * from "./flow-field.js";
+export * from "./render.js";
 
 export const catalog = [
   { id: "signal-gauge", group: "telemetry", formats: ["DOM"] },
@@ -20,4 +22,9 @@ export const catalog = [
   ,{ id: "activity-rings", group: "telemetry", formats: ["SVG"] }
   ,{ id: "spotlight-card", group: "interface", formats: ["DOM"] }
   ,{ id: "flow-field", group: "field", formats: ["Canvas"] }
+  // Calibradas contra las láminas (kit de lámina portado).
+  ,{ id: "ring-gauge", group: "telemetry", formats: ["SVG"] }
+  ,{ id: "bar-meter", group: "telemetry", formats: ["DOM", "SVG"] }
+  ,{ id: "step-graph", group: "telemetry", formats: ["SVG"] }
+  ,{ id: "micrografia", group: "texture", formats: ["SVG"] }
 ];

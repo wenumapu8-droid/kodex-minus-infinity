@@ -1,0 +1,226 @@
+{
+  "_nota": "Generado por scripts/regression.mjs. La línea base se regraba a propósito, nunca de paso: ver docs/CALIBRATION.md.",
+  "generado": "2026-08-10T00:06:07.231Z",
+  "entorno": {
+    "node": "v22.23.1",
+    "plataforma": "darwin",
+    "chromium": "151.0.7922.34"
+  },
+  "tablero": {
+    "ancho": 1280,
+    "alto": 2830,
+    "pad": 20,
+    "hueco": 20
+  },
+  "umbrales": {
+    "celda": 0.3,
+    "fidelidad": 0.5,
+    "pixelmatch": {
+      "threshold": 0.12,
+      "includeAA": false
+    }
+  },
+  "celdas": [
+    {
+      "id": "journey-field",
+      "x": 20,
+      "y": 20,
+      "w": 1180,
+      "h": 520,
+      "huella": "f46ae398a7c4",
+      "dibujo": "K.journeyField({ title: \"MEMORY CONVERGENCE\", routes: 21 })",
+      "ref": null
+    },
+    {
+      "id": "signal-gauge",
+      "x": 20,
+      "y": 560,
+      "w": 300,
+      "h": 200,
+      "huella": "a247e949be32",
+      "dibujo": "K.signalGauge({ value: 93, label: \"COHERENCE\" })",
+      "ref": null
+    },
+    {
+      "id": "waveform",
+      "x": 340,
+      "y": 560,
+      "w": 720,
+      "h": 140,
+      "huella": "10af40a4a9c5",
+      "dibujo": "K.waveform({ points: 72, amplitude: 32, seed: 8 })",
+      "ref": null
+    },
+    {
+      "id": "radial-scanner",
+      "x": 20,
+      "y": 780,
+      "w": 400,
+      "h": 400,
+      "huella": "14551322d82d",
+      "dibujo": "K.radialScanner({ rings: 7, spokes: 16 })",
+      "ref": null
+    },
+    {
+      "id": "asset-slot",
+      "x": 440,
+      "y": 780,
+      "w": 360,
+      "h": 200,
+      "huella": "0c3cb1afe472",
+      "dibujo": "K.assetSlot({ label: \"3D HEART\", kind: \"GLB / GLTF + FALLBACK PNG\" })",
+      "ref": null
+    },
+    {
+      "id": "metric-bars",
+      "x": 820,
+      "y": 780,
+      "w": 420,
+      "h": 200,
+      "huella": "7f0c4029a16d",
+      "dibujo": "K.metricBars({ metrics: [{ label: \"SIGNAL INTEGRITY\", value: 93.1 }, { label: \"COHERENCE\", value: 89.4 }, { label: \"ENTROPY\", value: 76.2 }, { label: \"OBSERVABILITY\", value: 91.7 }] })",
+      "ref": null
+    },
+    {
+      "id": "radial-taxonomy",
+      "x": 20,
+      "y": 1200,
+      "w": 400,
+      "h": 400,
+      "huella": "6b847f7da2d3",
+      "dibujo": "K.radialTaxonomy({ groups: 8, items: 64, seed: 18 })",
+      "ref": null
+    },
+    {
+      "id": "data-portrait",
+      "x": 440,
+      "y": 1200,
+      "w": 300,
+      "h": 400,
+      "huella": "72f16bca5dc6",
+      "dibujo": "K.dataPortrait({ columns: 24, rows: 32, seed: 9 })",
+      "ref": null
+    },
+    {
+      "id": "stratigraphy",
+      "x": 20,
+      "y": 1620,
+      "w": 560,
+      "h": 300,
+      "huella": "973be28e46c7",
+      "dibujo": "K.stratigraphy({ layers: 24, seed: 33 })",
+      "ref": null
+    },
+    {
+      "id": "toroidal-field",
+      "x": 600,
+      "y": 1620,
+      "w": 400,
+      "h": 400,
+      "huella": "d7638ebbd2ec",
+      "dibujo": "K.toroidalField({ lines: 34 })",
+      "ref": null
+    },
+    {
+      "id": "glyph-ring",
+      "x": 20,
+      "y": 2040,
+      "w": 360,
+      "h": 360,
+      "huella": "522ba3bc9cbc",
+      "dibujo": "K.glyphRing({ segments: 28, seed: 21 })",
+      "ref": null
+    },
+    {
+      "id": "activity-rings",
+      "x": 400,
+      "y": 2040,
+      "w": 320,
+      "h": 320,
+      "huella": "64e67614b2ad",
+      "dibujo": "K.activityRings()",
+      "ref": null
+    },
+    {
+      "id": "spotlight-card",
+      "x": 740,
+      "y": 2040,
+      "w": 380,
+      "h": 240,
+      "huella": "3aca2442b303",
+      "dibujo": "K.spotlightCard({ eyebrow: \"OBSERVER / 08\", title: \"THE FIELD RESPONDS\", copy: \"Pointer position becomes signal.\" })",
+      "ref": null
+    },
+    {
+      "id": "flow-field",
+      "x": 20,
+      "y": 2420,
+      "w": 480,
+      "h": 280,
+      "huella": "59a69ed741fe",
+      "dibujo": "K.flowField({ particles: 440, seed: 42 })",
+      "ref": null
+    },
+    {
+      "id": "ring-gauge",
+      "x": 520,
+      "y": 2420,
+      "w": 140,
+      "h": 140,
+      "huella": "97a8fb595a8e",
+      "dibujo": "K.ringGauge({ d: 140, thickness: 26, gap: 3, rest: \"currentColor\", segments: [{ value: 42, color: \"var(--kx-signal)\" }, { value: 23, color: \"var(--kx-signal-hot)\" }, { value: 11, color: \"var(--kx-warning)\" }] })",
+      "ref": null
+    },
+    {
+      "id": "bar-meter",
+      "x": 680,
+      "y": 2420,
+      "w": 320,
+      "h": 10,
+      "huella": "72ee12d36fb7",
+      "dibujo": "K.barMeter({ width: 320, height: 10, value: 63, seed: 3 })",
+      "ref": null
+    },
+    {
+      "id": "step-graph",
+      "x": 1020,
+      "y": 2420,
+      "w": 179,
+      "h": 115,
+      "huella": "ecc5468338a7",
+      "dibujo": "K.stepGraph({ width: 179, height: 115, seed: 5, fill: \"rgba(169,92,255,.22)\", labelsX: [\"0\", \"1\", \"2\", \"3\"], labelsY: [\"0\", \"-1\", \"-2\"] })",
+      "ref": null
+    },
+    {
+      "id": "micrografia",
+      "x": 20,
+      "y": 2720,
+      "w": 180,
+      "h": 90,
+      "huella": "b88056cec697",
+      "dibujo": "K.micrografia({ width: 180, height: 90, seed: 11 })",
+      "ref": null
+    },
+    {
+      "id": "waveform-comb",
+      "x": 220,
+      "y": 2720,
+      "w": 320,
+      "h": 60,
+      "huella": "f56676fa91f2",
+      "dibujo": "K.waveform({ width: 320, height: 60, variant: \"comb\", seed: 8 })",
+      "ref": null
+    },
+    {
+      "id": "waveform-bars",
+      "x": 560,
+      "y": 2720,
+      "w": 320,
+      "h": 60,
+      "huella": "42c5f6b02edb",
+      "dibujo": "K.waveform({ width: 320, height: 60, variant: \"bars\", seed: 8 })",
+      "ref": null
+    }
+  ],
+  "pendientes": []
+}

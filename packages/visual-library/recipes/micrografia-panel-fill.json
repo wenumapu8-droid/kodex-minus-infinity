@@ -1,0 +1,23 @@
+{
+  "$schema": "../schemas/recipe.schema.json",
+  "id": "panel-fill",
+  "primitive": "micrografia",
+  "palette": "violet",
+  "content": {
+    "title": "PANEL FILL",
+    "eyebrow": "KODEX−∞ / PLATE KIT 006",
+    "footer": "MARKS THAT IMITATE THE STAIN OF TEXT · NEVER REAL TEXT"
+  },
+  "data": {
+    "width": 179,
+    "height": 96,
+    "seed": 11,
+    "line": 3,
+    "mark": 1,
+    "density": 0.72,
+    "word": 5,
+    "opacity": 0.5,
+    "gaps": 0.12
+  },
+  "assetId": null
+}

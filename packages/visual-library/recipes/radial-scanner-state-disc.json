@@ -1,0 +1,23 @@
+{
+  "$schema": "../schemas/recipe.schema.json",
+  "id": "state-disc",
+  "primitive": "radial-scanner",
+  "palette": "violet",
+  "content": {
+    "title": "STATE DISC",
+    "eyebrow": "KODEX−∞ / PLATE KIT 002",
+    "footer": "RINGS RUN GEOMETRIC AT 0.93 · NO TWO CARRY THE SAME WEIGHT"
+  },
+  "data": {
+    "width": 400,
+    "height": 400,
+    "rings": 14,
+    "spokes": 36,
+    "seed": 7,
+    "ratio": 0.93,
+    "eccentricity": 1,
+    "ticks": 60,
+    "core": 8
+  },
+  "assetId": null
+}
