@@ -12,6 +12,12 @@ class FactoryMetricsTests(unittest.TestCase):
         self.assertEqual(summary["verified_throughput"], 0)
         self.assertIsNone(summary["median_cycle_time_seconds"])
         self.assertIsNone(summary["first_pass_yield"])
+        self.assertIsNone(summary["stale_context_rate"])
+        self.assertIsNone(summary["evidence_completeness"])
+        self.assertEqual(summary["duplicate_system_incidents"], 0)
+        self.assertIsNone(summary["scene_closure_ratio"])
+        self.assertIsNone(summary["learning_yield"])
+        self.assertIsNone(summary["regression_escape_rate"])
 
     def test_computes_core_factory_metrics(self) -> None:
         packets = [
@@ -98,6 +104,45 @@ class FactoryMetricsTests(unittest.TestCase):
             {"class": "REVIEW_CAPACITY", "count": 2},
         )
 
+    def test_execution_os_metrics_measure_drift_evidence_learning_and_scene_closure(self) -> None:
+        packets = [
+            {
+                "packet_id": "A",
+                "scene_id": "ARCHIVE",
+                "scene_closed": True,
+                "authority_fresh": True,
+                "evidence_required_count": 6,
+                "evidence_present_count": 6,
+                "duplicate_system_incidents": 0,
+                "guardrails_added": ["reference-first-browser-gate"],
+                "regression_escapes": 0,
+                "timestamps": {"running_at": "2026-08-07T10:00:00Z", "done_at": "2026-08-07T11:00:00Z"},
+                "tests_passed": True,
+                "commit_sha": "abc",
+            },
+            {
+                "packet_id": "B",
+                "scene_id": "RETURN",
+                "scene_closed": False,
+                "authority_fresh": False,
+                "evidence_required_count": 4,
+                "evidence_present_count": 2,
+                "duplicate_system_incidents": 1,
+                "guardrails_added": [],
+                "regression_escapes": 1,
+                "timestamps": {"running_at": "2026-08-07T12:00:00Z", "done_at": "2026-08-07T13:00:00Z"},
+                "tests_passed": True,
+                "commit_sha": "def",
+            },
+        ]
+        summary = summarize_packets(packets)
+        self.assertEqual(summary["stale_context_rate"], 0.5)
+        self.assertEqual(summary["evidence_completeness"], 0.8)
+        self.assertEqual(summary["duplicate_system_incidents"], 1)
+        self.assertEqual(summary["scene_closure_ratio"], 0.5)
+        self.assertEqual(summary["learning_yield"], 0.5)
+        self.assertEqual(summary["regression_escape_rate"], 0.5)
+
     def test_failed_tests_prevent_verified_throughput(self) -> None:
         packets = [
             {
@@ -137,6 +182,10 @@ class FactoryMetricsTests(unittest.TestCase):
     def test_invalid_integration_enum_rejected(self) -> None:
         with self.assertRaises(ValueError):
             summarize_packets([{"timestamps": {}, "integration_result": "MAYBE"}])
+
+    def test_invalid_execution_metric_counts_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            summarize_packets([{"timestamps": {}, "evidence_required_count": 1, "evidence_present_count": 2}])
 
 
 if __name__ == "__main__":
