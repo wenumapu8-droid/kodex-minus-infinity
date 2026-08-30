@@ -117,6 +117,85 @@ class FactoryRouterTests(unittest.TestCase):
         self.assertEqual(result["decision"], "BLOCKED")
         self.assertIn("reviewer_capacity_unavailable", result["blockers"])
 
+    def test_product_facing_packet_requires_authority_snapshot(self) -> None:
+        packet = {
+            "id": "KDX-WP-PRODUCT-01",
+            "lane": "PRODUCT",
+            "modality": "UI_INTEGRATION",
+            "complexity": "C2",
+            "product_facing": True,
+            "dependencies": [],
+            "may_edit": ["src/KodexScene.astro"],
+        }
+        result = route_packet(packet, {})
+        self.assertEqual(result["decision"], "BLOCKED")
+        self.assertIn("authority_snapshot_missing", result["blockers"])
+
+    def test_product_facing_packet_blocks_until_local_truth_reconciled(self) -> None:
+        packet = {
+            "id": "KDX-WP-PRODUCT-02",
+            "lane": "PRODUCT",
+            "modality": "UI_INTEGRATION",
+            "complexity": "C2",
+            "product_facing": True,
+            "dependencies": [],
+            "may_edit": ["src/KodexScene.astro"],
+            "authority_snapshot": {
+                "current_authority_source": "00E + issue #117",
+                "checked_at": "2026-08-30T05:20:00Z",
+                "starting_sha": "025247a",
+                "local_worktree_reconciled": False,
+            },
+        }
+        result = route_packet(packet, {})
+        self.assertEqual(result["decision"], "BLOCKED")
+        self.assertIn("local_truth_not_reconciled", result["blockers"])
+        self.assertEqual(result["factory_event"]["commit_sha"], "025247a")
+
+    def test_product_facing_packet_routes_after_authority_and_local_truth_gate(self) -> None:
+        packet = {
+            "id": "KDX-WP-PRODUCT-03",
+            "lane": "PRODUCT",
+            "modality": "UI_INTEGRATION",
+            "complexity": "C2",
+            "product_facing": True,
+            "dependencies": [],
+            "lease": {
+                "owner": "IMPLEMENTER",
+                "owned_files": ["src/KodexScene.astro"],
+                "conflict_policy": "SERIALIZE_ON_OVERLAP",
+            },
+            "authority_snapshot": {
+                "current_authority_source": "00E + issue #117",
+                "checked_at": "2026-08-30T05:20:00Z",
+                "starting_sha": "025247a",
+                "local_worktree_reconciled": True,
+            },
+        }
+        result = route_packet(packet, {})
+        self.assertEqual(result["decision"], "READY")
+        self.assertEqual(result["starting_sha"], "025247a")
+        self.assertEqual(result["owner_lease"]["owner"], "IMPLEMENTER")
+        self.assertEqual(result["owner_lease"]["owned_files"], ["src/KodexScene.astro"])
+
+    def test_v2_lease_owned_files_participate_in_conflict_gate(self) -> None:
+        packet = {
+            "id": "KDX-WP-LEASE-01",
+            "lane": "OPS",
+            "modality": "PROCESS_ANALYTICS",
+            "complexity": "C1",
+            "dependencies": [],
+            "lease": {"owned_files": ["ops/factory/DISPATCH_QUEUE.yaml"]},
+        }
+        state = {
+            "running_packets": [
+                {"packet_id": "OTHER", "owned_files": ["ops/factory/DISPATCH_QUEUE.yaml"]}
+            ]
+        }
+        result = route_packet(packet, state)
+        self.assertEqual(result["decision"], "BLOCKED")
+        self.assertIn("file_ownership_conflict", result["blockers"])
+
     def test_same_input_is_deterministic(self) -> None:
         packet = {
             "id": "KDX-WP-DATA-01",
