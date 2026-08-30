@@ -1,0 +1,88 @@
+id: KDX-MOTION-REF-009
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:11W5XY4cNiOBGzMZ9Xt8xPUBvonKK0khk"
+  title: "Numeric face / data-portrait information-design reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "one face-like silhouette centered in a very large white field"
+    - "the portrait is assembled from scattered black numerals and smaller gray numeric marks"
+    - "denser dark clusters define hairline, eyes, nose, mouth and lower contour"
+    - "recognition emerges from local density rather than continuous outlines"
+  surface:
+    - "high-contrast black/white information-design character"
+    - "small repeated glyphs act simultaneously as marks and semantic-looking data tokens"
+    - "very high negative-space ratio"
+  motion_evidence: []
+  unknowns:
+    - "the screenshot does not establish whether the numbers encode real data"
+    - "no biometric, identity, facial-recognition or measurement claim is evidenced"
+    - "source animation and interaction are unknown"
+abstracted_behavior:
+  layer_model:
+    - "neutral field"
+    - "distributed glyph/token cloud"
+    - "density-defined latent silhouette"
+    - "optional labels/provenance"
+  temporal_rules:
+    - "if animated, move between legible distribution states rather than continuously jittering every token"
+    - "aggregation may reveal a KODEX-owned form; dissolution may return it to an unresolved token field"
+    - "token count, value, density or position may encode data only when mapped to admitted fields"
+  interaction_rules:
+    - "inspection may reveal which token group or source relation contributes to a visible region"
+    - "a committed relation selection may preserve selected groups in later session memory"
+    - "pointer motion must not be interpreted as facial analysis or identity sensing"
+kodex_role:
+  scene_affinity:
+    - ARCHIVE
+    - MACHINE
+    - RETURN
+  semantic_purpose:
+    - "translate discrete records into an emergent portrait, glyph or memory trace without fabricating measurements"
+    - "show how individual fragments can become a legible whole and later dissolve back into archive units"
+  memory_consequence: "If used with real KODEX records, explicitly selected fragments may persist into Return; generated token motion alone does not infer identity, emotion or biometric state."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - MotionStateController
+    - SignalPulse
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "DOM/SVG/Canvas candidate depending token count"
+    visual_fps: "native refresh during bounded aggregation/dissolution only"
+  motion:
+    - "bounded token aggregation into a KODEX-owned silhouette or glyph"
+    - "bounded dissolution back to distributed archive fragments"
+    - "short relation highlight when a valid token group is inspected"
+  surface:
+    - "high negative space"
+    - "one neutral field plus one semantic accent at most"
+    - "glyph sizes remain legible enough to reveal that marks are discrete records"
+accessibility:
+  reduced_motion: "Show one static distribution state and provide explicit aggregate/fragment views without animated travel."
+  keyboard: "Aggregate, fragment and token-group inspection states must be reachable by keyboard."
+  touch: "Use grouped semantic regions rather than requiring taps on individual tiny numerals."
+  non_visual_alternative: "Expose the contributing records/groups as a structured list with counts only when counts are real, plus source/provenance and current aggregate state."
+forbidden_copy:
+  - "source face/portrait identity and exact numeric placement"
+  - "presentation of arbitrary numerals as measured personal data"
+  - "facial-recognition, emotion-detection or biometric claims without a real declared system and consent"
+  - "source-specific typography or composition as a direct replica"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "source/provenance record"
+    - "data mapping evidence if tokens represent actual records"
+  tests:
+    - "no numeric mark implies a quantity without a declared mapping"
+    - "the aggregate remains understandable without animation"
+    - "token interaction is accessible without tiny hit targets"
+    - "no source portrait is recreated"
+  implementation_status: "NOT_IMPLEMENTED"

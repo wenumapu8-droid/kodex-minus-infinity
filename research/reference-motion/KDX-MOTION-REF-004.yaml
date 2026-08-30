@@ -1,0 +1,90 @@
+id: KDX-MOTION-REF-004
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:1J3ErtMJxe2996Gd3v-u4UQLXS4KGZYwM"
+  title: "Iridescent axolotl-like bioform reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "one front-facing translucent amphibian-like bioform centered on a black field"
+    - "strong bilateral facial symmetry with branching feathery external structures"
+    - "large eyes and a broad pale body form create an immediate focal hierarchy"
+    - "negative space isolates the organism from all interface context"
+  surface:
+    - "pearlescent / iridescent translucent material"
+    - "cyan, violet and green micro-highlights across a pale body"
+    - "fine filament detail around the head"
+    - "glossy specular reflections against near-black"
+  motion_evidence: []
+  unknowns:
+    - "the source image does not establish whether the bioform is photographed, rendered or generated"
+    - "no source motion, breathing or material animation is evidenced"
+    - "original lighting setup and material shader are unknown"
+abstracted_behavior:
+  layer_model:
+    - "black void"
+    - "single living-form silhouette"
+    - "fine peripheral filament layer"
+    - "iridescent highlight field"
+    - "optional inspection annotations"
+  temporal_rules:
+    - "keep the body substantially stable; local material and filament changes carry most life"
+    - "use very slow low-amplitude oscillation rather than whole-object floating"
+    - "iridescent color migration should follow surface orientation, not random rainbow cycling"
+  interaction_rules:
+    - "pointer may create a small specular/parallax response without implying that the organism senses the visitor"
+    - "a committed inspection may reveal structural/provenance information rather than simply enlarge the image"
+kodex_role:
+  scene_affinity:
+    - COSMOLOGY
+    - ARTIFACT
+    - MACHINE
+  semantic_purpose:
+    - "reference a living-material grammar for KODEX-owned organisms and bioforms"
+    - "separate organism identity from the procedural material behavior layered around it"
+  memory_consequence: "If adapted to an Ocín/KODEX organism, inspection may write which morphology or relation was examined; decorative shimmer alone writes no memory."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - PaletteCycle
+    - WaveDistortion
+    - PointerParallax
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "native image / vector-mask composition; no forced pixelation"
+    visual_fps: "native refresh with low-frequency parameter changes"
+  motion:
+    - "slow localized filament sway"
+    - "surface-orientation-driven iridescent highlight drift"
+    - "subtle eye/highlight parallax during inspection"
+  surface:
+    - "controlled pearlescent cyan/violet accent band"
+    - "high-gloss highlights isolated from the black field"
+    - "no CRT treatment by default"
+accessibility:
+  reduced_motion: "Keep a static organism image with fixed iridescent highlights; remove filament sway and parallax."
+  keyboard: "Inspection controls and any morphology/provenance reveal must be keyboard reachable."
+  touch: "Tap exposes the same inspection state as pointer/keyboard; no hover-only detail."
+  non_visual_alternative: "Provide a textual morphology/material description, source status and semantic role outside the image."
+forbidden_copy:
+  - "the source organism image or exact morphology in a KODEX-owned generated replacement"
+  - "exact eye, filament and body proportions"
+  - "exact source material texture and lighting composition"
+  - "presentation of the reference as Ocín-authored work"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "short recording if filament/material motion is implemented"
+    - "source/provenance record"
+  tests:
+    - "motion remains local and low amplitude"
+    - "iridescence is coherent with surface orientation rather than random color noise"
+    - "reduced-motion is compositionally complete"
+    - "reference morphology is not copied into a new KODEX asset"
+  implementation_status: "NOT_IMPLEMENTED"

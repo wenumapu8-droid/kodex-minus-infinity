@@ -1,0 +1,90 @@
+id: KDX-MOTION-REF-006
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:1bYJ6f8MKBdfjCAeLOfdvu3_ZZY0e1qFo"
+  title: "Radial taxonomy / information-design reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "one circular information system centered in a square white field"
+    - "multiple large dark sectors converge on a central hub"
+    - "dense outer ring of labels connected inward by curved lines"
+    - "small repeated nodes form a perimeter rhythm"
+    - "visual hierarchy runs hub → sectors → perimeter nodes → labels"
+  surface:
+    - "very light neutral background"
+    - "dark violet/near-black sector masses"
+    - "pale pink perimeter nodes"
+    - "fine gray connector lines and small editorial labels"
+  motion_evidence: []
+  unknowns:
+    - "no original interaction or animation is evidenced"
+    - "the screenshot does not establish the underlying dataset or chart semantics"
+    - "source author, labels and exact encoding rules require separate provenance before reuse"
+abstracted_behavior:
+  layer_model:
+    - "central relation hub"
+    - "category sectors"
+    - "perimeter entities"
+    - "relation curves"
+    - "outer labels"
+  temporal_rules:
+    - "do not rotate the complete chart as ambient decoration"
+    - "motion should be inspection-driven: isolate one sector, then reveal its related curves/nodes"
+    - "preserve spatial positions during filtering so users retain orientation"
+  interaction_rules:
+    - "focus/selection highlights one valid category or relation set"
+    - "filtering may fade unrelated elements but must preserve a route back to the full graph"
+    - "a committed relation selection may write a trace if it changes later KODEX possibilities"
+kodex_role:
+  scene_affinity:
+    - ARCHIVE
+    - COSMOLOGY
+    - MACHINE
+  semantic_purpose:
+    - "provide a reusable inspection grammar for dense taxonomies and relation graphs"
+    - "show many-to-many structure without turning the KODEX graph into a conventional sitemap"
+  memory_consequence: "Only an explicit relation/category selection may enter session memory; hover/focus exploration remains reversible inspection."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - MotionStateController
+    - SignalPulse
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "SVG/DOM preferred"
+    visual_fps: "native refresh; transitions only"
+  motion:
+    - "sector focus transition"
+    - "progressive connector reveal for the selected relation set"
+    - "short node emphasis pulse on committed selection"
+  surface:
+    - "KODEX semantic colors applied by real category/state"
+    - "labels remain HTML/SVG text rather than rasterized decoration"
+accessibility:
+  reduced_motion: "Switch states instantly or with opacity-only transitions; keep selected sector, nodes and relation labels explicit."
+  keyboard: "All categories and relations must have ordered keyboard focus and visible focus state."
+  touch: "Perimeter labels/nodes must use accessible hit targets larger than the drawn marks."
+  non_visual_alternative: "Expose the same taxonomy as a structured list/tree with relation counts, source links and current selection."
+forbidden_copy:
+  - "source labels, dataset and sector wording"
+  - "exact sector geometry and curve layout"
+  - "source color proportions as a signature composition"
+  - "presentation of decorative node counts as real KODEX data"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "keyboard focus recording or evidence"
+    - "reduced-motion screenshot"
+    - "source/provenance record"
+  tests:
+    - "selection does not require hover"
+    - "graph remains understandable without animation"
+    - "positions do not jump during simple filtering"
+    - "all displayed relations originate from admitted KODEX data"
+  implementation_status: "NOT_IMPLEMENTED"

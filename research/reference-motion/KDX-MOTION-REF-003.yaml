@@ -1,0 +1,91 @@
+id: KDX-MOTION-REF-003
+status: RESEARCH
+source:
+  evidence_class: DIRECT_CAPTURE
+  rights_status: REFERENCE_ONLY
+  asset_id: "conversation:56910.mp4 | study:gdrive:1XJUTuFhLCKenB4qlL52qrifOHNwSJppr5WAquD1IqN0"
+  title: "Interference / optical portal reference study"
+  url: null
+  accessed_at: "2026-08-12"
+observed:
+  composition:
+    - "symmetrical optical structures organized around a central aperture / cross / tunnel impression"
+    - "large negative field surrounding one dominant invariant"
+    - "high-frequency line or interference patterning"
+    - "strong center-focused hierarchy"
+  surface:
+    - "high-contrast optical line field"
+    - "repetition and symmetry create perceptual instability"
+    - "apparent motion can arise from static patterning"
+  motion_evidence:
+    - "project reference study records apparent movement and perceptual vibration in the supplied capture"
+    - "the study does not establish whether every perceived movement came from literal source animation"
+  unknowns:
+    - "exact source renderer is unknown"
+    - "exact animation technique and frame cadence are unknown"
+    - "exact source interaction mapping is unknown"
+abstracted_behavior:
+  layer_model:
+    - "void / negative field"
+    - "central interference invariant"
+    - "optional phase / resonance transform"
+    - "minimal state annotation outside the optical field"
+  temporal_rules:
+    - "DORMANT may remain materially static while the optical pattern creates apparent motion"
+    - "AWARE may introduce a very small phase displacement"
+    - "LOCKED should reduce instability and stabilize symmetry"
+    - "OPEN may use one bounded transition event rather than continuous maximal deformation"
+  interaction_rules:
+    - "focus changes may alter phase or density without committing route memory"
+    - "a committed open action must have a later route or visual consequence if admitted canonically"
+kodex_role:
+  scene_affinity:
+    - THRESHOLD
+    - PROLOGUE
+    - OBSERVE
+  semantic_purpose:
+    - "encode focus, resonance and transition without requiring a literal 3D portal"
+    - "make state change legible through symmetry and interference rather than generic glitch"
+  memory_consequence: "If used canonically, OPEN writes the committed transition; passive perceptual vibration does not describe the user or write identity claims."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - MotionStateController
+    - WaveDistortion
+    - SignalPulse
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "SVG/Canvas/GLSL candidate depending density"
+    visual_fps: "native refresh with bounded phase updates; exact cadence to be tested"
+  motion:
+    - "small state-dependent phase shifts"
+    - "symmetry stabilization when locked"
+    - "one bounded aperture/open event on committed activation"
+  surface:
+    - "controlled line density"
+    - "high contrast without rapid flashing"
+    - "no full-screen random glitch"
+accessibility:
+  reduced_motion: "Use a static lower-spatial-frequency composition with no phase displacement and preserve explicit state labels."
+  keyboard: "Focus and committed open states must be reachable by keyboard without relying on optical reaction."
+  touch: "Tap/hold behavior must map to the same states as keyboard/pointer and must not require hover."
+  non_visual_alternative: "Expose node state, transition purpose, source/provenance and available actions in semantic UI outside the optical field."
+forbidden_copy:
+  - "exact optical pattern from the source"
+  - "exact symmetry field or aperture geometry"
+  - "source-specific composition"
+  - "source artwork, marks or proprietary assets"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "short recording of state transitions"
+    - "source/provenance record"
+  tests:
+    - "no rapid flashing or uncontrolled high-frequency animation"
+    - "LOCKED state is visually calmer than AWARE"
+    - "reduced-motion contains no phase animation"
+    - "source-specific pattern is not copied"
+  implementation_status: "NOT_IMPLEMENTED"

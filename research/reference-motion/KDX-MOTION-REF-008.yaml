@@ -1,0 +1,95 @@
+id: KDX-MOTION-REF-008
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:14qKBqbIeHUBvCW7iTVzjMacXMLbRJBWv"
+  title: "Sonic editorial / media-layer interface reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "tall black editorial interface dominated by crimson imagery"
+    - "large serif title near the upper center with multiple smaller editorial text blocks"
+    - "asymmetric collage of media windows, portraits, silhouettes and vertical panels"
+    - "audio-player controls occupy a clear lower-middle module"
+    - "navigation, thumbnails and utility icons remain peripheral to the main narrative field"
+  surface:
+    - "near-black background with one dominant red/crimson signal family"
+    - "mix of serif, sans-serif and condensed display typography"
+    - "photographic imagery with strong red grading"
+    - "hairlines, small status controls and editorial spacing create hierarchy"
+  motion_evidence: []
+  unknowns:
+    - "the screenshot does not establish the original page transitions or media playback behavior"
+    - "no audio-reactive behavior is evidenced"
+    - "source music, imagery, typography and interaction logic require separate rights/provenance"
+abstracted_behavior:
+  layer_model:
+    - "dark editorial field"
+    - "macro narrative title"
+    - "primary authorial/media image"
+    - "secondary media/specimen windows"
+    - "real playback controls when audio exists"
+    - "micro navigation/status layer"
+  temporal_rules:
+    - "major typography and editorial grid remain stable while media regions change state"
+    - "image reveals and transitions are user-triggered rather than permanently animated"
+    - "audio progress may move only when a real playback source exists"
+    - "do not synthesize waveform/activity that implies measured audio when no signal is connected"
+  interaction_rules:
+    - "play/pause, media selection and archive reveal are explicit actions"
+    - "hover may preview emphasis but cannot be the only way to access media/state"
+    - "a selected work/audio item may write a route trace only when the node contract defines a later consequence"
+kodex_role:
+  scene_affinity:
+    - ARCHIVE
+    - ARTIFACT
+    - RETURN
+  semantic_purpose:
+    - "provide a cinematic editorial shell for combining Ocín work, text, sound and provenance without collapsing into cards"
+    - "keep authorial media dominant while the interface supplies operational context"
+  memory_consequence: "Explicit media/work selections may be recorded as inspected artifacts and later reappear in Return; passive playback decoration does not infer preference or identity."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - MotionStateController
+    - SignalPulse
+    - ReducedMotionController
+  raster:
+    internal_resolution: null
+    upscale: "native HTML/CSS/media; preserve original authorial asset quality"
+    visual_fps: "native refresh; transitions only"
+  motion:
+    - "short image-window reveal/replace transitions"
+    - "real playback progress when an audio element is active"
+    - "small state pulse on saved/inspected artifact"
+    - "optional low-amplitude media parallax only when it does not obscure the work"
+  surface:
+    - "one dominant semantic signal color per viewport"
+    - "minimal local grain/grade if compatible with the authorial asset"
+    - "no global CRT/glitch treatment by default"
+accessibility:
+  reduced_motion: "Replace media transitions with direct swaps/fades and disable parallax while keeping playback controls functional."
+  keyboard: "All navigation, media selection and playback controls must be keyboard reachable with visible focus."
+  touch: "Use explicit tap targets for media panels and playback; no hover-only preview dependency."
+  non_visual_alternative: "Expose title, author, media type, transcript/caption where applicable, provenance, playback state and route actions in semantic HTML."
+forbidden_copy:
+  - "source photography, music, copy and interface icons"
+  - "exact source collage proportions and recognizable layout"
+  - "source typography identity"
+  - "fake audio waveforms or playback data when no real signal exists"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "keyboard focus evidence"
+    - "reduced-motion screenshot"
+    - "caption/transcript evidence for media when applicable"
+    - "source/provenance record"
+  tests:
+    - "authorial media remains visually dominant over interface chrome"
+    - "playback state is real and operable without animation"
+    - "reduced-motion preserves all controls"
+    - "no source-specific media or layout is copied"
+  implementation_status: "NOT_IMPLEMENTED"

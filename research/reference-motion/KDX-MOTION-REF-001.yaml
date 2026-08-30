@@ -1,0 +1,98 @@
+id: KDX-MOTION-REF-001
+status: RESEARCH
+source:
+  evidence_class: USER_SUPPLIED_SCREENSHOT
+  rights_status: REFERENCE_ONLY
+  asset_id: "gdrive:1ekZgQmvH53LoTMxOP9M6VfcvI2AQu6hb"
+  title: "Demoscene / low-resolution spatial reference"
+  url: null
+  accessed_at: "2026-08-14"
+observed:
+  composition:
+    - "near-black deep field"
+    - "sparse star-like points across the background"
+    - "one dominant low-resolution central object"
+    - "large fluorescent display word crossing the central object"
+    - "strong center-weighted hierarchy"
+  surface:
+    - "visible low-resolution / pixel character"
+    - "dark violet-blue field"
+    - "bright green and pink typography accents"
+    - "early-digital / demoscene visual character"
+  motion_evidence: []
+  unknowns:
+    - "original renderer is unknown"
+    - "original internal resolution is unknown"
+    - "original frame rate is unknown"
+    - "original object motion is not evidenced by the screenshot"
+    - "original starfield motion is not evidenced by the screenshot"
+    - "original palette animation is not evidenced by the screenshot"
+abstracted_behavior:
+  layer_model:
+    - "void / deep field"
+    - "distributed depth points"
+    - "central raster object"
+    - "macro typography"
+    - "optional signal surface"
+  temporal_rules:
+    - "when prototyped, keep the macro word substantially locked so the object/field carry most motion"
+    - "use a limited number of independently moving layers rather than animating the entire frame"
+    - "preserve stepped / raster-like temporal character if motion is introduced"
+  interaction_rules:
+    - "pointer may bias apparent depth without committing a route decision"
+    - "a committed action may trigger one discrete signal event"
+kodex_role:
+  scene_affinity:
+    - PROLOGUE
+    - MACHINE
+    - COSMOLOGY
+  semantic_purpose:
+    - "represent a signal/object emerging from an unresolved field"
+    - "support machine-memory or cosmological depth without becoming a generic HUD"
+  memory_consequence: "If used canonically, a committed interaction must write a later visual or route consequence; passive motion alone is atmosphere."
+proposed_implementation:
+  claim_class: SYNTHETIC
+  modules:
+    - LowResBuffer
+    - VisualFrameLimiter
+    - StarField
+    - PixelQuantize
+    - CRTSurface
+    - PointerParallax
+    - ReducedMotionController
+  raster:
+    internal_resolution: "320x240 candidate; test 256x192 on constrained mobile"
+    upscale: "nearest-neighbor"
+    visual_fps: "12-18 candidate for raster layer only"
+  motion:
+    - "synthetic star depth drift"
+    - "slow yaw or parallax on a KODEX-owned proxy object"
+    - "rare signal displacement on committed state change"
+  surface:
+    - "light posterization"
+    - "subtle scanline treatment"
+    - "small highlight-only RGB misregistration"
+accessibility:
+  reduced_motion: "Use a static low-resolution composite. Preserve hierarchy and depth through size/brightness rather than translation."
+  keyboard: "Keyboard activation must reach the same committed state as pointer/touch if this becomes interactive."
+  touch: "Touch must not require hover. Use tap/hold only when the same action has a keyboard equivalent."
+  non_visual_alternative: "Expose the node title, state, source/provenance and available actions semantically outside the raster canvas."
+forbidden_copy:
+  - "source object / spacecraft form"
+  - "source lettering or exact word treatment"
+  - "exact color distribution"
+  - "exact composition and framing"
+  - "source marks, logos or proprietary assets"
+validation:
+  required_evidence:
+    - "prototype screenshot desktop"
+    - "prototype screenshot mobile"
+    - "reduced-motion screenshot"
+    - "source/provenance link"
+    - "recording if temporal behavior is implemented"
+  tests:
+    - "hierarchy survives at 320px CSS width"
+    - "raster layer does not create essential meaning unavailable to non-visual users"
+    - "reduced-motion contains no continuous translation"
+    - "no source-specific asset is copied"
+  implementation_status: "NOT_IMPLEMENTED"

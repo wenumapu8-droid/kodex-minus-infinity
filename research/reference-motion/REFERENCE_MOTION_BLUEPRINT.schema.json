@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.local/schemas/reference-motion-blueprint.schema.json",
+  "title": "KODEX Reference Motion Blueprint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "status",
+    "source",
+    "observed",
+    "abstracted_behavior",
+    "kodex_role",
+    "proposed_implementation",
+    "accessibility",
+    "forbidden_copy",
+    "validation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^KDX-MOTION-(REF|KDX)-[0-9]{3}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["RESEARCH", "READY_FOR_PROTOTYPE", "PROTOTYPE", "IMPLEMENTED", "TESTED", "DEPRECATED"]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_class", "rights_status", "asset_id", "title"],
+      "properties": {
+        "evidence_class": {
+          "type": "string",
+          "enum": ["DIRECT_CAPTURE", "PUBLIC_DOCUMENTATION", "TECHNICAL_INSPECTION", "CREATOR_DESCRIPTION", "USER_RECOLLECTION", "UNVERIFIED_IMPRESSION", "USER_SUPPLIED_SCREENSHOT"]
+        },
+        "rights_status": {
+          "type": "string"
+        },
+        "asset_id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": ["string", "null"]
+        },
+        "accessed_at": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "observed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["composition", "surface", "motion_evidence"],
+      "properties": {
+        "composition": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "surface": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "motion_evidence": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "abstracted_behavior": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["layer_model", "temporal_rules"],
+      "properties": {
+        "layer_model": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "temporal_rules": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "interaction_rules": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "kodex_role": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene_affinity", "semantic_purpose"],
+      "properties": {
+        "scene_affinity": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "semantic_purpose": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "memory_consequence": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "proposed_implementation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_class", "modules", "raster", "motion"],
+      "properties": {
+        "claim_class": {
+          "type": "string",
+          "enum": ["SPECULATION", "SYNTHETIC", "INTERPRETATION"]
+        },
+        "modules": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "raster": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "internal_resolution": {
+              "type": ["string", "null"]
+            },
+            "upscale": {
+              "type": ["string", "null"]
+            },
+            "visual_fps": {
+              "type": ["string", "number", "null"]
+            }
+          }
+        },
+        "motion": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "surface": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reduced_motion", "keyboard", "touch", "non_visual_alternative"],
+      "properties": {
+        "reduced_motion": {"type": "string"},
+        "keyboard": {"type": "string"},
+        "touch": {"type": "string"},
+        "non_visual_alternative": {"type": "string"}
+      }
+    },
+    "forbidden_copy": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string"}
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_evidence", "tests", "implementation_status"],
+      "properties": {
+        "required_evidence": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "tests": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "implementation_status": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
