@@ -1,0 +1,363 @@
+schema_version: 1
+visual_passport:
+  passportId: "KDX-VP-FIELD-OF-EYES-V1"
+  conceptId: "KDX-NODE-FIELD-OF-EYES"
+  title: "FIELD OF EYES"
+  status: "DRAFT"
+  semanticPurpose: "Represents recursive observation and a distributed field of attention. (Canonical summary, verbatim from KDX-NODE-FIELD-OF-EYES.) The act of looking places the viewer as a node within that field. Rendered as a data-driven preset of the canonical `observation-eye` organism (manifest organismos[02], role 'detecta y reconoce', states DORMANT / AWARE / ACTIVE, verbs track / scan / block), not as a new renderer."
+  nodeQuestion: "Ningún ojo observa solo. Mirar es ya ser parte del campo que mira."
+  coordinateAssignment: null
+  sourceRefs:
+    - id: "ops/factory/packets/KOD-38.yaml (KDX-WP-VISUAL-01)"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "The string FIELD OF EYES occurs in no other file of kodex-minus-infinity or wenu-frontend. Verified by full-tree grep of both repositories."
+        - "The packet's source_inputs name 'actual FIELD OF EYES concept/reference images available to the visual worker'. No such image set reached this worker."
+    - id: "wenu-frontend public/kodex-content/manifest.json — organismos[02] observation-eye"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Canonical organism 02. rol: 'detecta y reconoce'. estados: DORMANT / AWARE / ACTIVE. verbos ES: sigue, escanea, bloquea. EN: track, scan, block."
+        - "Canonical fx_chain: [crt-scan, chromatic-split]. Canonical audio routing: mid+high+pointer."
+        - "Organism palette declared as #903CFF, #00F7FF, #FF2028, #0A0A0A. Under ruling R1 this is the neon palette this passport uses; see the PALETTE note."
+    - id: "wenu-frontend src/data/kodex/nodes/field-of-eyes.json (KDX-NODE-FIELD-OF-EYES), branch feature/kodex-node-graph-v1 @ 867fb8b0"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "THE canonical source for this concept, and it outranks every other entry in this list. Read in full. It was invisible until now because getKodexNodes() resolved its path with import.meta.url, which at build time points into dist/ rather than src/, so the loader returned [] and no node route was ever generated. That bug is fixed on this branch."
+        - "id KDX-NODE-FIELD-OF-EYES, slug field-of-eyes, title 'FIELD OF EYES', subtitle 'OBSERVER / PERCEPTION FIELD', status active, visibility surface, atlasStatus CANON, publishable true, version 1.0.0, checksum KDX-NODE-FIELD-OF-EY-7F8D."
+        - "summary verbatim: 'Represents recursive observation and a distributed field of attention.' — adopted verbatim as semanticPurpose."
+        - "proposition verbatim: 'Ningun ojo observa solo. Mirar es ya ser parte del campo que mira.' — adopted verbatim as nodeQuestion. Both lineages already carried these two strings, which is how the iMac lineage was in fact anchored."
+        - "visualAnchor: kind 'distributed-field', role 'dominant-phenomenon', label 'Campo donde la atencion propia aparece como un nodo mas'. This is canon for informationHierarchy.primary and for composition: the visitor's own attention must appear as ONE MORE NODE in the field, not as a privileged centre. The acentric lattice specified in geometry.topology satisfies this; a concentric arrangement would not."
+        - "symbols: ASTRAL, OBSERVER. behavior.engine 'field-of-eyes', topology 'astral / observer'."
+        - "behavior scalars tempo 0.2, entropy 0.3, responsiveness 0.5, persistence 0.5 — carried into motion, but note they are IDENTICAL across all nine node files, so they read as schema defaults rather than authored per-node values. They must not be presented as measurements or as tuned parameters."
+        - "epistemic: claimClass UNKNOWN, culturalStatus STANDARD, domains [], limitations [], claims []. Canon has not classified this concept's claim, so it neither supports nor overrides this passport's scientificClaimPolicy."
+        - "editorial body (es) verbatim: 'La observacion recursiva es aca un modelo computacional: el observador se representa dentro del campo que observa. No afirma efectos de observador fuera de ese modelo.' — this is canon stating the epistemic frame directly, and it is carried into epistemicConstraints."
+        - "mode 'dark-archive', accent 'cyan'. See the MODE AND ACCENT note: these are a render axis, not the content register."
+    - id: "wenu-frontend src/data/kodex/authored-edges.json and src/data/kodex/nodes/astral-route.json"
+      relation: "PRIMARY_CONCEPT"
+      rightsStatus: "CLEAR"
+      notes:
+        - "74 hand-authored edges across 33 relation types, recovered after Bridge 1 lost them. Validity census: CANONICAL 27, VALID 43, HYPOTHESIS 2, NEEDS_CULTURAL_REVIEW 2."
+        - "FIELD OF EYES is GATE 02 of the canonical ASTRAL ROUTE 01-06 (KDX-NODE-ASTRAL-ROUTE CONTAINS KDX-NODE-FIELD-OF-EYES, validity VALID). The route orders Dream -> Eyes -> DNA -> Source -> Heart -> Return."
+        - "Incoming CANONICAL: KDX-NODE-DREAM-GATE LEADS_TO KDX-NODE-FIELD-OF-EYES, 'Dream dissolves ordinary framing before the observer confronts recursive perception.'"
+        - "Outgoing CANONICAL: KDX-NODE-FIELD-OF-EYES LEADS_TO KDX-NODE-DNA-ASCENT, 'Observation turns inward from field/perception toward embodied biological lineage.' This is declared on the node itself as well."
+        - "Also incoming VALID: KDX-NODE-EYE-WITHIN-EYE EXPANDS KDX-NODE-FIELD-OF-EYES, 'La percepcion anidada profundiza la familia del observador creada en Field of Eyes.'"
+        - "The route's own proposition is binding on this scene's interaction model: 'La ruta no se recorre: se ordena. Cada estacion contiene a la siguiente y ninguna es obligatoria. Reversible significa que el regreso tambien es camino.' Non-compulsory and reversible traversal is therefore canon, not a passport preference."
+        - "NEITHER of the two NEEDS_CULTURAL_REVIEW edges touches this concept. Both are Mapuche-rooted (KDX-NODE-WE-TRIPANTU EXPANDS KDX-NODE-RETURN; KDX-NODE-WENU-MAPU CONTAINS KDX-NODE-ANIMAL-GUIDES) and are recorded in provenanceBoundaries.culturalSensitivity as a boundary, never rendered."
+    - id: "kodex-crt-observe-preset"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: null
+      notes:
+        - "Carried from the iMac lineage: spectral violet tint, ghost frames, surveillance aesthetic."
+        - "Maps onto the organism's own canonical fx_chain [crt-scan, chromatic-split], for which crt.frag.glsl and chroma.frag.glsl already exist."
+    - id: "wenu-frontend public/kodex-content/manifest.json — sistemas.gramatica"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "'un motor (KDX CORE) + una suite de 8 tratamientos GPU (KDX FX SUITE), 8 organismos = presets data-driven. Cualquier tratamiento se aplica a cualquier organismo.'"
+        - "This is the authority for treating FIELD OF EYES as a preset of an existing organism rather than a new renderer."
+    - id: "wenu-frontend src/components/kodex/scenes/KodexObserveV2Scene.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Existing shell grid, fallback layer, glyph layers, 8-node cloud, dossier and meta row. Inspected read-only; not modified."
+    - id: "wenu-frontend src/components/kodex/scenes/kodex-observe-v2-client.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "KdxObserveV2Runtime: WebGL2 six-pass pipeline source -> displace -> threshold -> chroma -> feedback -> crt, ping-pong framebuffers, fullscreen triangle."
+        - "Pointer normalization to [-1,1] with y negated; pointer activeUntil now+1400ms; aware decays to idle after 3200ms; locked auto-advances to observing after 820ms."
+        - "Profiles full / balanced / low-power resolved from prefers-reduced-motion, max-width 760px and devicePixelRatio."
+    - id: "wenu-frontend src/kodex/observe-v2/config.ts"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "States idle/aware/locked/observing, per-state bilingual copy, OBSERVE_V2_PROFILE_SCALE (dpr 1.5 / 1.25 / 1.0)."
+        - "Source of the phrase 'ocular field', which is the closest existing name for this concept."
+    - id: "wenu-frontend src/kodex/observe-v2/shaders/*.glsl"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Existing and verified: fullscreen.vert, source.frag, displace.frag, threshold.frag, chroma.frag, feedback.frag, crt.frag."
+        - "crt.frag.glsl and chroma.frag.glsl already implement the organism's canonical fx_chain, so this passport requires no new shader."
+    - id: "wenu-frontend src/components/kodex/motion/ObservationEye.astro"
+      relation: "REFERENCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Existing per-eye primitive with three slots — field / pupil / overlay — all aria-hidden. Adopted unchanged as the eye node structure."
+    - id: "kodex-minus-infinity design-system/tokens/kodex.tokens.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Authoritative spacing, line, duration, easing, layout and performance tokens for this passport."
+        - "Its COLOUR tokens are the brand palette and are NOT authoritative here: ruling R1 places this scene in the fiction register, whose palette is neon. Brand-token neighbours are cited alongside each neon value for traceability only."
+        - "Its rule 'Color may not carry essential meaning alone' is binding and is why every paletteRole sets colorIsNotOnlyChannel true and why the register marker is carried in words."
+    - id: "kodex-minus-infinity schemas/session-memory.schema.json"
+      relation: "DESIGN_SYSTEM"
+      rightsStatus: "CLEAR"
+      notes:
+        - "additionalProperties is false and the declared keys include relationsTraced, entitiesTraced, sourcesOpened and artifactSeed. Only a declared key may be written; see the MEMORY KEY note."
+    - id: "kodex-minus-infinity docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Concept assignment law: letters are not assigned without creator approval, so coordinateAssignment stays null."
+        - "'Passive pointer movement alone cannot make identity claims or write consequential personal memory.' This governs the atmospheric/consequential split."
+        - "Return-anchor law and mutated-revisit (K-prime) behaviour govern exitBehavior."
+    - id: "kodex-minus-infinity canon/KODEX_EPISTEMIC_STANDARD.md"
+      relation: "RESEARCH"
+      rightsStatus: "CLEAR"
+      notes:
+        - "Prohibited pseudo-metrics and metric admission requirements govern every numeric readout in this scene."
+    - id: "wenu-frontend public/kodex-content/manifest.json — volumes fic-razas-estelares-iconografia"
+      relation: "PROVENANCE"
+      rightsStatus: "REFERENCE_ONLY"
+      notes:
+        - "The standing KODEX position on iconography drawn from living traditions. registro: ficcion, marco: ficcion, paleta: neon, review: false."
+        - "'Se tratan como glifos ... y no como afirmaciones sobre el origen de ninguna especie ni de ningun pueblo. Donde una imagen viene de una tradicion viva se nombra como prestamo del imaginario y no como su doctrina.'"
+        - "Ruling R1 makes this position binding for FIELD OF EYES. Its review_nota records that its resonances touch no documented volume of Mapuche root."
+    - id: "wenu-frontend public/kodex-content/manifest.json — sistemas.registro_vocabulario and top-level note"
+      relation: "PROVENANCE"
+      rightsStatus: "CLEAR"
+      notes:
+        - "note verbatim: 'Dos registros siempre marcados: DOCUMENTADO (paleta marca) y MITO/FICCION (paleta neon). Mapuche y Codex Estelar NUNCA se mezclan.'"
+        - "registro ficcion: 'Lore/ficcion de autor, presentado como tal. Nunca se mezcla con lo documentado ni con lo mapuche.'"
+        - "This is the canonical text behind ruling R1 and behind the no-blend boundaries below."
+    - id: "chatgpt-file-library:file_00000000428081fba426a0a5aa5bc7a7"
+      relation: "REFERENCE"
+      rightsStatus: null
+      notes:
+        - "Carried from the iMac lineage. Exact project asset it names: Paneles cosmicos del Codex Infinito.png."
+        - "Claimed to contain a FIELD OF EYES panel with a central purple eye, a concentric network of smaller eyes, golden lattice geometry and pseudo-telemetry such as COHERENCE 63.7%."
+        - "NOT INSPECTED BY THIS WORKER and not present on this machine. The asset identifier is carried verbatim; its content, generation and rights provenance must not be inferred from this record."
+        - "Note the direct conflict with this passport's geometry: a concentric network around a single centre is exactly the mandala-adjacent construction provenanceBoundaries forbids. If this asset is confirmed as the reference, geometry.topology must be re-decided, not quietly reconciled."
+    - id: "R2 bucket pub-2b4562c758ed440ab047fe9523a2d99c.r2.dev/kodex-content/art/"
+      relation: "REFERENCE"
+      rightsStatus: "UNKNOWN"
+      notes:
+        - "Bucket referenced by manifest cover URLs. Located but NOT opened by this worker; no image was inspected."
+        - "No visual element of this passport derives from it. Any resemblance found at implementation time is coincidence and must be reported, not preserved."
+  provenanceBoundaries:
+    mayAbstract:
+      - "Distributed node topologies"
+      - "Nested recursive eye structures"
+      - "Concentric relation fields and luminous tethers, provided they never resolve into rings around one centre — see the acentric-lattice safeguard below"
+      - "Distributed multi-observer composition as generic information design: many peer nodes, one committed focus, explicit relations between nodes."
+      - "Iris, pupil and lid as neutral geometric primitives — ring stroke, filled disc, swept arc — composed as the three existing slots of ObservationEye.astro."
+      - "The organism's own canonical state vocabulary (DORMANT / AWARE / ACTIVE) and verbs (track / scan / block)."
+      - "CRT scanline and chromatic-split treatment, which are the organism's declared canonical fx_chain and already exist as shaders in the implementation repository."
+      - "Instrument/dossier chrome from OBSERVE V2, reused as layout rather than reinvented."
+    mustNotCopy:
+      - "Direct photographs of human eyes without alteration"
+      - "Pseudo-telemetry numbers or labels as factual measurements"
+      - "No external reference image reached this worker. Therefore no external artwork, frame, figure or layout may be reproduced. Anything in the implementation that resembles a specific external work is an invention introduced downstream and must be rejected at visual review."
+      - "No Buddhist or Buddha-derived iconography by default: no thousand-eyed or thousand-armed Avalokitesvara form, no urna or third-eye forehead mark on any human or deity figure, no lotus throne, no halo or mandorla, no mandala construction geometry, and no Devanagari or other dharmic script used as ornament. Ruling R1 governs what may be admitted by exception and on what terms; it does not lift this default."
+      - "No photographic or photorealistic human eye, and no eye that can be read as a specific identifiable person."
+      - "No eye-of-providence / all-seeing-eye emblem — it carries unrelated political-symbolic freight that this scene does not intend to claim."
+      - "No Mapuche motif, term or cosmological structure of any kind, and no link, quotation, citation or visual echo of any documented-register volume. Under R1 this scene is fiction-register and the two registers never mix."
+      - "FX treatments must never be applied to Ocin's finished specimen artwork. Per manifest fx_chain_nota, treatments apply only to photographs and derivatives, never to the completed work."
+    culturalSensitivity:
+      - "RESOLVED BY RULING R1 — REGISTER IS FICTION. FIELD OF EYES sits in the marked-fiction register with the neon palette. This is no longer an open question and must not be re-opened by an implementation packet."
+      - "RESOLVED BY RULING R1 — BUDDHIST MATERIAL. Iconography drawn from a living tradition is handled as a GLYPH: a form the myth repeats because it serves the myth, named as a borrowing from the imaginary ('prestamo del imaginario') and never as that tradition's doctrine, and never as a claim about the origin of any species or any people. This is the position already recorded in the manifest volume fic-razas-estelares-iconografia and FIELD OF EYES inherits it rather than inventing its own. Admission of any specific Buddhist form is still governed by mustNotCopy above; R1 settles the FRAMING, not a licence to depict."
+      - "TWO CANONICAL EDGES ARE MARKED NEEDS_CULTURAL_REVIEW IN THE NODE GRAPH, and both are Mapuche-rooted: KDX-NODE-WE-TRIPANTU EXPANDS KDX-NODE-RETURN ('Ambos articulan renovación y continuidad cíclica') and KDX-NODE-WENU-MAPU CONTAINS KDX-NODE-ANIMAL-GUIDES ('Los animales se sitúan dentro de territorio y cosmología'). Neither touches FIELD OF EYES, and neither may be rendered, traversed or referenced from this scene. They are surfaced here rather than left silent because they mark exactly where the astral route runs closest to documented Mapuche material."
+      - "The scene must not link to, blend with, quote, cite or visually echo any documented-register volume, and above all not Mapuche material. The manifest states it twice: 'Mapuche y Codex Estelar NUNCA se mezclan', and registro ficcion 'Nunca se mezcla con lo documentado ni con lo mapuche'. Do not substitute Mapuche, Andean or generic 'ancestral' / 'tribal' motifs for anything this scene may not use."
+      - "The register marker must be carried TEXTUALLY, not by palette alone. The manifest marks register by palette; design-system/tokens/kodex.tokens.json requires that colour never be the only channel. The persistent words REGISTRO · FICCION / REGISTER · FICTION are the required non-colour channel."
+      - "Do not resolve any residual gap with generic 'sacred geometry'. If a reference cannot be identified, the field stays as specified here: a seeded irregular lattice that copies nothing."
+      - "The deliberately acentric lattice specified in geometry.topology is itself a cultural safeguard: concentric rings around a single centre would reproduce mandala construction, which is exactly the boundary above."
+      - "Retain a computational/algorithmic framing. Recursive observation is an interaction frame; no spiritual claim, no third-eye anatomy, no consciousness measurement."
+  informationHierarchy:
+    primary: "The distributed field / lattice of eyes — canonical visualAnchor kind 'distributed-field', role dominant-phenomenon: 'Campo donde la atención propia aparece como un nodo más'."
+    secondary:
+      - "The user's active gaze/interaction point (the 'self' node), which canon requires to read as ONE MORE NODE in the field and never as a privileged centre."
+      - "The persistent register marker identifying the scene as marked fiction."
+    tertiary:
+      - "Background telemetry, signal values, and structural tethering."
+  geometry:
+    primitives:
+      - "Node (Eye)"
+      - "Tether (Lattice Edge)"
+      - "Focus Ring"
+    topology: "Recursive observation lattice, canonical topology 'astral / observer' (KDX-NODE-FIELD-OF-EYES behavior.topology) — irregular and acentric by construction. Eye centres are placed by seeded Poisson-disk sampling; each eye connects to its nearest neighbours, yielding one connected graph. A regular grid is rejected because it reads as interface chrome; a concentric or radial arrangement is rejected because rings around a single centre reproduce mandala construction, which provenanceBoundaries forbids."
+    coordinateSystem: "Continuous 3D coordinate space with bounded implementation limits; pointer normalized to [-1,1] with y negated, matching kodex-observe-v2-client.ts."
+    spatialLayers:
+      - "Background Void"
+      - "Structural Lattice"
+      - "Active Nodes"
+      - "Foreground Gaze Anchor"
+  composition:
+    focalStructure: "Decentralized with local concentration around interaction points. Exactly one eye holds committed focus at a time; the central region is left deliberately empty so the field has no single centre."
+    grid: "Non-linear / Organic Lattice"
+    depthModel: "Layered Z-depth with depth-of-field or scale attenuation on distant nodes."
+    negativeSpace: "Vast void to emphasize isolation yet connectedness of nodes; at least 40% of the field box stays unpopulated and no two eyes touch."
+    responsiveRules:
+      desktop: "Wide aspect, expansive lattice visible, pointer controls gaze center. Pointer proximity is atmospheric only; a commit is required for any consequential action."
+      mobile: "Vertical slice, denser vertical stacking of nodes, touch drives focal shifts. Eye count is capped by touch-target geometry so every 44x44 CSS px target stays non-overlapping at 390x844 and 412x915. The register marker never collapses."
+  paletteRoles:
+    - role: "Field Ground"
+      semanticMeaning: "The archive at rest; the absence of observation"
+      tokenOrRange: "neon ground #0A0A0A (manifest organismos[02].paleta). Brand-token neighbour color.field.obsidian (#050608) is NOT used — see the PALETTE note."
+      colorIsNotOnlyChannel: true
+    - role: "Observe Base"
+      semanticMeaning: "The fundamental state of the archive observing; an eye present but not attending (DORMANT)"
+      tokenOrRange: "neon violet #903CFF (manifest organismos[02].paleta), reduced alpha at rest. Brand-token neighbour color.signal.violet (#7855D5) is NOT used."
+      colorIsNotOnlyChannel: true
+    - role: "Node Accent (canonical) / Active Gaze"
+      semanticMeaning: "The concept's canonical accent, and the state of nodes responding to the user's observation (AWARE)"
+      tokenOrRange: "neon cyan #00F7FF (manifest organismos[02].paleta), resolving the canonical accent slot 'cyan' declared on KDX-NODE-FIELD-OF-EYES. The node names the accent SLOT, not a hex value; ruling R1 selects the neon palette to resolve it. Brand-token neighbour color.signal.cyan (#00E8F0) is NOT used."
+      colorIsNotOnlyChannel: true
+    - role: "Committed Focus"
+      semanticMeaning: "The single eye the visitor has committed to (ACTIVE)"
+      tokenOrRange: "neon red #FF2028 (manifest organismos[02].paleta). Brand-token neighbour color.signal.livingRed (#FF3833) is NOT used."
+      colorIsNotOnlyChannel: true
+    - role: "Traced Relation"
+      semanticMeaning: "A relation the visitor committed and the session kept"
+      tokenOrRange: "neon violet #903CFF at 2px (token line.signal) against 1px hairline lattice edges"
+      colorIsNotOnlyChannel: true
+    - role: "Register Marker — Fiction"
+      semanticMeaning: "Persistent declaration that this scene is marked fiction, per the manifest requirement that both registers are always marked"
+      tokenOrRange: "neon violet #903CFF on the neon ground #0A0A0A. The WORDS carry the meaning; colour is secondary and never sufficient on its own."
+      colorIsNotOnlyChannel: true
+    - role: "Instrument Text"
+      semanticMeaning: "Chrome, labels and non-factual readouts"
+      tokenOrRange: "bone #E8E8E8 with a muted variant; never a neon signal colour, so chrome cannot be mistaken for state"
+      colorIsNotOnlyChannel: true
+  typographyRoles:
+    - role: "Register Marker"
+      behavior: "Mono, uppercase, always visible in the header chip row and never collapsed at any viewport. Reads REGISTRO · FICCION / REGISTER · FICTION. This is a required element, not decoration: the manifest marks register by palette alone, which cannot satisfy the design-system rule that colour may not carry essential meaning alone. The word is the non-colour channel."
+    - role: "Telemetry"
+      behavior: "Monospaced, overlaid, reacting to focus states; invented numeric values remain explicitly decorative and are always preceded by a persistent marker (EN 'SIMULATED' / ES 'ATMOSFERA'). The existing OBSERVE V2 dossier renders generated percentages with no such marker and must not be copied in that respect."
+  motion:
+    timescales:
+      - "Ambient drift (slow) — token duration.ambient (12000ms) base period, jittered per eye. Canonical behavior.tempo 0.2 is the low end of the tempo range, which is what makes a slow ambient drift the correct default rather than a lively one."
+      - "Gaze response (fast) — token duration.micro (120ms) / duration.short (240ms). Canonical behavior.responsiveness 0.5 places response mid-range: the field answers input without snapping."
+      - "Canonical behavior.entropy 0.3 governs the jitter budget: the lattice is irregular but not noisy, and blink phase jitter stays modest rather than chaotic."
+      - "Canonical behavior.persistence 0.5 governs how long traced relations and attention states hold: relations persist for the session, attention decays. These four scalars are carried from KDX-NODE-FIELD-OF-EYES and replace the previously invented motion values; they are identical across all nine node files and must be treated as canonical defaults, not as measurements."
+    stateTransitions:
+      - "Idle to Observing"
+      - "Observing to Locked"
+      - "Locked to Witnessing after the existing 820ms engine timeout"
+      - "Observing decays to Idle after 3200ms without input, matching kodex-observe-v2-client.ts"
+    loopingBehavior: "Continuous subtle ambient drift and procedural gaze shifts. The field must never blink in unison — unison reads as a cut rather than as life. The render loop pauses on document visibilitychange."
+    reducedMotion: "Static nodes, no drift, no blink, instant state changes without interpolation; every state change becomes a single 240ms opacity or stroke step."
+  interaction:
+    inputs:
+      - "POINTER"
+      - "TOUCH"
+      - "KEYBOARD"
+    semanticActions:
+      - "ATMOSPHERIC — pointer proximity raises the attention of nearby eyes and aims their pupils. Nothing is committed and nothing is written. Required by ADR-0010: passive pointer movement alone cannot make identity claims or write consequential personal memory."
+      - "CONSEQUENTIAL — attract gaze of surrounding nodes by committing to one eye (click, tap, Enter or Space)"
+      - "CONSEQUENTIAL — reveal hidden lattice connections by committing a second eye, which traces a persistent relation"
+      - "EXPLICITLY NOT AN ACTION — scroll position, hover duration, pointer path shape and the number of eyes passed over. None of these may be recorded, scored, aggregated or used to infer anything about the visitor."
+    stateChanges:
+      - "Hovering or keyboard focus on a node focuses the field."
+      - "Clicking, tapping or activating with keyboard locks observation."
+      - "At most one eye is committed at a time; committing a new eye returns the previous one to the attending state."
+      - "A committed relation adds a persistent traced edge, which survives release and reappears on revisit."
+    memoryWrite:
+      enabled: true
+      key: "relationsTraced"
+      description: "Records that the user has triggered the committed observation state within the lattice; it does not record a psychological or biometric inference. Only the relation-tracing commit writes: it appends one relation id of the form 'rel:<eyeIdA>~<eyeIdB>', ids sorted so the pair is order-independent, to the session memory array relationsTraced declared in schemas/session-memory.schema.json. That schema sets additionalProperties false, so an ad-hoc key would be invalid. The write is idempotent by event identity. No identity claim, score, ranking, profile, biometric value or attention metric is ever written, the visitor must be able to see and clear exactly what was written, and accessibility preferences are never inferred from behaviour."
+    exitBehavior: "Eyes dilate and fade into the void. Exit restores the exact prior route anchor, node, focus and scroll position per the ADR-0010 return-anchor law; traced relations persist for the session so a revisit regenerates the identical seeded lattice with previous relations already drawn."
+  implementation:
+    medium: "WEBGL"
+    reusableEngineBoundary: "`field-of-eyes` — the engine name is canonical, declared as behavior.engine on KDX-NODE-FIELD-OF-EYES, and it is what the implementation must register itself as. EyeFieldRenderer (the name both lineages used) is the implementation class behind that engine id and handles node instantiation, lattice connectivity and gaze vectors independently of scene logic. It is a data-driven preset of the canonical observation-eye organism on KDX CORE, not a new renderer, and it must expose an explicit destroy(): the current runtime registers window 'resize' and document 'visibilitychange' listeners inside bindEvents() and never removes them, so a second mount leaks. Fixing that is a precondition for reuse and belongs to the implementation packet, not to this passport."
+    sceneSpecificParts:
+      - "Kodex Observe V2 integration"
+      - "CRT post-processing layer when confirmed by the implementation packet"
+      - "Eye count per profile and per viewport, and the touch-target cap that overrides it on small screens"
+      - "Bilingual copy strings for the field states, and the persistent register marker"
+      - "Mapping of organism states DORMANT / AWARE / ACTIVE onto the palette roles declared above"
+      - "The empty-centre and 40% negative-space composition rules"
+    dependencies:
+      - "Existing KODEX organism/WebGL runtime"
+      - "Existing KODEX lifecycle, input and fallback contracts"
+      - "Existing shaders in src/kodex/observe-v2/shaders/ — no new shader is required for this organism's canonical fx_chain"
+      - "Existing per-eye primitive src/components/kodex/motion/ObservationEye.astro"
+      - "design-system/tokens/kodex.tokens.json for non-colour tokens"
+      - "KOD-28 (JourneyState + EventTrace). Relation tracing cannot be implemented before it lands, because the memory write depends on event identity for idempotent replay."
+      - "No new third-party dependency."
+    performanceRisk: "HIGH"
+  fallback:
+    noWebGL: "Static SVG or raster of the lattice with keyboard/touch/pointer focus states for major nodes. The WebGL layer is atmospheric and carries no data; every eye, edge, focus action, traced relation, memory write and accessibility affordance behaves identically with and without it, and the existing ?fallback=1 parameter forces this path for review."
+    noAudio: "Visual telemetry and focus rings carry the weight of state changes. The organism's canonical audio routing is optional atmosphere only; no information is available exclusively through sound."
+    staticMode: "A single, highly detailed frame of the field with semantic controls still available. This is the mode used to produce the target captures."
+  accessibility:
+    keyboardEquivalent: "Tab navigation cycles through major focal nodes and Enter/Space triggers locked states; the field is one composite widget with roving tabindex, arrow-key traversal along lattice adjacency and Esc to release. Every consequential action is reachable without a pointer and without hover, with a visible focus indicator at every step."
+    touchEquivalent: "Taps act as gaze anchors and commitment actions without requiring hover. Hit targets are at least 44x44 CSS px regardless of rendered eye radius, which is what caps eye count on small viewports."
+    screenReaderAlternative: "Live region describes observation density and state without implying factual surveillance or consciousness measurement. Each eye carries an accessible name, its state and its traced relations; the register is announced in words; committed actions are announced and pointer movement is not."
+    nonColorEquivalent: "Focus rings and scale changes signify active gaze instead of color alone; pupil aperture, stroke weight and a data attribute carry state. The fiction register is marked in WORDS, not by the neon palette alone, so register survives monochrome."
+    reducedMotionEquivalent: "Static background, no camera pan, abrupt state transitions; a stored accessibility.motion preference of OFF in session memory overrides the media query, and no motion, sound or contrast setting is ever inferred from behaviour."
+  reviewChecks:
+    - "Does the lattice feel computational and relational rather than presented as spiritual fact?"
+    - "Are pointer, touch, and keyboard interactions semantically equivalent?"
+    - "Is EyeFieldRenderer separated from scene-specific CRT/post-processing?"
+    - "Are all numeric dossier values treated as decorative texture unless sourced?"
+    - "Does the design remain legible and performant at 390x844 and 412x915?"
+    - "REGISTER MARKER — the words REGISTRO · FICCION / REGISTER · FICTION are visible in every state and at every viewport including 390x844, and remain legible under a grayscale filter. Register is never carried by palette alone."
+    - "CANONICAL ANCHOR — the visitor's own attention reads as one more node in the field and never as a privileged centre, per the node's visualAnchor label 'Campo donde la atención propia aparece como un nodo más'."
+    - "ROUTE POSITION — the scene is reachable from DREAM GATE and leads to DNA ASCENT, its two CANONICAL edges, and neither transition is compulsory or irreversible. Per the ASTRAL ROUTE proposition, the return is also a path: confirm the visitor can go back to the previous gate as freely as forward."
+    - "NO UNDECLARED RELATIONS — the scene renders only the edges declared in authored-edges.json for this node, with their validity visible or at least not contradicted. It renders neither of the two NEEDS_CULTURAL_REVIEW edges, which are Mapuche-rooted and belong to another register."
+    - "NO REGISTER BLEND — the scene links to, quotes, cites and visually echoes no documented-register volume, and contains no Mapuche term, motif or cosmological structure."
+    - "No two eye nodes overlap and none is clipped at the field-box edge, at 1440x900, 390x844 and 412x915."
+    - "The central region is empty; the field shows no single dominant centre and does not read as concentric rings."
+    - "Exactly one eye is focused at a time; releasing focus leaves no second reticle on screen."
+    - "Hover alone never changes a readout that implies a committed state and never writes to session memory — verify against the event trace after sweeping the pointer across every eye."
+    - "Every numeric readout in the chrome carries its persistent non-factual marker; no readout can be mistaken for a measurement."
+    - "Full keyboard pass with no pointer: enter the field, traverse every eye with arrows, commit a focus, trace a relation, release with Esc, with a visible focus indicator at every step."
+    - "Minimum 44x44 px touch targets verified on 390x844 and 412x915, with no two targets overlapping."
+    - "With prefers-reduced-motion set: no blink, no drift, no feedback trail, and all transitions are 240ms opacity or stroke steps."
+    - "With ?fallback=1: the scene is fully usable, all eyes, edges, focus and tracing are present, and there is no layout shift versus the WebGL path."
+    - "Screen-reader pass: every eye has a name and a state, commits are announced, pointer movement is not."
+    - "Monochrome pass under a grayscale filter: rest, attending, focused, traced and contested remain distinguishable, and the register is still readable."
+    - "Leaving and re-entering the scene regenerates the identical lattice and redraws previously traced relations, and no duplicate relation is written on replay."
+    - "After unmount, no animation frame is running, the WebGL context is released, and no window or document listener registered by the scene remains."
+    - "No Buddhist-derived iconography, no photographic human eye, no mandala construction geometry and no eye-of-providence emblem is present in the rendered scene."
+    - "Sustained 50fps or better at the full profile on desktop with no frame-time regression versus OBSERVE V2 at the same profile, and 30fps or better at low-power on mobile."
+  targetCaptures:
+    - name: "desktop_wide"
+      width: 1920
+      height: 1080
+    - name: "desktop-1440x900"
+      width: 1440
+      height: 900
+    - name: "mobile_ios"
+      width: 390
+      height: 844
+    - name: "mobile_android"
+      width: 412
+      height: 915
+  epistemicConstraints:
+    - "CANON, verbatim from KDX-NODE-FIELD-OF-EYES editorial body: 'La observación recursiva es acá un modelo computacional: el observador se representa dentro del campo que observa. No afirma efectos de observador fuera de ese modelo.' Recursive observation is a computational model in which the observer is represented inside the field it observes, and the scene asserts no observer effect outside that model."
+    - "Recursive observation is an artistic/interaction frame, not third-eye science. Nothing here is a claim about perception, consciousness, third-eye anatomy or any spiritual faculty."
+    - "The node's own epistemic block sets claimClass UNKNOWN and culturalStatus STANDARD with no domains, limitations or claims recorded. Canon has therefore not classified this concept, and the absence of a classification must not be read as a licence: the constraints here stand on their own."
+    - "Generated frequencies, coherence values and telemetry are not factual. Every numeric readout — signal, focus, anomaly, latency, node count, checksum — is generated atmosphere, not measurement, per the prohibited pseudo-metrics section of canon/KODEX_EPISTEMIC_STANDARD.md."
+    - "The eye network represents relation/observation in KODEX and must not be presented as evidence of a universal consciousness network."
+    - "The scene must not profile the visitor, rank them, or infer identity, mood, ability or intent from interaction."
+    - "Buddhist imagery, where admitted at all, is a borrowing from the marked-fiction imaginary and never doctrine, inheriting the position recorded in fic-razas-estelares-iconografia and now binding under ruling R1."
+    - "Registers must not blend. Under R1 the field sits in the FICTION register, and it must not link to, blend with or absorb any documented-register volume, and must never touch Mapuche material."
+    - "The lattice is generated, not measured. Its geometry represents no dataset and must never be captioned or labelled as if it did."
+  scientificClaimPolicy: "SYMBOLIC_ONLY"
+  notes:
+    - "LINEAGE — this passport is the R2 merge of two independent versions: the iMac branch feature/visual-passport-field-of-eyes-v1 (140 lines, 3 sourceRefs, 5 reviewChecks) supplied the skeleton, field ordering and compact field values; the macmini branch feature/visual-passport-field-of-eyes-v1-macmini (429 lines, 13 sourceRefs, 15 reviewChecks) supplied sourceRefs, reviewChecks, provenanceBoundaries and the escalated decisions below. Neither lineage was discarded. Where the two disagreed on a value rather than on depth, the disagreement is recorded in these notes rather than silently resolved."
+    - "REGISTER — CLOSED BY RULING R1. FIELD OF EYES sits in the FICTION register with the neon palette. This supersedes the macmini lineage's PROVENANCE QUESTION 2, which asked the orchestrator to rule on exactly this. Consequences applied here: paletteRoles are reconciled to the neon values; the scene may not link to or blend with any documented-register volume and never with Mapuche material; the register marker is carried textually as well as by colour; and iconography from a living tradition is a glyph, a borrowing from the imaginary, never doctrine."
+    - "PALETTE — WHICH VALUES WERE USED AND WHY, AND WHAT IS STILL OPEN. R-open 3 in the creator rulings is UNRESOLVED: the canonical organism palette (#903CFF, #00F7FF, #FF2028, #0A0A0A) is close to but not identical with the design-system tokens (violet #7855D5, cyan #00E8F0, livingRed #FF3833, obsidian #050608). This passport uses the ORGANISM NEON VALUES — #903CFF, #00F7FF, #FF2028, #0A0A0A from manifest organismos[02].paleta — because ruling R1 says the palette is neon and those are the neon values, and it cites the brand-token neighbour beside each one for traceability. This is a change from the macmini lineage, which treated the design-system tokens as authoritative. The delta is real and visible and R-open 3 is NOT settled by doing this: the orchestrator still owes a ruling on whether the manifest or the token file is canonical, and if the token file wins the neon values must be re-derived there rather than taken from the manifest."
+    - "R-OPEN 1 — CONCEPT IDENTITY: CLOSED. FIELD OF EYES is a real canonical node, KDX-NODE-FIELD-OF-EYES, at src/data/kodex/nodes/field-of-eyes.json in wenu-frontend, atlasStatus CANON, status active, publishable true. It was invisible to every earlier search because of a loader bug — getKodexNodes() resolved its path with import.meta.url, which at build time points into dist/ rather than src/, so the loader returned [] and no node route was ever generated. The fix is on branch feature/kodex-node-graph-v1 at commit 867fb8b0 (PR #44). The mapping is confirmed on CONTENT, not on the name: the node's title is literally 'FIELD OF EYES', and its summary and proposition are the exact strings both passport lineages were already carrying, which is how the iMac lineage came to be anchored on this id in the first place. Independently, the node is gate 02 of the canonical ASTRAL ROUTE 01-06, whose gates 02/03/04 are Eyes / DNA / Source — the same three concepts, in the same order, as work packets KOD-38 / KOD-39 / KOD-40. That is structural confirmation, not a name coincidence."
+    - "STATUS — STAYS DRAFT, BUT FOR A DIFFERENT AND SMALLER REASON THAN BEFORE. With R-open 1 closed and the register closed by R1, the remaining open items in this passport are the MODE AND ACCENT question below and R-open 3 (palette). Both are open decisions for the creator, so not every question in these notes is closed and the status may not move to REVIEW. Note that the iMac lineage carried status REVIEW; that is still downgraded here, because two live questions remain. If the creator answers the mode/accent and palette questions, this passport is ready for REVIEW without further evidence work."
+    - "MODE AND ACCENT vs RULING R1 — A GENUINE AMBIGUITY, RECORDED AS AN OPEN DECISION RATHER THAN RESOLVED. The node declares mode 'dark-archive' and accent 'cyan', while R1 places this scene in the FICTION register with the NEON palette. This passport's reading is that these are two DIFFERENT AXES and do not contradict, for three reasons drawn from the data. (1) The node schema constrains mode to exactly two values, ['dark-archive', 'technical-plate'], and all nine node files are dark-archive. Two values, one of which is 'technical-plate', describe a RENDER SURFACE — how a node is presented — not a content register. The manifest's register vocabulary is a separate five-value system (documentado, mito, esoterico, ficcion, estructura) and the word 'ficcion' appears nowhere in the node schema. (2) The node schema constrains accent to a fixed eight-name list [gold, red, violet, cyan, acid, magenta, indigo, bone]. Those are SLOT NAMES, not hex values. The node says which accent slot the concept owns; it does not say which palette resolves that slot into a colour. R1 supplies the palette. On this reading accent 'cyan' resolves to the neon cyan #00F7FF rather than the brand cyan #00E8F0, which is exactly what this passport does. (3) The two systems agree where they can be compared: all three concepts' accents match the accent each iMac-lineage passport had already recorded, and cyan exists in observation-eye's neon palette. THE READING IS NOT CERTAIN. A defensible contrary reading is that 'dark-archive' IS the archive's own presentation register and that these nodes therefore sit outside the manifest's documented/fiction split altogether, in which case R1's fiction placement is a category error for node-graph content rather than a ruling that binds it. The creator should say which reading is intended. Nothing in either repository defines mode or accent in prose; the enums are the only evidence, and enums do not state intent."
+    - "CONCEPT ID — REVERSED ON NEW EVIDENCE, AND THE iMac LINEAGE WAS RIGHT. An earlier revision of this merge set conceptId to the organism slug observation-eye and recorded the iMac lineage's KDX-NODE-FIELD-OF-EYES as an unverifiable claim, because a full-tree grep found no such id and src/data/kodex/nodes/ did not exist on any branch then available. The node files were real; the loader bug meant nothing ever read them and they were absent from the branches checked. conceptId is now the canonical node id KDX-NODE-FIELD-OF-EYES. The observation-eye organism remains the RENDERING anchor — it is what the scene is a preset of — and it is retained as a PRIMARY_CONCEPT sourceRef. The two are different kinds of thing: the node is the concept, the organism is the engine preset that renders it, and this passport now names both."
+    - "RELATIONSHIPS — USED, NOT DECORATIVE. The node graph gives this scene two CANONICAL edges (DREAM GATE LEADS_TO here; here LEADS_TO DNA ASCENT), one VALID containment (gate 02 of ASTRAL ROUTE 01-06) and one VALID incoming expansion (EYE WITHIN EYE EXPANDS here). These are carried into reviewChecks as route-position checks. The route's own proposition — 'La ruta no se recorre: se ordena. Cada estación contiene a la siguiente y ninguna es obligatoria. Reversible significa que el regreso también es camino' — independently confirms the non-compulsory, reversible traversal model that both lineages had already specified from ADR-0010. Two edges in the graph carry validity NEEDS_CULTURAL_REVIEW; neither touches this concept, both are Mapuche-rooted, and they are surfaced in provenanceBoundaries.culturalSensitivity rather than rendered."
+    - "PROVENANCE QUESTION — R2 ART REFERENCES. The bucket pub-2b4562c758ed440ab047fe9523a2d99c.r2.dev was located through manifest cover URLs but no image was opened and none informed this passport. If specific R2 pieces are intended as references, they must be named explicitly and given rights and cultural status before implementation."
+    - "CONCEPT ID — LINEAGE DISAGREEMENT, RESOLVED ON EVIDENCE. The iMac lineage set conceptId to KDX-NODE-FIELD-OF-EYES; the macmini lineage set it to observation-eye. A full-tree grep of kodex-minus-infinity and kodex-work finds NO occurrence of KDX-NODE-FIELD-OF-EYES and src/data/kodex/nodes/ does not exist on this machine, while observation-eye is verifiable in the manifest. This passport therefore uses observation-eye and records the iMac claim in sourceRefs as an unverified lineage claim, because the standing prohibition on fabricating provenance forbids carrying an unverifiable canonical id as if it existed. If the KDX-NODE registry exists elsewhere, the creator should say where and this field should be revisited."
+    - "PASSPORT ID — LINEAGE DISAGREEMENT. iMac used VP-FIELD-OF-EYES-V1, macmini used KDX-VP-FIELD-OF-EYES-V1. Neither lineage is authority here; ops/factory/VISUAL_PASSPORT_TEMPLATE.yaml is, and it prescribes the prefix KDX-VP-. That is what this file uses. Flagged rather than assumed."
+    - "MEMORY KEY — LINEAGE DISAGREEMENT, RESOLVED ON EVIDENCE. iMac specified an ad-hoc key kodex-field-of-eyes-observed; macmini specified relationsTraced. schemas/session-memory.schema.json declares relationsTraced and sets additionalProperties false, so the ad-hoc key would be rejected by the repository's own schema. The schema-valid key is used and the iMac choice is recorded here."
+    - "SCHEMA ENVELOPE — LINEAGE DISAGREEMENT. The iMac file was a bare top-level mapping; the macmini file used the schema_version / visual_passport envelope. The envelope is kept because ops/factory/VISUAL_PASSPORT_TEMPLATE.yaml uses it and the contract validator reads the passport at the visual_passport key. This is the one place the iMac skeleton could not be preserved verbatim."
+    - "OTHER LINEAGE DISAGREEMENTS CARRIED AS-IS. performanceRisk: iMac HIGH, macmini MEDIUM — HIGH is kept, per the iMac skeleton and because the performance risks below are real. medium: iMac WEBGL, macmini HYBRID — WEBGL is kept, but note the scene is specified so that the WebGL layer carries no data and the DOM/SVG path is fully functional, which is closer to HYBRID in substance; the implementation packet should confirm the declaration. interaction.inputs: iMac declares POINTER/TOUCH/KEYBOARD, macmini adds TIME for ambient decay — the iMac set is kept even though ambient decay is specified in motion, and this should be reconciled if TIME-driven behaviour becomes consequential. targetCaptures: iMac's desktop_wide 1920x1080 is kept and macmini's desktop-1440x900 added, because the grafted reviewChecks are written against 1440x900."
+    - "DEPENDENCY — relation tracing cannot be implemented before KOD-28 (JourneyState + EventTrace) lands, because idempotent replay by event identity is what keeps the memory write from double-writing."
+    - "PERFORMANCE RISKS — why implementation.performanceRisk is HIGH. (1) Per-frame style writes: the existing runtime already sets CSS custom properties on 44 elements every frame (24 waveform bars, 12 signal bars, 8 nodes); at 24 eyes plus roughly 36 lattice edges this grows to about 60 elements, so per-eye updates must be restricted to transform and opacity and batched in one write phase, never interleaved with reads. (2) Six-pass ping-pong at DPR 1.5 on a full-profile desktop is the existing cost and must not regress; the eye layer is DOM/SVG on top and adds compositing, not fill. (3) Blink jitter must not force layout — lid arcs animate by transform or clip-path, never by width or radius. (4) Traced relations accumulate for the session and are never removed, so their draw cost must stay O(traced) with no full-field repaint per commit. (5) Mobile low-power caps eye count and DPR, so the binding constraint there is touch-target geometry rather than fill rate. (6) The listener leak recorded below becomes a compounding performance problem, not merely a correctness one, if the scene is mounted more than once."
+    - "IMPLEMENTATION PACKET RECOMMENDATION — split into two packets. (a) C2, producer BOUNDED_CODING_AGENT, reviewer LONG_CONTEXT_ARCHITECT: extract EyeFieldRenderer from the existing OBSERVE V2 runtime and register it under the canonical engine id 'field-of-eyes', with an explicit destroy(), seeded lattice generation, the focus/trace state machine, the keyboard model and unit tests. No new shaders and no visual novelty. (b) C1, MULTIMODAL_VISUAL_SPEC: visual review against reviewChecks at the target captures, after (a). Both blockers that previously held (a) are now cleared: the register by R1, and concept identity by the node graph. What remains is the mode/accent question, which changes only the palette resolution and not the geometry, so (a) may proceed at the creator's discretion while it is answered."
+    - "DEFECT FOUND IN EXISTING CODE — the node loader. getKodexNodes() resolved src/data/kodex/nodes/ with import.meta.url, which at build time points into dist/ rather than src/, so it returned an empty array and no node route was ever generated. Nine canonical node files and 74 authored edges were invisible to the whole factory as a result, which is why three visual passports were derived from secondary material and why R-open 1 stayed open. Fixed on feature/kodex-node-graph-v1 @ 867fb8b0 (PR #44). Recorded here because the failure mode is silent — an empty array is not an error — and any similar loader should be checked for the same pattern and given a test that asserts a non-empty result."
+    - "DEFECT FOUND IN EXISTING CODE — reported, not fixed, since this packet may not edit runtime code. kodex-observe-v2-client.ts bindEvents() adds a window 'resize' listener and a document 'visibilitychange' listener and never removes them; there is no destroy path, so mounting a second scene leaks listeners and a WebGL context. Separately, the OBSERVE V2 dossier renders generated percentages (SIGNAL, FOCUS, ANOMALY, LATENCY) with no non-factual marker, which this passport requires for FIELD OF EYES and which is worth backporting to OBSERVE V2."
+    - "EVIDENCE — sources actually inspected are listed field-by-field in sourceRefs. Two sources are named but were NOT inspected and are marked as such: the R2 bucket, deliberately not opened; and the chatgpt-file-library asset carried from the iMac lineage, which is not present on this machine and whose described content conflicts with this passport's acentric geometry."
