@@ -114,6 +114,22 @@ def _ratio(numerator: int | float, denominator: int | float) -> float | None:
     return float(numerator) / float(denominator)
 
 
+def _optional_bool(packet: dict[str, Any], field: str) -> bool | None:
+    value = packet.get(field)
+    if value is None:
+        return None
+    if not isinstance(value, bool):
+        raise ValueError(f"{field} must be boolean or null")
+    return value
+
+
+def _non_negative_int(packet: dict[str, Any], field: str, default: int = 0) -> int:
+    value = packet.get(field, default)
+    if not isinstance(value, int) or value < 0:
+        raise ValueError(f"{field} must be a non-negative integer")
+    return value
+
+
 def summarize_packets(packets: list[dict[str, Any]]) -> dict[str, Any]:
     if not isinstance(packets, list) or not all(isinstance(p, dict) for p in packets):
         raise ValueError("packets must be a list of objects")
@@ -131,6 +147,14 @@ def summarize_packets(packets: list[dict[str, Any]]) -> dict[str, Any]:
     reusable_completed = 0
     blocker_counter: Counter[str] = Counter()
     lane_wip: Counter[str] = Counter()
+
+    authority_fresh_values: list[bool] = []
+    evidence_required_total = 0
+    evidence_present_total = 0
+    duplicate_system_incidents = 0
+    guardrail_completed = 0
+    regression_escapes = 0
+    scene_states: dict[str, bool] = {}
 
     for packet in packets:
         timestamps = packet.get("timestamps", {}) or {}
@@ -197,7 +221,37 @@ def summarize_packets(packets: list[dict[str, Any]]) -> dict[str, Any]:
             raise ValueError("rework_causes must be a list of strings")
         blocker_counter.update(cause for cause in causes if cause)
 
+        authority_fresh = _optional_bool(packet, "authority_fresh")
+        if authority_fresh is not None:
+            authority_fresh_values.append(authority_fresh)
+
+        required_count = _non_negative_int(packet, "evidence_required_count")
+        present_count = _non_negative_int(packet, "evidence_present_count")
+        if present_count > required_count and required_count > 0:
+            raise ValueError("evidence_present_count cannot exceed evidence_required_count")
+        evidence_required_total += required_count
+        evidence_present_total += min(present_count, required_count) if required_count else 0
+
+        duplicate_system_incidents += _non_negative_int(packet, "duplicate_system_incidents")
+        regression_escapes += _non_negative_int(packet, "regression_escapes")
+
+        guardrails = packet.get("guardrails_added", []) or []
+        if not isinstance(guardrails, list) or not all(isinstance(item, str) for item in guardrails):
+            raise ValueError("guardrails_added must be a list of strings")
+        if done and guardrails:
+            guardrail_completed += 1
+
+        scene_id = packet.get("scene_id")
+        scene_closed = _optional_bool(packet, "scene_closed")
+        if scene_id is not None:
+            if not isinstance(scene_id, str):
+                raise ValueError("scene_id must be a string or null")
+            if scene_id and scene_closed is not None:
+                scene_states[scene_id] = scene_closed
+
     first_pass_true = sum(1 for value in first_pass_values if value)
+    authority_stale = sum(1 for value in authority_fresh_values if not value)
+    closed_scenes = sum(1 for value in scene_states.values() if value)
 
     return {
         "packet_count": len(packets),
@@ -212,6 +266,12 @@ def summarize_packets(packets: list[dict[str, Any]]) -> dict[str, Any]:
         "rework_rate": _ratio(reworked_completed, completed_count),
         "integration_failure_rate": _ratio(integration_failures, integration_attempts),
         "reuse_ratio": _ratio(reusable_completed, completed_count),
+        "stale_context_rate": _ratio(authority_stale, len(authority_fresh_values)),
+        "evidence_completeness": _ratio(evidence_present_total, evidence_required_total),
+        "duplicate_system_incidents": duplicate_system_incidents,
+        "scene_closure_ratio": _ratio(closed_scenes, len(scene_states)),
+        "learning_yield": _ratio(guardrail_completed, completed_count),
+        "regression_escape_rate": _ratio(regression_escapes, completed_count),
         "repeated_blocker_classes": [
             {"class": name, "count": count}
             for name, count in sorted(blocker_counter.items(), key=lambda item: (-item[1], item[0]))

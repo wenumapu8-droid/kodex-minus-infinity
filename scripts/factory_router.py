@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Deterministic KODEX Factory work-packet router.
 
-V1 intentionally uses explicit rules instead of learned routing. It accepts a
-JSON work packet plus optional JSON factory state and returns a JSON routing
-decision. The public YAML worker registry is used as an allow-list for worker
-profile names without requiring an external YAML dependency.
+V2 keeps explicit routing rules and adds fail-closed authority/lease gates for
+product-facing work. It accepts a JSON work packet plus optional JSON factory
+state and returns a JSON routing decision. The public YAML worker registry is
+used as an allow-list for worker profile names without requiring an external
+YAML dependency.
 """
 
 from __future__ import annotations
@@ -110,11 +111,7 @@ BASE_ROUTES: dict[str, tuple[str, str, list[str]]] = {
 
 
 def load_profile_names(path: Path = WORKER_REGISTRY) -> set[str]:
-    """Extract top-level profile keys from the simple public YAML registry.
-
-    This is deliberately not a general YAML parser. It only recognizes keys
-    indented two spaces beneath the literal `profiles:` section.
-    """
+    """Extract top-level profile keys from the simple public YAML registry."""
 
     names: set[str] = set()
     in_profiles = False
@@ -146,6 +143,59 @@ def _running_packets(state: dict[str, Any]) -> list[dict[str, Any]]:
     if not isinstance(running, list):
         raise ValueError("factory_state.running_packets must be a list")
     return [item for item in running if isinstance(item, dict)]
+
+
+def _owned_files(packet: dict[str, Any]) -> list[str]:
+    """Support legacy may_edit and the v2 lease.owned_files contract."""
+
+    owned = _string_list(packet.get("may_edit", []))
+    lease = packet.get("lease", {}) or {}
+    if not isinstance(lease, dict):
+        raise ValueError("lease must be an object")
+    lease_files = _string_list(lease.get("owned_files", []))
+    return list(dict.fromkeys([*owned, *lease_files]))
+
+
+def _authority_gate(packet: dict[str, Any]) -> tuple[list[str], list[str], str]:
+    """Fail closed for product-facing or release-audit work without live authority."""
+
+    product_facing = packet.get("product_facing", False)
+    if not isinstance(product_facing, bool):
+        raise ValueError("product_facing must be boolean")
+    requires_live_authority = product_facing or packet.get("modality") == "RELEASE_AUDIT"
+    if not requires_live_authority:
+        return [], [], ""
+
+    snapshot = packet.get("authority_snapshot")
+    blockers: list[str] = []
+    reasons: list[str] = []
+    starting_sha = ""
+
+    if not isinstance(snapshot, dict):
+        return ["authority_snapshot_missing"], ["product/release work requires authority_snapshot"], ""
+
+    source = snapshot.get("current_authority_source")
+    checked_at = snapshot.get("checked_at")
+    starting_sha_value = snapshot.get("starting_sha")
+
+    if not isinstance(source, str) or not source.strip():
+        blockers.append("current_authority_source_missing")
+    if not isinstance(checked_at, str) or not checked_at.strip():
+        blockers.append("authority_checked_at_missing")
+    if not isinstance(starting_sha_value, str) or not starting_sha_value.strip():
+        blockers.append("starting_sha_missing")
+    else:
+        starting_sha = starting_sha_value.strip()
+
+    if product_facing and snapshot.get("local_worktree_reconciled") is not True:
+        blockers.append("local_truth_not_reconciled")
+
+    if blockers:
+        reasons.append("live authority gate failed: " + ", ".join(blockers))
+    else:
+        reasons.append("live authority snapshot and Mini-local reconciliation gate passed")
+
+    return blockers, reasons, starting_sha
 
 
 def _select_route(modality: str, complexity: str) -> tuple[str, str, list[str], list[str]]:
@@ -205,7 +255,7 @@ def route_packet(packet: dict[str, Any], factory_state: dict[str, Any] | None = 
         raise ValueError(f"unknown complexity: {complexity!r}")
 
     dependencies = _string_list(packet.get("dependencies", []))
-    may_edit = _string_list(packet.get("may_edit", []))
+    may_edit = _owned_files(packet)
     read_only_context = _string_list(packet.get("read_only_context", []))
     source_inputs = _string_list(packet.get("source_inputs", []))
 
@@ -240,7 +290,9 @@ def route_packet(packet: dict[str, Any], factory_state: dict[str, Any] | None = 
     if not isinstance(reviewer_available, int):
         raise ValueError("reviewer capacity must be an integer")
 
-    blockers: list[str] = []
+    authority_blockers, authority_reasons, starting_sha = _authority_gate(packet)
+
+    blockers: list[str] = [*authority_blockers]
     if missing_dependencies:
         blockers.append("hard_dependencies_not_ready")
     if running_conflicts:
@@ -251,6 +303,7 @@ def route_packet(packet: dict[str, Any], factory_state: dict[str, Any] | None = 
     required_context = list(dict.fromkeys([*read_only_context, *source_inputs]))
     decision = "BLOCKED" if blockers else "READY"
 
+    reasons.extend(authority_reasons)
     if missing_dependencies:
         reasons.append(f"missing dependencies: {', '.join(missing_dependencies)}")
     if running_conflicts:
@@ -258,10 +311,11 @@ def route_packet(packet: dict[str, Any], factory_state: dict[str, Any] | None = 
     if reviewer_available <= 0:
         reasons.append(f"reviewer {reviewer} has no declared capacity")
     if not blockers:
-        reasons.append("dependency, ownership and reviewer-capacity gates passed")
+        reasons.append("dependency, authority, ownership and reviewer-capacity gates passed")
 
     severity = "BLOCKED" if decision == "BLOCKED" else "INFO"
     event_status = "BLOCKED" if decision == "BLOCKED" else "READY"
+    lease = packet.get("lease", {}) or {}
 
     return {
         "packet_id": packet_id,
@@ -273,6 +327,14 @@ def route_packet(packet: dict[str, Any], factory_state: dict[str, Any] | None = 
         "blockers": blockers,
         "missing_dependencies": missing_dependencies,
         "file_conflicts": running_conflicts,
+        "starting_sha": starting_sha,
+        "owner_lease": {
+            "owner": lease.get("owner", "") if isinstance(lease, dict) else "",
+            "owned_files": may_edit,
+            "conflict_policy": lease.get("conflict_policy", "SERIALIZE_ON_OVERLAP")
+            if isinstance(lease, dict)
+            else "SERIALIZE_ON_OVERLAP",
+        },
         "reasons": reasons,
         "next_owner": producer if decision == "READY" else "ORCHESTRATOR",
         "factory_event": {
@@ -288,7 +350,7 @@ def route_packet(packet: dict[str, Any], factory_state: dict[str, Any] | None = 
                 else f"{packet_id} blocked: {', '.join(blockers)}"
             ),
             "evidence_urls": [],
-            "commit_sha": "",
+            "commit_sha": starting_sha,
             "pull_request": "",
             "human_action_required": decision == "BLOCKED",
             "requested_action": "resolve routing blockers" if decision == "BLOCKED" else "",
