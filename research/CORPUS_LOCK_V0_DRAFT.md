@@ -257,6 +257,28 @@ source_root: 0cin
 allowed_current_use: INTERNAL_CURATION_ONLY
 ```
 
+### Creator confirmation — 2026-08-15
+
+Nicolás Ortega / Ocín confirmó autoría y aprobó **OCIN-CAND-001 a 009** (todo
+salvo el 010) para avanzar del corpus: son su obra, aprueba su uso en KODEX
+bajo los roles ya candidateados. Confirmación dada en conversación, no
+formulario — se registra como tal, no como los 7 puntos completados en
+detalle por cada obra (título público, elementos importados, transformaciones
+permitidas siguen sin especificar pieza por pieza).
+
+Efectivo para 001-009:
+
+```yaml
+creator: Nicolás Ortega / Ocín — CONFIRMED 2026-08-15
+rights_status: CLEAR
+```
+
+**OCIN-CAND-010 (Mandala Field / Black and White) queda fuera de esta
+confirmación a propósito.** Trae su propio aviso — *"Cultural/source-form
+review required before public use"* — y una aprobación de autoría no resuelve
+esa revisión aparte. Sigue en `rights_status: UNKNOWN` hasta que se haga esa
+revisión específica.
+
 ## OCIN-CAND-001 — Mirror Field 07
 
 ```yaml
