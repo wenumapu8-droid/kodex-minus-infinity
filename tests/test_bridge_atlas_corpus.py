@@ -82,6 +82,40 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_kdx014_rights_status_review_flag_is_read_into_the_wrong_field(self) -> None:
+        # FLAGGED, NOT FIXED — needs a canon decision, see PR description.
+        #
+        # research/CORPUS_LOCK_V0_DRAFT.md line ~225 puts an explicit
+        # `rights_status: REVIEW_REQUIRED` on KDX-CORPUS-014 (PACK-TYPE-002).
+        # It is the only Section A (KODEX VISUAL / CODE CORPUS) row that
+        # declares this field at all — every other row is silent on rights
+        # and gets the section default (REFERENCE_ONLY).
+        #
+        # extract_kdx_rows() in scripts/bridge_atlas_corpus_v1.py reads that
+        # same `rights_status` value into `cultural` (SourceRow.cultural_status
+        # -> record["culturalStatus"]), not into `rights` (-> record
+        # ["rightsStatus"]), which is instead derived from `status`
+        # (ARCHIVE_VERIFIED/REPOSITORY_VERIFIED/SOURCE_MIGRATED) and always
+        # resolves to the section default. Net effect on the generated
+        # sources.json: KDX-CORPUS-014 comes out as rightsStatus
+        # "REFERENCE_ONLY" (i.e. rights not flagged) and culturalStatus
+        # "REVIEW_REQUIRED" (a cultural-sensitivity flag the source document
+        # never made) — the document's actual rights-review flag is lost.
+        #
+        # This test pins the *current, measured* behavior so it does not
+        # silently drift, and exists to make the discrepancy visible. It
+        # deliberately does not change scripts/bridge_atlas_corpus_v1.py or
+        # decide what the corrected rightsStatus should be (RIGHTS_ENUM has
+        # no direct "REVIEW_REQUIRED" analogue — CLEAR/REFERENCE_ONLY/
+        # UNKNOWN/BLOCKED are the only options) — that classification call
+        # belongs to the creator per this repo's provenance rules, not to an
+        # automated bridge run.
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        by_id = {s["id"]: s for s in sources}
+        kdx014 = by_id["SRC-KDX-CORPUS-014"]
+        self.assertEqual(kdx014["rightsStatus"], "REFERENCE_ONLY")
+        self.assertEqual(kdx014["culturalStatus"], "REVIEW_REQUIRED")
+
 
 if __name__ == "__main__":
     unittest.main()
