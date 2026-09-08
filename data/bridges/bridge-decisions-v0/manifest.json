@@ -1,0 +1,19 @@
+{
+  "bridge": "bridge-decisions-v0",
+  "generator": "scripts/bridge_decisions_v1.py",
+  "source_log": "research/KODEX-DECISIONES-2026-08-14.md",
+  "counts": {
+    "sections": 6,
+    "resolved": 3,
+    "conflict": 1,
+    "pending": 2,
+    "sources": 1,
+    "claims": 6
+  },
+  "anomalies": [],
+  "content_digest": {
+    "sources": "559baf4a1921404b980054351325eb16e2cd18ba07aeab4c0bf422040a6c1429",
+    "claims": "a4e716961e727fd580bc43d7d38e2e8f3867c84999fdb9b160aa4ac3ac5723d2"
+  },
+  "digest": "b4367427a61dc2135de4e3435c2f74611a75a843b97513c91dd833f6f864dc54"
+}

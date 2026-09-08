@@ -1,0 +1,128 @@
+[
+  {
+    "id": "CLM-DECISIONES-001",
+    "class": "TESTIMONY",
+    "statement": "Las siete escenas son el índice del sitio — resolved, recorded verbatim from KODEX-DECISIONES.md; not paraphrased or resolved by this bridge.",
+    "sourceIds": [
+      "SRC-KODEX-DECISIONES-2026-08-14"
+    ],
+    "variables": [],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-10",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct extraction of a level-2 section from the committed decisions log; no interpretation added.",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "ADMITTED",
+    "attribution": "Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-DECISIONES-002",
+    "class": "TESTIMONY",
+    "statement": "Qué es un ciclo completo — resolved, recorded verbatim from KODEX-DECISIONES.md; not paraphrased or resolved by this bridge.",
+    "sourceIds": [
+      "SRC-KODEX-DECISIONES-2026-08-14"
+    ],
+    "variables": [],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-10",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct extraction of a level-2 section from the committed decisions log; no interpretation added.",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "ADMITTED",
+    "attribution": "Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-DECISIONES-003",
+    "class": "TESTIMONY",
+    "statement": "KODEX es la fuente; las marcas salen de él — resolved, recorded verbatim from KODEX-DECISIONES.md; not paraphrased or resolved by this bridge.",
+    "sourceIds": [
+      "SRC-KODEX-DECISIONES-2026-08-14"
+    ],
+    "variables": [],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-10",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct extraction of a level-2 section from the committed decisions log; no interpretation added.",
+    "formula": null,
+    "uncertainty": null,
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "ADMITTED",
+    "attribution": "Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-DECISIONES-004",
+    "class": "UNKNOWN",
+    "statement": "Los cursos, sin decidir — pending, recorded verbatim from KODEX-DECISIONES.md; not paraphrased or resolved by this bridge.",
+    "sourceIds": [
+      "SRC-KODEX-DECISIONES-2026-08-14"
+    ],
+    "variables": [],
+    "unit": null,
+    "denominator": null,
+    "timeScope": "2026-08-10",
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct extraction of a level-2 section from the committed decisions log; no interpretation added.",
+    "formula": null,
+    "uncertainty": "CONFLICT and PENDING sections are explicitly unresolved — this bridge does not decide them.",
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-DECISIONES-005",
+    "class": "UNKNOWN",
+    "statement": "CONFLICTO REGISTRADO · el grafo A–Y no es el alfabeto A–Y — conflict, recorded verbatim from KODEX-DECISIONES.md; not paraphrased or resolved by this bridge.",
+    "sourceIds": [
+      "SRC-KODEX-DECISIONES-2026-08-14"
+    ],
+    "variables": [],
+    "unit": null,
+    "denominator": null,
+    "timeScope": null,
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct extraction of a level-2 section from the committed decisions log; no interpretation added.",
+    "formula": null,
+    "uncertainty": "CONFLICT and PENDING sections are explicitly unresolved — this bridge does not decide them.",
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "Nicolás Ortega / Ocín"
+  },
+  {
+    "id": "CLM-DECISIONES-006",
+    "class": "UNKNOWN",
+    "statement": "Sigue esperando decisión — pending, recorded verbatim from KODEX-DECISIONES.md; not paraphrased or resolved by this bridge.",
+    "sourceIds": [
+      "SRC-KODEX-DECISIONES-2026-08-14"
+    ],
+    "variables": [],
+    "unit": null,
+    "denominator": null,
+    "timeScope": null,
+    "geographyScope": null,
+    "populationScope": null,
+    "method": "Direct extraction of a level-2 section from the committed decisions log; no interpretation added.",
+    "formula": null,
+    "uncertainty": "CONFLICT and PENDING sections are explicitly unresolved — this bridge does not decide them.",
+    "contradictions": [],
+    "limitations": [],
+    "publicationStatus": "REVIEW",
+    "attribution": "Nicolás Ortega / Ocín"
+  }
+]
