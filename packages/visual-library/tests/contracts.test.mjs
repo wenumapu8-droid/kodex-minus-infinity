@@ -87,9 +87,30 @@ test("agent resource catalog is broad, searchable, and license-aware", async () 
 test("all supplied references map to reusable families and rights state", async () => {
   const data = JSON.parse(await readFile(new URL("../assets/reference-map.json", import.meta.url), "utf8"));
   assert.equal(data.references.length, 16);
-  assert.ok(data.references.every((item) => item.id && item.file && item.families.length && item.rights));
-  assert.ok(data.references.some((item) => item.rights === "creator-supplied"));
+  assert.ok(data.references.every((item) => item.id && item.file && item.title && item.summary && item.families.length && item.components.length && item.bestFor.length && item.avoid.length && item.rights && item.transform));
+  assert.ok(data.references.every((item) => item.file.startsWith("KDX-")));
+  assert.equal(new Set(data.references.map((item) => item.id)).size, data.references.length);
+  assert.ok(data.references.some((item) => item.rights === "creator-owned"));
   assert.ok(data.references.some((item) => item.rights === "reference-only"));
+});
+
+test("portfolio ingestion contract keeps private sources separate from production derivatives", async () => {
+  const data = JSON.parse(await readFile(new URL("../assets/portfolio-ingestion-contract.json", import.meta.url), "utf8"));
+  assert.ok(data.requiredFields.includes("visibility"));
+  assert.ok(data.visibility.includes("private-source"));
+  assert.ok(data.visibility.includes("public-asset"));
+  assert.ok(data.transformModes.includes("derive-pattern"));
+  assert.ok(data.gates["cultural-material"].includes("no-generic-tribal-tag"));
+  assert.equal(data.entryTemplate.visibility, "private-source");
+});
+
+test("collage source index connects all systems and portfolio families", async () => {
+  const data = JSON.parse(await readFile(new URL("../assets/collage-source-index.json", import.meta.url), "utf8"));
+  assert.equal(data.portfolioFamilies.length, 11);
+  assert.ok(["github", "google-drive", "linear", "legacy-imac"].every((system) => data.sources.some((source) => source.system === system)));
+  assert.ok(data.sources.every((source) => source.status && source.agentUse));
+  assert.ok(data.portfolioFamilies.every((family) => family.id && family.driveFolderId && family.status && family.receivers.length));
+  assert.ok(data.linearCrosswalk.some((item) => item.issue === "KOD-37" && item.blocking));
 });
 
 test("capability router returns small stacks with explicit fallbacks", async () => {
@@ -105,4 +126,31 @@ test("capability router returns small stacks with explicit fallbacks", async () 
     }
   }
   assert.ok(data.routes.some((route) => route.intent.includes("public-wall") && route.primary.includes("fabricjs")));
+});
+
+
+test("OCIN BOOK queue is item-level, deterministic, and honest about pending analysis", async () => {
+  const data = JSON.parse(await readFile(new URL("../assets/ocin-book-ingestion-queue.json", import.meta.url), "utf8"));
+  assert.equal(data.truth.totalUsableAssets, 116);
+  assert.equal(data.truth.pendingVisualAnalysis, data.entries.filter((item) => item.status === "PENDING_VISUAL_ANALYSIS").length);
+  assert.equal(new Set(data.entries.map((item) => item.driveFileId)).size, data.entries.length);
+  assert.ok(data.entries.every((item) => item.id && item.sourceName && item.family && item.driveUrl));
+  assert.ok(data.entries.every((item) => item.visibility === "private-source"));
+  assert.ok(data.entries.every((item) => item.epistemicStatus === "NEEDS_CONFIRMATION"));
+  assert.ok(data.entries.every((item) => item.requiredNext.includes("classify NEW/VARIANT/DUPLICATE")));
+  assert.ok(data.safeguards.some((item) => item.includes("do not delete physical files")));
+});
+
+
+test("starter corpus covers every control reference exactly once without approving source pixels", async () => {
+  const corpus = JSON.parse(await readFile(new URL("../assets/collage-starter-corpus-v1.json", import.meta.url), "utf8"));
+  const refs = JSON.parse(await readFile(new URL("../assets/reference-map.json", import.meta.url), "utf8"));
+  const sourceIds = corpus.layers.flatMap((layer) => layer.sourceIds);
+  assert.equal(corpus.layers.length, 8);
+  assert.equal(sourceIds.length, 16);
+  assert.equal(new Set(sourceIds).size, 16);
+  assert.deepEqual(new Set(sourceIds), new Set(refs.references.map((item) => item.id)));
+  assert.equal(corpus.truth.productionBytesApproved, 0);
+  assert.ok(["THRESHOLD", "PROLOGUE", "DESCENT", "ARCHIVE", "MACHINE", "COSMOLOGY", "RETURN"].every((scene) => corpus.canonicalScenes.includes(scene)));
+  assert.ok(corpus.layers.every((layer) => layer.stack.length && layer.fallback && layer.acceptance.length));
 });

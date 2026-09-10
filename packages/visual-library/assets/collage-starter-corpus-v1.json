@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "corpusId": "kdx.collage-starter.v1",
+  "status": "READY_FOR_ASSEMBLY",
+  "purpose": "First bounded KODEX collage corpus assembled from the 16 semantic control references.",
+  "truth": {
+    "records": 16,
+    "creatorOwnedCanon": 4,
+    "referenceOnly": 12,
+    "productionBytesApproved": 0,
+    "rule": "Reference-only records contribute mechanics and direction, never copied pixels. Creator-owned canon still requires an explicit public-asset derivative record before shipping."
+  },
+  "canonicalScenes": ["THRESHOLD", "PROLOGUE", "DESCENT", "ARCHIVE", "MACHINE", "COSMOLOGY", "RETURN"],
+  "layers": [
+    {
+      "id": "layer.journey-field",
+      "sceneJobs": ["THRESHOLD", "RETURN"],
+      "sourceIds": ["canon.journey-map.master", "canon.journey-map.origin-sketch"],
+      "primitive": "journey-field",
+      "stack": ["SVG", "animejs"],
+      "interaction": "Pointer proximity reveals routes; keyboard focus exposes the same node labels; heart remains optional.",
+      "fallback": "Static SVG map with semantic links and no forced path.",
+      "acceptance": ["−∞ and +∞ remain directional metaphors", "heart node is skippable", "all routes are keyboard reachable"]
+    },
+    {
+      "id": "layer.signal-vortex",
+      "sceneJobs": ["PROLOGUE", "DESCENT"],
+      "sourceIds": ["canon.signal-vortex.plate"],
+      "primitive": "flow-field",
+      "stack": ["Canvas", "animejs"],
+      "interaction": "Observer position bends a bounded particle field; telemetry reflects actual scene state.",
+      "fallback": "Creator-owned poster plus reduced waveform.",
+      "acceptance": ["no fabricated scientific telemetry", "30fps mobile target", "poster shown when canvas is unavailable"]
+    },
+    {
+      "id": "layer.glyph-grammar",
+      "sceneJobs": ["MACHINE", "COSMOLOGY"],
+      "sourceIds": ["canon.glyph-system.board"],
+      "primitive": "composite-glyph",
+      "stack": ["SVG", "animejs"],
+      "interaction": "Core, ring, field and signal layers compose according to node state.",
+      "fallback": "Static SVG glyph sheet with textual state label.",
+      "acceptance": ["every line has a declared function", "glyph states are deterministic", "no generic tribal labeling"]
+    },
+    {
+      "id": "layer.editorial-archive",
+      "sceneJobs": ["ARCHIVE"],
+      "sourceIds": ["ref.interface.editorial-audio-narrative", "tool.kokonutui.animated-patterns", "radar.manus.agentic-web-building"],
+      "primitive": "editorial-collage",
+      "stack": ["CSS", "animejs"],
+      "interaction": "Media fragments expand into provenance cards; audio controls exist only when playable media exists.",
+      "fallback": "Linear document list with thumbnails, captions and source links.",
+      "acceptance": ["no dead controls", "mobile reading order is explicit", "external layouts are recomposed, not copied"]
+    },
+    {
+      "id": "layer.data-taxonomy",
+      "sceneJobs": ["ARCHIVE", "COSMOLOGY"],
+      "sourceIds": ["ref.diagram.radial-taxonomy", "ref.portrait.numeric-data-glyph", "tool.bkit.data-visualization"],
+      "primitive": "radial-taxonomy",
+      "stack": ["SVG", "d3"],
+      "interaction": "Real graph categories drive radial sectors; an authorized mask may resolve into an observer portrait.",
+      "fallback": "Accessible nested list and static SVG overview.",
+      "acceptance": ["all numbers map to real data", "labels remain readable", "portrait source is authorized"]
+    },
+    {
+      "id": "layer.deep-memory",
+      "sceneJobs": ["DESCENT", "RETURN"],
+      "sourceIds": ["ref.diagram.stratigraphic-layered-flow", "ref.diagram.human-toroidal-field"],
+      "primitive": "stratigraphy",
+      "stack": ["SVG", "d3"],
+      "interaction": "Scroll-free time scrub reveals accumulated layers and reversible circulation.",
+      "fallback": "Static layered section with legend and metaphor label.",
+      "acceptance": ["color has declared meaning", "toroidal field is labeled metaphor", "no biomedical claim"]
+    },
+    {
+      "id": "layer.living-specimens",
+      "sceneJobs": ["PROLOGUE", "ARCHIVE"],
+      "sourceIds": ["ref.creature.biOLUMINESCENT-axolotl", "ref.guardian.anubis-specimen"],
+      "primitive": "specimen-card",
+      "stack": ["CSS", "model-viewer"],
+      "interaction": "A reviewed original or licensed specimen responds to focus with anatomy, origin and cultural context.",
+      "fallback": "Optimized WebP with caption, provenance and non-motion description.",
+      "acceptance": ["reference pixels never ship", "per-item license verified", "cultural guardian has context and authorization status"]
+    },
+    {
+      "id": "layer.motion-policy",
+      "sceneJobs": ["THRESHOLD", "PROLOGUE", "DESCENT", "ARCHIVE", "MACHINE", "COSMOLOGY", "RETURN"],
+      "sourceIds": ["tool.animejs.dom-svg-motion", "tool.motiondev.interactions"],
+      "primitive": "motion-orchestrator",
+      "stack": ["animejs"],
+      "interaction": "One scene-level motion owner; Motion.dev is permitted only for bounded drag/spring behavior that Anime.js does not own.",
+      "fallback": "CSS state changes and prefers-reduced-motion mode.",
+      "acceptance": ["no duplicate animation runtimes per behavior", "reduced motion preserves meaning", "tool screenshots never ship"]
+    }
+  ],
+  "assemblyOrder": ["layer.journey-field", "layer.signal-vortex", "layer.glyph-grammar", "layer.editorial-archive", "layer.data-taxonomy", "layer.deep-memory", "layer.living-specimens"],
+  "handoffs": {
+    "KOD-10": "Use this as the 16-record control set and choose public-safe derivatives separately from OCIN / BOOK.",
+    "KOD-37": "Return only local iMac implementations that satisfy one of these layer jobs and are absent from GitHub/Drive.",
+    "KOD-54": "Track each layer by evidence fields; keep unknown progress UNMEASURED."
+  }
+}
