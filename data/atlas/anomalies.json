@@ -1,0 +1,403 @@
+{
+  "system": "KODEX−∞",
+  "artifact": "derived-from-visual-atlas-master",
+  "bridge": "KOD-19 / Bridge 1",
+  "sourceOfTruth": "https://docs.google.com/spreadsheets/d/1RLhA2xmApx1YDfHIeWjIqlYz17OHkuxFbfUXejzcS_4",
+  "regenerable": true,
+  "doNotEditByHand": true,
+  "coordinateAssignmentPolicy": "Only A/M/Y are canonical. B–L and N–X are derived in Bridge 2 (KODEX_ALPHABET_MATRIX), never inferred from initials.",
+  "claimClassPolicy": "claimClass is never inferred. Unresolved records stay UNKNOWN per canon/KODEX_EPISTEMIC_STANDARD.md.",
+  "count": 45,
+  "anomalies": [
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-GLYPH-TILE-F07",
+      "field": "EPISTEMIC_LAYER",
+      "value": "DESIGN_SYSTEM",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "DESIGN_SYSTEM",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-IMG-004",
+      "field": "EPISTEMIC_LAYER",
+      "value": "MOD",
+      "reassignedTo": "domain",
+      "normalizedAs": "MODEL_CANDIDATE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-IMG-006",
+      "field": "EPISTEMIC_LAYER",
+      "value": "MOD",
+      "reassignedTo": "domain",
+      "normalizedAs": "MODEL_CANDIDATE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-ORIGIN-SKETCH-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "ORIGIN",
+      "reassignedTo": "contentFamily",
+      "normalizedAs": "ORIGIN",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-ORIGIN-SKETCH-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "ARCHIVE",
+      "reassignedTo": "contentFamily",
+      "normalizedAs": "ARCHIVE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-PATTERN-DIAGONAL-006",
+      "field": "EPISTEMIC_LAYER",
+      "value": "DESIGN_SYSTEM",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "DESIGN_SYSTEM",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-POSTER-ARCHIVE-SIGNAL-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "DESIGN_SYSTEM",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "DESIGN_SYSTEM",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-REF-SIGNAL-FIELD-014",
+      "field": "EPISTEMIC_LAYER",
+      "value": "REFERENCE",
+      "reassignedTo": "sourceType",
+      "normalizedAs": "REFERENCE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-ALPHABET-004",
+      "field": "EPISTEMIC_LAYER",
+      "value": "MOD",
+      "reassignedTo": "domain",
+      "normalizedAs": "MODEL_CANDIDATE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-ANOMALY-008",
+      "field": "EPISTEMIC_LAYER",
+      "value": "MOD",
+      "reassignedTo": "domain",
+      "normalizedAs": "MODEL_CANDIDATE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-COMMONS-010",
+      "field": "EPISTEMIC_LAYER",
+      "value": "SOCIAL",
+      "reassignedTo": "sourceType",
+      "normalizedAs": "SOCIAL",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-GENESIS-005",
+      "field": "EPISTEMIC_LAYER",
+      "value": "BIOGRAPHY",
+      "reassignedTo": "sourceType",
+      "normalizedAs": "BIOGRAPHY",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-GENESIS-005",
+      "field": "EPISTEMIC_LAYER",
+      "value": "ARCHIVE",
+      "reassignedTo": "contentFamily",
+      "normalizedAs": "ARCHIVE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-ORIGIN-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "MOD",
+      "reassignedTo": "domain",
+      "normalizedAs": "MODEL_CANDIDATE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-RELIC-020",
+      "field": "EPISTEMIC_LAYER",
+      "value": "ARCHIVE",
+      "reassignedTo": "contentFamily",
+      "normalizedAs": "ARCHIVE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-SOURCE-009",
+      "field": "EPISTEMIC_LAYER",
+      "value": "EPISTEMIC",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "EPISTEMIC",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SCREEN-SOURCE-009",
+      "field": "EPISTEMIC_LAYER",
+      "value": "ARCHIVE",
+      "reassignedTo": "contentFamily",
+      "normalizedAs": "ARCHIVE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SYS-MASTER-BOARD-010",
+      "field": "EPISTEMIC_LAYER",
+      "value": "DESIGN_SYSTEM",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "DESIGN_SYSTEM",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SYS-RITUAL-POSTER-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "DESIGN_SYSTEM",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "DESIGN_SYSTEM",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SYS-VISUAL-GUIDE-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "DESIGN_SYSTEM",
+      "reassignedTo": "systemLayer",
+      "normalizedAs": "DESIGN_SYSTEM",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "KDX-SYSTEM-PROCESSION-FIELD-005",
+      "field": "EPISTEMIC_LAYER",
+      "value": "ANC-REVIEW",
+      "reassignedTo": "domain",
+      "normalizedAs": "ANC",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "FIELD_MISPLACEMENT",
+      "record": "R-001",
+      "field": "EPISTEMIC_LAYER",
+      "value": "MOD",
+      "reassignedTo": "domain",
+      "normalizedAs": "MODEL_CANDIDATE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Valor no epistemológico hallado en EPISTEMIC_LAYER; reasignado en el derivado. La hoja no fue modificada."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-017",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-018",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-019",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-020",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-025",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-026",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-027",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "MISSING_PROVENANCE",
+      "record": "KDX-IMG-028",
+      "field": "SOURCE_URL",
+      "value": "",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Sin procedencia no puede publicarse."
+    },
+    {
+      "type": "SOURCE_DATA_ANOMALY",
+      "record": "SCENE::SOURCE_TYPE",
+      "field": "SCENE",
+      "value": "SOURCE_TYPE",
+      "status": "NEEDS_SOURCE_FIX",
+      "note": "Nombre de columna presente como dato: celda desalineada en la hoja origen. Tolerado de forma determinista; requiere corrección manual en el Sheet."
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-011",
+      "field": "EPISTEMIC_LAYER",
+      "value": "HIST",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-014",
+      "field": "EPISTEMIC_LAYER",
+      "value": "HYP",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-015",
+      "field": "EPISTEMIC_LAYER",
+      "value": "HYP",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-017",
+      "field": "EPISTEMIC_LAYER",
+      "value": "SCI",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-017",
+      "field": "EPISTEMIC_LAYER",
+      "value": "OPEN_QUESTION",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-018",
+      "field": "EPISTEMIC_LAYER",
+      "value": "CHEM",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-019",
+      "field": "EPISTEMIC_LAYER",
+      "value": "AGRO",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-019",
+      "field": "EPISTEMIC_LAYER",
+      "value": "SOC",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-020",
+      "field": "EPISTEMIC_LAYER",
+      "value": "HIST",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-021",
+      "field": "EPISTEMIC_LAYER",
+      "value": "CHEM",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-022",
+      "field": "EPISTEMIC_LAYER",
+      "value": "EVIDENCE_REVIEW",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-023",
+      "field": "EPISTEMIC_LAYER",
+      "value": "NEURO",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-023",
+      "field": "EPISTEMIC_LAYER",
+      "value": "CLINICAL_RESEARCH",
+      "status": "NEEDS_CONFIRMATION"
+    },
+    {
+      "type": "UNKNOWN_ENUM",
+      "record": "R-024",
+      "field": "EPISTEMIC_LAYER",
+      "value": "HIST",
+      "status": "NEEDS_CONFIRMATION"
+    }
+  ]
+}

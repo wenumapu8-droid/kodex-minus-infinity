@@ -1,0 +1,637 @@
+{
+  "system": "KODEX−∞",
+  "artifact": "derived-from-visual-atlas-master",
+  "bridge": "KOD-19 / Bridge 1",
+  "sourceOfTruth": "https://docs.google.com/spreadsheets/d/1RLhA2xmApx1YDfHIeWjIqlYz17OHkuxFbfUXejzcS_4",
+  "regenerable": true,
+  "doNotEditByHand": true,
+  "coordinateAssignmentPolicy": "Only A/M/Y are canonical. B–L and N–X are derived in Bridge 2 (KODEX_ALPHABET_MATRIX), never inferred from initials.",
+  "claimClassPolicy": "claimClass is never inferred. Unresolved records stay UNKNOWN per canon/KODEX_EPISTEMIC_STANDARD.md.",
+  "count": 24,
+  "claims": [
+    {
+      "id": "CLM-R-001",
+      "topic": "Reaction-diffusion / morphogenesis",
+      "statement": "Turing's 1952 morphogenesis work proposed reaction-diffusion mechanisms as a mathematical route for spatial biological pattern formation.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "MATH",
+        "BIO"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "bibliographic / primary-paper index",
+      "kodexTranslation": "Use reaction-diffusion as a real mathematical generator for spots, stripes, membrane fields and morphogenetic transitions.",
+      "limitations": [
+        "Do not say every natural pattern is a Turing pattern or that the model proves a universal life code."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-001",
+      "relatedNodes": [
+        "KDX-NODE-MORPHOGENESIS",
+        "KDX-NODE-LIVING-GATE",
+        "KDX-NODE-REACTION-DIFFUSION"
+      ],
+      "domain": [
+        "MODEL_CANDIDATE"
+      ]
+    },
+    {
+      "id": "CLM-R-002",
+      "topic": "Axolotl regeneration",
+      "statement": "Axolotls regenerate complex structures; current research examines gene regulation, blastema formation, signaling and positional plasticity.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "BIO"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "peer-reviewed review",
+      "kodexTranslation": "Translate regeneration into staged visual states: wound closure → blastema → pattern information → differentiation → reintegration.",
+      "limitations": [
+        "Do not imply humans can currently regenerate limbs by activating an axolotl-like pathway."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-002",
+      "relatedNodes": [
+        "KDX-NODE-REGENERATION",
+        "KDX-BANK-RAW-014"
+      ]
+    },
+    {
+      "id": "CLM-R-003",
+      "topic": "Chameleon colour change",
+      "statement": "Rapid colour change in panther chameleons involves active tuning of guanine nanocrystal lattices in iridophore cells, not simply pigment movement or camouflage.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "BIO",
+        "PHY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "peer-reviewed research",
+      "kodexTranslation": "Build adaptive-surface shaders around lattice spacing, structural colour and state-dependent reflectance.",
+      "limitations": [
+        "Do not reduce chameleon colour change to camouflage only."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-003",
+      "relatedNodes": [
+        "KDX-NODE-ADAPTIVE-SURFACE",
+        "KDX-BANK-RAW-020"
+      ]
+    },
+    {
+      "id": "CLM-R-004",
+      "topic": "Bat echolocation",
+      "statement": "Many insectivorous bats emit ultrasonic calls and use returning echoes for acoustic orientation and prey detection.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "BIO",
+        "PHYS"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "museum/science reference",
+      "kodexTranslation": "Use emitted pulse → reflected echo → spatial reconstruction as an interaction model for hidden nodes.",
+      "limitations": [
+        "Do not describe echolocation as mystical extrasensory perception."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-004",
+      "relatedNodes": [
+        "KDX-NODE-ECHOLOCATION",
+        "KDX-BANK-RAW-019"
+      ]
+    },
+    {
+      "id": "CLM-R-005",
+      "topic": "Mapuche kultrún / four-part world",
+      "statement": "Museo Chileno de Arte Precolombino describes the kultrún surface as divided into four parts, with the machi positioned at the centre and astral powers around it; designs vary by machi.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ANC",
+        "ETHNO",
+        "SYM"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "museum / curatorial",
+      "kodexTranslation": "Potential source for a four-quadrant territorial/cosmological interface, but only with explicit Mapuche attribution and context.",
+      "limitations": [
+        "Do not turn the kultrún into generic 'sacred geometry' or claim one fixed universal design."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-005",
+      "relatedNodes": [
+        "KDX-NODE-WENU-MAPU",
+        "KDX-NODE-FOUR-DIRECTIONS"
+      ]
+    },
+    {
+      "id": "CLM-R-006",
+      "topic": "Washoe cultural resources / place",
+      "statement": "The Washoe Tribe's THPO/Cultural Resources work explicitly links culture, language, ceremonies, traditional practices and place, including revitalization of ceremonies, fishing practices and Washoe place names.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ANC",
+        "CONTEMPORARY_TRIBAL_SOURCE"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "official tribal source",
+      "kodexTranslation": "For Tahoe-related KODEX material, prioritize living tribal voice, place names and consultation over secondary aesthetic borrowing.",
+      "limitations": [
+        "Do not extract sacred sites, ceremonies or motifs for decorative use without permission/context."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-006",
+      "relatedNodes": [
+        "KDX-NODE-TERRITORY",
+        "KDX-NODE-WASHOE",
+        "KDX-NODE-LAKE-TAHOE"
+      ]
+    },
+    {
+      "id": "CLM-R-007",
+      "topic": "Kali iconography",
+      "statement": "British Museum examples document Kali with dark/black coloration, severed-head garlands, sword/severed head motifs, multiple arms and forms associated with Bengal; iconography varies by form and community.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "REL",
+        "ANC",
+        "ART_HISTORY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "museum / community-consulted",
+      "kodexTranslation": "RAW-037 can now be tagged Kali-inspired with documented correspondences, while synthetic costume details remain ART.",
+      "limitations": [
+        "Do not flatten Kali into a generic 'death goddess' or divorce imagery from living Hindu worship."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-007",
+      "relatedNodes": [
+        "KDX-BANK-RAW-037",
+        "KDX-NODE-DARK-GODDESS"
+      ]
+    },
+    {
+      "id": "CLM-R-008",
+      "topic": "Ganesha iconography",
+      "statement": "The Met describes Ganesha as the elephant-headed son of Shiva and Parvati, widely associated with new beginnings and removal of obstacles; historical images vary in implements and context.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "REL",
+        "ANC",
+        "ART_HISTORY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "museum / art history",
+      "kodexTranslation": "RAW-040 can function as a threshold/prologue reference only with respectful context rather than as a game mechanic.",
+      "limitations": [
+        "Do not treat a worshipped deity as a fictional KODEX character or 'guardian NPC'."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-008",
+      "relatedNodes": [
+        "KDX-BANK-RAW-040",
+        "KDX-NODE-OBSTACLE-THRESHOLD"
+      ]
+    },
+    {
+      "id": "CLM-R-009",
+      "topic": "Sekhmet iconography",
+      "statement": "British Museum identifies Sekhmet as a lioness-headed Egyptian deity associated with battle power and the capacity to bring or ward off pestilence; statues may include solar disk, ankh and papyrus sceptre.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ANC",
+        "ART_HISTORY",
+        "REL"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "museum / Egyptology",
+      "kodexTranslation": "RAW-044 can be separated into historical attributes vs KODEX's protective/destructive polarity.",
+      "limitations": [
+        "Do not present synthetic jewelry/costume details as archaeological evidence."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-009",
+      "relatedNodes": [
+        "KDX-BANK-RAW-044",
+        "KDX-NODE-LIONESS-SOLAR-GUARDIAN"
+      ]
+    },
+    {
+      "id": "CLM-R-010",
+      "topic": "Feathered serpent traditions",
+      "statement": "Feathered-serpent imagery occurs across distinct Mesoamerican contexts; The Met documents Mexica Quetzalcoatl-Ehecatl associations and Maya/Chichen Itza feathered-serpent imagery, which should not be collapsed into one undifferentiated tradition.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ANC",
+        "ART_HISTORY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "museum / art history",
+      "kodexTranslation": "RAW-043 should remain a fictional feathered-reptile node unless KODEX intentionally cites a specific documented lineage.",
+      "limitations": [
+        "Do not use Quetzalcoatl, Kukulkan and Teotihuacan feathered-serpent imagery as interchangeable names/symbols."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-010",
+      "relatedNodes": [
+        "KDX-BANK-RAW-043",
+        "KDX-NODE-FEATHERED-REPTILE"
+      ]
+    },
+    {
+      "id": "CLM-R-011",
+      "topic": "Jungian archetypes / collective unconscious",
+      "statement": "Archetypes and the collective unconscious are theoretical constructs central to Jung's analytical psychology, developed as recurring psychic forms and motifs; they are historically influential but should not be presented as established biological structures.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "PSY",
+        "PHI"
+      ],
+      "sourceDeclaredStatus": "SOURCE_FOUND_NEEDS_ACADEMIC_SECONDARY",
+      "sourceType": "primary theoretical text mirror",
+      "kodexTranslation": "Use archetypes as a comparative symbolic/navigation layer for Observer, Shadow, Self, Return and dream material.",
+      "limitations": [
+        "Do not say archetypes are scientifically proven inherited images or universal biological memories."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-011",
+      "relatedNodes": [
+        "KDX-NODE-OBSERVER",
+        "KDX-NODE-SHADOW",
+        "KDX-NODE-SELF"
+      ],
+      "unclassified": [
+        "HIST"
+      ]
+    },
+    {
+      "id": "CLM-R-012",
+      "topic": "Jungian synchronicity",
+      "statement": "Synchronicity is Jung's proposed acausal framework for subjectively meaningful coincidences; it belongs to analytical psychology/philosophical interpretation, not an established physical law.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "PSY",
+        "PHI"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_THEORETICAL_SOURCE",
+      "sourceType": "professional analytical-psychology review",
+      "kodexTranslation": "Represent synchronicity as Jung's theory of subjectively meaningful acausal coincidence; pair it with statistical coincidence/apophenia as a separate explanatory lens.",
+      "limitations": [
+        "Do not describe synchronicity as a demonstrated physical force or proof that repeated numbers are messages from the universe."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-012",
+      "relatedNodes": [
+        "KDX-NODE-SYNCHRONICITY",
+        "KDX-NODE-11-11",
+        "KDX-NODE-OBSERVER"
+      ]
+    },
+    {
+      "id": "CLM-R-013",
+      "topic": "Poincaré disk / hyperbolic geometry",
+      "statement": "The Poincaré disk is a rigorous model of hyperbolic geometry inside the unit disk, where geodesics appear as diameters or circular arcs orthogonal to the boundary.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "MATH"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "mathematics reference",
+      "kodexTranslation": "Ideal for COSMOLOGY/−∞ interfaces: infinite hyperbolic distance can be visually compressed toward a finite boundary.",
+      "limitations": [
+        "Do not say the disk proves the universe is hyperbolic or that its boundary is literally cosmic memory."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-013",
+      "relatedNodes": [
+        "KDX-NODE-HYPERBOLIC-FIELD",
+        "KDX-NODE-NEGATIVE-INFINITY"
+      ]
+    },
+    {
+      "id": "CLM-R-014",
+      "topic": "AdS/CFT correspondence",
+      "statement": "AdS/CFT is a theoretical duality relating certain conformal field theories to gravitational/string descriptions in higher-dimensional anti-de Sitter backgrounds; it is not a generic proof that reality is a hologram.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "PHY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "peer-reviewed theoretical physics review",
+      "kodexTranslation": "Use as a scientifically grounded example of boundary/bulk duality for KODEX's field-and-frontier metaphors.",
+      "limitations": [
+        "Do not claim AdS/CFT demonstrates our universe is a simulation/hologram."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-014",
+      "relatedNodes": [
+        "KDX-NODE-HOLOGRAPHY",
+        "KDX-NODE-BOUNDARY",
+        "KDX-NODE-COSMOLOGY"
+      ],
+      "unclassified": [
+        "HYP"
+      ]
+    },
+    {
+      "id": "CLM-R-015",
+      "topic": "Black holes / Hawking radiation",
+      "statement": "Black holes are inferred through their gravitational effects; quantum theory predicts Hawking radiation, leading to evaporation scenarios and the still-open information problem.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "PHY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "space-agency science explainer",
+      "kodexTranslation": "Use horizon, information loss/recovery and evaporation as explicit open-problem motifs in DESCENT/RETURN.",
+      "limitations": [
+        "Do not present any proposed resolution of the black-hole information paradox as settled."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-015",
+      "relatedNodes": [
+        "KDX-NODE-BLACK-HOLE",
+        "KDX-NODE-INFORMATION",
+        "KDX-NODE-RETURN"
+      ],
+      "unclassified": [
+        "HYP"
+      ]
+    },
+    {
+      "id": "CLM-R-016",
+      "topic": "Shannon information / entropy",
+      "statement": "Shannon's 1948 communication theory formalized information measures for probabilistic symbol sources and communication channels; semantic meaning was not the target of the formalism.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "MATH",
+        "COMP"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "primary scientific paper",
+      "kodexTranslation": "Use entropy/coherence/noise as real signal-processing variables, while keeping KODEX's 'meaning' layer separate.",
+      "limitations": [
+        "Do not equate Shannon entropy directly with thermodynamic entropy, consciousness or semantic meaning without qualification."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-016",
+      "relatedNodes": [
+        "KDX-NODE-SIGNAL",
+        "KDX-NODE-ENTROPY",
+        "KDX-NODE-NOISE"
+      ]
+    },
+    {
+      "id": "CLM-R-017",
+      "topic": "UAP / scientific disclosure framing",
+      "statement": "NASA defines UAP as observations not identified as aircraft or known natural phenomena and states that limited high-quality data currently prevent firm scientific conclusions; NASA says there are no data supporting UAP as evidence of alien technology.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "space-agency scientific source",
+      "kodexTranslation": "Create a DISCLOSURE/UAP node around uncertainty, sensor quality, metadata, classification and anomaly—not around predetermined extraterrestrial conclusions.",
+      "limitations": [
+        "Do not claim current UAP evidence proves extraterrestrial craft, non-human intelligence or government-confirmed alien visitation."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-017",
+      "relatedNodes": [
+        "KDX-NODE-UAP",
+        "KDX-NODE-ANOMALY",
+        "KDX-NODE-OBSERVER",
+        "KDX-NODE-SOURCE"
+      ],
+      "unclassified": [
+        "SCI",
+        "OPEN_QUESTION"
+      ]
+    },
+    {
+      "id": "CLM-R-018",
+      "topic": "DNA structure / biological information",
+      "statement": "DNA is a two-stranded antiparallel double helix with sugar-phosphate backbones and complementary A-T/C-G base pairing; its structure enables storage and transmission of biological instructions.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "BIO"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "US genomics institute reference",
+      "kodexTranslation": "Use complementarity, antiparallel strands, replication and sequence as legitimate visual/computational metaphors for paired memory and transformation.",
+      "limitations": [
+        "Do not claim sound frequencies, symbols or intention directly 'activate DNA' without specific biological evidence."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-018",
+      "relatedNodes": [
+        "KDX-NODE-DNA",
+        "KDX-NODE-BIOLOGICAL-INFORMATION",
+        "KDX-NODE-COMPLEMENTARITY"
+      ],
+      "unclassified": [
+        "CHEM"
+      ]
+    },
+    {
+      "id": "CLM-R-019",
+      "topic": "Permaculture / agroecology evidence",
+      "statement": "Permaculture overlaps substantially with agroecological principles and offers promising design approaches, but the literature has historically been scientifically isolated and contains oversimplified claims; evidence varies by practice and context.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ECO"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "FAO index of peer-reviewed review",
+      "kodexTranslation": "Model permaculture as systems-design logic: feedback, diversity, water management, perennial polyculture, edge conditions and circular resource flows.",
+      "limitations": [
+        "Do not portray permaculture as a universally validated agricultural formula or substitute all ecological evidence with movement principles."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-019",
+      "relatedNodes": [
+        "KDX-NODE-PERMACULTURE",
+        "KDX-NODE-TERRITORY",
+        "KDX-NODE-REGENERATION"
+      ],
+      "unclassified": [
+        "AGRO",
+        "SOC"
+      ]
+    },
+    {
+      "id": "CLM-R-020",
+      "topic": "Anunna / Anunnaki historical framing",
+      "statement": "ORACC identifies Anunna (Akkadian Anunnaki/Anunnaku) as a changing group of gods in the Mesopotamian pantheon; in Sumerian sources the term can denote major gods or a local pantheon, and in later periods it can refer to underworld gods. There are no known depictions of the group as such.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ANC",
+        "REL"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "academic Assyriology resource",
+      "kodexTranslation": "Use Anunnaki only in a historically layered Mesopotamian node: terminology shifts by period, text and city; juxtapose later modern reinterpretations in a separate SPEC branch.",
+      "limitations": [
+        "Do not claim ancient Mesopotamian texts identify the Anunnaki as extraterrestrials, genetic engineers or visitors from another planet."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-020",
+      "relatedNodes": [
+        "KDX-NODE-ANUNNA",
+        "KDX-NODE-MESOPOTAMIA",
+        "KDX-NODE-MYTH-HISTORY"
+      ],
+      "unclassified": [
+        "HIST"
+      ]
+    },
+    {
+      "id": "CLM-R-021",
+      "topic": "Water / molecular foundation",
+      "statement": "Water is H2O, molecular weight 18.0153; its molecular and phase properties are measurable and extensively characterized. Molecular structure should be kept separate from symbolic claims about memory, sacred geometry or consciousness.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "PHY"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "US standards chemistry database",
+      "kodexTranslation": "Anchor WATER nodes in real chemistry and phase behavior; overlay river/cycle/memory/alchemy as explicit symbolic or cultural layers.",
+      "limitations": [
+        "Do not claim ordinary water molecules form a stable eight-pointed sacred-star architecture or store human intention as established science."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-021",
+      "relatedNodes": [
+        "KDX-NODE-WATER",
+        "KDX-NODE-HYDROLOGY",
+        "KDX-NODE-MOLECULE"
+      ],
+      "unclassified": [
+        "CHEM"
+      ]
+    },
+    {
+      "id": "CLM-R-022",
+      "topic": "Common mycorrhizal networks / evidence limits",
+      "statement": "Common mycorrhizal networks can connect roots through fungal hyphae, but a 2023 Nature Ecology & Evolution analysis found major popular claims—ubiquity, enhanced seedling performance via transfer, and preferential mother-tree support—insufficiently supported or unsupported.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "BIO",
+        "ECO"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "peer-reviewed perspective/evidence audit",
+      "kodexTranslation": "Use fungal networks as real symbiotic/network biology, while treating 'forest internet' or intentional tree messaging as metaphor unless a specific mechanism is supported.",
+      "limitations": [
+        "Do not present 'wood wide web', mother-tree resource allocation or conscious fungal communication as settled facts."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-022",
+      "relatedNodes": [
+        "KDX-NODE-MYCELIUM",
+        "KDX-NODE-NETWORK",
+        "KDX-NODE-SYMBIOSIS"
+      ],
+      "unclassified": [
+        "EVIDENCE_REVIEW"
+      ]
+    },
+    {
+      "id": "CLM-R-023",
+      "topic": "Psychedelics / neuroplasticity",
+      "statement": "Systematic and mechanistic reviews report evidence that psychedelic compounds can influence structural and functional neural plasticity, especially in preclinical studies; translation to human mechanisms and clinical outcomes remains an active research area.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "BIO"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "peer-reviewed systematic review",
+      "kodexTranslation": "For master-plant/altered-state nodes, show neural plasticity, receptor-level uncertainty, set/setting and phenomenology as separate layers rather than claiming metaphysical mechanisms.",
+      "limitations": [
+        "Do not claim psychedelics universally raise consciousness, reveal objective external entities, permanently heal disease, or validate spiritual cosmologies."
+      ],
+      "sensitivity": "CRITICAL",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-023",
+      "relatedNodes": [
+        "KDX-NODE-ALTERED-STATES",
+        "KDX-NODE-NEUROPLASTICITY",
+        "KDX-NODE-PLANT-MEDICINE"
+      ],
+      "unclassified": [
+        "NEURO",
+        "CLINICAL_RESEARCH"
+      ]
+    },
+    {
+      "id": "CLM-R-024",
+      "topic": "Namma / cosmic waters in Mesopotamian tradition",
+      "statement": "ORACC describes Namma as an early Mesopotamian goddess associated with Eridu, mother of Enki/Ea and with cosmogony; her name is written with a sign for cosmic subterranean waters, leading scholars to describe her as a 'Cosmic Ocean' in context.",
+      "claimClass": "UNKNOWN",
+      "claimClassNextAction": "human_review_assign_canonical_claim_class",
+      "domains": [
+        "ANC",
+        "REL"
+      ],
+      "sourceDeclaredStatus": "VERIFIED_SOURCE",
+      "sourceType": "academic Assyriology resource",
+      "kodexTranslation": "This creates a rigorously sourced bridge between WATER and MESOPOTAMIAN COSMOGONY without implying that chemistry confirms the myth.",
+      "limitations": [
+        "Do not treat Namma's cosmic-water symbolism as a scientific account of molecular water or merge it with later Tiamat traditions without period/context."
+      ],
+      "sensitivity": "HIGH",
+      "culturalReviewFlag": false,
+      "supportedBy": "SRC-R-024",
+      "relatedNodes": [
+        "KDX-NODE-NAMMA",
+        "KDX-NODE-WATER",
+        "KDX-NODE-ORIGIN"
+      ],
+      "unclassified": [
+        "HIST"
+      ]
+    }
+  ]
+}

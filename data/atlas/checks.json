@@ -1,0 +1,11 @@
+{
+  "outputSha256": "8e0eeff73ddcc791b523babb10b04c1ba167746c7ca9616964e7f8fa546f7aaf",
+  "duplicate_node_ids": [],
+  "duplicate_claim_ids": [],
+  "dangling_edges": [],
+  "unknown_claim_class": [],
+  "nodes_with_invented_coordinate": [],
+  "source_count_expected": 90,
+  "source_count_actual": 90,
+  "source_count_reconciled": true
+}
