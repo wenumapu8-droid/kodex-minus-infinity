@@ -1,0 +1,122 @@
+passportId: "VP-DNA-PASSAGE-V1"
+conceptId: "KDX-NODE-DNA-ASCENT"
+title: "DNA PASSAGE"
+status: "DRAFT"
+semanticPurpose: "To bridge verified biology of inheritance with KODEX symbolic lineage, allowing the user to traverse an origin structure."
+nodeQuestion: "La herencia es dato antes que símbolo. El ascenso no niega la biología: la lee dos veces."
+coordinateAssignment: null
+sourceRefs:
+  - id: "kodex-node-dna-ascent"
+    relation: "PRIMARY_CONCEPT"
+    notes: 
+      - "Summary: Bridges verified biology of inheritance with symbolic lineage."
+  - id: "r2-reference-art"
+    relation: "REFERENCE"
+    notes: 
+      - "pub-2b45...r2.dev reference material."
+provenanceBoundaries:
+  mayAbstract: 
+    - "Double helix structures"
+    - "Base pair ladder geometry"
+  mustNotCopy: 
+    - "Proprietary medical/genomic renders"
+  culturalSensitivity: 
+    - "Do not present symbolic lineage as a biological or genetic claim."
+informationHierarchy:
+  primary: "The structural ascent (Helix Passage)."
+  secondary: 
+    - "The dual layers (biological data layer vs mythopoetic symbolic layer)."
+  tertiary: 
+    - "Particle telemetry and light indicators."
+geometry:
+  primitives: 
+    - "Helix Core"
+    - "Base Pair Rungs"
+    - "Particle Cloud"
+  topology: "Ascending Cylindrical Lattice"
+  coordinateSystem: "Vertical Y-axis progression"
+  spatialLayers: 
+    - "Deep Void Background"
+    - "Biological/Structural Layer"
+    - "Symbolic Aura Layer"
+    - "Foreground Observer Path"
+composition:
+  focalStructure: "Centralized vertical column drawing the eye upward."
+  grid: "Helical/Cylindrical"
+  depthModel: "Extruded depth along the Y-axis."
+  negativeSpace: "Vast surrounding darkness to isolate the helix."
+  responsiveRules:
+    desktop: "Centered helix, scrolling drives ascension."
+    mobile: "Tight crop on the helix, swipe drives ascension."
+paletteRoles:
+  - role: "Biological Layer"
+    semanticMeaning: "Verified data and structure"
+    tokenOrRange: "Neutral/Clinical White"
+    colorIsNotOnlyChannel: true
+  - role: "Symbolic Layer"
+    semanticMeaning: "Mythopoetic/Source lineage"
+    tokenOrRange: "Violet (accent from KDX-NODE-DNA-ASCENT)"
+    colorIsNotOnlyChannel: true
+typographyRoles:
+  - role: "Telemetry"
+    behavior: "Monospaced, used strictly for abstract indicators, not fake biological readings."
+motion:
+  timescales: 
+    - "Continuous slow rotation (ambient)"
+    - "Scroll-driven Z/Y translation (interactive)"
+  stateTransitions: 
+    - "Resting to Ascending"
+  loopingBehavior: "Infinite vertical looping of the core structure."
+  reducedMotion: "Static helix without rotation, scroll jumps between distinct stages instead of smooth interpolation."
+interaction:
+  inputs: 
+    - "POINTER"
+    - "TOUCH"
+    - "KEYBOARD"
+  semanticActions: 
+    - "Traverse (scroll/swipe)"
+    - "Toggle Layer (switch between Biological and Symbolic view)"
+  stateChanges: 
+    - "Scrolling moves the camera along the helix."
+  memoryWrite:
+    enabled: true
+    key: "kodex-dna-passage-traversed"
+    description: "Records the depth of ascension achieved by the user."
+  exitBehavior: "Camera breaks through the top of the helix into a bright void."
+implementation:
+  medium: "WEBGL"
+  reusableEngineBoundary: "HelixPassageEngine (handles procedural generation of the double helix and traversal mechanics)."
+  sceneSpecificParts: 
+    - "Dual-layer rendering shader"
+  dependencies: 
+    - "Three.js"
+  performanceRisk: "HIGH"
+fallback:
+  noWebGL: "CSS 3D transformed helix or a sequence of static raster cross-sections."
+  noAudio: "Visual velocity indicators communicate traversal speed."
+  staticMode: "A single, high-fidelity hero render of the dual-layer helix."
+accessibility:
+  keyboardEquivalent: "Arrow keys (Up/Down) drive the traversal."
+  touchEquivalent: "Vertical swipe."
+  screenReaderAlternative: "Aria live region announcing progression milestones along the ascent."
+  nonColorEquivalent: "Biological vs Symbolic layers distinguished by line weight and particle density."
+  reducedMotionEquivalent: "Replaces continuous traversal with discrete, cross-faded snapshots."
+reviewChecks:
+  - "Are the biological and symbolic layers visually distinct without merging into pseudo-science?"
+  - "Does the traversal avoid creating a compulsory alphabet/reading sequence?"
+  - "Is the HelixPassage engine boundary clearly maintained?"
+targetCaptures:
+  - name: "desktop_wide"
+    width: 1920
+    height: 1080
+  - name: "mobile_ios"
+    width: 390
+    height: 844
+  - name: "mobile_android"
+    width: 412
+    height: 915
+epistemicConstraints:
+  - "Real DNA biology may inform the helix primitive."
+  - "Spiritual/cosmic/source passage is mythopoetic, not scientific DNA function."
+  - "Particle/light telemetry must not become fake biological measurement."
+scientificClaimPolicy: "MIXED_WITH_EXPLICIT_LABELS"

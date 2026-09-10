@@ -1,0 +1,128 @@
+passportId: "VP-SOURCE-SPHERE-V1"
+conceptId: "KDX-NODE-SOURCE-CHAMBER"
+title: "SOURCE SPHERE"
+status: "DRAFT"
+semanticPurpose: "To visualize the origin point as pure potential and sustained absence, integrating sphere/core/tree-flow geometry without making factual metaphysical claims."
+nodeQuestion: "El origen no es un comienzo: es lo que todavía no ha elegido forma. La unidad acá no cierra nada."
+coordinateAssignment: null
+sourceRefs:
+  - id: "kodex-node-source-chamber"
+    relation: "PRIMARY_CONCEPT"
+    notes: 
+      - "Summary: Holds the KODEX concept of origin as pure potential, silence and non-final unity."
+  - id: "kodex-tree-infinity-core"
+    relation: "REFERENCE"
+    notes: 
+      - "References the tree/root/portal/machine integration."
+  - id: "r2-reference-art"
+    relation: "REFERENCE"
+    notes: 
+      - "pub-2b45...r2.dev reference material."
+provenanceBoundaries:
+  mayAbstract: 
+    - "Spherical energy boundaries and nested shells"
+    - "Tree-flow/root structures branching from a core"
+  mustNotCopy: 
+    - "Historical religious/manuscript depictions of the soul or afterlife without heavy transformation"
+  culturalSensitivity: 
+    - "Do not claim factual knowledge of souls, afterlife, or literal metaphysical transit. Source/light/origin is entirely mythopoetic."
+informationHierarchy:
+  primary: "The central unbroken core (the sustained absence/silence)."
+  secondary: 
+    - "The structural shell and branching tree-flow/lattice."
+  tertiary: 
+    - "Atmospheric telemetry and generated particle flows."
+geometry:
+  primitives: 
+    - "Inner Sphere/Core (Void)"
+    - "Nested Shells"
+    - "Tree-Flow / Root Lattice"
+  topology: "Concentric Spherical Organism with Radial Flow"
+  coordinateSystem: "Spherical coordinates centered at (0,0,0)"
+  spatialLayers: 
+    - "Central Void (Source)"
+    - "Energy Shell Layer"
+    - "Branching/Root Emanations"
+    - "Atmospheric/Particle Envelope"
+composition:
+  focalStructure: "A gravitational center that draws attention inward to the sustained absence."
+  grid: "Radial / Spherical"
+  depthModel: "Deep central Z-axis void bounded by spherical layers."
+  negativeSpace: "The core itself is negative space (sustained absence without filling)."
+  responsiveRules:
+    desktop: "Centered sphere organism, pointer drives rotation and shell opacity."
+    mobile: "Scaled down to fit width, swipe controls rotation along the Y-axis."
+paletteRoles:
+  - role: "Core Void"
+    semanticMeaning: "Sustained absence / Pure potential"
+    tokenOrRange: "Absolute Black / Dark Void"
+    colorIsNotOnlyChannel: true
+  - role: "Shell / Tree-Flow"
+    semanticMeaning: "The structure containing/emanating from the source"
+    tokenOrRange: "Bone (accent from KDX-NODE-SOURCE-CHAMBER)"
+    colorIsNotOnlyChannel: true
+typographyRoles:
+  - role: "Telemetry"
+    behavior: "Monospaced, abstract indicators of structural flow, explicitly non-factual."
+motion:
+  timescales: 
+    - "Breathing expansion/contraction (slow, organic)"
+    - "Particle transit along tree-flow (medium)"
+  stateTransitions: 
+    - "Dormant to Breathing"
+    - "Breathing to Transmitting"
+  loopingBehavior: "Continuous organic pulse/breathe loop around the central void."
+  reducedMotion: "Static sphere shell, no breathing scale animation, no fast particle transit."
+interaction:
+  inputs: 
+    - "POINTER"
+    - "TOUCH"
+    - "KEYBOARD"
+  semanticActions: 
+    - "Rotate Organism"
+    - "Focus Core (dilate shells)"
+  stateChanges: 
+    - "Hovering/Focusing strips away outer shells to reveal the core void."
+  memoryWrite:
+    enabled: true
+    key: "kodex-source-chamber-witnessed"
+    description: "Records that the user focused on the sustained absence."
+  exitBehavior: "The sphere implodes into the void, leaving only the tree-flow roots."
+implementation:
+  medium: "WEBGL"
+  reusableEngineBoundary: "SourceSphereOrganism (encapsulates sphere geometry, tree-flow shaders, and breathing loop independently of the scene)."
+  sceneSpecificParts: 
+    - "Atmospheric post-processing"
+  dependencies: 
+    - "Three.js / ShaderMaterial"
+  performanceRisk: "HIGH"
+fallback:
+  noWebGL: "CSS radial gradients and layered SVGs simulating the sphere and roots."
+  noAudio: "Scale pulses and opacity shifts communicate the 'breathing' rhythm."
+  staticMode: "A high-fidelity static render of the Source Sphere."
+accessibility:
+  keyboardEquivalent: "Enter/Space triggers the 'Focus Core' state."
+  touchEquivalent: "Tap and hold dilates the shells."
+  screenReaderAlternative: "Aria live region describing the silent core and radiating branches."
+  nonColorEquivalent: "Core distinguished by absolute lack of geometry/texture rather than just color."
+  reducedMotionEquivalent: "Replaces breathing animation with discrete opacity toggles."
+reviewChecks:
+  - "Does the core feel like sustained absence rather than just a black circle?"
+  - "Are pointer, touch, and keyboard interactions semantically equivalent?"
+  - "Is the SourceSphereOrganism cleanly isolated for reuse?"
+  - "Does the generated telemetry avoid looking like factual scientific measurement?"
+targetCaptures:
+  - name: "desktop_wide"
+    width: 1920
+    height: 1080
+  - name: "mobile_ios"
+    width: 390
+    height: 844
+  - name: "mobile_android"
+    width: 412
+    height: 915
+epistemicConstraints:
+  - "Source/light/origin/return is mythopoetic unless separately verified."
+  - "Do not claim factual knowledge of souls, afterlife or literal metaphysical transit."
+  - "Generated telemetry is not factual."
+scientificClaimPolicy: "SYMBOLIC_ONLY"
