@@ -75,14 +75,14 @@ def classify(heading: str) -> str:
     return "PENDING"
 
 
-def build_source() -> dict[str, Any]:
+def build_source(checksum: str) -> dict[str, Any]:
     return {
         "id": "SRC-KODEX-DECISIONES-2026-08-14",
         "title": "KODEX-DECISIONES.md — decisiones del creador",
         "creator": "Nicolás Ortega / Ocín",
         "sourceClass": "DOCUMENT",
         "location": f"repo:kodex-work/KODEX-DECISIONES.md (mirrored {SOURCE_LOG.name})",
-        "checksum": None,
+        "checksum": checksum,
         "repository": "wenumapu8-droid/wenu-frontend",
         "branch": "wip/kimi-u10-commons-cabecera",
         "path": "KODEX-DECISIONES.md",
@@ -176,7 +176,7 @@ def main(argv: list[str] | None = None) -> int:
         print("bridge error: no level-2 sections found in decisions log", file=sys.stderr)
         return 1
 
-    source = build_source()
+    source = build_source(sha256_bytes(markdown))
     claims = build_claims(sections)
     claims.sort(key=lambda c: c["id"])
 
