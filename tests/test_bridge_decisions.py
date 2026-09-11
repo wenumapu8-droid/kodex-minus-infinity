@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BRIDGE_SCRIPT = ROOT / "scripts/bridge_decisions_v1.py"
 OUT_DIR = ROOT / "data/bridges/bridge-decisions-v0"
+SOURCE_LOG = ROOT / "research/KODEX-DECISIONES-2026-08-14.md"
 
 
 def sha256_file(path: Path) -> str:
@@ -62,6 +63,17 @@ class BridgeDecisionsTests(unittest.TestCase):
             any("sin decidir" in s.lower() or "cursos" in s.lower() for s in pending_statements),
             "expected the 'Los cursos, sin decidir' section to be classified as pending, not resolved",
         )
+
+    def test_source_checksum_is_measured_not_none(self) -> None:
+        """The source record's checksum must be the actual sha256 of the
+        mirrored decisions log — a measured fact, not a placeholder. This is
+        VERIFIED data (per the Truth Ledger split the source file itself
+        describes), unlike the CONFLICT/PENDING sections above, which stay
+        undecided on purpose."""
+        self.run_bridge()
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(sources), 1)
+        self.assertEqual(sources[0]["checksum"], sha256_file(SOURCE_LOG))
 
     def test_manifest_digest_matches_content(self) -> None:
         self.run_bridge()
