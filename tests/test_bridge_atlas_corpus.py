@@ -82,6 +82,18 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_location_prefers_path_even_without_an_archive_field(self) -> None:
+        # research/CORPUS_LOCK_V0_DRAFT.md's KDX-CORPUS-001 block declares a
+        # `path` (src/kodex/threshold-portal/README.md) but no `archive`
+        # field. `location` is meant to fall back path -> archive -> record,
+        # in that order (see extract_kdx_rows()), so a present `path` should
+        # win regardless of whether `archive` is set.
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        by_id = {s["id"]: s for s in sources}
+        threshold_portal = by_id["SRC-KDX-CORPUS-001"]
+        self.assertEqual(threshold_portal["path"], "src/kodex/threshold-portal/README.md")
+        self.assertEqual(threshold_portal["location"], threshold_portal["path"])
+
 
 if __name__ == "__main__":
     unittest.main()
