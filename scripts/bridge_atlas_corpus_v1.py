@@ -222,7 +222,7 @@ def extract_kdx_rows(blocks: list[dict[str, Any]]) -> list[SourceRow]:
         repository = str(block.get("repository", "") or None)
         raw_checksum = block.get("sha256")
         checksum = raw_checksum if isinstance(raw_checksum, str) and raw_checksum else None
-        location = path or f"archive:{archive}" if archive else f"record:{source_record}"
+        location = path or (f"archive:{archive}" if archive else f"record:{source_record}")
         rows.append(
             SourceRow(
                 source_id=f"SRC-{corpus_id}",

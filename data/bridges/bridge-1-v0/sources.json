@@ -4,7 +4,7 @@
     "title": "KDX_THRESHOLD_PORTAL_001",
     "creator": "KODEX−∞ / Nicolás Ortega / Ocín",
     "sourceClass": "CODE",
-    "location": "record:PROTO-THRESHOLD-001",
+    "location": "src/kodex/threshold-portal/README.md",
     "checksum": null,
     "repository": "wenumapu8-droid/wenu-frontend",
     "path": "src/kodex/threshold-portal/README.md",
