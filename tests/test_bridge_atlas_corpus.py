@@ -82,6 +82,22 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_missing_path_or_repository_is_json_null_not_the_string_none(self) -> None:
+        """Regression: KDX rows without a `path`/`repository` in the corpus lock
+        must serialize those fields (and `location`, when it falls back to them)
+        as JSON null, never as the literal string "None"."""
+        self.run_bridge()
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        kdx = [s for s in sources if "KDX-CORPUS" in s["id"]]
+        archive_only = [s for s in kdx if s["path"] is None]
+        self.assertTrue(archive_only, "expected at least one KDX row with no path")
+        for source in kdx:
+            self.assertNotEqual(source["path"], "None")
+            self.assertNotEqual(source["repository"], "None")
+            self.assertNotEqual(source["location"], "None")
+        for source in archive_only:
+            self.assertTrue(source["location"].startswith("archive:"), source["location"])
+
 
 if __name__ == "__main__":
     unittest.main()
