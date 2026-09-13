@@ -1,13 +1,13 @@
 {
-  "schemaVersion": "0.4.0",
+  "schemaVersion": "0.5.0",
   "project": {
     "name": "KODEX−∞",
     "technicalName": "kodex-minus-infinity",
     "category": "Living Information Design",
     "creator": "Nicolás Ortega / Ocín",
     "professionalPosition": "Creative Technologist + Generative Art Director",
-    "status": "CANONICAL_ALPHABET_TOPOLOGY_M0_CURATION_ACTIVE",
-    "snapshotDate": "2026-08-06"
+    "status": "V1_SEVEN_SCENE_PRODUCTION_CLOSURE",
+    "snapshotDate": "2026-09-12"
   },
   "repositories": {
     "canonical": {
@@ -18,9 +18,9 @@
     },
     "implementation": {
       "fullName": "wenumapu8-droid/wenu-frontend",
-      "verifiedBranch": "feature/kodex-depth-engine",
-      "activePrototypeBranch": "feature/kodex-vertical-slice-v0",
-      "activePrototypePullRequest": 3
+      "releaseBranch": "redesign-v2",
+      "historicalVerifiedBranch": "feature/kodex-depth-engine",
+      "historicalPrototypeBranch": "feature/kodex-vertical-slice-v0"
     }
   },
   "requiredReading": [
@@ -28,19 +28,47 @@
     "PROJECT_MANIFEST.json",
     "canon/KODEX_CANON.md",
     "canon/KODEX_EPISTEMIC_STANDARD.md",
-    "docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md",
-    "data/alphabet-topology.json",
-    "architecture/KODEX_ALGORITHM.md",
-    "architecture/RUNTIME_ARCHITECTURE.md",
-    "architecture/SESSION_MEMORY_AND_PATHS.md",
-    "architecture/KODEX_INTERACTION_ENGINE.md",
-    "product/CURRENT_STATE.md",
-    "product/EXPERIENCE_ARCHITECTURE.md",
-    "experiences/vertical-slice-v0/README.md",
-    "experiences/vertical-slice-v0/spec.yaml"
+    "docs/decisions/ADR-0011-SEVEN-SCENE-CORRIDOR-V1.md",
+    "product/CURRENT_STATE_V1_CLOSURE.md",
+    "context/ERRATA.md"
   ],
+  "currentReleaseArchitecture": {
+    "status": "CURRENT",
+    "release": "V1",
+    "type": "SEVEN_SCENE_CORRIDOR",
+    "sourceOfTruth": "docs/decisions/ADR-0011-SEVEN-SCENE-CORRIDOR-V1.md",
+    "scenes": [
+      "00_THRESHOLD",
+      "01_PROLOGUE",
+      "02_DESCENT",
+      "03_ARCHIVE",
+      "04_MACHINE",
+      "05_COSMOLOGY",
+      "06_RETURN"
+    ],
+    "mirrorPairs": [
+      ["00_THRESHOLD", "06_RETURN"],
+      ["01_PROLOGUE", "05_COSMOLOGY"],
+      ["02_DESCENT", "04_MACHINE"]
+    ],
+    "inversionAxis": "03_ARCHIVE",
+    "returnCarriesMemory": true,
+    "returnProducesTransformedThreshold": true
+  },
+  "historicalTopology": {
+    "status": "DEPRECATED",
+    "name": "A_THROUGH_Y / A_M_Y",
+    "originalDecision": "docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md",
+    "registry": "data/alphabet-topology.json",
+    "supersededForV1By": "docs/decisions/ADR-0011-SEVEN-SCENE-CORRIDOR-V1.md",
+    "preserveFor": [
+      "provenance",
+      "historical research",
+      "recovery context"
+    ],
+    "implementationAuthority": false
+  },
   "authoritativeRegistries": [
-    "data/alphabet-topology.json",
     "data/experience-graph.json",
     "data/state-registry.json",
     "data/module-registry.json",
@@ -51,40 +79,9 @@
     "data/registries/package-checksums.yaml",
     "data/registries/drive-asset-inventory-v0.yaml"
   ],
-  "topology": {
-    "coordinateSystem": "A_THROUGH_Y",
-    "entry": "A",
-    "optionalDistributedHeart": "M",
-    "completedJourneyTerminal": "Y",
-    "alphabeticalTraversalRequired": false,
-    "allLettersRequiredPerJourney": false,
-    "loopsAllowed": true,
-    "mutatedRevisitsRequired": true,
-    "heartMandatory": false,
-    "returnDerivedFromEventTrace": true,
-    "sourceOfTruth": "data/alphabet-topology.json"
-  },
-  "canonicalCoordinates": [
-    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
-    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"
+  "historicalRegistries": [
+    "data/alphabet-topology.json"
   ],
-  "firstExecutableSlice": {
-    "status": "TARGET_NOT_COMPLETE",
-    "requiredCapabilities": [
-      "COMMON_ENTRY_AT_A",
-      "CONNECTED_INTERMEDIATE_SUBSET",
-      "MULTIPLE_NONALPHABETICAL_TRAJECTORIES",
-      "AT_LEAST_THREE_MULTI_EXIT_DECISION_MOMENTS",
-      "LOOPS_AND_MUTATED_REVISITS",
-      "M_REACHABLE_FROM_MORE_THAN_ONE_REGION",
-      "Y_DERIVED_FROM_COMPLETE_EVENT_TRACE",
-      "PATH_DEPENDENT_ARTIFACT",
-      "PROVENANCE_AND_UNCERTAINTY_ACCESS",
-      "KEYBOARD_TOUCH_REDUCED_MOTION_AND_NON_WEBGL_EQUIVALENCE"
-    ],
-    "minimumValidationTrajectorySignatures": 8,
-    "representativeTrajectoriesAreArchitecture": false
-  },
   "schemas": [
     "schemas/source.schema.json",
     "schemas/claim.schema.json",
@@ -93,18 +90,6 @@
     "schemas/module.schema.json",
     "schemas/interaction-passport.schema.json",
     "schemas/public-wall-entry.schema.json"
-  ],
-  "executableReferences": [
-    {
-      "path": "packages/core-reference/",
-      "status": "REFERENCE_IMPLEMENTATION",
-      "tests": "PREVIOUSLY_REPORTED_PASSING_REVALIDATION_REQUIRED_AFTER_MERGE"
-    },
-    {
-      "path": "packages/recovered/helix-transparent-v1/",
-      "status": "RECOVERED_SOURCE",
-      "tests": "NOT_RUNTIME_VALIDATED_IN_REPOSITORY"
-    }
   ],
   "renderResponsibilities": {
     "DOM": "meaning, text, controls, forms and accessibility",
@@ -120,23 +105,50 @@
     "NEEDS_CONFIRMATION",
     "DEPRECATED"
   ],
-  "invariants": [
-    "Every completed canonical journey begins at A.",
-    "M is always potentially discoverable and never mandatory.",
-    "Every completed canonical journey converges at Y.",
-    "B through X form an interwoven stateful field rather than an ordered sequence.",
-    "Every meaningful user decision creates a later consequence.",
-    "Revisiting a coordinate may produce a mutated state derived from memory.",
-    "Every path preserves privacy-minimized session memory.",
+  "productionStates": [
+    "CONCEPT",
+    "REFERENCE",
+    "GENERATED_ASSET",
+    "PROTOTYPE",
+    "IMPLEMENTED",
+    "TESTED",
+    "CREATOR_APPROVED",
+    "DEPLOYED",
+    "COMMERCIAL_RESULT"
+  ],
+  "v1Invariants": [
+    "Every V1 journey begins at THRESHOLD through voluntary entry.",
+    "The current V1 release contains seven principal scenes from THRESHOLD through RETURN.",
+    "Every meaningful committed decision creates a later consequence.",
+    "The journey preserves privacy-minimized memory across scenes.",
+    "RETURN derives from accumulated trace and does not blindly restore the original starting state.",
     "Every factual claim has provenance and an epistemic status.",
-    "Every nontrivial interaction has a non-pointer equivalent.",
+    "Every essential interaction has a non-pointer equivalent and reduced-motion behavior.",
     "Scientific, cultural, speculative and mythopoetic layers remain distinguishable.",
     "Documentation does not count as implemented runtime.",
+    "Historical A–Y topology does not govern V1 implementation unless explicitly promoted again by the creator.",
     "No deployment occurs without APROBAR DEPLOY."
   ],
-  "deployment": {
-    "status": "BLOCKED",
-    "approvalPhrase": "APROBAR DEPLOY"
+  "v1Closure": {
+    "status": "ACTIVE",
+    "operationalState": "product/CURRENT_STATE_V1_CLOSURE.md",
+    "driveBoard": "KODEX−∞ SYNC BOARD — LAB → LIVE — v1 / V1 Closure",
+    "requiredViewports": [
+      "390x844",
+      "430x932",
+      "768x1024",
+      "1440x900",
+      "1920x1080"
+    ],
+    "requiredGates": [
+      "visual fidelity",
+      "functional",
+      "keyboard/touch",
+      "reduced motion",
+      "fallback",
+      "performance",
+      "creator approval"
+    ]
   },
   "privacy": {
     "publicRepository": true,
@@ -147,5 +159,9 @@
     "commercialBinaryMigrationRequiresReview": true,
     "publicUserGeneratedContentRequiresModeration": true,
     "privateSessionAttachedToPublicContributionByDefault": false
+  },
+  "deployment": {
+    "status": "BLOCKED",
+    "approvalPhrase": "APROBAR DEPLOY"
   }
 }
