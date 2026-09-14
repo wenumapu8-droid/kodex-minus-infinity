@@ -50,6 +50,8 @@ work_packet:
   stop_conditions:
     - "implementation requires unsupported scientific claim"
     - "source/provenance uncertainty prevents safe reference use"
-  status: "READY"
+  status: "REVIEW"
+  latest_evidence: "Visual Passport DNA PASSAGE emitted to ops/factory/passports/DNA_PASSAGE.v1.yaml (supervisor-reviewed: biology boundary fixed, exact provenance from ChatGPT file library); renderer already implemented in wenu-frontend PR-33 with CI green"
+  output: "ops/factory/passports/DNA_PASSAGE.v1.yaml"
   handoff_to: "ORCHESTRATOR"
   deployment: "BLOCKED"
