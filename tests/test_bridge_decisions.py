@@ -75,6 +75,18 @@ class BridgeDecisionsTests(unittest.TestCase):
         self.assertEqual(len(sources), 1)
         self.assertEqual(sources[0]["checksum"], sha256_file(SOURCE_LOG))
 
+    def test_stale_output_file_is_removed_on_rerun(self) -> None:
+        """The bridge must own its entire output directory, not merge into
+        whatever is already there. A file left behind by an old run (e.g. an
+        output the script no longer produces) must not silently survive a
+        fresh run — matching bridge_atlas_corpus_v1.py, which clears OUT_DIR
+        before writing."""
+        self.run_bridge()
+        stray = OUT_DIR / "STALE_FROM_OLD_RUN.json"
+        stray.write_text("{}", encoding="utf-8")
+        self.run_bridge()
+        self.assertFalse(stray.exists(), "stale file in OUT_DIR should not survive a bridge run")
+
     def test_manifest_digest_matches_content(self) -> None:
         self.run_bridge()
         manifest = json.loads((OUT_DIR / "manifest.json").read_text(encoding="utf-8"))

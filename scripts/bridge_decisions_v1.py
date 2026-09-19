@@ -22,6 +22,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 from typing import Any
@@ -214,6 +215,8 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps(manifest["content_digest"], sort_keys=True, separators=(",", ":"))
     )
 
+    if OUT_DIR.is_dir():
+        shutil.rmtree(OUT_DIR)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / "sources.json").write_text(json.dumps([source], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT_DIR / "claims.json").write_text(json.dumps(claims, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
