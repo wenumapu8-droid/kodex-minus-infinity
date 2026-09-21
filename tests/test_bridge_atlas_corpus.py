@@ -82,6 +82,37 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_missing_path_and_repository_are_null_not_the_string_none(self) -> None:
+        # Regression: `str(x or None)` stringifies a missing value to the
+        # literal text "None" instead of leaving it JSON null. Measured
+        # against the real corpus lock, 13 of 15 KDX rows have no `path` key
+        # and 14 of 15 have no `repository` key, so before the fix their
+        # committed sources.json carried "path": "None" / "repository": "None".
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        for source in sources:
+            self.assertNotEqual(source["path"], "None", source["id"])
+            self.assertNotEqual(source["repository"], "None", source["id"])
+        kdx = [s for s in sources if "KDX-CORPUS" in s["id"]]
+        no_path = [s for s in kdx if s["path"] is None]
+        self.assertEqual(len(no_path), 13)
+
+    def test_location_falls_back_from_path_to_archive_to_record(self) -> None:
+        # location's intended fallback chain is path -> archive -> record,
+        # but `path or f"archive:{archive}" if archive else f"record:..."`
+        # parses (ternary binds looser than `or`) as
+        # `(path or archive_expr) if archive else record_expr`, so a row
+        # with a path but no archive fell all the way through to `record:...`,
+        # and — before the "None" string fix above — a row with neither path
+        # nor archive also lost to the truthy string "None".
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        by_id = {s["id"]: s for s in sources}
+        # KDX-CORPUS-001 has an explicit path and no archive -> location is the path.
+        self.assertEqual(by_id["SRC-KDX-CORPUS-001"]["location"], "src/kodex/threshold-portal/README.md")
+        # KDX-CORPUS-002 has no path but has an archive -> location is archive-derived.
+        self.assertEqual(by_id["SRC-KDX-CORPUS-002"]["location"], "archive:kodex-observe-prototype.zip")
+        for source in sources:
+            self.assertNotEqual(source["location"], "None", source["id"])
+
 
 if __name__ == "__main__":
     unittest.main()
