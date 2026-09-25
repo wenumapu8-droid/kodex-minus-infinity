@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import subprocess
 import unittest
@@ -10,6 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 BRIDGE_SCRIPT = ROOT / "scripts/bridge_decisions_v1.py"
 OUT_DIR = ROOT / "data/bridges/bridge-decisions-v0"
 SOURCE_LOG = ROOT / "research/KODEX-DECISIONES-2026-08-14.md"
+
+_spec = importlib.util.spec_from_file_location("bridge_decisions_v1", BRIDGE_SCRIPT)
+bridge_decisions_v1 = importlib.util.module_from_spec(_spec)
+assert _spec.loader is not None
+_spec.loader.exec_module(bridge_decisions_v1)
 
 
 def sha256_file(path: Path) -> str:
@@ -86,6 +92,31 @@ class BridgeDecisionsTests(unittest.TestCase):
         stray.write_text("{}", encoding="utf-8")
         self.run_bridge()
         self.assertFalse(stray.exists(), "stale file in OUT_DIR should not survive a bridge run")
+
+    def test_heading_like_line_inside_code_fence_is_not_a_new_section(self) -> None:
+        """A quoted example inside a fenced code block can legitimately start
+        with '## ' (a pasted diff, a markdown snippet). Measured: before this
+        fix, split_sections split on ANY line starting with '## ', fencing or
+        not, fracturing one real section into a real one plus a fabricated
+        one built from the quoted text — inventing a decision that was never
+        written as such."""
+        markdown = (
+            "# doc\n\n"
+            "## 2026-08-20 · Una decision real\n\n"
+            "Contenido real.\n\n"
+            "```\n"
+            "## Esto es un ejemplo citado, no una seccion nueva\n"
+            "```\n\n"
+            "Sigue el mismo parrafo real.\n\n"
+            "## 2026-08-21 · Otra decision real\n"
+            "Contenido.\n"
+        )
+        sections = bridge_decisions_v1.split_sections(markdown)
+        headings = [heading for heading, _ in sections]
+        self.assertEqual(
+            headings,
+            ["2026-08-20 · Una decision real", "2026-08-21 · Otra decision real"],
+        )
 
     def test_manifest_digest_matches_content(self) -> None:
         self.run_bridge()

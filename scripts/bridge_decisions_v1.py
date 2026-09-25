@@ -45,13 +45,27 @@ def sha256_bytes(text: str) -> str:
 
 
 def split_sections(markdown: str) -> list[tuple[str, str]]:
-    """Split on level-2 headings ('## '). Returns (heading_text, body)."""
-    parts = re.split(r"^## ", markdown, flags=re.MULTILINE)
+    """Split on level-2 headings ('## '). Returns (heading_text, body).
+
+    A '## ' line inside a fenced code block (```...```) is not a heading —
+    it can appear verbatim in a quoted example (e.g. a pasted diff or a
+    markdown snippet) and must not fracture the section it lives in.
+    """
+    lines = markdown.split("\n")
+    heading_at: list[int] = []
+    in_fence = False
+    for i, line in enumerate(lines):
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if not in_fence and line.startswith("## "):
+            heading_at.append(i)
+
     sections: list[tuple[str, str]] = []
-    for part in parts[1:]:
-        lines = part.split("\n", 1)
-        heading = lines[0].strip()
-        body = lines[1].strip() if len(lines) > 1 else ""
+    for pos, start in enumerate(heading_at):
+        end = heading_at[pos + 1] if pos + 1 < len(heading_at) else len(lines)
+        heading = lines[start][len("## ") :].strip()
+        body = "\n".join(lines[start + 1 : end]).strip()
         sections.append((heading, body))
     return sections
 
