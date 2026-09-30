@@ -70,6 +70,24 @@ def split_sections(markdown: str) -> list[tuple[str, str]]:
     return sections
 
 
+def has_unclosed_fence(markdown: str) -> bool:
+    """True if the document ends with an odd number of ``` fence markers.
+
+    split_sections() treats any '## ' line inside a fence as plain body
+    text, not a heading (see its docstring). If a fence is opened but never
+    closed, every '## ' heading from that point to end-of-file — and the
+    decisions they record — is silently folded into the still-open
+    section's body and disappears from sections/claims with no error. This
+    flags that condition as a manifest anomaly instead of letting content
+    vanish unnoticed.
+    """
+    in_fence = False
+    for line in markdown.split("\n"):
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+    return in_fence
+
+
 def classify(heading: str) -> str:
     """RESOLVED (dated decision) / CONFLICT (registered, unresolved) /
     PENDING (explicitly waiting on a decision).
@@ -200,6 +218,11 @@ def main(argv: list[str] | None = None) -> int:
         counts[classify(heading)] += 1
 
     anomalies: list[str] = []
+    if has_unclosed_fence(markdown):
+        anomalies.append(
+            "UNCLOSED_FENCE: source log ends inside an unterminated ``` block; "
+            "sections after it may be missing from this run"
+        )
     anomalies += validate_schemas([source], claims)
     seen_ids: set[str] = set()
     for c in claims:

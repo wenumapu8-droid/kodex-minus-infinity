@@ -46,6 +46,31 @@ class ClassifyTests(unittest.TestCase):
         )
 
 
+class HasUnclosedFenceTests(unittest.TestCase):
+    """Direct unit coverage for has_unclosed_fence(). The real decisions log
+    only ever has balanced fences, so the True branch is never reached by
+    the end-to-end tests in test_bridge_decisions.py."""
+
+    def test_no_fences_is_false(self) -> None:
+        self.assertFalse(bridge.has_unclosed_fence("## A\nbody, no fences\n"))
+
+    def test_balanced_fence_is_false(self) -> None:
+        markdown = "## A\n```\ncode\n```\nmore body\n"
+        self.assertFalse(bridge.has_unclosed_fence(markdown))
+
+    def test_multiple_balanced_fences_is_false(self) -> None:
+        markdown = "## A\n```\none\n```\n## B\n```\ntwo\n```\n"
+        self.assertFalse(bridge.has_unclosed_fence(markdown))
+
+    def test_single_unclosed_fence_is_true(self) -> None:
+        markdown = "## A\n```\nnever closed\n## B swallowed\nstill inside\n"
+        self.assertTrue(bridge.has_unclosed_fence(markdown))
+
+    def test_odd_number_of_fence_markers_is_true(self) -> None:
+        markdown = "## A\n```\none\n```\n## B\n```\nunterminated\n"
+        self.assertTrue(bridge.has_unclosed_fence(markdown))
+
+
 class SplitSectionsTests(unittest.TestCase):
     """Direct unit coverage for split_sections() — the end-to-end tests only
     ever run it against the real decisions log, so its edge cases (no
@@ -129,6 +154,31 @@ class MainGuardTests(unittest.TestCase):
             self.assertEqual(result, 0)
             manifest = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))
             self.assertIn("DUPLICATE_ID claim CLM-DECISIONES-001", manifest["anomalies"])
+
+    def test_unclosed_fence_is_reported_as_anomaly_not_a_hard_failure(self) -> None:
+        """A source log with an unterminated ``` block still produces output
+        (this bridge never fails the whole run over a source-document defect
+        it can route around), but the anomaly must surface in the manifest
+        so a human notices the swallowed section rather than silently
+        losing '2026-01-02 · B' from the registry."""
+        with tempfile.TemporaryDirectory(dir=bridge.REPO_ROOT) as tmp:
+            log = Path(tmp) / "log.md"
+            log.write_text(
+                "## 2026-01-01 · A\nbody\n\n```\nunterminated fence\n"
+                "## 2026-01-02 · B\nswallowed into A's body\n",
+                encoding="utf-8",
+            )
+            out_dir = Path(tmp) / "out"
+            with mock.patch.object(bridge, "SOURCE_LOG", log), \
+                 mock.patch.object(bridge, "OUT_DIR", out_dir):
+                result = bridge.main()
+            self.assertEqual(result, 0)
+            manifest = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["counts"]["sections"], 1)
+            self.assertTrue(
+                any(a.startswith("UNCLOSED_FENCE") for a in manifest["anomalies"]),
+                manifest["anomalies"],
+            )
 
 
 if __name__ == "__main__":
