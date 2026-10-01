@@ -27,7 +27,7 @@
       ],
       "sourceIds": [],
       "claimIds": [],
-      "epistemicStatus": "CANONICAL",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
       "productionStatus": "CONCEPT",
       "relations": [
         {
@@ -103,7 +103,7 @@
       ],
       "sourceIds": [],
       "claimIds": [],
-      "epistemicStatus": "CANONICAL",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
       "productionStatus": "CONCEPT",
       "relations": [
         {
@@ -160,7 +160,7 @@
       ],
       "sourceIds": [],
       "claimIds": [],
-      "epistemicStatus": "CANONICAL",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
       "productionStatus": "CONCEPT",
       "relations": [
         {
@@ -212,7 +212,7 @@
       ],
       "sourceIds": [],
       "claimIds": [],
-      "epistemicStatus": "CANONICAL",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
       "productionStatus": "CONCEPT",
       "relations": [
         {
@@ -271,7 +271,7 @@
       ],
       "sourceIds": [],
       "claimIds": [],
-      "epistemicStatus": "CANONICAL",
+      "epistemicStatus": "NEEDS_CONFIRMATION",
       "productionStatus": "CONCEPT",
       "relations": [
         {
