@@ -155,6 +155,29 @@ class MainGuardTests(unittest.TestCase):
             manifest = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))
             self.assertIn("DUPLICATE_ID claim CLM-DECISIONES-001", manifest["anomalies"])
 
+    def test_fence_swallowing_every_heading_names_the_fence_in_the_error(self) -> None:
+        """An unclosed fence opened before any '## ' heading swallows them
+        all, so split_sections() returns [] and main() takes the 'no
+        sections' branch rather than the UNCLOSED_FENCE anomaly branch below
+        (that branch only runs once sections is non-empty). Without this,
+        the operator sees a generic 'no level-2 sections found' error with
+        no hint that a runaway fence, not a malformed document, swallowed
+        every heading."""
+        with tempfile.TemporaryDirectory(dir=bridge.REPO_ROOT) as tmp:
+            log = Path(tmp) / "log.md"
+            log.write_text(
+                "```\nunterminated from the very start\n"
+                "## 2026-01-01 · A\nbody\n",
+                encoding="utf-8",
+            )
+            stderr = io.StringIO()
+            with mock.patch.object(bridge, "SOURCE_LOG", log):
+                with redirect_stderr(stderr):
+                    result = bridge.main()
+            self.assertEqual(result, 1)
+            self.assertIn("no level-2 sections found", stderr.getvalue())
+            self.assertIn("unterminated ``` fence", stderr.getvalue())
+
     def test_unclosed_fence_is_reported_as_anomaly_not_a_hard_failure(self) -> None:
         """A source log with an unterminated ``` block still produces output
         (this bridge never fails the whole run over a source-document defect

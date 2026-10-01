@@ -206,7 +206,14 @@ def main(argv: list[str] | None = None) -> int:
     sections = split_sections(markdown)
 
     if not sections:
-        print("bridge error: no level-2 sections found in decisions log", file=sys.stderr)
+        if has_unclosed_fence(markdown):
+            print(
+                "bridge error: no level-2 sections found in decisions log "
+                "(an unterminated ``` fence may have swallowed every heading)",
+                file=sys.stderr,
+            )
+        else:
+            print("bridge error: no level-2 sections found in decisions log", file=sys.stderr)
         return 1
 
     source = build_source(sha256_bytes(markdown))
