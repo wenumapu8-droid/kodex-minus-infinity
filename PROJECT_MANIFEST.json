@@ -37,8 +37,7 @@
     "product/CURRENT_STATE.md",
     "product/EXPERIENCE_ARCHITECTURE.md",
     "experiences/vertical-slice-v0/README.md",
-    "experiences/vertical-slice-v0/spec.yaml",
-    "architecture/KODEX_CONVERGENCE_MODEL.md"
+    "experiences/vertical-slice-v0/spec.yaml"
   ],
   "authoritativeRegistries": [
     "data/alphabet-topology.json",
@@ -50,8 +49,7 @@
     "data/registries/repositories.yaml",
     "data/registries/prototypes.yaml",
     "data/registries/package-checksums.yaml",
-    "data/registries/drive-asset-inventory-v0.yaml",
-    "data/latent-registry.json"
+    "data/registries/drive-asset-inventory-v0.yaml"
   ],
   "topology": {
     "coordinateSystem": "A_THROUGH_Y",
@@ -117,8 +115,7 @@
     "schemas/session-memory.schema.json",
     "schemas/module.schema.json",
     "schemas/interaction-passport.schema.json",
-    "schemas/public-wall-entry.schema.json",
-    "schemas/latent-potential.schema.json"
+    "schemas/public-wall-entry.schema.json"
   ],
   "executableReferences": [
     {
