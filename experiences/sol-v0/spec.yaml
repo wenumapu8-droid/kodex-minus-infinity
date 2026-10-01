@@ -1,0 +1,73 @@
+id: KDX-EXP-001-SOL
+version: 0.1.0
+status: EXPERIMENTAL
+latent_node: KDX-LATENT-SOL
+purpose: prove one-potential-to-many-forms convergence without introducing a new truth, memory, routing or renderer authority
+
+inputs:
+  - explicit_pointer_or_keyboard_action
+  - hold_duration
+  - local_pointer_position
+  - reduced_motion_preference
+  - session_memory_for_this_experiment
+
+outputs:
+  - active_manifestation
+  - procedural_visual
+  - optional_procedural_audio
+  - optional_haptic_feedback
+  - textual_readout
+  - session_trace
+
+manifestations:
+  TEXT:
+    role: REVEAL
+  IMAGE:
+    role: REVEAL
+  SOUND:
+    role: REVEAL
+  TOUCH:
+    role: REVEAL
+  MOTION:
+    role: SIMULATE
+  SIMULATION:
+    role: TRACE
+
+states:
+  - LATENT
+  - AWARE
+  - OPEN
+  - COMMITTED
+  - RETURN
+
+memory:
+  scope: session
+  private: true
+  allowed_fields:
+    - manifestation_id
+    - explicit_action
+    - sequence_index
+  prohibited_fields:
+    - inferred_emotion
+    - inferred_spiritual_state
+    - biometric_claim
+    - identity_profile
+
+epistemic_boundary:
+  quantum_like_language: SPECULATIVE_ARTISTIC_COMPUTATIONAL
+  physical_quantum_claim: BLOCKED
+  scientific_relations_require_sources: true
+
+accessibility:
+  keyboard_equivalent: required
+  reduced_motion: required
+  sound_opt_in: required
+  haptic_optional: true
+  webgl_required: false
+
+exit_gate:
+  - one_latent_multiple_forms_visible
+  - prior_explicit_action_changes_revisit
+  - provenance_status_visible
+  - no_hidden_psychological_inference
+  - no_protected_original_mutation

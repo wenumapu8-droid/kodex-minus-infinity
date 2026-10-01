@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kodex.example/schemas/latent-potential.schema.json",
+  "title": "KODEX Latent Potential",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "label",
+    "nodeType",
+    "summary",
+    "modalities",
+    "epistemicStatus",
+    "productionStatus",
+    "relations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^KDX-LATENT-[A-Z0-9_-]+$"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nodeType": {
+      "const": "LATENT"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "modalities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "TEXT",
+          "IMAGE",
+          "SOUND",
+          "TOUCH",
+          "MOTION",
+          "CODE",
+          "OBJECT",
+          "SPATIAL",
+          "SIMULATION",
+          "DATA"
+        ]
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claimIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "epistemicStatus": {
+      "enum": [
+        "VERIFIED",
+        "CANONICAL",
+        "INFERRED",
+        "SPECULATIVE",
+        "NEEDS_CONFIRMATION",
+        "DEPRECATED"
+      ]
+    },
+    "productionStatus": {
+      "enum": [
+        "CONCEPT",
+        "REFERENCE",
+        "GENERATED",
+        "PROTOTYPE",
+        "IMPLEMENTED",
+        "TESTED",
+        "DEPLOYED",
+        "COMMERCIAL_RESULT"
+      ]
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "target"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "MANIFESTS_AS",
+              "DERIVED_FROM",
+              "TRANSFORMS_INTO",
+              "RESONATES_WITH",
+              "CONTRADICTS",
+              "PRECEDES",
+              "ACTIVATES",
+              "REQUIRES",
+              "OBSERVED_BY",
+              "MODIFIES",
+              "MEMBER_OF",
+              "MATERIALIZED_AS",
+              "REMEMBERED_AS",
+              "GENERATED_BY",
+              "VALIDATED_BY",
+              "INSPIRED_BY",
+              "COMMERCIALIZED_AS",
+              "RETURNS_TO"
+            ]
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "certainty": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "worlds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "observerEffect": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "interactionRoles": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "REVEAL",
+          "COMPARE",
+          "FILTER",
+          "TRACE",
+          "NAVIGATE",
+          "SIMULATE",
+          "ANNOTATE",
+          "CONTRIBUTE",
+          "ORIENT",
+          "NONE"
+        ]
+      }
+    },
+    "possibleNextStates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rightsStatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "culturalStatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updatedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

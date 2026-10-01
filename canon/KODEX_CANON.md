@@ -77,6 +77,31 @@ activator:
   node_roles: []
 ```
 
+
+## Potential and polymorphic form law
+
+KODEX treats a meaningful creation as a **traceable potential capable of more than one form**.
+
+A potential may manifest as text, image, sound, touch, motion, code, object, simulation or spatial experience. No one manifestation automatically exhausts the meaning of the underlying node.
+
+```text
+POTENTIAL
+→ CONTEXT
+→ MANIFESTATION
+→ INTERACTION
+→ MEMORY
+→ RELATION
+→ MUTATION
+→ RETURN
+→ NEW POTENTIAL
+```
+
+This law does not allow KODEX to retroactively assign a single hidden meaning to earlier work. Original context, provenance, uncertainty and contradiction remain preserved.
+
+KODEX may use the term **quantum-like** only for declared computational or artistic models of possibility, context, interference or state transition. It must not imply that a KODEX latent node is a physical quantum state, that the interface measures consciousness, or that visitor attention changes external physical reality.
+
+The authoritative implementation contract for this extension is `architecture/KODEX_CONVERGENCE_MODEL.md`.
+
 ## Metaphysical premise
 
 KODEX is a computational metaphor of being alive.

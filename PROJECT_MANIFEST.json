@@ -37,7 +37,8 @@
     "product/CURRENT_STATE.md",
     "product/EXPERIENCE_ARCHITECTURE.md",
     "experiences/vertical-slice-v0/README.md",
-    "experiences/vertical-slice-v0/spec.yaml"
+    "experiences/vertical-slice-v0/spec.yaml",
+    "architecture/KODEX_CONVERGENCE_MODEL.md"
   ],
   "authoritativeRegistries": [
     "data/alphabet-topology.json",
@@ -49,7 +50,8 @@
     "data/registries/repositories.yaml",
     "data/registries/prototypes.yaml",
     "data/registries/package-checksums.yaml",
-    "data/registries/drive-asset-inventory-v0.yaml"
+    "data/registries/drive-asset-inventory-v0.yaml",
+    "data/latent-registry.json"
   ],
   "topology": {
     "coordinateSystem": "A_THROUGH_Y",
@@ -65,8 +67,31 @@
     "sourceOfTruth": "data/alphabet-topology.json"
   },
   "canonicalCoordinates": [
-    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
-    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y"
   ],
   "firstExecutableSlice": {
     "status": "TARGET_NOT_COMPLETE",
@@ -92,7 +117,8 @@
     "schemas/session-memory.schema.json",
     "schemas/module.schema.json",
     "schemas/interaction-passport.schema.json",
-    "schemas/public-wall-entry.schema.json"
+    "schemas/public-wall-entry.schema.json",
+    "schemas/latent-potential.schema.json"
   ],
   "executableReferences": [
     {

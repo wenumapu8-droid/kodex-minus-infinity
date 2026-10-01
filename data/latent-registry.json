@@ -1,0 +1,309 @@
+{
+  "registryVersion": "0.1.0",
+  "status": "EXPERIMENTAL / CREATOR-DIRECTED",
+  "updated": "2026-10-01",
+  "description": "Initial latent-potential registry for KODEX convergence experiments. These nodes do not replace entity, claim, source, scene or state registries.",
+  "nodes": [
+    {
+      "id": "KDX-LATENT-SOL",
+      "label": "SOL",
+      "nodeType": "LATENT",
+      "summary": "Star / light / energy-source / temporal-cycle / life-enabling relation used as the first multimodal convergence proof.",
+      "modalities": [
+        "TEXT",
+        "IMAGE",
+        "SOUND",
+        "TOUCH",
+        "MOTION",
+        "SIMULATION"
+      ],
+      "domains": [
+        "matter",
+        "nature",
+        "signal",
+        "time",
+        "life",
+        "cosmos"
+      ],
+      "sourceIds": [],
+      "claimIds": [],
+      "epistemicStatus": "CANONICAL",
+      "productionStatus": "CONCEPT",
+      "relations": [
+        {
+          "type": "ACTIVATES",
+          "target": "KDX-LATENT-LIFE",
+          "context": "photosynthesis",
+          "certainty": null,
+          "sourceIds": []
+        },
+        {
+          "type": "RESONATES_WITH",
+          "target": "KDX-LATENT-SIGNAL",
+          "context": "radiation / transmission",
+          "certainty": null,
+          "sourceIds": []
+        },
+        {
+          "type": "PRECEDES",
+          "target": "KDX-LATENT-RETURN",
+          "context": "cycle / recurrence",
+          "certainty": null,
+          "sourceIds": []
+        }
+      ],
+      "worlds": [
+        "COSMOLOGY WORLD",
+        "MACHINE WORLD"
+      ],
+      "scenes": [
+        "THRESHOLD",
+        "MACHINE",
+        "COSMOLOGY"
+      ],
+      "observerEffect": "Interaction selects a manifestation and writes a minimal session trace; it does not infer psychological truth.",
+      "interactionRoles": [
+        "REVEAL",
+        "TRACE",
+        "SIMULATE"
+      ],
+      "possibleNextStates": [
+        "LIGHT_FIELD",
+        "PHOTOSYNTHESIS_RELATION",
+        "SOLAR_SOUND",
+        "TOUCH_PULSE",
+        "TEMPORAL_CYCLE"
+      ],
+      "rightsStatus": "ORIGINAL_PROCEDURAL_ONLY",
+      "culturalStatus": "STANDARD",
+      "createdAt": "2026-10-01",
+      "updatedAt": "2026-10-01",
+      "notes": [
+        "First executable convergence node."
+      ]
+    },
+    {
+      "id": "KDX-LATENT-SIGNAL",
+      "label": "SIGNAL",
+      "nodeType": "LATENT",
+      "summary": "A detectable difference that can be carried, transformed, interpreted and remembered.",
+      "modalities": [
+        "TEXT",
+        "IMAGE",
+        "SOUND",
+        "TOUCH",
+        "MOTION",
+        "DATA"
+      ],
+      "domains": [
+        "signal",
+        "machine",
+        "observer",
+        "memory"
+      ],
+      "sourceIds": [],
+      "claimIds": [],
+      "epistemicStatus": "CANONICAL",
+      "productionStatus": "CONCEPT",
+      "relations": [
+        {
+          "type": "TRANSFORMS_INTO",
+          "target": "KDX-LATENT-MEMORY",
+          "context": "when admitted and preserved",
+          "certainty": null,
+          "sourceIds": []
+        }
+      ],
+      "worlds": [
+        "MACHINE WORLD",
+        "MEMORY WORLD"
+      ],
+      "scenes": [
+        "THRESHOLD",
+        "PROLOGUE",
+        "MACHINE"
+      ],
+      "observerEffect": null,
+      "interactionRoles": [
+        "REVEAL",
+        "TRACE"
+      ],
+      "possibleNextStates": [
+        "RELATION",
+        "MEMORY",
+        "FORM"
+      ],
+      "rightsStatus": "ORIGINAL_SYSTEM_CONCEPT",
+      "culturalStatus": "STANDARD",
+      "createdAt": "2026-10-01",
+      "updatedAt": "2026-10-01",
+      "notes": []
+    },
+    {
+      "id": "KDX-LATENT-MEMORY",
+      "label": "MEMORY",
+      "nodeType": "LATENT",
+      "summary": "A preserved trace that changes interpretation or behavior on later encounters.",
+      "modalities": [
+        "TEXT",
+        "IMAGE",
+        "SOUND",
+        "MOTION",
+        "CODE",
+        "DATA"
+      ],
+      "domains": [
+        "memory",
+        "archive",
+        "observer",
+        "time"
+      ],
+      "sourceIds": [],
+      "claimIds": [],
+      "epistemicStatus": "CANONICAL",
+      "productionStatus": "CONCEPT",
+      "relations": [
+        {
+          "type": "MODIFIES",
+          "target": "KDX-LATENT-OBSERVER",
+          "context": "re-entry",
+          "certainty": null,
+          "sourceIds": []
+        }
+      ],
+      "worlds": [
+        "MEMORY WORLD"
+      ],
+      "scenes": [
+        "ARCHIVE",
+        "RETURN"
+      ],
+      "observerEffect": null,
+      "interactionRoles": [
+        "TRACE",
+        "ORIENT"
+      ],
+      "possibleNextStates": [
+        "MUTATED_REVISIT",
+        "RETURN_ARTIFACT"
+      ],
+      "rightsStatus": "ORIGINAL_SYSTEM_CONCEPT",
+      "culturalStatus": "STANDARD",
+      "createdAt": "2026-10-01",
+      "updatedAt": "2026-10-01",
+      "notes": []
+    },
+    {
+      "id": "KDX-LATENT-OBSERVER",
+      "label": "OBSERVER",
+      "nodeType": "LATENT",
+      "summary": "The participant whose explicit actions and route context alter later system state.",
+      "modalities": [
+        "TOUCH",
+        "MOTION",
+        "TEXT",
+        "DATA"
+      ],
+      "domains": [
+        "observer",
+        "body",
+        "interaction",
+        "memory"
+      ],
+      "sourceIds": [],
+      "claimIds": [],
+      "epistemicStatus": "CANONICAL",
+      "productionStatus": "CONCEPT",
+      "relations": [
+        {
+          "type": "OBSERVED_BY",
+          "target": "KDX-LATENT-FIELD",
+          "context": "participatory observation",
+          "certainty": null,
+          "sourceIds": []
+        }
+      ],
+      "worlds": [
+        "MEMORY WORLD",
+        "MACHINE WORLD",
+        "COSMOLOGY WORLD"
+      ],
+      "scenes": [
+        "PROLOGUE",
+        "MACHINE",
+        "RETURN"
+      ],
+      "observerEffect": "Explicit action may alter route and manifestation; no hidden consciousness scoring.",
+      "interactionRoles": [
+        "NAVIGATE",
+        "REVEAL",
+        "ORIENT"
+      ],
+      "possibleNextStates": [
+        "CHOICE",
+        "MEMORY_WRITE",
+        "RETURN"
+      ],
+      "rightsStatus": "ORIGINAL_SYSTEM_CONCEPT",
+      "culturalStatus": "STANDARD",
+      "createdAt": "2026-10-01",
+      "updatedAt": "2026-10-01",
+      "notes": []
+    },
+    {
+      "id": "KDX-LATENT-RETURN",
+      "label": "RETURN",
+      "nodeType": "LATENT",
+      "summary": "Convergence state in which route memory becomes legible enough for re-entry without claiming final truth.",
+      "modalities": [
+        "TEXT",
+        "IMAGE",
+        "SOUND",
+        "MOTION",
+        "OBJECT",
+        "DATA"
+      ],
+      "domains": [
+        "return",
+        "memory",
+        "transformation",
+        "observer"
+      ],
+      "sourceIds": [],
+      "claimIds": [],
+      "epistemicStatus": "CANONICAL",
+      "productionStatus": "CONCEPT",
+      "relations": [
+        {
+          "type": "RETURNS_TO",
+          "target": "KDX-LATENT-POTENTIAL",
+          "context": "open-ended recurrence",
+          "certainty": null,
+          "sourceIds": []
+        }
+      ],
+      "worlds": [
+        "ARTIFACT WORLD"
+      ],
+      "scenes": [
+        "RETURN"
+      ],
+      "observerEffect": "Produces an inspectable path artifact and a new re-entry possibility.",
+      "interactionRoles": [
+        "ORIENT",
+        "TRACE",
+        "NAVIGATE"
+      ],
+      "possibleNextStates": [
+        "RE_ENTRY",
+        "CONTRIBUTION",
+        "NEW_POTENTIAL"
+      ],
+      "rightsStatus": "ORIGINAL_SYSTEM_CONCEPT",
+      "culturalStatus": "STANDARD",
+      "createdAt": "2026-10-01",
+      "updatedAt": "2026-10-01",
+      "notes": []
+    }
+  ]
+}
