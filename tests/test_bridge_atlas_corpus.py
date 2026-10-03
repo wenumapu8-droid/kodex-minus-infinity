@@ -82,6 +82,71 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_missing_path_and_repository_are_null_not_the_string_none(self) -> None:
+        # Regression: `str(x or None)` stringifies a missing value to the
+        # literal text "None" instead of leaving it JSON null. Measured
+        # against the real corpus lock, 13 of 15 KDX rows have no `path` key
+        # and 14 of 15 have no `repository` key, so before the fix their
+        # committed sources.json carried "path": "None" / "repository": "None".
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        for source in sources:
+            self.assertNotEqual(source["path"], "None", source["id"])
+            self.assertNotEqual(source["repository"], "None", source["id"])
+        kdx = [s for s in sources if "KDX-CORPUS" in s["id"]]
+        no_path = [s for s in kdx if s["path"] is None]
+        self.assertEqual(len(no_path), 13)
+
+    def test_location_falls_back_from_path_to_archive_to_record(self) -> None:
+        # location's intended fallback chain is path -> archive -> record,
+        # but `path or f"archive:{archive}" if archive else f"record:..."`
+        # parses (ternary binds looser than `or`) as
+        # `(path or archive_expr) if archive else record_expr`, so a row
+        # with a path but no archive fell all the way through to `record:...`,
+        # and — before the "None" string fix above — a row with neither path
+        # nor archive also lost to the truthy string "None".
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        by_id = {s["id"]: s for s in sources}
+        # KDX-CORPUS-001 has an explicit path and no archive -> location is the path.
+        self.assertEqual(by_id["SRC-KDX-CORPUS-001"]["location"], "src/kodex/threshold-portal/README.md")
+        # KDX-CORPUS-002 has no path but has an archive -> location is archive-derived.
+        self.assertEqual(by_id["SRC-KDX-CORPUS-002"]["location"], "archive:kodex-observe-prototype.zip")
+        for source in sources:
+            self.assertNotEqual(source["location"], "None", source["id"])
+
+    def test_kdx014_rights_status_review_flag_is_read_into_the_wrong_field(self) -> None:
+        # FLAGGED, NOT FIXED — needs a canon decision, see PR description.
+        #
+        # research/CORPUS_LOCK_V0_DRAFT.md line ~225 puts an explicit
+        # `rights_status: REVIEW_REQUIRED` on KDX-CORPUS-014 (PACK-TYPE-002).
+        # It is the only Section A (KODEX VISUAL / CODE CORPUS) row that
+        # declares this field at all — every other row is silent on rights
+        # and gets the section default (REFERENCE_ONLY).
+        #
+        # extract_kdx_rows() in scripts/bridge_atlas_corpus_v1.py reads that
+        # same `rights_status` value into `cultural` (SourceRow.cultural_status
+        # -> record["culturalStatus"]), not into `rights` (-> record
+        # ["rightsStatus"]), which is instead derived from `status`
+        # (ARCHIVE_VERIFIED/REPOSITORY_VERIFIED/SOURCE_MIGRATED) and always
+        # resolves to the section default. Net effect on the generated
+        # sources.json: KDX-CORPUS-014 comes out as rightsStatus
+        # "REFERENCE_ONLY" (i.e. rights not flagged) and culturalStatus
+        # "REVIEW_REQUIRED" (a cultural-sensitivity flag the source document
+        # never made) — the document's actual rights-review flag is lost.
+        #
+        # This test pins the *current, measured* behavior so it does not
+        # silently drift, and exists to make the discrepancy visible. It
+        # deliberately does not change scripts/bridge_atlas_corpus_v1.py or
+        # decide what the corrected rightsStatus should be (RIGHTS_ENUM has
+        # no direct "REVIEW_REQUIRED" analogue — CLEAR/REFERENCE_ONLY/
+        # UNKNOWN/BLOCKED are the only options) — that classification call
+        # belongs to the creator per this repo's provenance rules, not to an
+        # automated bridge run.
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        by_id = {s["id"]: s for s in sources}
+        kdx014 = by_id["SRC-KDX-CORPUS-014"]
+        self.assertEqual(kdx014["rightsStatus"], "REFERENCE_ONLY")
+        self.assertEqual(kdx014["culturalStatus"], "REVIEW_REQUIRED")
+
 
 if __name__ == "__main__":
     unittest.main()
