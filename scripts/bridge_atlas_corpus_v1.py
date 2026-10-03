@@ -218,11 +218,11 @@ def extract_kdx_rows(blocks: list[dict[str, Any]]) -> list[SourceRow]:
         cultural = CULTURAL_MAP.get(str(block.get("rights_status", "")), "STANDARD")
         roles = list(block.get("scene_roles", [])) + list(block.get("interaction_roles", []))
         roles = list(dict.fromkeys(r for r in roles if r))
-        path = str(block.get("path", "") or None)
-        repository = str(block.get("repository", "") or None)
+        path = str(block.get("path", "")) or None
+        repository = str(block.get("repository", "")) or None
         raw_checksum = block.get("sha256")
         checksum = raw_checksum if isinstance(raw_checksum, str) and raw_checksum else None
-        location = path or f"archive:{archive}" if archive else f"record:{source_record}"
+        location = path or (f"archive:{archive}" if archive else None) or f"record:{source_record}"
         rows.append(
             SourceRow(
                 source_id=f"SRC-{corpus_id}",

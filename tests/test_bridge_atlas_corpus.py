@@ -82,6 +82,26 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_missing_path_and_repository_are_null_not_the_string_none(self) -> None:
+        # Regression: `str(x or None)` stringifies a missing value to the
+        # literal text "None" instead of leaving it JSON null. Rows without
+        # a `path`/`repository` block (archive-only KDX rows) are the cases
+        # that exposed this.
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        for source in sources:
+            self.assertNotEqual(source["path"], "None", source["id"])
+            self.assertNotEqual(source["repository"], "None", source["id"])
+
+    def test_location_falls_back_from_path_to_archive_to_record(self) -> None:
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        by_id = {s["id"]: s for s in sources}
+        # KDX-CORPUS-001 has an explicit path -> location is the path.
+        self.assertEqual(by_id["SRC-KDX-CORPUS-001"]["location"], "src/kodex/threshold-portal/README.md")
+        # KDX-CORPUS-002 has no path but has an archive -> location is archive-derived.
+        self.assertEqual(by_id["SRC-KDX-CORPUS-002"]["location"], "archive:kodex-observe-prototype.zip")
+        for source in sources:
+            self.assertNotEqual(source["location"], "None", source["id"])
+
 
 if __name__ == "__main__":
     unittest.main()
