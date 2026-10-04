@@ -82,6 +82,18 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_location_prefers_repo_path_over_record_id_when_no_archive(self) -> None:
+        # SRC-KDX-CORPUS-001 (KDX_THRESHOLD_PORTAL_001) has a real repository
+        # path and no archive. A prior operator-precedence bug in the
+        # path-or-archive-or-record fallback made `archive` (not `path`) the
+        # deciding condition, so this row's location collapsed to the generic
+        # "record:PROTO-THRESHOLD-001" even though its own path field already
+        # carried the real path.
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        row = next(s for s in sources if s["id"] == "SRC-KDX-CORPUS-001")
+        self.assertEqual(row["path"], "src/kodex/threshold-portal/README.md")
+        self.assertEqual(row["location"], row["path"])
+
 
 if __name__ == "__main__":
     unittest.main()
