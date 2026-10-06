@@ -1,9 +1,7 @@
 # Python dependencies for scripts/ and tests/.
-#
-# scripts/bridge_atlas_corpus_v1.py imports jsonschema to validate generated
-# source/claim records against schemas/*.json. .github/workflows/context-integrity.yml
-# installs it inline before running tests; this file documents the same
-# requirement for local/dev use (pip install -r requirements.txt) so
-# `python3 -m unittest discover -s tests` does not fail with
-# ModuleNotFoundError on a fresh checkout.
-jsonschema
+# jsonschema: used by scripts/bridge_atlas_corpus_v1.py (validate_schemas) and
+# exercised by tests/test_bridge_atlas_corpus.py. CI installs it explicitly in
+# .github/workflows/context-integrity.yml; listed here so a local
+# `pip install -r requirements.txt` reproduces that before running
+# `python3 -m unittest discover -s tests`.
+jsonschema>=4.17
