@@ -14,6 +14,10 @@ Read:
 6. `product/EXPERIENCE_ARCHITECTURE.md`
 7. `product/QUALITY_GATES.md`
 
+## Local setup
+
+Install Python dependencies before running the test suite: `pip install -r requirements.txt`.
+
 ## Workflow
 
 1. Open or select an issue.
