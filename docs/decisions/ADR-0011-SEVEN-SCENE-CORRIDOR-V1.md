@@ -139,7 +139,7 @@ The seven-scene web release is not closed until:
 1. each scene matches its current visual/canonical target;
 2. cross-scene memory produces later consequences;
 3. RETURN produces a route-dependent result;
-4. required viewport QA passes at `390×844`, `430×932`, `768×1024`, `1440×900` and `1920×1080`;
+4. required viewport QA passes at `390×844`, `412×915`, `768×1024`, `1440×900` and `1920×1080`;
 5. functional, motion, accessibility and performance gates pass or have an explicitly accepted exception;
 6. provenance and epistemic boundaries remain inspectable;
 7. Ocín gives the required scene/release approval.
