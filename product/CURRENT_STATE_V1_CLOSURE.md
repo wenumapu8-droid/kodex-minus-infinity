@@ -46,13 +46,17 @@ Historical A–Y topology is `DEPRECATED` for V1 implementation and remains avai
 
 State: `IMPLEMENTED / QA NOT CLOSED`
 
-Verified in the current `wenu-frontend` `redesign-v2` lineage:
+Verified implementation evidence exists in historical/reference `wenu-frontend` lineages, including `redesign-v2`, but the exact public production lineage is currently unresolved. The active convergence review surface is PR #165 on `converge/live-lineage-2026-10-03`; it is OPEN / NOT MERGED and does not prove deployment.
 
-- `src/pages/kodex/index.astro` contains the Threshold scene;
-- `src/lib/kodex/escenas/threshold.ts` contains the canonical Threshold definition;
-- declared scene states include dormant, listening, aware, open, crossed and remembered;
-- reduced-motion behavior and SVG fallback are declared;
-- the public `/kodex/` route currently exposes `00/07 THRESHOLD`.
+Verified source evidence includes:
+
+- `src/pages/kodex/index.astro` containing the Threshold scene in inspected implementation lineages;
+- `src/lib/kodex/escenas/threshold.ts` containing the canonical Threshold definition in inspected implementation lineages;
+- declared scene states including dormant, listening, aware, open, crossed and remembered;
+- reduced-motion behavior and SVG fallback declarations;
+- the public `/kodex/` surface exposing KODEX−∞ / Architecture of Experience / Hold to open.
+
+Do not infer public source identity from repository candidates until serving artifact → repository/ref/build lineage is proven.
 
 Still required:
 
@@ -136,7 +140,7 @@ State: `PENDING`
 Required visual viewport matrix:
 
 - `390×844`
-- `430×932`
+- `412×915`
 - `768×1024`
 - `1440×900`
 - `1920×1080`
