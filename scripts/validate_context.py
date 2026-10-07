@@ -107,7 +107,7 @@ def validate_manifest(errors: list[str]) -> None:
     if deployment.get("approvalPhrase") != APPROVAL_PHRASE:
         errors.append("PROJECT_MANIFEST deployment approval phrase is incorrect")
 
-    invariants = manifest.get("invariants", [])
+    invariants = manifest.get("v1Invariants", manifest.get("invariants", []))
     if not any(APPROVAL_PHRASE in item for item in invariants if isinstance(item, str)):
         errors.append("Project invariants must preserve the deployment lock")
 

@@ -1,3 +1,21 @@
+# CURRENT V1 AUTHORITY GUARD — 2026-10-07
+
+Status: `VERIFIED / HISTORY PRESERVED`
+
+The August 2026 A–Y / A–M–Y topology language preserved below is **DEPRECATED AS CURRENT V1 IMPLEMENTATION TOPOLOGY**.
+
+Current V1 authority is:
+
+```text
+THRESHOLD → PROLOGUE → DESCENT → ARCHIVE → MACHINE → COSMOLOGY → RETURN
+```
+
+For V1, the older A–Y/A–M–Y route model remains historical/research provenance unless a newer explicit Ocín decision re-promotes it. Compatible identity, authorial, epistemic, visual and provenance principles in this file remain valid.
+
+This is a documentation guard only. It changes no runtime, merge or deployment state.
+
+---
+
 # KODEX−∞ CANON
 
 Status: `CANONICAL / CREATOR-APPROVED DIRECTION / V0.3`  

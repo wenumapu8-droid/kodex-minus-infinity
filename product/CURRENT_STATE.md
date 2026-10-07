@@ -1,3 +1,19 @@
+# CURRENT V1 AUTHORITY OVERRIDE — 2026-10-07
+
+Status: `VERIFIED AUTHORITY CLARIFICATION / HISTORICAL SNAPSHOT PRESERVED / DOCUMENTATION ONLY`.
+
+This document's 2026-08-25 status label and older “current” implementation assertions below are **historical snapshots, not present-day approval, build, browser-QA or deployment evidence**. Re-resolve authority from the live Drive `00_START_HERE` → `03_KODEX_TRUTH_LEDGER` → `08J` consolidated Canon → latest Decision Log → verified source/implementation before using any older claim here.
+
+**CANONICAL V1 macro-journey (seven, exactly):** `THRESHOLD → PROLOGUE → DESCENT → ARCHIVE → MACHINE → COSMOLOGY → RETURN`. The A–Y / A–M–Y topology below remains **DEPRECATED AS ACTIVE V1 RUNTIME AUTHORITY**, preserved only as historical/research architecture unless Ocín explicitly re-promotes it. Offering is an optional post-RETURN surface, not an eighth threshold.
+
+**CURRENT REVIEW VS PRODUCTION:** `wenumapu8-droid/kodex-minus-infinity#96` is an open, unmerged *draft* reconciliation candidate; `wenumapu8-droid/wenu-frontend#165` is an open, unmerged frontend convergence review. Neither defines the deployed build by inference. The historical designation of frontend `#101` as the current product host, and any `redesign-v2` release-branch assertion, are **DEPRECATED AS CURRENT LINEAGE / PRODUCTION PROOF** until a fresh host → repository/ref → artifact chain exists.
+
+**UNRESOLVED:** `data/experience-graph.json`, `data/alphabet-topology.json` and `scripts/validate_context.py` still express/validate active A–Y authority in the #96 candidate even where higher documents state seven-scene V1; a passing context check is therefore not product convergence proof. THRESHOLD sustained-hold behavior, Sentinel realpath/symlink isolation, same-source seven-scene QA, and precise public production lineage remain open pending reproducible verification.
+
+This guard does not change any asset, historical evidence, rights status, creator decision, implementation, test outcome, branch integration, merge or deployment. Read the dated record below as historical unless independently reverified.
+
+---
+
 # KODEX−∞ CURRENT STATE
 
 Last updated: `2026-08-25`  

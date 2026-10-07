@@ -4,70 +4,78 @@ This is the mandatory entry point for every human contributor and every AI agent
 
 ## 1. What KODEX is
 
-KODEX−∞ is a living visual language, generative archive, interactive multiverse and creative operating system.
+KODEX−∞ is a living visual language, generative archive, interactive information system and creative operating system created by Nicolás Ortega / Ocín.
 
-It connects Ocín's authored visual codes, works, symbols, code, memory, research and user decisions through state, relation and consequence.
+It connects authored visual codes, works, symbols, computation, memory, research and user decisions through state, relation and consequence.
 
-KODEX is not a generic cyberpunk website, a mystical dashboard, a random generative-art gallery, a personality test or a collection of unrelated loops.
+KODEX is not a generic cyberpunk website, mystical dashboard, random generative-art gallery, personality test or collection of unrelated loops.
 
-## 2. Canonical experience law
+## 2. Current V1 release architecture
 
-The complete coordinate system is an operational alphabet:
-
-```text
-A B C D E F G H I J K L M N O P Q R S T U V W X Y
-```
+The current implementation authority is the finite seven-scene corridor defined by `ADR-0011-SEVEN-SCENE-CORRIDOR-V1.md`:
 
 ```text
-A = −∞ / COMMON ORIGIN / THRESHOLD
-M = HEART / 0 / OPTIONAL DISTRIBUTED DEPTH
-Y = RETURN / +∞ / ROUTE-DERIVED CONVERGENCE
-B–X = INTERWOVEN CONCEPT-NODES
+00 THRESHOLD
+→ 01 PROLOGUE
+→ 02 DESCENT
+→ 03 ARCHIVE
+→ 04 MACHINE
+→ 05 COSMOLOGY
+→ 06 RETURN
 ```
 
-The order is not alphabetical. Letters may be skipped, revisited and transformed by accumulated memory.
+Mirror topology:
 
 ```text
-A → C → H → F → Q → Y
-A → B → K → M → K′ → R → X → Y
+THRESHOLD ↔ RETURN
+PROLOGUE  ↔ COSMOLOGY
+DESCENT   ↔ MACHINE
+ARCHIVE   = inversion axis
 ```
 
-M is always potentially discoverable but never compulsory. Y is generated from the actual event trace.
+RETURN carries accumulated memory and produces transformed continuity (`THRESHOLD′`), not a blind reset.
 
-Read first:
+### Historical A–Y architecture
 
-- `docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md`
-- `data/alphabet-topology.json`
+The August 2026 A–Y / A–M–Y topology remains in the repository for provenance and research, including `ADR-0010` and `data/alphabet-topology.json`.
+
+Its current status for V1 implementation is:
+
+```text
+DEPRECATED / HISTORICAL ARCHITECTURE
+```
+
+Do not use it to assign current scenes, reopen the release topology or create a parallel runtime unless a later explicit Ocín decision promotes it again.
 
 ## 3. Repository roles
 
 ```text
 wenumapu8-droid/kodex-minus-infinity
-  Canon, context, algorithms, graph contracts, registries,
-  research, methods and agent operating rules.
+  Canon, context, decisions, epistemic policy, research,
+  current-state snapshots and agent operating rules.
 
 wenumapu8-droid/wenu-frontend
-  Existing Astro implementation, KODEX routes, components,
+  Astro implementation, KODEX routes, components,
   shaders, assets and interactive laboratories.
 ```
 
-Documentation does not count as implemented runtime. Preserve original repository, branch, path and checksum during migration.
+Documentation does not count as implemented runtime. Preserve original repository, branch, path and checksum during recovery or migration.
 
 ## 4. Authority order
 
 When sources conflict, use this order:
 
 ```text
-DIRECT BYTE INSPECTION + CHECKSUM
-→ REPOSITORY FILE AT A KNOWN REF
-→ APPROVED DECISION OR CANON
-→ CURRENT STATE + IMPLEMENTATION EVIDENCE
-→ CONVERSATION OR LIBRARY FILE CONTENT
-→ PACKAGE DESCRIPTION
-→ RECOVERED SUMMARY OR MEMORY
+EXPLICIT CURRENT OCÍN DECISION
+→ CURRENT TRUTH LEDGER / DRIVE SOURCE AUTHORITY
+→ ADR-0011 SEVEN-SCENE V1
+→ CURRENT HIFI / SCENE BIBLE / DESIGN CONTRACT
+→ VERIFIED REPOSITORY FILE AT A KNOWN REF
+→ CURRENT_STATE_V1_CLOSURE.md
+→ HISTORICAL ARCHITECTURE / PROTOTYPES / RECOVERED SUMMARIES
 ```
 
-The most recent approved ADR supersedes older route descriptions. Do not silently reconcile contradictions.
+Do not silently reconcile contradictions. Preserve the losing source as historical or deprecated and record why it no longer governs implementation.
 
 ## 5. Required reading order
 
@@ -75,29 +83,29 @@ The most recent approved ADR supersedes older route descriptions. Do not silentl
 2. `PROJECT_MANIFEST.json`
 3. `canon/KODEX_CANON.md`
 4. `canon/KODEX_EPISTEMIC_STANDARD.md`
-5. `docs/decisions/ADR-0010-ALPHABETIC-MULTIVERSE-A-M-Y.md`
-6. `data/alphabet-topology.json`
-7. `product/CURRENT_STATE.md`
-8. `product/EXPERIENCE_ARCHITECTURE.md`
-9. `experiences/vertical-slice-v0/README.md`
-10. `experiences/vertical-slice-v0/spec.yaml`
-11. the active Linear issue and affected implementation files.
+5. `docs/decisions/ADR-0011-SEVEN-SCENE-CORRIDOR-V1.md`
+6. `product/CURRENT_STATE_V1_CLOSURE.md`
+7. current Drive Scene Bible / Hi-Fi targets / Source Authority
+8. affected implementation files in `wenu-frontend` at the exact branch/ref
+9. historical documents only when needed for recovery or provenance
 
-Read `context/ERRATA.md` before repeating package paths, checksums or corrected claims.
+Read `context/ERRATA.md` before repeating corrected package paths, checksums or historical claims.
 
-## 6. Non-negotiable invariants
+## 6. Current release invariants
 
 ```text
-Every completed canonical journey begins at A.
-M is always potentially discoverable and never mandatory.
-Every completed canonical journey converges at Y.
-B–X form an interwoven field, not an ordered sequence.
-Every meaningful action creates a later consequence.
-Revisits may produce mutated node states.
-Every path preserves privacy-minimized memory.
+Every V1 journey begins at THRESHOLD through voluntary entry.
+The current release contains seven principal scenes, 00–06.
+Meaningful decisions create later consequences.
+Memory persists across the journey with privacy-minimized state.
+ARCHIVE makes trace/provenance inspectable.
+MACHINE uses real causal parameters, not decorative pseudo-metrics.
+RETURN is route-dependent and carries memory.
+Re-entry does not silently erase the previous transformation.
 Every factual claim has provenance and epistemic status.
-Every path can pause, reverse or exit.
-Every model works from the same canon.
+Every essential interaction has touch/keyboard/reduced-motion/fallback behavior.
+Scientific, cultural, speculative and mythopoetic layers remain distinguishable.
+Documentation does not count as implemented runtime.
 No deployment occurs without APROBAR DEPLOY.
 ```
 
@@ -114,46 +122,63 @@ NEEDS_CONFIRMATION
 DEPRECATED
 ```
 
-Never convert symbolic language into scientific fact. Never universalize cultural symbols. Never fill missing data or unassigned letters for aesthetic symmetry.
+Never convert symbolic language into scientific fact. Never universalize cultural symbols. Never fill missing data for aesthetic symmetry.
+
+Production status is separate from epistemic status:
+
+```text
+CONCEPT
+REFERENCE
+GENERATED ASSET
+PROTOTYPE
+IMPLEMENTED
+TESTED
+CREATOR-APPROVED
+DEPLOYED
+COMMERCIAL RESULT
+```
+
+Do not collapse these states.
 
 ## 8. Visual and technical lineage
 
 Verified or source-linked KODEX work includes:
 
-- Astro application and fullscreen no-scroll compositions;
+- Astro fullscreen/no-scroll compositions;
 - DOM / SVG / Canvas / WebGL responsibility split;
-- responsive mobile poster layouts;
+- responsive poster-like mobile layouts;
 - pointer, touch, keyboard and optional audio input;
 - shader and multipass feedback prototypes;
-- OBSERVE and OBSERVE V2;
-- Spatial Engine v1/v2;
-- Split Corridor, Ripple Floor and impossible-space systems;
-- Mirror Identity and Perspective Flip;
-- original SVG, design-system, visual-grammar and typography packs;
-- Helix Transparent;
+- OBSERVE / Observation Eye lineages;
+- depth/tunnel and impossible-space systems;
+- archive/memory relation fields;
+- procedural MACHINE systems;
+- orbital/cosmology systems;
+- journey memory / RETURN experiments;
+- original Ocín visual grammar and authored assets;
 - reduced-motion and fallback behavior;
-- visual QA telemetry and debug modes.
+- visual QA/debug tooling.
 
-These are source materials and candidate engines. They are not yet an assembled A–Y experience.
+These are recovery sources and candidate engines. A historical implementation is not automatically the current visual authority.
 
 ## 9. Current product objective
 
-Build one finite executable organism that proves the larger topology without attempting to produce all 25 letters.
+Close one coherent seven-scene V1 instead of expanding foundational architecture.
 
-V0 must demonstrate:
+V1 must demonstrate:
 
-- one common A;
-- a connected subset of intermediate letters;
-- multiple emergent nonalphabetical trajectories;
-- at least one loop and mutated revisit;
-- at least one delayed consequence;
-- M approachable from more than one region;
-- a valid journey with and without M;
-- Y generated from the complete trace;
-- a path-dependent artifact;
-- provenance, accessibility and fallback completeness.
+- voluntary THRESHOLD entry;
+- PROLOGUE observation state;
+- causal DESCENT interaction;
+- inspectable ARCHIVE memory/provenance;
+- causal MACHINE transformation;
+- authored COSMOLOGY scale/relation;
+- RETURN derived from the accumulated trace;
+- path-dependent visible consequences;
+- keyboard, touch, reduced-motion and non-WebGL equivalence where required;
+- evidence-backed QA at the current viewport matrix.
 
-Representative trajectories may be used for QA, but must never become Path A / Path B architecture.
+Current closure work is tracked in Drive `KODEX−∞ SYNC BOARD — LAB → LIVE — v1`, tab `V1 Closure`.
 
 ## 10. Required agent preflight
 
@@ -168,7 +193,7 @@ preflight:
   files_actually_read: []
   existing_code_inspected: []
   canonical_constraints: []
-  affected_letters: []
+  affected_scenes: []
   evidence_or_sources_required: []
   proposed_changes: []
   tests_planned: []
@@ -187,13 +212,13 @@ Do not commit:
 - secrets or credentials;
 - rights-unclear assets;
 - restricted cultural knowledge;
-- commercial binaries before licensing and product-delivery review.
+- commercial binaries before licensing and delivery review.
 
 Reviewed summaries, checksums, source manifests, canonical decisions and public-safe code may be committed when their status is explicit.
 
-## 12. Deployment boundary
+## 12. Release boundary
 
-Commits, merges, previews and prototypes do not authorize production deployment.
+Commits, pull requests, previews and prototypes do not authorize production deployment.
 
 ```text
 DEPLOYMENT STATUS: BLOCKED

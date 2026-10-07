@@ -58,3 +58,24 @@ DIRECT BYTE INSPECTION + CHECKSUM
 ```
 
 A description must never override inspected bytes.
+
+## ERR-002 — Seven-scene V1 versus alphabet-registry authority (2026-10-07)
+
+Status: `VERIFIED CURRENT DIVERGENCE / DOCUMENTATION GUARD ONLY / NO PRODUCT PROMOTION`.
+
+This erratum applies to the unmerged draft review candidate [kodex-minus-infinity #96](https://github.com/wenumapu8-droid/kodex-minus-infinity/pull/96), **not** to an inferred production build. Resolve its exact branch/head again before acting; the evidence below is a dated snapshot.
+
+**Governing V1 topology:** Native `00_START_HERE` → native `03_KODEX_TRUTH_LEDGER` → Ocín-decided `08J` consolidated Canon → latest Decision Log governs **THRESHOLD → PROLOGUE → DESCENT → ARCHIVE → MACHINE → COSMOLOGY → RETURN**. A–Y / A–M–Y is preserved as historical architecture and research, not as an active parallel V1 route. Offering is post-RETURN and is not an eighth threshold.
+
+**Verified drift in #96 at review head `13e5ad00757f403e82b63025d375585ae4b1766c`:**
+
+- `PROJECT_MANIFEST.json` defines `currentReleaseArchitecture.type=SEVEN_SCENE_CORRIDOR` and `historicalTopology.implementationAuthority=false`, yet `repositories.implementation.releaseBranch=redesign-v2` still implies an unverified release lineage. It is **not proof of what the public host serves**.
+- `data/experience-graph.json` still declares `status=CANONICAL_TOPOLOGY_PARTIAL_IMPLEMENTATION`, `topology.coordinates=A_THROUGH_Y`, and the alphabet registry as its authoritative coordinate source.
+- `data/alphabet-topology.json` still declares `status=CANONICAL_STRUCTURE_PARTIAL_CONCEPT_ASSIGNMENT`; retain its records and provenance, but this label cannot be read as current V1 authority.
+- `scripts/validate_context.py` still validates the alphabet-centric graph/registry. The observed **KODEX Context Integrity: success** on this candidate proves the existing checks passed, **not** that the active machine-readable topology matches the seven-scene canon.
+
+**Correction rule:** Until the registry and validator are reconciled and both positive seven-scene and negative active-A–Y tests pass, label #96's machine-readable convergence `NOT VERIFIED`. Do not infer `TESTED`, creator acceptance, `KEEP`, merged release, or public deployment from a green context check. Do not delete A–Y history to satisfy the new rule.
+
+**Next safe technical frontier (not executed by this documentation edit):** Preserve A–Y as versioned history, make the V1 graph/validator reject active A–Y authority, neutralize the unverified release-branch assumption without inventing a replacement, rerun context validation, then trace public host → artifact → repository/ref/build and conduct same-source seven-scene QA.
+
+No original Ocín artwork, cultural-rights record, credentials, permissions, production code, PR integration, merge or deployment is modified by this erratum.
