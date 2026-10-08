@@ -188,6 +188,28 @@ The complete journey must remain understandable and operable without WebGL.
 - Y is semantic and route-dependent;
 - no production deployment without `APROBAR DEPLOY`.
 
+## Executable structural reference
+
+The structural half of this target now has an executable reference and a machine
+probe. Neither assigns concepts to `B` through `X`.
+
+```text
+packages/core-reference/src/kodex-alphabet.mjs
+  coordinate engine: state-dependent edge resolution, voluntary M with exact
+  anchor restore, mutated revisits, delayed consequences, Y derived from the
+  complete event trace. Refuses a graph that assigns concepts without approval.
+
+experiences/vertical-slice-v0/qa/
+  eight reproducible QA trajectory signatures. Fixtures, not architecture.
+
+scripts/validate_canon_conformance.py
+  probes the ten firstExecutableSlice capabilities against that evidence and
+  fails if any file claims the slice is complete without it.
+```
+
+Concept assignment, corpus, rights review and visual implementation remain
+open. A passing probe is not an implemented experience.
+
 ## Explicit non-goals for V0
 
 - producing all 25 coordinates as complete scenes;

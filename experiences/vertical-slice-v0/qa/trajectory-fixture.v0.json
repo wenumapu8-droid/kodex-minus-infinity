@@ -1,0 +1,315 @@
+{
+  "id": "KDX_QA_TRAJECTORY_FIXTURE_V0",
+  "authority": "NON_CANONICAL_QA_FIXTURE",
+  "conceptAssignmentAuthority": "UNASSIGNED_PENDING_CREATOR_APPROVAL",
+  "coordinateRegistry": "data/alphabet-topology.json",
+  "epistemicStatus": "NEEDS_CONFIRMATION",
+  "purpose": "Exercise the structural half of ADR-0010 that canon already fixes, so the ten firstExecutableSlice capabilities can be probed by machine instead of asserted in prose.",
+  "boundaries": [
+    "This file assigns no concept, world, work or source to B through X; that assignment requires CREATOR_APPROVAL.",
+    "Representative routes are QA fixtures, not final architecture.",
+    "Regions reuse the semanticWorlds ids already declared in data/experience-graph.json and imply no concept assignment.",
+    "Signatures are generated golden values produced by packages/core-reference/src/kodex-alphabet.mjs, not canonical artifacts.",
+    "Nothing here ranks, scores or profiles a visitor."
+  ],
+  "serendipitySeed": "KDX-QA-V0",
+  "accessibility": {
+    "keyboard": true,
+    "touch": true,
+    "reducedMotion": true,
+    "nonWebglEquivalent": true
+  },
+  "nodes": [
+    {
+      "coordinate": "A",
+      "region": "origin",
+      "spectral": "obsidian",
+      "conceptIds": [],
+      "epistemicStatus": "CANONICAL",
+      "sourceIds": [],
+      "rightsStatus": "NOT_APPLICABLE",
+      "culturalStatus": "NOT_APPLICABLE",
+      "mutatesOnRevisit": false,
+      "offersActions": [
+        { "id": "ORIENT_THRESHOLD" },
+        { "id": "CONFIGURE_ACCESS" }
+      ],
+      "unresolvedQuestions": []
+    },
+    {
+      "coordinate": "B",
+      "region": "memory-world",
+      "spectral": "red",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [
+        { "id": "OPEN_ARCHIVE_RECORD", "relationId": "REL-QA-002" }
+      ],
+      "unresolvedQuestions": ["Which authored material occupies B is undecided."]
+    },
+    {
+      "coordinate": "C",
+      "region": "machine-world",
+      "spectral": "orange",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [
+        {
+          "id": "TRACE_CODE_RELATION",
+          "relationId": "REL-QA-001",
+          "sourceIds": ["SRC-QA-001"],
+          "unlocksEdges": ["E-F-Y"]
+        }
+      ],
+      "unresolvedQuestions": ["Which authored material occupies C is undecided."]
+    },
+    {
+      "coordinate": "F",
+      "region": "machine-world",
+      "spectral": "yellow",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [],
+      "unresolvedQuestions": ["Which authored material occupies F is undecided."]
+    },
+    {
+      "coordinate": "H",
+      "region": "machine-world",
+      "spectral": "green",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": ["SRC-QA-002"],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [
+        { "id": "INSPECT_SOURCE", "sourceIds": ["SRC-QA-002"] }
+      ],
+      "unresolvedQuestions": ["Which authored material occupies H is undecided."]
+    },
+    {
+      "coordinate": "K",
+      "region": "memory-world",
+      "spectral": "cyan",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": true,
+      "offersActions": [
+        { "id": "FOLLOW_VERSION_LINEAGE", "relationId": "REL-QA-003" }
+      ],
+      "unresolvedQuestions": ["Which authored material occupies K is undecided."]
+    },
+    {
+      "coordinate": "M",
+      "region": "heart",
+      "spectral": "indigo",
+      "conceptIds": [],
+      "epistemicStatus": "CANONICAL",
+      "sourceIds": [],
+      "rightsStatus": "NOT_APPLICABLE",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [],
+      "unresolvedQuestions": []
+    },
+    {
+      "coordinate": "Q",
+      "region": "cosmology-world",
+      "spectral": "blue",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [],
+      "unresolvedQuestions": ["Which authored material occupies Q is undecided."]
+    },
+    {
+      "coordinate": "R",
+      "region": "memory-world",
+      "spectral": "violet",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": true,
+      "offersActions": [
+        { "id": "COMPARE_TRACES" }
+      ],
+      "unresolvedQuestions": ["Which authored material occupies R is undecided."]
+    },
+    {
+      "coordinate": "X",
+      "region": "cosmology-world",
+      "spectral": "violet",
+      "conceptIds": [],
+      "epistemicStatus": "NEEDS_CONFIRMATION",
+      "sourceIds": [],
+      "rightsStatus": "NEEDS_CONFIRMATION",
+      "culturalStatus": "NEEDS_CONFIRMATION",
+      "mutatesOnRevisit": false,
+      "offersActions": [],
+      "unresolvedQuestions": ["Which authored material occupies X is undecided."]
+    },
+    {
+      "coordinate": "Y",
+      "region": "return",
+      "spectral": "open-white",
+      "conceptIds": [],
+      "epistemicStatus": "CANONICAL",
+      "sourceIds": [],
+      "rightsStatus": "NOT_APPLICABLE",
+      "culturalStatus": "NOT_APPLICABLE",
+      "mutatesOnRevisit": false,
+      "offersActions": [],
+      "unresolvedQuestions": []
+    }
+  ],
+  "edges": [
+    { "id": "E-A-B", "from": "A", "to": "B", "label": "toward archive", "accessibility": { "keyboard": "ArrowDown then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-A-C", "from": "A", "to": "C", "label": "toward machine", "accessibility": { "keyboard": "ArrowRight then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-A-H", "from": "A", "to": "H", "label": "toward source", "accessibility": { "keyboard": "ArrowUp then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-B-K", "from": "B", "to": "K", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-C-H", "from": "C", "to": "H", "accessibility": { "keyboard": "Tab then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-C-F", "from": "C", "to": "F", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-H-F", "from": "H", "to": "F", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-H-Q", "from": "H", "to": "Q", "accessibility": { "keyboard": "Tab then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-H-X", "from": "H", "to": "X", "label": "bounded serendipity", "conditions": { "serendipityGate": { "modulo": 4, "remainder": 0 } }, "accessibility": { "keyboard": "Shift+Tab then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-F-Q", "from": "F", "to": "Q", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-F-Y", "from": "F", "to": "Y", "label": "early return, unlocked by a traced relation", "conditions": { "requiresActions": ["TRACE_CODE_RELATION"] }, "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-K-M", "from": "K", "to": "M", "label": "Heart approach from memory", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-Q-M", "from": "Q", "to": "M", "label": "Heart approach from cosmology", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-K-R", "from": "K", "to": "R", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-R-K", "from": "R", "to": "K", "label": "loop back to a mutated coordinate", "accessibility": { "keyboard": "Backspace then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-R-X", "from": "R", "to": "X", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-K-X", "from": "K", "to": "X", "label": "opened only by a second visit to K", "conditions": { "minVisitCount": { "K": 2 } }, "accessibility": { "keyboard": "Tab then Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-X-Y", "from": "X", "to": "Y", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } },
+    { "id": "E-Q-Y", "from": "Q", "to": "Y", "accessibility": { "keyboard": "Enter", "reducedMotion": "instant cut", "pointerOptional": true } }
+  ],
+  "trajectories": [
+    {
+      "id": "T1",
+      "note": "machine route; the C relation is left untraced, so the early return stays closed",
+      "letters": ["A", "C", "H", "F", "Q", "Y"],
+      "signature": "KDX-Y-a7565e937666b48f",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-C" },
+        { "type": "TRANSITION", "edgeId": "E-C-H" },
+        { "type": "TRANSITION", "edgeId": "E-H-F" },
+        { "type": "TRANSITION", "edgeId": "E-F-Q" },
+        { "type": "TRANSITION", "edgeId": "E-Q-Y" }
+      ]
+    },
+    {
+      "id": "T2",
+      "note": "memory route through the Heart, back to the exact anchor, then a loop and a mutated revisit",
+      "letters": ["A", "B", "K", "M", "K", "R", "K", "X", "Y"],
+      "signature": "KDX-Y-cfc49520ec0821af",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-B" },
+        { "type": "TRANSITION", "edgeId": "E-B-K" },
+        { "type": "HEART_ENTER" },
+        { "type": "HEART_EXIT" },
+        { "type": "TRANSITION", "edgeId": "E-K-R" },
+        { "type": "TRANSITION", "edgeId": "E-R-K" },
+        { "type": "TRANSITION", "edgeId": "E-K-X" },
+        { "type": "TRANSITION", "edgeId": "E-X-Y" }
+      ]
+    },
+    {
+      "id": "T3",
+      "note": "the traced relation at C produces a delayed consequence: the early return opens later at F",
+      "letters": ["A", "C", "F", "Y"],
+      "signature": "KDX-Y-7940a95b7a400cf9",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-C" },
+        { "type": "ACTION", "actionId": "TRACE_CODE_RELATION" },
+        { "type": "TRANSITION", "edgeId": "E-C-F" },
+        { "type": "TRANSITION", "edgeId": "E-F-Y" }
+      ]
+    },
+    {
+      "id": "T4",
+      "note": "Heart approached from the cosmology region instead of the memory region",
+      "letters": ["A", "H", "Q", "M", "Q", "Y"],
+      "signature": "KDX-Y-b8b4833130149847",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-H" },
+        { "type": "TRANSITION", "edgeId": "E-H-Q" },
+        { "type": "HEART_ENTER" },
+        { "type": "HEART_EXIT" },
+        { "type": "TRANSITION", "edgeId": "E-Q-Y" }
+      ]
+    },
+    {
+      "id": "T5",
+      "note": "completed route that never approaches the Heart",
+      "letters": ["A", "B", "K", "R", "X", "Y"],
+      "signature": "KDX-Y-8274043e6314084a",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-B" },
+        { "type": "TRANSITION", "edgeId": "E-B-K" },
+        { "type": "TRANSITION", "edgeId": "E-K-R" },
+        { "type": "TRANSITION", "edgeId": "E-R-X" },
+        { "type": "TRANSITION", "edgeId": "E-X-Y" }
+      ]
+    },
+    {
+      "id": "T6",
+      "note": "same coordinates as T1 in a different order; the source at H is inspected",
+      "letters": ["A", "H", "F", "Q", "Y"],
+      "signature": "KDX-Y-13e880e7ee1aca8d",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-H" },
+        { "type": "ACTION", "actionId": "INSPECT_SOURCE" },
+        { "type": "TRANSITION", "edgeId": "E-H-F" },
+        { "type": "TRANSITION", "edgeId": "E-F-Q" },
+        { "type": "TRANSITION", "edgeId": "E-Q-Y" }
+      ]
+    },
+    {
+      "id": "T7",
+      "note": "shortest machine-to-cosmology crossing",
+      "letters": ["A", "C", "H", "Q", "Y"],
+      "signature": "KDX-Y-20481657c614c231",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-C" },
+        { "type": "TRANSITION", "edgeId": "E-C-H" },
+        { "type": "TRANSITION", "edgeId": "E-H-Q" },
+        { "type": "TRANSITION", "edgeId": "E-Q-Y" }
+      ]
+    },
+    {
+      "id": "T8",
+      "note": "loop and mutated revisit without the Heart",
+      "letters": ["A", "B", "K", "R", "K", "X", "Y"],
+      "signature": "KDX-Y-cb5b554f8d51e8be",
+      "steps": [
+        { "type": "TRANSITION", "edgeId": "E-A-B" },
+        { "type": "TRANSITION", "edgeId": "E-B-K" },
+        { "type": "ACTION", "actionId": "FOLLOW_VERSION_LINEAGE" },
+        { "type": "TRANSITION", "edgeId": "E-K-R" },
+        { "type": "TRANSITION", "edgeId": "E-R-K" },
+        { "type": "TRANSITION", "edgeId": "E-K-X" },
+        { "type": "TRANSITION", "edgeId": "E-X-Y" }
+      ]
+    }
+  ]
+}

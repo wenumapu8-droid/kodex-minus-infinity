@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - 'packages/core-reference/**'
+      - 'experiences/vertical-slice-v0/qa/**'
       - '.github/workflows/core-reference.yml'
   push:
     branches:
       - main
     paths:
       - 'packages/core-reference/**'
+      - 'experiences/vertical-slice-v0/qa/**'
       - '.github/workflows/core-reference.yml'
 
 permissions:
