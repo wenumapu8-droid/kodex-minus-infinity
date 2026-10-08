@@ -1,6 +1,6 @@
 # KODEX−∞ CURRENT STATE
 
-Last updated: `2026-08-25`  
+Last updated: `2026-10-08`  
 Status: `CREATOR-APPROVED CANON / ASSEMBLY+DEEP NAV VERIFIED BASELINE / CURRENT-LINEAGE EXACT-HEAD BROWSER VERIFIED / CURATION ACTIVE`
 
 ## Authority boundary
@@ -258,3 +258,75 @@ The bounded ARCHIVE lineage is now technically/browser verified after removal of
 Creator experience direction remains `REFINE GLOBAL / HIDE THE SYSTEM → SHOW THE UNIVERSE`. The next bounded product gate is direct reference-first visual review of #426 against the governed Drive references + 08E across desktop/mobile/temporal/reduced-motion. Only a demonstrated fidelity defect authorizes another presentation delta on the existing ARCHIVE implementation. Shared HUD reduction follows only where the same reference comparison proves competition.
 
 Truth boundary: `CI/BROWSER PASS ≠ CURATOR REVIEW ≠ CREATOR ACCEPTANCE ≠ MERGE ≠ DEPLOY ≠ CANON`.
+
+## 2026-10-08 — canon repository: coordinate engine + conformance probe
+
+This entry records code, not a status reconciliation. Scope was the canonical
+repository only; `wenu-frontend` was not touched and none of its pending gates
+moved.
+
+Measured gap that motivated the work:
+
+```text
+data/alphabet-topology.json   25 nodes, substantive content only at A / M / Y
+                              22 shells of {id, status, structuralRole}
+                              0 nodes with conceptIds
+alphabet edges defined        0, in topology and experience-graph alike
+code consuming the registry   scripts/validate_context.py only
+packages/core-reference       pre-ADR-0010 five-path model, no coordinate model
+firstExecutableSlice          TARGET_NOT_COMPLETE, no capability machine-probed
+```
+
+Added, all additive:
+
+```text
+packages/core-reference/src/kodex-alphabet.mjs
+  Executable reference for the structural half of ADR-0010. State-dependent
+  edge resolution over the nine declared resolverInputs, deterministic bounded
+  serendipity, voluntary M with exact prior-anchor restore, mutated revisits
+  from session memory, delayed consequences, ignored signals, and Y derived
+  from the complete event trace with all 14 declared outputs.
+  Refuses a graph that assigns conceptIds, an edge without a keyboard and
+  reduced-motion equivalent, navigation into M, and any field using ranking
+  vocabulary. No Math.random. kodex-core.mjs is unmodified.
+
+experiences/vertical-slice-v0/qa/trajectory-fixture.v0.json
+  NON_CANONICAL_QA_FIXTURE. 11 coordinates, 19 edges, 8 reproducible
+  trajectories with golden signatures. Assigns no concept to B through X.
+
+scripts/validate_canon_conformance.py
+  Probes the ten firstExecutableSlice capabilities against that evidence and
+  separates structural conformance (fatal) from capability readiness
+  (reported). Drift guard: any claim that the slice is complete fails while a
+  capability lacks evidence.
+```
+
+Evidence, run locally on this branch:
+
+```text
+python -m unittest discover -s tests          60 tests OK (47 prior + 13 new)
+python scripts/validate_context.py            passed / 29 files / 12 JSON
+python scripts/validate_canon_conformance.py  10/10 capabilities, structural passed
+packages/core-reference npm test              36 tests pass (15 prior + 21 new)
+packages/core-reference npm run example       ran
+```
+
+Truth boundary for this entry:
+
+```text
+structural capability probe  != implemented experience
+engine + QA fixture          != concept assignment for B through X
+local test pass              != CI run on a merge SHA
+nothing here                 == curator review, creator acceptance, merge,
+                                deploy or canon promotion
+```
+
+`PROJECT_MANIFEST.json` still declares `firstExecutableSlice.status =
+TARGET_NOT_COMPLETE` and was deliberately left unchanged: the capabilities now
+carry structural evidence, but promotion is a creator decision and the corpus,
+concept assignment, rights review and visual implementation remain open. The
+validator emits that condition as a notice rather than silently promoting it.
+
+The blocking decision is unchanged and is not a technical one: concept
+assignment for B through X requires `CREATOR_APPROVAL`. Six coordinates is the
+spec minimum, not twenty-two.
