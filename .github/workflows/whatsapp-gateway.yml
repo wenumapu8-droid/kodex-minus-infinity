@@ -1,0 +1,50 @@
+name: KODEX WhatsApp Gateway
+
+on:
+  pull_request:
+    paths:
+      - 'packages/whatsapp-gateway/**'
+      - '.github/workflows/whatsapp-gateway.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/whatsapp-gateway/**'
+      - '.github/workflows/whatsapp-gateway.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # The unit tests cover the pure modules only, so they need no install.
+      - name: Run gateway tests
+        working-directory: packages/whatsapp-gateway
+        run: npm test
+
+      # Catches a syntax error in the Worker entry point and the classifier,
+      # which the unit tests do not import.
+      - name: Syntax-check every module
+        working-directory: packages/whatsapp-gateway
+        run: for f in src/*.mjs; do node --check "$f"; done
+
+      - name: Assert no secret placeholder was committed as a value
+        working-directory: packages/whatsapp-gateway
+        run: |
+          if grep -rnE '(WHATSAPP_TOKEN|META_APP_SECRET|META_VERIFY_TOKEN|ANTHROPIC_API_KEY)[[:space:]]*=[[:space:]]*["'"'"']?[A-Za-z0-9_-]{12,}' \
+            --include='*.mjs' --include='*.toml' --include='*.json' .; then
+            echo "A credential appears to be hardcoded. Use wrangler secret put."
+            exit 1
+          fi

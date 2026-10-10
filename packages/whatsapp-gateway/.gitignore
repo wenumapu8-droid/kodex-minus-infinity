@@ -1,0 +1,10 @@
+# Local secrets for `wrangler dev`. The root .gitignore covers .env* but not
+# this Wrangler-specific filename.
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Wrangler build/state and the local D1 sqlite file
+.wrangler/
+
+node_modules/

@@ -1,0 +1,6 @@
+# Copy to .dev.vars for `wrangler dev`. .dev.vars is gitignored via .env.* at repo root.
+META_APP_SECRET=
+META_VERIFY_TOKEN=
+WHATSAPP_TOKEN=
+WHATSAPP_PHONE_NUMBER_ID=
+ANTHROPIC_API_KEY=

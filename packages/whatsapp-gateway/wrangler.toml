@@ -1,0 +1,40 @@
+# Cloudflare Worker config for the Wenu Mapu WhatsApp triage gateway.
+#
+# Secrets are NEVER written here. Set them with:
+#   wrangler secret put META_APP_SECRET
+#   wrangler secret put META_VERIFY_TOKEN
+#   wrangler secret put WHATSAPP_TOKEN
+#   wrangler secret put WHATSAPP_PHONE_NUMBER_ID
+#   wrangler secret put ANTHROPIC_API_KEY
+#
+# No deployment happens without the canonical approval phrase (START_HERE.md §6).
+
+name = "wenu-whatsapp-gateway"
+main = "src/worker.mjs"
+compatibility_date = "2026-09-01"
+workers_dev = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wenu-whatsapp"
+database_id = "REPLACE_WITH_D1_ID"
+migrations_dir = "migrations"
+
+[vars]
+# Operational copy targets. Change these without touching code.
+BUSINESS_NAME = "Wenu Mapu"
+HUMAN_NAME = "Marimari"
+CONTACT_EMAIL = "marimari@wenumapuonline.com"
+SITE_URL = "https://wenumapuonline.com"
+AFTERCARE_URL = "https://wenumapuonline.com/aftercare/"
+BOOKING_URL = "REPLACE_WITH_CALENDLY_URL"
+DEFAULT_LANG = "en"
+# Classifier model. claude-opus-5-5 is the default; see README on cost.
+CLASSIFIER_MODEL = "claude-opus-5-5"
+# Set to "0" to run with the deterministic classifier only (no API spend).
+CLASSIFIER_LLM_ENABLED = "1"
+# Days after which raw message bodies are purged by the scheduled handler.
+MESSAGE_RETENTION_DAYS = "30"
+
+[triggers]
+crons = ["17 4 * * *"]
