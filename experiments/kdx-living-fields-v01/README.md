@@ -1,10 +1,10 @@
 # KODEX−∞ / Living Fields v0.1
 
-**Estado:** PROTOTYPE · 12 octubre 2026 · No integrado/desplegado en producción.
+**Estado:** EXPERIMENTAL / PROTOTYPE · 12 octubre 2026 · No integrado/desplegado en producción.
 
 ## Uso
 
-Abrir `KODEX_Living_Fields_v01.html` en un navegador moderno. No requiere internet ni servidor externo. WebGL renderiza shaders originales en tiempo real; existe un fallback de Canvas2D para dispositivos sin WebGL.
+En este repositorio, abrir `index.html` (en la copia del ZIP/Drive el mismo prototipo se llama `KODEX_Living_Fields_v01.html`) en un navegador moderno. No requiere internet ni servidor externo. WebGL renderiza shaders originales en tiempo real; existe un fallback de Canvas2D para dispositivos sin WebGL.
 
 ## Experiencias
 
