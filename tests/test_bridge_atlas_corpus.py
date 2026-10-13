@@ -82,6 +82,25 @@ class BridgeAtlasCorpusTests(unittest.TestCase):
             self.assertEqual(source["privacyStatus"], "PUBLIC")
             self.assertEqual(source["rightsStatus"], "REFERENCE_ONLY")
 
+    def test_location_prefers_repo_path_over_record_id(self) -> None:
+        # KDX-CORPUS-001 (Threshold Portal) carries a real repository + path
+        # in the corpus lock and no `archive` field. The location must point
+        # at that path, not fall back to the bare source_record id.
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        threshold = next(s for s in sources if s["id"] == "SRC-KDX-CORPUS-001")
+        self.assertEqual(threshold["path"], "src/kodex/threshold-portal/README.md")
+        self.assertEqual(threshold["location"], threshold["path"])
+
+    def test_path_and_repository_are_null_not_the_string_none(self) -> None:
+        # Rows that carry only an `archive` (no `path`/`repository` in the
+        # corpus lock) must serialize those fields as JSON null, not the
+        # literal string "None".
+        sources = json.loads((OUT_DIR / "sources.json").read_text(encoding="utf-8"))
+        observe = next(s for s in sources if s["id"] == "SRC-KDX-CORPUS-002")
+        self.assertIsNone(observe["path"])
+        self.assertIsNone(observe["repository"])
+        self.assertEqual(observe["location"], "archive:kodex-observe-prototype.zip")
+
 
 if __name__ == "__main__":
     unittest.main()
