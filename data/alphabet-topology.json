@@ -1,11 +1,34 @@
 {
   "system": "KODEX−∞",
   "version": "0.1.0-alphabet-topology",
-  "status": "CANONICAL_STRUCTURE_PARTIAL_CONCEPT_ASSIGNMENT",
+  "status": "HISTORICAL_RESEARCH_ONLY",
   "coordinateSystem": "KODEX_A_TO_Y",
   "letters": [
-    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
-    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y"
   ],
   "invariants": {
     "entry": "A",
@@ -55,7 +78,10 @@
         "FIRST_MEANINGFUL_ACTION",
         "INITIAL_MEMORY_WRITE"
       ],
-      "spectralBehavior": ["OBSIDIAN", "FIRST_SIGNAL"],
+      "spectralBehavior": [
+        "OBSIDIAN",
+        "FIRST_SIGNAL"
+      ],
       "entryRule": "ALL_CANONICAL_JOURNEYS_BEGIN_HERE",
       "exitRule": "MULTIPLE_STATE_DEPENDENT_EDGES"
     },
@@ -121,10 +147,35 @@
       "canonicalIdentity": "HEART / 0",
       "mandatory": false,
       "potentiallyReachableFrom": [
-        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
-        "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X"
       ],
-      "portalStates": ["LATENT", "RESONANT", "AVAILABLE"],
+      "portalStates": [
+        "LATENT",
+        "RESONANT",
+        "AVAILABLE"
+      ],
       "contextualManifestations": [
         "M@MEMORY",
         "M@MACHINE",
@@ -208,7 +259,10 @@
         "ROUTE_SPECIFIC_ARTIFACT",
         "REENTRY_POSSIBILITIES"
       ],
-      "spectralBehavior": ["ROUTE_DERIVED_SPECTRUM", "OPEN_WHITE"],
+      "spectralBehavior": [
+        "ROUTE_DERIVED_SPECTRUM",
+        "OPEN_WHITE"
+      ],
       "terminalRule": "ONE_FUNCTION_MANY_MANIFESTATIONS"
     }
   ],
@@ -252,5 +306,6 @@
     "RANDOM_ENGAGEMENT_RECOMMENDATION_ENGINE",
     "UNASSIGNED_CONCEPTS_PRESENTED_AS_CANON"
   ],
-  "deploymentLock": "APROBAR DEPLOY"
+  "deploymentLock": "APROBAR DEPLOY",
+  "implementationAuthority": false
 }
