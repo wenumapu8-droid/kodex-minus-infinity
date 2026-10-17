@@ -176,6 +176,45 @@ def validate_experience_graph(errors: list[str]) -> None:
         errors.append("The canonical graph must allow mutated revisits")
 
 
+EXPECTED_V1_SCENES = [
+    "00_THRESHOLD", "01_PROLOGUE", "02_DESCENT", "03_ARCHIVE",
+    "04_MACHINE", "05_COSMOLOGY", "06_RETURN",
+]
+
+
+def validate_v1_authority(errors: list[str]) -> None:
+    """Validate current release authority independently of archived A–Y integrity."""
+    try:
+        manifest = load_json("PROJECT_MANIFEST.json")
+        graph = load_json("data/experience-graph.json")
+        alphabet = load_json("data/alphabet-topology.json")
+    except (OSError, json.JSONDecodeError):
+        return
+
+    current = manifest.get("currentReleaseArchitecture", {})
+    if current.get("status") != "CURRENT":
+        errors.append("V1 release architecture must declare CURRENT status")
+    if current.get("type") != "SEVEN_SCENE_CORRIDOR":
+        errors.append("V1 release architecture must be SEVEN_SCENE_CORRIDOR")
+    if current.get("scenes") != EXPECTED_V1_SCENES:
+        errors.append("V1 must contain exactly seven canonical scenes in order")
+
+    historical = manifest.get("historicalTopology", {})
+    if historical.get("implementationAuthority") is not False:
+        errors.append("Historical A-Y topology must have no V1 implementation authority")
+    if historical.get("status") != "DEPRECATED":
+        errors.append("Historical A-Y topology must be DEPRECATED in manifest")
+
+    for name, value in (("Experience graph", graph), ("Alphabet topology", alphabet)):
+        if value.get("status") != "HISTORICAL_RESEARCH_ONLY":
+            errors.append(f"{name} must be labeled HISTORICAL_RESEARCH_ONLY")
+        if value.get("implementationAuthority") is not False:
+            errors.append(f"{name} cannot govern current V1 implementation")
+
+    impl = manifest.get("repositories", {}).get("implementation", {})
+    if impl.get("releaseBranch") is not None or impl.get("releaseBranchStatus") != "NEEDS_CONFIRMATION":
+        errors.append("Release branch remains unverified; do not imply a deployed ref")
+
 def validate_state_registry(errors: list[str]) -> None:
     try:
         registry = load_json("data/state-registry.json")
@@ -233,6 +272,7 @@ def main() -> int:
     validate_json(errors)
     validate_manifest(errors)
     validate_experience_graph(errors)
+    validate_v1_authority(errors)
     validate_state_registry(errors)
     validate_module_registry(errors)
     validate_public_boundary(errors)
