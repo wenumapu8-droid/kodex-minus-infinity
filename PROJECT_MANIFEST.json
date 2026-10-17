@@ -18,9 +18,10 @@
     },
     "implementation": {
       "fullName": "wenumapu8-droid/wenu-frontend",
-      "releaseBranch": "redesign-v2",
+      "releaseBranch": null,
       "historicalVerifiedBranch": "feature/kodex-depth-engine",
-      "historicalPrototypeBranch": "feature/kodex-vertical-slice-v0"
+      "historicalPrototypeBranch": "feature/kodex-vertical-slice-v0",
+      "releaseBranchStatus": "NEEDS_CONFIRMATION"
     }
   },
   "requiredReading": [
@@ -47,9 +48,18 @@
       "06_RETURN"
     ],
     "mirrorPairs": [
-      ["00_THRESHOLD", "06_RETURN"],
-      ["01_PROLOGUE", "05_COSMOLOGY"],
-      ["02_DESCENT", "04_MACHINE"]
+      [
+        "00_THRESHOLD",
+        "06_RETURN"
+      ],
+      [
+        "01_PROLOGUE",
+        "05_COSMOLOGY"
+      ],
+      [
+        "02_DESCENT",
+        "04_MACHINE"
+      ]
     ],
     "inversionAxis": "03_ARCHIVE",
     "returnCarriesMemory": true,
