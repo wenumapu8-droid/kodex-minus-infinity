@@ -1,7 +1,7 @@
 {
   "system": "KODEX−∞",
   "version": "0.4.0-alphabet-authority",
-  "status": "CANONICAL_TOPOLOGY_PARTIAL_IMPLEMENTATION",
+  "status": "HISTORICAL_RESEARCH_ONLY",
   "authoritativeCoordinateRegistry": "data/alphabet-topology.json",
   "topology": {
     "model": "DIRECTED_WEIGHTED_STATEFUL_MEMORY_PRESERVING_ALPHABET_GRAPH",
@@ -173,5 +173,6 @@
     "Every factual element provides provenance and epistemic status.",
     "Every route provides an immediate safe exit.",
     "No deployment occurs without APROBAR DEPLOY."
-  ]
+  ],
+  "implementationAuthority": false
 }
