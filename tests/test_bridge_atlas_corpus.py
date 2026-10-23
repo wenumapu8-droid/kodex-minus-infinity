@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -19,7 +20,7 @@ def sha256_file(path: Path) -> str:
 class BridgeAtlasCorpusTests(unittest.TestCase):
     def run_bridge(self) -> subprocess.CompletedProcess[str]:
         return subprocess.run(
-            ["python3", str(BRIDGE_SCRIPT)],
+            [sys.executable, str(BRIDGE_SCRIPT)],
             cwd=ROOT,
             capture_output=True,
             text=True,
