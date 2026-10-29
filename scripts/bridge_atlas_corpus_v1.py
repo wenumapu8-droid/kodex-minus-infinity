@@ -357,6 +357,23 @@ def build_edges(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
     node_ids = {n["id"] for n in nodes}
     edges: list[dict[str, Any]] = []
     ordered = sorted(node_ids)
+    # NOTE (measured, not fixed — needs Ocín's call, same pattern as the
+    # rights/cultural-mapping note above): `from_id`/`to_id` here come purely
+    # from alphabetical sort order of node ids, and the `i >= 3` cutoff just
+    # means "the first three ids, lexically". None of that reflects an actual
+    # relationship in the corpus lock — e.g. NODE-KDX-CORPUS-001 ends up
+    # "RELATED" to NODE-OCIN-CAND-008/009/010 (visual-atlas code rows linked
+    # to OCÍN cultural candidates still awaiting creator confirmation) with
+    # zero overlap in claimIds/sourceIds. Every one of these 69 synthetic
+    # edges is also stamped `"certainty": "CONFIRMED"`, which reads as a
+    # verified claim even though nothing backs it — that looks inconsistent
+    # with this bridge's stated goal of never inventing relationships beyond
+    # what the source lock declares. Before changing this, Ocín needs to
+    # decide what an edge should mean until real relationship data exists:
+    # drop synthetic edges entirely, keep them but mark certainty as
+    # SPECULATIVE/UNKNOWN (edges have no certainty enum validation today —
+    # see check_unknown_enums, which never checks edges), or something else —
+    # not ours to pick.
     for i, from_id in enumerate(ordered):
         for to_id in ordered[i + 1 :]:
             if i >= 3:
