@@ -214,6 +214,19 @@ def extract_kdx_rows(blocks: list[dict[str, Any]]) -> list[SourceRow]:
         if not title:
             title = source_record
         corpus_id = f"KDX-CORPUS-{len(rows) + 1:03d}"
+        # NOTE (measured, not fixed — needs Ocín's call, see CONTRIBUTING-style
+        # "decision" flags): these two lookups look swapped. `rights` is keyed
+        # by `status` (REPOSITORY_VERIFIED/ARCHIVE_VERIFIED/SOURCE_MIGRATED/
+        # EXCLUDED_FROM_V0), which never matches CULTURAL_MAP, so `rights` is
+        # always the KDX_RIGHTS default. `cultural` is keyed by the block's
+        # `rights_status` field instead. In practice this means the one row
+        # that sets `rights_status: REVIEW_REQUIRED` in the corpus lock
+        # (KDX-CORPUS-014 / Typography System v2) never surfaces that as
+        # rightsStatus (RIGHTS_ENUM has no REVIEW_REQUIRED member) — it is
+        # silently redirected into culturalStatus instead. Before changing
+        # this, Ocín needs to decide whether a `rights_status` annotation that
+        # doesn't fit RIGHTS_ENUM should raise an anomaly for review, map to
+        # UNKNOWN, or something else — not ours to pick.
         rights = CULTURAL_MAP.get(status, KDX_RIGHTS)
         cultural = CULTURAL_MAP.get(str(block.get("rights_status", "")), "STANDARD")
         roles = list(block.get("scene_roles", [])) + list(block.get("interaction_roles", []))
