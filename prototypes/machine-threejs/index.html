@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex" />
+<title>PROTOTIPO · KODEX−∞ · MACHINE (three.js)</title>
+<!--
+  PROTOTIPO — no canon, no conectado a rutas del sitio, no desplegado.
+  Escena de prueba para MACHINE: "un device multidimensional retrofuturista,
+  una tecnología fuera del tiempo". Construido siguiendo .claude/skills/threejs-*
+  (CloudAI-X/threejs-skills, MIT).
+  Interacción: arrastrar = orbitar · tocar = pulso.
+  Parámetros: ?capture=1 oculta la pista de interacción; ?manual=1 detiene el loop
+  y expone window.__kdxRender(t) para capturas deterministas.
+-->
+<style>
+  :root {
+    --obsidian: #050608;
+    --bone: #f0ece3;
+    --muted: #9a9992;
+    --red: #ff3833;
+    --amber: #f4b72a;
+    --gold: #9c7a3c;
+  }
+  html, body { margin: 0; height: 100%; background: var(--obsidian); overflow: hidden; }
+  body { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; color: var(--bone); -webkit-tap-highlight-color: transparent; }
+  canvas { display: block; position: fixed; inset: 0; width: 100%; height: 100%; touch-action: none; }
+  .hud { position: fixed; pointer-events: none; z-index: 2; letter-spacing: .18em; text-transform: uppercase; font-size: 10px; line-height: 1.5; }
+  .tag { top: max(14px, env(safe-area-inset-top)); left: 14px; color: var(--red); border: 1px solid var(--red); padding: 3px 7px 2px; }
+  .id { top: max(14px, env(safe-area-inset-top)); right: 14px; text-align: right; color: var(--muted); }
+  .id b { color: var(--amber); font-weight: 400; }
+  .hint { bottom: max(18px, env(safe-area-inset-bottom)); left: 0; right: 0; text-align: center; color: var(--muted); transition: opacity 1.2s; }
+  .hint.off { opacity: 0; }
+  .readout { bottom: max(44px, calc(env(safe-area-inset-bottom) + 30px)); left: 14px; color: var(--gold); font-size: 9px; }
+  .err { position: fixed; inset: 0; display: none; place-items: center; text-align: center; padding: 24px; color: var(--muted); font-size: 12px; letter-spacing: .1em; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div class="hud tag">PROTOTIPO</div>
+<div class="hud id">KODEX−∞<br><b>05 · MACHINE</b></div>
+<div class="hud readout" id="readout">Φ 0.000<br>τ 000.0</div>
+<div class="hud hint" id="hint">arrastra · orbitar &nbsp;/&nbsp; toca · pulso</div>
+<div class="err" id="err">WebGL no disponible en este dispositivo.<br>PROTOTIPO · MACHINE</div>
+
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+
+const params = new URLSearchParams(location.search);
+const MANUAL = params.has("manual");
+const CAPTURE = params.has("capture");
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (CAPTURE) document.getElementById("hint").classList.add("off");
+
+// ---------- palette (linear values come from THREE.Color, which converts from sRGB hex) ----------
+const C = {
+  obsidian: new THREE.Color(0x050608),
+  gold: new THREE.Color(0x8c6a2f),     // oxidized gold
+  goldHi: new THREE.Color(0xc89b4a),
+  amber: new THREE.Color(0xf4b72a),
+  amberDeep: new THREE.Color(0xf08a24),
+  red: new THREE.Color(0xff3833),
+};
+
+// ---------- renderer (skills: fundamentals + performance) ----------
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ antialias: false, powerPreference: "high-performance" });
+} catch (e) {
+  document.getElementById("err").style.display = "grid";
+  throw e;
+}
+const MAX_DPR = 2;
+let dpr = Math.min(window.devicePixelRatio || 1, MAX_DPR);
+renderer.setPixelRatio(dpr); // set before the composer is built: it copies the pixel ratio
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+document.body.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = C.obsidian.clone();
+scene.fog = new THREE.FogExp2(0x050608, 0.035);
+
+const camera = new THREE.PerspectiveCamera(38, window.innerWidth / window.innerHeight, 0.1, 100);
+
+// ---------- shared GLSL ----------
+const NOISE = /* glsl */ `
+  float hash21(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+`;
+
+// Ring material: oxidized gold body, fresnel amber rim, engraved glyph band, red scan + tap pulse.
+function makeRingMaterial(seed, cells) {
+  return new THREE.ShaderMaterial({
+    uniforms: {
+      uTime: { value: 0 },
+      uPulse: { value: 0 },        // 0..1, decays after a tap
+      uHit: { value: 0 },          // extra pulse when this ring was the tapped one
+      uSeed: { value: seed },
+      uCells: { value: cells },
+      uGold: { value: C.gold },
+      uGoldHi: { value: C.goldHi },
+      uAmber: { value: C.amber },
+      uRed: { value: C.red },
+    },
+    vertexShader: /* glsl */ `
+      varying vec2 vUv;
+      varying vec3 vN;
+      varying vec3 vV;
+      void main() {
+        vUv = uv;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        vN = normalize(normalMatrix * normal);
+        vV = normalize(-mv.xyz);
+        gl_Position = projectionMatrix * mv;
+      }
+    `,
+    fragmentShader: /* glsl */ `
+      uniform float uTime, uPulse, uHit, uSeed, uCells;
+      uniform vec3 uGold, uGoldHi, uAmber, uRed;
+      varying vec2 vUv;
+      varying vec3 vN;
+      varying vec3 vV;
+      ${NOISE}
+      // 3x5 bitmap glyph, one random "character" per cell that re-rolls slowly
+      float glyph(vec2 cuv, float id) {
+        vec2 g = floor(cuv * vec2(3.0, 5.0));
+        vec2 f = fract(cuv * vec2(3.0, 5.0));
+        float on = step(0.48, hash21(g + id * 7.13));
+        float px = step(0.18, f.x) * step(f.x, 0.82) * step(0.14, f.y) * step(f.y, 0.86);
+        return on * px;
+      }
+      void main() {
+        vec3 n = normalize(vN);
+        vec3 v = normalize(vV);
+        float ndv = abs(dot(n, v));
+        float fres = pow(1.0 - ndv, 3.0);
+
+        // brushed / oxidized body
+        vec3 L = normalize(vec3(0.4, 0.7, 0.6));
+        float lam = clamp(dot(n, L), 0.0, 1.0);
+        float spec = pow(clamp(dot(reflect(-L, n), v), 0.0, 1.0), 24.0);
+        float brushed = 0.85 + 0.15 * sin(vUv.x * 900.0 + hash21(vec2(floor(vUv.y * 40.0), uSeed)) * 6.28);
+        float oxid = smoothstep(0.55, 0.95, hash21(floor(vUv * vec2(220.0, 12.0)) + uSeed));
+        vec3 body = mix(uGold, uGold * vec3(0.55, 0.6, 0.5), oxid * 0.6);
+        vec3 col = body * (0.12 + 0.75 * lam) * brushed + uGoldHi * spec * 0.9;
+
+        // engraved glyph band on the outer face of the tube (v ~ 0 / 1)
+        float d = min(vUv.y, 1.0 - vUv.y);
+        float bandW = 0.19;
+        float inBand = step(d, bandW);
+        float x = vUv.x * uCells + uTime * 0.35 * (mod(uSeed, 2.0) * 2.0 - 1.0);
+        float cell = floor(x);
+        vec2 cuv = vec2(fract(x), d / bandW);
+        float roll = floor(uTime * 1.5 + hash21(vec2(cell, uSeed)) * 10.0);
+        float gl = glyph(cuv, cell + roll * 31.0) * inBand;
+        float rails = inBand * (smoothstep(bandW, bandW - 0.012, d) - smoothstep(bandW - 0.02, bandW - 0.032, d));
+
+        // red scan head travelling around the ring
+        float scanPos = fract(uTime * 0.07 + uSeed * 0.37);
+        float sd = abs(fract(vUv.x - scanPos + 0.5) - 0.5);
+        float scan = exp(-sd * 28.0);
+
+        vec3 glyphCol = mix(uAmber, uRed, clamp(scan * 2.0 + uPulse + uHit, 0.0, 1.0));
+        col += glyphCol * gl * (0.9 + 3.0 * scan + 2.2 * uPulse + 3.0 * uHit);
+        col += uAmber * rails * 0.6;
+
+        // fresnel rim (amber, red when pulsed)
+        col += mix(uAmber, uRed, clamp(uPulse + uHit, 0.0, 1.0)) * fres * (0.4 + 1.2 * uPulse + 1.5 * uHit);
+
+        gl_FragColor = vec4(col, 1.0);
+        #include <tonemapping_fragment>
+        #include <colorspace_fragment>
+      }
+    `,
+  });
+}
+
+// Seed-of-life lines: emissive amber with a flowing shimmer, red during pulses.
+function makeSeedMaterial() {
+  return new THREE.ShaderMaterial({
+    uniforms: {
+      uTime: { value: 0 },
+      uPulse: { value: 0 },
+      uAmber: { value: C.amber },
+      uDeep: { value: C.amberDeep },
+      uRed: { value: C.red },
+    },
+    vertexShader: /* glsl */ `
+      varying vec2 vUv;
+      varying float vFres;
+      void main() {
+        vUv = uv;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        vec3 n = normalize(normalMatrix * normal);
+        vFres = 1.0 - abs(dot(n, normalize(-mv.xyz)));
+        gl_Position = projectionMatrix * mv;
+      }
+    `,
+    fragmentShader: /* glsl */ `
+      uniform float uTime, uPulse;
+      uniform vec3 uAmber, uDeep, uRed;
+      varying vec2 vUv;
+      varying float vFres;
+      void main() {
+        float flow = 0.5 + 0.5 * sin(vUv.x * 6.2831 * 3.0 - uTime * 1.6);
+        vec3 c = mix(uDeep, uAmber, flow);
+        c = mix(c, uRed, uPulse);
+        float e = 0.32 + 0.45 * flow + 1.4 * uPulse + 0.25 * vFres;
+        gl_FragColor = vec4(c * e, 1.0);
+        #include <tonemapping_fragment>
+        #include <colorspace_fragment>
+      }
+    `,
+  });
+}
+
+// ---------- geometry (skills: geometry — merge static pieces, instance repeats) ----------
+const machine = new THREE.Group();
+scene.add(machine);
+
+const ringMats = [];
+const ringMeshes = [];
+const gimbals = [];
+// nested gimbal hierarchy: each ring's pivot lives inside the previous one
+const RINGS = [
+  { r: 2.25, tube: 0.085, cells: 96, axis: new THREE.Vector3(0, 1, 0), speed: 0.11 },
+  { r: 1.86, tube: 0.075, cells: 80, axis: new THREE.Vector3(1, 0, 0), speed: -0.17 },
+  { r: 1.50, tube: 0.066, cells: 64,  axis: new THREE.Vector3(0, 1, 0), speed: 0.23 },
+  { r: 1.17, tube: 0.058, cells: 50,  axis: new THREE.Vector3(1, 0, 0), speed: -0.31 },
+];
+let parent = machine;
+RINGS.forEach((cfg, i) => {
+  const pivot = new THREE.Group();
+  parent.add(pivot);
+  const mat = makeRingMaterial(i + 1.0, cfg.cells);
+  const mesh = new THREE.Mesh(new THREE.TorusGeometry(cfg.r, cfg.tube, 14, 160), mat);
+  // alternate the ring plane so the nest reads as a gyroscope
+  if (i % 2 === 1) mesh.rotation.y = Math.PI / 2;
+  mesh.userData.index = i;
+  pivot.add(mesh);
+  // small axle studs where this ring hinges in its parent
+  const studGeo = new THREE.CylinderGeometry(0.035, 0.035, 0.22, 10);
+  studGeo.rotateZ(Math.PI / 2);
+  const studs = mergeGeometries([studGeo.clone().translate(cfg.r + 0.06, 0, 0), studGeo.clone().translate(-cfg.r - 0.06, 0, 0)]);
+  const stud = new THREE.Mesh(studs, mat);
+  if (i % 2 === 1) stud.rotation.y = Math.PI / 2;
+  pivot.add(stud);
+  ringMats.push(mat);
+  ringMeshes.push(mesh);
+  gimbals.push({ pivot, cfg });
+  parent = pivot;
+});
+
+// outer dial: instanced tick marks (one draw call) + a red index marker
+const TICKS = 120;
+const tickGeo = new THREE.BoxGeometry(0.012, 0.09, 0.02);
+const tickMat = new THREE.MeshBasicMaterial({ color: C.gold });
+const ticks = new THREE.InstancedMesh(tickGeo, tickMat, TICKS);
+const m4 = new THREE.Matrix4();
+const q = new THREE.Quaternion();
+const s = new THREE.Vector3();
+const p = new THREE.Vector3();
+const tickColor = new THREE.Color();
+for (let i = 0; i < TICKS; i++) {
+  const a = (i / TICKS) * Math.PI * 2;
+  const major = i % 10 === 0;
+  p.set(Math.cos(a) * 2.62, Math.sin(a) * 2.62, 0);
+  q.setFromAxisAngle(new THREE.Vector3(0, 0, 1), a - Math.PI / 2);
+  s.set(1, major ? 2.2 : 1, 1);
+  m4.compose(p, q, s);
+  ticks.setMatrixAt(i, m4);
+  tickColor.copy(i === 0 ? C.red : major ? C.amber : C.gold).multiplyScalar(i === 0 ? 2.5 : major ? 1.4 : 0.8);
+  ticks.setColorAt(i, tickColor);
+}
+const dial = new THREE.Group();
+dial.add(ticks);
+const dialRing = new THREE.Mesh(new THREE.TorusGeometry(2.5, 0.006, 6, 200), new THREE.MeshBasicMaterial({ color: C.gold }));
+dial.add(dialRing);
+scene.add(dial);
+
+// seed of life: 7 circles (+ enclosing circle) merged into one geometry, three orthogonal planes
+function seedOfLifeGeometry(r, tube) {
+  const parts = [];
+  const add = (x, y, rad) => parts.push(new THREE.TorusGeometry(rad, tube, 5, 96).translate(x, y, 0));
+  add(0, 0, r);
+  for (let k = 0; k < 6; k++) {
+    const a = (k / 6) * Math.PI * 2;
+    add(Math.cos(a) * r, Math.sin(a) * r, r);
+  }
+  add(0, 0, r * 2);
+  return mergeGeometries(parts);
+}
+const seedMat = makeSeedMaterial();
+const seedGeo = seedOfLifeGeometry(0.36, 0.0085);
+const seed = new THREE.Group();
+const seedPlanes = [];
+[[0, 0, 0], [Math.PI / 2, 0, 0], [0, Math.PI / 2, 0]].forEach(([x, y, z], i) => {
+  const m = new THREE.Mesh(seedGeo, seedMat);
+  m.rotation.set(x, y, z);
+  if (i > 0) m.scale.setScalar(0.92);
+  seed.add(m);
+  seedPlanes.push(m);
+});
+machine.add(seed);
+
+// core: a small faceted red heart
+const coreMat = new THREE.MeshBasicMaterial({ color: C.red.clone().multiplyScalar(1.6) });
+const core = new THREE.Mesh(new THREE.OctahedronGeometry(0.11, 0), coreMat);
+machine.add(core);
+const coreCage = new THREE.LineSegments(
+  new THREE.EdgesGeometry(new THREE.IcosahedronGeometry(0.2, 0)),
+  new THREE.LineBasicMaterial({ color: C.amber.clone().multiplyScalar(1.3) })
+);
+machine.add(coreCage);
+
+// dust: sparse amber points drifting around the instrument
+const DUST = 700;
+const dustPos = new Float32Array(DUST * 3);
+for (let i = 0; i < DUST; i++) {
+  const rr = 2.8 + Math.random() * 5.0;
+  const th = Math.random() * Math.PI * 2;
+  const ph = Math.acos(2 * Math.random() - 1);
+  dustPos.set([rr * Math.sin(ph) * Math.cos(th), rr * Math.cos(ph) * 0.8, rr * Math.sin(ph) * Math.sin(th)], i * 3);
+}
+const dustGeo = new THREE.BufferGeometry();
+dustGeo.setAttribute("position", new THREE.BufferAttribute(dustPos, 3));
+const dust = new THREE.Points(dustGeo, new THREE.PointsMaterial({ color: C.amber, size: 0.025, sizeAttenuation: true, transparent: true, opacity: 0.55, depthWrite: false }));
+scene.add(dust);
+
+// ---------- post-processing (skill: postprocessing — RenderPass → bloom → custom → OutputPass) ----------
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 0.6, 0.45, 0.78);
+composer.addPass(bloom);
+
+const CRTShader = {
+  uniforms: {
+    tDiffuse: { value: null },
+    uTime: { value: 0 },
+    uPulse: { value: 0 },
+    uRes: { value: new THREE.Vector2(1, 1) },
+    uRed: { value: C.red },
+  },
+  vertexShader: /* glsl */ `
+    varying vec2 vUv;
+    void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+  `,
+  fragmentShader: /* glsl */ `
+    uniform sampler2D tDiffuse;
+    uniform float uTime, uPulse;
+    uniform vec2 uRes;
+    uniform vec3 uRed;
+    varying vec2 vUv;
+    float h(vec2 p) { return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
+    void main() {
+      vec2 uv = vUv;
+      vec2 c = uv - 0.5;
+      // slight chromatic split, stronger at the edges and during a pulse
+      float ca = 0.006 * uPulse * dot(c, c) * 4.0;
+      vec3 col;
+      col.r = texture2D(tDiffuse, uv + c * ca).r;
+      col.g = texture2D(tDiffuse, uv).g;
+      col.b = texture2D(tDiffuse, uv - c * ca).b;
+      // scanlines in device pixels, very low contrast
+      float sl = 0.94 + 0.06 * sin(uv.y * uRes.y * 1.5708);
+      col *= sl;
+      // vignette + faint amber floor glow
+      float vig = smoothstep(0.95, 0.25, length(c * vec2(1.0, 0.85)));
+      col *= mix(0.35, 1.0, vig);
+      // pulse: thin red horizontal sweep
+      float sweep = exp(-abs(uv.y - uPulse) * 120.0) * step(0.001, uPulse);
+      col += uRed * sweep * 0.25;
+      // grain
+      col *= 1.0 + (h(uv * uRes + fract(uTime) * 100.0) - 0.5) * 0.08;
+      gl_FragColor = vec4(max(col, 0.0), 1.0);
+    }
+  `,
+};
+const crt = new ShaderPass(CRTShader);
+composer.addPass(crt);
+composer.addPass(new OutputPass());
+
+// ---------- interaction (skill: interaction — OrbitControls + raycast picking) ----------
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+controls.enablePan = false;
+controls.rotateSpeed = 0.6;
+controls.autoRotate = !REDUCED;
+controls.autoRotateSpeed = 0.35;
+
+const raycaster = new THREE.Raycaster();
+const ndc = new THREE.Vector2();
+let pulse = 0;
+const hits = RINGS.map(() => 0);
+let downAt = null;
+renderer.domElement.addEventListener("pointerdown", (e) => {
+  downAt = { x: e.clientX, y: e.clientY, t: performance.now() };
+  document.getElementById("hint").classList.add("off");
+});
+renderer.domElement.addEventListener("pointerup", (e) => {
+  if (!downAt) return;
+  const moved = Math.hypot(e.clientX - downAt.x, e.clientY - downAt.y);
+  const dt = performance.now() - downAt.t;
+  downAt = null;
+  if (moved > 8 || dt > 350) return; // that was a drag, not a tap
+  triggerPulse(e.clientX, e.clientY);
+});
+function triggerPulse(x, y) {
+  pulse = 1;
+  spin = 2.4;
+  if (x === undefined) return;
+  ndc.set((x / window.innerWidth) * 2 - 1, -(y / window.innerHeight) * 2 + 1);
+  raycaster.setFromCamera(ndc, camera);
+  const hit = raycaster.intersectObjects(ringMeshes, false)[0];
+  if (hit) hits[hit.object.userData.index] = 1;
+}
+window.__kdxPulse = triggerPulse;
+
+// ---------- sizing: keep the whole instrument in frame on portrait phones ----------
+const FIT_RADIUS = 2.72;
+function fitDistance() {
+  const vfov = THREE.MathUtils.degToRad(camera.fov);
+  const hfov = 2 * Math.atan(Math.tan(vfov / 2) * camera.aspect);
+  return FIT_RADIUS / Math.sin(Math.min(vfov, hfov) / 2);
+}
+function resize() {
+  const w = window.innerWidth, h = window.innerHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+  composer.setSize(w, h);
+  crt.uniforms.uRes.value.set(w * renderer.getPixelRatio(), h * renderer.getPixelRatio());
+  const d = fitDistance();
+  controls.minDistance = d * 0.6;
+  controls.maxDistance = d * 1.5;
+  const dir = camera.position.lengthSq() > 0 ? camera.position.clone().normalize() : new THREE.Vector3(0.35, 0.28, 1).normalize();
+  camera.position.copy(dir.multiplyScalar(d));
+  controls.update();
+}
+window.addEventListener("resize", resize);
+resize();
+
+// ---------- adaptive quality (skill: performance — cap DPR, watch frame time) ----------
+let frames = 0, acc = 0, degraded = 0;
+function adapt(dt) {
+  if (MANUAL || degraded >= 2) return;
+  frames++; acc += dt;
+  if (acc < 2.0) return;
+  const fps = frames / acc;
+  frames = 0; acc = 0;
+  if (fps < 48) {
+    degraded++;
+    if (degraded === 1) { dpr = Math.max(1, dpr * 0.66); }
+    else { bloom.resolution.set(window.innerWidth / 2, window.innerHeight / 2); dpr = 1; }
+    renderer.setPixelRatio(dpr);
+    composer.setPixelRatio(dpr);
+    resize();
+  }
+}
+
+// ---------- animation ----------
+const timer = new THREE.Timer();
+timer.connect(document);
+let spin = 1;
+const readout = document.getElementById("readout");
+let lastReadout = 0;
+
+function update(t, dt) {
+  const slow = REDUCED ? 0.3 : 1;
+  spin += (1 - spin) * Math.min(1, dt * 1.2);
+  pulse = Math.max(0, pulse - dt * 1.1);
+  for (let i = 0; i < hits.length; i++) hits[i] = Math.max(0, hits[i] - dt * 0.9);
+
+  gimbals.forEach(({ pivot, cfg }, i) => {
+    pivot.rotateOnAxis(cfg.axis, cfg.speed * dt * spin * slow);
+    ringMats[i].uniforms.uTime.value = t;
+    ringMats[i].uniforms.uPulse.value = pulse;
+    ringMats[i].uniforms.uHit.value = hits[i];
+  });
+  machine.rotation.z = Math.sin(t * 0.13) * 0.12;
+  seed.rotation.y = t * 0.21 * slow;
+  seed.rotation.x = t * 0.09 * slow;
+  seedPlanes[1].rotation.z = t * 0.3 * slow;
+  seedMat.uniforms.uTime.value = t;
+  seedMat.uniforms.uPulse.value = pulse;
+  dial.quaternion.copy(camera.quaternion).multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 0, 1), -t * 0.02 * slow));
+  const beat = 1 + 0.12 * Math.sin(t * 2.2) + 0.6 * pulse;
+  core.scale.setScalar(beat);
+  core.rotation.y = t * 0.8;
+  coreCage.rotation.set(t * 0.3, -t * 0.4, 0);
+  dust.rotation.y = t * 0.01;
+  crt.uniforms.uTime.value = t;
+  crt.uniforms.uPulse.value = pulse;
+  bloom.strength = 0.6 + 0.5 * pulse;
+
+  if (t - lastReadout > 0.12) {
+    lastReadout = t;
+    const phi = (gimbals[0].pivot.rotation.y % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2);
+    readout.innerHTML = `Φ ${phi.toFixed(3)}<br>τ ${t.toFixed(1).padStart(5, "0")}`;
+  }
+}
+
+if (MANUAL) {
+  // deterministic capture: advance in fixed steps up to time t, then render one frame
+  let simT = 0;
+  window.__kdxRender = (t) => {
+    const step = 1 / 60;
+    while (simT + step <= t) { simT += step; update(simT, step); }
+    controls.autoRotate = false;
+    // scripted orbit for capture, matches the idle auto-rotate feel
+    const d = fitDistance();
+    const a = 0.35 + t * 0.11;
+    camera.position.set(Math.sin(a) * d * 0.94, d * 0.27, Math.cos(a) * d * 0.94);
+    camera.lookAt(0, 0, 0);
+    composer.render();
+    return true;
+  };
+  window.__kdxReady = true;
+} else {
+  renderer.setAnimationLoop((now) => {
+    timer.update(now);
+    const dt = Math.min(timer.getDelta(), 0.05);
+    const t = timer.getElapsed();
+    update(t, dt);
+    controls.update(dt);
+    composer.render();
+    adapt(dt);
+  });
+  window.__kdxReady = true;
+  if (!CAPTURE) setTimeout(() => document.getElementById("hint").classList.add("off"), 6000);
+}
+</script>
+</body>
+</html>
